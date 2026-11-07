@@ -96,7 +96,11 @@ function getQuiz(p){
   // salt + SHA-256 of the correct option lets the page give instant feedback without sending answers in clear text
   const salt=Utilities.getUuid();
   const h=(s)=>Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256,salt+'|'+s,Utilities.Charset.UTF_8).map(b=>('0'+(b&255).toString(16)).slice(-2)).join('');
-  return {salt,questions:pick.map(q=>({id:q.id,stem:q.stem,bloom:q.bloom,clo:q.clo,sec:q.sec,options:shuffle([q.opt1,q.opt2,q.opt3,q.opt4].map(String)),h:h(String(q['opt'+(+q.answer+1)])),why:q.why})),poolSize:pool.length};
+  const pack=q=>({id:q.id,stem:q.stem,bloom:q.bloom,clo:q.clo,sec:q.sec,options:shuffle([q.opt1,q.opt2,q.opt3,q.opt4].map(String)),h:h(String(q['opt'+(+q.answer+1)])),why:q.why});
+  const used=new Set(pick.map(q=>q.id));
+  // alternatives: other questions from the same section (same learning objective) of the same quiz, up to 3 per stop
+  const questions=pick.map(q=>{const alts=shuffle(pool.filter(x=>!used.has(x.id)&&String(x.sec)===String(q.sec))).slice(0,3); alts.forEach(a=>used.add(a.id)); const o=pack(q); o.alts=alts.map(pack); return o;});
+  return {salt,questions,poolSize:pool.length};
 }
 function submit(p){
   const id=String(p.studentId||'').trim(); if(!id) return {error:'studentId required'};

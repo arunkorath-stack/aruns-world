@@ -169,6 +169,8 @@ body.t-gallery .journey .node{border-radius:2px;border-color:var(--acc)}
 .journey .trav{position:absolute;top:-2px;margin-left:-18px;font-size:34px;line-height:1;filter:drop-shadow(0 4px 6px rgba(0,0,0,.5));transition:left .9s cubic-bezier(.3,1.3,.4,1);animation:bob 1.6s ease-in-out infinite;z-index:2}
 .journey .trav.go{animation:hop .9s ease-in-out}
 @keyframes hop{0%{transform:translateY(0) rotate(0)}30%{transform:translateY(-22px) rotate(-8deg)}70%{transform:translateY(-10px) rotate(6deg)}100%{transform:translateY(0)}}
+.altbar{display:inline-block;font-size:12px;letter-spacing:.06em;background:var(--acc2);color:#1a0d00;padding:5px 12px;border-radius:999px;margin-bottom:10px;font-weight:700}
+.verdict.study{border-color:var(--acc2)}.lessons{padding-left:18px;margin:10px 0 0;font-size:14px}.lessons li{margin:8px 0}.lessons .why{color:var(--muted);font-size:13px}
 .opt.blocked{opacity:.4;text-decoration:line-through;border-style:dashed;cursor:not-allowed}
 .opt.blocked .key{background:var(--bad);color:#fff;border-color:var(--bad)}
 .hudk{font-size:13px;display:flex;align-items:center;gap:6px;background:var(--panel);border:1px solid var(--line);padding:6px 12px;border-radius:999px}.hudk b{font-size:15px}
@@ -249,7 +251,7 @@ body.t-island .ringwrap .c{stroke:rgba(0,0,0,.12)}
     <div class="hudk" id="hudStop">📍 <b id="stopNo">1</b>/10</div>
     <div class="hudk" id="hudStreak">🔥 <b id="streak">0</b></div>
     <div class="hudk">✨ <b id="xp">0</b> XP</div>
-    <div class="hudk" id="hudTries">tries <b id="tries">●●●</b></div>
+    <div class="hudk" id="hudTries" title="chances at this stop">chances <b id="tries">●●●●</b></div>
     <div class="hudk timer" id="timer">⏱ 12:00</div>
   </div>
   <div id="qbox"></div>
@@ -354,7 +356,7 @@ function chState(c){const p1=S.progress[c.chapter+'-1'],p2=S.progress[c.chapter+
 function bestPct(c){const b=[S.progress[c.chapter+'-1'],S.progress[c.chapter+'-2']].filter(Boolean);return b.length?Math.round(100*b.reduce((a,p)=>a+p.best/p.total,0)/b.length):null}
 async function openChapters(){
   stopTimer();go('chapters'); const s=S.subject,t=S.theme; $('#chPanel').innerHTML='';
-  $('#chHead').innerHTML=`<h1>${esc(t.name)}</h1><p class="sub"><b>${esc(s.code)} · ${esc(s.title)}</b><br>${esc(t.tag)} Two quizzes per chapter: <b>Quiz 1 · Ideas</b> checks understanding, <b>Quiz 2 · Applied</b> makes you apply and analyse. Each quiz is a journey of 10 stops: answer correctly to move to the next stop until you reach the goal. Only your first answer at each stop counts for your mark. Unlimited attempts.</p>`;
+  $('#chHead').innerHTML=`<h1>${esc(t.name)}</h1><p class="sub"><b>${esc(s.code)} · ${esc(s.title)}</b><br>${esc(t.tag)} Two quizzes per chapter: <b>Quiz 1 · Ideas</b> checks understanding, <b>Quiz 2 · Applied</b> makes you apply and analyse. Each quiz is a journey of 10 stops. Answer correctly to move on; a wrong answer opens <b>another way</b> — a new question on the same idea — up to three times, then a study stop. Only your first answer at each stop counts for your mark. Unlimited attempts.</p>`;
   $('#chScene').innerHTML='<span class="spin"></span> Loading your progress…';
   try{ const [p,v]=await Promise.all([api('myProgress',{studentId:S.student.studentId,subject:s.code}),api('videos',{subject:s.code})]); S.progress=p.progress; S.videos=v.videos; }catch(e){ S.progress={}; S.videos=[]; }
   const gen=S.videos.filter(v=>!v.chapter);
@@ -406,12 +408,13 @@ function vidCard(v){const y=ytId(v.url),d=driveId(v.url);let player=y?`<iframe s
 let tInt=null;const LIMIT=12*60;const enc=new TextEncoder();
 async function sha(s){const b=await crypto.subtle.digest('SHA-256',enc.encode(s));return [...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
 async function startQuiz(ch,q){
-  S.chapter=ch;S.quiz=q;S.answers={};S.idx=0;S.streak=0;S.bestStreak=0;S.xp=0;S.locked=false;S.retries=0;S.tries=0;const c=S.subject.chapters.find(x=>x.chapter===ch);
+  S.chapter=ch;S.quiz=q;S.answers={};S.idx=0;S.streak=0;S.bestStreak=0;S.xp=0;S.locked=false;S.retries=0;S.tries=0;S.studied=0;const c=S.subject.chapters.find(x=>x.chapter===ch);
   $('#qzK').textContent=`${S.subject.code} · ${S.theme.chapterWord} ${ch} · Quiz ${q} · ${q===1?'Ideas':'Applied'} · ${c.title}`;$('#qbox').innerHTML='<div class="qcard"><span class="spin"></span> Shuffling your questions…</div>';$('#qzErr').innerHTML='';$('#journey').innerHTML='';go('quiz');
   try{ const j=await api('getQuiz',{subject:S.subject.code,chapter:ch,quiz:q,n:10}); S.questions=j.questions; S.salt=j.salt||''; }
   catch(e){ $('#qbox').innerHTML=`<div class="err">${esc(e.message)}</div>`; return; }
   // pre-compute which option is correct (salted hash from the server)
-  for(const x of S.questions){ x.correctIdx=-1; if(x.h&&S.salt){ const hs=await Promise.all(x.options.map(o=>sha(S.salt+'|'+o))); x.correctIdx=hs.indexOf(x.h);} }
+  const prep=async x=>{ x.correctIdx=-1; if(x.h&&S.salt){ const hs=await Promise.all(x.options.map(o=>sha(S.salt+'|'+o))); x.correctIdx=hs.indexOf(x.h);} };
+  for(const x of S.questions){ await prep(x); x.alts=x.alts||[]; for(const a of x.alts) await prep(a); x.chain=[x,...x.alts]; }
   buildJourney();
   S.start=Date.now();startTimer();updateHud();showQ();snd('start');
 }
@@ -419,47 +422,58 @@ const TRAV={drive:{icon:'🚗',goal:'🏁',goalWord:'Finish line',stop:'Checkpoi
 function trav(){return TRAV[document.body.className.replace('t-','')]||TRAV.drive}
 function nodeX(i){const n=S.questions.length;return 4+92*i/n}
 function buildJourney(){const n=S.questions.length,t=trav();$('#journey').innerHTML=`<div class="track"></div>${S.questions.map((q,i)=>`<div class="node" id="node${i}" style="left:${nodeX(i)}%">${i+1}<span class="lbl">§${esc(q.sec)}</span></div>`).join('')}<div class="node goal" id="node${n}" style="left:${nodeX(n)}%">${t.goal}<span class="lbl">${t.goalWord}</span></div><div class="trav" id="trav" style="left:${nodeX(0)}%">${t.icon}</div>`}
-function updateHud(){$('#streak').textContent=S.streak;$('#xp').textContent=S.xp;$('#hudStreak').classList.toggle('hot',S.streak>=3);$('#stopNo').textContent=Math.min(S.idx+1,S.questions.length);$('#hudStop').lastChild.textContent='/'+S.questions.length;$('#tries').textContent='●'.repeat(Math.max(0,3-S.tries))+'○'.repeat(Math.min(3,S.tries));
+function updateHud(){$('#streak').textContent=S.streak;$('#xp').textContent=S.xp;$('#hudStreak').classList.toggle('hot',S.streak>=3);$('#stopNo').textContent=Math.min(S.idx+1,S.questions.length);$('#hudStop').lastChild.textContent='/'+S.questions.length;const ch=Math.min(4,(S.questions[S.idx]?.chain||[1]).length);$('#tries').textContent='●'.repeat(Math.max(0,ch-S.tries))+'○'.repeat(Math.min(ch,S.tries));
   S.questions.forEach((q,i)=>{const el=$('#node'+i);if(!el)return;const a=S.answers[q.id];el.className='node'+(a&&a.done?(a.ok?' ok':' retry'):(i===S.idx?' cur':''))});
   const tr=$('#trav');if(tr){tr.style.left=nodeX(S.idx)+'%';}}
 function showQ(){
-  const x=S.questions[S.idx]; if(!x){finish();return;} S.qStart=Date.now(); S.locked=false; S.tries=0; updateHud(); $('#journey').scrollIntoView({behavior:'smooth',block:'start'});
-  $('#qbox').innerHTML=`<div class="qcard"><div class="k">${esc(trav().stop)} ${S.idx+1} of ${S.questions.length} · ${esc(x.clo)} · §${esc(x.sec)} · ${esc(x.bloom)}</div><div class="stem">${esc(x.stem)}</div><div class="opts">${x.options.map((o,i)=>`<button class="opt" id="opt${i}" onclick="pick(${i})"><span class="key">${i+1}</span><span>${esc(o)}</span></button>`).join('')}</div><div id="verdict"></div></div>`;
+  const p=S.questions[S.idx]; if(!p){finish();return;} S.tries=0; renderStopQ(); $('#journey').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function curQ(){const p=S.questions[S.idx];return p.chain[Math.min(S.tries,p.chain.length-1)]}
+function renderStopQ(){
+  const p=S.questions[S.idx], x=curQ(); S.qStart=Date.now(); S.locked=false; updateHud();
+  const alt=S.tries>0;
+  $('#qbox').innerHTML=`<div class="qcard">${alt?`<div class="altbar">🧭 Another way · same idea (§${esc(p.sec)}), new question · chance ${S.tries+1} of ${Math.min(4,p.chain.length)}</div>`:''}<div class="k">${esc(trav().stop)} ${S.idx+1} of ${S.questions.length} · ${esc(x.clo)} · §${esc(x.sec)} · ${esc(x.bloom)}</div><div class="stem">${esc(x.stem)}</div><div class="opts">${x.options.map((o,i)=>`<button class="opt" id="opt${i}" onclick="pick(${i})"><span class="key">${i+1}</span><span>${esc(o)}</span></button>`).join('')}</div><div id="verdict"></div></div>`;
 }
 function pick(i){
-  if(S.locked)return; const x=S.questions[S.idx]; const known=x.correctIdx>=0; const t=trav();
+  if(S.locked)return; const p=S.questions[S.idx], x=curQ(); const known=x.correctIdx>=0; const t=trav();
   const secs=(Date.now()-S.qStart)/1000; const first=S.tries===0;
-  if(first) S.answers[x.id]={chosen:x.options[i],ok:known?i===x.correctIdx:true,done:false}; // official mark = first pick only
+  if(first) S.answers[p.id]={chosen:x.options[i],ok:known?i===x.correctIdx:true,done:false}; // official mark = first answer to the primary question only
   const last=S.idx===S.questions.length-1;
   const ok=known?i===x.correctIdx:true;
+  S.locked=true;
   if(!ok){
-    S.tries++; S.retries++; S.streak=0; snd('bad');
+    S.retries++; S.streak=0; snd('bad');
     const b=$('#opt'+i); b.disabled=true; b.classList.add('blocked'); b.classList.add('bad'); setTimeout(()=>b.classList.remove('bad'),450);
-    if(S.tries<3){
-      $('#verdict').innerHTML=`<div class="verdict bad"><div class="h">${esc(t.blocked)}</div><div class="why">${S.tries===1?'That road is blocked. Pick another answer to continue your journey.':'Still blocked. One more wrong turn and the way will be shown.'} Re-read §${esc(x.sec)} if unsure.</div></div>`;
-      updateHud(); return;
+    document.querySelectorAll('.opt').forEach(bb=>bb.disabled=true);
+    const hasAlt=S.tries+1<p.chain.length;
+    if(hasAlt){
+      S.tries++;
+      $('#verdict').innerHTML=`<div class="verdict bad"><div class="h">${esc(t.blocked)}</div><div class="why">Not this one. The road is blocked here — but there is <b>another way</b> to the same idea (§${esc(x.sec)}). Think about it again, then answer a different question on the same point.</div><p style="margin:12px 0 0"><button class="btn" id="nextBtn" onclick="renderStopQ();snd('tick')">Show me another way →</button></p></div>`;
+      updateHud(); setTimeout(()=>$('#nextBtn')?.focus(),50); return;
     }
-    // 3 wrong: reveal and move on (0 XP)
-    S.locked=true; S.answers[x.id].done=true;
-    document.querySelectorAll('.opt').forEach((bb,k)=>{bb.disabled=true;if(k===x.correctIdx)bb.classList.add('ok');else bb.classList.add('dim')});
-    $('#verdict').innerHTML=`<div class="verdict bad"><div class="h">The way is shown this time.</div><div><b>Correct answer:</b> ${esc(x.options[x.correctIdx])}</div>${x.why?`<div class="why"><b>Why:</b> ${esc(x.why)}</div>`:''}<p style="margin:12px 0 0"><button class="btn" id="nextBtn" onclick="next()">${last?'Reach the goal →':'Move to the next stop →'}</button></p></div>`;
-    updateHud(); setTimeout(()=>$('#nextBtn')?.focus(),50); return;
+    // all chances used → study card, then move on (0 XP)
+    S.answers[p.id].done=true; S.studied=(S.studied||0)+1;
+    document.querySelectorAll('.opt').forEach((bb,k)=>{if(k===x.correctIdx)bb.classList.add('ok');else bb.classList.add('dim')});
+    const lessons=p.chain.filter(q=>q.correctIdx>=0).map(q=>`<li><b>${esc(q.stem)}</b><br><span style="color:var(--ok)">${esc(q.options[q.correctIdx])}</span>${q.why?`<br><span class="why">${esc(q.why)}</span>`:''}</li>`).join('');
+    $('#verdict').innerHTML=`<div class="verdict bad study"><div class="h">📖 Study stop</div><div>Every way to this idea was blocked. Read the explanations below carefully — the road opens only after you have studied them.</div><ul class="lessons">${lessons}</ul><p style="margin:12px 0 0"><button class="btn" id="nextBtn" disabled onclick="next()">Read first… <span id="studyCount">15</span>s</button></p></div>`;
+    let n=15; const iv=setInterval(()=>{n--;const c=$('#studyCount');if(!c){clearInterval(iv);return;}c.textContent=n;if(n<=0){clearInterval(iv);const b=$('#nextBtn');b.disabled=false;b.innerHTML=last?'I have studied it — reach the goal →':'I have studied it — move on →';b.focus();}},1000);
+    updateHud(); return;
   }
   // correct → road clear
-  S.locked=true; S.answers[x.id].done=true;
+  S.answers[p.id].done=true;
   document.querySelectorAll('.opt').forEach((bb,k)=>{bb.disabled=true;if(k===i)bb.classList.add('ok');else if(!bb.classList.contains('blocked'))bb.classList.add('dim')});
   let gained=0;
   if(first){S.streak++;S.bestStreak=Math.max(S.bestStreak,S.streak);gained=100+Math.min(S.streak-1,5)*20+(secs<10?50:secs<20?20:0);}
-  else gained=S.tries===1?50:25;
+  else gained=S.tries===1?50:S.tries===2?30:15;
   S.xp+=gained; snd('ok'); confetti(first&&S.streak>=3?120:first?50:20);
   const b=$('#opt'+i).getBoundingClientRect();floatXp('+'+gained,b.left+b.width/2,b.top);
   if(first){ if(S.streak===3)toast('🔥 On fire!');else if(S.streak===5)toast('⚡ Unstoppable!');else if(S.streak===8)toast('👑 Legendary!'); }
-  const msg=first?['Nice!','Correct!','Yes!','Sharp.','Exactly.','You got it!'][Math.floor(Math.random()*6)]:'Found it.';
-  $('#verdict').innerHTML=`<div class="verdict ok"><div class="h">${msg} <span style="font-size:16px;color:var(--acc2)">+${gained} XP${first&&secs<10?' · speed bonus':''}${first?'':' · after '+S.tries+' retr'+(S.tries>1?'ies':'y')}</span></div><div style="font-size:14px;color:var(--ok)">${esc(t.clear)}</div>${x.why?`<div class="why"><b>Why:</b> ${esc(x.why)}</div>`:''}<p style="margin:12px 0 0"><button class="btn" id="nextBtn" onclick="next()">${last?'Reach the goal →':'Move to the next stop →'}</button></p></div>`;
+  const msg=first?['Nice!','Correct!','Yes!','Sharp.','Exactly.','You got it!'][Math.floor(Math.random()*6)]:'Found the way.';
+  $('#verdict').innerHTML=`<div class="verdict ok"><div class="h">${msg} <span style="font-size:16px;color:var(--acc2)">+${gained} XP${first&&secs<10?' · speed bonus':''}${first?'':' · on chance '+(S.tries+1)}</span></div><div style="font-size:14px;color:var(--ok)">${esc(t.clear)}</div>${x.why?`<div class="why"><b>Why:</b> ${esc(x.why)}</div>`:''}<p style="margin:12px 0 0"><button class="btn" id="nextBtn" onclick="next()">${last?'Reach the goal →':'Move to the next stop →'}</button></p></div>`;
   updateHud(); setTimeout(()=>$('#nextBtn')?.focus(),50);
 }
 function next(){const tr=$('#trav');tr.classList.add('go');S.idx++;tr.style.left=nodeX(S.idx)+'%';setTimeout(()=>tr.classList.remove('go'),900);snd('tick');setTimeout(showQ,S.idx<S.questions.length?350:900)}
-document.addEventListener('keydown',e=>{if(!$('#v-quiz').classList.contains('on'))return;if(/^[1-4]$/.test(e.key)&&!S.locked){const b=$('#opt'+(+e.key-1));if(b)b.click()}else if(e.key==='Enter'&&S.locked&&$('#nextBtn')){e.preventDefault();next()}});
+document.addEventListener('keydown',e=>{if(!$('#v-quiz').classList.contains('on'))return;if(/^[1-4]$/.test(e.key)&&!S.locked){const b=$('#opt'+(+e.key-1));if(b)b.click()}else if(e.key==='Enter'&&S.locked&&$('#nextBtn')&&!$('#nextBtn').disabled){e.preventDefault();$('#nextBtn').click()}});
 function startTimer(){stopTimer();const tick=()=>{const left=LIMIT-Math.floor((Date.now()-S.start)/1000);const el=$('#timer');el.textContent='⏱ '+String(Math.max(0,Math.floor(left/60))).padStart(2,'0')+':'+String(Math.max(0,left%60)).padStart(2,'0');el.classList.toggle('low',left<60);if(left<=0){stopTimer();finish(true)}};tick();tInt=setInterval(tick,1000)}
 function stopTimer(){if(tInt)clearInterval(tInt);tInt=null}
 async function finish(auto){
@@ -476,7 +490,7 @@ function renderResult(j){
   const secs=Math.round((Date.now()-S.start)/1000);
   $('#resHead').innerHTML=`<div class="card"><div class="k">${esc(S.subject.code)} · ${esc(t.chapterWord)} ${S.chapter} · Quiz ${S.quiz} · ${S.quiz===1?'Ideas':'Applied'} · attempt ${j.attemptNo} · saved as ${esc(j.codename)}</div>
   <div class="resgrid"><div class="ringwrap"><svg width="200" height="200" viewBox="0 0 200 200"><circle class="c" cx="100" cy="100" r="90"/><circle class="v" id="ringv" cx="100" cy="100" r="90"/></svg><div class="num">${pct}%</div></div>
-  <div><div class="k">${S.idx>=S.questions.length?'You reached the goal! · your rank':'Your rank this round'}</div><div class="rank">${esc(rank)}</div><div class="chips"><span class="chip">🎯 ${j.score}/${j.total} correct</span><span class="chip">✨ ${S.xp} XP</span><span class="chip">🔥 best streak ${S.bestStreak}</span><span class="chip">🚧 ${S.retries} wrong turn${S.retries===1?'':'s'}</span><span class="chip">⏱ ${Math.floor(secs/60)}m ${secs%60}s</span>${j.attemptNo>1?`<span class="chip">🏅 your best: ${j.best}/${j.total}</span>`:''}</div><p style="color:var(--muted);margin:6px 0 0">${clo}.<br>Your mark counts only your <b>first</b> answer at each stop. ${wrong===0?'No wrong turns on the first try — a perfect journey.':`${wrong} stop${wrong>1?'s':''} needed a retry; each is explained below with the slide section to re-read. Play again to make a clean run.`}</p></div></div></div>`;
+  <div><div class="k">${S.idx>=S.questions.length?'You reached the goal! · your rank':'Your rank this round'}</div><div class="rank">${esc(rank)}</div><div class="chips"><span class="chip">🎯 ${j.score}/${j.total} correct</span><span class="chip">✨ ${S.xp} XP</span><span class="chip">🔥 best streak ${S.bestStreak}</span><span class="chip">🚧 ${S.retries} wrong turn${S.retries===1?'':'s'}</span>${S.studied?`<span class="chip">📖 ${S.studied} study stop${S.studied===1?'':'s'}</span>`:''}<span class="chip">⏱ ${Math.floor(secs/60)}m ${secs%60}s</span>${j.attemptNo>1?`<span class="chip">🏅 your best: ${j.best}/${j.total}</span>`:''}</div><p style="color:var(--muted);margin:6px 0 0">${clo}.<br>Your mark counts only your <b>first</b> answer at each stop. ${wrong===0?'No wrong turns on the first try — a perfect journey.':`${wrong} stop${wrong>1?'s':''} needed another way; each is explained below with the slide section to re-read. Play again to make a clean run.`}</p></div></div></div>`;
   setTimeout(()=>{$('#ringv').style.strokeDashoffset=565-565*pct/100},60);
   $('#revTitle').textContent=wrong?'Your wrong turns & the right way':'Your journey log';
   $('#review').innerHTML=j.items.map((i,n)=>`<div class="q ${i.ok?'':'bad'}"><div class="k">Stop ${n+1} · ${esc(i.clo)} · §${esc(i.sec)} · ${i.ok?'<span style="color:var(--ok)">✓ first try</span>':'<span style="color:var(--bad)">✗ wrong turn first</span>'}</div><div class="stem">${esc(i.stem)}</div>${i.ok?'':`<div style="color:var(--bad);font-size:14px">Your first answer: ${i.chosen?esc(i.chosen):'(not answered)'}</div>`}<div style="color:var(--ok);font-size:14px">Correct answer: ${esc(i.correct)}</div><div style="color:var(--muted);font-size:13px;margin-top:6px"><b>Why:</b> ${esc(i.why)}</div></div>`).join('');
