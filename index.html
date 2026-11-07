@@ -169,6 +169,12 @@ body.t-gallery .journey .node{border-radius:2px;border-color:var(--acc)}
 .journey .trav{position:absolute;top:-2px;margin-left:-18px;font-size:34px;line-height:1;filter:drop-shadow(0 4px 6px rgba(0,0,0,.5));transition:left .9s cubic-bezier(.3,1.3,.4,1);animation:bob 1.6s ease-in-out infinite;z-index:2}
 .journey .trav.go{animation:hop .9s ease-in-out}
 @keyframes hop{0%{transform:translateY(0) rotate(0)}30%{transform:translateY(-22px) rotate(-8deg)}70%{transform:translateY(-10px) rotate(6deg)}100%{transform:translateY(0)}}
+.tre{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--panel);border:1px solid var(--line);font-size:18px;opacity:.5}.tre.got{opacity:1;border-color:var(--acc2);box-shadow:0 0 14px -2px var(--acc2);animation:pop .5s}.tre.big{width:52px;height:52px;font-size:28px}.tre i{font-style:normal;color:var(--muted);font-size:14px}
+.shelf{margin:10px 0 4px}.tres{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.badge{display:flex;gap:16px;align-items:center;background:linear-gradient(135deg,color-mix(in srgb,var(--acc2) 25%,transparent),var(--panel));border:1px solid var(--acc2);border-radius:18px;padding:16px 18px;margin:12px 0;animation:fade .5s}.badge .medal{font-size:54px;line-height:1;filter:drop-shadow(0 6px 10px rgba(0,0,0,.4))}.badge .bt{font-family:var(--display);font-size:26px;line-height:1.1;margin:2px 0}.badge .bm{font-size:14px;color:var(--muted)}
+.goalline{display:flex;align-items:center;gap:12px;margin:10px 0 4px;font-size:14px}
+.reward{display:flex;gap:16px;align-items:center;margin-top:12px;border-color:var(--acc2)}
+.qb.done{border-color:var(--ok);cursor:default}.qb.open{border-color:var(--acc);box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 25%,transparent)}
 .altbar{display:inline-block;font-size:12px;letter-spacing:.06em;background:var(--acc2);color:#1a0d00;padding:5px 12px;border-radius:999px;margin-bottom:10px;font-weight:700}
 .verdict.study{border-color:var(--acc2)}.lessons{padding-left:18px;margin:10px 0 0;font-size:14px}.lessons li{margin:8px 0}.lessons .why{color:var(--muted);font-size:13px}
 .opt.blocked{opacity:.4;text-decoration:line-through;border-style:dashed;cursor:not-allowed}
@@ -256,14 +262,14 @@ body.t-island .ringwrap .c{stroke:rgba(0,0,0,.12)}
   </div>
   <div id="qbox"></div>
   <div id="qzErr"></div>
-  <p style="margin-top:14px"><button class="btn g s" onclick="if(confirm('Leave this attempt? It will not be saved.')){stopTimer();openChapters()}">Quit attempt</button> <span class="k" style="margin-left:8px">answer correctly to move to the next stop · keys 1–4 · Enter = go</span></p>
+  <p style="margin-top:14px"><button class="btn g s" onclick="if(confirm('Stop here? This counts as your one attempt — the stops you have not reached will be marked wrong.')){finish(true)}">Stop &amp; submit</button> <span class="k" style="margin-left:8px">answer correctly to move to the next stop · keys 1–4 · Enter = go</span></p>
 </section>
 
 <section class="view" id="v-result">
   <div id="resHead"></div>
   <h2 id="revTitle">Your review</h2>
   <div class="review" id="review"></div>
-  <p><button class="btn" onclick="retry()">↻ Play again</button> <button class="btn g" onclick="openChapters()">Back to chapters</button> <button class="btn g" onclick="openDash()">📊 Dashboard</button></p>
+  <p id="resBtns"></p>
 </section>
 
 <section class="view" id="v-dash">
@@ -299,16 +305,17 @@ async function api(action,data){
   throw new Error('The quiz server did not answer properly (Google was busy). Please wait a few seconds and try again.');
 }
 const $=s=>document.querySelector(s); const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-const S={student:null,subjects:[],subject:null,chapter:null,quiz:null,questions:[],salt:'',answers:{},idx:0,start:0,qStart:0,streak:0,bestStreak:0,xp:0,progress:{},videos:[],theme:null,locked:false};
+const S={student:null,subjects:[],subject:null,chapter:null,quiz:null,questions:[],salt:'',answers:{},idx:0,start:0,qStart:0,streak:0,bestStreak:0,xp:0,progress:{},videos:[],theme:null,locked:false,levels:[],next:null,allDone:false};
 try{S.student=JSON.parse(localStorage.getItem('qh_student')||'null')}catch{}
 let muted=localStorage.getItem('qh_mute')==='1';
 
 /* ================= THEMES ================= */
 const THEMES={
-  drive:{name:'Night Drive',brand:'Night Drive 🚗',tag:'Drive the road. Every chapter is a checkpoint. Reach the end with a full tank of knowledge.',cta:'Click to start',panelCta:'Start the engine',ranks:['Parked','Learner driver','Road runner','Night racer','Road legend 🏆'],chapterWord:'Checkpoint'},
-  island:{name:"Idea Island",brand:'IDEA ISLAND',tag:'Drag to explore. Every chapter is a place on the island. Visit them all.',cta:'Explore the island →',panelCta:'Visit this place',ranks:['Tourist','Camper','Explorer','Trailblazer','Island legend 🏆'],chapterWord:'Place'},
-  gallery:{name:'The Leadership Gallery',brand:'The Gallery',tag:'Walk the halls. Every chapter is a work on the wall. Study each one until you can read it in the dark.',cta:'Enter the gallery →',panelCta:'Study this work',ranks:['Visitor','Apprentice','Connoisseur','Curator','Master of the Gallery 🏆'],chapterWord:'Hall'}
+  drive:{name:'Night Drive',brand:'Night Drive 🚗',tag:'Drive the road. Every checkpoint hides a trophy. Clear both quizzes of a chapter to win it.',cta:'Click to start',panelCta:'Start the engine',ranks:['Parked','Learner driver','Road runner','Night racer','Road legend 🏆'],chapterWord:'Checkpoint',treasures:['🏁','🔧','⛽','🛞','🏎️','🎖️','🚦','🗝️','💎','🏆'],treasureWord:'trophy',badge:'Road Legend'},
+  island:{name:"Idea Island",brand:'IDEA ISLAND',tag:'Drag to explore. Every place on the island hides a treasure. Clear both quizzes of a chapter to dig it up.',cta:'Explore the island →',panelCta:'Visit this place',ranks:['Tourist','Camper','Explorer','Trailblazer','Island legend 🏆'],chapterWord:'Place',treasures:['🗝️','🐚','🪙','📿','🏺','🧭','🗺️','⚓','💎','💰'],treasureWord:'treasure',badge:'Island Legend'},
+  gallery:{name:'The Leadership Gallery',brand:'The Gallery',tag:'Walk the halls. Every hall keeps a relic. Clear both quizzes of a chapter to claim it.',cta:'Enter the gallery →',panelCta:'Study this work',ranks:['Visitor','Apprentice','Connoisseur','Curator','Master of the Gallery 🏆'],chapterWord:'Hall',treasures:['🕯️','📜','🖼️','⚜️','🏺','💍','🔑','🪞','👑','🏆'],treasureWord:'relic',badge:'Master of the Gallery'}
 };
+function treasureOf(ch){const t=S.theme||THEMES.drive;return t.treasures[(ch-1)%t.treasures.length]}
 const SUBJECT_THEME={MGMT160:'drive',MGMT363:'island',MGMT464:'gallery'};
 const order=['drive','island','gallery'];
 function themeKey(code,i){return SUBJECT_THEME[code]||order[(i||0)%3]}
@@ -352,28 +359,35 @@ async function identify(){
 }
 
 /* ================= CHAPTERS (themed scenes) ================= */
-function chState(c){const p1=S.progress[c.chapter+'-1'],p2=S.progress[c.chapter+'-2'];const avail=(c.q1>0?1:0)+(c.q2>0?1:0);if(!avail)return'lock';const done=(p1?1:0)+(p2?1:0);return done===avail?'done':done?'part':'todo'}
+function qState(ch,q){ if(S.progress[ch+'-'+q]) return 'done'; if(S.next&&S.next.chapter===ch&&S.next.quiz===q) return 'open'; const c=S.subject.chapters.find(x=>x.chapter===ch); if(!c||(q===1?c.q1:c.q2)<4) return 'none'; return 'locked'; }
+function chState(c){const s1=qState(c.chapter,1),s2=qState(c.chapter,2);const avail=[s1,s2].filter(x=>x!=='none');if(!avail.length)return'lock';if(avail.every(x=>x==='done'))return'done';if(avail.includes('done'))return'part';if(avail.includes('open'))return'open';return'locked'}
+function chDone(c){return chState(c)==='done'}
+function treasureCount(){return S.subject.chapters.filter(chDone).length}
 function bestPct(c){const b=[S.progress[c.chapter+'-1'],S.progress[c.chapter+'-2']].filter(Boolean);return b.length?Math.round(100*b.reduce((a,p)=>a+p.best/p.total,0)/b.length):null}
 async function openChapters(){
   stopTimer();go('chapters'); const s=S.subject,t=S.theme; $('#chPanel').innerHTML='';
-  $('#chHead').innerHTML=`<h1>${esc(t.name)}</h1><p class="sub"><b>${esc(s.code)} · ${esc(s.title)}</b><br>${esc(t.tag)} Two quizzes per chapter: <b>Quiz 1 · Ideas</b> checks understanding, <b>Quiz 2 · Applied</b> makes you apply and analyse. Each quiz is a journey of 10 stops. Answer correctly to move on; a wrong answer opens <b>another way</b> — a new question on the same idea — up to three times, then a study stop. Only your first answer at each stop counts for your mark. Unlimited attempts.</p>`;
+  $('#chHead').innerHTML=`<h1>${esc(t.name)}</h1><p class="sub"><b>${esc(s.code)} · ${esc(s.title)}</b><br>${esc(t.tag)} Two quizzes per chapter: <b>Quiz 1 · Ideas</b> checks understanding, <b>Quiz 2 · Applied</b> makes you apply and analyse. Levels open one at a time and <b>each quiz can be taken once</b>. Each quiz is a journey of 10 stops: answer correctly to move on; a wrong answer opens <b>another way</b> — a new question on the same idea — up to three times, then a study stop. Only your first answer at each stop counts for your mark.</p><div id="badgeBar"></div>`;
   $('#chScene').innerHTML='<span class="spin"></span> Loading your progress…';
-  try{ const [p,v]=await Promise.all([api('myProgress',{studentId:S.student.studentId,subject:s.code}),api('videos',{subject:s.code})]); S.progress=p.progress; S.videos=v.videos; }catch(e){ S.progress={}; S.videos=[]; }
+  try{ const [p,v]=await Promise.all([api('myProgress',{studentId:S.student.studentId,subject:s.code}),api('videos',{subject:s.code})]); S.progress=p.progress; S.levels=p.levels||[]; S.next=p.next||null; S.allDone=!!p.allDone; S.videos=v.videos; }catch(e){ S.progress={}; S.videos=[]; S.levels=[]; S.next=null; S.allDone=false; }
+  renderBadgeBar();
   const gen=S.videos.filter(v=>!v.chapter);
   $('#generalVideos').innerHTML=gen.length?`<div class="k" style="margin:8px 0">Course videos</div><div class="vidgrid" style="margin-bottom:16px">${gen.map(vidCard).join('')}</div>`:'';
   const key=document.body.className.replace('t-','');
   if(key==='drive') renderRoad(); else if(key==='island') renderRing(); else renderWall();
 }
+function renderBadgeBar(){const t=S.theme,s=S.subject;const got=S.subject.chapters.filter(chDone);const shelf=S.subject.chapters.map(c=>`<span class="tre ${chDone(c)?'got':''}" title="${esc(t.chapterWord)} ${c.chapter}${chDone(c)?' · collected':' · not yet'}">${chDone(c)?treasureOf(c.chapter):'<i>?</i>'}</span>`).join('');
+  const nextTxt=S.allDone?'':S.next?`Next level open: <b>${esc(t.chapterWord)} ${S.next.chapter} · Quiz ${S.next.quiz}</b>`:'No level is open yet — the first quiz will appear here when it is published.';
+  $('#badgeBar').innerHTML=`${S.allDone?`<div class="badge"><div class="medal">🎖️</div><div><div class="k">Subject badge unlocked</div><div class="bt">${esc(t.badge)} · Expert in ${esc(s.title)}</div><div class="bm">You have completed every level of ${esc(s.code)}. You are now ready to go to the market and show your skills.</div></div></div>`:''}<div class="shelf"><span class="k">${esc(t.treasureWord)}s collected · ${got.length}/${s.chapters.length}</span><div class="tres">${shelf}</div><div class="k" style="margin-top:6px">${nextTxt}</div></div>`}
 function renderRoad(){
-  const chs=S.subject.chapters; let last=-1; chs.forEach((c,i)=>{if(chState(c)==='done'||chState(c)==='part')last=i});
-  $('#chScene').innerHTML=`<div class="hand">${last<0?'↓ your car is waiting at checkpoint 1 — click it':'↓ you have driven to checkpoint '+chs[last].chapter+' — keep going'}</div><div class="road">${chs.map((c,i)=>{const st=chState(c),bp=bestPct(c);const vids=S.videos.filter(v=>v.chapter===c.chapter).length;
-    return`<div class="seg"><div class="cp ${st}" onclick="openChapterPanel(${c.chapter})">${c.chapter}${i===Math.max(last,0)?'<span class="car">🚗</span>':''}</div><div class="info" onclick="openChapterPanel(${c.chapter})"><b>${esc(c.title)}</b><div class="m">${st==='lock'?'🔒 coming soon':st==='done'?'✅ both quizzes played · best '+bp+'%':st==='part'?'🟡 one quiz played · best '+bp+'%':'▶ not played yet'}${vids?' · 🎬 '+vids+' video'+(vids>1?'s':''):''}</div></div></div>`}).join('')}</div>`;
+  const chs=S.subject.chapters; let cur=chs.findIndex(c=>['open','part'].includes(chState(c))); if(cur<0) cur=S.allDone?chs.length-1:0;
+  $('#chScene').innerHTML=`<div class="hand">${S.allDone?'🏁 you have driven the whole road — every trophy is yours':'↓ your car is at checkpoint '+chs[cur].chapter+' — click it to play'}</div><div class="road">${chs.map((c,i)=>{const st=chState(c),bp=bestPct(c);const vids=S.videos.filter(v=>v.chapter===c.chapter).length;
+    return`<div class="seg"><div class="cp ${st==='locked'?'lock':st==='open'?'part':st}" onclick="openChapterPanel(${c.chapter})">${st==='done'?treasureOf(c.chapter):c.chapter}${i===cur?'<span class="car">🚗</span>':''}</div><div class="info" onclick="openChapterPanel(${c.chapter})"><b>${esc(c.title)}</b><div class="m">${st==='lock'?'🔒 coming soon':st==='locked'?'🔒 locked — finish the earlier checkpoints':st==='done'?'✅ complete · '+treasureOf(c.chapter)+' trophy won · '+bp+'%':st==='part'?'🟡 one quiz done · next quiz open · '+bp+'%':'▶ open now'}${vids?' · 🎬 '+vids+' video'+(vids>1?'s':''):''}</div></div></div>`}).join('')}</div>`;
 }
 let ring={angle:0,vel:0,n:0,dragging:false,lastX:0,raf:null};
 function renderRing(){
   const chs=S.subject.chapters; ring.n=chs.length; const r=Math.max(260,chs.length*42);
   $('#chScene').innerHTML=`<div class="ring3d" id="ring3d"><div class="hint"><span>◀</span> drag to explore <span>▶</span></div><div class="stage" id="stage" style="transform:translateZ(-${r}px) rotateY(0deg)">${chs.map((c,i)=>{const st=chState(c),bp=bestPct(c);const a=360/chs.length*i;
-    return`<div class="tent" data-i="${i}" style="transform:rotateY(${a}deg) translateZ(${r}px)"><div class="roof"></div><div class="body" onclick="ringClick(${i},${c.chapter})"><div class="n">${c.chapter}</div><div class="t">${esc(c.title)}</div><div class="m">${st==='lock'?'🔒 coming soon':st==='done'?'✅ visited · best '+bp+'%':st==='part'?'🟡 half visited · best '+bp+'%':'🏕 not visited yet'}</div></div></div>`}).join('')}</div></div><div class="ringnav"><button class="btn g s" onclick="spin(1)">◀ prev</button><button class="btn g s" onclick="spin(-1)">next ▶</button></div>`;
+    return`<div class="tent" data-i="${i}" style="transform:rotateY(${a}deg) translateZ(${r}px)"><div class="roof"></div><div class="body" onclick="ringClick(${i},${c.chapter})"><div class="n">${st==='done'?treasureOf(c.chapter):c.chapter}</div><div class="t">${esc(c.title)}</div><div class="m">${st==='lock'?'🔒 coming soon':st==='locked'?'🔒 locked — visit earlier places first':st==='done'?'✅ treasure dug up · '+bp+'%':st==='part'?'🟡 one quiz done · next open · '+bp+'%':'🏕 open now — visit'}</div></div></div>`}).join('')}</div></div><div class="ringnav"><button class="btn g s" onclick="spin(1)">◀ prev</button><button class="btn g s" onclick="spin(-1)">next ▶</button></div>`;
   const el=$('#ring3d'); ring.angle=0;ring.vel=0;
   const down=e=>{ring.dragging=true;ring.lastX=(e.touches?e.touches[0].clientX:e.clientX);el.classList.add('drag');ring.vel=0};
   const move=e=>{if(!ring.dragging)return;const x=(e.touches?e.touches[0].clientX:e.clientX);const dx=x-ring.lastX;ring.lastX=x;ring.angle+=dx*.4;ring.vel=dx*.4;applyRing()};
@@ -389,14 +403,20 @@ function spin(d){const step=360/ring.n;ring.angle+=d*step;snapRing();snd('tick')
 function ringClick(i,ch){const step=360/ring.n;const front=((Math.round(-ring.angle/step)%ring.n)+ring.n)%ring.n;if(front!==i){ring.angle=-i*step;snapRing();}openChapterPanel(ch)}
 function roman(n){const m=[[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']];let s='';for(const[v,r]of m){while(n>=v){s+=r;n-=v}}return s||String(n)}
 function renderWall(){
-  $('#chScene').innerHTML=`<div class="orn">✦ ❧ ✦</div><div class="wall">${S.subject.chapters.map(c=>{const st=chState(c),bp=bestPct(c);return`<div class="plate ${st}" onclick="openChapterPanel(${c.chapter})"><span class="seal">${st==='done'?'🏅':st==='part'?'🕯':st==='lock'?'🔒':''}</span><div class="num">${roman(c.chapter)}</div><div class="t">${esc(c.title)}</div><div class="m">${st==='lock'?'Not yet hung':st==='todo'?'Unstudied':'Best '+bp+'%'}</div></div>`}).join('')}</div>`;
+  $('#chScene').innerHTML=`<div class="orn">✦ ❧ ✦</div><div class="wall">${S.subject.chapters.map(c=>{const st=chState(c),bp=bestPct(c);return`<div class="plate ${st==='locked'?'lock':st}" onclick="openChapterPanel(${c.chapter})"><span class="seal">${st==='done'?treasureOf(c.chapter):st==='part'?'🕯':st==='lock'||st==='locked'?'🔒':'✦'}</span><div class="num">${roman(c.chapter)}</div><div class="t">${esc(c.title)}</div><div class="m">${st==='lock'?'Not yet hung':st==='locked'?'Locked':st==='open'?'Open now':st==='part'?'Half studied · '+bp+'%':'Relic claimed · '+bp+'%'}</div></div>`}).join('')}</div>`;
 }
 function openChapterPanel(ch){
   const c=S.subject.chapters.find(x=>x.chapter===ch),t=S.theme; if(!c)return; snd('tick');
   const p1=S.progress[ch+'-1'],p2=S.progress[ch+'-2'];const vids=S.videos.filter(v=>v.chapter===ch);
-  const qb=(q,p,n,label,desc)=>n===0?`<div class="qb lock"><div class="k">Quiz ${q} · ${label}</div><div class="big">Coming soon</div><div class="m">${desc}</div></div>`:`<div class="qb" onclick="startQuiz(${ch},${q})"><div class="k">Quiz ${q} · ${label}</div><div class="big">${p?`Best ${p.best}/${p.total} · ↻ play again`:'▶ Play'}</div><div class="m">${desc}${p?` · ${p.attempts} attempt${p.attempts>1?'s':''}`:''}</div></div>`;
+  const qb=(q,p,label,desc)=>{const st=qState(ch,q);
+    if(st==='none')return`<div class="qb lock"><div class="k">Quiz ${q} · ${label}</div><div class="big">Coming soon</div><div class="m">${desc}</div></div>`;
+    if(st==='done')return`<div class="qb done"><div class="k">Quiz ${q} · ${label}</div><div class="big">✅ ${p.best}/${p.total}</div><div class="m">${desc} · taken (one attempt only)</div></div>`;
+    if(st==='open')return`<div class="qb open" onclick="startQuiz(${ch},${q})"><div class="k">Quiz ${q} · ${label}</div><div class="big">▶ Play — open now</div><div class="m">${desc} · one attempt, 10 stops</div></div>`;
+    return`<div class="qb lock"><div class="k">Quiz ${q} · ${label}</div><div class="big">🔒 Locked</div><div class="m">${desc} · finish ${S.next?esc(t.chapterWord)+' '+S.next.chapter+' · Quiz '+S.next.quiz:'the earlier levels'} first</div></div>`};
+  const done=chDone(c);
   $('#chPanel').innerHTML=`<div class="card" id="chCard"><div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start"><div><div class="k">${esc(t.chapterWord)} ${ch} · ${esc(c.clos||'')}</div><h2 style="margin:4px 0 0">${esc(c.title)}</h2></div><button class="btn g s" onclick="$('#chPanel').innerHTML=''">close</button></div>
-  <div class="quizbtns">${qb(1,p1,c.q1,'Ideas','Understand the chapter')}${qb(2,p2,c.q2,'Applied','Apply & analyse cases')}</div>
+  <div class="goalline">${done?`<span class="tre got big">${treasureOf(ch)}</span> <b>${esc(t.treasureWord)} collected!</b> You finished both quizzes of this ${esc(t.chapterWord).toLowerCase()}.`:`<span class="tre big"><i>?</i></span> <b>Goal:</b> win the ${esc(t.treasureWord)} of this ${esc(t.chapterWord).toLowerCase()} by completing Quiz 1 and Quiz 2.`}</div>
+  <div class="quizbtns">${qb(1,p1,'Ideas','Understand the chapter')}${qb(2,p2,'Applied','Apply & analyse cases')}</div>
   ${vids.length?`<div class="k" style="margin:10px 0 8px">🎬 Class video${vids.length>1?'s':''}</div><div class="vidgrid">${vids.map(vidCard).join('')}</div>`:'<div class="m" style="font-size:12px;color:var(--muted)">No class video for this chapter yet.</div>'}</div>`;
   $('#chCard').scrollIntoView({behavior:'smooth',block:'start'});
 }
@@ -410,7 +430,7 @@ async function sha(s){const b=await crypto.subtle.digest('SHA-256',enc.encode(s)
 async function startQuiz(ch,q){
   S.chapter=ch;S.quiz=q;S.answers={};S.idx=0;S.streak=0;S.bestStreak=0;S.xp=0;S.locked=false;S.retries=0;S.tries=0;S.studied=0;const c=S.subject.chapters.find(x=>x.chapter===ch);
   $('#qzK').textContent=`${S.subject.code} · ${S.theme.chapterWord} ${ch} · Quiz ${q} · ${q===1?'Ideas':'Applied'} · ${c.title}`;$('#qbox').innerHTML='<div class="qcard"><span class="spin"></span> Shuffling your questions…</div>';$('#qzErr').innerHTML='';$('#journey').innerHTML='';go('quiz');
-  try{ const j=await api('getQuiz',{subject:S.subject.code,chapter:ch,quiz:q,n:10}); S.questions=j.questions; S.salt=j.salt||''; }
+  try{ const j=await api('getQuiz',{subject:S.subject.code,chapter:ch,quiz:q,n:10,studentId:S.student.studentId}); S.questions=j.questions; S.salt=j.salt||''; }
   catch(e){ $('#qbox').innerHTML=`<div class="err">${esc(e.message)}</div>`; return; }
   // pre-compute which option is correct (salted hash from the server)
   const prep=async x=>{ x.correctIdx=-1; if(x.h&&S.salt){ const hs=await Promise.all(x.options.map(o=>sha(S.salt+'|'+o))); x.correctIdx=hs.indexOf(x.h);} };
@@ -418,7 +438,7 @@ async function startQuiz(ch,q){
   buildJourney();
   S.start=Date.now();startTimer();updateHud();showQ();snd('start');
 }
-const TRAV={drive:{icon:'🚗',goal:'🏁',goalWord:'Finish line',stop:'Checkpoint',blocked:'Road blocked — try another way',clear:'Road clear — drive on!'},island:{icon:'🛵',goal:'🏕',goalWord:'Base camp',stop:'Place',blocked:'Wrong path — try another trail',clear:'Trail found — ride on!'},gallery:{icon:'🕯',goal:'🏆',goalWord:'Great Hall',stop:'Hall',blocked:'That door is locked — try another',clear:'Door opens — walk on'}};
+const TRAV={drive:{icon:'🚗',goal:'🏆',goalWord:'Trophy',stop:'Checkpoint',blocked:'Road blocked — try another way',clear:'Road clear — drive on!'},island:{icon:'🛵',goal:'💰',goalWord:'Treasure',stop:'Place',blocked:'Wrong path — try another trail',clear:'Trail found — ride on!'},gallery:{icon:'🕯',goal:'👑',goalWord:'Relic',stop:'Hall',blocked:'That door is locked — try another',clear:'Door opens — walk on'}};
 function trav(){return TRAV[document.body.className.replace('t-','')]||TRAV.drive}
 function nodeX(i){const n=S.questions.length;return 4+92*i/n}
 function buildJourney(){const n=S.questions.length,t=trav();$('#journey').innerHTML=`<div class="track"></div>${S.questions.map((q,i)=>`<div class="node" id="node${i}" style="left:${nodeX(i)}%">${i+1}<span class="lbl">§${esc(q.sec)}</span></div>`).join('')}<div class="node goal" id="node${n}" style="left:${nodeX(n)}%">${t.goal}<span class="lbl">${t.goalWord}</span></div><div class="trav" id="trav" style="left:${nodeX(0)}%">${t.icon}</div>`}
@@ -437,7 +457,8 @@ function renderStopQ(){
 function pick(i){
   if(S.locked)return; const p=S.questions[S.idx], x=curQ(); const known=x.correctIdx>=0; const t=trav();
   const secs=(Date.now()-S.qStart)/1000; const first=S.tries===0;
-  if(first) S.answers[p.id]={chosen:x.options[i],ok:known?i===x.correctIdx:true,done:false}; // official mark = first answer to the primary question only
+  if(first) S.answers[p.id]={chosen:x.options[i],ok:known?i===x.correctIdx:true,done:false,chances:[],studied:false}; // official mark = first answer to the primary question only
+  S.answers[p.id].chances.push({id:x.id,chosen:x.options[i],seconds:Math.round(secs)});
   const last=S.idx===S.questions.length-1;
   const ok=known?i===x.correctIdx:true;
   S.locked=true;
@@ -452,7 +473,7 @@ function pick(i){
       updateHud(); setTimeout(()=>$('#nextBtn')?.focus(),50); return;
     }
     // all chances used → study card, then move on (0 XP)
-    S.answers[p.id].done=true; S.studied=(S.studied||0)+1;
+    S.answers[p.id].done=true; S.answers[p.id].studied=true; S.studied=(S.studied||0)+1;
     document.querySelectorAll('.opt').forEach((bb,k)=>{if(k===x.correctIdx)bb.classList.add('ok');else bb.classList.add('dim')});
     const lessons=p.chain.filter(q=>q.correctIdx>=0).map(q=>`<li><b>${esc(q.stem)}</b><br><span style="color:var(--ok)">${esc(q.options[q.correctIdx])}</span>${q.why?`<br><span class="why">${esc(q.why)}</span>`:''}</li>`).join('');
     $('#verdict').innerHTML=`<div class="verdict bad study"><div class="h">📖 Study stop</div><div>Every way to this idea was blocked. Read the explanations below carefully — the road opens only after you have studied them.</div><ul class="lessons">${lessons}</ul><p style="margin:12px 0 0"><button class="btn" id="nextBtn" disabled onclick="next()">Read first… <span id="studyCount">15</span>s</button></p></div>`;
@@ -479,7 +500,8 @@ function stopTimer(){if(tInt)clearInterval(tInt);tInt=null}
 async function finish(auto){
   stopTimer(); $('#qbox').innerHTML='<div class="qcard"><span class="spin"></span> Saving your score…</div>';
   try{
-    const j=await api('submit',{studentId:S.student.studentId,subject:S.subject.code,chapter:S.chapter,quiz:S.quiz,seconds:Math.round((Date.now()-S.start)/1000),answers:S.questions.map(q=>({id:q.id,chosen:S.answers[q.id]?.chosen||''}))});
+    const j=await api('submit',{studentId:S.student.studentId,subject:S.subject.code,chapter:S.chapter,quiz:S.quiz,seconds:Math.round((Date.now()-S.start)/1000),answers:S.questions.map(q=>({id:q.id,chosen:S.answers[q.id]?.chosen||'',chances:S.answers[q.id]?.chances||[],studied:!!S.answers[q.id]?.studied}))});
+    S.progress[S.chapter+'-'+S.quiz]={best:j.score,attempts:1,total:j.total}; S.next=j.next||null; S.allDone=!!j.allDone;
     renderResult(j);go('result');snd('done');if(j.score/j.total>=.7)confetti(260);
   }catch(e){ $('#qbox').innerHTML=`<div class="err">Could not save: ${esc(e.message)}</div><p><button class="btn" onclick="finish()">Try saving again</button></p>`; }
 }
@@ -490,12 +512,15 @@ function renderResult(j){
   const secs=Math.round((Date.now()-S.start)/1000);
   $('#resHead').innerHTML=`<div class="card"><div class="k">${esc(S.subject.code)} · ${esc(t.chapterWord)} ${S.chapter} · Quiz ${S.quiz} · ${S.quiz===1?'Ideas':'Applied'} · attempt ${j.attemptNo} · saved as ${esc(j.codename)}</div>
   <div class="resgrid"><div class="ringwrap"><svg width="200" height="200" viewBox="0 0 200 200"><circle class="c" cx="100" cy="100" r="90"/><circle class="v" id="ringv" cx="100" cy="100" r="90"/></svg><div class="num">${pct}%</div></div>
-  <div><div class="k">${S.idx>=S.questions.length?'You reached the goal! · your rank':'Your rank this round'}</div><div class="rank">${esc(rank)}</div><div class="chips"><span class="chip">🎯 ${j.score}/${j.total} correct</span><span class="chip">✨ ${S.xp} XP</span><span class="chip">🔥 best streak ${S.bestStreak}</span><span class="chip">🚧 ${S.retries} wrong turn${S.retries===1?'':'s'}</span>${S.studied?`<span class="chip">📖 ${S.studied} study stop${S.studied===1?'':'s'}</span>`:''}<span class="chip">⏱ ${Math.floor(secs/60)}m ${secs%60}s</span>${j.attemptNo>1?`<span class="chip">🏅 your best: ${j.best}/${j.total}</span>`:''}</div><p style="color:var(--muted);margin:6px 0 0">${clo}.<br>Your mark counts only your <b>first</b> answer at each stop. ${wrong===0?'No wrong turns on the first try — a perfect journey.':`${wrong} stop${wrong>1?'s':''} needed another way; each is explained below with the slide section to re-read. Play again to make a clean run.`}</p></div></div></div>`;
+  <div><div class="k">${S.idx>=S.questions.length?'You reached the goal! · your rank':'Your rank this round'}</div><div class="rank">${esc(rank)}</div><div class="chips"><span class="chip">🎯 ${j.score}/${j.total} correct</span><span class="chip">✨ ${S.xp} XP</span><span class="chip">🔥 best streak ${S.bestStreak}</span><span class="chip">🚧 ${S.retries} wrong turn${S.retries===1?'':'s'}</span>${S.studied?`<span class="chip">📖 ${S.studied} study stop${S.studied===1?'':'s'}</span>`:''}<span class="chip">⏱ ${Math.floor(secs/60)}m ${secs%60}s</span>${j.attemptNo>1?`<span class="chip">🏅 your best: ${j.best}/${j.total}</span>`:''}</div><p style="color:var(--muted);margin:6px 0 0">${clo}.<br>Your mark counts only your <b>first</b> answer at each stop. ${wrong===0?'No wrong turns on the first try — a perfect journey.':`${wrong} stop${wrong>1?'s':''} needed another way; each is explained below with the slide section to re-read.`}</p></div></div></div>`;
   setTimeout(()=>{$('#ringv').style.strokeDashoffset=565-565*pct/100},60);
+  const c=S.subject.chapters.find(x=>x.chapter===S.chapter); const gotTreasure=chDone(c);
+  $('#resHead').innerHTML+=(gotTreasure?`<div class="card reward"><span class="tre got big">${treasureOf(S.chapter)}</span><div><div class="k">${esc(t.chapterWord)} ${S.chapter} complete</div><b>You won the ${esc(t.treasureWord)} of this ${esc(t.chapterWord).toLowerCase()}!</b><div style="color:var(--muted)">${treasureCount()} of ${S.subject.chapters.length} ${esc(t.treasureWord)}s collected.</div></div></div>`:'')+
+    (S.allDone?`<div class="badge"><div class="medal">🎖️</div><div><div class="k">Subject badge unlocked</div><div class="bt">${esc(t.badge)} · Expert in ${esc(S.subject.title)}</div><div class="bm">You have completed every level of ${esc(S.subject.code)}. You are now ready to go to the market and show your skills.</div></div></div>`:'');
+  $('#resBtns').innerHTML=(S.next?`<button class="btn" onclick="startQuiz(${S.next.chapter},${S.next.quiz})">Next level → ${esc(t.chapterWord)} ${S.next.chapter} · Quiz ${S.next.quiz}</button> `:'')+`<button class="btn g" onclick="openChapters()">Back to the map</button> <button class="btn g" onclick="openDash()">📊 Dashboard</button>`;
   $('#revTitle').textContent=wrong?'Your wrong turns & the right way':'Your journey log';
   $('#review').innerHTML=j.items.map((i,n)=>`<div class="q ${i.ok?'':'bad'}"><div class="k">Stop ${n+1} · ${esc(i.clo)} · §${esc(i.sec)} · ${i.ok?'<span style="color:var(--ok)">✓ first try</span>':'<span style="color:var(--bad)">✗ wrong turn first</span>'}</div><div class="stem">${esc(i.stem)}</div>${i.ok?'':`<div style="color:var(--bad);font-size:14px">Your first answer: ${i.chosen?esc(i.chosen):'(not answered)'}</div>`}<div style="color:var(--ok);font-size:14px">Correct answer: ${esc(i.correct)}</div><div style="color:var(--muted);font-size:13px;margin-top:6px"><b>Why:</b> ${esc(i.why)}</div></div>`).join('');
 }
-function retry(){startQuiz(S.chapter,S.quiz)}
 
 /* ================= juice: confetti, floats, toasts, sound ================= */
 const cv=$('#confetti'),cx=cv.getContext('2d');let parts=[],cRaf=null;

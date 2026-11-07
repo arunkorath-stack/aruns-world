@@ -14,7 +14,8 @@ const SHEETS = {
   Questions: ['id','subject','chapter','quiz','bloom','clo','sec','stem','opt1','opt2','opt3','opt4','answer','why','status','created'],
   Videos:    ['id','subject','chapter','title','url','minutes','added'],
   Students:  ['studentId','name','codename','subject','firstSeen','lastSeen'],
-  Attempts:  ['attemptId','when','studentId','codename','subject','chapter','quiz','score','total','seconds','attemptNo','detail']
+  Attempts:  ['attemptId','when','studentId','codename','subject','chapter','quiz','score','total','seconds','attemptNo','detail'],
+  Answers:   ['attemptId','when','studentId','codename','subject','chapter','quiz','stop','chance','questionId','sec','clo','chosen','correct','ok','seconds','studied']
 };
 const ANIMALS = ['Falcon','Oryx','Gazelle','Dhow','Camel','Saker','Houbara','Pearl','Dune','Mangrove','Ghaf','Palm','Coral','Sidr','Oud','Sand','Wadi','Hawk','Ibex','Saluki'];
 
@@ -33,7 +34,7 @@ function setup() {
 }
 
 /* ---------- helpers ---------- */
-function sh(name){ return SpreadsheetApp.getActiveSpreadsheet().getSheetByName(name); }
+function sh(name){ const ss=SpreadsheetApp.getActiveSpreadsheet(); let s=ss.getSheetByName(name); if(!s&&SHEETS[name]){ s=ss.insertSheet(name); s.appendRow(SHEETS[name]); s.setFrozenRows(1); } return s; }
 function rows(name){ const s=sh(name); const v=s.getDataRange().getValues(); const h=v.shift(); return v.filter(r=>r.join('')!=='').map(r=>Object.fromEntries(h.map((k,i)=>[k,r[i]]))); }
 function appendObj(name,obj){ sh(name).appendRow(SHEETS[name].map(k=>obj[k]===undefined?'':obj[k])); }
 function out(obj){ return ContentService.createTextOutput(JSON.stringify(obj)).setMimeType(ContentService.MimeType.JSON); }
@@ -88,8 +89,22 @@ function uniqueCodename(id){
   while(used.has(c)){ k++; c=codenameFor(id+'#'+k); }
   return c;
 }
+/* levels: ordered list of (chapter,quiz) that have published questions; a student may only play the first one not yet attempted */
+function levelsFor(subject){
+  const qs=rows('Questions').filter(q=>q.subject===subject&&q.status==='published');
+  const chs=rows('Chapters').filter(c=>c.subject===subject&&String(c.active).toLowerCase()!=='false').map(c=>+c.chapter).sort((a,b)=>a-b);
+  const lv=[]; chs.forEach(ch=>[1,2].forEach(qz=>{ if(qs.filter(q=>+q.chapter===ch&&+q.quiz===qz).length>=4) lv.push({chapter:ch,quiz:qz}); }));
+  return lv;
+}
+function nextLevel(subject,studentId){
+  const id=String(studentId||'').trim().toUpperCase();
+  const done=new Set(rows('Attempts').filter(r=>r.subject===subject&&String(r.studentId).trim().toUpperCase()===id).map(r=>r.chapter+'-'+r.quiz));
+  const lv=levelsFor(subject); const nxt=lv.find(l=>!done.has(l.chapter+'-'+l.quiz))||null;
+  return {levels:lv,done:[...done],next:nxt,allDone:lv.length>0&&!nxt};
+}
 function getQuiz(p){
   const subject=p.subject, chapter=+p.chapter, quiz=+p.quiz, n=+(p.n||10);
+  if(p.studentId){ const nl=nextLevel(subject,p.studentId); if(nl.done.indexOf(chapter+'-'+quiz)>=0) return {error:'You have already taken this quiz. Each quiz can be attempted only once.'}; if(!nl.next||nl.next.chapter!==chapter||nl.next.quiz!==quiz) return {error:'This level is locked. Finish the earlier levels first.'}; }
   const pool=rows('Questions').filter(q=>q.subject===subject&&+q.chapter===chapter&&+q.quiz===quiz&&q.status==='published');
   if(pool.length<4) return {error:'This quiz is not published yet.'};
   const pick=shuffle(pool.slice()).slice(0,Math.min(n,pool.length));
@@ -106,26 +121,35 @@ function submit(p){
   const id=String(p.studentId||'').trim(); if(!id) return {error:'studentId required'};
   const st=rows('Students').find(r=>String(r.studentId).trim().toUpperCase()===id.toUpperCase()); if(!st) return {error:'Please sign in first.'};
   const subject=p.subject, chapter=+p.chapter, quiz=+p.quiz;
-  const bank={}; rows('Questions').filter(q=>q.subject===subject&&+q.chapter===chapter&&+q.quiz===quiz).forEach(q=>bank[q.id]=q);
-  const answers=Array.isArray(p.answers)?p.answers:[];
-  let score=0; const items=answers.map(a=>{
-    const q=bank[a.id]; if(!q) return null;
-    const correct=String(q['opt'+(+q.answer+1)]); const ok=String(a.chosen||'')===correct; if(ok) score++;
-    return {id:q.id,stem:q.stem,sec:q.sec,clo:q.clo,bloom:q.bloom,chosen:a.chosen||'',correct,ok,why:q.why};
-  }).filter(Boolean);
-  const total=items.length;
-  const prev=rows('Attempts').filter(r=>String(r.studentId).trim().toUpperCase()===id.toUpperCase()&&r.subject===subject&&+r.chapter===chapter&&+r.quiz===quiz);
-  const attemptNo=prev.length+1;
-  const best=Math.max(score,...prev.map(r=>+r.score));
-  appendObj('Attempts',{attemptId:Utilities.getUuid(),when:new Date(),studentId:st.studentId,codename:st.codename,subject,chapter,quiz,score,total,seconds:+(p.seconds||0),attemptNo,detail:JSON.stringify(items.map(i=>({id:i.id,chosen:i.chosen,ok:i.ok})))});
-  const byClo={}; items.forEach(i=>{byClo[i.clo]=byClo[i.clo]||{ok:0,n:0}; byClo[i.clo].n++; if(i.ok)byClo[i.clo].ok++;});
-  return {score,total,attemptNo,best,codename:st.codename,byClo,items};
+  const lock=LockService.getScriptLock(); lock.waitLock(20000);
+  try{
+    const nl=nextLevel(subject,id);
+    if(nl.done.indexOf(chapter+'-'+quiz)>=0) return {error:'You have already taken this quiz. Each quiz can be attempted only once.'};
+    if(!nl.next||nl.next.chapter!==chapter||nl.next.quiz!==quiz) return {error:'This level is locked. Finish the earlier levels first.'};
+    const bank={}; rows('Questions').filter(q=>q.subject===subject&&+q.chapter===chapter&&+q.quiz===quiz).forEach(q=>bank[q.id]=q);
+    const answers=Array.isArray(p.answers)?p.answers:[];
+    const attemptId=Utilities.getUuid(), now=new Date();
+    let score=0; const items=answers.map((a,stop)=>{
+      const q=bank[a.id]; if(!q) return null;
+      const correct=String(q['opt'+(+q.answer+1)]); const ok=String(a.chosen||'')===correct; if(ok) score++;
+      // record the primary answer and every alternative chance for this stop
+      const chances=Array.isArray(a.chances)&&a.chances.length?a.chances:[{id:a.id,chosen:a.chosen||'',seconds:a.seconds||0}];
+      chances.forEach((c,ci)=>{ const cq=bank[c.id]; if(!cq) return; const cc=String(cq['opt'+(+cq.answer+1)]); appendObj('Answers',{attemptId,when:now,studentId:st.studentId,codename:st.codename,subject,chapter,quiz,stop:stop+1,chance:ci+1,questionId:cq.id,sec:cq.sec,clo:cq.clo,chosen:c.chosen||'',correct:cc,ok:String(c.chosen||'')===cc,seconds:+(c.seconds||0),studied:a.studied?true:false}); });
+      return {id:q.id,stem:q.stem,sec:q.sec,clo:q.clo,bloom:q.bloom,chosen:a.chosen||'',correct,ok,why:q.why,chances:chances.length,studied:!!a.studied};
+    }).filter(Boolean);
+    const total=items.length; const attemptNo=1; const best=score;
+    appendObj('Attempts',{attemptId,when:now,studentId:st.studentId,codename:st.codename,subject,chapter,quiz,score,total,seconds:+(p.seconds||0),attemptNo,detail:JSON.stringify(items.map(i=>({id:i.id,chosen:i.chosen,ok:i.ok,chances:i.chances,studied:i.studied})))});
+    const byClo={}; items.forEach(i=>{byClo[i.clo]=byClo[i.clo]||{ok:0,n:0}; byClo[i.clo].n++; if(i.ok)byClo[i.clo].ok++;});
+    const after=nextLevel(subject,id);
+    return {score,total,attemptNo,best,codename:st.codename,byClo,items,next:after.next,allDone:after.allDone,levels:after.levels.length,done:after.done.length};
+  } finally { lock.releaseLock(); }
 }
 function myProgress(p){
   const id=String(p.studentId||'').trim().toUpperCase();
   const at=rows('Attempts').filter(r=>String(r.studentId).trim().toUpperCase()===id&&(!p.subject||r.subject===p.subject));
   const prog={}; at.forEach(r=>{const k=r.chapter+'-'+r.quiz; prog[k]=prog[k]||{best:0,attempts:0,total:+r.total}; prog[k].attempts++; prog[k].best=Math.max(prog[k].best,+r.score); prog[k].total=+r.total;});
-  return {progress:prog};
+  const nl=p.subject?nextLevel(p.subject,id):{levels:[],next:null,allDone:false,done:[]};
+  return {progress:prog,levels:nl.levels,next:nl.next,allDone:nl.allDone};
 }
 function videos(p){ return {videos:rows('Videos').filter(v=>v.subject===p.subject).map(v=>({id:v.id,chapter:v.chapter===''?0:+v.chapter,title:v.title,url:String(v.url),minutes:v.minutes}))}; }
 function dashboard(p){
@@ -166,10 +190,10 @@ function setQuestion(p){
 }
 function deleteQuestion(p){ const s=sh('Questions'); const data=s.getDataRange().getValues(); for(let i=data.length-1;i>=1;i--){ if(data[i][0]===p.id){ s.deleteRow(i+1); return {ok:true}; } } return {error:'not found'}; }
 function listStudents(p){ return {students:rows('Students').filter(s=>!p.subject||s.subject===p.subject||true)}; }
-function exportAttempts(p){ return {attempts:rows('Attempts').filter(r=>!p.subject||r.subject===p.subject), students:rows('Students')}; }
+function exportAttempts(p){ return {attempts:rows('Attempts').filter(r=>!p.subject||r.subject===p.subject), answers:rows('Answers').filter(r=>!p.subject||r.subject===p.subject), students:rows('Students')}; }
 function addVideo(p){ const id='V-'+Utilities.getUuid().slice(0,8); appendObj('Videos',{id,subject:p.subject,chapter:p.chapter||'',title:p.title,url:p.url,minutes:p.minutes||'',added:new Date()}); return {ok:true,id}; }
 function deleteVideo(p){ const s=sh('Videos'); const data=s.getDataRange().getValues(); for(let i=data.length-1;i>=1;i--){ if(data[i][0]===p.id){ s.deleteRow(i+1); return {ok:true}; } } return {error:'not found'}; }
 function upsertSubject(p){ const s=sh('Subjects'); const data=s.getDataRange().getValues(); for(let i=1;i<data.length;i++){ if(data[i][0]===p.code){ s.getRange(i+1,1,1,5).setValues([[p.code,p.title,p.term||data[i][2],p.sort||data[i][3],p.active===undefined?data[i][4]:p.active]]); return {ok:true}; } } appendObj('Subjects',{code:p.code,title:p.title,term:p.term||'',sort:p.sort||99,active:true}); return {ok:true,created:true}; }
 function upsertChapter(p){ const s=sh('Chapters'); const data=s.getDataRange().getValues(); for(let i=1;i<data.length;i++){ if(data[i][0]===p.subject&&+data[i][1]===+p.chapter){ s.getRange(i+1,3,1,3).setValues([[p.title||data[i][2],p.clos||data[i][3],p.active===undefined?data[i][4]:p.active]]); return {ok:true}; } } appendObj('Chapters',{subject:p.subject,chapter:+p.chapter,title:p.title||('Chapter '+p.chapter),clos:p.clos||'',active:true}); return {ok:true,created:true}; }
-function voidAttempt(p){ const s=sh('Attempts'); const data=s.getDataRange().getValues(); for(let i=data.length-1;i>=1;i--){ if(data[i][0]===p.attemptId){ s.deleteRow(i+1); return {ok:true}; } } return {error:'not found'}; }
+function voidAttempt(p){ const s=sh('Attempts'); const data=s.getDataRange().getValues(); let found=false; for(let i=data.length-1;i>=1;i--){ if(data[i][0]===p.attemptId){ s.deleteRow(i+1); found=true; } } const a=sh('Answers'); const d2=a.getDataRange().getValues(); for(let i=d2.length-1;i>=1;i--){ if(d2[i][0]===p.attemptId) a.deleteRow(i+1); } return found?{ok:true}:{error:'not found'}; }
 function stats(){ return {subjects:rows('Subjects').length,chapters:rows('Chapters').length,questions:rows('Questions').length,published:rows('Questions').filter(q=>q.status==='published').length,videos:rows('Videos').length,students:rows('Students').length,attempts:rows('Attempts').length}; }
