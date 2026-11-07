@@ -185,6 +185,51 @@ function loop() {
 function resize() { if (!R) return; const w = R.el.clientWidth, h = R.el.clientHeight; if (!w || !h || (w === R.lastW && h === R.lastH)) return; R.lastW = w; R.lastH = h; R.renderer.setSize(w, h); R.camera.aspect = w / h; R.camera.updateProjectionMatrix(); }
 function destroy() { if (!R) return; cancelAnimationFrame(R.raf); R.ro && R.ro.disconnect(); R.renderer.dispose(); R.scene.traverse(o => { if (o.geometry) o.geometry.dispose(); if (o.material) { (Array.isArray(o.material) ? o.material : [o.material]).forEach(m => { if (m.map) m.map.dispose(); m.dispose(); }); } }); R.el.innerHTML = ''; R = null; }
 
+
+/* ---------- 3D cut-scene stage ---------- */
+const STAGE_BG = {
+  office:{sky:0x24324f,floor:0x3a4a70,light:0xdfe8ff}, cafe:{sky:0x4a2e1b,floor:0x7a5a3a,light:0xffd9a0}, hospital:{sky:0xcfe8f3,floor:0xdde9ee,light:0xffffff},
+  factory:{sky:0x2b2f33,floor:0x4b5259,light:0xcfd8ff}, shop:{sky:0xf6e7c8,floor:0xd9b36b,light:0xfff2c8}, street:{sky:0x0f1b3a,floor:0x2a2f45,light:0xffe0a0},
+  meeting:{sky:0x2a2140,floor:0x4a3b70,light:0xe8dcff}, mountain:{sky:0x0a0d1f,floor:0x3b3a2a,light:0xcbd5ff}, fortress:{sky:0x120a0a,floor:0x3a2a1a,light:0xff9b2f},
+  camp:{sky:0x0b0f1f,floor:0x3a3020,light:0xff9b2f}, sea:{sky:0x9fd0ff,floor:0xe3c77f,light:0xffffff}, village:{sky:0x4a1c0f,floor:0x2a1a10,light:0xff8a3a},
+  hotel:{sky:0x2a1e3a,floor:0x6a4a7a,light:0xffe6c0}, school:{sky:0x1e3a2a,floor:0x4a7a4a,light:0xe8ffe0}, airport:{sky:0x1a2a3a,floor:0x6a8aaa,light:0xffffff},
+  home:{sky:0x3a2a2a,floor:0x7a5a50,light:0xffd9b0}, lab:{sky:0x0f2a2a,floor:0x2a6a6a,light:0xd0ffff}, bank:{sky:0x1a2238,floor:0x3a4a6a,light:0xe0e8ff},
+  kitchen:{sky:0x3a2415,floor:0x8a6a4a,light:0xffe0b0}, warehouse:{sky:0x23262b,floor:0x55595f,light:0xdde3ff}, '':{sky:0x1b1430,floor:0x2a1646,light:0xd9c6ff}
+};
+let ST = null;
+function stageMount(el, opts) {
+  stageDestroy();
+  const bg = STAGE_BG[opts.bg] || STAGE_BG['']; const w = el.clientWidth || 600, h = el.clientHeight || 260;
+  const renderer = new THREE.WebGLRenderer({ antialias: true }); renderer.setPixelRatio(Math.min(devicePixelRatio, 2)); renderer.setSize(w, h); renderer.outputColorSpace = THREE.SRGBColorSpace;
+  renderer.domElement.style.cssText = 'display:block;width:100%;height:100%'; el.appendChild(renderer.domElement);
+  const scene = new THREE.Scene(); scene.background = new THREE.Color(bg.sky); scene.fog = new THREE.Fog(bg.sky, 12, 30);
+  const camera = new THREE.PerspectiveCamera(38, w / h, .1, 100); camera.position.set(0, 2.6, 8.5); camera.lookAt(0, 1.1, 0);
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(60, 60), new THREE.MeshStandardMaterial({ color: bg.floor, roughness: .95 })); floor.rotation.x = -Math.PI / 2; scene.add(floor);
+  // a soft spotlit circle under the cast
+  const disc = new THREE.Mesh(new THREE.CircleGeometry(4.5, 48), new THREE.MeshStandardMaterial({ color: bg.floor, emissive: bg.light, emissiveIntensity: .12 })); disc.rotation.x = -Math.PI / 2; disc.position.y = .01; scene.add(disc);
+  scene.add(new THREE.AmbientLight(0xffffff, .55)); const key = new THREE.DirectionalLight(bg.light, 1.4); key.position.set(4, 8, 6); scene.add(key); const rim = new THREE.PointLight(bg.light, 6, 20); rim.position.set(-4, 4, -3); scene.add(rim);
+  // props as big faded sprites around the stage
+  (opts.props || []).forEach((e, i) => { const sp = sprite(emojiTexture(e), 2.2, 2.2); sp.material.opacity = .9; const a = -1.2 + i * (2.4 / Math.max(1, (opts.props.length - 1))); sp.position.set(Math.sin(a) * 7.5, 1.6 + (i % 2) * 1.2, -5 - Math.cos(a) * 2); scene.add(sp); });
+  // actors
+  const actors = []; const n = opts.actors.length; const cols = [0xc66bff, 0xff8a5c, 0x48e39b, 0x5b48ff, 0xffd166, 0xef476f];
+  opts.actors.forEach((a, i) => {
+    const g = new THREE.Group(); const x = n === 1 ? 0 : -3.2 + i * (6.4 / (n - 1)); g.position.set(x, 0, (i % 2) * -.6);
+    const body = new THREE.Mesh(new THREE.CapsuleGeometry(.42, .9, 6, 12), new THREE.MeshStandardMaterial({ color: cols[i % cols.length], roughness: .6 })); body.position.y = 1.05; g.add(body);
+    const head = sprite(emojiTexture(a.emoji), 1.25, 1.25); head.position.y = 2.25; g.add(head);
+    const feet = new THREE.Mesh(new THREE.CircleGeometry(.5, 24), new THREE.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: .25 })); feet.rotation.x = -Math.PI / 2; feet.position.y = .02; g.add(feet);
+    g.userData = { phase: i, talk: false, head }; scene.add(g); actors.push(g);
+  });
+  ST = { el, renderer, scene, camera, actors, t0: performance.now(), raf: null, dolly: 0 };
+  const loop = () => { if (!ST) return; ST.raf = requestAnimationFrame(loop); const t = (performance.now() - ST.t0) / 1000;
+    ST.actors.forEach((g, i) => { const tk = g.userData.talk; g.position.y = tk ? Math.abs(Math.sin(t * 9 + i)) * .12 : Math.sin(t * 1.6 + i) * .03; g.rotation.y = tk ? Math.sin(t * 6) * .12 : Math.sin(t * .8 + i) * .06; g.scale.setScalar(tk ? 1.08 : 1); g.userData.head.material.opacity = tk || !ST.anyTalk ? 1 : .6; });
+    ST.camera.position.x = Math.sin(t * .18) * 1.4; ST.camera.position.y = 2.6 + Math.sin(t * .25) * .2; ST.camera.lookAt(0, 1.2, 0); ST.renderer.render(ST.scene, ST.camera); if (ST.onFrame) ST.onFrame(); };
+  loop(); ST.ro = new ResizeObserver(() => { if (!ST) return; const w2 = el.clientWidth, h2 = el.clientHeight; if (!w2 || !h2) return; ST.renderer.setSize(w2, h2); ST.camera.aspect = w2 / h2; ST.camera.updateProjectionMatrix(); }); ST.ro.observe(el);
+  return true;
+}
+function stageTalk(i) { if (!ST) return; ST.anyTalk = i >= 0; ST.actors.forEach((g, k) => g.userData.talk = (k === i)); }
+function stageAnchor(i) { if (!ST || !ST.actors[i]) return null; const v = new THREE.Vector3(0, 2.95, 0); ST.actors[i].localToWorld(v); v.project(ST.camera); const w = ST.el.clientWidth, h = ST.el.clientHeight; return { x: (v.x + 1) / 2 * w, y: (1 - v.y) / 2 * h }; }
+function stageDestroy() { if (!ST) return; cancelAnimationFrame(ST.raf); ST.ro && ST.ro.disconnect(); ST.renderer.dispose(); ST.scene.traverse(o => { if (o.geometry) o.geometry.dispose(); if (o.material) { (Array.isArray(o.material) ? o.material : [o.material]).forEach(m => { if (m.map) m.map.dispose(); m.dispose(); }); } }); if (ST.renderer.domElement.parentNode) ST.renderer.domElement.remove(); ST = null; }
+
 const G3D = {
   ok: (() => { try { const c = document.createElement('canvas'); return !!(window.WebGLRenderingContext && (c.getContext('webgl2') || c.getContext('webgl'))); } catch (e) { return false; } })(),
   mount(el, opts) { try { return build(el, opts); } catch (e) { console.warn('G3D mount failed', e); return false; } },
@@ -197,6 +242,7 @@ const G3D = {
   run(on) { if (R) R.run = !!on; },
   jump() { if (!R) return; R.jump = { t0: performance.now() / 1000, d: .9 }; },
   dash(el, opts) { return this.mount(el, Object.assign({ horizontal: true, chase: true }, opts)); },
+  stage(el, opts) { try { return stageMount(el, opts); } catch (e) { console.warn('stage failed', e); return false; } }, stageTalk, stageAnchor, stageDestroy, onStageFrame(fn) { if (ST) ST.onFrame = fn; },
   resize, destroy
 };
 window.G3D = G3D;

@@ -258,6 +258,8 @@ body.t-gallery .scene{--scenebg:linear-gradient(180deg,#0a0908 0,#1c1510 60%,#2d
 .scene .lbl{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc2)}
 .scene .ctl{position:absolute;right:10px;top:8px;display:flex;gap:6px;z-index:5}
 .scene .cast{display:flex;gap:10px;align-items:flex-end;justify-content:space-around;min-height:200px;padding-top:96px}
+.scene.s3d{padding:0;min-height:300px}.scene.s3d .stage3d{position:absolute;inset:0}.scene.s3d .lbl{position:absolute;left:12px;top:10px;z-index:3}.scene.s3d .cast{position:absolute;inset:0;display:block;padding:0;min-height:0;pointer-events:none}.scene.s3d .actor{position:absolute;width:auto;max-width:none;opacity:1;transform:none;text-align:center}.scene.s3d .actor .av,.scene.s3d .actor .nm{display:none}.scene.s3d .actor .bubble{position:absolute;left:50%;bottom:0;transform:translateX(-50%);max-width:min(340px,44vw)}.scene.s3d .actor .bubble:after{left:50%}.scene.s3d .names{position:absolute;left:0;right:0;bottom:64px;display:flex;justify-content:space-around;pointer-events:none;z-index:2}.scene.s3d .names span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:rgba(0,0,0,.45);padding:3px 8px;border-radius:999px}.scene.s3d .narr{position:absolute;left:12px;right:12px;bottom:14px;margin:0;background:rgba(0,0,0,.55);color:#fff;border:0;border-radius:10px;padding:8px 12px;z-index:3}.scene.s3d .prog{position:absolute;left:12px;right:12px;bottom:4px;margin:0;z-index:3}.scene.s3d .props{display:none}
+.qcard.revealed .scene.s3d{min-height:0;height:96px}.qcard.revealed .scene.s3d .cast{display:none}.qcard.revealed .scene.s3d .names{display:none}.qcard.revealed .scene.s3d .stage3d{opacity:.9}
 .actor{position:relative;text-align:center;width:31%;max-width:180px;transition:transform .3s,opacity .3s;opacity:.55}
 .actor.on{opacity:1;transform:translateY(-4px) scale(1.06)}
 .actor .av{font-size:48px;line-height:1;display:inline-block;animation:breathe 2.6s ease-in-out infinite;filter:drop-shadow(0 6px 8px rgba(0,0,0,.5))}
@@ -408,7 +410,7 @@ body.t-island .ringwrap .c{stroke:rgba(0,0,0,.12)}
 <footer>Questions are generated from the chapter decks and reviewed by the instructor. Practice quizzes are formative: they help you learn, they are not your exam. Problems? Tell Dr Korath in class.</footer>
 
 <script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js"}}</script>
-<script type="module" src="game3d.js?v=1"></script>
+<script type="module" src="game3d.js?v=2"></script>
 <script>
 /* ================= config & API ================= */
 let CFG={scriptUrl:''};
@@ -457,7 +459,7 @@ function setTheme(key){
 
 /* ================= nav ================= */
 function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.remove('on'));$('#v-'+v).classList.add('on');window.scrollTo(0,0);renderWho()}
-function goHub(){stopTimer();engine(false);if(window.G3D)G3D.destroy();S.g3d=false;setTheme(null);go('hub')}
+function goHub(){stopTimer();engine(false);if(window.G3D){G3D.destroy();G3D.stageDestroy();}S.g3d=false;setTheme(null);go('hub')}
 function renderWho(){$('#who').innerHTML=(S.student?`Playing as <b>${esc(S.student.codename)}</b> <button class="link" onclick="signOut()">not you?</button>`:'<span>Not signed in</span>')+`<button class="icon" title="sound" onclick="toggleMute()">${muted?'🔇':'🔊'}</button>`}
 function signOut(){localStorage.removeItem('qh_student');S.student=null;goHub()}
 function toggleMute(){muted=!muted;localStorage.setItem('qh_mute',muted?'1':'0');renderWho();if(muted){engine(false);hush();}else{snd('tick');if($('#v-quiz').classList.contains('on'))engine(true)}}
@@ -492,7 +494,7 @@ function chDone(c){return chState(c)==='done'}
 function treasureCount(){return S.subject.chapters.filter(chDone).length}
 function bestPct(c){const b=[S.progress[c.chapter+'-1'],S.progress[c.chapter+'-2']].filter(Boolean);return b.length?Math.round(100*b.reduce((a,p)=>a+p.best/p.total,0)/b.length):null}
 async function openChapters(){
-  stopTimer(); engine(false);if(window.G3D)G3D.destroy();S.g3d=false;go('chapters'); const s=S.subject,t=S.theme; $('#chPanel').innerHTML='';
+  stopTimer(); engine(false);if(window.G3D){G3D.destroy();G3D.stageDestroy();}S.g3d=false;go('chapters'); const s=S.subject,t=S.theme; $('#chPanel').innerHTML='';
   $('#chHead').innerHTML=`<h1>${esc(t.name)}</h1><p class="sub"><b>${esc(s.code)} · ${esc(s.title)}</b><br>${esc(t.tag)} Two quizzes per chapter: <b>Quiz 1 · Ideas</b> checks understanding, <b>Quiz 2 · Applied</b> makes you apply and analyse. Start with <b>any chapter you like</b>, in any order — but <b>each quiz can be taken only once</b>. <b>Quiz 2 is acted out</b>: characters play the situation in a short scene, then you make the call. Each quiz is a journey of 8 stops: answer correctly to move on; a wrong answer opens <b>another way</b> — a new question on the same idea — up to three times, then a study stop. Only your first answer at each stop counts for your mark.</p><div id="badgeBar"></div>`;
   $('#chScene').innerHTML='<span class="spin"></span> Loading your progress…';
   try{ const [p,v]=await Promise.all([api('myProgress',{studentId:S.student.studentId,subject:s.code}),api('videos',{subject:s.code})]); S.progress=p.progress; S.levels=p.levels||[]; S.next=p.next||null; S.allDone=!!p.allDone; S.videos=v.videos; }catch(e){ S.progress={}; S.videos=[]; S.levels=[]; S.next=null; S.allDone=false; }
@@ -590,6 +592,7 @@ function updateHud(){$('#streak').textContent=S.streak;$('#xp').textContent=S.xp
   S.questions.forEach((q,i)=>{const a=S.answers[q.id];const st=a&&a.done?(a.ok?'ok':'retry'):(i===S.idx?'cur':'');if(S.g3d){G3D.state(i,st);return;}const el=$('#node'+i);if(!el)return;el.className='node'+(st?' '+st:'')});
   placeTrav(S.idx);}
 function showQ(){
+  if(window.G3D)G3D.stageDestroy();
   const p=S.questions[S.idx]; if(!p){finish();return;} S.tries=0; renderStopQ(); $('#qzK').scrollIntoView({behavior:'smooth',block:'start'}); engine(true);
 }
 function curQ(){const p=S.questions[S.idx];return p.chain[Math.min(S.tries,p.chain.length-1)]}
@@ -616,17 +619,18 @@ function hush(){ try{ speechSynthesis.cancel(); }catch(e){} }
 let SC={timer:null,done:false};
 function playScene(sc,onDone){ SC.done=false; clearTimeout(SC.timer); const cast=castFor(); const names=[...new Set(sc.lines.filter(l=>l[0]!=='N').map(l=>l[0]))]; const parseWho=n=>{const m=n.match(/^(\p{Extended_Pictographic}[\p{Emoji_Modifier}\u200d\p{Extended_Pictographic}\ufe0f]*)\s+(.+)$/u);return m?[m[1],m[2],'']:null}; const actors=names.length?names.map(n=>parseWho(n)||cast.find(c=>c[1]===n)||[ '🧑',n,'' ]):cast.slice(0,3);
   $('#sceneCast').innerHTML=actors.map((a,i)=>`<div class="actor" id="actor${i}" data-name="${esc(a[1])}"><div class="bub" id="bub${i}"></div><div class="av">${a[0]}</div><div class="nm">${esc(a[1])}</div></div>`).join('');
+  const box=$('#sceneBox'); if(box&&window.G3D&&G3D.ok&&!localStorage.getItem('qh_no3d')){ box.classList.add('s3d'); let st=box.querySelector('.stage3d'); if(!st){st=document.createElement('div');st.className='stage3d';box.insertBefore(st,box.firstChild);} st.innerHTML=''; const nm=document.createElement('div'); nm.className='names'; nm.innerHTML=actors.map(a=>`<span>${esc(a[1])}</span>`).join(''); box.querySelector('.names')?.remove(); box.appendChild(nm); if(G3D.stage(st,{bg:sc.bg||guessBg(''),props:BG[sc.bg]||[],actors:actors.map(a=>({emoji:a[0],name:a[1]}))})){ G3D.onStageFrame(()=>{actors.forEach((a,i)=>{const p=G3D.stageAnchor(i);const el=$('#actor'+i);if(p&&el){el.style.left=p.x+'px';el.style.top=p.y+'px';}})}); } else box.classList.remove('s3d'); }
   $('#sceneProg').innerHTML=sc.lines.map(()=>'<i></i>').join(''); setBg(sc.bg||'');
   let i=0; const step=()=>{ if(SC.done)return; document.querySelectorAll('.actor').forEach(a=>a.classList.remove('on')); document.querySelectorAll('.actor .bub').forEach(b=>b.innerHTML='');
     if(i>=sc.lines.length){ finishScene(onDone); return; }
     const [who,text,kind]=sc.lines[i]; $('#sceneProg').children[i].classList.add('ok'); snd('tick');
     let spoken=false,typed=false; const go=()=>{ if(spoken&&typed){ SC.timer=setTimeout(step,who==='N'?350:450);} };
-    if(who==='N'){ speak(text,'Narrator',99,()=>{spoken=true;go()}); typeInto($('#sceneNarr'),'📜 '+text,()=>{typed=true;go()}); }
-    else{ const k=actors.findIndex(a=>a[1]===who); const ac=$('#actor'+(k<0?0:k)); ac.classList.add('on'); const b=ac.querySelector('.bub'); b.innerHTML=`<div class="bubble ${kind==='think'?'think':''}"><span class="tx"></span><span class="cursor"></span></div>`; speak(text,who,k<0?0:k,()=>{spoken=true;go()}); typeInto(b.querySelector('.tx'),text,()=>{b.querySelector('.cursor')?.remove();typed=true;go()}); }
+    if(who==='N'){ if(window.G3D)G3D.stageTalk(-1); speak(text,'Narrator',99,()=>{spoken=true;go()}); typeInto($('#sceneNarr'),'📜 '+text,()=>{typed=true;go()}); }
+    else{ const k=actors.findIndex(a=>a[1]===who); const ac=$('#actor'+(k<0?0:k)); ac.classList.add('on'); if(window.G3D)G3D.stageTalk(k<0?0:k); const b=ac.querySelector('.bub'); b.innerHTML=`<div class="bubble ${kind==='think'?'think':''}"><span class="tx"></span><span class="cursor"></span></div>`; speak(text,who,k<0?0:k,()=>{spoken=true;go()}); typeInto(b.querySelector('.tx'),text,()=>{b.querySelector('.cursor')?.remove();typed=true;go()}); }
     i++; };
   step(); }
 function typeInto(el,text,cb){ if(!el){cb();return;} let n=0; el.textContent=''; const sp=text.length>120?10:18; const tick=()=>{ if(SC.done){el.textContent=text;return;} n+=2; el.textContent=text.slice(0,n); if(n<text.length) SC.timer=setTimeout(tick,sp); else cb(); }; tick(); }
-function finishScene(onDone){ SC.done=true; clearTimeout(SC.timer); hush(); document.querySelectorAll('.actor').forEach(a=>a.classList.remove('on')); const c=$('#sceneCard'); if(c&&!c.classList.contains('revealed')){ c.classList.add('revealed'); $('#sceneCtl').innerHTML='<button class="btn g s" onclick="replayScene()">↻ replay scene</button>'; onDone&&onDone(); } }
+function finishScene(onDone){ SC.done=true; clearTimeout(SC.timer); hush(); if(window.G3D)G3D.stageTalk(-1); document.querySelectorAll('.actor').forEach(a=>a.classList.remove('on')); const c=$('#sceneCard'); if(c&&!c.classList.contains('revealed')){ c.classList.add('revealed'); $('#sceneCtl').innerHTML='<button class="btn g s" onclick="replayScene()">↻ replay scene</button>'; onDone&&onDone(); } }
 function skipScene(){ finishScene(()=>{ S.qStart=Date.now(); S.locked=false; }); }
 function replayScene(){ const c=$('#sceneCard'); if(!c)return; c.classList.remove('revealed'); $('#sceneCtl').innerHTML='<button class="btn g s" onclick="skipScene()">skip ▶▶</button>'; $('#sceneNarr').textContent=''; playScene(SC.cur,()=>{}); }
 function renderStopQ(){
@@ -713,7 +717,7 @@ function renderResult(j){
 
 /* ================= high-speed dash to the next location ================= */
 const FAST_SECS=150; // finishing 8 stops in under 2½ minutes = speed run → hump + jump
-function renderDash(j){const w=$('#dashWrap');if(!w)return;if(window.G3D)G3D.destroy();S.g3d=false;const t=trav(),chs=S.subject.chapters,n=chs.length;const secs=Math.round((Date.now()-S.start)/1000);const fast=S.idx>=S.questions.length&&secs<FAST_SECS;
+function renderDash(j){const w=$('#dashWrap');if(!w)return;if(window.G3D){G3D.destroy();G3D.stageDestroy();}S.g3d=false;const t=trav(),chs=S.subject.chapters,n=chs.length;const secs=Math.round((Date.now()-S.start)/1000);const fast=S.idx>=S.questions.length&&secs<FAST_SECS;
   const from=chs.findIndex(c=>c.chapter===S.chapter);let to=S.next?chs.findIndex(c=>c.chapter===S.next.chapter):-1;const finish=to<0;
   const X=i=>6+88*i/Math.max(1,n);const fx=X(n); // finish flag after the last chapter
   const isl=document.body.classList.contains('t-island'),res=document.body.classList.contains('t-gallery');if(res){/* rescue wording */}const say=res?(finish?(S.allDone?'👑 Layla is free — the whole road is crossed!':'🏰 Marching on to the Crow fortress'):S.next.chapter===S.chapter?'🔦 Same hurdle — one more test here':`🏃 Hurdle ${S.chapter} crossed — running to hurdle ${S.next.chapter}!`):finish?(S.allDone?(isl?'🏝️ Every island saved — admiral!':'🏁 Every race won — champion lap!'):(isl?'⚓ Sailing home to harbour':'🏁 Cool-down lap to the finish')):S.next.chapter===S.chapter?(isl?'⚓ Same island — one more quiz here':'⚡ Same chapter — one more race here'):(isl?`🚢 Island ${S.chapter} saved — full steam to island ${S.next.chapter}!`:`🏎 Chapter done — racing to ${esc(t.stop).toLowerCase()} ${S.next.chapter}!`);
