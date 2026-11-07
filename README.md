@@ -28,3 +28,8 @@ Mapping lives in `index.html` → `SUBJECT_THEME`. Any new subject code without 
 
 ### Game-style quiz
 One question at a time, instant feedback (server sends a salted SHA-256 of the correct option, never the answer in clear text), streaks, XP with speed bonus, confetti, keyboard 1–4 / Enter, rank title at the end. The official score is still graded and recorded server-side on submit.
+
+## Question banks and re-syncing the Sheet
+- The canonical banks live in `banks/<SUBJECT>/` — `seed_chNN.json` is the merged, ready-to-seed file for each chapter (MGMT160 ×10, MGMT363 ×9, MGMT464 ×10; 1,859 questions).
+- Option lengths are balanced: the correct answer is the longest option in only ~30% of questions and the shortest in ~12–33%, so length is not a tell. Options are shuffled per student by the Apps Script.
+- To push corrected banks into the Sheet: open `teacher.html`, enter the teacher key, and press **Sync all banks now**. It replaces each chapter's questions (attempts and answers are untouched). If Google interrupts it, press the button again — finished chapters are safe.
