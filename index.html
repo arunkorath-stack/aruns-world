@@ -266,10 +266,13 @@ body.t-gallery .scene{--scenebg:linear-gradient(180deg,#0a0908 0,#1c1510 60%,#2d
 @keyframes talk{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-6px) rotate(3deg)}}
 .actor .nm{font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-top:4px;color:var(--text);opacity:.8}
 body.t-island .actor .nm{color:#1a1360}
-.actor .bubble{position:absolute;bottom:calc(100% - 6px);left:50%;transform:translateX(-50%);width:max-content;max-width:min(300px,42vw);background:#fff;color:#111;border-radius:14px;padding:8px 12px;font-size:14px;line-height:1.3;box-shadow:0 10px 24px -10px rgba(0,0,0,.6);text-align:left;z-index:4;animation:bub .25s cubic-bezier(.2,1.3,.4,1)}
+.actor .bubble{position:absolute;bottom:calc(100% - 6px);left:50%;transform:translateX(-50%);width:max-content;max-width:min(320px,40vw);background:#fff;color:#111;border-radius:14px;padding:8px 12px;font-size:14px;line-height:1.3;box-shadow:0 10px 24px -10px rgba(0,0,0,.6);text-align:left;z-index:4;animation:bub .25s cubic-bezier(.2,1.3,.4,1)}
 .actor .bubble:after{content:'';position:absolute;left:50%;top:100%;margin-left:-8px;border:8px solid transparent;border-top-color:#fff}
 .actor .bubble.think{border-radius:50% 50% 50% 50%/60% 60% 40% 40%;font-style:italic;background:#f3f0ff}
-@keyframes bub{from{opacity:0;transform:translate(-50%,8px) scale(.85)}to{opacity:1;transform:translate(-50%,0) scale(1)}}
+@keyframes bub{from{opacity:0;scale:.85;translate:0 8px}to{opacity:1;scale:1;translate:0 0}}
+.actor:first-child .bubble{left:0;transform:none;text-align:left}.actor:first-child .bubble:after{left:40px}
+.actor:last-child .bubble{left:auto;right:0;transform:none}.actor:last-child .bubble:after{left:auto;right:32px}
+.actor:first-child:last-child .bubble{left:50%;right:auto;transform:translateX(-50%)}.actor:first-child:last-child .bubble:after{left:50%;right:auto}
 .scene .narr{margin-top:10px;min-height:22px;font-size:14px;font-style:italic;color:var(--text);opacity:.9;border-top:1px dashed var(--line);padding-top:8px}
 body.t-island .scene .narr{color:#1a1360;border-color:#1a136033}
 .scene .prog{margin-top:8px;height:4px}
@@ -284,26 +287,26 @@ body.t-island .scene .narr{color:#1a1360;border-color:#1a136033}
 .scene .props span{position:absolute;font-size:64px;opacity:.28;filter:blur(.3px)}
 .scene .props span:nth-child(1){left:3%;top:8%}.scene .props span:nth-child(2){right:4%;top:10%;font-size:54px}.scene .props span:nth-child(3){left:40%;top:4%;font-size:40px}.scene .props span:nth-child(4){right:30%;top:14%;font-size:34px}
 .scene .floor{position:absolute;left:0;right:0;bottom:0;height:34%;opacity:.5}
-.scene[data-bg=office]{--scenebg:linear-gradient(180deg,#1e2a44 0,#2c3e66 60%,#3a4a70 100%)}
-.scene[data-bg=cafe]{--scenebg:linear-gradient(180deg,#3b2415 0,#5a3a22 60%,#7a5a3a 100%)}
-.scene[data-bg=hospital]{--scenebg:linear-gradient(180deg,#cfe8f3 0,#e8f4f8 60%,#bfd8e6 100%)}
-.scene[data-bg=hospital] .bubble,.scene[data-bg=shop] .bubble{box-shadow:0 10px 24px -10px rgba(0,0,0,.4)}
-.scene[data-bg=factory]{--scenebg:linear-gradient(180deg,#2b2f33 0,#3f464c 60%,#5b6066 100%)}
-.scene[data-bg=shop]{--scenebg:linear-gradient(180deg,#f6e7c8 0,#f3d9a3 60%,#d9b36b 100%)}
-.scene[data-bg=street]{--scenebg:linear-gradient(180deg,#0f1b3a 0,#24366b 60%,#3b4a7a 100%)}
-.scene[data-bg=meeting]{--scenebg:linear-gradient(180deg,#2a2140 0,#3a2d5a 60%,#4a3b70 100%)}
-.scene[data-bg=mountain]{--scenebg:linear-gradient(180deg,#0a0d1f 0,#1c2440 55%,#3b3a2a 100%)}
-.scene[data-bg=fortress]{--scenebg:linear-gradient(180deg,#120a0a 0,#2a1414 60%,#3a2a1a 100%)}
-.scene[data-bg=camp]{--scenebg:linear-gradient(180deg,#0b0f1f 0,#1f2a3a 55%,#3a3020 100%)}
-.scene[data-bg=sea]{--scenebg:linear-gradient(180deg,#9fd0ff 0,#5fa8ff 55%,#2457d8 100%)}
-.scene[data-bg=village]{--scenebg:linear-gradient(180deg,#4a1c0f 0,#7a2e14 50%,#2a1a10 100%)}
-.scene[data-bg=hotel]{--scenebg:linear-gradient(180deg,#2a1e3a 0,#4a3060 60%,#6a4a7a 100%)}
-.scene[data-bg=school]{--scenebg:linear-gradient(180deg,#1e3a2a 0,#2e5a3a 60%,#4a7a4a 100%)}
-.scene[data-bg=airport]{--scenebg:linear-gradient(180deg,#1a2a3a 0,#2a4a6a 60%,#6a8aaa 100%)}
-.scene[data-bg=home]{--scenebg:linear-gradient(180deg,#3a2a2a 0,#5a4040 60%,#7a5a50 100%)}
-.scene[data-bg=lab]{--scenebg:linear-gradient(180deg,#0f2a2a 0,#1a4a4a 60%,#2a6a6a 100%)}
-.scene[data-bg=hospital] .narr,.scene[data-bg=shop] .narr,.scene[data-bg=sea] .narr{color:#1a1360}
-.scene[data-bg=hospital] .actor .nm,.scene[data-bg=shop] .actor .nm,.scene[data-bg=sea] .actor .nm{color:#1a1360}
+body .scene[data-bg=office]{--scenebg:linear-gradient(180deg,#1e2a44 0,#2c3e66 60%,#3a4a70 100%)}
+body .scene[data-bg=cafe]{--scenebg:linear-gradient(180deg,#3b2415 0,#5a3a22 60%,#7a5a3a 100%)}
+body .scene[data-bg=hospital]{--scenebg:linear-gradient(180deg,#cfe8f3 0,#e8f4f8 60%,#bfd8e6 100%)}
+body body .scene[data-bg=hospital] .bubble,body .scene[data-bg=shop] .bubble{box-shadow:0 10px 24px -10px rgba(0,0,0,.4)}
+body .scene[data-bg=factory]{--scenebg:linear-gradient(180deg,#2b2f33 0,#3f464c 60%,#5b6066 100%)}
+body .scene[data-bg=shop]{--scenebg:linear-gradient(180deg,#f6e7c8 0,#f3d9a3 60%,#d9b36b 100%)}
+body .scene[data-bg=street]{--scenebg:linear-gradient(180deg,#0f1b3a 0,#24366b 60%,#3b4a7a 100%)}
+body .scene[data-bg=meeting]{--scenebg:linear-gradient(180deg,#2a2140 0,#3a2d5a 60%,#4a3b70 100%)}
+body .scene[data-bg=mountain]{--scenebg:linear-gradient(180deg,#0a0d1f 0,#1c2440 55%,#3b3a2a 100%)}
+body .scene[data-bg=fortress]{--scenebg:linear-gradient(180deg,#120a0a 0,#2a1414 60%,#3a2a1a 100%)}
+body .scene[data-bg=camp]{--scenebg:linear-gradient(180deg,#0b0f1f 0,#1f2a3a 55%,#3a3020 100%)}
+body .scene[data-bg=sea]{--scenebg:linear-gradient(180deg,#9fd0ff 0,#5fa8ff 55%,#2457d8 100%)}
+body .scene[data-bg=village]{--scenebg:linear-gradient(180deg,#4a1c0f 0,#7a2e14 50%,#2a1a10 100%)}
+body .scene[data-bg=hotel]{--scenebg:linear-gradient(180deg,#2a1e3a 0,#4a3060 60%,#6a4a7a 100%)}
+body .scene[data-bg=school]{--scenebg:linear-gradient(180deg,#1e3a2a 0,#2e5a3a 60%,#4a7a4a 100%)}
+body .scene[data-bg=airport]{--scenebg:linear-gradient(180deg,#1a2a3a 0,#2a4a6a 60%,#6a8aaa 100%)}
+body .scene[data-bg=home]{--scenebg:linear-gradient(180deg,#3a2a2a 0,#5a4040 60%,#7a5a50 100%)}
+body .scene[data-bg=lab]{--scenebg:linear-gradient(180deg,#0f2a2a 0,#1a4a4a 60%,#2a6a6a 100%)}
+body body .scene[data-bg=hospital] .narr,body .scene[data-bg=shop] .narr,body .scene[data-bg=sea] .narr{color:#1a1360}
+body body .scene[data-bg=hospital] .actor .nm,body .scene[data-bg=shop] .actor .nm,body .scene[data-bg=sea] .actor .nm{color:#1a1360}
 .vbtn{font-size:11px}
 
 /* ============ RESULT: high-speed dash to the next location ============ */
