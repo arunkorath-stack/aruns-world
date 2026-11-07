@@ -90,7 +90,7 @@ function build(el, opts) {
   renderer.domElement.style.cssText = 'display:block;width:100%;height:100%;border-radius:18px';
   el.innerHTML = ''; el.appendChild(renderer.domElement);
   const scene = new THREE.Scene(); scene.background = new THREE.Color(theme.sky); scene.fog = new THREE.Fog(theme.fog, 14, 46);
-  const camera = new THREE.PerspectiveCamera(opts.horizontal ? 42 : 58, w / h, .1, 120);
+  const camera = new THREE.PerspectiveCamera(opts.horizontal ? 42 : 62, w / h, .1, 120);
   // path: a gentle S-curve, nodes spread along it
   const len = opts.horizontal ? Math.max(30, n * 7) : Math.max(36, n * 6.5);
   const pts = []; const steps = 9; for (let i = 0; i <= steps; i++) { const t = i / steps; pts.push(new THREE.Vector3(Math.sin(t * Math.PI * 2.2) * (opts.horizontal ? 1.5 : 3.2), 0, -t * len)); }
@@ -156,7 +156,7 @@ function updateCamera(lerp) {
   const p = R.veh.position; const tan = R.curve.getTangentAt(Math.min(1, Math.max(0, R.t)));
   let desired, look;
   if (R.horizontal) { desired = new THREE.Vector3(p.x + 9, 7.5, p.z + 9); look = new THREE.Vector3(p.x, .8, p.z - 2); }
-  else { desired = p.clone().addScaledVector(tan, -6.5); desired.y = 4.2; look = p.clone().addScaledVector(tan, 7); look.y = 1; }
+  else { desired = p.clone().addScaledVector(tan, -8); desired.y = 5.2; look = p.clone().addScaledVector(tan, 9); look.y = .6; }
   R.camera.position.lerp(desired, lerp); R.camLook = (R.camLook || look.clone()).lerp(look, lerp); R.camera.lookAt(R.camLook);
 }
 function loop() {
