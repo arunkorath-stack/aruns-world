@@ -423,7 +423,7 @@ function updateHud(){$('#streak').textContent=S.streak;$('#xp').textContent=S.xp
   S.questions.forEach((q,i)=>{const el=$('#node'+i);if(!el)return;const a=S.answers[q.id];el.className='node'+(a&&a.done?(a.ok?' ok':' retry'):(i===S.idx?' cur':''))});
   const tr=$('#trav');if(tr){tr.style.left=nodeX(S.idx)+'%';}}
 function showQ(){
-  const x=S.questions[S.idx]; if(!x){finish();return;} S.qStart=Date.now(); S.locked=false; S.tries=0; updateHud();
+  const x=S.questions[S.idx]; if(!x){finish();return;} S.qStart=Date.now(); S.locked=false; S.tries=0; updateHud(); $('#journey').scrollIntoView({behavior:'smooth',block:'start'});
   $('#qbox').innerHTML=`<div class="qcard"><div class="k">${esc(trav().stop)} ${S.idx+1} of ${S.questions.length} · ${esc(x.clo)} · §${esc(x.sec)} · ${esc(x.bloom)}</div><div class="stem">${esc(x.stem)}</div><div class="opts">${x.options.map((o,i)=>`<button class="opt" id="opt${i}" onclick="pick(${i})"><span class="key">${i+1}</span><span>${esc(o)}</span></button>`).join('')}</div><div id="verdict"></div></div>`;
 }
 function pick(i){
