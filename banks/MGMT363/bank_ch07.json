@@ -1,1 +1,1036 @@
-{"subject": "MGMT363", "chapter": 7, "title": "Generating Alternatives", "clos": ["CLO 3"], "source": "MGMT363_Chapter7.pptx", "status": "published", "questions": [{"id": "363-07-I01", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.1", "stem": "Describe a real alternative.", "options": ["An option somebody sensible, looking at the same evidence, might actually choose", "An option that makes the favourite look reasonable", "Any option on the list", "The cheapest option"], "answer": 0, "why": "A real alternative could be chosen. See §7.1."}, {"id": "363-07-I02", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.1", "stem": "Describe a decoy.", "options": ["An option that exists only to make the favourite look reasonable — 'do nothing' and 'spend ten million'", "The strongest option", "A tested option", "A constraint"], "answer": 0, "why": "Two decoys and a favourite is a decision already taken. See §7.1."}, {"id": "363-07-I03", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.1", "stem": "Identify the decoy test.", "options": ["Could you write an honest paragraph arguing FOR each option? If not, it is not an option", "Is it cheap?", "Does the boss like it?", "Is it new?"], "answer": 0, "why": "If you cannot argue for it, it is not an option. See §7.1."}, {"id": "363-07-I04", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.1", "stem": "Explain when 'do nothing' is a real option.", "options": ["When the cost of acting is high and the problem may resolve", "Never", "Always", "Only in small firms"], "answer": 0, "why": "Include it honestly or not at all. See §7.1."}, {"id": "363-07-I05", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.1", "stem": "Explain how section 5 of the project report is graded.", "options": ["On whether the rejected options were real — decoys cost marks", "On the number of options", "On the length of the section", "On the client's approval"], "answer": 0, "why": "Two decoys and a favourite will be recognised. See §7.1."}, {"id": "363-07-I06", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.2", "stem": "Explain why coverage matters more than count.", "options": ["Twenty price changes are a worse set than five options attacking the problem in five different ways", "More options are always better", "Count is what clients want", "Coverage is cheaper"], "answer": 0, "why": "Judge the set on what it covers. See §7.2."}, {"id": "363-07-I07", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.2", "stem": "Identify the four questions to ask of an option set.", "options": ["How many kinds? How wide is the cost range? How fast could each start? Who has to agree?", "Who proposed it? Is it cheap? Is it new? Is it safe?", "Mess? Symptom? Problem? Plan?", "Source? Size? Age? Fit?"], "answer": 0, "why": "Four questions about the set. See §7.2."}, {"id": "363-07-I08", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.2", "stem": "Describe a strong option set on the 'kinds' question.", "options": ["Price, process, people, place, product — several kinds", "All price changes", "All six-month projects", "All board decisions"], "answer": 0, "why": "Variations are not alternatives. See §7.2."}, {"id": "363-07-I09", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.2", "stem": "Identify the quickest check of an option set.", "options": ["Sort the options into categories — if all land in one column, you generated variations, not alternatives", "Count them", "Ask the boss", "Price them"], "answer": 0, "why": "Go back and attack a different part of the cause map. See §7.2."}, {"id": "363-07-I10", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.2", "stem": "Describe a strong option set on the 'speed' question.", "options": ["One could start on Monday, one next quarter", "All take six months", "All start next year", "None can start"], "answer": 0, "why": "A strong set spans speeds. See §7.2."}, {"id": "363-07-I11", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.3", "stem": "Describe assumption reversal.", "options": ["List the assumptions a stuck group has stopped noticing and deliberately reverse each one", "Vote on assumptions", "Remove all assumptions", "Confirm each assumption"], "answer": 0, "why": "Uncomfortable, and it works. See §7.3."}, {"id": "363-07-I12", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.3", "stem": "Identify the option revealed by reversing 'customers come to us'.", "options": ["A counter inside the neighbouring clinic — we go to customers", "A bigger shop", "Lower prices", "Longer hours"], "answer": 0, "why": "We go to customers. See §7.3."}, {"id": "363-07-I13", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.3", "stem": "Identify the option revealed by reversing 'we need more staff at peak'.", "options": ["Fewer customers at peak — off-peak pricing, staggered pickup times", "Hire more staff", "Close at peak", "Raise prices for all"], "answer": 0, "why": "We need fewer customers at peak. See §7.3."}, {"id": "363-07-I14", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.3", "stem": "Explain the rule that makes assumption reversal work.", "options": ["You need not believe the reversal; you must write one option that would follow IF it were true", "You must believe the reversal", "Only true reversals count", "Judge each reversal immediately"], "answer": 0, "why": "Judgement comes later, in chapter 9. See §7.3."}, {"id": "363-07-I15", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.3", "stem": "Identify the option revealed by reversing 'the service must be free'.", "options": ["A paid priority lane funds the free one", "Free for everyone", "Close the service", "Charge everyone"], "answer": 0, "why": "The service is paid for. See §7.3."}, {"id": "363-07-I16", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.4", "stem": "Describe analogy as a technique.", "options": ["The deliberate search for the place where a different industry already solved your problem", "Copying a competitor", "Asking a friend", "Guessing"], "answer": 0, "why": "Most problems have been solved somewhere else. See §7.4."}, {"id": "363-07-I17", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.4", "stem": "Identify the three steps of analogy.", "options": ["Abstract it; ask who else has that; import and adapt", "Copy; paste; present", "Brainstorm; vote; decide", "Ask; guess; test"], "answer": 0, "why": "Step 1 is the one students skip. See §7.4."}, {"id": "363-07-I18", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.4", "stem": "Describe step 1, abstracting the problem.", "options": ["Strip the industry words out — 'a pharmacy queue at peak' becomes 'many arrivals, one slow server, unpredictable demand'", "Add industry detail", "Name the solution", "List competitors"], "answer": 0, "why": "Without abstracting you can only search your own industry. See §7.4."}, {"id": "363-07-I19", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.4", "stem": "Identify the example the chapter gives of analogy across industries.", "options": ["Hospitals redesigned intensive-care handovers by studying Formula 1 pit stops", "Banks copied cafés", "Airlines copied gyms", "Schools copied hotels"], "answer": 0, "why": "Many people, one object, seconds matter. See §7.4."}, {"id": "363-07-I20", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.4", "stem": "Explain where students go wrong with analogy.", "options": ["They skip step 1 and search only inside their own industry, where everyone already looked", "They abstract too much", "They import nothing", "They adapt too early"], "answer": 0, "why": "Skip step 1 and you search where everyone already looked. See §7.4."}, {"id": "363-07-I21", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.5", "stem": "Explain why a hard constraint produces better options than an open brief.", "options": ["It forbids the obvious answer, forcing different thinking", "Constraints are cheaper", "Clients like constraints", "It shortens the meeting"], "answer": 0, "why": "Used deliberately, a constraint forbids the obvious. See §7.5."}, {"id": "363-07-I22", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.5", "stem": "Identify what 'it must cost nothing' forces.", "options": ["Process, sequence and rules changes", "Buying your way out", "A six-month project", "A committee"], "answer": 0, "why": "It forbids buying your way out. See §7.5."}, {"id": "363-07-I23", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.5", "stem": "Identify what 'it must start on Monday' forces.", "options": ["Something small enough to try now", "A six-month project", "A board paper", "More staff"], "answer": 0, "why": "It forbids the six-month project. See §7.5."}, {"id": "363-07-I24", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.5", "stem": "Describe how to use constraints in a session.", "options": ["Ten minutes under one constraint, then ten under a different one — two sets that barely overlap", "One constraint for an hour", "No constraints", "Let the boss choose"], "answer": 0, "why": "Exactly the coverage §7.2 asks for. See §7.5."}, {"id": "363-07-I25", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.5", "stem": "Identify what 'one person could run it' forces.", "options": ["Simplicity and clear ownership", "Committees and approvals", "More staff", "A bigger budget"], "answer": 0, "why": "It forbids committees. See §7.5."}, {"id": "363-07-I26", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.6", "stem": "Identify the four steps for cutting thirty options to four.", "options": ["Group into categories; take the strongest per category; apply the decoy test; keep three to five and the rejected list", "Vote; argue; decide; forget", "Price; rank; cut; present", "Ask the boss; ask the client; ask staff; decide"], "answer": 0, "why": "How you cut decides whether the decision is real. See §7.6."}, {"id": "363-07-I27", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.6", "stem": "Explain why grouping the thirty into categories comes first.", "options": ["It reveals which parts of the problem you never attacked", "It is quickest", "Clients ask for it", "It removes decoys"], "answer": 0, "why": "Grouping shows the gaps. See §7.6."}, {"id": "363-07-I28", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.6", "stem": "Explain why you keep the rejected list.", "options": ["What you rejected and why is the evidence that the recommendation was chosen rather than assumed", "To make the report longer", "Because rejects may win later", "To blame the group"], "answer": 0, "why": "In the report and in real consulting. See §7.6."}, {"id": "363-07-I29", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.6", "stem": "Identify how many options should go to the decision.", "options": ["Three to five", "Nine", "One", "Thirty"], "answer": 0, "why": "A manager cannot compare nine. See §7.6."}, {"id": "363-07-I30", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.6", "stem": "Explain why the strongest one or two per category are taken.", "options": ["It guarantees coverage rather than repetition", "They are cheapest", "They are the boss's favourites", "It saves paper"], "answer": 0, "why": "Coverage, not repetition. See §7.6."}, {"id": "363-07-I31", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.2", "stem": "Describe a strong option set on the 'who has to agree' question.", "options": ["One the branch manager can just do, alongside ones needing approval", "All need board approval", "None can be approved", "Only the CEO decides"], "answer": 0, "why": "Spread who must agree. See §7.2."}, {"id": "363-07-I32", "quiz": 1, "bloom": "Understand", "clo": "CLO 3", "sec": "7.1", "stem": "Explain why presenting two unacceptable options and a favourite is called dishonest.", "options": ["It looks like analysis but the decision was already taken", "It is too short", "It costs too much", "Clients prefer one option"], "answer": 0, "why": "The most common dishonesty in business reports. See §7.1."}, {"id": "363-07-A01", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.1", "stem": "Classify 'Option A: close the branch immediately and write off the lease' in the pharmacy report.", "options": ["A decoy — nobody could write an honest paragraph for it", "A real alternative", "The recommendation", "A constraint"], "answer": 0, "why": "Apply the decoy test. See §7.1 and Exercise 1."}, {"id": "363-07-A02", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.1", "stem": "Classify 'Option B: invest 2.4 million in a full refit and a pharmacy robot' for a struggling branch.", "options": ["A decoy — the 'spend ten million' pattern", "A real alternative", "A cheap test", "A reversal"], "answer": 0, "why": "The usual decoy pair: do nothing and spend a fortune. See §7.1."}, {"id": "363-07-A03", "quiz": 2, "bloom": "Analyse", "clo": "CLO 3", "sec": "7.1", "stem": "Analyse a consultant's three options where only C can be argued for. Determine what the report really is.", "options": ["A decision already taken, dressed as analysis", "Good analysis", "A coverage check", "A pre-mortem"], "answer": 0, "why": "Two decoys and a favourite. See §7.1 and Exercise 1."}, {"id": "363-07-A04", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.1", "stem": "Determine when to include 'do nothing' in the pharmacy option set.", "options": ["Only if acting is costly and the problem may resolve — and then argue for it honestly", "Always, as a safe default", "Never", "Only to make C look good"], "answer": 0, "why": "Include it honestly or not at all. See §7.1."}, {"id": "363-07-A05", "quiz": 2, "bloom": "Analyse", "clo": "CLO 3", "sec": "7.2", "stem": "Analyse a set of five options that are all discounts. Determine the chapter's verdict.", "options": ["Variations, not alternatives — one column only", "A strong set", "Good coverage", "A complete set"], "answer": 0, "why": "Sort into categories; all in one column means variations. See §7.2."}, {"id": "363-07-A06", "quiz": 2, "bloom": "Analyse", "clo": "CLO 3", "sec": "7.2", "stem": "Analyse the pharmacy options (close, refit, extend hours). Determine the categories left untouched.", "options": ["Stock, staffing process, customer flow and the clinic next door — almost everything but place and hours", "None — it covers everything", "Price only", "Product only"], "answer": 0, "why": "Which parts of the problem are untouched? See Exercise 1 and §7.2."}, {"id": "363-07-A07", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.2", "stem": "Select the addition that improves coverage of the pharmacy set most.", "options": ["A pre-order and collection shelf — a process option costing little and starting soon", "A bigger refit", "A longer lease", "A second robot"], "answer": 0, "why": "Attack a different part of the cause map. See §7.2."}, {"id": "363-07-A08", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.2", "stem": "Determine the fault in a set where every option needs board approval.", "options": ["No option the branch manager can just do — weak on 'who has to agree'", "Too many options", "Too cheap", "Too fast"], "answer": 0, "why": "A strong set includes one the manager can just do. See §7.2."}, {"id": "363-07-A09", "quiz": 2, "bloom": "Analyse", "clo": "CLO 3", "sec": "7.3", "stem": "Analyse the campus café manager: 'cannot hire, cannot enlarge the kitchen, cannot change the timetable'. Identify an unspoken assumption.", "options": ["Everyone must be served between 12:00 and 12:40 at the counter", "The café exists", "Students eat lunch", "The kitchen has a door"], "answer": 0, "why": "List the assumptions he did not say out loud. See Exercise 2 and §7.3."}, {"id": "363-07-A10", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.3", "stem": "Select the option that follows from reversing 'orders are taken at the counter'.", "options": ["Pre-order by phone or app and collect from a shelf", "Hire more counter staff", "Close the counter", "Raise prices"], "answer": 0, "why": "Orders taken before arrival. See §7.3."}, {"id": "363-07-A11", "quiz": 2, "bloom": "Analyse", "clo": "CLO 3", "sec": "7.3", "stem": "Analyse a reversed option that is impossible. Determine what to do with it.", "options": ["Take the idea inside it and write a version that is possible", "Delete it", "Present it anyway", "Argue it is possible"], "answer": 0, "why": "Two reversals are impossible; keep the idea inside. See Exercise 2 and §7.3."}, {"id": "363-07-A12", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.3", "stem": "Determine the group's mistake when it rejects each reversal as it is spoken.", "options": ["Judging too early — judgement belongs in chapter 9", "Nothing", "Too many reversals", "Wrong assumptions"], "answer": 0, "why": "You are required to write the option, not believe it. See §7.3."}, {"id": "363-07-A13", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.4", "stem": "Select the correct abstraction of the campus café queue.", "options": ["Many arrivals in a short window, one slow server, demand that peaks predictably", "A café with a long lunch queue", "Students who are hungry at noon", "A kitchen that is too small"], "answer": 0, "why": "Strip out every café word. See §7.4 and Exercise 3."}, {"id": "363-07-A14", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.4", "stem": "Select four industries that face the abstracted queue problem.", "options": ["Airports, call centres, emergency departments, theme parks", "Farms, mines, forests, fisheries", "Law firms, accountants, architects, designers", "Schools, universities, colleges, academies"], "answer": 0, "why": "All have solved it and none sell food. See §7.4."}, {"id": "363-07-A15", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.4", "stem": "Select an imported solution for the café, adapted.", "options": ["Numbered tickets or a virtual queue so students arrive when called", "Build a bigger kitchen", "Hire more staff", "Close at lunch"], "answer": 0, "why": "Take their answer literally first, then adapt. See §7.4."}, {"id": "363-07-A16", "quiz": 2, "bloom": "Analyse", "clo": "CLO 3", "sec": "7.4", "stem": "Analyse a group that only looked at other cafés for ideas. Determine the error.", "options": ["They skipped abstraction and searched where everyone already looked", "They abstracted too much", "They imported too literally", "They had too many analogies"], "answer": 0, "why": "Skipping step 1. See §7.4."}, {"id": "363-07-A17", "quiz": 2, "bloom": "Analyse", "clo": "CLO 3", "sec": "7.5", "stem": "Analyse a session under 'it must cost nothing'. Determine the kind of options it produces.", "options": ["Process, sequence and rule changes", "Purchases", "Big projects", "Hiring"], "answer": 0, "why": "Buying your way out is forbidden. See §7.5."}, {"id": "363-07-A18", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.5", "stem": "Determine the chapter's reply to a group that says 'the constraints stop us solving it'.", "options": ["Use the constraints deliberately — they forbid the obvious answer and produce better options", "Agree and stop", "Remove the constraints", "Ask for budget"], "answer": 0, "why": "Constraints used deliberately beat open briefs. See §7.5."}, {"id": "363-07-A19", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.5", "stem": "Select the pair of constraints that gives two non-overlapping option sets.", "options": ["'Must cost nothing' then 'must start on Monday'", "'Must cost nothing' twice", "'Must be approved' and 'must be written'", "'Must be big' and 'must be expensive'"], "answer": 0, "why": "Two sets that barely overlap. See §7.5."}, {"id": "363-07-A20", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.5", "stem": "Classify 'no new staff' as a constraint.", "options": ["It forbids the easy answer and forces redesigning what existing staff do", "It makes the problem unsolvable", "It is a decoy", "It is a reversal"], "answer": 0, "why": "The easy answer is forbidden. See §7.5."}, {"id": "363-07-A21", "quiz": 2, "bloom": "Analyse", "clo": "CLO 3", "sec": "7.6", "stem": "Analyse thirty options that fall into two categories after grouping. Determine the finding.", "options": ["Most of the problem was never attacked — go back and generate in the missing categories", "The set is complete", "Cut to four at once", "Present all thirty"], "answer": 0, "why": "Grouping reveals what you never attacked. See §7.6."}, {"id": "363-07-A22", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.6", "stem": "Determine the step that removes options nobody could defend.", "options": ["Step 3 — the decoy test", "Step 1 — grouping", "Step 2 — strongest per category", "Step 4 — keep three to five"], "answer": 0, "why": "Check each against §7.1. See §7.6."}, {"id": "363-07-A23", "quiz": 2, "bloom": "Analyse", "clo": "CLO 3", "sec": "7.6", "stem": "Analyse a report that lists four options but no rejected list. Determine the weakness.", "options": ["No evidence that the recommendation was chosen rather than assumed", "Too few options", "Too many options", "No constraint"], "answer": 0, "why": "Keep the rejected list and the reasons. See §7.6."}, {"id": "363-07-A24", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.6", "stem": "Determine why nine options should not go to the decision.", "options": ["A manager cannot compare nine", "Nine is unlucky", "Nine costs too much", "Nine needs a robot"], "answer": 0, "why": "Keep three to five. See §7.6."}, {"id": "363-07-A25", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.6", "stem": "Select the honest reason line for a rejected option.", "options": ["'Rejected: would need board approval and six months; the problem needs a fix this quarter'", "'Rejected: we did not like it'", "'Rejected: too creative'", "'Rejected: the boss said no'"], "answer": 0, "why": "One honest sentence of reason for each. See Exercise 4 and §7.6."}, {"id": "363-07-A26", "quiz": 2, "bloom": "Analyse", "clo": "CLO 3", "sec": "7.1", "stem": "Analyse a group that adds 'do nothing' only to make its favourite look good. Determine the verdict.", "options": ["A decoy — and it will cost marks", "Honest practice", "Good coverage", "A constraint"], "answer": 0, "why": "Include it honestly or not at all. See §7.1."}, {"id": "363-07-A27", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.2", "stem": "Determine the quickest check before taking an option set to a client.", "options": ["Sort into categories and look for empty columns", "Count the options", "Price every option", "Ask the client"], "answer": 0, "why": "The quickest check. See §7.2."}, {"id": "363-07-A28", "quiz": 2, "bloom": "Analyse", "clo": "CLO 3", "sec": "7.3", "stem": "Analyse the assumption 'customers come to us' for a pharmacy next to a clinic. Determine the reversed option.", "options": ["A pharmacy counter or delivery inside the clinic", "A bigger car park", "A sign on the door", "More shelves"], "answer": 0, "why": "We go to customers. See §7.3."}, {"id": "363-07-A29", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.4", "stem": "Determine what an emergency department's 'express lane for simple cases' becomes in a pharmacy.", "options": ["A quick counter for repeat prescriptions", "A bigger waiting room", "More pharmacists", "Closing early"], "answer": 0, "why": "Import, then adapt. See §7.4."}, {"id": "363-07-A30", "quiz": 2, "bloom": "Analyse", "clo": "CLO 3", "sec": "7.6", "stem": "Analyse a group that keeps the four options the loudest member likes. Determine the fault.", "options": ["Options were not chosen by coverage and the decoy test", "Nothing", "Too few options", "No constraint"], "answer": 0, "why": "Strongest per category, decoy test. See §7.6."}, {"id": "363-07-A31", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.5", "stem": "Determine the effect of 'one person could run it' on a committee-heavy option set.", "options": ["It forces simplicity and clear ownership", "It adds approvals", "It adds staff", "It removes the deadline"], "answer": 0, "why": "Simplicity and clear ownership. See §7.5."}, {"id": "363-07-A32", "quiz": 2, "bloom": "Apply", "clo": "CLO 3", "sec": "7.4", "stem": "Classify 'numbered tickets at a pharmacy' as a technique.", "options": ["Analogy — imported from banks and clinics that solved the same abstracted problem", "Assumption reversal", "A constraint", "A decoy"], "answer": 0, "why": "Import and adapt. See §7.4."}]}
+{
+ "subject": "MGMT363",
+ "chapter": 7,
+ "title": "Generating Alternatives",
+ "clos": [
+  "CLO 3"
+ ],
+ "source": "MGMT363_Chapter7.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "363-07-I01",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.1",
+   "stem": "Describe a real alternative.",
+   "options": [
+    "An option somebody sensible, looking at the same evidence, might actually choose",
+    "An option that exists only to make the favourite look reasonable when the three are compared",
+    "Any option that appears on the list presented to the client in the final report",
+    "The cheapest option on the list, because cost is what a sensible decision-maker looks at first"
+   ],
+   "answer": 0,
+   "why": "A real alternative could be chosen. See §7.1."
+  },
+  {
+   "id": "363-07-I02",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.1",
+   "stem": "Describe a decoy.",
+   "options": [
+    "An option that exists only to make the favourite look reasonable — 'do nothing' and 'spend ten million'",
+    "The strongest option in the set, which the others are measured against during the decision",
+    "A tested option that has already been tried in a small way before being presented",
+    "A constraint that limits the options the group is allowed to consider"
+   ],
+   "answer": 0,
+   "why": "Two decoys and a favourite is a decision already taken. See §7.1."
+  },
+  {
+   "id": "363-07-I03",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.1",
+   "stem": "Identify the decoy test.",
+   "options": [
+    "Could you write an honest paragraph arguing FOR each option? If not, it is not an option",
+    "Is it cheap enough to be approved by the branch manager without going to the board?",
+    "Does the boss like it enough to defend it in front of the rest of the management team and the board?",
+    "Is it new to the organisation, or has something like it been tried before?"
+   ],
+   "answer": 0,
+   "why": "If you cannot argue for it, it is not an option. See §7.1."
+  },
+  {
+   "id": "363-07-I04",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.1",
+   "stem": "Explain when 'do nothing' is a real option.",
+   "options": [
+    "When the cost of acting is high and the problem may resolve",
+    "Never — a consultant is paid to recommend action, not inaction",
+    "Always — every option set should include the status quo as a baseline",
+    "Only in small firms, where the cost of acting is a large share of the budget"
+   ],
+   "answer": 0,
+   "why": "Include it honestly or not at all. See §7.1."
+  },
+  {
+   "id": "363-07-I05",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.1",
+   "stem": "Explain how section 5 of the project report is graded.",
+   "options": [
+    "On whether the rejected options were real — decoys cost marks",
+    "On the number of options presented, with more options earning more marks",
+    "On the length of the section and the detail given for each option",
+    "On the client's approval of the recommended option"
+   ],
+   "answer": 0,
+   "why": "Two decoys and a favourite will be recognised. See §7.1."
+  },
+  {
+   "id": "363-07-I06",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.2",
+   "stem": "Explain why coverage matters more than count.",
+   "options": [
+    "Twenty price changes are a worse set than five options attacking the problem in five different ways",
+    "More options are always better, because the client has more to choose from",
+    "Count is what clients want, because a long list shows that the work was thorough",
+    "Coverage is cheaper to produce than a long list of options"
+   ],
+   "answer": 0,
+   "why": "Judge the set on what it covers. See §7.2."
+  },
+  {
+   "id": "363-07-I07",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.2",
+   "stem": "Identify the four questions to ask of an option set.",
+   "options": [
+    "How many kinds? How wide is the cost range? How fast could each start? Who has to agree?",
+    "Who proposed it? Is it cheap? Is it new to the organisation? Is it safe to try?",
+    "Is it a mess? Is it a symptom? Is it a problem? Is it a plan?",
+    "What is the source? What is the size? How old is it? Does it fit the claim?"
+   ],
+   "answer": 0,
+   "why": "Four questions about the set. See §7.2."
+  },
+  {
+   "id": "363-07-I08",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.2",
+   "stem": "Describe a strong option set on the 'kinds' question.",
+   "options": [
+    "Price, process, people, place, product — several kinds",
+    "All price changes, from a small discount to a large one",
+    "All six-month projects of different sizes",
+    "All board decisions, so that the set has authority"
+   ],
+   "answer": 0,
+   "why": "Variations are not alternatives. See §7.2."
+  },
+  {
+   "id": "363-07-I09",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.2",
+   "stem": "Identify the quickest check of an option set.",
+   "options": [
+    "Sort the options into categories — if all land in one column, you generated variations, not alternatives",
+    "Count them and check that there are at least ten before taking the set to the client",
+    "Ask the boss which options are worth keeping before any analysis is done",
+    "Price every option so that the cheapest and the most expensive are clear"
+   ],
+   "answer": 0,
+   "why": "Go back and attack a different part of the cause map. See §7.2."
+  },
+  {
+   "id": "363-07-I10",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.2",
+   "stem": "Describe a strong option set on the 'speed' question.",
+   "options": [
+    "One could start on Monday, one next quarter",
+    "All take six months, so that they can be compared fairly",
+    "All start next year, when the budget is available",
+    "None can start until the board has approved the set"
+   ],
+   "answer": 0,
+   "why": "A strong set spans speeds. See §7.2."
+  },
+  {
+   "id": "363-07-I11",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.3",
+   "stem": "Describe assumption reversal.",
+   "options": [
+    "List the assumptions a stuck group has stopped noticing and deliberately reverse each one",
+    "Vote on which assumptions the group believes most strongly and keep those",
+    "Remove all assumptions so that the group can think freely about the problem",
+    "Confirm each assumption with evidence before generating any options"
+   ],
+   "answer": 0,
+   "why": "Uncomfortable, and it works. See §7.3."
+  },
+  {
+   "id": "363-07-I12",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.3",
+   "stem": "Identify the option revealed by reversing 'customers come to us'.",
+   "options": [
+    "A counter inside the neighbouring clinic — we go to customers",
+    "A bigger shop with much more space for the customers who already come to us",
+    "Lower prices so that more customers choose to come to us",
+    "Longer hours so that customers can come to us at any time"
+   ],
+   "answer": 0,
+   "why": "We go to customers. See §7.3."
+  },
+  {
+   "id": "363-07-I13",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.3",
+   "stem": "Identify the option revealed by reversing 'we need more staff at peak'.",
+   "options": [
+    "Fewer customers at peak — off-peak pricing, staggered pickup times",
+    "Hire more staff for the peak hours and send them home again as soon as the rush is over",
+    "Close at peak so that staff can catch up with the work",
+    "Raise prices for all customers so that fewer come at any time"
+   ],
+   "answer": 0,
+   "why": "We need fewer customers at peak. See §7.3."
+  },
+  {
+   "id": "363-07-I14",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.3",
+   "stem": "Explain the rule that makes assumption reversal work.",
+   "options": [
+    "You need not believe the reversal; you must write one option that would follow IF it were true",
+    "You must believe the reversal before writing an option for it, or the option you write will not be sincere",
+    "Only true reversals count, so the group must check each one against the evidence first",
+    "Judge each reversal immediately so that the group does not waste time on impossible ones"
+   ],
+   "answer": 0,
+   "why": "Judgement comes later, in chapter 9. See §7.3."
+  },
+  {
+   "id": "363-07-I15",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.3",
+   "stem": "Identify the option revealed by reversing 'the service must be free'.",
+   "options": [
+    "A paid priority lane funds the free one",
+    "Free for everyone, with the cost covered by advertising",
+    "Close the service, because free services cannot be sustained",
+    "Charge everyone the same fee so that the service pays for itself"
+   ],
+   "answer": 0,
+   "why": "The service is paid for. See §7.3."
+  },
+  {
+   "id": "363-07-I16",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.4",
+   "stem": "Describe analogy as a technique.",
+   "options": [
+    "The deliberate search for the place where a different industry already solved your problem",
+    "Copying a competitor in the same industry who has already solved the problem",
+    "Asking a friend in another business whether they have seen the problem before",
+    "Guessing which industry might have a solution and adopting its practices"
+   ],
+   "answer": 0,
+   "why": "Most problems have been solved somewhere else. See §7.4."
+  },
+  {
+   "id": "363-07-I17",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.4",
+   "stem": "Identify the three steps of analogy.",
+   "options": [
+    "Abstract it; ask who else has that; import and adapt",
+    "Copy the solution; paste it into the plan; present it to the client",
+    "Brainstorm the industries; vote on the best; decide which to copy",
+    "Ask a contact in another industry; guess how it would work; test it"
+   ],
+   "answer": 0,
+   "why": "Step 1 is the one students skip. See §7.4."
+  },
+  {
+   "id": "363-07-I18",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.4",
+   "stem": "Describe step 1, abstracting the problem.",
+   "options": [
+    "Strip the industry words out — 'a pharmacy queue at peak' becomes 'many arrivals, one slow server, unpredictable demand'",
+    "Add industry detail so that the problem is described precisely enough for a specialist to recognise it",
+    "Name the solution the group has in mind so that the search for analogies has a target",
+    "List the competitors who face the same problem so that their solutions can be compared"
+   ],
+   "answer": 0,
+   "why": "Without abstracting you can only search your own industry. See §7.4."
+  },
+  {
+   "id": "363-07-I19",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.4",
+   "stem": "Identify the example the chapter gives of analogy across industries.",
+   "options": [
+    "Hospitals redesigned intensive-care handovers by studying Formula 1 pit stops",
+    "Banks copied cafés to redesign the layout of their branches",
+    "Airlines copied gyms to redesign their loyalty programmes",
+    "Schools copied hotels to redesign their reception areas"
+   ],
+   "answer": 0,
+   "why": "Many people, one object, seconds matter. See §7.4."
+  },
+  {
+   "id": "363-07-I20",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.4",
+   "stem": "Explain where students go wrong with analogy.",
+   "options": [
+    "They skip step 1 and search only inside their own industry, where everyone already looked",
+    "They abstract too much, so that the problem no longer resembles anything real",
+    "They import nothing, because the other industry's solution looks too different",
+    "They adapt too early, before they have understood the other industry's solution"
+   ],
+   "answer": 0,
+   "why": "Skip step 1 and you search where everyone already looked. See §7.4."
+  },
+  {
+   "id": "363-07-I21",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.5",
+   "stem": "Explain why a hard constraint produces better options than an open brief.",
+   "options": [
+    "It forbids the obvious answer, forcing different thinking",
+    "Constraints are cheaper to work with, because they reduce the number of options",
+    "Clients like constraints, because they show the consultant understands the budget",
+    "It shortens the meeting, because fewer options need to be discussed"
+   ],
+   "answer": 0,
+   "why": "Used deliberately, a constraint forbids the obvious. See §7.5."
+  },
+  {
+   "id": "363-07-I22",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.5",
+   "stem": "Identify what 'it must cost nothing' forces.",
+   "options": [
+    "Process, sequence and rules changes",
+    "Buying your way out of the problem with new equipment",
+    "A six-month project with a dedicated team",
+    "A committee to review the options before anything is tried"
+   ],
+   "answer": 0,
+   "why": "It forbids buying your way out. See §7.5."
+  },
+  {
+   "id": "363-07-I23",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.5",
+   "stem": "Identify what 'it must start on Monday' forces.",
+   "options": [
+    "Something small enough to try now",
+    "A six-month project planned in detail before it starts",
+    "A board paper setting out the options for approval",
+    "More staff hired before the change can begin"
+   ],
+   "answer": 0,
+   "why": "It forbids the six-month project. See §7.5."
+  },
+  {
+   "id": "363-07-I24",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.5",
+   "stem": "Describe how to use constraints in a session.",
+   "options": [
+    "Ten minutes under one constraint, then ten under a different one — two sets that barely overlap",
+    "One constraint for an hour, so that the group explores it thoroughly",
+    "No constraints, so that the group can think freely about every possibility",
+    "Let the boss choose the constraint that matches the budget"
+   ],
+   "answer": 0,
+   "why": "Exactly the coverage §7.2 asks for. See §7.5."
+  },
+  {
+   "id": "363-07-I25",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.5",
+   "stem": "Identify what 'one person could run it' forces.",
+   "options": [
+    "Simplicity and clear ownership",
+    "Committees and approvals before anything can start",
+    "More staff to share the running of the option",
+    "A bigger budget to pay for the extra work"
+   ],
+   "answer": 0,
+   "why": "It forbids committees. See §7.5."
+  },
+  {
+   "id": "363-07-I26",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.6",
+   "stem": "Identify the four steps for cutting thirty options to four.",
+   "options": [
+    "Group into categories; take the strongest per category; apply the decoy test; keep three to five and the rejected list",
+    "Vote on the options; argue about the result; decide by majority; forget the rest",
+    "Price every option; rank them by cost; cut the most expensive; present the rest",
+    "Ask the boss; ask the client; ask the staff; decide which options to keep"
+   ],
+   "answer": 0,
+   "why": "How you cut decides whether the decision is real. See §7.6."
+  },
+  {
+   "id": "363-07-I27",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.6",
+   "stem": "Explain why grouping the thirty into categories comes first.",
+   "options": [
+    "It reveals which parts of the problem you never attacked",
+    "It is the quickest way to reduce the list to a manageable number",
+    "Clients ask for options to be grouped in the final report",
+    "It removes decoys, because decoys do not fit any category"
+   ],
+   "answer": 0,
+   "why": "Grouping shows the gaps. See §7.6."
+  },
+  {
+   "id": "363-07-I28",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.6",
+   "stem": "Explain why you keep the rejected list.",
+   "options": [
+    "What you rejected and why is the evidence that the recommendation was chosen rather than assumed",
+    "To make the report longer and more thorough in the eyes of the client",
+    "Because rejected options may win later if circumstances change",
+    "To show which members of the group proposed the weak options"
+   ],
+   "answer": 0,
+   "why": "In the report and in real consulting. See §7.6."
+  },
+  {
+   "id": "363-07-I29",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.6",
+   "stem": "Identify how many options should go to the decision.",
+   "options": [
+    "Three to five",
+    "Nine",
+    "One",
+    "Thirty or more"
+   ],
+   "answer": 0,
+   "why": "A manager cannot compare nine. See §7.6."
+  },
+  {
+   "id": "363-07-I30",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.6",
+   "stem": "Explain why the strongest one or two per category are taken.",
+   "options": [
+    "It guarantees coverage rather than repetition",
+    "They are the cheapest in each category",
+    "They are the boss's favourites in each category",
+    "It saves paper in the final report"
+   ],
+   "answer": 0,
+   "why": "Coverage, not repetition. See §7.6."
+  },
+  {
+   "id": "363-07-I31",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.2",
+   "stem": "Describe a strong option set on the 'who has to agree' question.",
+   "options": [
+    "One the branch manager can just do, alongside ones needing approval",
+    "All need board approval, so that the set has authority",
+    "None can be approved without the owner's signature",
+    "Only the CEO decides, so that the options are consistent"
+   ],
+   "answer": 0,
+   "why": "Spread who must agree. See §7.2."
+  },
+  {
+   "id": "363-07-I32",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "7.1",
+   "stem": "Explain why presenting two unacceptable options and a favourite is called dishonest.",
+   "options": [
+    "It looks like analysis but the decision was already taken",
+    "It is too short to count as a proper comparison of options",
+    "It costs too much to prepare three options when only one will be chosen",
+    "Clients prefer one option, so the other two waste their time"
+   ],
+   "answer": 0,
+   "why": "The most common dishonesty in business reports. See §7.1."
+  },
+  {
+   "id": "363-07-A01",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.1",
+   "stem": "Classify 'Option A: close the branch immediately and write off the lease' in the pharmacy report.",
+   "options": [
+    "A decoy — nobody could write an honest paragraph for it",
+    "A real alternative that a sensible owner might choose",
+    "The recommendation that the consultant is steering toward",
+    "A constraint on the options the consultant is allowed to consider"
+   ],
+   "answer": 0,
+   "why": "Apply the decoy test. See §7.1 and Exercise 1."
+  },
+  {
+   "id": "363-07-A02",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.1",
+   "stem": "Classify 'Option B: invest 2.4 million in a full refit and a pharmacy robot' for a struggling branch.",
+   "options": [
+    "A decoy — the 'spend ten million' pattern",
+    "A real alternative for a branch with a long-term future",
+    "A cheap test of whether automation would help",
+    "A reversal of the assumption that the branch should stay small"
+   ],
+   "answer": 0,
+   "why": "The usual decoy pair: do nothing and spend a fortune. See §7.1."
+  },
+  {
+   "id": "363-07-A03",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 3",
+   "sec": "7.1",
+   "stem": "Analyse a consultant's three options where only C can be argued for. Determine what the report really is.",
+   "options": [
+    "A decision already taken, dressed as analysis",
+    "Good analysis, because the strongest option is clearly identified",
+    "A coverage check, because three kinds of option are compared",
+    "A pre-mortem, because the weak options show how the strong one could fail"
+   ],
+   "answer": 0,
+   "why": "Two decoys and a favourite. See §7.1 and Exercise 1."
+  },
+  {
+   "id": "363-07-A04",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.1",
+   "stem": "Determine when to include 'do nothing' in the pharmacy option set.",
+   "options": [
+    "Only if acting is costly and the problem may resolve — and then argue for it honestly",
+    "Always, as a safe default that the owner can fall back on",
+    "Never, because a consultant is paid to recommend action",
+    "Only to make option C look good by comparison"
+   ],
+   "answer": 0,
+   "why": "Include it honestly or not at all. See §7.1."
+  },
+  {
+   "id": "363-07-A05",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 3",
+   "sec": "7.2",
+   "stem": "Analyse a set of five options that are all discounts. Determine the chapter's verdict.",
+   "options": [
+    "Variations, not alternatives — one column only",
+    "A strong set, because discounts of different sizes give the client a real choice",
+    "Good coverage, because every customer segment is reached by one of the discounts",
+    "A complete set, because price is the lever the client controls"
+   ],
+   "answer": 0,
+   "why": "Sort into categories; all in one column means variations. See §7.2."
+  },
+  {
+   "id": "363-07-A06",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 3",
+   "sec": "7.2",
+   "stem": "Analyse the pharmacy options (close, refit, extend hours). Determine the categories left untouched.",
+   "options": [
+    "Stock, staffing process, customer flow and the clinic next door — almost everything but place and hours",
+    "None — the three options cover everything a pharmacy branch can change",
+    "Price only, because none of the options changes what customers pay",
+    "Product only, because none of the options changes what the branch sells"
+   ],
+   "answer": 0,
+   "why": "Which parts of the problem are untouched? See Exercise 1 and §7.2."
+  },
+  {
+   "id": "363-07-A07",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.2",
+   "stem": "Select the addition that improves coverage of the pharmacy set most.",
+   "options": [
+    "A pre-order and collection shelf — a process option costing little and starting soon",
+    "A bigger refit that modernises the whole branch at once",
+    "A longer lease that gives the branch time to recover",
+    "A second robot to handle the overflow at peak times"
+   ],
+   "answer": 0,
+   "why": "Attack a different part of the cause map. See §7.2."
+  },
+  {
+   "id": "363-07-A08",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.2",
+   "stem": "Determine the fault in a set where every option needs board approval.",
+   "options": [
+    "No option the branch manager can just do — weak on 'who has to agree'",
+    "Too many options for the board to compare at one meeting",
+    "Too cheap, because board-level options should involve real investment",
+    "Too fast, because board approval takes time the options do not allow"
+   ],
+   "answer": 0,
+   "why": "A strong set includes one the manager can just do. See §7.2."
+  },
+  {
+   "id": "363-07-A09",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 3",
+   "sec": "7.3",
+   "stem": "Analyse the campus café manager: 'cannot hire, cannot enlarge the kitchen, cannot change the timetable'. Identify an unspoken assumption.",
+   "options": [
+    "Everyone must be served between 12:00 and 12:40 at the counter",
+    "The café exists and will continue to operate at lunchtime",
+    "Students eat lunch and will keep coming to the café",
+    "The kitchen has a door through which food is passed to the counter"
+   ],
+   "answer": 0,
+   "why": "List the assumptions he did not say out loud. See Exercise 2 and §7.3."
+  },
+  {
+   "id": "363-07-A10",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.3",
+   "stem": "Select the option that follows from reversing 'orders are taken at the counter'.",
+   "options": [
+    "Pre-order by phone or app and collect from a shelf",
+    "Hire more counter staff for the forty-minute lunch rush",
+    "Close the counter and serve only from the kitchen hatch",
+    "Raise prices at lunchtime so that fewer students come to the counter"
+   ],
+   "answer": 0,
+   "why": "Orders taken before arrival. See §7.3."
+  },
+  {
+   "id": "363-07-A11",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 3",
+   "sec": "7.3",
+   "stem": "Analyse a reversed option that is impossible. Determine what to do with it.",
+   "options": [
+    "Take the idea inside it and write a version that is possible",
+    "Delete it, because an impossible option has no place in the set",
+    "Present it anyway, because the client should see every reversal",
+    "Argue that it is possible, because the exercise requires an option for each reversal"
+   ],
+   "answer": 0,
+   "why": "Two reversals are impossible; keep the idea inside. See Exercise 2 and §7.3."
+  },
+  {
+   "id": "363-07-A12",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.3",
+   "stem": "Determine the group's mistake when it rejects each reversal as it is spoken.",
+   "options": [
+    "Judging too early — judgement belongs in chapter 9",
+    "Nothing — impossible reversals should be rejected as soon as they are spoken",
+    "Too many reversals for one session, so the group is right to be selective",
+    "Wrong assumptions, because the group listed things nobody actually believes"
+   ],
+   "answer": 0,
+   "why": "You are required to write the option, not believe it. See §7.3."
+  },
+  {
+   "id": "363-07-A13",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.4",
+   "stem": "Select the correct abstraction of the campus café queue.",
+   "options": [
+    "Many arrivals in a short window, one slow server, demand that peaks predictably",
+    "A café with a long lunch queue and a kitchen that cannot keep up",
+    "Students who are hungry at noon and want to eat before the next lecture",
+    "A kitchen that is too small for the number of students on campus"
+   ],
+   "answer": 0,
+   "why": "Strip out every café word. See §7.4 and Exercise 3."
+  },
+  {
+   "id": "363-07-A14",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.4",
+   "stem": "Select four industries that face the abstracted queue problem.",
+   "options": [
+    "Airports, call centres, emergency departments, theme parks",
+    "Farms, mines, forests and fisheries",
+    "Law firms, accountants, architects and designers",
+    "Schools, universities, colleges and academies"
+   ],
+   "answer": 0,
+   "why": "All have solved it and none sell food. See §7.4."
+  },
+  {
+   "id": "363-07-A15",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.4",
+   "stem": "Select an imported solution for the café, adapted.",
+   "options": [
+    "Numbered tickets or a virtual queue so students arrive when called",
+    "Build a bigger kitchen so that many more meals can be prepared at once during the rush",
+    "Hire more staff for the lunch rush and send them home afterwards",
+    "Close at lunch and open again once the rush has passed"
+   ],
+   "answer": 0,
+   "why": "Take their answer literally first, then adapt. See §7.4."
+  },
+  {
+   "id": "363-07-A16",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 3",
+   "sec": "7.4",
+   "stem": "Analyse a group that only looked at other cafés for ideas. Determine the error.",
+   "options": [
+    "They skipped abstraction and searched where everyone already looked",
+    "They abstracted too much, so that the problem no longer resembled a café",
+    "They imported too literally, so that the ideas did not fit the café",
+    "They had too many analogies and could not choose between them"
+   ],
+   "answer": 0,
+   "why": "Skipping step 1. See §7.4."
+  },
+  {
+   "id": "363-07-A17",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 3",
+   "sec": "7.5",
+   "stem": "Analyse a session under 'it must cost nothing'. Determine the kind of options it produces.",
+   "options": [
+    "Process, sequence and rule changes",
+    "Purchases of new equipment and software",
+    "Big projects with dedicated teams and budgets",
+    "Hiring more staff to handle the problem"
+   ],
+   "answer": 0,
+   "why": "Buying your way out is forbidden. See §7.5."
+  },
+  {
+   "id": "363-07-A18",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.5",
+   "stem": "Determine the chapter's reply to a group that says 'the constraints stop us solving it'.",
+   "options": [
+    "Use the constraints deliberately — they forbid the obvious answer and produce better options",
+    "Agree and stop, because a problem that cannot be solved within the constraints cannot be solved",
+    "Remove the constraints, because the client's rules are what is stopping the solution",
+    "Ask for budget, because every real solution costs money"
+   ],
+   "answer": 0,
+   "why": "Constraints used deliberately beat open briefs. See §7.5."
+  },
+  {
+   "id": "363-07-A19",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.5",
+   "stem": "Select the pair of constraints that gives two non-overlapping option sets.",
+   "options": [
+    "'Must cost nothing' then 'must start on Monday'",
+    "'Must cost nothing' twice, so that the group goes deeper the second time",
+    "'Must be approved by the board' and 'must be written down'",
+    "'Must be big' and 'must be expensive', so that the group thinks ambitiously"
+   ],
+   "answer": 0,
+   "why": "Two sets that barely overlap. See §7.5."
+  },
+  {
+   "id": "363-07-A20",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.5",
+   "stem": "Classify 'no new staff' as a constraint.",
+   "options": [
+    "It forbids the easy answer and forces redesigning what existing staff do",
+    "It makes the problem unsolvable, because every service problem needs more hands",
+    "It is a decoy, because the client does not really mean it",
+    "It is a reversal, because it turns 'we need more staff' upside down"
+   ],
+   "answer": 0,
+   "why": "The easy answer is forbidden. See §7.5."
+  },
+  {
+   "id": "363-07-A21",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 3",
+   "sec": "7.6",
+   "stem": "Analyse thirty options that fall into two categories after grouping. Determine the finding.",
+   "options": [
+    "Most of the problem was never attacked — go back and generate in the missing categories",
+    "The set is complete, because thirty options is more than enough",
+    "Cut to four at once, because the categories show which options are strongest",
+    "Present all thirty so that the client can see the depth of the work"
+   ],
+   "answer": 0,
+   "why": "Grouping reveals what you never attacked. See §7.6."
+  },
+  {
+   "id": "363-07-A22",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.6",
+   "stem": "Determine the step that removes options nobody could defend.",
+   "options": [
+    "Step 3 — the decoy test",
+    "Step 1 — grouping",
+    "Step 2 — strongest per category",
+    "Step 4 — keep three to five"
+   ],
+   "answer": 0,
+   "why": "Check each against §7.1. See §7.6."
+  },
+  {
+   "id": "363-07-A23",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 3",
+   "sec": "7.6",
+   "stem": "Analyse a report that lists four options but no rejected list. Determine the weakness.",
+   "options": [
+    "No evidence that the recommendation was chosen rather than assumed",
+    "Too few options for a problem of this size",
+    "Too many options for the client to compare",
+    "No constraint was used to generate the options"
+   ],
+   "answer": 0,
+   "why": "Keep the rejected list and the reasons. See §7.6."
+  },
+  {
+   "id": "363-07-A24",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.6",
+   "stem": "Determine why nine options should not go to the decision.",
+   "options": [
+    "A manager cannot compare nine",
+    "Nine is an unlucky number in many business cultures",
+    "Nine costs too much to analyse in the time available",
+    "Nine options need a decision matrix the client will not read"
+   ],
+   "answer": 0,
+   "why": "Keep three to five. See §7.6."
+  },
+  {
+   "id": "363-07-A25",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.6",
+   "stem": "Select the honest reason line for a rejected option.",
+   "options": [
+    "'Rejected: would need board approval and six months; the problem needs a fix this quarter'",
+    "'Rejected: the group did not like it when it was discussed'",
+    "'Rejected: too creative for a conservative client'",
+    "'Rejected: the boss said no before the option was analysed'"
+   ],
+   "answer": 0,
+   "why": "One honest sentence of reason for each. See Exercise 4 and §7.6."
+  },
+  {
+   "id": "363-07-A26",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 3",
+   "sec": "7.1",
+   "stem": "Analyse a group that adds 'do nothing' only to make its favourite look good. Determine the verdict.",
+   "options": [
+    "A decoy — and it will cost marks",
+    "Honest practice, because the status quo should always be shown",
+    "Good coverage, because it adds a zero-cost option to the set",
+    "A constraint, because it limits what the client can choose"
+   ],
+   "answer": 0,
+   "why": "Include it honestly or not at all. See §7.1."
+  },
+  {
+   "id": "363-07-A27",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.2",
+   "stem": "Determine the quickest check before taking an option set to a client.",
+   "options": [
+    "Sort into categories and look for empty columns",
+    "Count the options and check there are at least ten",
+    "Price every option so that the range is clear",
+    "Ask the client which options they would like to see"
+   ],
+   "answer": 0,
+   "why": "The quickest check. See §7.2."
+  },
+  {
+   "id": "363-07-A28",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 3",
+   "sec": "7.3",
+   "stem": "Analyse the assumption 'customers come to us' for a pharmacy next to a clinic. Determine the reversed option.",
+   "options": [
+    "A pharmacy counter or delivery inside the clinic",
+    "A bigger car park so that customers can reach the pharmacy easily",
+    "A sign on the door so that clinic patients notice the pharmacy",
+    "More shelves so that customers find what they need faster"
+   ],
+   "answer": 0,
+   "why": "We go to customers. See §7.3."
+  },
+  {
+   "id": "363-07-A29",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.4",
+   "stem": "Determine what an emergency department's 'express lane for simple cases' becomes in a pharmacy.",
+   "options": [
+    "A quick counter for repeat prescriptions",
+    "A bigger waiting room for customers who have to wait",
+    "More pharmacists on duty at peak times",
+    "Closing early so that the backlog can be cleared"
+   ],
+   "answer": 0,
+   "why": "Import, then adapt. See §7.4."
+  },
+  {
+   "id": "363-07-A30",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 3",
+   "sec": "7.6",
+   "stem": "Analyse a group that keeps the four options the loudest member likes. Determine the fault.",
+   "options": [
+    "Options were not chosen by coverage and the decoy test",
+    "Nothing — a group needs someone to make the final choice",
+    "Too few options for a problem of this size",
+    "No constraint was used to generate the options"
+   ],
+   "answer": 0,
+   "why": "Strongest per category, decoy test. See §7.6."
+  },
+  {
+   "id": "363-07-A31",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.5",
+   "stem": "Determine the effect of 'one person could run it' on a committee-heavy option set.",
+   "options": [
+    "It forces simplicity and clear ownership",
+    "It adds approvals, because one person needs permission to act",
+    "It adds staff, because one person cannot run a committee",
+    "It removes the deadline, because one person works at their own pace"
+   ],
+   "answer": 0,
+   "why": "Simplicity and clear ownership. See §7.5."
+  },
+  {
+   "id": "363-07-A32",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "7.4",
+   "stem": "Classify 'numbered tickets at a pharmacy' as a technique.",
+   "options": [
+    "Analogy — imported from banks and clinics that solved the same abstracted problem",
+    "Assumption reversal — it reverses 'customers queue at the counter'",
+    "A constraint — it limits how many customers can be served",
+    "A decoy — it exists to make the favourite look reasonable"
+   ],
+   "answer": 0,
+   "why": "Import and adapt. See §7.4."
+  }
+ ]
+}

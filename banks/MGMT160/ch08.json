@@ -1,0 +1,493 @@
+{
+ "subject": "MGMT160",
+ "chapter": 8,
+ "title": "Managing Change, Innovation and the Future of Work",
+ "clos": [
+  "CLO 1",
+  "CLO 2"
+ ],
+ "source": "Chapter08_Change_Innovation_Future_of_Work.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "160-08-I01",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "8.1",
+   "stem": "Describe organisational change.",
+   "options": [
+    "Altering how the organisation works — its strategy, structure, technology, people or processes",
+    "Changing the company logo, colours and uniforms so that customers notice a fresh image",
+    "Replacing the top manager and the leadership team with people from outside the company",
+    "Moving to a bigger office or a new building when the current one is too small for the staff"
+   ],
+   "answer": 0,
+   "why": "Five things can change; usually people are the hardest part. See §8.1."
+  },
+  {
+   "id": "160-08-I02",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "8.1",
+   "stem": "Identify the five pressures that force organisations to change.",
+   "options": [
+    "Competition, technology, customer expectations, globalisation, economic changes",
+    "Fear, uncertainty, comfort with old ways, loss of control, loss of status",
+    "Planning, organising, leading, controlling, innovating",
+    "Salaries, offices, managers, customers, suppliers"
+   ],
+   "answer": 0,
+   "why": "Chapter 3's environment never stops moving. See §8.1."
+  },
+  {
+   "id": "160-08-I03",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "8.1",
+   "stem": "Explain the success trap.",
+   "options": [
+    "The better today's business performs, the harder it is to change it",
+    "Successful companies have no competitors to watch",
+    "Success makes managers lazy about profits, so costs rise until the company fails",
+    "Successful companies cannot hire good people, because talented staff prefer start-ups"
+   ],
+   "answer": 0,
+   "why": "Nokia perfected yesterday's phone; Kodak protected film against its own digital invention. See §8.1."
+  },
+  {
+   "id": "160-08-I04",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "8.2",
+   "stem": "Identify the four honest reasons people resist change.",
+   "options": [
+    "Fear, uncertainty, comfort with old ways, loss of control or status",
+    "Laziness, lack of intelligence, disloyalty and age",
+    "Low pay, long hours, bad managers and small offices",
+    "Competition, technology, globalisation and the economy"
+   ],
+   "answer": 0,
+   "why": "Resistance is information about what people are protecting, not disloyalty. See §8.2."
+  },
+  {
+   "id": "160-08-I05",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "8.2",
+   "stem": "Explain how a manager should treat resistance.",
+   "options": [
+    "As information about what people are protecting — read it and fix the plan",
+    "As disloyalty to be punished",
+    "As proof that the employees are too old for the new way and should be replaced",
+    "As a sign that the change should be cancelled, because the team knows the work best"
+   ],
+   "answer": 0,
+   "why": "The manager who treats resistance as disloyalty hardens it; the manager who reads it fixes the plan. See §8.2."
+  },
+  {
+   "id": "160-08-I06",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "8.3",
+   "stem": "Identify the four tools for managing resistance, in order.",
+   "options": [
+    "Communication, participation, training, support",
+    "Punishment, pressure, deadlines and bonuses",
+    "Email announcement, manual, launch and review",
+    "Hire, dismiss, train and promote"
+   ],
+   "answer": 0,
+   "why": "Communicate why first, involve second, train before launch, support through the dip. See §8.3."
+  },
+  {
+   "id": "160-08-I07",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "8.3",
+   "stem": "Explain why the order of the four tools matters.",
+   "options": [
+    "Nobody wants training for a change they do not understand, and people only train for a design they had a say in",
+    "Training is the most expensive tool, so it comes last to protect the budget if the change is cancelled",
+    "Support should always come first, because people need to feel safe before they will listen to anything",
+    "The order does not matter, as long as all four tools are used at some point during the change"
+   ],
+   "answer": 0,
+   "why": "Communicate first, involve second, then train, then support. See §8.3."
+  },
+  {
+   "id": "160-08-I08",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "8.3",
+   "stem": "Explain what 'support' means in managing change.",
+   "options": [
+    "Patience in the dip — performance drops before it rises, and punishing the dip kills the change",
+    "Paying a bonus to every employee who accepts the change within the first month",
+    "Sending more emails and reminders so that nobody can say they were not informed",
+    "Hiring a consultant to run the change so that the manager can concentrate on the daily work"
+   ],
+   "answer": 0,
+   "why": "Every real change has a dip. See §8.3."
+  },
+  {
+   "id": "160-08-I09",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "8.4",
+   "stem": "Identify Lewin's three steps in order.",
+   "options": [
+    "Unfreeze → change → refreeze",
+    "Plan → do → check",
+    "Announce → train → review",
+    "Refreeze → change → unfreeze"
+   ],
+   "answer": 0,
+   "why": "Create readiness, make the move, make it stick. See §8.4."
+  },
+  {
+   "id": "160-08-I10",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "8.4",
+   "stem": "Explain why so many changes 'did not stick'.",
+   "options": [
+    "The refreeze step was skipped — new habits were not written into training, KPIs and rewards",
+    "The change was too small to be noticed, so people saw no reason to alter their habits",
+    "The employees were too young to understand why the organisation needed to change",
+    "The manager communicated too much, so the team stopped listening before the launch"
+   ],
+   "answer": 0,
+   "why": "Refreezing is control; a change that is not measured, trained and rewarded was only announced. See §8.4."
+  },
+  {
+   "id": "160-08-I11",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "8.5",
+   "stem": "Describe innovation as the chapter defines it.",
+   "options": [
+    "Turning ideas into useful products, services or processes",
+    "Having many creative ideas and sharing them with the team in brainstorming sessions",
+    "Buying the newest technology before competitors do, so that the company looks modern",
+    "Copying what competitors do as soon as it works, so that the company is never left behind"
+   ],
+   "answer": 0,
+   "why": "The key word is useful; creativity generates the idea, innovation applies it. See §8.5."
+  },
+  {
+   "id": "160-08-I12",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "8.5",
+   "stem": "Differentiate creativity from innovation.",
+   "options": [
+    "Creativity generates the idea; innovation implements it — and implementation is the harder half",
+    "Creativity is for artists and designers; innovation is for engineers and product managers",
+    "They mean the same thing, and the chapter uses whichever word fits the sentence",
+    "Innovation generates the idea; creativity is the work of selling it to customers"
+   ],
+   "answer": 0,
+   "why": "Everyone had the million-dirham idea; almost nobody did the four functions that turn it into a product. See §8.5."
+  },
+  {
+   "id": "160-08-I13",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "8.6",
+   "stem": "Identify the four barriers that kill innovation inside organisations.",
+   "options": [
+    "Fear of failure, resistance to change, lack of resources, rigid culture",
+    "Too many ideas, too much money, too many people and too much time",
+    "Customers, suppliers, competitors and government",
+    "Planning, organising, leading and controlling"
+   ],
+   "answer": 0,
+   "why": "Organisations rarely lack ideas; they lack the conditions in which an idea survives its first week. See §8.6."
+  },
+  {
+   "id": "160-08-I14",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "8.7",
+   "stem": "Explain the chapter's 'honest frame' about jobs and technology.",
+   "options": [
+    "Jobs will mostly be reassembled, not abolished — routine goes to software, judgement and people stay with humans",
+    "All jobs will disappear within a generation, so students should prepare for a world without work",
+    "Nothing will change in most jobs, because software has been promised for decades and never arrived",
+    "Only managers' jobs will disappear, because software can plan, organise and control better than people"
+   ],
+   "answer": 0,
+   "why": "The accountant does less data entry and more advice; the manager does less reporting and more of the 70%. See §8.7."
+  },
+  {
+   "id": "160-08-I15",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "8.8",
+   "stem": "Identify the skill the chapter calls the meta-skill for future managers.",
+   "options": [
+    "Adaptability — it keeps the other skills current",
+    "Typing speed and software skills",
+    "Accounting and financial analysis",
+    "Memorising rules and procedures"
+   ],
+   "answer": 0,
+   "why": "Adaptability is this whole chapter, made personal. See §8.8."
+  },
+  {
+   "id": "160-08-A01",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "8.1",
+   "stem": "Analyse Kodak, which invented the digital camera in 1975 and went bankrupt in 2012, killed by digital cameras. Determine the explanation.",
+   "options": [
+    "The success trap — it protected film against its own invention",
+    "It never saw digital coming, because its engineers were focused on improving film",
+    "It lacked engineers who understood digital technology well enough to build cameras",
+    "It had no customers for digital cameras, because the market did not exist until 2000"
+   ],
+   "answer": 0,
+   "why": "Kodak literally built the future and still failed because today's successful business was too valuable to disrupt. See §8.1."
+  },
+  {
+   "id": "160-08-A02",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "8.1",
+   "stem": "Classify a bookstore adding online sales.",
+   "options": [
+    "A strategy change",
+    "A structure change",
+    "A people change",
+    "A process change"
+   ],
+   "answer": 0,
+   "why": "A new direction is a change of strategy. See §8.1."
+  },
+  {
+   "id": "160-08-A03",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "8.2",
+   "stem": "Identify the reason for resistance when an expert on the old system says 'with the new one I will look like a beginner'.",
+   "options": [
+    "Fear of losing competence",
+    "Uncertainty about the future",
+    "Loss of control over the work",
+    "Laziness about learning"
+   ],
+   "answer": 0,
+   "why": "'Will I look incompetent with the new system?' — the fear of losing competence built over years. See §8.2."
+  },
+  {
+   "id": "160-08-A04",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "8.2",
+   "stem": "Determine what a manager should do before announcing a change, according to the empathy flip.",
+   "options": [
+    "Write the four sentences the team will say in the car park — fear, uncertainty, comfort, loss — and answer all four in the announcement",
+    "Announce quickly before rumours start, because the first version of the story is the one people remember",
+    "Send the manual first so that the team has read the details before the manager explains the reasons",
+    "Wait for the team to ask about the change, so that the manager answers the questions people actually have"
+   ],
+   "answer": 0,
+   "why": "If you cannot answer all four, you are not ready to announce. See §8.2."
+  },
+  {
+   "id": "160-08-A05",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "8.3",
+   "stem": "Analyse the company that installed a new system on Monday by email with a 40-page manual; by Friday staff were using the old spreadsheets. Determine the diagnosis.",
+   "options": [
+    "No why (communication), no one consulted (participation), no practice (training), and the dip called 'resistance' (support)",
+    "The staff were lazy and used the new system as an excuse to avoid learning something new",
+    "The manual was too short to explain the system properly, so the staff could not use it",
+    "The system was too good for the company, so the staff could not keep up with it"
+   ],
+   "answer": 0,
+   "why": "The fix is not a stricter email — it is the four tools, in order, before the next launch. See §8.3."
+  },
+  {
+   "id": "160-08-A06",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "8.3",
+   "stem": "Select the tool that answers the fear of looking incompetent.",
+   "options": [
+    "Training before launch, with safe practice time",
+    "A stricter email that makes clear the old system is no longer available",
+    "A bonus for every employee who uses the new system in the first month",
+    "A new manager who is more comfortable with the technology than the old one"
+   ],
+   "answer": 0,
+   "why": "Fear of looking incompetent dies with competence. See §8.3."
+  },
+  {
+   "id": "160-08-A07",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "8.4",
+   "stem": "Select the correct unfreeze action for a bookstore owner who refuses to change.",
+   "options": [
+    "Show why the old way cannot continue — the falling numbers, the online competitor, the customer data",
+    "Install the new system and hope that the owner learns to appreciate it once it is in use",
+    "Write the new process into the staff handbook so that the owner has to follow it",
+    "Celebrate the first success with the new system so that the owner sees it working"
+   ],
+   "answer": 0,
+   "why": "People do not leave a comfortable room until they feel the cold. See §8.4."
+  },
+  {
+   "id": "160-08-A08",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "8.4",
+   "stem": "Select the refreeze action for a change.",
+   "options": [
+    "Write the new way into training, KPIs and rewards, and celebrate successes",
+    "Announce the change again in a longer email so that everyone has the details",
+    "Send the manual again with a reminder that the old way is no longer allowed",
+    "Return to the old spreadsheets until the team is ready for the new system"
+   ],
+   "answer": 0,
+   "why": "Make it stick; skip this and the old way returns in a month. See §8.4."
+  },
+  {
+   "id": "160-08-A09",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "8.4",
+   "stem": "Analyse a change where 'the unfreeze was an announcement, the change was a manual, and nobody refroze anything'. Determine the likely result.",
+   "options": [
+    "The old way returns within a month",
+    "The change succeeds anyway, because the system is better and people will see that in time",
+    "The staff are promoted for adopting the new system so quickly after the announcement",
+    "Customers notice immediately that the service has improved and the ratings rise"
+   ],
+   "answer": 0,
+   "why": "Most students find exactly this pattern in changes they have lived through. See §8.4."
+  },
+  {
+   "id": "160-08-A10",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "8.5",
+   "stem": "Classify Careem, which owned no cars, and Airbnb, which owns no hotels.",
+   "options": [
+    "Business-model innovation",
+    "New technology innovation",
+    "Improved service innovation",
+    "Not innovation"
+   ],
+   "answer": 0,
+   "why": "The innovation was the model, not the technology inside it. See §8.5."
+  },
+  {
+   "id": "160-08-A11",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "8.5",
+   "stem": "Classify a QR menu that replaced the laminated one during COVID and never left.",
+   "options": [
+    "New technology innovation",
+    "Business-model innovation",
+    "A change of strategy",
+    "Resistance to change"
+   ],
+   "answer": 0,
+   "why": "Small useful technology counts as innovation. See §8.5."
+  },
+  {
+   "id": "160-08-A12",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "8.6",
+   "stem": "Analyse an organisation where one failed experiment ends careers and nobody experiments. Determine the manager's job.",
+   "options": [
+    "Separate the failed experiment from the failed person; celebrate the well-run test that did not work",
+    "Punish failures harder so that people take more care before they experiment",
+    "Stop all experiments until the organisation has a culture that can handle failure",
+    "Hire more creative people from outside, since the current staff are afraid to try"
+   ],
+   "answer": 0,
+   "why": "Fear of failure is the first barrier; the manager's job is the conditions, not the ideas. See §8.6."
+  },
+  {
+   "id": "160-08-A13",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "8.6",
+   "stem": "Select the manager's response to 'innovation' that is a poster, not a budget line.",
+   "options": [
+    "A small protected budget and a few hours a week that nobody can reclaim",
+    "A bigger poster in the reception area so that staff and visitors see the commitment",
+    "A speech about creativity from the CEO at the start of the year",
+    "A new logo that shows the company is modern and open to new ideas"
+   ],
+   "answer": 0,
+   "why": "Lack of resources is a barrier; protect time and money. See §8.6."
+  },
+  {
+   "id": "160-08-A14",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "8.6",
+   "stem": "Analyse the registration redesign sample: pain points were mapped first, then the system proposed three clash-free schedules. Determine the lesson.",
+   "options": [
+    "Circle the pain first; the idea comes second",
+    "Start with the most exciting technology and find a problem it can solve",
+    "Copy another university that has already redesigned its registration",
+    "Ask only the senior staff, because they know the system best"
+   ],
+   "answer": 0,
+   "why": "Innovation starts from a real problem, not a gadget. See §8.6."
+  },
+  {
+   "id": "160-08-A15",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "8.7",
+   "stem": "Compare two jobs: basic data entry and managing a team. Determine which is more likely to shrink and why.",
+   "options": [
+    "Data entry — routine, predictable tasks are absorbed by software; managing people grows",
+    "Managing a team — software will replace managers because it can plan, organise and control",
+    "Both will disappear equally, because software can do routine work and lead people",
+    "Neither will change, because software has been promised for decades and never arrived"
+   ],
+   "answer": 0,
+   "why": "Routine goes to software; judgement, care and creation grow. See §8.7."
+  }
+ ]
+}

@@ -1,0 +1,429 @@
+{
+ "subject": "MGMT160",
+ "chapter": 4,
+ "title": "Planning and Decision Making",
+ "clos": [
+  "CLO 1",
+  "CLO 2"
+ ],
+ "source": "Chapter04_Planning_and_Decision_Making.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "160-04-I16",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.1",
+   "stem": "Explain what a plan changes in a team's thinking.",
+   "options": [
+    "It turns 'whatever happens, happens' into 'if X happens, we do Y'",
+    "It makes work faster automatically, because everyone knows what to do without asking",
+    "It removes the need for leading, because a good plan motivates people by itself",
+    "It guarantees success as long as the team follows the plan exactly as written"
+   ],
+   "answer": 0,
+   "why": "Planning converts luck into if-then thinking. See §4.1."
+  },
+  {
+   "id": "160-04-I17",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.2",
+   "stem": "Describe a mission statement.",
+   "options": [
+    "A short statement of why the organisation exists",
+    "A list of this year's numbers",
+    "A description of where the company will be in ten years",
+    "The company's daily schedule"
+   ],
+   "answer": 0,
+   "why": "Mission = why we exist. See §4.2."
+  },
+  {
+   "id": "160-04-I18",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.2",
+   "stem": "Describe a vision statement.",
+   "options": [
+    "A picture of where the organisation is going",
+    "The reason the company exists today and the needs it serves",
+    "A goal with a number and a date that the team must reach",
+    "A goal with a number and a date"
+   ],
+   "answer": 0,
+   "why": "Vision = where we are going; it inspires the goals. See §4.2."
+  },
+  {
+   "id": "160-04-I19",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.2",
+   "stem": "Explain how mission, vision and goals connect.",
+   "options": [
+    "The mission explains the vision, the vision inspires the goals, the goals drive daily work",
+    "They are three names for the same thing, chosen to suit different audiences",
+    "Goals come first, then the mission, then the vision is written to match them",
+    "Only the vision matters; the mission and the goals are paperwork for the annual report"
+   ],
+   "answer": 0,
+   "why": "Each level feeds the next. See §4.2."
+  },
+  {
+   "id": "160-04-I20",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.3",
+   "stem": "Describe strategic planning.",
+   "options": [
+    "Long-term direction set by top managers, thinking in years",
+    "Daily schedules set by frontline managers, thinking in days and weeks",
+    "Department plans set by middle managers over the coming months",
+    "A list of today's tasks for each employee"
+   ],
+   "answer": 0,
+   "why": "Strategic = years, top managers. See §4.3."
+  },
+  {
+   "id": "160-04-I21",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.3",
+   "stem": "Explain what 'Time-bound' adds to a goal.",
+   "options": [
+    "A date by which the goal must be reached",
+    "A number that makes the goal measurable",
+    "A reason why the goal matters to the mission",
+    "A person who is responsible for reaching the goal"
+   ],
+   "answer": 0,
+   "why": "The T in SMART is the deadline. See §4.3."
+  },
+  {
+   "id": "160-04-I22",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.4",
+   "stem": "Describe an opportunity in SWOT.",
+   "options": [
+    "An outside condition the organisation could use to its advantage",
+    "An inside strength that the organisation has built up over time",
+    "An inside weakness that the organisation needs to repair",
+    "An outside danger that could damage the organisation"
+   ],
+   "answer": 0,
+   "why": "Opportunities and threats are outside; strengths and weaknesses are inside. See §4.4."
+  },
+  {
+   "id": "160-04-I23",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.4",
+   "stem": "Explain the 'attack move' and the 'defence move' in SWOT.",
+   "options": [
+    "Attack pairs a strength with an opportunity; defence pairs a weakness with a threat",
+    "Attack means lowering prices to win customers; defence means raising them to protect profit",
+    "Attack is the strategy for big firms; defence is the strategy for small ones",
+    "Both mean copying what competitors do, either before them or after them"
+   ],
+   "answer": 0,
+   "why": "S + O attacks; W + T defends. See §4.4."
+  },
+  {
+   "id": "160-04-I24",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.5",
+   "stem": "Describe step 3 of the decision process.",
+   "options": [
+    "Generate alternatives — list several possible solutions before judging any",
+    "Choose the first solution that appears and act on it before the problem grows",
+    "Evaluate the results of last year's decision to see whether it worked",
+    "Gather information about the symptom from customers and staff"
+   ],
+   "answer": 0,
+   "why": "Step 3 creates options; step 4 evaluates them. See §4.5."
+  },
+  {
+   "id": "160-04-I25",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.5",
+   "stem": "Explain why step 6, evaluate results, matters.",
+   "options": [
+    "It tells you whether the decision worked and feeds the next decision",
+    "It is only paperwork for the audit file",
+    "It replaces step 1, because evaluating results shows what the next problem will be",
+    "It makes the decision final, so that nobody can reopen the question afterwards"
+   ],
+   "answer": 0,
+   "why": "Evaluate results closes the loop. See §4.5."
+  },
+  {
+   "id": "160-04-I26",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.6",
+   "stem": "Describe when intuitive decisions are safe to trust.",
+   "options": [
+    "When the decider has long experience in a familiar situation",
+    "Always — gut feeling is never wrong, because it comes from a deeper part of the mind",
+    "Never — only data counts, and feelings should be kept out of management decisions",
+    "Only for new managers, who have not yet learned to analyse decisions properly"
+   ],
+   "answer": 0,
+   "why": "Experienced intuition is compressed data; new-situation gut feeling is bias. See §4.6."
+  },
+  {
+   "id": "160-04-I27",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.6",
+   "stem": "Explain why the chapter calls experienced intuition 'compressed data'.",
+   "options": [
+    "Years of seeing patterns let the expert recognise the answer fast without conscious analysis",
+    "Experts keep spreadsheets in their heads and run the numbers faster than other people",
+    "Intuition is random, but experts are lucky more often because they decide more often",
+    "Experts never think consciously about decisions, so their answers come from memory alone"
+   ],
+   "answer": 0,
+   "why": "Pattern recognition built from experience. See §4.6."
+  },
+  {
+   "id": "160-04-I28",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.6",
+   "stem": "Identify the situation where the rational engine is the right choice.",
+   "options": [
+    "High stakes, time available, data available",
+    "An emergency with seconds to decide and no time to gather data",
+    "A familiar daily choice that the manager has made hundreds of times",
+    "A decision nobody cares about, where the outcome makes no difference"
+   ],
+   "answer": 0,
+   "why": "Rational for high stakes with time and data. See §4.6."
+  },
+  {
+   "id": "160-04-I29",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.7",
+   "stem": "Describe the fix for overconfidence.",
+   "options": [
+    "One independent check above a money threshold",
+    "Decide faster so that doubt does not creep in",
+    "Ask only people who agree, so that confidence stays high",
+    "Avoid data, because it only confirms what experience already knows"
+   ],
+   "answer": 0,
+   "why": "Experience earns a hypothesis, not a verdict. See §4.7."
+  },
+  {
+   "id": "160-04-I30",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.7",
+   "stem": "Describe the fix for groupthink.",
+   "options": [
+    "Collect written views before the meeting, ask the most junior first, appoint a devil's advocate",
+    "Let the boss speak first so that everyone knows which direction the discussion is taking",
+    "Vote quickly to save time, because long discussions make groups less decisive",
+    "Keep meetings short and limit them to the three most senior people in the room"
+   ],
+   "answer": 0,
+   "why": "These three steps stop silence being read as agreement. See §4.7."
+  },
+  {
+   "id": "160-04-I31",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.8",
+   "stem": "Describe what AI is good at in decision-making.",
+   "options": [
+    "Patterns, volume and speed in past data",
+    "Knowing the company's mission and ethics",
+    "Judging a situation it has never seen",
+    "Taking accountability"
+   ],
+   "answer": 0,
+   "why": "AI is strongest where humans are weakest, and weakest where humans are strongest. See §4.8."
+  },
+  {
+   "id": "160-04-I32",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.8",
+   "stem": "Explain when a manager should decide alone.",
+   "options": [
+    "When speed is critical and accountability is clearly the manager's",
+    "When the problem is complex and has many possible causes",
+    "When commitment from the team matters most for the plan to work",
+    "When the team knows more about the problem than the manager does"
+   ],
+   "answer": 0,
+   "why": "Alone for speed and clear accountability. See §4.8."
+  },
+  {
+   "id": "160-04-A16",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.3",
+   "stem": "Classify the plan 'Open a second branch in Sharjah within three years'.",
+   "options": [
+    "Strategic",
+    "Tactical",
+    "Operational",
+    "A mission statement"
+   ],
+   "answer": 0,
+   "why": "Years and direction = strategic. See §4.3."
+  },
+  {
+   "id": "160-04-A17",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.4",
+   "stem": "Determine the SWOT box for 'a new coffee chain opens next door next month'.",
+   "options": [
+    "Threat",
+    "Weakness",
+    "Weak point",
+    "Opportunity"
+   ],
+   "answer": 0,
+   "why": "Outside and dangerous = threat. See §4.4."
+  },
+  {
+   "id": "160-04-A18",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.5",
+   "stem": "Determine the step a manager skipped when she offered discounts before checking why customers left.",
+   "options": [
+    "Step 1 — identify the real problem",
+    "Step 4 — evaluate options",
+    "Step 5 — choose and act",
+    "Step 6 — evaluate results"
+   ],
+   "answer": 0,
+   "why": "She acted on a symptom without finding the cause. See §4.5."
+  },
+  {
+   "id": "160-04-A19",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.6",
+   "stem": "Classify a veteran pilot who decides in two seconds during an emergency.",
+   "options": [
+    "Intuitive decision from experience — the right engine for the situation",
+    "Rational decision — the pilot ran through the six steps very quickly",
+    "Emotional decision — the pilot reacted to fear rather than to the facts",
+    "Groupthink — the pilot did what the rest of the crew expected"
+   ],
+   "answer": 0,
+   "why": "Familiar situation, no time: experienced intuition fits. See §4.6."
+  },
+  {
+   "id": "160-04-A20",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.6",
+   "stem": "Select the decision that needs the rational engine.",
+   "options": [
+    "Choosing a supplier for a three-year contract",
+    "Picking a colour for today's poster in the staff room",
+    "A chef tasting a sauce and deciding whether it needs salt",
+    "Deciding where to have lunch with a colleague"
+   ],
+   "answer": 0,
+   "why": "High stakes and time available → rational. See §4.6."
+  },
+  {
+   "id": "160-04-A21",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.7",
+   "stem": "Classify a meeting where everyone privately disagrees but nobody speaks.",
+   "options": [
+    "Groupthink",
+    "Overconfidence",
+    "Confirmation bias",
+    "Rational decision-making"
+   ],
+   "answer": 0,
+   "why": "Silence read as agreement is groupthink. See §4.7."
+  },
+  {
+   "id": "160-04-A22",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.8",
+   "stem": "Determine the chapter's position on a hotel that lets AI set room prices with no human review.",
+   "options": [
+    "AI may advise, but a human must own and check the decision",
+    "Fully acceptable — AI has no bias and prices rooms more accurately than any manager",
+    "AI should never touch prices, because pricing is the heart of the hotel's strategy",
+    "The guests should decide prices through an auction, with the AI running the bidding"
+   ],
+   "answer": 0,
+   "why": "AI is an adviser, not a judge. See §4.8."
+  },
+  {
+   "id": "160-04-A23",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.8",
+   "stem": "Select the decision that should be made together with the team.",
+   "options": [
+    "Redesigning a workflow the team knows better than the manager",
+    "Evacuating the building during a fire alarm",
+    "Signing today's delivery note from the regular supplier",
+    "Choosing the manager's own desk and chair for the office"
+   ],
+   "answer": 0,
+   "why": "Together when the team knows things the manager cannot. See §4.8."
+  },
+  {
+   "id": "160-04-A24",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "4.8",
+   "stem": "Analyse a manager who says 'the AI decided' when a customer complains. Determine the chapter's view.",
+   "options": [
+    "Unacceptable — the manager stays accountable for decisions AI only advised",
+    "Acceptable — the AI is responsible for its decision",
+    "Acceptable if the AI was expensive, because the company has invested in its judgement",
+    "The customer should ask the AI to explain itself, since it knows why it decided"
+   ],
+   "answer": 0,
+   "why": "'The AI decided' satisfies no customer, court or team. See §4.8."
+  }
+ ]
+}

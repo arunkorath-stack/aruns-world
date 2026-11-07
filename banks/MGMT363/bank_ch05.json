@@ -1,1 +1,1037 @@
-{"subject": "MGMT363", "chapter": 5, "title": "Analytical Thinking with Business Data", "clos": ["CLO 1", "CLO 2"], "source": "MGMT363_Chapter5.pptx", "status": "published", "questions": [{"id": "363-05-I01", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.1", "stem": "Identify the three questions to ask about any table before reading it.", "options": ["Who is in it and who is missing? When was it collected? How was it measured, and by whom?", "Is it big? Is it colourful? Is it recent?", "Who made it? How much did it cost? Is it approved?", "Mean? Median? Range?"], "answer": 0, "why": "Professionals interrogate the table first. See §5.1."}, {"id": "363-05-I02", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.1", "stem": "Describe survivor bias.", "options": ["Analysing the customers, staff or products still here and concluding something about the ones that left", "Counting every customer twice", "Choosing the biggest number", "Using last year's data"], "answer": 0, "why": "The most expensive error in business data. See §5.1."}, {"id": "363-05-I03", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.1", "stem": "Explain why a satisfaction survey can mislead.", "options": ["It contains the customers who stayed; the ones who left are not in the room", "Surveys are always wrong", "Customers lie", "Surveys are too short"], "answer": 0, "why": "Who is missing matters. See §5.1."}, {"id": "363-05-I04", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.1", "stem": "Identify the fourth question to ask of a table.", "options": ["What would have to be in this table for me to be WRONG — and is it here?", "How many rows?", "Who approved it?", "Is it in Excel?"], "answer": 0, "why": "The fourth question tests your own conclusion. See §5.1."}, {"id": "363-05-I05", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.1", "stem": "Explain why 'when was it collected?' matters.", "options": ["Data from before a competitor opened describes a different world", "Old data is always wrong", "Dates are required by law", "New data is always right"], "answer": 0, "why": "What has changed since? See §5.1."}, {"id": "363-05-I06", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.2", "stem": "Describe when an average misleads.", "options": ["When a few very large or small values pull it", "When values cluster", "When there are many values", "Never"], "answer": 0, "why": "An average is honest when values cluster. See §5.2."}, {"id": "363-05-I07", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.2", "stem": "Describe the median.", "options": ["The middle value when sorted — the safer default", "Total divided by how many", "Lowest to highest", "The most common value"], "answer": 0, "why": "Rarely misleads. See §5.2."}, {"id": "363-05-I08", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.2", "stem": "Identify the rule of thumb for reporting the middle of a set of numbers.", "options": ["Quote the median and the range together", "Quote the average only", "Quote the biggest value", "Quote the total"], "answer": 0, "why": "Two numbers, almost impossible to mislead with. See §5.2."}, {"id": "363-05-I09", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.2", "stem": "Identify the average and the median of 20, 20, 25, 25, 30, 30, 35, 40, 45, 50 and 735.", "options": ["Average 96, median 30", "Average 30, median 96", "Average 50, median 50", "Average 735, median 20"], "answer": 0, "why": "One value of 735 pulls the average. See §5.2."}, {"id": "363-05-I10", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.2", "stem": "Explain what the range hides.", "options": ["How the values are spread between the lowest and highest", "The lowest value", "The highest value", "The number of values"], "answer": 0, "why": "Range never misleads but hides the spread. See §5.2."}, {"id": "363-05-I11", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.3", "stem": "Describe what a percentage hides.", "options": ["What it is a percentage OF", "The date", "The author", "The currency"], "answer": 0, "why": "Find what it is a percentage of before you react. See §5.3."}, {"id": "363-05-I12", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.3", "stem": "Identify the question to ask when told 'sales rose 200%'.", "options": ["'From what to what?'", "'Who sold it?'", "'Is that good?'", "'What colour is the chart?'"], "answer": 0, "why": "From 2 units to 6. See §5.3."}, {"id": "363-05-I13", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.3", "stem": "Identify the habit the chapter says to build with percentages.", "options": ["Always write the raw number beside the percentage — '30% (3 of 10)'", "Round percentages up", "Use percentages only", "Avoid numbers"], "answer": 0, "why": "'30%' alone is a claim you have not checked. See §5.3."}, {"id": "363-05-I14", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.3", "stem": "Explain why 'costs fell 15%' may not be good news.", "options": ["Revenue may have fallen 22% in the same period", "Costs never fall", "15% is too small", "Percentages cannot fall"], "answer": 0, "why": "'Compared with what else?' See §5.3."}, {"id": "363-05-I15", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.3", "stem": "Describe the result of a 5% rise followed by a 5% fall.", "options": ["You are below where you started", "You are back where you started", "You are above where you started", "It depends on the currency"], "answer": 0, "why": "Percentage of which base? See §5.3."}, {"id": "363-05-I16", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.4", "stem": "Identify the four ways a chart misleads while every number is true.", "options": ["Cut axis, chosen window, two scales, missing base", "Wrong colours, small font, 3D bars, no title", "Fake numbers, fake dates, fake labels, fake source", "Too many lines, too few lines, no lines, dotted lines"], "answer": 0, "why": "All four are easy to spot once named. See §5.4."}, {"id": "363-05-I17", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.4", "stem": "Describe the cut-axis trick.", "options": ["Starting the scale at 90 instead of 0, so tiny gaps look huge", "Showing only the good months", "Two lines on different scales", "Counts without a base"], "answer": 0, "why": "Where does the vertical axis begin? See §5.4."}, {"id": "363-05-I18", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.4", "stem": "Describe the chosen-window trick.", "options": ["Showing only the months that support the story", "Cutting the axis", "Two scales", "Missing base"], "answer": 0, "why": "What happened before and after? See §5.4."}, {"id": "363-05-I19", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.4", "stem": "Describe the missing-base trick.", "options": ["Showing counts where the populations differ wildly — per what?", "Starting the axis at 90", "Two lines on one axis", "Hiding the dates"], "answer": 0, "why": "Per branch, per customer, per hour? See §5.4."}, {"id": "363-05-I20", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.4", "stem": "Identify the professional response to a misleading chart.", "options": ["Ask 'could I see it with the axis from zero, and the full period?'", "Say 'this chart is wrong'", "Refuse to look", "Draw your own chart loudly"], "answer": 0, "why": "You will get a better chart or a useful silence. See §5.4."}, {"id": "363-05-I21", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.5", "stem": "Identify the three explanations for two things rising together other than one causing the other.", "options": ["It runs the other way; a third thing causes both; coincidence", "Error, lies, magic", "Season, holiday, competitor", "Price, cost, profit"], "answer": 0, "why": "Each is common in business. See §5.5."}, {"id": "363-05-I22", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.5", "stem": "Describe 'it runs the other way'.", "options": ["You assume advertising raised sales, but rising sales may have released the advertising budget", "Two lines on different scales", "A chance pairing", "A missing base"], "answer": 0, "why": "Reverse causation. See §5.5."}, {"id": "363-05-I23", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.5", "stem": "Describe what raises a correlation toward a cause.", "options": ["A mechanism you can explain, a sequence in the right order, and the IS NOT test", "A bigger chart", "More decimal places", "A confident manager"], "answer": 0, "why": "Mechanism, sequence, IS NOT. See §5.5."}, {"id": "363-05-I24", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.5", "stem": "Explain what two points on a line prove.", "options": ["Nothing at all", "A trend", "A cause", "A correlation strong enough to act on"], "answer": 0, "why": "With enough measures some pairs move together by chance. See §5.5."}, {"id": "363-05-I25", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.5", "stem": "Identify what the course expects you to say about causation.", "options": ["Honestly which of the four you are holding — cause, reverse, third thing or coincidence", "That you have proved it", "Nothing", "That correlation is enough"], "answer": 0, "why": "You are not expected to prove causation. See §5.5."}, {"id": "363-05-I26", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.6", "stem": "Identify the four steps for deciding what evidence would settle a question.", "options": ["The question, the evidence, the threshold, the source", "Collect, chart, present, decide", "Who, what, where, when", "Average, median, range, spread"], "answer": 0, "why": "Decide before you collect. See §5.6."}, {"id": "363-05-I27", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.6", "stem": "Explain why step 3, the threshold, matters most.", "options": ["Without a threshold agreed in advance, any result can be read as supporting what you already believed", "It is the hardest to write", "It is required by the client", "It decides the budget"], "answer": 0, "why": "Confirmation bias with a spreadsheet. See §5.6."}, {"id": "363-05-I28", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.6", "stem": "Describe the question in step 1.", "options": ["One sentence, answerable yes or no — 'are regulars visiting less often than last year?'", "A long open question", "A question for the client", "A question about budget"], "answer": 0, "why": "One sentence, yes or no. See §5.6."}, {"id": "363-05-I29", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.6", "stem": "Explain why professionals decide what would settle the question before collecting data.", "options": ["Because that decides what to gather", "Because data is expensive", "Because clients demand it", "Because it is faster to collect"], "answer": 0, "why": "Students collect first and ask later. See §5.6."}, {"id": "363-05-I30", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.6", "stem": "Describe the source in step 4.", "options": ["Where the evidence exists and who can give it — 'loyalty database; the marketing manager'", "The threshold number", "The question", "The chart type"], "answer": 0, "why": "Step 4 names where and who. See §5.6."}, {"id": "363-05-I31", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.2", "stem": "Explain why the spread is 'the actual problem'.", "options": ["Not knowing how tightly values sit around the middle is what makes an average mislead", "The spread is always large", "Spread cannot be measured", "Spread is only for statisticians"], "answer": 0, "why": "Not knowing the spread is the problem. See §5.2."}, {"id": "363-05-I32", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "5.4", "stem": "Describe the two-scales trick.", "options": ["Two lines on different scales so they appear to move together", "One line on two charts", "A cut axis", "A missing base"], "answer": 0, "why": "Are both lines on the same axis? See §5.4."}, {"id": "363-05-A01", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "5.1", "stem": "Analyse the gym survey: branch B scores 3.9 from 38 replies. Determine who is missing.", "options": ["Members who left — survivor bias", "The manager", "The other branches", "Nobody"], "answer": 0, "why": "The survey contains the customers who stayed. See §5.1 and Exercise 1."}, {"id": "363-05-A02", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "5.1", "stem": "Determine why 'who is missing' matters most for a gym.", "options": ["Drop-outs are the gym's main problem, and they are exactly who did not answer", "Gyms have no members", "Surveys are illegal", "The manager is missing"], "answer": 0, "why": "Who is not in the room. See §5.1."}, {"id": "363-05-A03", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "5.1", "stem": "Select the data not in the gym table that could change the conclusion about branch B.", "options": ["Cancellation rates by branch, from the membership system", "The branch's colour scheme", "Another email survey", "The manager's opinion"], "answer": 0, "why": "Something that tests the conclusion, from a real source. See Exercise 1 and §5.1."}, {"id": "363-05-A04", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "5.1", "stem": "Classify 'complaints' when it means written complaints only.", "options": ["A measurement definition someone chose — ask how it was measured", "A complete count", "A cause", "A threshold"], "answer": 0, "why": "How was it measured, and by whom? See §5.1."}, {"id": "363-05-A05", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "5.2", "stem": "Analyse twelve tables spending 90–180 dirhams plus one corporate table of 1,495. Determine the number that describes a normal evening.", "options": ["The median (about 125) — the 1,495 pulls the average", "The average of 240", "The maximum", "The total"], "answer": 0, "why": "Median and range together. See §5.2 and Exercise 2."}, {"id": "363-05-A06", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "5.2", "stem": "Determine what the restaurant manager is claiming credit for with 'average spend 240, up 12%'.", "options": ["One corporate booking of eighteen people, not his pricing strategy", "A real improvement", "Better staff", "More customers"], "answer": 0, "why": "Recalculate without the corporate table. See Exercise 2 and §5.2."}, {"id": "363-05-A07", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "5.2", "stem": "Select the honest sentence for the restaurant report.", "options": ["'Typical table spend was 90–180 dirhams (median about 125); one corporate booking of 1,495 raised the average to 240'", "'Average spend is 240, up 12%'", "'Spend is excellent'", "'Our pricing works'"], "answer": 0, "why": "Median, range and raw numbers. See §5.2."}, {"id": "363-05-A08", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "5.2", "stem": "Analyse a manager planning staff levels on the average of 96 when the median is 30. Determine the risk.", "options": ["Plans for a customer who almost never appears", "None — averages are safe", "Under-plans for the 735 customer", "Pays too little"], "answer": 0, "why": "Plan with the median when one value pulls the average. See §5.2."}, {"id": "363-05-A09", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "5.3", "stem": "Analyse '30% of customers complained'. Determine the question to ask first.", "options": ["'How many people is that?' — it may be 3 of 10 replies", "'Which customers?'", "'Is 30% good?'", "'Who counted?'"], "answer": 0, "why": "30% of the ten who replied. See §5.3."}, {"id": "363-05-A10", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "5.3", "stem": "Classify a report line that reads '45%' with no raw number.", "options": ["A claim you have not checked", "A verified finding", "A median", "A threshold"], "answer": 0, "why": "Percentages without raw numbers lose marks. See §5.3."}, {"id": "363-05-A11", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "5.3", "stem": "Analyse 'costs fell 15% — a success' when revenue fell 22%. Determine the honest reading.", "options": ["Costs fell less than revenue, so the position got worse", "A clear success", "Costs are irrelevant", "Revenue is irrelevant"], "answer": 0, "why": "Compared with what else? See §5.3."}, {"id": "363-05-A12", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "5.3", "stem": "Determine the price after a 5% rise then a 5% fall on 100.", "options": ["99.75 — below the start", "100 — back to the start", "105", "95"], "answer": 0, "why": "Percentage of which base? See §5.3."}, {"id": "363-05-A13", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "5.4", "stem": "Analyse a chart with the vertical axis from 88% to 94%. Determine the trick and its effect.", "options": ["Cut axis — a tiny gap looks enormous", "Chosen window — hides bad months", "Two scales — lines appear linked", "Missing base — counts differ"], "answer": 0, "why": "Where does the axis begin? See §5.4 and Exercise 3."}, {"id": "363-05-A14", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "5.4", "stem": "Analyse a supplier chart showing only April to September. Determine the trick.", "options": ["Chosen window — what happened before and after?", "Cut axis", "Two scales", "Missing base"], "answer": 0, "why": "Shows the months that support the story. See §5.4."}, {"id": "363-05-A15", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "5.4", "stem": "Analyse complaints plotted on a separate right-hand axis next to delivery performance. Determine the trick.", "options": ["Two scales — the lines appear to move together", "Cut axis", "Chosen window", "Missing base"], "answer": 0, "why": "Are both lines on the same axis? See §5.4."}, {"id": "363-05-A16", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "5.4", "stem": "Select the two polite requests that would settle the supplier's chart.", "options": ["'Could I see it with the axis from zero and the full period?' and 'Could both lines be on the same axis?'", "'Is this fake?' and 'Who drew this?'", "'Can you lower the price?' and 'Can you sign now?'", "'Why so many lines?' and 'Why so few months?'"], "answer": 0, "why": "Polite requests, not accusations. See §5.4 and Exercise 3."}, {"id": "363-05-A17", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "5.4", "stem": "Classify a chart of complaint counts per branch where branches differ wildly in size.", "options": ["Missing base — per customer or per hour would be fair", "Cut axis", "Chosen window", "Two scales"], "answer": 0, "why": "Per what? See §5.4."}, {"id": "363-05-A18", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "5.5", "stem": "Analyse 'on-time delivery rose while complaints fell'. Determine three explanations other than one causing the other.", "options": ["Complaints fell for another reason; a third thing such as season changed both; coincidence over six months", "The supplier is honest; the chart is true; the numbers are large", "Price, cost, profit", "Mechanism, sequence, IS NOT"], "answer": 0, "why": "Three alternatives to causation. See §5.5."}, {"id": "363-05-A19", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "5.5", "stem": "Classify 'advertising spend and sales rose together, so advertising works'.", "options": ["A correlation that may run the other way — sales released the budget", "A proven cause", "A coincidence only", "A survivor bias"], "answer": 0, "why": "It may run the other way. See §5.5."}, {"id": "363-05-A20", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "5.5", "stem": "Analyse 'ice cream and sunburn rise together'. Determine the third thing.", "options": ["Summer causes both", "Ice cream causes sunburn", "Sunburn causes ice cream sales", "Coincidence"], "answer": 0, "why": "In business the third thing is usually the season, a holiday or a competitor. See §5.5."}, {"id": "363-05-A21", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "5.5", "stem": "Select the evidence that moves a correlation toward a cause.", "options": ["A mechanism, the right sequence, and the problem present here and not there", "A bigger sample of the same correlation", "A confident manager", "A nicer chart"], "answer": 0, "why": "Mechanism, sequence, IS NOT. See §5.5."}, {"id": "363-05-A22", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "5.6", "stem": "Select the correctly written threshold.", "options": ["'A fall of more than 15% in average visits counts as yes'", "'A noticeable fall'", "'If it looks bad'", "'We will decide after we see the data'"], "answer": 0, "why": "Write the threshold as a number, in advance. See §5.6."}, {"id": "363-05-A23", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "5.6", "stem": "Analyse a group that collects data first and decides what it means afterwards. Determine the chapter's warning.", "options": ["Any result can be read as supporting what they already believed", "It saves time", "It is best practice", "It is required for the project"], "answer": 0, "why": "Confirmation bias with a spreadsheet. See §5.6."}, {"id": "363-05-A24", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "5.6", "stem": "Determine what to write if you cannot say what result would show your cause is wrong.", "options": ["Your question is not answerable — rewrite it", "Nothing — proceed", "That the cause is proven", "A longer question"], "answer": 0, "why": "If you cannot, your question is not answerable. See Exercise 4 and §5.6."}, {"id": "363-05-A25", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "5.6", "stem": "Select the best one-sentence question for step 1.", "options": ["'Are regulars visiting less often than last year?'", "'What is happening with our customers?'", "'Is the branch good?'", "'Should we close?'"], "answer": 0, "why": "One sentence, answerable yes or no. See §5.6."}, {"id": "363-05-A26", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "5.1", "stem": "Analyse a staff survey of people still employed about why colleagues resign. Determine the flaw.", "options": ["Survivor bias — the ones who left are not in the room", "Too many questions", "Wrong month", "No chart"], "answer": 0, "why": "Analyse the ones who stayed, conclude about the ones who left. See §5.1."}, {"id": "363-05-A27", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "5.2", "stem": "Determine which numbers to put in a report about queue times of 3, 4, 4, 5, 5, 6, 40 minutes.", "options": ["Median 5 and range 3–40, with a note on the single 40", "The average of 9.6 alone", "The maximum only", "The total"], "answer": 0, "why": "Median and range together. See §5.2."}, {"id": "363-05-A28", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "5.3", "stem": "Analyse 'sales rose 200%' for a product that went from 2 units to 6. Determine the honest line.", "options": ["'Sales rose from 2 to 6 units (200%)'", "'Sales tripled — a success'", "'Sales rose 200%'", "'Sales are strong'"], "answer": 0, "why": "Raw number beside the percentage. See §5.3."}, {"id": "363-05-A29", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "5.6", "stem": "Determine the source line for 'are regulars visiting less?'.", "options": ["The loyalty database, via the marketing manager", "A guess", "The chart", "The boss's memory"], "answer": 0, "why": "Where it exists and who can give it. See §5.6."}, {"id": "363-05-A30", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "5.4", "stem": "Analyse the claim 'every number in this chart is accurate, so the chart is honest'. Determine the chapter's reply.", "options": ["Every number can be true while the picture is wrong — check axis, window, scales and base", "Accurate numbers make an honest chart", "Charts cannot mislead", "Only fake numbers mislead"], "answer": 0, "why": "True numbers, false picture. See §5.4."}, {"id": "363-05-A31", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "5.5", "stem": "Analyse a one-month rise in both staff overtime and sales. Determine the safest statement.", "options": ["'They rose together; we do not yet know which, if either, caused the other'", "'Overtime caused sales'", "'Sales caused overtime'", "'Overtime is wasted'"], "answer": 0, "why": "Say which of the four you are holding. See §5.5."}, {"id": "363-05-A32", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "5.6", "stem": "Classify 'we will know it worked if things improve' as a threshold.", "options": ["Not a threshold — no number, so any result can be read as success", "A good threshold", "A source", "A question"], "answer": 0, "why": "Thresholds are numbers set in advance. See §5.6."}]}
+{
+ "subject": "MGMT363",
+ "chapter": 5,
+ "title": "Analytical Thinking with Business Data",
+ "clos": [
+  "CLO 1",
+  "CLO 2"
+ ],
+ "source": "MGMT363_Chapter5.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "363-05-I01",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.1",
+   "stem": "Identify the three questions to ask about any table before reading it.",
+   "options": [
+    "Who is in it and who is missing? When was it collected? How was it measured, and by whom?",
+    "Is it big enough to trust? Is it presented clearly? Is it recent enough to still be true?",
+    "Who made the table? How much did it cost to produce? Has it been approved by management?",
+    "What is the mean? What is the median? What is the range between the lowest and highest values?"
+   ],
+   "answer": 0,
+   "why": "Professionals interrogate the table first. See §5.1."
+  },
+  {
+   "id": "363-05-I02",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.1",
+   "stem": "Describe survivor bias.",
+   "options": [
+    "Analysing the customers, staff or products still here and concluding something about the ones that left",
+    "Counting every customer twice because the same person appears in two different systems",
+    "Choosing the biggest number in the table and building the whole argument around it",
+    "Using last year's data to describe a market that has changed since it was collected"
+   ],
+   "answer": 0,
+   "why": "The most expensive error in business data. See §5.1."
+  },
+  {
+   "id": "363-05-I03",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.1",
+   "stem": "Explain why a satisfaction survey can mislead.",
+   "options": [
+    "It contains the customers who stayed; the ones who left are not in the room",
+    "Surveys are always wrong, because people answer what they think the company wants to hear",
+    "Customers lie on surveys to protect staff they like or to punish staff they dislike",
+    "Surveys are too short to capture what customers really think about the service"
+   ],
+   "answer": 0,
+   "why": "Who is missing matters. See §5.1."
+  },
+  {
+   "id": "363-05-I04",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.1",
+   "stem": "Identify the fourth question to ask of a table.",
+   "options": [
+    "What would have to be in this table for me to be WRONG — and is it here?",
+    "How many rows does it have, and is that enough to draw a reliable conclusion from?",
+    "Who approved the table before it was sent to the team?",
+    "Is it in Excel, so that the numbers can be checked and recalculated?"
+   ],
+   "answer": 0,
+   "why": "The fourth question tests your own conclusion. See §5.1."
+  },
+  {
+   "id": "363-05-I05",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.1",
+   "stem": "Explain why 'when was it collected?' matters.",
+   "options": [
+    "Data from before a competitor opened describes a different world",
+    "Old data is always wrong, because the people who collected it have moved on",
+    "Dates are required by law on every business document that contains figures",
+    "New data is always right, because it was collected with better systems"
+   ],
+   "answer": 0,
+   "why": "What has changed since? See §5.1."
+  },
+  {
+   "id": "363-05-I06",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.2",
+   "stem": "Describe when an average misleads.",
+   "options": [
+    "When a few very large or small values pull it",
+    "When the values cluster closely around the middle of the set",
+    "When there are many values, because the calculation becomes less reliable",
+    "Never — an average is the most reliable summary of any set of numbers"
+   ],
+   "answer": 0,
+   "why": "An average is honest when values cluster. See §5.2."
+  },
+  {
+   "id": "363-05-I07",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.2",
+   "stem": "Describe the median.",
+   "options": [
+    "The middle value when sorted — the safer default",
+    "The total divided by how many values there are in the set",
+    "The lowest value to the highest value in the set",
+    "The most common value in the set, which appears most often"
+   ],
+   "answer": 0,
+   "why": "Rarely misleads. See §5.2."
+  },
+  {
+   "id": "363-05-I08",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.2",
+   "stem": "Identify the rule of thumb for reporting the middle of a set of numbers.",
+   "options": [
+    "Quote the median and the range together",
+    "Quote the average only, because it uses every value in the set",
+    "Quote the biggest value, because that is what the reader will remember",
+    "Quote the total, because it cannot be manipulated like an average"
+   ],
+   "answer": 0,
+   "why": "Two numbers, almost impossible to mislead with. See §5.2."
+  },
+  {
+   "id": "363-05-I09",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.2",
+   "stem": "Identify the average and the median of 20, 20, 25, 25, 30, 30, 35, 40, 45, 50 and 735.",
+   "options": [
+    "Average 96, median 30",
+    "Average 30, median 96",
+    "Average 50, median 50",
+    "Average 735, median 20"
+   ],
+   "answer": 0,
+   "why": "One value of 735 pulls the average. See §5.2."
+  },
+  {
+   "id": "363-05-I10",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.2",
+   "stem": "Explain what the range hides.",
+   "options": [
+    "How the values are spread between the lowest and highest",
+    "The lowest value in the set, which is replaced by the range",
+    "The highest value in the set, which the range rounds off",
+    "The number of values in the set, which the range does not show"
+   ],
+   "answer": 0,
+   "why": "Range never misleads but hides the spread. See §5.2."
+  },
+  {
+   "id": "363-05-I11",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.3",
+   "stem": "Describe what a percentage hides.",
+   "options": [
+    "What it is a percentage OF",
+    "The date on which the figures were collected",
+    "The author who calculated the percentage",
+    "The currency in which the underlying figures were measured"
+   ],
+   "answer": 0,
+   "why": "Find what it is a percentage of before you react. See §5.3."
+  },
+  {
+   "id": "363-05-I12",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.3",
+   "stem": "Identify the question to ask when told 'sales rose 200%'.",
+   "options": [
+    "'From what to what?'",
+    "'Who sold it?'",
+    "'Is that good?'",
+    "'What colour is the chart?'"
+   ],
+   "answer": 0,
+   "why": "From 2 units to 6. See §5.3."
+  },
+  {
+   "id": "363-05-I13",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.3",
+   "stem": "Identify the habit the chapter says to build with percentages.",
+   "options": [
+    "Always write the raw number beside the percentage — '30% (3 of 10)'",
+    "Round percentages up to the nearest ten so that they are easier to compare",
+    "Use percentages only, because raw numbers confuse readers who do not know the business",
+    "Avoid numbers altogether and describe trends in words"
+   ],
+   "answer": 0,
+   "why": "'30%' alone is a claim you have not checked. See §5.3."
+  },
+  {
+   "id": "363-05-I14",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.3",
+   "stem": "Explain why 'costs fell 15%' may not be good news.",
+   "options": [
+    "Revenue may have fallen 22% in the same period",
+    "Costs never fall in a growing business, so the figure must be wrong",
+    "15% is too small a change to mean anything in a business of any size",
+    "Percentages cannot fall; only the underlying costs can"
+   ],
+   "answer": 0,
+   "why": "'Compared with what else?' See §5.3."
+  },
+  {
+   "id": "363-05-I15",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.3",
+   "stem": "Describe the result of a 5% rise followed by a 5% fall.",
+   "options": [
+    "You are below where you started",
+    "You are back exactly where you started",
+    "You are slightly above where you started",
+    "It depends on the currency in which the price is quoted"
+   ],
+   "answer": 0,
+   "why": "Percentage of which base? See §5.3."
+  },
+  {
+   "id": "363-05-I16",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.4",
+   "stem": "Identify the four ways a chart misleads while every number is true.",
+   "options": [
+    "Cut axis, chosen window, two scales, missing base",
+    "Wrong colours, small font, 3D bars, no title",
+    "Fake numbers, fake dates, fake labels, fake source",
+    "Too many lines, too few lines, no lines, dotted lines"
+   ],
+   "answer": 0,
+   "why": "All four are easy to spot once named. See §5.4."
+  },
+  {
+   "id": "363-05-I17",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.4",
+   "stem": "Describe the cut-axis trick.",
+   "options": [
+    "Starting the scale at 90 instead of 0, so tiny gaps look huge",
+    "Showing only the good months so that the trend appears to point one way",
+    "Two lines plotted on different scales so that they appear to move together",
+    "Counts shown without a base, so that large and small groups look comparable"
+   ],
+   "answer": 0,
+   "why": "Where does the vertical axis begin? See §5.4."
+  },
+  {
+   "id": "363-05-I18",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.4",
+   "stem": "Describe the chosen-window trick.",
+   "options": [
+    "Showing only the months that support the story",
+    "Cutting the axis so that a small gap looks enormous",
+    "Two lines on different scales so that they appear linked",
+    "A missing base, so that counts from different-sized groups are compared"
+   ],
+   "answer": 0,
+   "why": "What happened before and after? See §5.4."
+  },
+  {
+   "id": "363-05-I19",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.4",
+   "stem": "Describe the missing-base trick.",
+   "options": [
+    "Showing counts where the populations differ wildly — per what?",
+    "Starting the vertical axis at 90 so that small gaps look large",
+    "Two lines on one axis that happen to move in the same direction",
+    "Hiding the dates so that the reader cannot tell which period is shown"
+   ],
+   "answer": 0,
+   "why": "Per branch, per customer, per hour? See §5.4."
+  },
+  {
+   "id": "363-05-I20",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.4",
+   "stem": "Identify the professional response to a misleading chart.",
+   "options": [
+    "Ask 'could I see it with the axis from zero, and the full period?'",
+    "Say 'this chart is wrong' and ask who produced it and why they chose that scale",
+    "Refuse to look at the chart until the data behind it is provided",
+    "Draw your own chart on the board to show the real picture"
+   ],
+   "answer": 0,
+   "why": "You will get a better chart or a useful silence. See §5.4."
+  },
+  {
+   "id": "363-05-I21",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.5",
+   "stem": "Identify the three explanations for two things rising together other than one causing the other.",
+   "options": [
+    "It runs the other way; a third thing causes both; coincidence",
+    "Measurement error, deliberate lies and unexplained chance events",
+    "The season, a public holiday and a competitor's promotion",
+    "Price changes, cost changes and profit changes"
+   ],
+   "answer": 0,
+   "why": "Each is common in business. See §5.5."
+  },
+  {
+   "id": "363-05-I22",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.5",
+   "stem": "Describe 'it runs the other way'.",
+   "options": [
+    "You assume advertising raised sales, but rising sales may have released the advertising budget",
+    "Two lines on different scales that appear to move together when they do not",
+    "A chance pairing of two trends over a short period with no connection between them",
+    "A missing base that makes two different-sized groups look comparable"
+   ],
+   "answer": 0,
+   "why": "Reverse causation. See §5.5."
+  },
+  {
+   "id": "363-05-I23",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.5",
+   "stem": "Describe what raises a correlation toward a cause.",
+   "options": [
+    "A mechanism you can explain, a sequence in the right order, and the IS NOT test",
+    "A bigger chart with more data points over a longer period",
+    "More decimal places in the correlation coefficient",
+    "A confident manager who has seen the pattern before"
+   ],
+   "answer": 0,
+   "why": "Mechanism, sequence, IS NOT. See §5.5."
+  },
+  {
+   "id": "363-05-I24",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.5",
+   "stem": "Explain what two points on a line prove.",
+   "options": [
+    "Nothing at all",
+    "A trend",
+    "A cause",
+    "A correlation strong enough to act on"
+   ],
+   "answer": 0,
+   "why": "With enough measures some pairs move together by chance. See §5.5."
+  },
+  {
+   "id": "363-05-I25",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.5",
+   "stem": "Identify what the course expects you to say about causation.",
+   "options": [
+    "Honestly which of the four you are holding — cause, reverse, third thing or coincidence",
+    "That you have proved it beyond reasonable doubt",
+    "Nothing — causation is for statisticians, not managers",
+    "That correlation is enough for a business decision"
+   ],
+   "answer": 0,
+   "why": "You are not expected to prove causation. See §5.5."
+  },
+  {
+   "id": "363-05-I26",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.6",
+   "stem": "Identify the four steps for deciding what evidence would settle a question.",
+   "options": [
+    "The question, the evidence, the threshold, the source",
+    "Collect the data, chart it, present it, decide",
+    "Who is involved, what happened, where it happened and when",
+    "Average, median, range and spread"
+   ],
+   "answer": 0,
+   "why": "Decide before you collect. See §5.6."
+  },
+  {
+   "id": "363-05-I27",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.6",
+   "stem": "Explain why step 3, the threshold, matters most.",
+   "options": [
+    "Without a threshold agreed in advance, any result can be read as supporting what you already believed",
+    "It is the hardest step to write, so groups that manage it have done the hard work",
+    "It is required by the client before any data collection can begin",
+    "It decides the budget for the data collection"
+   ],
+   "answer": 0,
+   "why": "Confirmation bias with a spreadsheet. See §5.6."
+  },
+  {
+   "id": "363-05-I28",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.6",
+   "stem": "Describe the question in step 1.",
+   "options": [
+    "One sentence, answerable yes or no — 'are regulars visiting less often than last year?'",
+    "A long open question that covers every aspect of the problem",
+    "A question for the client to answer from their own experience",
+    "A question about the budget available for the investigation"
+   ],
+   "answer": 0,
+   "why": "One sentence, yes or no. See §5.6."
+  },
+  {
+   "id": "363-05-I29",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.6",
+   "stem": "Explain why professionals decide what would settle the question before collecting data.",
+   "options": [
+    "Because that decides what to gather",
+    "Because data is expensive and the budget must be agreed first",
+    "Because clients demand a plan before they release their data",
+    "Because it is faster to collect data when you know the answer you expect"
+   ],
+   "answer": 0,
+   "why": "Students collect first and ask later. See §5.6."
+  },
+  {
+   "id": "363-05-I30",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.6",
+   "stem": "Describe the source in step 4.",
+   "options": [
+    "Where the evidence exists and who can give it — 'loyalty database; the marketing manager'",
+    "The threshold number that counts as a yes",
+    "The question written in one sentence",
+    "The chart type that will present the result"
+   ],
+   "answer": 0,
+   "why": "Step 4 names where and who. See §5.6."
+  },
+  {
+   "id": "363-05-I31",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.2",
+   "stem": "Explain why the spread is 'the actual problem'.",
+   "options": [
+    "Not knowing how tightly values sit around the middle is what makes an average mislead",
+    "The spread is always large in business data, so averages are never useful",
+    "Spread cannot be measured without specialist software",
+    "Spread is only for statisticians and does not matter in a management report"
+   ],
+   "answer": 0,
+   "why": "Not knowing the spread is the problem. See §5.2."
+  },
+  {
+   "id": "363-05-I32",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.4",
+   "stem": "Describe the two-scales trick.",
+   "options": [
+    "Two lines on different scales so they appear to move together",
+    "One line shown on two charts so that the trend looks stronger",
+    "A cut axis that makes small gaps look large",
+    "A missing base that makes different groups look comparable"
+   ],
+   "answer": 0,
+   "why": "Are both lines on the same axis? See §5.4."
+  },
+  {
+   "id": "363-05-A01",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.1",
+   "stem": "Analyse the gym survey: branch B scores 3.9 from 38 replies. Determine who is missing.",
+   "options": [
+    "Members who left — survivor bias",
+    "The branch manager, who did not fill in the survey",
+    "The other branches, whose members were not asked",
+    "Nobody — 38 replies is a reasonable sample for one branch"
+   ],
+   "answer": 0,
+   "why": "The survey contains the customers who stayed. See §5.1 and Exercise 1."
+  },
+  {
+   "id": "363-05-A02",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.1",
+   "stem": "Determine why 'who is missing' matters most for a gym.",
+   "options": [
+    "Drop-outs are the gym's main problem, and they are exactly who did not answer",
+    "Gyms have no members who stay long enough to answer a survey",
+    "Surveys are illegal without the consent of every member",
+    "The manager is missing from the survey results, so the findings cannot be acted on properly"
+   ],
+   "answer": 0,
+   "why": "Who is not in the room. See §5.1."
+  },
+  {
+   "id": "363-05-A03",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.1",
+   "stem": "Select the data not in the gym table that could change the conclusion about branch B.",
+   "options": [
+    "Cancellation rates by branch, from the membership system",
+    "The branch's colour scheme and the condition of its equipment",
+    "Another email survey sent to the same members a month later",
+    "The manager's opinion of why members at branch B are satisfied"
+   ],
+   "answer": 0,
+   "why": "Something that tests the conclusion, from a real source. See Exercise 1 and §5.1."
+  },
+  {
+   "id": "363-05-A04",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.1",
+   "stem": "Classify 'complaints' when it means written complaints only.",
+   "options": [
+    "A measurement definition someone chose — ask how it was measured",
+    "A complete count of every complaint the branch received",
+    "A cause of the problem the branch is trying to solve",
+    "A threshold that decides whether the problem is serious"
+   ],
+   "answer": 0,
+   "why": "How was it measured, and by whom? See §5.1."
+  },
+  {
+   "id": "363-05-A05",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.2",
+   "stem": "Analyse twelve tables spending 90–180 dirhams plus one corporate table of 1,495. Determine the number that describes a normal evening.",
+   "options": [
+    "The median (about 125) — the 1,495 pulls the average",
+    "The average of 240, because it uses every table in the calculation",
+    "The maximum of 1,495, because it shows what the restaurant can achieve",
+    "The total for the evening, because it is what reaches the bank"
+   ],
+   "answer": 0,
+   "why": "Median and range together. See §5.2 and Exercise 2."
+  },
+  {
+   "id": "363-05-A06",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.2",
+   "stem": "Determine what the restaurant manager is claiming credit for with 'average spend 240, up 12%'.",
+   "options": [
+    "One corporate booking of eighteen people, not his pricing strategy",
+    "A real improvement in what ordinary tables spend",
+    "Better staff who are selling more to every table",
+    "More customers than the same evening last year"
+   ],
+   "answer": 0,
+   "why": "Recalculate without the corporate table. See Exercise 2 and §5.2."
+  },
+  {
+   "id": "363-05-A07",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.2",
+   "stem": "Select the honest sentence for the restaurant report.",
+   "options": [
+    "'Typical table spend was 90–180 dirhams (median about 125); one corporate booking of 1,495 raised the average to 240'",
+    "'Average spend is 240, up 12% on the same period last year, which shows clearly that the new pricing strategy is working as planned'",
+    "'Spend is excellent and well above the level the restaurant achieved at this time last year'",
+    "'Our pricing works, as the 12% rise in average spend per table clearly demonstrates'"
+   ],
+   "answer": 0,
+   "why": "Median, range and raw numbers. See §5.2."
+  },
+  {
+   "id": "363-05-A08",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.2",
+   "stem": "Analyse a manager planning staff levels on the average of 96 when the median is 30. Determine the risk.",
+   "options": [
+    "Plans for a customer who almost never appears",
+    "None — averages are safe for planning because they use every value",
+    "Under-plans for the 735 customer, who needs the most staff",
+    "Pays too little to the staff who serve the biggest tables"
+   ],
+   "answer": 0,
+   "why": "Plan with the median when one value pulls the average. See §5.2."
+  },
+  {
+   "id": "363-05-A09",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.3",
+   "stem": "Analyse '30% of customers complained'. Determine the question to ask first.",
+   "options": [
+    "'How many people is that?' — it may be 3 of 10 replies",
+    "'Which customers complained, and about what?'",
+    "'Is 30% good or bad for a business of this kind?'",
+    "'Who counted the complaints, when, and by what definition?'"
+   ],
+   "answer": 0,
+   "why": "30% of the ten who replied. See §5.3."
+  },
+  {
+   "id": "363-05-A10",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.3",
+   "stem": "Classify a report line that reads '45%' with no raw number.",
+   "options": [
+    "A claim you have not checked",
+    "A verified finding that can go in the report",
+    "A median that describes the typical case",
+    "A threshold that decides whether the result counts"
+   ],
+   "answer": 0,
+   "why": "Percentages without raw numbers lose marks. See §5.3."
+  },
+  {
+   "id": "363-05-A11",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.3",
+   "stem": "Analyse 'costs fell 15% — a success' when revenue fell 22%. Determine the honest reading.",
+   "options": [
+    "Costs fell less than revenue, so the position got worse",
+    "A clear success, because costs are the part of the business the manager controls",
+    "Costs are irrelevant when revenue is falling",
+    "Revenue is irrelevant to a report about cost control"
+   ],
+   "answer": 0,
+   "why": "Compared with what else? See §5.3."
+  },
+  {
+   "id": "363-05-A12",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.3",
+   "stem": "Determine the price after a 5% rise then a 5% fall on 100.",
+   "options": [
+    "99.75 — below the start",
+    "100 — back to the start",
+    "105 — the rise is kept",
+    "95 — the fall is kept"
+   ],
+   "answer": 0,
+   "why": "Percentage of which base? See §5.3."
+  },
+  {
+   "id": "363-05-A13",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.4",
+   "stem": "Analyse a chart with the vertical axis from 88% to 94%. Determine the trick and its effect.",
+   "options": [
+    "Cut axis — a tiny gap looks enormous",
+    "Chosen window — the bad months are hidden",
+    "Two scales — the lines appear linked",
+    "Missing base — the counts come from different-sized groups"
+   ],
+   "answer": 0,
+   "why": "Where does the axis begin? See §5.4 and Exercise 3."
+  },
+  {
+   "id": "363-05-A14",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.4",
+   "stem": "Analyse a supplier chart showing only April to September. Determine the trick.",
+   "options": [
+    "Chosen window — what happened before and after?",
+    "Cut axis — the vertical scale starts above zero",
+    "Two scales — the lines are plotted on different axes",
+    "Missing base — the counts are not per customer"
+   ],
+   "answer": 0,
+   "why": "Shows the months that support the story. See §5.4."
+  },
+  {
+   "id": "363-05-A15",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.4",
+   "stem": "Analyse complaints plotted on a separate right-hand axis next to delivery performance. Determine the trick.",
+   "options": [
+    "Two scales — the lines appear to move together",
+    "Cut axis — the scale starts above zero",
+    "Chosen window — only the good months are shown",
+    "Missing base — complaints are not per delivery"
+   ],
+   "answer": 0,
+   "why": "Are both lines on the same axis? See §5.4."
+  },
+  {
+   "id": "363-05-A16",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.4",
+   "stem": "Select the two polite requests that would settle the supplier's chart.",
+   "options": [
+    "'Could I see it with the axis from zero and the full period?' and 'Could both lines be on the same axis?'",
+    "'Is this chart fake?' and 'Who in your company drew it?'",
+    "'Can you lower the price?' and 'Can you sign the contract now?'",
+    "'Why are there so many lines?' and 'Why are there so few months?'"
+   ],
+   "answer": 0,
+   "why": "Polite requests, not accusations. See §5.4 and Exercise 3."
+  },
+  {
+   "id": "363-05-A17",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.4",
+   "stem": "Classify a chart of complaint counts per branch where branches differ wildly in size.",
+   "options": [
+    "Missing base — per customer or per hour would be fair",
+    "Cut axis — the scale exaggerates the differences",
+    "Chosen window — the period flatters the big branches",
+    "Two scales — the branches are plotted on different axes"
+   ],
+   "answer": 0,
+   "why": "Per what? See §5.4."
+  },
+  {
+   "id": "363-05-A18",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.5",
+   "stem": "Analyse 'on-time delivery rose while complaints fell'. Determine three explanations other than one causing the other.",
+   "options": [
+    "Complaints fell for another reason; a third thing such as season changed both; coincidence over six months",
+    "The supplier is honest; the chart is true; the numbers are large enough to trust",
+    "Price changes, cost changes and profit changes in the same period",
+    "A mechanism, the right sequence and the IS NOT test"
+   ],
+   "answer": 0,
+   "why": "Three alternatives to causation. See §5.5."
+  },
+  {
+   "id": "363-05-A19",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.5",
+   "stem": "Classify 'advertising spend and sales rose together, so advertising works'.",
+   "options": [
+    "A correlation that may run the other way — sales released the budget",
+    "A proven cause, because advertising is designed to raise sales and clearly did so here",
+    "A coincidence only, because advertising never affects sales",
+    "A survivor bias, because only successful campaigns are remembered"
+   ],
+   "answer": 0,
+   "why": "It may run the other way. See §5.5."
+  },
+  {
+   "id": "363-05-A20",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.5",
+   "stem": "Analyse 'ice cream and sunburn rise together'. Determine the third thing.",
+   "options": [
+    "Summer causes both",
+    "Ice cream causes sunburn",
+    "Sunburn causes ice cream sales",
+    "Coincidence"
+   ],
+   "answer": 0,
+   "why": "In business the third thing is usually the season, a holiday or a competitor. See §5.5."
+  },
+  {
+   "id": "363-05-A21",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.5",
+   "stem": "Select the evidence that moves a correlation toward a cause.",
+   "options": [
+    "A mechanism, the right sequence, and the problem present here and not there",
+    "A bigger sample showing the same correlation over more months",
+    "A confident manager who has seen the same pattern before",
+    "A nicer chart with both lines on the same axis"
+   ],
+   "answer": 0,
+   "why": "Mechanism, sequence, IS NOT. See §5.5."
+  },
+  {
+   "id": "363-05-A22",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.6",
+   "stem": "Select the correctly written threshold.",
+   "options": [
+    "'A fall of more than 15% in average visits counts as yes'",
+    "'A noticeable fall in visits that the team agrees is significant'",
+    "'If it looks bad when we see the numbers'",
+    "'We will decide after we see the data what counts as a fall'"
+   ],
+   "answer": 0,
+   "why": "Write the threshold as a number, in advance. See §5.6."
+  },
+  {
+   "id": "363-05-A23",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.6",
+   "stem": "Analyse a group that collects data first and decides what it means afterwards. Determine the chapter's warning.",
+   "options": [
+    "Any result can be read as supporting what they already believed",
+    "It saves time, because the data decides what the question should be",
+    "It is best practice, because the question should follow the evidence",
+    "It is required for the project, which asks for data before conclusions"
+   ],
+   "answer": 0,
+   "why": "Confirmation bias with a spreadsheet. See §5.6."
+  },
+  {
+   "id": "363-05-A24",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.6",
+   "stem": "Determine what to write if you cannot say what result would show your cause is wrong.",
+   "options": [
+    "Your question is not answerable — rewrite it",
+    "Nothing — proceed with the data collection as planned",
+    "That the cause is proven, because nothing could disprove it",
+    "A longer question that covers more possibilities"
+   ],
+   "answer": 0,
+   "why": "If you cannot, your question is not answerable. See Exercise 4 and §5.6."
+  },
+  {
+   "id": "363-05-A25",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.6",
+   "stem": "Select the best one-sentence question for step 1.",
+   "options": [
+    "'Are regulars visiting less often than last year?'",
+    "'What is happening with our customers and why?'",
+    "'Is the branch good enough to keep open?'",
+    "'Should we close the branch or invest in it this year?'"
+   ],
+   "answer": 0,
+   "why": "One sentence, answerable yes or no. See §5.6."
+  },
+  {
+   "id": "363-05-A26",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.1",
+   "stem": "Analyse a staff survey of people still employed about why colleagues resign. Determine the flaw.",
+   "options": [
+    "Survivor bias — the ones who left are not in the room",
+    "Too many questions for the staff to answer honestly in the time available",
+    "Wrong month, because resignations are seasonal",
+    "No chart, so the results cannot be presented"
+   ],
+   "answer": 0,
+   "why": "Analyse the ones who stayed, conclude about the ones who left. See §5.1."
+  },
+  {
+   "id": "363-05-A27",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.2",
+   "stem": "Determine which numbers to put in a report about queue times of 3, 4, 4, 5, 5, 6, 40 minutes.",
+   "options": [
+    "Median 5 and range 3–40, with a note on the single 40",
+    "The average of 9.6 alone, because it uses every value",
+    "The maximum only, because the worst case is what matters",
+    "The total, because it shows how much time customers lost"
+   ],
+   "answer": 0,
+   "why": "Median and range together. See §5.2."
+  },
+  {
+   "id": "363-05-A28",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.3",
+   "stem": "Analyse 'sales rose 200%' for a product that went from 2 units to 6. Determine the honest line.",
+   "options": [
+    "'Sales rose from 2 to 6 units (200%)'",
+    "'Sales tripled — a clear success for the new product'",
+    "'Sales rose 200% in the period'",
+    "'Sales are strong and growing fast'"
+   ],
+   "answer": 0,
+   "why": "Raw number beside the percentage. See §5.3."
+  },
+  {
+   "id": "363-05-A29",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.6",
+   "stem": "Determine the source line for 'are regulars visiting less?'.",
+   "options": [
+    "The loyalty database, via the marketing manager",
+    "A guess based on what the staff have noticed",
+    "The chart in last month's management report",
+    "The boss's memory of how busy the branch used to be"
+   ],
+   "answer": 0,
+   "why": "Where it exists and who can give it. See §5.6."
+  },
+  {
+   "id": "363-05-A30",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.4",
+   "stem": "Analyse the claim 'every number in this chart is accurate, so the chart is honest'. Determine the chapter's reply.",
+   "options": [
+    "Every number can be true while the picture is wrong — check axis, window, scales and base",
+    "Accurate numbers make an honest chart, whatever the presentation",
+    "Charts cannot mislead if the data behind them is correct",
+    "Only fake numbers mislead; presentation is a matter of taste"
+   ],
+   "answer": 0,
+   "why": "True numbers, false picture. See §5.4."
+  },
+  {
+   "id": "363-05-A31",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.5",
+   "stem": "Analyse a one-month rise in both staff overtime and sales. Determine the safest statement.",
+   "options": [
+    "'They rose together; we do not yet know which, if either, caused the other'",
+    "'Overtime caused sales, because staff had more time to serve customers properly during the month'",
+    "'Sales caused overtime, because busy days need more hours'",
+    "'Overtime is wasted, because sales would have risen anyway'"
+   ],
+   "answer": 0,
+   "why": "Say which of the four you are holding. See §5.5."
+  },
+  {
+   "id": "363-05-A32",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.6",
+   "stem": "Classify 'we will know it worked if things improve' as a threshold.",
+   "options": [
+    "Not a threshold — no number, so any result can be read as success",
+    "A good threshold, because it leaves room for the team's judgement at the end",
+    "A source, because it says where the evidence will come from",
+    "A question, because it asks whether things improved"
+   ],
+   "answer": 0,
+   "why": "Thresholds are numbers set in advance. See §5.6."
+  }
+ ]
+}

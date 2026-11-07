@@ -1,1 +1,1101 @@
-{"subject": "MGMT464", "chapter": 9, "title": "Hurdle 9 · The Locked Gate — Leading Teams: Communication, Coaching, Conflict and Team Leadership", "clos": ["CLO 1", "CLO 2"], "source": "Chapter09_Leading_Teams.pptx", "status": "published", "questions": [{"id": "464-09-I01", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.1", "stem": "Identify the five steps of sending a message.", "options": ["Develop rapport; state your objective; transmit the message; check understanding; get a commitment and follow up", "Write; send; wait; remind; escalate", "Shout; repeat; email; text; call", "Plan; organise; lead; control; review"], "answer": 0, "why": "Sending a message is a skill with steps. See §9.1."}, {"id": "464-09-I02", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.1", "stem": "Describe how to check understanding.", "options": ["Ask the receiver to paraphrase, or ask a question only someone who understood could answer — not 'is that clear?'", "Say 'is that clear?'", "Send the message twice", "Wait for complaints"], "answer": 0, "why": "Step 4. See §9.1."}, {"id": "464-09-I03", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.1", "stem": "Identify the textbook's rule for choosing the medium.", "options": ["The richer the message, the richer the medium — a hard message face to face, never by text", "Always email", "Always text", "Always in writing"], "answer": 0, "why": "Choosing the medium. See §9.1."}, {"id": "464-09-I04", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.1", "stem": "Explain what went wrong with 'finish the analysis section' in question 1.", "options": ["No objective, no specification, no check of understanding — step 4 would have exposed the gap in thirty seconds", "The receiver was lazy", "The deadline was too short", "The medium was wrong"], "answer": 0, "why": "Answer to question 1. See §9.1."}, {"id": "464-09-I05", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.2", "stem": "Identify the listening step most leaders fail first.", "options": ["Do not interrupt", "Take notes", "Face the person", "Ask questions"], "answer": 0, "why": "Most leaders fail at 'do not interrupt' first. See §9.2."}, {"id": "464-09-I06", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.2", "stem": "Describe feedback as the textbook defines it.", "options": ["The process of verifying messages and determining whether objectives are being met", "Criticism of a person", "An annual review", "A compliment"], "answer": 0, "why": "Feedback turns communication into results. See §9.2."}, {"id": "464-09-I07", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.2", "stem": "Identify why people do not give feedback to leaders.", "options": ["They fear the reaction, were never asked, assume the leader knows, or saw what happened to the last person who spoke", "They are shy", "They are busy", "It is against policy"], "answer": 0, "why": "Why people do not give feedback. See §9.2."}, {"id": "464-09-I08", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.2", "stem": "Identify what a leader must do to get feedback.", "options": ["Ask for it, thank the person who gives it, and act on it visibly", "Wait for it", "Demand it", "Pay for it"], "answer": 0, "why": "Psychological safety, one conversation at a time. See §9.2."}, {"id": "464-09-I09", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.3", "stem": "Identify the four steps of the coaching model.", "options": ["Describe current performance; describe desired performance; get a commitment to the change; follow up", "Blame; warn; punish; replace", "Praise; pay; promote; party", "Plan; delegate; measure; reward"], "answer": 0, "why": "Coaching model. See §9.3."}, {"id": "464-09-I10", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.3", "stem": "Describe how to state current performance.", "options": ["Specific, observed, recent — behaviour, not character: 'the last three reports arrived after the deadline', not 'you are unreliable'", "General and about character", "Vague and old", "As a threat"], "answer": 0, "why": "Behaviour, not character. See §9.3."}, {"id": "464-09-I11", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.3", "stem": "Explain why 'ask, do not tell' matters in step 3.", "options": ["A commitment the person states is one they own", "Asking is polite", "Telling takes longer", "Asking avoids paperwork"], "answer": 0, "why": "Get a commitment. See §9.3."}, {"id": "464-09-I12", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.3", "stem": "Identify the cost of silence about the under-performing team member in question 2.", "options": ["The two people doing his work, the resentment they hide, and the member who never learns he has a problem", "Nothing — silence is kind", "A fine", "A complaint to HR"], "answer": 0, "why": "Answer to question 2. See §9.3."}, {"id": "464-09-I13", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.4", "stem": "Identify the five conflict-management styles.", "options": ["Avoiding, accommodating, forcing, negotiating, collaborating", "Fight, flight, freeze, fawn, flee", "Decide, consult, facilitate, delegate, ignore", "Win, lose, draw, quit, appeal"], "answer": 0, "why": "Five styles. See §9.4."}, {"id": "464-09-I14", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.4", "stem": "Describe the collaborating style.", "options": ["High concern for own and others' needs — work jointly for a solution that satisfies both; the preferred style and the hardest", "Give in to keep the peace", "Use authority to win", "Split the difference"], "answer": 0, "why": "Collaborating. See §9.4."}, {"id": "464-09-I15", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.4", "stem": "Identify when forcing is appropriate.", "options": ["An unpopular decision must be made fast, safety, or the other party is taking advantage — at a cost to the relationship", "Always", "Never", "Only with friends"], "answer": 0, "why": "Forcing. See §9.4."}, {"id": "464-09-I16", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.4", "stem": "Identify the three parts of a BCF statement.", "options": ["Behaviour, Consequences, Feelings", "Blame, Criticism, Fury", "Boss, Colleague, Friend", "Budget, Cost, Forecast"], "answer": 0, "why": "Plan a BCF statement that keeps ownership of the problem. See §9.4."}, {"id": "464-09-I17", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.5", "stem": "Describe the in-group and out-group in Leader–Member Exchange.", "options": ["In-group: trusted members who get attention, information and opportunity; out-group: formal, transactional treatment", "In-group: new staff; out-group: old staff", "In-group: managers; out-group: workers", "In-group: friends; out-group: family"], "answer": 0, "why": "Vertical Dyadic Linkage. See §9.5."}, {"id": "464-09-I18", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.5", "stem": "Identify how the two groups form.", "options": ["Early and fast, from perceived similarity, competence, initiative and willingness to take extra roles", "By lottery", "By seniority", "By salary"], "answer": 0, "why": "How the two groups form. See §9.5."}, {"id": "464-09-I19", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.5", "stem": "Explain what the out-group's perception of favouritism does.", "options": ["Equity theory says it destroys motivation for everyone who sees it", "It motivates them", "Nothing", "It improves cohesion"], "answer": 0, "why": "What high-quality exchange produces — and its cost. See §9.5."}, {"id": "464-09-I20", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.5", "stem": "Identify the leader's fix for in-groups.", "options": ["Widen the circle deliberately — build high-quality exchanges with all members, not a chosen few", "Abandon the trusted people", "Hide the in-group", "Pay the out-group more"], "answer": 0, "why": "Answer to question 3. See §9.5."}, {"id": "464-09-I21", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.6", "stem": "Identify what a leader should NOT delegate.", "options": ["Personnel matters — appraisals, discipline, confidential issues; crises; activities specifically assigned to the leader", "Paperwork and routine tasks", "Technical matters others can handle", "Tasks with developmental potential"], "answer": 0, "why": "What not to delegate. See §9.6."}, {"id": "464-09-I22", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.6", "stem": "Identify the four steps of the delegation model.", "options": ["Explain the need and why this person; set objectives defining responsibility, authority and deadline; develop a plan with the follower; establish checkpoints and hold accountable", "Order; wait; check; blame", "Ask; hope; forget; repeat", "Email; remind; escalate; redo"], "answer": 0, "why": "Delegation model. See §9.6."}, {"id": "464-09-I23", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.6", "stem": "Identify the three things that must travel together in delegation.", "options": ["Responsibility, authority and accountability", "Pay, title and office", "Time, budget and staff", "Vision, mission and values"], "answer": 0, "why": "Dumping is responsibility without authority. See §9.6."}, {"id": "464-09-I24", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.6", "stem": "Identify why leaders do not delegate.", "options": ["Fear it will be done worse, fear losing control or credit, belief it is faster themselves, lack of trust, never learned how", "Delegation is illegal", "Followers refuse", "Delegation costs money"], "answer": 0, "why": "Every one is visible to the team. See §9.6."}, {"id": "464-09-I25", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.7", "stem": "Identify the seven characteristics of effective teams.", "options": ["Norms, leadership, cohesiveness and interdependence, composition, structure, organisational support, creativity", "Size, age, pay, office, hours, titles, laptops", "Vision, mission, values, slogan, logo, website, app", "Trust, speed, cost, quality, risk, scope, time"], "answer": 0, "why": "Characteristics of effective teams. See §9.7."}, {"id": "464-09-I26", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.7", "stem": "Identify the three parts of conducting an effective meeting.", "options": ["Planning, conducting, follow-up", "Opening, middle, end", "Agenda, lunch, close", "Talk, vote, leave"], "answer": 0, "why": "Three parts. See §9.7."}, {"id": "464-09-I27", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.7", "stem": "Describe when the leader should decide how the team decides.", "options": ["Before the discussion, not after", "After the vote", "Never", "During the argument"], "answer": 0, "why": "Team decision making. See §9.7."}, {"id": "464-09-I28", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.7", "stem": "Identify the contents of a team charter.", "options": ["Purpose; goals and success measures; roles; decision rule; meeting rhythm; norms for deadlines, attendance and disagreement; what happens when someone does not deliver", "Names and phone numbers", "The budget", "The leader's biography"], "answer": 0, "why": "The team charter. See §9.7."}, {"id": "464-09-I29", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.8", "stem": "Describe a self-managed team.", "options": ["A relatively autonomous team whose members share or rotate leadership and hold themselves mutually accountable", "A team with no goals", "A team run by an appointed director", "A team of one"], "answer": 0, "why": "Self-managed teams. See §9.8."}, {"id": "464-09-I30", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.8", "stem": "Identify the work self-managed teams are best for.", "options": ["Complex, knowledge-based work with experienced members", "Routine, structured, time-critical work", "Crises", "Simple repetitive tasks"], "answer": 0, "why": "Chapter 4's substitutes for leadership. See §9.8."}, {"id": "464-09-I31", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.8", "stem": "Identify top management's role for self-managed teams.", "options": ["Design for it — clear boundaries, resources, reward systems for team results, and a champion who protects the team while it learns", "Leave the team alone", "Appoint a strict leader", "Cancel training"], "answer": 0, "why": "Challenges and top management's role. See §9.8."}, {"id": "464-09-I32", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.7", "stem": "Explain the chapter's reading of the 'polite' team in question 4.", "options": ["Politeness is the symptom — missing norms about disagreement and accountability, no decision rule, and a conflict-avoiding leader", "Politeness is the strength", "The team is too small", "The team needs a bonus"], "answer": 0, "why": "Answer to question 4. See §9.7."}, {"id": "464-09-A01", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.1", "stem": "Exercise 1A: a manager emails 'Sort out the client complaint'; two days later the client has been called twice by two different people. Determine the missing skill and the steps skipped.", "options": ["Sending a message — no objective, no check of understanding, no commitment (steps 2, 4 and 5)", "Listening — no notes", "Delegation — no authority", "Coaching — no follow-up"], "answer": 0, "why": "Answer key: A sending — steps 2, 4, 5. See §9.1 and Exercise 1."}, {"id": "464-09-A02", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.3", "stem": "Exercise 1B: a supervisor says in front of the ward, 'You are always late with the charts'; the nurse says nothing and is late again. Select the rewrite as the first two coaching steps.", "options": ["'The charts for beds 3–7 came in at 3 p.m. today and yesterday; I need them by 1 p.m. so the afternoon doctor has them.'", "'You are unreliable and everyone knows it.'", "'Try harder next week.'", "'Late again — I'm writing you up.'"], "answer": 0, "why": "Answer key: B — current then desired, behaviour not character, in private. See §9.3 and Exercise 1."}, {"id": "464-09-A03", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.4", "stem": "Exercise 1C: two engineers disagree about a design; the project lead says 'work it out between you' and leaves; a week later they are not speaking. Determine the style used and the style needed.", "options": ["Avoiding; the situation needed collaborating with the lead facilitating", "Forcing; needed accommodating", "Negotiating; needed avoiding", "Collaborating; needed forcing"], "answer": 0, "why": "Answer key: C avoiding → collaborating. See §9.4 and Exercise 1."}, {"id": "464-09-A04", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.4", "stem": "Select the BCF statement one engineer in Exercise 1C could open with.", "options": ["'When the design changes without our agreeing, I have to redo the load calculations, and I feel my work is not respected.'", "'You never listen and you are wrong.'", "'The lead should decide, not us.'", "'I give up — do what you want.'"], "answer": 0, "why": "Behaviour, consequences, feelings. See §9.4 and Exercise 1."}, {"id": "464-09-A05", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.5", "stem": "Exercise 1D: a department head consults the same two people on every decision; the other six have stopped offering ideas. Determine the pattern and the fix.", "options": ["An LMX in-group — widen the circle deliberately", "Delegation failure — delegate more", "Meeting failure — write an agenda", "Coaching failure — follow up"], "answer": 0, "why": "Answer key: D LMX in-group. See §9.5 and Exercise 1."}, {"id": "464-09-A06", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.7", "stem": "Exercise 1E: a ninety-minute meeting covers five topics, decides nothing and ends with 'let's think about it'. Determine what was missing.", "options": ["Planning, a decision rule and follow-up — no agenda, no decision rule, no minutes", "A bigger room", "More participants", "A longer meeting"], "answer": 0, "why": "Answer key: E meetings. See §9.7 and Exercise 1."}, {"id": "464-09-A07", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.6", "stem": "Exercise 1F: a director does every appraisal herself, delegates none of the routine reports, and works until 9 p.m. Determine what she should delegate and what she should keep.", "options": ["Delegate the routine reports; keep the appraisals", "Delegate the appraisals; keep the reports", "Delegate everything", "Keep everything"], "answer": 0, "why": "Answer key: F delegation. See §9.6 and Exercise 1."}, {"id": "464-09-A08", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.7", "stem": "Exercise 2A, the silent consultancy team: two dominate, three agree with everything, one stopped attending, a wrong assumption went unraised for a week; the leader is friendly, avoids conflict, has never written an agenda and grades everyone the same. Determine the missing characteristics, the conflict style and the LMX pattern.", "options": ["Missing norms, structure (roles, decision rule) and leadership; the leader is avoiding; the in-group is the two dominant members", "Missing composition only; forcing; no in-group", "Missing support only; collaborating; everyone in-group", "Nothing missing; negotiating; no pattern"], "answer": 0, "why": "Marking guide, task 1. See §9.7, §9.4, §9.5 and Exercise 2."}, {"id": "464-09-A09", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.7", "stem": "Exercise 2A: select the leader's first proper agenda for the next meeting.", "options": ["Objectives, items with owners, a decision rule, and times — sent in writing before the meeting", "'Catch-up — 2 p.m.'", "A list of topics with no times or owners", "No agenda; keep it informal"], "answer": 0, "why": "Marking guide, task 2. See §9.7 and Exercise 2."}, {"id": "464-09-A10", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.3", "stem": "Exercise 2A: select the four-step coaching conversation with the member who stopped attending.", "options": ["Current: three absences; desired: attend and own one section; ask for a commitment rather than tell; set a follow-up date", "'You're out of the team.'", "'Everyone misses meetings — don't worry.'", "'Attend or I'll report you.'"], "answer": 0, "why": "Marking guide, task 2. See §9.3 and Exercise 2."}, {"id": "464-09-A11", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.6", "stem": "Exercise 2B: your own team names one task to delegate 'with authority'. Determine what must travel with it.", "options": ["Responsibility, authority and accountability — plus objectives, a deadline and checkpoints", "Just the task and a reminder", "Only the responsibility", "Only the credit"], "answer": 0, "why": "Step 2 prevents dumping. See §9.6 and Exercise 2."}, {"id": "464-09-A12", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.4", "stem": "Exercise 2B: each member writes one BCF statement about the team to say aloud. Select the correctly formed one.", "options": ["'When the slides arrive the night before (B), I rehearse at 1 a.m. (C), and I feel the deadline isn't shared (F).'", "'You people are always late.'", "'The slides are a disaster.'", "'I'm fine with whatever.'"], "answer": 0, "why": "Marking guide, task 4. See §9.4 and Exercise 2."}, {"id": "464-09-A13", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.7", "stem": "Exercise 2B: the rewritten charter must include norms for disagreement and missed deadlines. Determine why those two norms matter most for the silent team.", "options": ["Without them, politeness replaces challenge and non-delivery has no consequence — the exact failures in the case", "They are required by the university", "They are the shortest to write", "They replace the decision rule"], "answer": 0, "why": "Answer to question 4 and the charter. See §9.7."}, {"id": "464-09-A14", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.2", "stem": "Take-away: a team member is asked 'when did you last tell the boss something they did not want to hear?' and answers 'never — the last person who did was moved'. Determine the finding.", "options": ["Feedback is not asked for, thanked or acted on — people have seen what happens to the last person who spoke", "The boss is a great listener", "The team has nothing to say", "Feedback is unnecessary"], "answer": 0, "why": "Take-away box 1. See §9.2."}, {"id": "464-09-A15", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.5", "stem": "Take-away: the leader says 'I treat everyone equally'; a member says 'the interesting work always goes to the same three people'. Determine the reading.", "options": ["An in-group the leader does not see — the gap between the two answers is the finding", "The member is wrong", "The leader is lying", "Nothing — both are right"], "answer": 0, "why": "Take-away box 3. See §9.5."}, {"id": "464-09-A16", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.8", "stem": "Take-away: the minutes show every decision — even the lunch order — signed off by the leader. Determine what the team can decide without the leader.", "options": ["Nothing — a conventional team, not a self-managed one", "Everything", "Only hiring", "Only methods"], "answer": 0, "why": "Take-away box 4. See §9.8."}, {"id": "464-09-A17", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.1", "stem": "Rami shouts across the river 'do the thing we discussed!' and Dana does the wrong thing. Determine the sending steps missed.", "options": ["State the objective, transmit specifically, check understanding", "Develop rapport only", "Get a commitment only", "Choose a written medium"], "answer": 0, "why": "Steps 2–4. See §9.1."}, {"id": "464-09-A18", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.3", "stem": "Omar has dropped the rope three times this week. Rami says: 'You dropped the rope Monday, Wednesday and today; I need both hands on it until I say release — can you commit to that?' Classify the conversation.", "options": ["The coaching model — current, desired, commitment asked", "A BCF statement", "Forcing", "Delegation"], "answer": 0, "why": "Four steps. See §9.3."}, {"id": "464-09-A19", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.4", "stem": "Noor and Dana argue about the camp site; Rami says 'we have time, and both of you matter — let's find a site that gives Noor the view and Dana the water'. Classify the style.", "options": ["Collaborating", "Forcing", "Avoiding", "Accommodating"], "answer": 0, "why": "High concern for both. See §9.4."}, {"id": "464-09-A20", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.4", "stem": "The gang is minutes away; Rami overrides the discussion and orders everyone up the ridge. Determine the style and whether it fits.", "options": ["Forcing — appropriate when safety demands a fast decision", "Avoiding — inappropriate", "Accommodating — inappropriate", "Collaborating — ideal"], "answer": 0, "why": "Safety; an unpopular decision made fast. See §9.4."}, {"id": "464-09-A21", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.5", "stem": "Rami always consults Noor first and gives her the scouting; Omar and Dana notice and start holding back. Determine the pattern and the cost.", "options": ["An LMX in-group — the out-group perceives favouritism and reduces effort", "Delegation — Omar is lazy", "Self-management — ideal", "Coaching — fine"], "answer": 0, "why": "Widen the circle deliberately. See §9.5."}, {"id": "464-09-A22", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.6", "stem": "Rami tells Dana to arrange the horses but gives her no gold and no right to bargain; the villagers refuse her. Classify the failure.", "options": ["Dumping — responsibility without authority", "Over-delegation", "Good delegation", "A coaching failure"], "answer": 0, "why": "Responsibility, authority, accountability travel together. See §9.6."}, {"id": "464-09-A23", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.7", "stem": "At the locked gate all four must pull at once, on a signal, with each person on a named rope. Determine the team characteristics this demands.", "options": ["Structure (clear roles) and interdependence — members need each other to succeed", "Creativity only", "Organisational support only", "Size only"], "answer": 0, "why": "The Locked Gate — roles and interdependence. See §9.7."}, {"id": "464-09-A24", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.8", "stem": "By the final day the four decide the route, rotate who leads each stretch and hold each other to the plan while Rami only facilitates. Classify the team.", "options": ["A self-managed team — shared leadership, mutual accountability", "A conventional team", "A crisis team", "An out-group"], "answer": 0, "why": "When the team leads itself. See §9.8."}, {"id": "464-09-A25", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.7", "stem": "Rami starts each evening with three questions: what do we decide tonight, who owns it, and how do we decide — vote or consensus? Determine what he is doing right.", "options": ["Planning the meeting and setting the decision rule before the discussion", "Avoiding conflict", "Forming an in-group", "Dumping"], "answer": 0, "why": "Conducting effective meetings. See §9.7."}, {"id": "464-09-I33", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "9.8", "stem": "Identify the benefits of self-managed teams.", "options": ["Higher productivity, quality and flexibility, faster response, higher commitment, lower turnover, and members developed as leaders", "Lower cost only", "Fewer meetings", "Less training"], "answer": 0, "why": "Benefits. See §9.8."}, {"id": "464-09-A26", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.1", "stem": "Rami gives the hardest news of the journey — that Omar's village has been raided — by sending a note with a runner. Determine the chapter's verdict on the medium.", "options": ["Wrong — the richer the message, the richer the medium; a hard message is given face to face", "Right — writing is a record", "Right — runners are fast", "Wrong — it should have been a song"], "answer": 0, "why": "Choosing the medium. See §9.1."}, {"id": "464-09-A27", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.1", "stem": "Before giving Dana the river task, Rami asks about her brother and then says 'I need two things from you tonight'. Determine the steps shown.", "options": ["Develop rapport, then state the objective", "Transmit, then check", "Commit, then follow up", "Check, then transmit"], "answer": 0, "why": "Steps 1 and 2. See §9.1."}, {"id": "464-09-A28", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.2", "stem": "Noor tells Rami the plan is wrong; he thanks her in front of the team and changes it. Determine what this does for future feedback.", "options": ["It makes feedback safe — ask, thank and act on it visibly", "It weakens his authority", "It encourages rebellion", "Nothing"], "answer": 0, "why": "Why people do not give feedback — and what makes them. See §9.2."}, {"id": "464-09-A29", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.2", "stem": "Rami prepares his reply while Omar is still speaking, then interrupts him. Determine the listening steps broken.", "options": ["Stay tuned in and do not interrupt", "Take notes", "Face the person", "Ask questions"], "answer": 0, "why": "The listening process. See §9.2."}, {"id": "464-09-A30", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.2", "stem": "Determine the organisational form of feedback the chapter links to the project's peer evaluation.", "options": ["360-degree feedback — from manager, peers, subordinates and customers", "Annual appraisal", "Exit interview", "Customer survey"], "answer": 0, "why": "The 360-degree link. See §9.2."}, {"id": "464-09-A31", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.3", "stem": "After Omar commits to both hands on the rope, Rami forgets to watch at the next crossing. Determine the coaching step missed.", "options": ["Follow up — set the date, check, recognise the change", "Describe current performance", "Describe desired performance", "Get a commitment"], "answer": 0, "why": "Step 4. See §9.3."}, {"id": "464-09-A32", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.5", "stem": "Omar, in the out-group, starts taking initiative, delivering early and supporting Rami's plan. Determine the chapter's advice he is following.", "options": ["The follower's role — earn a high-quality exchange through initiative and delivery", "Complain to the elders", "Form his own in-group", "Withdraw effort"], "answer": 0, "why": "The role of the follower. See §9.5."}, {"id": "464-09-A33", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.6", "stem": "Rami hands the gang-prisoner's questioning — a confidential, disciplinary matter — to Dana. Determine the chapter's verdict.", "options": ["Wrong — personnel and confidential matters should not be delegated", "Right — delegate everything", "Right — it develops Dana", "Wrong — Dana is too junior"], "answer": 0, "why": "What not to delegate. See §9.6."}, {"id": "464-09-A34", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.8", "stem": "The village guards start deciding their own rota and methods, but the elders give them no boundaries, no resources and no champion; conflict spreads. Determine what is missing.", "options": ["Top management's design — clear boundaries, resources, team rewards and a champion", "A stricter leader", "Fewer guards", "More rules"], "answer": 0, "why": "Challenges and top management's role. See §9.8."}, {"id": "464-09-A35", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.8", "stem": "Determine the kind of work for which a conventional, leader-directed team remains best.", "options": ["Routine, structured, time-critical work", "Complex, knowledge-based work", "Creative work with experts", "All work"], "answer": 0, "why": "Conventional vs self-managed. See §9.8."}]}
+{
+ "subject": "MGMT464",
+ "chapter": 9,
+ "title": "Hurdle 9 · The Locked Gate — Leading Teams: Communication, Coaching, Conflict and Team Leadership",
+ "clos": [
+  "CLO 1",
+  "CLO 2"
+ ],
+ "source": "Chapter09_Leading_Teams.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "464-09-I01",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.1",
+   "stem": "Identify the five steps of sending a message.",
+   "options": [
+    "Develop rapport; state your objective; transmit the message; check understanding; get a commitment and follow up",
+    "Write the message carefully; send it; wait for a reply; remind the receiver; escalate to their manager if nothing happens within a day",
+    "State the message; repeat it in a louder voice; email it; text it; call to make sure it arrived",
+    "Plan what to say; organise the points; lead the conversation; control the reaction; review afterwards"
+   ],
+   "answer": 0,
+   "why": "Sending a message is a skill with steps. See §9.1."
+  },
+  {
+   "id": "464-09-I02",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.1",
+   "stem": "Describe how to check understanding.",
+   "options": [
+    "Ask the receiver to paraphrase, or ask a question only someone who understood could answer — not 'is that clear?'",
+    "Say 'is that clear?' and accept the nod, because adults will always ask if they have not understood what was said",
+    "Send the message twice in two different media so that it cannot be missed",
+    "Wait for complaints, because a misunderstood message shows itself in the results"
+   ],
+   "answer": 0,
+   "why": "Step 4. See §9.1."
+  },
+  {
+   "id": "464-09-I03",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.1",
+   "stem": "Identify the textbook's rule for choosing the medium.",
+   "options": [
+    "The richer the message, the richer the medium — a hard message face to face, never by text",
+    "Always email, because a written record protects both the sender and the receiver if there is a dispute later",
+    "Always text, because short messages are read immediately and cannot be misunderstood",
+    "Always in writing, because spoken messages are forgotten within a day"
+   ],
+   "answer": 0,
+   "why": "Choosing the medium. See §9.1."
+  },
+  {
+   "id": "464-09-I04",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.1",
+   "stem": "Explain what went wrong with 'finish the analysis section' in question 1.",
+   "options": [
+    "No objective, no specification, no check of understanding — step 4 would have exposed the gap in thirty seconds",
+    "The receiver was lazy and did not ask what the sender actually meant by 'the analysis section' before starting the work",
+    "The deadline was too short for the receiver to produce a complete analysis",
+    "The medium was wrong, because an instruction of that kind should have been written down"
+   ],
+   "answer": 0,
+   "why": "Answer to question 1. See §9.1."
+  },
+  {
+   "id": "464-09-I05",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.2",
+   "stem": "Identify the listening step most leaders fail first.",
+   "options": [
+    "Do not interrupt",
+    "Take notes",
+    "Face the person",
+    "Ask open questions"
+   ],
+   "answer": 0,
+   "why": "Most leaders fail at 'do not interrupt' first. See §9.2."
+  },
+  {
+   "id": "464-09-I06",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.2",
+   "stem": "Describe feedback as the textbook defines it.",
+   "options": [
+    "The process of verifying messages and determining whether objectives are being met",
+    "Criticism of a person's performance delivered by the manager at the annual review",
+    "An annual review in which the manager and the employee agree the rating for the year",
+    "A compliment given to an employee who has performed well in front of the team"
+   ],
+   "answer": 0,
+   "why": "Feedback turns communication into results. See §9.2."
+  },
+  {
+   "id": "464-09-I07",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.2",
+   "stem": "Identify why people do not give feedback to leaders.",
+   "options": [
+    "They fear the reaction, were never asked, assume the leader knows, or saw what happened to the last person who spoke",
+    "They are shy and do not like to speak in front of senior people",
+    "They are busy and feedback takes time away from the work",
+    "It is against policy in most organisations for staff to comment on their managers"
+   ],
+   "answer": 0,
+   "why": "Why people do not give feedback. See §9.2."
+  },
+  {
+   "id": "464-09-I08",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.2",
+   "stem": "Identify what a leader must do to get feedback.",
+   "options": [
+    "Ask for it, thank the person who gives it, and act on it visibly",
+    "Wait for it, because people who have something to say will find a way to say it",
+    "Demand it, because feedback is part of every employee's job",
+    "Pay for it, because people give honest feedback only when there is something in it for them"
+   ],
+   "answer": 0,
+   "why": "Psychological safety, one conversation at a time. See §9.2."
+  },
+  {
+   "id": "464-09-I09",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.3",
+   "stem": "Identify the four steps of the coaching model.",
+   "options": [
+    "Describe current performance; describe desired performance; get a commitment to the change; follow up",
+    "Blame the person; warn them formally; punish them if it continues; replace them if it still continues after that",
+    "Praise the person; pay them more; promote them; celebrate the promotion with the team",
+    "Plan the task; delegate it; measure the result; reward the person who delivered it"
+   ],
+   "answer": 0,
+   "why": "Coaching model. See §9.3."
+  },
+  {
+   "id": "464-09-I10",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.3",
+   "stem": "Describe how to state current performance.",
+   "options": [
+    "Specific, observed, recent — behaviour, not character: 'the last three reports arrived after the deadline', not 'you are unreliable'",
+    "General and about character, so that the person understands the pattern rather than one incident",
+    "Vague and old, so that the person is not embarrassed by a recent example",
+    "As a threat, so that the person understands the seriousness of the conversation"
+   ],
+   "answer": 0,
+   "why": "Behaviour, not character. See §9.3."
+  },
+  {
+   "id": "464-09-I11",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.3",
+   "stem": "Explain why 'ask, do not tell' matters in step 3.",
+   "options": [
+    "A commitment the person states is one they own",
+    "Asking is polite and keeps the relationship warm during a difficult conversation",
+    "Telling takes longer, because the person has to be convinced",
+    "Asking avoids paperwork, because the commitment does not have to be recorded"
+   ],
+   "answer": 0,
+   "why": "Get a commitment. See §9.3."
+  },
+  {
+   "id": "464-09-I12",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.3",
+   "stem": "Identify the cost of silence about the under-performing team member in question 2.",
+   "options": [
+    "The two people doing his work, the resentment they hide, and the member who never learns he has a problem",
+    "Nothing — silence is kind and protects the team's relationships",
+    "A fine from the university for failing to report the problem",
+    "A complaint to HR from the member who is not performing"
+   ],
+   "answer": 0,
+   "why": "Answer to question 2. See §9.3."
+  },
+  {
+   "id": "464-09-I13",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.4",
+   "stem": "Identify the five conflict-management styles.",
+   "options": [
+    "Avoiding, accommodating, forcing, negotiating, collaborating",
+    "Fight, flight, freeze, fawn and flee",
+    "Decide, consult, facilitate, delegate and ignore the conflict",
+    "Win, lose, draw, quit and appeal"
+   ],
+   "answer": 0,
+   "why": "Five styles. See §9.4."
+  },
+  {
+   "id": "464-09-I14",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.4",
+   "stem": "Describe the collaborating style.",
+   "options": [
+    "High concern for own and others' needs — work jointly for a solution that satisfies both; the preferred style and the hardest",
+    "Give in to the other party to keep the peace, putting their needs above your own",
+    "Use authority or power to win the conflict regardless of the other party's needs",
+    "Split the difference so that each party gets part of what it wanted"
+   ],
+   "answer": 0,
+   "why": "Collaborating. See §9.4."
+  },
+  {
+   "id": "464-09-I15",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.4",
+   "stem": "Identify when forcing is appropriate.",
+   "options": [
+    "An unpopular decision must be made fast, safety, or the other party is taking advantage — at a cost to the relationship",
+    "Always, because a leader who does not force loses the respect of the team",
+    "Never, because forcing destroys relationships and should be avoided at any cost",
+    "Only with friends, who will forgive the leader afterwards"
+   ],
+   "answer": 0,
+   "why": "Forcing. See §9.4."
+  },
+  {
+   "id": "464-09-I16",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.4",
+   "stem": "Identify the three parts of a BCF statement.",
+   "options": [
+    "Behaviour, Consequences, Feelings",
+    "Blame, Criticism, Fury",
+    "Boss, Colleague, Friend",
+    "Background, Context, Facts and Figures"
+   ],
+   "answer": 0,
+   "why": "Plan a BCF statement that keeps ownership of the problem. See §9.4."
+  },
+  {
+   "id": "464-09-I17",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.5",
+   "stem": "Describe the in-group and out-group in Leader–Member Exchange.",
+   "options": [
+    "In-group: trusted members who get attention, information and opportunity; out-group: formal, transactional treatment",
+    "In-group: new staff who need the leader's attention; out-group: experienced staff who can safely be left alone to get on with the work",
+    "In-group: managers who report to the leader; out-group: workers who report to the managers",
+    "In-group: friends of the leader outside work; out-group: family members and relatives who work in the organisation"
+   ],
+   "answer": 0,
+   "why": "Vertical Dyadic Linkage. See §9.5."
+  },
+  {
+   "id": "464-09-I18",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.5",
+   "stem": "Identify how the two groups form.",
+   "options": [
+    "Early and fast, from perceived similarity, competence, initiative and willingness to take extra roles",
+    "By lottery, because leaders cannot pay attention to everyone and so end up choosing more or less at random",
+    "By seniority, because the longest-serving members earn the leader's trust first",
+    "By salary, because the highest-paid members are the ones the leader consults"
+   ],
+   "answer": 0,
+   "why": "How the two groups form. See §9.5."
+  },
+  {
+   "id": "464-09-I19",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.5",
+   "stem": "Explain what the out-group's perception of favouritism does.",
+   "options": [
+    "Equity theory says it destroys motivation for everyone who sees it",
+    "It motivates them to work harder so that they can join the in-group",
+    "Nothing — the out-group accepts that the leader has favourites",
+    "It improves cohesion, because the out-group forms its own team"
+   ],
+   "answer": 0,
+   "why": "What high-quality exchange produces — and its cost. See §9.5."
+  },
+  {
+   "id": "464-09-I20",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.5",
+   "stem": "Identify the leader's fix for in-groups.",
+   "options": [
+    "Widen the circle deliberately — build high-quality exchanges with all members, not a chosen few",
+    "Abandon the trusted people so that the out-group does not feel excluded",
+    "Hide the in-group so that the out-group does not notice the favouritism",
+    "Pay the out-group more to compensate them for the attention and opportunity they do not receive"
+   ],
+   "answer": 0,
+   "why": "Answer to question 3. See §9.5."
+  },
+  {
+   "id": "464-09-I21",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.6",
+   "stem": "Identify what a leader should NOT delegate.",
+   "options": [
+    "Personnel matters — appraisals, discipline, confidential issues; crises; activities specifically assigned to the leader",
+    "Paperwork and routine tasks that the leader has always done personally",
+    "Technical matters that others in the team can handle as well as the leader",
+    "Tasks with developmental potential that would stretch a follower"
+   ],
+   "answer": 0,
+   "why": "What not to delegate. See §9.6."
+  },
+  {
+   "id": "464-09-I22",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.6",
+   "stem": "Identify the four steps of the delegation model.",
+   "options": [
+    "Explain the need and why this person; set objectives defining responsibility, authority and deadline; develop a plan with the follower; establish checkpoints and hold accountable",
+    "Give the order; wait for the result; check the work; blame the follower if it is wrong",
+    "Ask for a volunteer; hope someone takes it; forget about it; repeat the request when nothing happens",
+    "Email the task; remind the follower; escalate to their manager; redo the work yourself"
+   ],
+   "answer": 0,
+   "why": "Delegation model. See §9.6."
+  },
+  {
+   "id": "464-09-I23",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.6",
+   "stem": "Identify the three things that must travel together in delegation.",
+   "options": [
+    "Responsibility, authority and accountability",
+    "Pay, title and office",
+    "Time, budget, staff, equipment and information",
+    "Vision, mission, values and strategy"
+   ],
+   "answer": 0,
+   "why": "Dumping is responsibility without authority. See §9.6."
+  },
+  {
+   "id": "464-09-I24",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.6",
+   "stem": "Identify why leaders do not delegate.",
+   "options": [
+    "Fear it will be done worse, fear losing control or credit, belief it is faster themselves, lack of trust, never learned how",
+    "Delegation is illegal for certain tasks, so leaders keep everything to be safe",
+    "Followers refuse delegated tasks because they are not paid for them",
+    "Delegation costs money, because followers have to be trained first"
+   ],
+   "answer": 0,
+   "why": "Every one is visible to the team. See §9.6."
+  },
+  {
+   "id": "464-09-I25",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.7",
+   "stem": "Identify the seven characteristics of effective teams.",
+   "options": [
+    "Norms, leadership, cohesiveness and interdependence, composition, structure, organisational support, creativity",
+    "Size, age, pay, office, hours, titles and laptops",
+    "Vision, mission, values, slogan, logo, website and app",
+    "Trust, speed, cost, quality, risk, scope and time"
+   ],
+   "answer": 0,
+   "why": "Characteristics of effective teams. See §9.7."
+  },
+  {
+   "id": "464-09-I26",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.7",
+   "stem": "Identify the three parts of conducting an effective meeting.",
+   "options": [
+    "Planning, conducting, follow-up",
+    "Opening, middle and end",
+    "Agenda, lunch and close",
+    "Talk, vote and leave the room quickly"
+   ],
+   "answer": 0,
+   "why": "Three parts. See §9.7."
+  },
+  {
+   "id": "464-09-I27",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.7",
+   "stem": "Describe when the leader should decide how the team decides.",
+   "options": [
+    "Before the discussion, not after",
+    "After the vote, once the result is known",
+    "Never — the team should decide how it decides",
+    "During the argument, when it becomes clear that agreement is impossible"
+   ],
+   "answer": 0,
+   "why": "Team decision making. See §9.7."
+  },
+  {
+   "id": "464-09-I28",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.7",
+   "stem": "Identify the contents of a team charter.",
+   "options": [
+    "Purpose; goals and success measures; roles; decision rule; meeting rhythm; norms for deadlines, attendance and disagreement; what happens when someone does not deliver",
+    "Names, phone numbers and email addresses of every member of the team",
+    "The budget for the project and who is authorised to spend it",
+    "The leader's biography and the reasons they were chosen to lead the team"
+   ],
+   "answer": 0,
+   "why": "The team charter. See §9.7."
+  },
+  {
+   "id": "464-09-I29",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.8",
+   "stem": "Describe a self-managed team.",
+   "options": [
+    "A relatively autonomous team whose members share or rotate leadership and hold themselves mutually accountable",
+    "A team with no goals that organises its own work as it sees fit",
+    "A team run by an appointed director who makes all the decisions",
+    "A team of one person who manages their own workload"
+   ],
+   "answer": 0,
+   "why": "Self-managed teams. See §9.8."
+  },
+  {
+   "id": "464-09-I30",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.8",
+   "stem": "Identify the work self-managed teams are best for.",
+   "options": [
+    "Complex, knowledge-based work with experienced members",
+    "Routine, structured, time-critical work with clear procedures",
+    "Crises, where speed matters more than commitment",
+    "Simple repetitive tasks where little judgement is needed"
+   ],
+   "answer": 0,
+   "why": "Chapter 4's substitutes for leadership. See §9.8."
+  },
+  {
+   "id": "464-09-I31",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.8",
+   "stem": "Identify top management's role for self-managed teams.",
+   "options": [
+    "Design for it — clear boundaries, resources, reward systems for team results, and a champion who protects the team while it learns",
+    "Leave the team alone, because any involvement undermines its autonomy",
+    "Appoint a strict leader to make sure the team does not drift",
+    "Cancel training, because self-managed teams learn by doing"
+   ],
+   "answer": 0,
+   "why": "Challenges and top management's role. See §9.8."
+  },
+  {
+   "id": "464-09-I32",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.7",
+   "stem": "Explain the chapter's reading of the 'polite' team in question 4.",
+   "options": [
+    "Politeness is the symptom — missing norms about disagreement and accountability, no decision rule, and a conflict-avoiding leader",
+    "Politeness is the strength — the team has avoided the conflict that destroys other teams",
+    "The team is too small to disagree productively",
+    "The team needs a bonus to motivate members to speak"
+   ],
+   "answer": 0,
+   "why": "Answer to question 4. See §9.7."
+  },
+  {
+   "id": "464-09-A01",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.1",
+   "stem": "Exercise 1A: a manager emails 'Sort out the client complaint'; two days later the client has been called twice by two different people. Determine the missing skill and the steps skipped.",
+   "options": [
+    "Sending a message — no objective, no check of understanding, no commitment (steps 2, 4 and 5)",
+    "Listening — the manager did not take notes of what the client said",
+    "Delegation — the manager gave responsibility without authority",
+    "Delegation — the manager gave responsibility for the complaint without the authority to settle it, so two people acted"
+   ],
+   "answer": 0,
+   "why": "Answer key: A sending — steps 2, 4, 5. See §9.1 and Exercise 1."
+  },
+  {
+   "id": "464-09-A02",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.3",
+   "stem": "Exercise 1B: a supervisor says in front of the ward, 'You are always late with the charts'; the nurse says nothing and is late again. Select the rewrite as the first two coaching steps.",
+   "options": [
+    "'The charts for beds 3–7 came in at 3 p.m. today and yesterday; I need them by 1 p.m. so the afternoon doctor has them.'",
+    "'You are unreliable and everyone on the ward knows it, so this is the last time I am going to say anything about the charts.'",
+    "'Try harder next week, because the doctors are starting to complain about the charts and I cannot keep covering for you.'",
+    "'Late again — I'm writing you up this time, and if it happens once more you will be moved to another ward.'"
+   ],
+   "answer": 0,
+   "why": "Answer key: B — current then desired, behaviour not character, in private. See §9.3 and Exercise 1."
+  },
+  {
+   "id": "464-09-A03",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.4",
+   "stem": "Exercise 1C: two engineers disagree about a design; the project lead says 'work it out between you' and leaves; a week later they are not speaking. Determine the style used and the style needed.",
+   "options": [
+    "Avoiding; the situation needed collaborating with the lead facilitating",
+    "Forcing; the situation needed accommodating by one engineer so that the project could move on",
+    "Negotiating; the situation needed avoiding until tempers cooled",
+    "Collaborating; the situation needed forcing by the lead"
+   ],
+   "answer": 0,
+   "why": "Answer key: C avoiding → collaborating. See §9.4 and Exercise 1."
+  },
+  {
+   "id": "464-09-A04",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.4",
+   "stem": "Select the BCF statement one engineer in Exercise 1C could open with.",
+   "options": [
+    "'When the design changes without our agreeing, I have to redo the load calculations, and I feel my work is not respected.'",
+    "'You never listen to anyone and you are wrong about the design, as you have been wrong about every design before this one.'",
+    "'The lead should decide this, not us, because we clearly cannot agree on anything.'",
+    "'I give up — do what you want with the design and I will calculate whatever you send me.'"
+   ],
+   "answer": 0,
+   "why": "Behaviour, consequences, feelings. See §9.4 and Exercise 1."
+  },
+  {
+   "id": "464-09-A05",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.5",
+   "stem": "Exercise 1D: a department head consults the same two people on every decision; the other six have stopped offering ideas. Determine the pattern and the fix.",
+   "options": [
+    "An LMX in-group — widen the circle deliberately",
+    "Delegation failure — the head should delegate more decisions",
+    "Meeting failure — the head should write an agenda",
+    "Coaching failure — the head should follow up with the six"
+   ],
+   "answer": 0,
+   "why": "Answer key: D LMX in-group. See §9.5 and Exercise 1."
+  },
+  {
+   "id": "464-09-A06",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.7",
+   "stem": "Exercise 1E: a ninety-minute meeting covers five topics, decides nothing and ends with 'let's think about it'. Determine what was missing.",
+   "options": [
+    "Planning, a decision rule and follow-up — no agenda, no decision rule, no minutes",
+    "A bigger room so that everyone could see the slides",
+    "More participants so that every view was represented",
+    "A longer meeting so that every topic could be settled"
+   ],
+   "answer": 0,
+   "why": "Answer key: E meetings. See §9.7 and Exercise 1."
+  },
+  {
+   "id": "464-09-A07",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.6",
+   "stem": "Exercise 1F: a director does every appraisal herself, delegates none of the routine reports, and works until 9 p.m. Determine what she should delegate and what she should keep.",
+   "options": [
+    "Delegate the routine reports; keep the appraisals",
+    "Delegate the appraisals; keep the reports because they are confidential",
+    "Delegate everything so that she can leave at 5 p.m.",
+    "Keep everything, because a director is accountable for all of it"
+   ],
+   "answer": 0,
+   "why": "Answer key: F delegation. See §9.6 and Exercise 1."
+  },
+  {
+   "id": "464-09-A08",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.7",
+   "stem": "Exercise 2A, the silent consultancy team: two dominate, three agree with everything, one stopped attending, a wrong assumption went unraised for a week; the leader is friendly, avoids conflict, has never written an agenda and grades everyone the same. Determine the missing characteristics, the conflict style and the LMX pattern.",
+   "options": [
+    "Missing norms, structure (roles, decision rule) and leadership; the leader is avoiding; the in-group is the two dominant members",
+    "Missing composition only; the leader is forcing; there is no in-group",
+    "Missing organisational support only; the leader is collaborating; everyone is in the in-group",
+    "Nothing missing; the leader is negotiating; there is no pattern"
+   ],
+   "answer": 0,
+   "why": "Marking guide, task 1. See §9.7, §9.4, §9.5 and Exercise 2."
+  },
+  {
+   "id": "464-09-A09",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.7",
+   "stem": "Exercise 2A: select the leader's first proper agenda for the next meeting.",
+   "options": [
+    "Objectives, items with owners, a decision rule, and times — sent in writing before the meeting",
+    "'Catch-up — 2 p.m. in the usual room' sent by message on the morning of the meeting, with no items listed",
+    "A list of topics with no times or owners, so that the meeting stays flexible",
+    "No agenda; keep it informal so that members feel free to raise anything"
+   ],
+   "answer": 0,
+   "why": "Marking guide, task 2. See §9.7 and Exercise 2."
+  },
+  {
+   "id": "464-09-A10",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.3",
+   "stem": "Exercise 2A: select the four-step coaching conversation with the member who stopped attending.",
+   "options": [
+    "Current: three absences; desired: attend and own one section; ask for a commitment rather than tell; set a follow-up date",
+    "'You're out of the team — we have carried you for long enough and the deadline is too close.'",
+    "'Everyone misses meetings sometimes — don't worry about it, we will catch you up.'",
+    "'Attend the next meeting or I'll report you to the module leader.'"
+   ],
+   "answer": 0,
+   "why": "Marking guide, task 2. See §9.3 and Exercise 2."
+  },
+  {
+   "id": "464-09-A11",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.6",
+   "stem": "Exercise 2B: your own team names one task to delegate 'with authority'. Determine what must travel with it.",
+   "options": [
+    "Responsibility, authority and accountability — plus objectives, a deadline and checkpoints",
+    "Just the task itself and a reminder a day before the deadline so that it is not forgotten by the person who took it on",
+    "Only the responsibility, because authority stays with the leader",
+    "Only the credit, so that the person is motivated to deliver"
+   ],
+   "answer": 0,
+   "why": "Step 2 prevents dumping. See §9.6 and Exercise 2."
+  },
+  {
+   "id": "464-09-A12",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.4",
+   "stem": "Exercise 2B: each member writes one BCF statement about the team to say aloud. Select the correctly formed one.",
+   "options": [
+    "'When the slides arrive the night before (B), I rehearse at 1 a.m. (C), and I feel the deadline isn't shared (F).'",
+    "'You people are always late with everything and I am tired of it.'",
+    "'The slides are a disaster and we are going to fail if this continues.'",
+    "'I'm fine with whatever the rest of you decide about the slides.'"
+   ],
+   "answer": 0,
+   "why": "Marking guide, task 4. See §9.4 and Exercise 2."
+  },
+  {
+   "id": "464-09-A13",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.7",
+   "stem": "Exercise 2B: the rewritten charter must include norms for disagreement and missed deadlines. Determine why those two norms matter most for the silent team.",
+   "options": [
+    "Without them, politeness replaces challenge and non-delivery has no consequence — the exact failures in the case",
+    "They are required by the university's project guidelines",
+    "They are the shortest norms to write and agree",
+    "They replace the decision rule, which the team does not need"
+   ],
+   "answer": 0,
+   "why": "Answer to question 4 and the charter. See §9.7."
+  },
+  {
+   "id": "464-09-A14",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.2",
+   "stem": "Take-away: a team member is asked 'when did you last tell the boss something they did not want to hear?' and answers 'never — the last person who did was moved'. Determine the finding.",
+   "options": [
+    "Feedback is not asked for, thanked or acted on — people have seen what happens to the last person who spoke",
+    "The boss is a great listener who has never needed correcting",
+    "The team has nothing to say because the boss is always right",
+    "Feedback is unnecessary in a well-run team"
+   ],
+   "answer": 0,
+   "why": "Take-away box 1. See §9.2."
+  },
+  {
+   "id": "464-09-A15",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.5",
+   "stem": "Take-away: the leader says 'I treat everyone equally'; a member says 'the interesting work always goes to the same three people'. Determine the reading.",
+   "options": [
+    "An in-group the leader does not see — the gap between the two answers is the finding",
+    "The member is wrong, because the leader knows better than anyone how the work is allocated",
+    "The leader is lying, because leaders always have favourites",
+    "Nothing — both are right from their own point of view"
+   ],
+   "answer": 0,
+   "why": "Take-away box 3. See §9.5."
+  },
+  {
+   "id": "464-09-A16",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.8",
+   "stem": "Take-away: the minutes show every decision — even the lunch order — signed off by the leader. Determine what the team can decide without the leader.",
+   "options": [
+    "Nothing — a conventional team, not a self-managed one",
+    "Everything, because the leader signs off what the team has already decided",
+    "Only hiring, because that is what leaders keep",
+    "Only methods, because the leader decides the goals"
+   ],
+   "answer": 0,
+   "why": "Take-away box 4. See §9.8."
+  },
+  {
+   "id": "464-09-A17",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.1",
+   "stem": "Rami shouts across the river 'do the thing we discussed!' and Dana does the wrong thing. Determine the sending steps missed.",
+   "options": [
+    "State the objective, transmit specifically, check understanding",
+    "Develop rapport only — Rami should have asked how Dana was feeling first",
+    "Get a commitment only — Rami should have asked Dana to agree",
+    "Choose a written medium — Rami should have sent a note"
+   ],
+   "answer": 0,
+   "why": "Steps 2–4. See §9.1."
+  },
+  {
+   "id": "464-09-A18",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.3",
+   "stem": "Omar has dropped the rope three times this week. Rami says: 'You dropped the rope Monday, Wednesday and today; I need both hands on it until I say release — can you commit to that?' Classify the conversation.",
+   "options": [
+    "The coaching model — current, desired, commitment asked",
+    "A BCF statement — describing behaviour, consequences and feelings",
+    "Forcing — Rami is using his authority",
+    "Delegation — Rami is handing Omar the rope"
+   ],
+   "answer": 0,
+   "why": "Four steps. See §9.3."
+  },
+  {
+   "id": "464-09-A19",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.4",
+   "stem": "Noor and Dana argue about the camp site; Rami says 'we have time, and both of you matter — let's find a site that gives Noor the view and Dana the water'. Classify the style.",
+   "options": [
+    "Collaborating",
+    "Forcing",
+    "Avoiding",
+    "Accommodating"
+   ],
+   "answer": 0,
+   "why": "High concern for both. See §9.4."
+  },
+  {
+   "id": "464-09-A20",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.4",
+   "stem": "The gang is minutes away; Rami overrides the discussion and orders everyone up the ridge. Determine the style and whether it fits.",
+   "options": [
+    "Forcing — appropriate when safety demands a fast decision",
+    "Avoiding — inappropriate because the argument is unresolved",
+    "Accommodating — inappropriate because Rami gives in",
+    "Collaborating — ideal because everyone's needs are met"
+   ],
+   "answer": 0,
+   "why": "Safety; an unpopular decision made fast. See §9.4."
+  },
+  {
+   "id": "464-09-A21",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.5",
+   "stem": "Rami always consults Noor first and gives her the scouting; Omar and Dana notice and start holding back. Determine the pattern and the cost.",
+   "options": [
+    "An LMX in-group — the out-group perceives favouritism and reduces effort",
+    "Delegation — Omar is lazy and uses Noor's favoured position as an excuse for holding back",
+    "Self-management — ideal because Noor leads herself",
+    "Coaching — fine because Noor is being developed"
+   ],
+   "answer": 0,
+   "why": "Widen the circle deliberately. See §9.5."
+  },
+  {
+   "id": "464-09-A22",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.6",
+   "stem": "Rami tells Dana to arrange the horses but gives her no gold and no right to bargain; the villagers refuse her. Classify the failure.",
+   "options": [
+    "Dumping — responsibility without authority",
+    "Over-delegation — Dana was given too much",
+    "Good delegation — Dana should have found a way",
+    "A coaching failure — Dana was not trained to bargain"
+   ],
+   "answer": 0,
+   "why": "Responsibility, authority, accountability travel together. See §9.6."
+  },
+  {
+   "id": "464-09-A23",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.7",
+   "stem": "At the locked gate all four must pull at once, on a signal, with each person on a named rope. Determine the team characteristics this demands.",
+   "options": [
+    "Structure (clear roles) and interdependence — members need each other to succeed",
+    "Creativity only — the team must find a completely new way through the locked gate",
+    "Organisational support only — the team needs the village's help",
+    "Size only — four is the right number for the ropes"
+   ],
+   "answer": 0,
+   "why": "The Locked Gate — roles and interdependence. See §9.7."
+  },
+  {
+   "id": "464-09-A24",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.8",
+   "stem": "By the final day the four decide the route, rotate who leads each stretch and hold each other to the plan while Rami only facilitates. Classify the team.",
+   "options": [
+    "A self-managed team — shared leadership, mutual accountability",
+    "A conventional team — Rami still facilitates and holds the authority",
+    "A crisis team — formed for the final day",
+    "An out-group — the four have excluded Rami"
+   ],
+   "answer": 0,
+   "why": "When the team leads itself. See §9.8."
+  },
+  {
+   "id": "464-09-A25",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.7",
+   "stem": "Rami starts each evening with three questions: what do we decide tonight, who owns it, and how do we decide — vote or consensus? Determine what he is doing right.",
+   "options": [
+    "Planning the meeting and setting the decision rule before the discussion",
+    "Avoiding conflict by structuring the evening so tightly that nobody has the chance to disagree with him",
+    "Forming an in-group of those who own decisions",
+    "Dumping decisions on the followers"
+   ],
+   "answer": 0,
+   "why": "Conducting effective meetings. See §9.7."
+  },
+  {
+   "id": "464-09-I33",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "9.8",
+   "stem": "Identify the benefits of self-managed teams.",
+   "options": [
+    "Higher productivity, quality and flexibility, faster response, higher commitment, lower turnover, and members developed as leaders",
+    "Lower cost only, because the team needs no manager",
+    "Fewer meetings, because the team does not need to coordinate",
+    "Less training, because the team teaches itself"
+   ],
+   "answer": 0,
+   "why": "Benefits. See §9.8."
+  },
+  {
+   "id": "464-09-A26",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.1",
+   "stem": "Rami gives the hardest news of the journey — that Omar's village has been raided — by sending a note with a runner. Determine the chapter's verdict on the medium.",
+   "options": [
+    "Wrong — the richer the message, the richer the medium; a hard message is given face to face",
+    "Right — writing is a record that Omar can keep and reread",
+    "Right — runners are fast and Omar needs to know quickly",
+    "Wrong — it should have been sent through Noor, who knows Omar best and could soften the blow"
+   ],
+   "answer": 0,
+   "why": "Choosing the medium. See §9.1."
+  },
+  {
+   "id": "464-09-A27",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.1",
+   "stem": "Before giving Dana the river task, Rami asks about her brother and then says 'I need two things from you tonight'. Determine the steps shown.",
+   "options": [
+    "Develop rapport, then state the objective",
+    "Transmit the message, then check understanding",
+    "Get a commitment, then follow up",
+    "Check understanding, then transmit the message"
+   ],
+   "answer": 0,
+   "why": "Steps 1 and 2. See §9.1."
+  },
+  {
+   "id": "464-09-A28",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.2",
+   "stem": "Noor tells Rami the plan is wrong; he thanks her in front of the team and changes it. Determine what this does for future feedback.",
+   "options": [
+    "It makes feedback safe — ask, thank and act on it visibly",
+    "It weakens his authority in front of the team at a critical moment",
+    "It encourages rebellion against future plans",
+    "Nothing — Noor would have spoken anyway"
+   ],
+   "answer": 0,
+   "why": "Why people do not give feedback — and what makes them. See §9.2."
+  },
+  {
+   "id": "464-09-A29",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.2",
+   "stem": "Rami prepares his reply while Omar is still speaking, then interrupts him. Determine the listening steps broken.",
+   "options": [
+    "Stay tuned in and do not interrupt",
+    "Take notes of what Omar is saying",
+    "Face the person who is speaking",
+    "Ask questions to clarify Omar's point"
+   ],
+   "answer": 0,
+   "why": "The listening process. See §9.2."
+  },
+  {
+   "id": "464-09-A30",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.2",
+   "stem": "Determine the organisational form of feedback the chapter links to the project's peer evaluation.",
+   "options": [
+    "360-degree feedback — from manager, peers, subordinates and customers",
+    "Annual appraisal by the module leader",
+    "Exit interview at the end of the project",
+    "A customer survey of the organisation studied, collected by the project team at the end of the interview"
+   ],
+   "answer": 0,
+   "why": "The 360-degree link. See §9.2."
+  },
+  {
+   "id": "464-09-A31",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.3",
+   "stem": "After Omar commits to both hands on the rope, Rami forgets to watch at the next crossing. Determine the coaching step missed.",
+   "options": [
+    "Follow up — set the date, check, recognise the change",
+    "Describe current performance — the three dropped ropes",
+    "Describe desired performance — both hands on the rope",
+    "Get a commitment — Omar's agreement"
+   ],
+   "answer": 0,
+   "why": "Step 4. See §9.3."
+  },
+  {
+   "id": "464-09-A32",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.5",
+   "stem": "Omar, in the out-group, starts taking initiative, delivering early and supporting Rami's plan. Determine the chapter's advice he is following.",
+   "options": [
+    "The follower's role — earn a high-quality exchange through initiative and delivery",
+    "Complain to the elders about Rami's favouritism",
+    "Form his own in-group with Dana against Noor",
+    "Withdraw effort until Rami notices him"
+   ],
+   "answer": 0,
+   "why": "The role of the follower. See §9.5."
+  },
+  {
+   "id": "464-09-A33",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.6",
+   "stem": "Rami hands the gang-prisoner's questioning — a confidential, disciplinary matter — to Dana. Determine the chapter's verdict.",
+   "options": [
+    "Wrong — personnel and confidential matters should not be delegated",
+    "Right — a leader should delegate everything that can be delegated",
+    "Right — it develops Dana's skills in a difficult area",
+    "Wrong — Dana is too junior for the task, but a more senior follower could have taken it on"
+   ],
+   "answer": 0,
+   "why": "What not to delegate. See §9.6."
+  },
+  {
+   "id": "464-09-A34",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.8",
+   "stem": "The village guards start deciding their own rota and methods, but the elders give them no boundaries, no resources and no champion; conflict spreads. Determine what is missing.",
+   "options": [
+    "Top management's design — clear boundaries, resources, team rewards and a champion",
+    "A stricter leader to take back control of the rota",
+    "Fewer guards so that the team is easier to manage",
+    "More rules so that the guards know exactly what to do"
+   ],
+   "answer": 0,
+   "why": "Challenges and top management's role. See §9.8."
+  },
+  {
+   "id": "464-09-A35",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.8",
+   "stem": "Determine the kind of work for which a conventional, leader-directed team remains best.",
+   "options": [
+    "Routine, structured, time-critical work",
+    "Complex, knowledge-based work with experienced members",
+    "Creative work with experts who know the field",
+    "All work, because leaders are always needed"
+   ],
+   "answer": 0,
+   "why": "Conventional vs self-managed. See §9.8."
+  }
+ ]
+}

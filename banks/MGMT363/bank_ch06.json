@@ -1,1 +1,1036 @@
-{"subject": "MGMT363", "chapter": 6, "title": "Cognitive Bias, Uncertainty and Better Decisions", "clos": ["CLO 2"], "source": "MGMT363_Chapter6.pptx", "status": "published", "questions": [{"id": "363-06-I01", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.1", "stem": "Describe confirmation bias.", "options": ["Seeking evidence that supports what you already think", "The first number dragging later estimates", "What comes to mind easily feeling more likely", "Past spending used as a reason to keep spending"], "answer": 0, "why": "The survey designed to prove the manager right. See §6.1."}, {"id": "363-06-I02", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.1", "stem": "Describe anchoring.", "options": ["The first number heard drags every later estimate toward it", "Seeking supporting evidence", "One vivid complaint outweighing data", "The wish for agreement suppressing objection"], "answer": 0, "why": "The supplier names a price and all bargaining orbits it. See §6.1."}, {"id": "363-06-I03", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.1", "stem": "Describe availability bias.", "options": ["What comes to mind easily feels more likely than it is", "The first number anchors later ones", "Past spending justifies more", "Confidence exceeds accuracy"], "answer": 0, "why": "One vivid complaint outweighs a year of quiet data. See §6.1."}, {"id": "363-06-I04", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.1", "stem": "Describe sunk cost.", "options": ["Past spending treated as a reason to keep spending", "Seeking supporting evidence", "Everyone nodding while disagreeing privately", "The first number heard"], "answer": 0, "why": "'We have put two years into this system already.' See §6.1."}, {"id": "363-06-I05", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.1", "stem": "Describe overconfidence.", "options": ["Confidence in a forecast exceeds its accuracy", "Seeking supporting evidence", "Treating past spending as a reason", "Agreeing to avoid conflict"], "answer": 0, "why": "The launch date nobody has ever met is set again. See §6.1."}, {"id": "363-06-I06", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.1", "stem": "Describe groupthink.", "options": ["The wish for agreement suppresses the objection — everyone nods, three disagree privately", "The first number anchors the rest", "One vivid story outweighs data", "Past spending justifies more spending"], "answer": 0, "why": "Everyone nods; three people privately disagree. See §6.1."}, {"id": "363-06-I07", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.1", "stem": "Identify the number of examinable biases in the chapter.", "options": ["Six", "Three", "Twenty", "Ten"], "answer": 0, "why": "Six used accurately beats twenty recognised vaguely. See §6.1."}, {"id": "363-06-I08", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.2", "stem": "Explain the uncomfortable finding about bias awareness.", "options": ["Knowing about a bias does not protect you from it in the moment", "Awareness removes bias completely", "Only experts are biased", "Biases disappear with age"], "answer": 0, "why": "People just taught anchoring still anchor. See §6.2."}, {"id": "363-06-I09", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.2", "stem": "Describe what awareness does give you.", "options": ["The ability to recognise the pattern in others' reasoning, and afterwards in your own", "Protection in the moment", "Immunity", "Faster decisions"], "answer": 0, "why": "Useful for diagnosis, which CLO 2 assesses. See §6.2."}, {"id": "363-06-I10", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.2", "stem": "Explain what follows from 'knowing does not remove it'.", "options": ["Debiasing must be built into the process, not left to individual vigilance", "Biases cannot be reduced", "Managers should decide alone", "Training is pointless"], "answer": 0, "why": "Design the meeting so the bias cannot operate. See §6.2."}, {"id": "363-06-I11", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.2", "stem": "Explain the argument for method that §6.2 gives.", "options": ["Tools exist because unaided judgement is predictably wrong in known directions", "Tools are clever", "Clients like tools", "Method is faster"], "answer": 0, "why": "Not because the tools are clever. See §6.2."}, {"id": "363-06-I12", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.2", "stem": "Identify the set reading that supports §6.2.", "options": ["Selected chapters of Kahneman (2011)", "Doshi and Hauser (2024)", "Chen, Kim, Gong and Liang (2025)", "Kepner and Tregoe"], "answer": 0, "why": "Kahneman (2011) is set reading. See §6.2."}, {"id": "363-06-I13", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.3", "stem": "Describe risk.", "options": ["You know the possible outcomes and roughly their odds — like a machine failure rate from ten years of logs", "You know neither the odds nor all the outcomes", "Any danger", "A guess"], "answer": 0, "why": "Risk: calculate. See §6.3."}, {"id": "363-06-I14", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.3", "stem": "Describe uncertainty.", "options": ["You know neither the odds nor all the outcomes — like how customers will react to a new format", "Known outcomes with known odds", "A small risk", "A forecast with decimals"], "answer": 0, "why": "Uncertainty: test cheaply. See §6.3."}, {"id": "363-06-I15", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.3", "stem": "Identify the right move under risk.", "options": ["Calculate — expected value, insurance, buffers", "Test cheaply", "Guess", "Wait"], "answer": 0, "why": "Risk is calculable. See §6.3."}, {"id": "363-06-I16", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.3", "stem": "Identify the right move under uncertainty.", "options": ["Test cheaply, learn, then decide", "Build a spreadsheet of invented probabilities", "Calculate expected value", "Guess confidently"], "answer": 0, "why": "Chapter 8 takes the second column. See §6.3."}, {"id": "363-06-I17", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.3", "stem": "Explain the error that costs most.", "options": ["Dressing uncertainty up as risk — a five-year forecast with two decimal places", "Treating risk as uncertainty", "Buying insurance", "Running a test"], "answer": 0, "why": "Overconfidence with formatting. See §6.3."}, {"id": "363-06-I18", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.4", "stem": "Describe 'write before you speak'.", "options": ["Everyone records a view privately before discussion opens", "One person argues against the answer", "Agree the criteria first", "Judge only future costs"], "answer": 0, "why": "Attacks groupthink and anchoring. See §6.4."}, {"id": "363-06-I19", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.4", "stem": "Describe 'assign a challenger'.", "options": ["One named person must argue against the emerging answer", "Everyone writes privately", "Criteria are set first", "Ignore what is spent"], "answer": 0, "why": "Attacks groupthink and confirmation. See §6.4."}, {"id": "363-06-I20", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.4", "stem": "Describe 'set criteria first'.", "options": ["Agree how options will be judged before any option exists", "Vote first", "Let the boss decide", "Write before you speak"], "answer": 0, "why": "Attacks confirmation and anchoring; the one to remember. See §6.4."}, {"id": "363-06-I21", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.4", "stem": "Describe 'ask for the disconfirming case'.", "options": ["'What would have to be true for this to be wrong?'", "'Who agrees?'", "'How much have we spent?'", "'What did we do last year?'"], "answer": 0, "why": "Attacks confirmation and overconfidence. See §6.4."}, {"id": "363-06-I22", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.4", "stem": "Describe 'ignore what is spent'.", "options": ["Judge only future costs and benefits, from today forward", "Add up all past spending", "Keep spending to protect the investment", "Stop every project"], "answer": 0, "why": "Attacks sunk cost. See §6.4."}, {"id": "363-06-I23", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.4", "stem": "Explain why 'be objective' attacks nothing.", "options": ["A general instruction changes no procedure; each method must match a specific bias", "Objectivity is impossible", "Nobody listens", "It is rude"], "answer": 0, "why": "Match the method to the bias. See §6.4."}, {"id": "363-06-I24", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.5", "stem": "Describe a pre-mortem.", "options": ["Assume the plan has already failed and ask why, before you commit", "Ask why something failed after it failed", "A vote on the plan", "A budget review"], "answer": 0, "why": "The highest-value technique in the chapter. See §6.5."}, {"id": "363-06-I25", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.5", "stem": "Identify the four steps of a pre-mortem in order.", "options": ["State the failure as fact; everyone writes alone; read out in rotation without comment; change the plan for the top three", "Vote; argue; decide; celebrate", "Present; discuss; agree; sign", "Blame; defend; compromise; forget"], "answer": 0, "why": "Silence first, no discussion until every reason is on the board. See §6.5."}, {"id": "363-06-I26", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.5", "stem": "Explain why a pre-mortem works when 'any concerns?' does not.", "options": ["Assuming the failure has already happened removes the social cost of objecting", "People like games", "It is shorter", "The boss is absent"], "answer": 0, "why": "Nobody is being disloyal; everyone is explaining history. See §6.5."}, {"id": "363-06-I27", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.5", "stem": "Identify what step 2 of the pre-mortem requires.", "options": ["Five minutes of silent individual writing, no discussion", "A group debate", "A vote", "A presentation"], "answer": 0, "why": "Everyone writes, alone and silently. See §6.5."}, {"id": "363-06-I28", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.6", "stem": "Identify the first item on the decision agenda.", "options": ["Agree the criteria and their weights", "Present the options", "Vote", "Pre-mortem"], "answer": 0, "why": "Before anyone sees an option, so it cannot be tuned to a favourite. See §6.6."}, {"id": "363-06-I29", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.6", "stem": "Identify the position of the decision itself on the agenda.", "options": ["Step 6 of six — the last", "Step 1", "Step 3", "It is not on the agenda"], "answer": 0, "why": "Most meetings begin there and call the rest a formality. See §6.6."}, {"id": "363-06-I30", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.6", "stem": "Explain why options are presented without discussion in step 3.", "options": ["It keeps generating separate from judging", "To save time", "Because the boss decides", "To avoid criteria"], "answer": 0, "why": "Generating separate from judging. See §6.6."}, {"id": "363-06-I31", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.6", "stem": "Explain why each person writes a private view in step 2.", "options": ["It removes anchoring on whoever speaks first", "It is a test", "It replaces the vote", "It keeps records"], "answer": 0, "why": "Removes anchoring on the first speaker. See §6.6."}, {"id": "363-06-I32", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "6.6", "stem": "Explain why the challenger is a named role in step 4.", "options": ["It makes objection a role, not an act of disloyalty", "To punish someone", "Because the boss cannot object", "To shorten the meeting"], "answer": 0, "why": "Objection becomes a role. See §6.6."}, {"id": "363-06-A01", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.1", "stem": "Classify 'too much has been invested to stop' from the delivery-app project head.", "options": ["Sunk cost", "Anchoring", "Availability", "Overconfidence"], "answer": 0, "why": "Past spending treated as a reason to keep spending. See §6.1 and Exercise 1."}, {"id": "363-06-A02", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.1", "stem": "Classify the consultant's 400,000-dirham estimate that every later figure orbited.", "options": ["Anchoring", "Confirmation bias", "Groupthink", "Sunk cost"], "answer": 0, "why": "The first number heard drags later estimates. See §6.1."}, {"id": "363-06-A03", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.1", "stem": "Classify a satisfaction survey written by the project sponsor.", "options": ["Confirmation bias", "Availability", "Anchoring", "Sunk cost"], "answer": 0, "why": "The survey designed to prove the sponsor right. See §6.1."}, {"id": "363-06-A04", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.1", "stem": "Classify a board member's memory of a competitor's app failing being treated as proof.", "options": ["Availability", "Groupthink", "Sunk cost", "Anchoring"], "answer": 0, "why": "What comes to mind easily feels more likely. See §6.1."}, {"id": "363-06-A05", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "6.1", "stem": "Analyse the delivery-app case (400,000 estimate → 1.9 million). Determine the bias that did most damage.", "options": ["Sunk cost — it kept the project alive after the warning in month nine", "Availability", "Anchoring", "Groupthink"], "answer": 0, "why": "The warning was ignored because of what had been spent. See Exercise 1 and §6.1."}, {"id": "363-06-A06", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.1", "stem": "Classify a launch date set again after it has been missed three times.", "options": ["Overconfidence", "Sunk cost", "Availability", "Confirmation bias"], "answer": 0, "why": "Confidence exceeds accuracy. See §6.1."}, {"id": "363-06-A07", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.1", "stem": "Classify a meeting where everyone nods and three people privately disagree.", "options": ["Groupthink", "Anchoring", "Availability", "Overconfidence"], "answer": 0, "why": "The wish for agreement suppresses objection. See §6.1."}, {"id": "363-06-A08", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "6.2", "stem": "Analyse a manager who says 'I know about anchoring, so I will not anchor'. Determine the chapter's view.", "options": ["Awareness does not protect in the moment — change the process instead", "Correct — awareness is enough", "Anchoring only affects juniors", "Managers are immune"], "answer": 0, "why": "People just taught anchoring still anchor. See §6.2."}, {"id": "363-06-A09", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "6.2", "stem": "Analyse the classmate's claim 'if I cannot stop doing it, why learn the names?'. Determine the answer.", "options": ["Names let you diagnose it in others and afterwards in yourself, and design processes against it", "Agree — the chapter is useless", "Names stop the bias", "Only managers need names"], "answer": 0, "why": "Recognition plus process design. See §6.2 and Exercise 4."}, {"id": "363-06-A10", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.2", "stem": "Determine who has the power to build debiasing into a process.", "options": ["Whoever designs the meeting — and if they are the biased one, the agenda must be agreed before options exist", "Only the CEO", "Nobody", "The consultant"], "answer": 0, "why": "Set the process before the favourite appears. See §6.2, §6.6 and Exercise 4."}, {"id": "363-06-A11", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.3", "stem": "Classify a machine failure rate taken from ten years of logs.", "options": ["Risk — calculate", "Uncertainty — test", "A guess", "A bias"], "answer": 0, "why": "Known outcomes and odds. See §6.3."}, {"id": "363-06-A12", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.3", "stem": "Classify 'how customers will react to a new store format'.", "options": ["Uncertainty — test cheaply", "Risk — calculate", "A sunk cost", "A correlation"], "answer": 0, "why": "Neither odds nor outcomes known. See §6.3."}, {"id": "363-06-A13", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "6.3", "stem": "Analyse the 400,000-dirham app estimate. Determine whether it was a risk judgement or uncertainty dressed as risk.", "options": ["Uncertainty dressed as risk — nobody knew the odds of a custom build", "A sound risk calculation", "A test", "A sunk cost"], "answer": 0, "why": "A precise number for an unknowable outcome. See Exercise 1 and §6.3."}, {"id": "363-06-A14", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.3", "stem": "Classify a five-year sales forecast with two decimal places for a brand-new product.", "options": ["Overconfidence with formatting — uncertainty dressed as risk", "Good risk analysis", "A pre-mortem", "A test"], "answer": 0, "why": "Not analysis; formatting. See §6.3."}, {"id": "363-06-A15", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.4", "stem": "Select the method that attacks sunk cost.", "options": ["Ignore what is spent — judge from today forward", "Write before you speak", "Assign a challenger", "Set criteria first"], "answer": 0, "why": "Only future costs and benefits. See §6.4."}, {"id": "363-06-A16", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.4", "stem": "Select the method that attacks anchoring on whoever speaks first.", "options": ["Write before you speak", "Ignore what is spent", "Ask for the disconfirming case", "A pre-mortem only"], "answer": 0, "why": "Private views before discussion. See §6.4."}, {"id": "363-06-A17", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.4", "stem": "Select the method the chapter says to remember above all.", "options": ["Set criteria first — free, ten minutes, removes the commonest smuggling of a favourite", "Assign a challenger", "Write before you speak", "Ignore what is spent"], "answer": 0, "why": "The one to remember. See §6.4."}, {"id": "363-06-A18", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.4", "stem": "Determine the method a manager uses when asking 'what would have to be true for this to be wrong?'.", "options": ["Ask for the disconfirming case", "Set criteria first", "Ignore what is spent", "Write before you speak"], "answer": 0, "why": "Attacks confirmation and overconfidence. See §6.4."}, {"id": "363-06-A19", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "6.4", "stem": "Analyse a board that tells itself to 'stay objective' before a technology decision. Determine the weakness.", "options": ["A general instruction attacks no specific bias; a procedure must change", "It is enough", "It attacks groupthink", "It attacks sunk cost"], "answer": 0, "why": "Match the method to the bias. See §6.4."}, {"id": "363-06-A20", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "6.5", "stem": "Analyse a pre-mortem where the manager asks 'any concerns?' and opens discussion. Determine the broken rule.", "options": ["Silent individual writing first — discussion opened too early", "Too many people", "No vote", "Wrong room"], "answer": 0, "why": "Silence first, read out in rotation. See §6.5."}, {"id": "363-06-A21", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.5", "stem": "Determine the correct wording to start a pre-mortem.", "options": ["'It is one year from now. We did this and it failed badly.'", "'Does anyone see a risk?'", "'This will succeed, right?'", "'Let us vote.'"], "answer": 0, "why": "State it as fact, not possibility. See §6.5."}, {"id": "363-06-A22", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.5", "stem": "Determine what to do with the three most likely failure reasons.", "options": ["Change the plan so each is less likely, or agree how to spot it early", "Ignore them", "Blame the person who wrote them", "Cancel the project"], "answer": 0, "why": "Step 4 of the pre-mortem. See §6.5."}, {"id": "363-06-A23", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "6.5", "stem": "Analyse why someone 'privately held a reason and did not say it' before a pre-mortem. Determine the social cause.", "options": ["Objecting felt disloyal; the pre-mortem removes that cost", "They were lazy", "They did not understand", "They agreed"], "answer": 0, "why": "The pre-mortem removes the social cost of objecting. See §6.5 and Exercise 3."}, {"id": "363-06-A24", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "6.6", "stem": "Analyse an agenda that starts with 'the CEO presents the preferred option'. Determine the fault.", "options": ["Anchoring on the first speaker and criteria tuned to the favourite — criteria and private views must come first", "Nothing — leaders should lead", "Too slow", "No vote"], "answer": 0, "why": "Steps 1 and 2 come before any option. See §6.6."}, {"id": "363-06-A25", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.6", "stem": "Determine which agenda step attacks the sponsor's biased survey from the retailer case.", "options": ["Step 1 — criteria agreed before options, so a survey cannot be tuned to prove a favourite", "Step 6", "Step 3", "Step 5"], "answer": 0, "why": "Criteria first prevents confirmation. See §6.6 and Exercise 2."}, {"id": "363-06-A26", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.6", "stem": "Select the agenda step to defend hardest if the project head wants it removed.", "options": ["Step 4 — the named challenger, because it is what makes objection safe", "Step 6", "Step 3", "The coffee break"], "answer": 0, "why": "Objection as a role, not disloyalty. See §6.6 and Exercise 2."}, {"id": "363-06-A27", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.6", "stem": "Determine one measurable sign a year later that the redesigned process worked.", "options": ["Fewer projects whose final cost exceeded the estimate by a large margin", "More meetings", "Longer agendas", "Happier sponsors"], "answer": 0, "why": "Name one thing you could measure. See Exercise 2 and §6.6."}, {"id": "363-06-A28", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "6.6", "stem": "Analyse a meeting that scores options against criteria chosen after seeing the options. Determine the problem.", "options": ["The criteria were tuned to a favourite — confirmation and anchoring", "Nothing", "Too many criteria", "Too few options"], "answer": 0, "why": "Criteria before options. See §6.6 and §6.4."}, {"id": "363-06-A29", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.3", "stem": "Determine the right move for 'will staff use the new rota system?'.", "options": ["Test cheaply on one shift, learn, then decide", "Calculate expected value", "Assume yes", "Buy insurance"], "answer": 0, "why": "It is uncertainty, not risk. See §6.3."}, {"id": "363-06-A30", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "6.1", "stem": "Analyse a bias that 'helps more often than it harms'. Select the chapter's likely example.", "options": ["Availability — a vivid near-miss makes a real safety risk feel urgent", "Sunk cost", "Groupthink", "Confirmation bias"], "answer": 0, "why": "Exercise 4 asks you to defend one with a specific situation. See §6.1 and Exercise 4."}, {"id": "363-06-A31", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.2", "stem": "Determine what CLO 2 assesses about bias.", "options": ["Diagnosing bias in a decision by naming it with evidence", "Being free of bias", "Memorising twenty biases", "Avoiding decisions"], "answer": 0, "why": "Recognition is useful for diagnosis. See §6.2."}, {"id": "363-06-A32", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "6.5", "stem": "Determine the chapter's judgement on 'any concerns?' as a way to surface risks.", "options": ["It fails — objecting out loud feels disloyal, so people stay silent", "It works well", "It is a pre-mortem", "It is step 1 of the agenda"], "answer": 0, "why": "Why the pre-mortem works when this does not. See §6.5."}]}
+{
+ "subject": "MGMT363",
+ "chapter": 6,
+ "title": "Cognitive Bias, Uncertainty and Better Decisions",
+ "clos": [
+  "CLO 2"
+ ],
+ "source": "MGMT363_Chapter6.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "363-06-I01",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Describe confirmation bias.",
+   "options": [
+    "Seeking evidence that supports what you already think",
+    "The first number heard dragging every later estimate toward it",
+    "What comes to mind easily feeling more likely than it really is",
+    "Past spending being used as a reason to keep spending on a project"
+   ],
+   "answer": 0,
+   "why": "The survey designed to prove the manager right. See §6.1."
+  },
+  {
+   "id": "363-06-I02",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Describe anchoring.",
+   "options": [
+    "The first number heard drags every later estimate toward it",
+    "Seeking only the evidence that supports what you already believe",
+    "One vivid complaint outweighing a year of quiet data",
+    "The wish for agreement suppressing the objection everyone privately holds"
+   ],
+   "answer": 0,
+   "why": "The supplier names a price and all bargaining orbits it. See §6.1."
+  },
+  {
+   "id": "363-06-I03",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Describe availability bias.",
+   "options": [
+    "What comes to mind easily feels more likely than it is",
+    "The first number heard anchors every later estimate in the discussion",
+    "Past spending justifies more spending on a project that is failing",
+    "Confidence in a forecast exceeds the accuracy the forecast deserves"
+   ],
+   "answer": 0,
+   "why": "One vivid complaint outweighs a year of quiet data. See §6.1."
+  },
+  {
+   "id": "363-06-I04",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Describe sunk cost.",
+   "options": [
+    "Past spending treated as a reason to keep spending",
+    "Seeking only the evidence that supports what you already believe",
+    "Everyone nodding in the meeting while disagreeing privately afterwards",
+    "The first number heard dragging every later estimate toward it"
+   ],
+   "answer": 0,
+   "why": "'We have put two years into this system already.' See §6.1."
+  },
+  {
+   "id": "363-06-I05",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Describe overconfidence.",
+   "options": [
+    "Confidence in a forecast exceeds its accuracy",
+    "Seeking only the evidence that supports a forecast you have already made",
+    "Treating past spending on a forecast as a reason to trust it",
+    "Agreeing with a forecast to avoid conflict in the meeting"
+   ],
+   "answer": 0,
+   "why": "The launch date nobody has ever met is set again. See §6.1."
+  },
+  {
+   "id": "363-06-I06",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Describe groupthink.",
+   "options": [
+    "The wish for agreement suppresses the objection — everyone nods, three disagree privately",
+    "The first number heard anchors the rest of the group's estimates",
+    "One vivid story told in the meeting outweighs a year of quiet data",
+    "Past spending justifies more spending because the group has already committed"
+   ],
+   "answer": 0,
+   "why": "Everyone nods; three people privately disagree. See §6.1."
+  },
+  {
+   "id": "363-06-I07",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Identify the number of examinable biases in the chapter.",
+   "options": [
+    "Six",
+    "Three",
+    "Twenty",
+    "Ten"
+   ],
+   "answer": 0,
+   "why": "Six used accurately beats twenty recognised vaguely. See §6.1."
+  },
+  {
+   "id": "363-06-I08",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.2",
+   "stem": "Explain the uncomfortable finding about bias awareness.",
+   "options": [
+    "Knowing about a bias does not protect you from it in the moment",
+    "Awareness removes bias completely once the pattern has been named",
+    "Only experts are biased, because confidence grows with experience",
+    "Biases disappear with age as people learn from their mistakes"
+   ],
+   "answer": 0,
+   "why": "People just taught anchoring still anchor. See §6.2."
+  },
+  {
+   "id": "363-06-I09",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.2",
+   "stem": "Describe what awareness does give you.",
+   "options": [
+    "The ability to recognise the pattern in others' reasoning, and afterwards in your own",
+    "Protection in the moment, because you notice the bias as it operates",
+    "Immunity from the bias once you have been taught its name",
+    "Faster decisions, because you no longer need to check for bias"
+   ],
+   "answer": 0,
+   "why": "Useful for diagnosis, which CLO 2 assesses. See §6.2."
+  },
+  {
+   "id": "363-06-I10",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.2",
+   "stem": "Explain what follows from 'knowing does not remove it'.",
+   "options": [
+    "Debiasing must be built into the process, not left to individual vigilance",
+    "Biases cannot be reduced, so decisions should be made quickly and accepted",
+    "Managers should decide alone, because groups multiply the biases of their members",
+    "Training is pointless, because people forget the names within a month"
+   ],
+   "answer": 0,
+   "why": "Design the meeting so the bias cannot operate. See §6.2."
+  },
+  {
+   "id": "363-06-I11",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.2",
+   "stem": "Explain the argument for method that §6.2 gives.",
+   "options": [
+    "Tools exist because unaided judgement is predictably wrong in known directions",
+    "Tools are clever, and clever methods produce better answers than ordinary thinking",
+    "Clients like tools, because a method makes the consultant's work look rigorous",
+    "Method is faster than judgement, because it removes the need for discussion"
+   ],
+   "answer": 0,
+   "why": "Not because the tools are clever. See §6.2."
+  },
+  {
+   "id": "363-06-I12",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.2",
+   "stem": "Identify the set reading that supports §6.2.",
+   "options": [
+    "Selected chapters of Kahneman (2011)",
+    "Doshi and Hauser (2024)",
+    "Chen, Kim, Gong and Liang (2025)",
+    "Kepner and Tregoe (1965), the KT method"
+   ],
+   "answer": 0,
+   "why": "Kahneman (2011) is set reading. See §6.2."
+  },
+  {
+   "id": "363-06-I13",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.3",
+   "stem": "Describe risk.",
+   "options": [
+    "You know the possible outcomes and roughly their odds — like a machine failure rate from ten years of logs",
+    "You know neither the odds nor all the outcomes — like how customers will react to a completely new store format in a new district",
+    "Any danger to the business, whether or not its outcomes and odds can be described",
+    "A guess about the future dressed up with numbers so that it looks like analysis"
+   ],
+   "answer": 0,
+   "why": "Risk: calculate. See §6.3."
+  },
+  {
+   "id": "363-06-I14",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.3",
+   "stem": "Describe uncertainty.",
+   "options": [
+    "You know neither the odds nor all the outcomes — like how customers will react to a new format",
+    "Known outcomes with known odds — like a machine failure rate taken from ten years of maintenance logs",
+    "A small risk that is not worth calculating because the cost of being wrong is low",
+    "A forecast with decimals, which shows that the analyst has done the calculations"
+   ],
+   "answer": 0,
+   "why": "Uncertainty: test cheaply. See §6.3."
+  },
+  {
+   "id": "363-06-I15",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.3",
+   "stem": "Identify the right move under risk.",
+   "options": [
+    "Calculate — expected value, insurance, buffers",
+    "Test cheaply on a small scale before committing to the full decision",
+    "Guess, because the odds are known and the outcome is out of your hands",
+    "Wait until the uncertainty has resolved itself before deciding"
+   ],
+   "answer": 0,
+   "why": "Risk is calculable. See §6.3."
+  },
+  {
+   "id": "363-06-I16",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.3",
+   "stem": "Identify the right move under uncertainty.",
+   "options": [
+    "Test cheaply, learn, then decide",
+    "Build a spreadsheet of invented probabilities",
+    "Calculate expected value",
+    "Guess confidently"
+   ],
+   "answer": 0,
+   "why": "Chapter 8 takes the second column. See §6.3."
+  },
+  {
+   "id": "363-06-I17",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.3",
+   "stem": "Explain the error that costs most.",
+   "options": [
+    "Dressing uncertainty up as risk — a five-year forecast with two decimal places",
+    "Treating risk as uncertainty and running tests when a simple calculation would have done",
+    "Buying insurance against outcomes that are unlikely to happen",
+    "Running a test when the odds are already known from past data"
+   ],
+   "answer": 0,
+   "why": "Overconfidence with formatting. See §6.3."
+  },
+  {
+   "id": "363-06-I18",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.4",
+   "stem": "Describe 'write before you speak'.",
+   "options": [
+    "Everyone records a view privately before discussion opens",
+    "One named person argues against the answer the group is moving toward",
+    "Agree the criteria for judging options before any option is on the table",
+    "Judge only future costs and benefits, ignoring what has already been spent"
+   ],
+   "answer": 0,
+   "why": "Attacks groupthink and anchoring. See §6.4."
+  },
+  {
+   "id": "363-06-I19",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.4",
+   "stem": "Describe 'assign a challenger'.",
+   "options": [
+    "One named person must argue against the emerging answer",
+    "Everyone writes a private view before anyone speaks in the meeting",
+    "Criteria are set and weighted before any option is presented",
+    "Ignore what is spent and judge every option from today forward"
+   ],
+   "answer": 0,
+   "why": "Attacks groupthink and confirmation. See §6.4."
+  },
+  {
+   "id": "363-06-I20",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.4",
+   "stem": "Describe 'set criteria first'.",
+   "options": [
+    "Agree how options will be judged before any option exists",
+    "Vote first and then discuss, so that the group's starting position is clear",
+    "Let the boss decide the criteria once the options have been presented",
+    "Write before you speak, so that the first speaker does not anchor the room"
+   ],
+   "answer": 0,
+   "why": "Attacks confirmation and anchoring; the one to remember. See §6.4."
+  },
+  {
+   "id": "363-06-I21",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.4",
+   "stem": "Describe 'ask for the disconfirming case'.",
+   "options": [
+    "'What would have to be true for this to be wrong?'",
+    "'Who agrees with the proposal as it stands?'",
+    "'How much have we already spent on this approach?'",
+    "'What did we do in this situation last year?'"
+   ],
+   "answer": 0,
+   "why": "Attacks confirmation and overconfidence. See §6.4."
+  },
+  {
+   "id": "363-06-I22",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.4",
+   "stem": "Describe 'ignore what is spent'.",
+   "options": [
+    "Judge only future costs and benefits, from today forward",
+    "Add up all past spending so that the full cost of the project is visible",
+    "Keep spending to protect the investment already made in the project",
+    "Stop every project that has cost more than its original estimate"
+   ],
+   "answer": 0,
+   "why": "Attacks sunk cost. See §6.4."
+  },
+  {
+   "id": "363-06-I23",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.4",
+   "stem": "Explain why 'be objective' attacks nothing.",
+   "options": [
+    "A general instruction changes no procedure; each method must match a specific bias",
+    "Objectivity is impossible, so the instruction asks for something nobody can deliver",
+    "Nobody listens to instructions of that kind in a meeting",
+    "It is rude to tell experienced managers to be objective"
+   ],
+   "answer": 0,
+   "why": "Match the method to the bias. See §6.4."
+  },
+  {
+   "id": "363-06-I24",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.5",
+   "stem": "Describe a pre-mortem.",
+   "options": [
+    "Assume the plan has already failed and ask why, before you commit",
+    "Ask why something failed after it failed, so that the lessons are recorded",
+    "A vote on the plan held before the discussion, to see where the group stands",
+    "A budget review that checks whether the plan can be afforded"
+   ],
+   "answer": 0,
+   "why": "The highest-value technique in the chapter. See §6.5."
+  },
+  {
+   "id": "363-06-I25",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.5",
+   "stem": "Identify the four steps of a pre-mortem in order.",
+   "options": [
+    "State the failure as fact; everyone writes alone; read out in rotation without comment; change the plan for the top three",
+    "Vote on the plan; argue about the result; decide by majority; celebrate the decision",
+    "Present the plan; discuss the risks; agree the changes; sign off the final version",
+    "Identify who is to blame; let them defend themselves; compromise; move on"
+   ],
+   "answer": 0,
+   "why": "Silence first, no discussion until every reason is on the board. See §6.5."
+  },
+  {
+   "id": "363-06-I26",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.5",
+   "stem": "Explain why a pre-mortem works when 'any concerns?' does not.",
+   "options": [
+    "Assuming the failure has already happened removes the social cost of objecting",
+    "People like games, so they engage more with a pre-mortem than with a serious question",
+    "It is shorter than an open discussion of concerns, so more people take part",
+    "The boss is absent during a pre-mortem, so people speak more freely"
+   ],
+   "answer": 0,
+   "why": "Nobody is being disloyal; everyone is explaining history. See §6.5."
+  },
+  {
+   "id": "363-06-I27",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.5",
+   "stem": "Identify what step 2 of the pre-mortem requires.",
+   "options": [
+    "Five minutes of silent individual writing, no discussion",
+    "A group debate in which every reason for failure is argued out",
+    "A vote on which of the proposed reasons for failure is most likely",
+    "A presentation by the project lead of the risks already identified"
+   ],
+   "answer": 0,
+   "why": "Everyone writes, alone and silently. See §6.5."
+  },
+  {
+   "id": "363-06-I28",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.6",
+   "stem": "Identify the first item on the decision agenda.",
+   "options": [
+    "Agree the criteria and their weights",
+    "Present the options so that everyone knows what is being decided",
+    "Vote on the options to see where the group stands before discussion",
+    "Run a pre-mortem on the option the sponsor prefers"
+   ],
+   "answer": 0,
+   "why": "Before anyone sees an option, so it cannot be tuned to a favourite. See §6.6."
+  },
+  {
+   "id": "363-06-I29",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.6",
+   "stem": "Identify the position of the decision itself on the agenda.",
+   "options": [
+    "Step 6 of six — the last",
+    "Step 1 — the decision frames everything that follows",
+    "Step 3 — after the criteria and the private views",
+    "It is not on the agenda, because the decision is made afterwards"
+   ],
+   "answer": 0,
+   "why": "Most meetings begin there and call the rest a formality. See §6.6."
+  },
+  {
+   "id": "363-06-I30",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.6",
+   "stem": "Explain why options are presented without discussion in step 3.",
+   "options": [
+    "It keeps generating separate from judging",
+    "To save time, because discussion can happen once all options are visible",
+    "Because the boss decides, so discussion of the options is unnecessary",
+    "To avoid the criteria being changed once the options are known"
+   ],
+   "answer": 0,
+   "why": "Generating separate from judging. See §6.6."
+  },
+  {
+   "id": "363-06-I31",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.6",
+   "stem": "Explain why each person writes a private view in step 2.",
+   "options": [
+    "It removes anchoring on whoever speaks first",
+    "It is a test of whether each person has read the papers",
+    "It replaces the vote at the end of the meeting",
+    "It keeps records of who thought what for the minutes"
+   ],
+   "answer": 0,
+   "why": "Removes anchoring on the first speaker. See §6.6."
+  },
+  {
+   "id": "363-06-I32",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "6.6",
+   "stem": "Explain why the challenger is a named role in step 4.",
+   "options": [
+    "It makes objection a role, not an act of disloyalty",
+    "To punish someone who objected in an earlier meeting",
+    "Because the boss cannot object to their own proposal",
+    "To shorten the meeting by limiting objections to one person"
+   ],
+   "answer": 0,
+   "why": "Objection becomes a role. See §6.6."
+  },
+  {
+   "id": "363-06-A01",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Classify 'too much has been invested to stop' from the delivery-app project head.",
+   "options": [
+    "Sunk cost",
+    "Anchoring",
+    "Availability",
+    "Overconfidence"
+   ],
+   "answer": 0,
+   "why": "Past spending treated as a reason to keep spending. See §6.1 and Exercise 1."
+  },
+  {
+   "id": "363-06-A02",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Classify the consultant's 400,000-dirham estimate that every later figure orbited.",
+   "options": [
+    "Anchoring",
+    "Confirmation bias",
+    "Groupthink",
+    "Sunk cost"
+   ],
+   "answer": 0,
+   "why": "The first number heard drags later estimates. See §6.1."
+  },
+  {
+   "id": "363-06-A03",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Classify a satisfaction survey written by the project sponsor.",
+   "options": [
+    "Confirmation bias",
+    "Availability bias",
+    "Anchoring",
+    "Sunk cost"
+   ],
+   "answer": 0,
+   "why": "The survey designed to prove the sponsor right. See §6.1."
+  },
+  {
+   "id": "363-06-A04",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Classify a board member's memory of a competitor's app failing being treated as proof.",
+   "options": [
+    "Availability bias",
+    "Groupthink in the board",
+    "Sunk cost",
+    "Anchoring"
+   ],
+   "answer": 0,
+   "why": "What comes to mind easily feels more likely. See §6.1."
+  },
+  {
+   "id": "363-06-A05",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Analyse the delivery-app case (400,000 estimate → 1.9 million). Determine the bias that did most damage.",
+   "options": [
+    "Sunk cost — it kept the project alive after the warning in month nine",
+    "Availability — the board remembered a competitor's app failing",
+    "Anchoring — the 400,000 estimate dragged every later estimate toward it",
+    "Groupthink — nobody wanted to be the one to object in the meeting"
+   ],
+   "answer": 0,
+   "why": "The warning was ignored because of what had been spent. See Exercise 1 and §6.1."
+  },
+  {
+   "id": "363-06-A06",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Classify a launch date set again after it has been missed three times.",
+   "options": [
+    "Overconfidence",
+    "Sunk cost",
+    "Availability",
+    "Confirmation bias"
+   ],
+   "answer": 0,
+   "why": "Confidence exceeds accuracy. See §6.1."
+  },
+  {
+   "id": "363-06-A07",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Classify a meeting where everyone nods and three people privately disagree.",
+   "options": [
+    "Groupthink",
+    "Anchoring",
+    "Availability",
+    "Overconfidence"
+   ],
+   "answer": 0,
+   "why": "The wish for agreement suppresses objection. See §6.1."
+  },
+  {
+   "id": "363-06-A08",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "6.2",
+   "stem": "Analyse a manager who says 'I know about anchoring, so I will not anchor'. Determine the chapter's view.",
+   "options": [
+    "Awareness does not protect in the moment — change the process instead",
+    "Correct — awareness is enough once the pattern has been named and understood by the manager",
+    "Anchoring only affects juniors who have not yet learned to negotiate",
+    "Managers are immune to anchoring because they set the numbers"
+   ],
+   "answer": 0,
+   "why": "People just taught anchoring still anchor. See §6.2."
+  },
+  {
+   "id": "363-06-A09",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "6.2",
+   "stem": "Analyse the classmate's claim 'if I cannot stop doing it, why learn the names?'. Determine the answer.",
+   "options": [
+    "Names let you diagnose it in others and afterwards in yourself, and design processes against it",
+    "Agree — the chapter is useless if the biases cannot be stopped",
+    "Names stop the bias once you have learned to recognise them",
+    "Only managers need the names, because they design the meetings"
+   ],
+   "answer": 0,
+   "why": "Recognition plus process design. See §6.2 and Exercise 4."
+  },
+  {
+   "id": "363-06-A10",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.2",
+   "stem": "Determine who has the power to build debiasing into a process.",
+   "options": [
+    "Whoever designs the meeting — and if they are the biased one, the agenda must be agreed before options exist",
+    "Only the CEO, because the process belongs to the top of the organisation",
+    "Nobody — biases are part of human nature and processes cannot remove them",
+    "The consultant, who is outside the organisation and has no favourite"
+   ],
+   "answer": 0,
+   "why": "Set the process before the favourite appears. See §6.2, §6.6 and Exercise 4."
+  },
+  {
+   "id": "363-06-A11",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.3",
+   "stem": "Classify a machine failure rate taken from ten years of logs.",
+   "options": [
+    "Risk — calculate",
+    "Uncertainty — test",
+    "A guess",
+    "A bias"
+   ],
+   "answer": 0,
+   "why": "Known outcomes and odds. See §6.3."
+  },
+  {
+   "id": "363-06-A12",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.3",
+   "stem": "Classify 'how customers will react to a new store format'.",
+   "options": [
+    "Uncertainty — test cheaply",
+    "Risk — calculate the expected value",
+    "A sunk cost that should be ignored",
+    "A correlation that needs a mechanism"
+   ],
+   "answer": 0,
+   "why": "Neither odds nor outcomes known. See §6.3."
+  },
+  {
+   "id": "363-06-A13",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "6.3",
+   "stem": "Analyse the 400,000-dirham app estimate. Determine whether it was a risk judgement or uncertainty dressed as risk.",
+   "options": [
+    "Uncertainty dressed as risk — nobody knew the odds of a custom build",
+    "A sound risk calculation based on the supplier's detailed quotation and references",
+    "A test that the company ran before committing to the full build",
+    "A sunk cost that should have been ignored from month nine"
+   ],
+   "answer": 0,
+   "why": "A precise number for an unknowable outcome. See Exercise 1 and §6.3."
+  },
+  {
+   "id": "363-06-A14",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.3",
+   "stem": "Classify a five-year sales forecast with two decimal places for a brand-new product.",
+   "options": [
+    "Overconfidence with formatting — uncertainty dressed as risk",
+    "Good risk analysis, because the forecast is precise and detailed",
+    "A pre-mortem, because it imagines the future before it happens",
+    "A test, because the forecast will be compared with the actual results"
+   ],
+   "answer": 0,
+   "why": "Not analysis; formatting. See §6.3."
+  },
+  {
+   "id": "363-06-A15",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.4",
+   "stem": "Select the method that attacks sunk cost.",
+   "options": [
+    "Ignore what is spent — judge from today forward",
+    "Write before you speak, so that nobody anchors on the project's history",
+    "Assign a challenger to argue for stopping the project",
+    "Set criteria first, so that past spending is not one of them"
+   ],
+   "answer": 0,
+   "why": "Only future costs and benefits. See §6.4."
+  },
+  {
+   "id": "363-06-A16",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.4",
+   "stem": "Select the method that attacks anchoring on whoever speaks first.",
+   "options": [
+    "Write before you speak",
+    "Ignore what is spent",
+    "Ask for the disconfirming case",
+    "A pre-mortem only"
+   ],
+   "answer": 0,
+   "why": "Private views before discussion. See §6.4."
+  },
+  {
+   "id": "363-06-A17",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.4",
+   "stem": "Select the method the chapter says to remember above all.",
+   "options": [
+    "Set criteria first — free, ten minutes, removes the commonest smuggling of a favourite",
+    "Assign a challenger — the one method that makes objection safe",
+    "Write before you speak — the one method that removes anchoring",
+    "Ignore what is spent — the one method that stops failing projects"
+   ],
+   "answer": 0,
+   "why": "The one to remember. See §6.4."
+  },
+  {
+   "id": "363-06-A18",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.4",
+   "stem": "Determine the method a manager uses when asking 'what would have to be true for this to be wrong?'.",
+   "options": [
+    "Ask for the disconfirming case",
+    "Set criteria first",
+    "Ignore what is spent",
+    "Write before you speak"
+   ],
+   "answer": 0,
+   "why": "Attacks confirmation and overconfidence. See §6.4."
+  },
+  {
+   "id": "363-06-A19",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "6.4",
+   "stem": "Analyse a board that tells itself to 'stay objective' before a technology decision. Determine the weakness.",
+   "options": [
+    "A general instruction attacks no specific bias; a procedure must change",
+    "It is enough, because experienced board members know how to be objective",
+    "It attacks groupthink, because it reminds members to think for themselves",
+    "It attacks sunk cost, because it tells members to ignore the past"
+   ],
+   "answer": 0,
+   "why": "Match the method to the bias. See §6.4."
+  },
+  {
+   "id": "363-06-A20",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "6.5",
+   "stem": "Analyse a pre-mortem where the manager asks 'any concerns?' and opens discussion. Determine the broken rule.",
+   "options": [
+    "Silent individual writing first — discussion opened too early",
+    "Too many people in the room for a pre-mortem to work",
+    "No vote at the end, so the reasons were never ranked",
+    "Wrong room, because a pre-mortem needs a whiteboard"
+   ],
+   "answer": 0,
+   "why": "Silence first, read out in rotation. See §6.5."
+  },
+  {
+   "id": "363-06-A21",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.5",
+   "stem": "Determine the correct wording to start a pre-mortem.",
+   "options": [
+    "'It is one year from now. We did this and it failed badly.'",
+    "'Does anyone see a risk in the plan as it stands?'",
+    "'This will succeed, right? Let us hear the concerns before we start.'",
+    "'Let us vote on whether we think the plan will work.'"
+   ],
+   "answer": 0,
+   "why": "State it as fact, not possibility. See §6.5."
+  },
+  {
+   "id": "363-06-A22",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.5",
+   "stem": "Determine what to do with the three most likely failure reasons.",
+   "options": [
+    "Change the plan so each is less likely, or agree how to spot it early",
+    "Ignore them, because the pre-mortem has served its purpose by surfacing them",
+    "Blame the person who wrote them for undermining the plan",
+    "Cancel the project, because three likely failures are too many"
+   ],
+   "answer": 0,
+   "why": "Step 4 of the pre-mortem. See §6.5."
+  },
+  {
+   "id": "363-06-A23",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "6.5",
+   "stem": "Analyse why someone 'privately held a reason and did not say it' before a pre-mortem. Determine the social cause.",
+   "options": [
+    "Objecting felt disloyal; the pre-mortem removes that cost",
+    "They were lazy and did not want to do the work of explaining",
+    "They did not understand the plan well enough to object to it",
+    "They agreed with the plan and only invented the reason afterwards"
+   ],
+   "answer": 0,
+   "why": "The pre-mortem removes the social cost of objecting. See §6.5 and Exercise 3."
+  },
+  {
+   "id": "363-06-A24",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "6.6",
+   "stem": "Analyse an agenda that starts with 'the CEO presents the preferred option'. Determine the fault.",
+   "options": [
+    "Anchoring on the first speaker and criteria tuned to the favourite — criteria and private views must come first",
+    "Nothing — leaders should lead, and the CEO's view saves the meeting time",
+    "Too slow, because the CEO's presentation delays the decision",
+    "No vote, so the group cannot show whether it agrees with the CEO"
+   ],
+   "answer": 0,
+   "why": "Steps 1 and 2 come before any option. See §6.6."
+  },
+  {
+   "id": "363-06-A25",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.6",
+   "stem": "Determine which agenda step attacks the sponsor's biased survey from the retailer case.",
+   "options": [
+    "Step 1 — criteria agreed before options, so a survey cannot be tuned to prove a favourite",
+    "Step 6 — the decision, where the survey's weakness is finally exposed",
+    "Step 3 — the options are presented without discussion",
+    "Step 5 — the pre-mortem imagines the project failing"
+   ],
+   "answer": 0,
+   "why": "Criteria first prevents confirmation. See §6.6 and Exercise 2."
+  },
+  {
+   "id": "363-06-A26",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.6",
+   "stem": "Select the agenda step to defend hardest if the project head wants it removed.",
+   "options": [
+    "Step 4 — the named challenger, because it is what makes objection safe",
+    "Step 6 — the decision, because without it the meeting achieves nothing",
+    "Step 3 — presenting the options without discussion",
+    "The coffee break, because informal conversation surfaces the real objections"
+   ],
+   "answer": 0,
+   "why": "Objection as a role, not disloyalty. See §6.6 and Exercise 2."
+  },
+  {
+   "id": "363-06-A27",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.6",
+   "stem": "Determine one measurable sign a year later that the redesigned process worked.",
+   "options": [
+    "Fewer projects whose final cost exceeded the estimate by a large margin",
+    "More meetings held about each project before approval",
+    "Longer agendas with every step recorded in the minutes",
+    "Happier sponsors who feel their projects are taken seriously"
+   ],
+   "answer": 0,
+   "why": "Name one thing you could measure. See Exercise 2 and §6.6."
+  },
+  {
+   "id": "363-06-A28",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "6.6",
+   "stem": "Analyse a meeting that scores options against criteria chosen after seeing the options. Determine the problem.",
+   "options": [
+    "The criteria were tuned to a favourite — confirmation and anchoring",
+    "Nothing — criteria are easier and more realistic to write once the options are known",
+    "Too many criteria for the group to weigh properly",
+    "Too few options for the criteria to discriminate between"
+   ],
+   "answer": 0,
+   "why": "Criteria before options. See §6.6 and §6.4."
+  },
+  {
+   "id": "363-06-A29",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.3",
+   "stem": "Determine the right move for 'will staff use the new rota system?'.",
+   "options": [
+    "Test cheaply on one shift, learn, then decide",
+    "Calculate expected value from the vendor's adoption statistics",
+    "Assume yes, because staff always adapt to new systems in time",
+    "Buy insurance against the system failing to be adopted"
+   ],
+   "answer": 0,
+   "why": "It is uncertainty, not risk. See §6.3."
+  },
+  {
+   "id": "363-06-A30",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Analyse a bias that 'helps more often than it harms'. Select the chapter's likely example.",
+   "options": [
+    "Availability — a vivid near-miss makes a real safety risk feel urgent",
+    "Sunk cost — past investment keeps teams committed through difficult periods",
+    "Groupthink — agreement keeps teams united when speed matters",
+    "Confirmation bias — it keeps managers focused on the evidence that matters"
+   ],
+   "answer": 0,
+   "why": "Exercise 4 asks you to defend one with a specific situation. See §6.1 and Exercise 4."
+  },
+  {
+   "id": "363-06-A31",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.2",
+   "stem": "Determine what CLO 2 assesses about bias.",
+   "options": [
+    "Diagnosing bias in a decision by naming it with evidence",
+    "Being free of bias in your own decisions",
+    "Memorising twenty biases and their definitions",
+    "Avoiding decisions where bias might operate"
+   ],
+   "answer": 0,
+   "why": "Recognition is useful for diagnosis. See §6.2."
+  },
+  {
+   "id": "363-06-A32",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.5",
+   "stem": "Determine the chapter's judgement on 'any concerns?' as a way to surface risks.",
+   "options": [
+    "It fails — objecting out loud feels disloyal, so people stay silent",
+    "It works well, because it gives everyone in the room the chance to speak before the decision",
+    "It is a pre-mortem, because it asks the group to imagine problems",
+    "It is step 1 of the agenda, because concerns shape the criteria"
+   ],
+   "answer": 0,
+   "why": "Why the pre-mortem works when this does not. See §6.5."
+  }
+ ]
+}

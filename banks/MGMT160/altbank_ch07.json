@@ -1,0 +1,557 @@
+{
+ "subject": "MGMT160",
+ "chapter": 7,
+ "title": "Controlling: Performance, Information and Control Systems",
+ "clos": [
+  "CLO 1",
+  "CLO 2"
+ ],
+ "source": "Chapter07_Controlling.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "160-07-I16",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "7.1",
+   "stem": "Describe the link between planning and controlling.",
+   "options": [
+    "Planning sets the goals; controlling checks the progress toward them",
+    "Planning and controlling are the same function seen at different times of the year",
+    "Controlling replaces planning once the organisation has been running for some time",
+    "Planning happens after controlling, because you need results before you can set goals"
+   ],
+   "answer": 0,
+   "why": "Goals nobody checks are wishes. See §7.1."
+  },
+  {
+   "id": "160-07-I17",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "7.2",
+   "stem": "Describe step 1 of the control process.",
+   "options": [
+    "Set standards — define what 'good' looks like in numbers",
+    "Punish the slowest worker so that the rest of the team understands the standard",
+    "Write a report on the team's current performance",
+    "Hire an inspector who will check the work independently of the manager"
+   ],
+   "answer": 0,
+   "why": "Standards are set during planning. See §7.2."
+  },
+  {
+   "id": "160-07-I18",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "7.2",
+   "stem": "Explain why the control loop never ends.",
+   "options": [
+    "Corrective action changes the standard or the work, which is then measured again",
+    "Managers like meetings and the control loop gives them a reason to hold one every month",
+    "Company rules require managers to report on the same KPIs every quarter",
+    "Customers demand it, because they want to see the company checking its own work"
+   ],
+   "answer": 0,
+   "why": "Step 4 feeds back into step 1. See §7.2."
+  },
+  {
+   "id": "160-07-I19",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "7.3",
+   "stem": "Explain why the chapter says KPIs are 'the vital few'.",
+   "options": [
+    "A few well-chosen measures tell the truth faster than many numbers",
+    "Companies cannot afford many measures, because every measure costs money to collect",
+    "Only top managers may see KPIs, so the list has to be short enough for a board meeting",
+    "KPIs are secret, so the fewer people who know them the better"
+   ],
+   "answer": 0,
+   "why": "Measure the vital few. See §7.3."
+  },
+  {
+   "id": "160-07-I20",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "7.4",
+   "stem": "Describe what happens to the unmeasured.",
+   "options": [
+    "It quietly disappears because people focus on what is counted",
+    "It improves automatically because people are free to do it in their own way",
+    "It stays exactly the same, because measurement has no effect on behaviour",
+    "It becomes the most important work, because people prefer what is not checked"
+   ],
+   "answer": 0,
+   "why": "The unmeasured disappears. See §7.4."
+  },
+  {
+   "id": "160-07-I21",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "7.4",
+   "stem": "Explain the phrase 'measure the vital few — and go and look'.",
+   "options": [
+    "Numbers say what happened; walking the floor shows why",
+    "Managers should count everything and then look at the numbers once a week",
+    "Looking replaces measuring, because an experienced manager can see the problems",
+    "Only data matters, and looking is for managers who do not trust the numbers"
+   ],
+   "answer": 0,
+   "why": "Data says WHAT; it cannot say WHY. See §7.4."
+  },
+  {
+   "id": "160-07-I22",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "7.5",
+   "stem": "Describe 'timely' feedback.",
+   "options": [
+    "Feedback given close to the event, not months later",
+    "Feedback given once a year at the appraisal",
+    "Feedback given in public so that the whole team learns from it",
+    "Feedback given by email only, so that there is a written record"
+   ],
+   "answer": 0,
+   "why": "Feedback about March delivered in December is archaeology. See §7.5."
+  },
+  {
+   "id": "160-07-I23",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "7.5",
+   "stem": "Describe 'constructive' feedback.",
+   "options": [
+    "Feedback aimed at the work and the future, not at the person",
+    "Feedback that is always positive so that the employee stays motivated",
+    "Feedback that lists every fault so that nothing is missed",
+    "Feedback given loudly so that the employee understands it is serious"
+   ],
+   "answer": 0,
+   "why": "Constructive = aimed at the work, not the person. See §7.5."
+  },
+  {
+   "id": "160-07-I24",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "7.5",
+   "stem": "Describe 'specific' feedback.",
+   "options": [
+    "Feedback that names the exact behaviour and the standard expected",
+    "Feedback that says 'try harder' so that the employee knows more effort is needed",
+    "Feedback that covers everything at once so that the employee has the full picture",
+    "Feedback with no examples, so that the employee is not embarrassed by details"
+   ],
+   "answer": 0,
+   "why": "Specific names the behaviour and the standard. See §7.5."
+  },
+  {
+   "id": "160-07-I25",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "7.6",
+   "stem": "Describe concurrent control.",
+   "options": [
+    "Correcting work while it happens",
+    "Preventing problems before work starts",
+    "Learning from completed results",
+    "Checking the yearly budget"
+   ],
+   "answer": 0,
+   "why": "Concurrent = during. See §7.6."
+  },
+  {
+   "id": "160-07-I26",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "7.6",
+   "stem": "Describe feedback control.",
+   "options": [
+    "Learning from completed results to improve the next time",
+    "Stopping defects before customers exist by checking the inputs",
+    "Coaching live during the rush while the work is being done",
+    "Setting standards during planning"
+   ],
+   "answer": 0,
+   "why": "Feedback control is after the work. See §7.6."
+  },
+  {
+   "id": "160-07-I27",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "7.7",
+   "stem": "Explain what 'tight on outcomes, loose on method' means.",
+   "options": [
+    "Measure the result the customer feels; let the trained person choose how",
+    "Control every step of every task so that the result is guaranteed",
+    "Control nothing and trust the team to deliver whatever it can",
+    "Measure only the method, because a good method always produces a good result"
+   ],
+   "answer": 0,
+   "why": "Better-placed control, not less control. See §7.7."
+  },
+  {
+   "id": "160-07-I28",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "7.7",
+   "stem": "Describe the Nokia lesson.",
+   "options": [
+    "Measuring only the easy number (market share) hid that customers no longer wanted the phones",
+    "Nokia measured too little and should have added more KPIs to its dashboard",
+    "Nokia had no managers who understood control, so nobody checked the numbers",
+    "Nokia's KPIs were perfect, but the market changed too fast for any control system"
+   ],
+   "answer": 0,
+   "why": "Controlling only what is easy to count is the most comfortable way to fail. See §7.7."
+  },
+  {
+   "id": "160-07-I29",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "7.7",
+   "stem": "Explain why over-control pushes the best people out.",
+   "options": [
+    "Minute-by-minute monitoring signals distrust and kills initiative",
+    "The best people hate all rules",
+    "Over-control costs too much money, so the company cannot afford to pay the best people",
+    "It makes work too easy, so the best people become bored and look for a challenge"
+   ],
+   "answer": 0,
+   "why": "Over-control is a Theory X announcement. See §7.7."
+  },
+  {
+   "id": "160-07-I30",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "7.8",
+   "stem": "Describe the 'monitoring line you will not cross' in a control plan.",
+   "options": [
+    "A written limit on how closely people are watched, to protect trust",
+    "A line on the factory floor that visitors and inspectors may not cross",
+    "The maximum budget the manager may spend on monitoring software",
+    "The deadline by which the control plan must be completed and approved"
+   ],
+   "answer": 0,
+   "why": "The control plan names a monitoring line. See §7.8."
+  },
+  {
+   "id": "160-07-I31",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "7.8",
+   "stem": "Explain the difference between an immediate fix and a system fix.",
+   "options": [
+    "An immediate fix corrects today's gap; a system fix stops it returning",
+    "They are the same, and the chapter uses both names for the same corrective action",
+    "A system fix is cheaper and faster, so it should always be tried first",
+    "An immediate fix is permanent, while a system fix lasts only until the next review"
+   ],
+   "answer": 0,
+   "why": "Immediate (usually concurrent) and system (usually feedforward). See §7.8."
+  },
+  {
+   "id": "160-07-I32",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "7.8",
+   "stem": "Identify what each KPI in a control plan must have.",
+   "options": [
+    "A standard, a source and a frequency",
+    "A manager's signature and a date",
+    "A colour on the dashboard and a trend arrow",
+    "A bonus attached to it for the team that hits it"
+   ],
+   "answer": 0,
+   "why": "Each KPI needs a standard, source and frequency. See §7.8."
+  },
+  {
+   "id": "160-07-A16",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "7.1",
+   "stem": "Determine the right first question when a café's rating drops from 4.6 to 3.9.",
+   "options": [
+    "Why did it drop?",
+    "Who should we fire?",
+    "Can we hide the rating?",
+    "Should we close?"
+   ],
+   "answer": 0,
+   "why": "Ask why, not who. See §7.1."
+  },
+  {
+   "id": "160-07-A17",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "7.1",
+   "stem": "Analyse a team that hides bad numbers from the manager. Determine the likely cause.",
+   "options": [
+    "Measurement there means punishment, so people hide numbers instead of improving them",
+    "The team is dishonest by nature and would hide the numbers whatever the manager did",
+    "The numbers are not important, so the team does not bother to report them accurately",
+    "The manager asked too often, so the team stopped taking the requests seriously"
+   ],
+   "answer": 0,
+   "why": "A punishment culture produces hidden numbers. See §7.1."
+  },
+  {
+   "id": "160-07-A18",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "7.1",
+   "stem": "Classify a small leak found and fixed on day one.",
+   "options": [
+    "Cheap — a problem found early",
+    "Catastrophic — a problem found late",
+    "Not a control issue",
+    "A planning failure"
+   ],
+   "answer": 0,
+   "why": "Leaks are cheap early, catastrophic late. See §7.1."
+  },
+  {
+   "id": "160-07-A19",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "7.2",
+   "stem": "Determine the step when a manager compares this month's 70% satisfaction with the 90% standard.",
+   "options": [
+    "Step 3 — compare results",
+    "Step 1 — set standards",
+    "Step 2 — measure performance",
+    "Step 4 — take corrective action"
+   ],
+   "answer": 0,
+   "why": "Comparing results to the standard is step 3. See §7.2."
+  },
+  {
+   "id": "160-07-A20",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "7.2",
+   "stem": "Select the corrective action for a gap caused by peak-hour understaffing.",
+   "options": [
+    "Change the staffing schedule for peak hours",
+    "Give every customer a discount until the satisfaction score recovers",
+    "Lower the standard so that the current performance is within target",
+    "Lecture the staff about working faster during the lunch rush"
+   ],
+   "answer": 0,
+   "why": "Fix the cause. See §7.2."
+  },
+  {
+   "id": "160-07-A21",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "7.3",
+   "stem": "Select the leading indicator for a university worried about dropouts.",
+   "options": [
+    "Class attendance in the first weeks",
+    "The number of students who graduated last year",
+    "The size of the campus and the number of lecture halls",
+    "The number of applications received for next year"
+   ],
+   "answer": 0,
+   "why": "Attendance warns before the dropout happens. See §7.3."
+  },
+  {
+   "id": "160-07-A22",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "7.3",
+   "stem": "Classify 'number of Instagram likes' as a KPI for a bakery's profit goal.",
+   "options": [
+    "Fails the test — not clearly connected to the goal",
+    "Passes — it is measurable",
+    "Passes — it is something the bakery's team can influence",
+    "Passes all three tests and should be on the dashboard"
+   ],
+   "answer": 0,
+   "why": "Connected to the goal is the first test. See §7.3."
+  },
+  {
+   "id": "160-07-A23",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "7.4",
+   "stem": "Analyse a school that rewards teachers only on exam pass rates and finds they teach only exam tricks. Determine the explanation.",
+   "options": [
+    "People optimise the number, not the goal",
+    "Teachers are lazy and take the shortest route to the reward",
+    "Exams are too easy, so tricks are enough to pass them",
+    "Rewards never work in education, because teachers are not motivated by money"
+   ],
+   "answer": 0,
+   "why": "The metric improved while the mission died. See §7.4."
+  },
+  {
+   "id": "160-07-A24",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "7.4",
+   "stem": "Select the manager's move after the dashboard shows a problem.",
+   "options": [
+    "Go and look at the work to understand why",
+    "Add three more KPIs so that the dashboard shows the problem in more detail",
+    "Punish the department responsible so that the numbers improve next month",
+    "Wait for next month's numbers to see whether the problem corrects itself"
+   ],
+   "answer": 0,
+   "why": "Data says what; go and look for why. See §7.4."
+  },
+  {
+   "id": "160-07-A25",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "7.4",
+   "stem": "Determine the harm when a manager checks every employee's screen every hour.",
+   "options": [
+    "Constant monitoring signals distrust",
+    "It improves creativity, because employees know their work is being seen",
+    "It is good feedforward control, because mistakes are caught before they happen",
+    "It is harmless, because employees who are working have nothing to hide"
+   ],
+   "answer": 0,
+   "why": "Signals distrust — the third harm. See §7.4."
+  },
+  {
+   "id": "160-07-A26",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "7.5",
+   "stem": "Classify 'your work is terrible' as feedback.",
+   "options": [
+    "Not constructive, not specific",
+    "Timely and specific, because it is given straight after the work",
+    "Constructive but late, because it should have been given earlier",
+    "Perfect feedback, because it tells the employee exactly how the manager feels"
+   ],
+   "answer": 0,
+   "why": "It attacks the person and names nothing. See §7.5."
+  },
+  {
+   "id": "160-07-A27",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "7.5",
+   "stem": "Select the timely moment for feedback on a presentation.",
+   "options": [
+    "The same day, in private",
+    "At the annual review, where all feedback is collected together",
+    "Six months later, when the manager has seen several more presentations",
+    "Never — presentations are personal and feedback would be discouraging"
+   ],
+   "answer": 0,
+   "why": "Feedback close to the event. See §7.5."
+  },
+  {
+   "id": "160-07-A28",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "7.6",
+   "stem": "Classify checking the ingredients before cooking starts.",
+   "options": [
+    "Feedforward control",
+    "Concurrent control",
+    "Feedback control",
+    "No form of control"
+   ],
+   "answer": 0,
+   "why": "Prevention before the work. See §7.6."
+  },
+  {
+   "id": "160-07-A29",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "7.7",
+   "stem": "Select the control that is 'better placed' for a trained delivery rider.",
+   "options": [
+    "Measure on-time delivery and customer rating; let the rider choose the route",
+    "Track every turn and call the rider every ten minutes to check progress",
+    "No measurement at all, because a trained rider knows the job better than the manager",
+    "Measure only the route taken, because the right route guarantees the right result"
+   ],
+   "answer": 0,
+   "why": "Tight on outcomes, loose on method. See §7.7."
+  },
+  {
+   "id": "160-07-A30",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "7.8",
+   "stem": "Select the three vital-few KPIs for a café aiming at happy customers.",
+   "options": [
+    "Satisfaction score, average wait time, repeat visits",
+    "Number of chairs, wall colour and staff birthdays",
+    "Instagram likes, logo size and menu length",
+    "Rent, tax and insurance paid each month"
+   ],
+   "answer": 0,
+   "why": "KPIs connected to the goal, measurable and influenceable. See §7.8."
+  },
+  {
+   "id": "160-07-A31",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "7.8",
+   "stem": "Determine the feedback rule in a control plan for a hotel front desk.",
+   "options": [
+    "Weekly, private, specific feedback to each receptionist",
+    "A public ranking of receptionists updated every hour on the staff noticeboard",
+    "Feedback once a year at the formal appraisal meeting",
+    "No feedback, so that receptionists feel trusted to do the job"
+   ],
+   "answer": 0,
+   "why": "A feedback rule is part of the plan. See §7.8."
+  },
+  {
+   "id": "160-07-A32",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "7.8",
+   "stem": "Classify a system fix that adds online check-in to stop queues.",
+   "options": [
+    "Feedforward control",
+    "Concurrent control",
+    "Feedback control",
+    "Over-control that signals distrust"
+   ],
+   "answer": 0,
+   "why": "System fixes are usually feedforward. See §7.8."
+  }
+ ]
+}

@@ -1,0 +1,364 @@
+{
+ "subject": "MGMT160",
+ "chapter": 1,
+ "title": "What Managers Do: Functions, Roles, Skills and Levels",
+ "clos": [
+  "CLO 1"
+ ],
+ "source": "Chapter01_What_Managers_Do.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "160-01-I16",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.1",
+   "stem": "Explain why two cafés with the same products and prices can have different results.",
+   "options": [
+    "The quality of management decisions about the same resources is different",
+    "One café always has better luck with its location and its customers",
+    "Customers prefer the older café because they are used to it",
+    "The bigger café always wins because it can buy supplies more cheaply"
+   ],
+   "answer": 0,
+   "why": "Same resources, different decisions. Management is what turns talent and money into results. See §1.1."
+  },
+  {
+   "id": "160-01-I17",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.1",
+   "stem": "Describe what the Gallup study says about the direct manager.",
+   "options": [
+    "The direct manager explains about 70% of the difference in team engagement",
+    "The direct manager decides the company's prices and therefore its profits",
+    "The direct manager explains about 10% of engagement; pay explains the rest",
+    "Managers have no measurable effect on engagement once pay is taken into account"
+   ],
+   "answer": 0,
+   "why": "Gallup (2015): about 70% of the variation in engagement comes from the manager. See §1.1."
+  },
+  {
+   "id": "160-01-I18",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.1",
+   "stem": "Explain the chapter's claim that talent without direction is wasted.",
+   "options": [
+    "Talented people pull in different directions unless a manager gives them one goal",
+    "Talented people never need a manager because they can set their own goals",
+    "Direction only matters in small firms where everybody knows each other",
+    "Talent always finds its own direction if it is given enough time and freedom"
+   ],
+   "answer": 0,
+   "why": "Without management, talented people work hard but not together. See §1.1."
+  },
+  {
+   "id": "160-01-I19",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.2",
+   "stem": "Identify the two tests inside the chapter's definition of management.",
+   "options": [
+    "Effective and efficient",
+    "Fast and cheap",
+    "Big and famous",
+    "Strict and friendly"
+   ],
+   "answer": 0,
+   "why": "Management achieves goals effectively (right things) and efficiently (least waste). See §1.2."
+  },
+  {
+   "id": "160-01-I20",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.2",
+   "stem": "Describe the difference between a manager and an expert.",
+   "options": [
+    "A manager coordinates the work of others; an expert does the work personally",
+    "A manager works longer hours than an expert and carries more responsibility",
+    "An expert earns more than a manager because specialist knowledge is scarce",
+    "There is no real difference; the two titles are used for the same job in most firms"
+   ],
+   "answer": 0,
+   "why": "Coordinating others' work is the test; doing the work yourself makes you an expert. See §1.2."
+  },
+  {
+   "id": "160-01-I21",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.3",
+   "stem": "Describe a business that is effective but not efficient.",
+   "options": [
+    "It reaches its goal but wastes a lot of input to get there",
+    "It reaches its goal with the least possible input and no waste",
+    "It fails to reach its goal although it uses its resources carefully",
+    "It fails to reach its goal"
+   ],
+   "answer": 0,
+   "why": "Effective = goal reached; not efficient = high waste. See the 2×2 table in §1.3."
+  },
+  {
+   "id": "160-01-I22",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.3",
+   "stem": "Identify the chapter's example of an efficient airline.",
+   "options": [
+    "Air Arabia",
+    "Emirates",
+    "Etihad",
+    "flydubai"
+   ],
+   "answer": 0,
+   "why": "Air Arabia is the chapter's example of efficiency — most output from least input. See §1.3."
+  },
+  {
+   "id": "160-01-I23",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.4",
+   "stem": "Describe the leading function.",
+   "options": [
+    "Motivating, guiding and communicating with people so they do the work well",
+    "Writing the yearly budget and allocating money between the departments",
+    "Checking the results against the plan and correcting what has gone wrong",
+    "Deciding who reports to whom and which resources each team will use"
+   ],
+   "answer": 0,
+   "why": "Leading = people: motivate, guide, communicate. See §1.4."
+  },
+  {
+   "id": "160-01-I24",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.5",
+   "stem": "Describe the decisional family of roles.",
+   "options": [
+    "Entrepreneur, disturbance handler, resource allocator, negotiator",
+    "Figurehead, leader, liaison, spokesperson",
+    "Monitor, disseminator, spokesperson, liaison",
+    "Planner, organiser, leader, controller"
+   ],
+   "answer": 0,
+   "why": "Decisional roles are about making choices: start things, fix surprises, divide resources, negotiate. See §1.5."
+  },
+  {
+   "id": "160-01-I25",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.7",
+   "stem": "Describe the main job of frontline managers.",
+   "options": [
+    "Running the daily work: schedules, problems and coaching, thinking in days",
+    "Setting the company's direction for the next five years and making the big bets",
+    "Turning strategy into budgets, teams and timelines, thinking in months",
+    "Owning the company and appointing the people who will run it"
+   ],
+   "answer": 0,
+   "why": "Frontline managers think in days. See §1.7."
+  },
+  {
+   "id": "160-01-I26",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.7",
+   "stem": "Identify the three levels of management.",
+   "options": [
+    "Top, middle, frontline",
+    "Owner, employee, customer",
+    "Owner, staff, customer",
+    "Senior, junior, trainee"
+   ],
+   "answer": 0,
+   "why": "Top (years), middle (months), frontline (days). See §1.7."
+  },
+  {
+   "id": "160-01-I27",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.8",
+   "stem": "Describe conceptual skills.",
+   "options": [
+    "Seeing the big picture and how the parts of the organisation fit together",
+    "Knowing how to do the technical work of the department to a high standard",
+    "Getting on well with people and understanding what motivates them",
+    "Using software and data confidently to prepare reports and budgets"
+   ],
+   "answer": 0,
+   "why": "Conceptual = big-picture thinking, heaviest at the top. See §1.8."
+  },
+  {
+   "id": "160-01-I28",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.8",
+   "stem": "Identify the skill that is heaviest at the frontline level.",
+   "options": [
+    "Technical skills",
+    "Conceptual skills",
+    "Negotiation skills",
+    "Financial skills"
+   ],
+   "answer": 0,
+   "why": "Frontline managers need the most technical skill; conceptual grows with level. See §1.8."
+  },
+  {
+   "id": "160-01-A16",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "1.1",
+   "stem": "Analyse a team of talented people who all work hard but the project is still late. Determine the most likely cause.",
+   "options": [
+    "Nobody gave the team one direction — talent without management",
+    "The team was not talented enough",
+    "The team worked too few hours and underestimated the work involved",
+    "The project was too easy, so the team lost interest and stopped trying"
+   ],
+   "answer": 0,
+   "why": "Talent without direction pulls in different directions. See §1.1."
+  },
+  {
+   "id": "160-01-A17",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.1",
+   "stem": "Determine the chapter's answer to 'do managers really matter?'.",
+   "options": [
+    "Yes — the direct manager explains about 70% of the difference in engagement",
+    "No — only the quality of the product decides how engaged a team is",
+    "Only in very large companies where staff rarely meet the senior leaders",
+    "Only when salaries are low and the manager is the main reason to stay"
+   ],
+   "answer": 0,
+   "why": "Gallup's 70% finding is the chapter's evidence. See §1.1."
+  },
+  {
+   "id": "160-01-A18",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.1",
+   "stem": "Select the best evidence that management, not resources, decides results.",
+   "options": [
+    "Two cafés with identical resources where one succeeds and one closes",
+    "A rich company that grows faster than its smaller competitors",
+    "A café that wins customers because it buys better coffee beans",
+    "A company whose famous logo brings customers in without advertising"
+   ],
+   "answer": 0,
+   "why": "Same resources, different results — the difference is management. See §1.1."
+  },
+  {
+   "id": "160-01-A19",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.3",
+   "stem": "Classify a delivery company that delivers every parcel on time but spends twice the budget on fuel.",
+   "options": [
+    "Effective but not efficient",
+    "Efficient but not effective",
+    "Both effective and efficient",
+    "Neither effective nor efficient"
+   ],
+   "answer": 0,
+   "why": "Goal reached (effective) with waste (not efficient). See §1.3."
+  },
+  {
+   "id": "160-01-A20",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.3",
+   "stem": "Classify a student who studies little, spends no money on books, and still gets a high grade.",
+   "options": [
+    "Both efficient and effective",
+    "Efficient but not effective",
+    "Effective but not efficient",
+    "Neither effective nor efficient"
+   ],
+   "answer": 0,
+   "why": "Least input, goal reached. See §1.3."
+  },
+  {
+   "id": "160-01-A21",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.4",
+   "stem": "Determine the management function used when a shop owner decides that Sara runs the till and Omar handles stock.",
+   "options": [
+    "Organising",
+    "Planning",
+    "Leading",
+    "Controlling"
+   ],
+   "answer": 0,
+   "why": "Deciding who does what is organising. See §1.4."
+  },
+  {
+   "id": "160-01-A22",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.7",
+   "stem": "Determine the level of a department head who turns the CEO's growth target into this year's budget and team plan.",
+   "options": [
+    "Middle management",
+    "Top management",
+    "Frontline management",
+    "Not a manager"
+   ],
+   "answer": 0,
+   "why": "Middle managers turn direction into budgets, teams and timelines. See §1.7."
+  },
+  {
+   "id": "160-01-A23",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.8",
+   "stem": "Select the skill mix the chapter would expect for a frontline kitchen supervisor.",
+   "options": [
+    "Technical heavy, human high, conceptual light",
+    "Conceptual heavy, human high, technical light",
+    "Equal thirds of technical, human and conceptual",
+    "Human only, with no technical or conceptual skill needed"
+   ],
+   "answer": 0,
+   "why": "At the frontline technical skill is heaviest; human skill is always high. See §1.8."
+  },
+  {
+   "id": "160-01-A24",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "1.8",
+   "stem": "Analyse a new manager who knows the work perfectly but her team is unhappy and quitting. Determine the missing skill.",
+   "options": [
+    "Human skills",
+    "Technical skills",
+    "Conceptual skills",
+    "IT skills"
+   ],
+   "answer": 0,
+   "why": "Management IS people; human skills matter at every level. See §1.8."
+  }
+ ]
+}

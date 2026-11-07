@@ -1,0 +1,492 @@
+{
+ "subject": "MGMT160",
+ "chapter": 1,
+ "title": "What Managers Do: Functions, Roles, Skills and Levels",
+ "clos": [
+  "CLO 1"
+ ],
+ "source": "Chapter01_What_Managers_Do.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "160-01-I01",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.2",
+   "stem": "Describe management, using the definition in the chapter.",
+   "options": [
+    "Planning, organising, leading and controlling resources to reach goals effectively and efficiently",
+    "Giving instructions to staff and checking that every order is carried out exactly as given",
+    "Holding the most senior, best-paid position and representing the firm to outsiders",
+    "Doing the technical work faster and to a higher standard than anyone else on the team"
+   ],
+   "answer": 0,
+   "why": "The definition has four functions (P-O-L-C) and two tests (effective and efficient). Orders, offices and status are not in it. See §1.2."
+  },
+  {
+   "id": "160-01-I02",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.2",
+   "stem": "Identify the test the chapter uses to decide if a person is a manager.",
+   "options": [
+    "The person coordinates the work of others and is judged by the team's results",
+    "The person has the word 'manager' in the job title and a reserved parking space",
+    "The person earns more than the people around them and has a private office",
+    "The person has worked in the firm longer than anyone else in the department"
+   ],
+   "answer": 0,
+   "why": "Title, pay and seniority do not make a manager; coordinating others' work and being judged on the team's results does. See §1.2 and the answer to question 4 in §1.7."
+  },
+  {
+   "id": "160-01-I03",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.3",
+   "stem": "Explain the meaning of effectiveness.",
+   "options": [
+    "Doing the right things — the activities that achieve the goal",
+    "Doing things right — getting the most output from the least input",
+    "Finishing every task faster than the nearest competitor can",
+    "Spending the least possible money on every activity in the business"
+   ],
+   "answer": 0,
+   "why": "Effectiveness = doing the RIGHT things (the goal is reached). Efficiency = doing things RIGHT (least waste). See §1.3 The Two Magic Words."
+  },
+  {
+   "id": "160-01-I04",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.3",
+   "stem": "Explain the meaning of efficiency.",
+   "options": [
+    "Getting the most output from the least input",
+    "Choosing the right goal for the business and pursuing it consistently",
+    "Making every customer happy whatever it costs the business",
+    "Having the largest and most experienced team in the market"
+   ],
+   "answer": 0,
+   "why": "Efficiency is about input and output — doing things right with little waste. Air Arabia is the chapter's example. See §1.3."
+  },
+  {
+   "id": "160-01-I05",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.4",
+   "stem": "Identify the four functions of management in the correct order.",
+   "options": [
+    "Planning, organising, leading, controlling",
+    "Leading, planning, controlling, organising",
+    "Organising, controlling, planning, leading",
+    "Planning, leading, hiring, controlling"
+   ],
+   "answer": 0,
+   "why": "P-O-L-C: plan what to achieve, organise who does what, lead and motivate people, control by checking results. Fayol, 1916. See §1.4."
+  },
+  {
+   "id": "160-01-I06",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.4",
+   "stem": "Describe the organising function.",
+   "options": [
+    "Deciding who will do what, with which resources",
+    "Deciding what the business should achieve and how it will get there",
+    "Motivating, guiding and communicating with people so they do the work well",
+    "Checking whether goals are being achieved and fixing what has gone wrong"
+   ],
+   "answer": 0,
+   "why": "Organising = structure, job responsibilities and resources: who cooks, who serves, who orders supplies. See §1.4."
+  },
+  {
+   "id": "160-01-I07",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.4",
+   "stem": "Describe the controlling function.",
+   "options": [
+    "Monitoring performance, comparing it to the goal and fixing problems",
+    "Giving staff strict rules and clear punishments so that mistakes are not repeated",
+    "Setting measurable goals and deadlines for the year",
+    "Hiring, training and dismissing employees according to the needs of the business"
+   ],
+   "answer": 0,
+   "why": "Controlling means watching results against the goal and fixing the cause — the strong manager asks WHY when complaints rise. See §1.4."
+  },
+  {
+   "id": "160-01-I08",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.5",
+   "stem": "Identify the three families of managerial roles described by Mintzberg.",
+   "options": [
+    "Interpersonal, informational, decisional",
+    "Technical, human, conceptual",
+    "Top, middle, frontline",
+    "Planning, organising, leading"
+   ],
+   "answer": 0,
+   "why": "Mintzberg's three families: interpersonal (people), informational (information), decisional (decisions). Skills and levels are different lists. See §1.5."
+  },
+  {
+   "id": "160-01-I09",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.5",
+   "stem": "Describe what Mintzberg found when he followed real managers with a stopwatch.",
+   "options": [
+    "Half of their activities took less than nine minutes, with constant interruptions",
+    "They spent most of the day alone in the office, writing detailed plans for the year ahead",
+    "They gave orders for most of the day and rarely spoke to anyone outside their own team",
+    "They spent most of the day in long, scheduled meetings with other senior managers"
+   ],
+   "answer": 0,
+   "why": "Managerial work is juggling, not chess: short tasks, constant switching. See §1.5."
+  },
+  {
+   "id": "160-01-I10",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.5",
+   "stem": "Identify the role family that includes the monitor, disseminator and spokesperson roles.",
+   "options": [
+    "Informational",
+    "Interpersonal",
+    "Decisional",
+    "Conceptual"
+   ],
+   "answer": 0,
+   "why": "Monitor (collect), disseminator (tell the team), spokesperson (speak for the team) are the informational roles — 'the team's radar and voice'. See §1.5."
+  },
+  {
+   "id": "160-01-I11",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.7",
+   "stem": "Identify the level of management that thinks in years and makes the big bets.",
+   "options": [
+    "Top managers",
+    "Middle managers",
+    "Frontline managers",
+    "Team members"
+   ],
+   "answer": 0,
+   "why": "Top managers (CEO, board) set direction and think in years; middle in months; frontline in days. See §1.7."
+  },
+  {
+   "id": "160-01-I12",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.7",
+   "stem": "Describe the main job of middle managers.",
+   "options": [
+    "Turning the top managers' direction into budgets, teams and timelines",
+    "Deciding whether the company should expand into a new country or a new product line",
+    "Making the daily staff schedule and solving the problems that come up on the shift",
+    "Doing the specialised technical work themselves to a higher standard than the team"
+   ],
+   "answer": 0,
+   "why": "Middle managers (branch managers, department heads) turn 'expand' into budgets, teams and timelines, thinking in months. See §1.7."
+  },
+  {
+   "id": "160-01-I13",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.8",
+   "stem": "Identify the three managerial skills in Katz's skills triangle.",
+   "options": [
+    "Technical, human, conceptual",
+    "Planning, leading, controlling",
+    "Interpersonal, informational, decisional",
+    "Speaking, writing, computing"
+   ],
+   "answer": 0,
+   "why": "Katz: technical (job knowledge), human (working with people), conceptual (big-picture thinking). See §1.8."
+  },
+  {
+   "id": "160-01-I14",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.8",
+   "stem": "Identify the skill that matters at every level of management, always.",
+   "options": [
+    "Human skills",
+    "Technical skills",
+    "Conceptual skills",
+    "People skills"
+   ],
+   "answer": 0,
+   "why": "Human skills are critical at every level because management IS people. Technical is heaviest at the frontline, conceptual at the top. See §1.8."
+  },
+  {
+   "id": "160-01-I15",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "1.1",
+   "stem": "Describe the evidence the chapter gives that managers matter.",
+   "options": [
+    "Gallup found the direct manager explains about 70% of the difference in team engagement",
+    "A survey found that most managers in large companies now hold an MBA or equivalent degree",
+    "Managers earn on average about 70% more than the members of the teams they lead",
+    "Companies that employ more managers per employee grow faster than their competitors"
+   ],
+   "answer": 0,
+   "why": "Gallup (2015): the direct manager explains about 70% of the difference in team engagement. See §1.1."
+  },
+  {
+   "id": "160-01-A01",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.3",
+   "stem": "Determine the correct description of a café that makes good coffee at low cost but keeps losing customers.",
+   "options": [
+    "Efficient but not effective",
+    "Effective but not efficient",
+    "Both effective and efficient",
+    "Neither effective nor efficient"
+   ],
+   "answer": 0,
+   "why": "Low cost = efficient (doing things right). Losing customers = not effective (the goal is not reached). See the 2×2 table in §1.3."
+  },
+  {
+   "id": "160-01-A02",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.3",
+   "stem": "Classify a student who studies twelve hours the night before the exam and performs badly.",
+   "options": [
+    "Neither efficient nor effective",
+    "Efficient but not effective",
+    "Effective but not efficient",
+    "Both efficient and effective"
+   ],
+   "answer": 0,
+   "why": "Huge input, small output (not efficient); the goal — a good grade — not reached (not effective). See the answer to question 3 in §1.3."
+  },
+  {
+   "id": "160-01-A03",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.4",
+   "stem": "Identify the management function a café owner is using when she writes the goal '120 covers a day by June'.",
+   "options": [
+    "Planning",
+    "Organising",
+    "Leading",
+    "Controlling"
+   ],
+   "answer": 0,
+   "why": "A goal with numbers and a date is planning — 'be popular' is a wish; '120 covers a day by June' is a plan. See §1.4."
+  },
+  {
+   "id": "160-01-A04",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.4",
+   "stem": "Identify the management function a manager is using when complaints rise and he compares the numbers to the goal and fixes the cause.",
+   "options": [
+    "Controlling",
+    "Planning",
+    "Organising",
+    "Leading"
+   ],
+   "answer": 0,
+   "why": "Monitoring results against the goal and fixing the cause is controlling. See §1.4."
+  },
+  {
+   "id": "160-01-A05",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "1.4",
+   "stem": "Analyse a group project where 'everyone did everything' and the work was late. Determine the most likely management failure.",
+   "options": [
+    "An organising failure — nobody was given a clear role",
+    "A leading failure — the team was not motivated to finish the work on time",
+    "A controlling failure — nobody checked progress against the deadline each week",
+    "A planning failure — the group never agreed on a goal for the project"
+   ],
+   "answer": 0,
+   "why": "When everyone does everything, roles were never assigned. The chapter's mini-question says this is usually an organising failure. See §1.4."
+  },
+  {
+   "id": "160-01-A06",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.6",
+   "stem": "Classify the role when Amna briefs her team on this weekend's promotion.",
+   "options": [
+    "Informational — disseminator",
+    "Interpersonal — figurehead",
+    "Decisional — negotiator",
+    "Decisional — resource allocator"
+   ],
+   "answer": 0,
+   "why": "Telling the team what it needs to know is the disseminator role in the informational family. See One Hour with Amna, 9:20, §1.6."
+  },
+  {
+   "id": "160-01-A07",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.6",
+   "stem": "Classify the role when a supplier calls to say the delivery is three days late and Amna negotiates a partial delivery tomorrow.",
+   "options": [
+    "Decisional — negotiator and disturbance handler",
+    "Informational — monitor and spokesperson",
+    "Interpersonal — liaison and figurehead",
+    "Interpersonal — leader and liaison"
+   ],
+   "answer": 0,
+   "why": "Handling a surprise and negotiating a solution are decisional roles. See Amna at 9:30, §1.6."
+  },
+  {
+   "id": "160-01-A08",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.6",
+   "stem": "Classify the role when Amna moves one person from the stockroom to the shop floor for the weekend rush.",
+   "options": [
+    "Decisional — resource allocator",
+    "Informational — spokesperson",
+    "Interpersonal — figurehead",
+    "Informational — disseminator"
+   ],
+   "answer": 0,
+   "why": "Dividing people, money and time between tasks is the resource allocator role (decisional). See Amna at 9:55, §1.6."
+  },
+  {
+   "id": "160-01-A09",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.6",
+   "stem": "Classify the role when Amna notices a team member looks exhausted and takes five minutes to check on him.",
+   "options": [
+    "Interpersonal — leader",
+    "Decisional — disturbance handler",
+    "Informational — monitor",
+    "Decisional — entrepreneur"
+   ],
+   "answer": 0,
+   "why": "Motivating and caring for people is the leader role in the interpersonal family. See Amna at 9:45, §1.6."
+  },
+  {
+   "id": "160-01-A10",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.7",
+   "stem": "Determine the level of management of a person who decides whether the company should open in Saudi Arabia next year.",
+   "options": [
+    "Top management",
+    "Middle management",
+    "Frontline management",
+    "Not a manager"
+   ],
+   "answer": 0,
+   "why": "Direction and big bets, thinking in years, belong to top managers. See §1.7."
+  },
+  {
+   "id": "160-01-A11",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.7",
+   "stem": "Determine the level of management of a night-shift nursing supervisor who makes the schedule and coaches her nurses.",
+   "options": [
+    "Frontline management",
+    "Top management",
+    "Middle management",
+    "Not a manager — an expert"
+   ],
+   "answer": 0,
+   "why": "Schedules, problems and coaching, thinking in days, are frontline management. See the hospital column in §1.7."
+  },
+  {
+   "id": "160-01-A12",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "1.7",
+   "stem": "Compare a senior surgeon with no team and a head of nursing for one floor. Determine which one is a manager.",
+   "options": [
+    "Only the head of nursing — she coordinates others and is judged by the team's results",
+    "Only the surgeon — he is more senior, more qualified and earns more than she does",
+    "Both — they are senior hospital staff with responsibility for patients' outcomes",
+    "Neither — the chapter says managers are found only in business organisations"
+   ],
+   "answer": 0,
+   "why": "The test is coordinating others' work, not seniority or salary. The surgeon with no team is an expert, not a manager. See the answer to question 4, §1.7."
+  },
+  {
+   "id": "160-01-A13",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "1.8",
+   "stem": "Analyse why a brilliant cook who is promoted to restaurant manager often struggles in the new job.",
+   "options": [
+    "Promotion rewarded technical skill, but the manager's job runs on human and conceptual skills",
+    "Cooking skill becomes useless once you are a manager, so the kitchen no longer respects the cook",
+    "Managers only need conceptual skills, which cooks never have the chance to develop",
+    "The cook was not senior enough to be promoted, so the older staff refuse to follow instructions"
+   ],
+   "answer": 0,
+   "why": "Katz's puzzle: promotion rewards technical skill, but the job needs human and conceptual skills nobody tested. See §1.8."
+  },
+  {
+   "id": "160-01-A14",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "1.8",
+   "stem": "Select the skill mix the chapter defends for a hospital manager.",
+   "options": [
+    "Conceptual 40 · Human 40 · Technical 20",
+    "Technical 60 · Human 20 · Conceptual 20",
+    "Human 50 · Technical 25 · Conceptual 25",
+    "Technical 40 · Conceptual 40 · Human 20"
+   ],
+   "answer": 0,
+   "why": "A hospital is a system of systems; the manager need not be a doctor, so technical is lightest. See the table in §1.8."
+  },
+  {
+   "id": "160-01-A15",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "1.1",
+   "stem": "Analyse the two cafés with the same products, prices and customers where one succeeds and one closes. Determine the most likely reason.",
+   "options": [
+    "The quality of management decisions made about the same resources",
+    "One café had more money behind it and could survive the slow months",
+    "One café had better coffee beans and a more experienced barista",
+    "Customers prefer new cafés and move on when the novelty wears off"
+   ],
+   "answer": 0,
+   "why": "Both cafés had the same resources; the difference was the quality of the decisions made about them. Talent without direction pulls in different directions. See the answer to questions 1 and 2 in §1.1."
+  }
+ ]
+}

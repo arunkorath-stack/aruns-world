@@ -1,0 +1,429 @@
+{
+ "subject": "MGMT160",
+ "chapter": 10,
+ "title": "Management in Practice: Advice, Evidence and Your Development Plan",
+ "clos": [
+  "CLO 1",
+  "CLO 2"
+ ],
+ "source": "Chapter10_Management_in_Practice.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "160-10-I16",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "10.2",
+   "stem": "Explain advice 9, 'use AI like a careful professional'.",
+   "options": [
+    "Use it to speed up routine work and verify everything before it goes out under your name",
+    "Avoid AI completely, because professionals are judged on what they can do without it",
+    "Copy AI output to save time, because the tools are now accurate enough to trust",
+    "Use AI only for homework, where a mistake costs nothing but a mark"
+   ],
+   "answer": 0,
+   "why": "Careful users thrive; fast copiers get caught. See §10.2."
+  },
+  {
+   "id": "160-10-I17",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "10.3",
+   "stem": "Describe the 'friend's mistake' scenario in the chapter.",
+   "options": [
+    "A friend asks you to hide a mistake that cost money; the strong move is to stand beside them while they tell it",
+    "A friend asks for a loan to cover a mistake, and the strong move is to lend it without telling anyone",
+    "A friend wants your notes for a report, and the strong move is to share them but insist on credit",
+    "A friend wants to lead the project, and the strong move is to let them and support them from behind"
+   ],
+   "answer": 0,
+   "why": "Mistakes are forgivable; cover-ups end careers. See §10.3."
+  },
+  {
+   "id": "160-10-I18",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "10.3",
+   "stem": "Explain why the chapter says 'influence is leadership; the title is paperwork'.",
+   "options": [
+    "You can lead a group by proposing a plan and roles without being appointed",
+    "Titles are not real, so nobody should take an organisation chart seriously",
+    "Only appointed leaders can lead, so a group without a leader should ask for one",
+    "Paperwork is leadership, because the person who writes the plan controls the group"
+   ],
+   "answer": 0,
+   "why": "The first leadership moment needs no title. See §10.3."
+  },
+  {
+   "id": "160-10-I19",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "10.3",
+   "stem": "Describe the weak move in the first leadership moment.",
+   "options": [
+    "Waiting for someone to be appointed while nothing gets done",
+    "Proposing a simple plan with tasks, owners and dates before anyone has agreed to it",
+    "Asking each person which piece they want instead of assigning the work",
+    "Setting a weekly check on the group"
+   ],
+   "answer": 0,
+   "why": "Waiting is the weak move. See §10.3."
+  },
+  {
+   "id": "160-10-I20",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "10.5",
+   "stem": "Describe Roselinde Torres's third question for leaders.",
+   "options": [
+    "Are you courageous enough to abandon what made you successful?",
+    "How much do you earn compared with the people you lead?",
+    "How many people report to you directly and indirectly?",
+    "Do you have an MBA or an equivalent qualification in management?"
+   ],
+   "answer": 0,
+   "why": "Nokia failed this question. See §10.5."
+  },
+  {
+   "id": "160-10-I21",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "10.5",
+   "stem": "Explain why the chapter says to watch Drew Dudley's talk first.",
+   "options": [
+    "It captures the chapter's spirit — leadership is small moments that change someone's direction",
+    "It is the shortest of the videos, so it fits before the lecture begins",
+    "It is about salaries, which is what students most want to know about management",
+    "It explains KPIs, which students need before they can follow the other talks"
+   ],
+   "answer": 0,
+   "why": "The lollipop moment. See §10.5."
+  },
+  {
+   "id": "160-10-I22",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "10.6",
+   "stem": "Describe a one-minute goal.",
+   "options": [
+    "Agreeing what good looks like before the work starts",
+    "A goal that takes one minute to reach, so that the employee has an early success",
+    "A goal set once a year and reviewed at appraisal",
+    "A goal nobody writes down, because writing it down makes it too formal"
+   ],
+   "answer": 0,
+   "why": "Agree what good looks like first. See §10.6."
+  },
+  {
+   "id": "160-10-I23",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "10.6",
+   "stem": "Describe a one-minute praising.",
+   "options": [
+    "Catching someone doing something right and saying so, promptly and specifically",
+    "A yearly bonus paid to the employee with the best results",
+    "A public ranking of the team updated every week on the noticeboard",
+    "A long speech at the team meeting thanking everyone for their effort"
+   ],
+   "answer": 0,
+   "why": "Catch people doing something right. See §10.6."
+  },
+  {
+   "id": "160-10-I24",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "10.7",
+   "stem": "Explain why the chapter lists six studies.",
+   "options": [
+    "To show that the course's advice rests on evidence, not opinion",
+    "To make the exam longer and harder for students who have not read the chapter",
+    "Because university courses are required to cite a minimum number of studies",
+    "To replace the textbook, which the chapter says is out of date"
+   ],
+   "answer": 0,
+   "why": "Evidence, not opinion. See §10.7."
+  },
+  {
+   "id": "160-10-I25",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "10.7",
+   "stem": "Describe what Tversky and Kahneman found.",
+   "options": [
+    "Bias is built into all minds, so systems must be designed against it",
+    "Only some people are biased",
+    "Experts are never biased, because experience corrects the errors of intuition",
+    "Bias can be removed by trying harder to be objective when making decisions"
+   ],
+   "answer": 0,
+   "why": "Design against bias. See §10.7."
+  },
+  {
+   "id": "160-10-I26",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "10.7",
+   "stem": "Describe the habit of checking.",
+   "options": [
+    "Verifying claims, numbers and sources before acting or signing",
+    "Checking the clock so that every task finishes on time",
+    "Reviewing colleagues' work for mistakes so that they can be reported to the manager",
+    "Checking social media to see what customers are saying about the company"
+   ],
+   "answer": 0,
+   "why": "One of the three things no dataset contains. See §10.7."
+  },
+  {
+   "id": "160-10-I27",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "10.8",
+   "stem": "Describe what the two lowest rows of the scorecard are for.",
+   "options": [
+    "They are the input for your development plan",
+    "They are failures to hide from the professor and from future employers",
+    "They decide your exam grade, so they should be scored as high as possible",
+    "They are ignored, because a plan should build on strengths rather than weaknesses"
+   ],
+   "answer": 0,
+   "why": "Your two lowest rows are inputs, not failures. See §10.8."
+  },
+  {
+   "id": "160-10-I28",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "10.8",
+   "stem": "Explain the phrase 'you are your own first employee'.",
+   "options": [
+    "Managing yourself uses the same tools as managing a team: goals, resources, motivation, a checkpoint",
+    "You should pay yourself a salary from your student budget to learn financial discipline",
+    "You should hire yourself for a role you want before anyone else offers it to you",
+    "Employees should manage themselves, so that managers are no longer needed"
+   ],
+   "answer": 0,
+   "why": "Manage yourself with the course's tools. See §10.8."
+  },
+  {
+   "id": "160-10-A16",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "10.1",
+   "stem": "Determine the advice behind a manager who asks 'why?' before acting on a complaint.",
+   "options": [
+    "Advice 1 — diagnose before you act",
+    "Advice 6 — lead small things",
+    "Advice 9 — use AI like a careful professional",
+    "Advice 10 — stay a student after the course ends"
+   ],
+   "answer": 0,
+   "why": "The visible problem is usually the symptom. See §10.1."
+  },
+  {
+   "id": "160-10-A17",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "10.1",
+   "stem": "Select the goal that follows advice 2.",
+   "options": [
+    "Raise my average mark from 68 to 75 by the end of the semester",
+    "Do better this semester than I did last semester in every subject",
+    "Try harder in the subjects where I know I have been weak",
+    "Be a good student who attends every class and hands in every assignment"
+   ],
+   "answer": 0,
+   "why": "Numbers and dates. See §10.1."
+  },
+  {
+   "id": "160-10-A18",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "10.1",
+   "stem": "Analyse a manager who corrects an employee in front of the whole team. Determine the advice broken.",
+   "options": [
+    "Advice 4 — praise specifically, correct privately",
+    "Advice 2 — write goals with numbers and dates",
+    "Advice 5 — run the four questions on small choices",
+    "Advice 9 — use AI like a careful professional"
+   ],
+   "answer": 0,
+   "why": "Correct privately, about the work. See §10.1."
+  },
+  {
+   "id": "160-10-A19",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "10.3",
+   "stem": "Select the strong move when your group project has no leader and nothing done.",
+   "options": [
+    "Propose a simple plan with tasks, owners and dates, and ask each person which piece they want",
+    "Wait for the professor to appoint someone, since the group has no authority to choose",
+    "Do everything yourself and put everyone's name on it, because that is faster than organising people",
+    "Leave the group and ask to join one that has already started working"
+   ],
+   "answer": 0,
+   "why": "Lead without announcing it. See §10.3."
+  },
+  {
+   "id": "160-10-A20",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "10.3",
+   "stem": "Determine the chapter's reason for not hiding a friend's costly mistake.",
+   "options": [
+    "It fails the fairness, harm and public tests, and cover-ups end careers",
+    "Friends should always be reported",
+    "Mistakes are never forgivable, so the friend will be dismissed either way",
+    "The manager will find out anyway, so hiding it only delays the consequences"
+   ],
+   "answer": 0,
+   "why": "Mistakes are forgivable; cover-ups are not. See §10.3."
+  },
+  {
+   "id": "160-10-A21",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "10.4",
+   "stem": "Analyse a student who argues loudly in a meeting when a senior person dismisses her idea. Determine the better move.",
+   "options": [
+    "Afterwards, privately, offer five minutes with the numbers behind the idea",
+    "Argue louder in the meeting until the senior person agrees to listen",
+    "Give up the idea, because a senior person's judgement is usually right",
+    "Email the senior person's boss with the idea and the evidence behind it"
+   ],
+   "answer": 0,
+   "why": "Evidence decides, not volume. See §10.4."
+  },
+  {
+   "id": "160-10-A22",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "10.5",
+   "stem": "Determine what Dan Pink's talk implies for a manager who offers bigger bonuses for creative work.",
+   "options": [
+    "Bigger rewards can worsen thinking work; autonomy, mastery and purpose drive it",
+    "Bigger bonuses always help",
+    "Creative work needs strict supervision, because creative people lose focus without it",
+    "Bonuses are the only motivator that works for every kind of work and every person"
+   ],
+   "answer": 0,
+   "why": "Autonomy, mastery, purpose. See §10.5."
+  },
+  {
+   "id": "160-10-A23",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "10.5",
+   "stem": "Select the course company that answered Torres's third question well.",
+   "options": [
+    "Emirates — adapted after its first loss and returned to record profits",
+    "Nokia — kept perfecting yesterday's phone",
+    "Kodak — protected film against the digital camera it had invented itself",
+    "A café that never changed its menu and kept its loyal customers for thirty years"
+   ],
+   "answer": 0,
+   "why": "Emirates adapted; Nokia and Kodak did not. See §10.5 and Chapter 3."
+  },
+  {
+   "id": "160-10-A24",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "10.6",
+   "stem": "Analyse a manager who gives feedback only at the annual review. Determine the One Minute Manager's advice.",
+   "options": [
+    "Give short, prompt praisings and redirects when the behaviour happens",
+    "Wait for the annual review to give feedback",
+    "Write a longer review so that every point of the year is covered properly",
+    "Skip feedback altogether, because adults do not need to be told how they are doing"
+   ],
+   "answer": 0,
+   "why": "Minutes, not hours; promptly. See §10.6."
+  },
+  {
+   "id": "160-10-A25",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "10.7",
+   "stem": "Determine the implication of the six studies for what to build at university.",
+   "options": [
+    "Judgement under uncertainty, the ability to create safety, and the habit of checking",
+    "Typing speed and the ability to memorise rules and procedures",
+    "Only technical software skills, because that is what employers test for",
+    "Nothing — the studies are history and the world of work has moved on"
+   ],
+   "answer": 0,
+   "why": "No dataset contains these three. See §10.7."
+  },
+  {
+   "id": "160-10-A26",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "10.7",
+   "stem": "Analyse a team that reports more errors than another. Determine Edmondson's reading.",
+   "options": [
+    "It may be the better team — members feel safe to report instead of hiding",
+    "It is the worse team, because it is making more mistakes than the other",
+    "Errors should be punished, so the team with more reports needs stricter management",
+    "Reporting should stop, because a team that reports many errors looks bad to the organisation"
+   ],
+   "answer": 0,
+   "why": "Teams that report learn faster. See §10.7 and §10.6."
+  },
+  {
+   "id": "160-10-A27",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "10.8",
+   "stem": "Select the checkpoint for a development plan written in September.",
+   "options": [
+    "Re-take the scorecard in December and compare",
+    "Never check, because a plan should be trusted once it has been written",
+    "Check every hour, because frequent control is the only way to stay on track",
+    "Ask a friend to guess how far you have progressed and accept their estimate"
+   ],
+   "answer": 0,
+   "why": "A plan without a checkpoint is a wish. See §10.8."
+  },
+  {
+   "id": "160-10-A28",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "10.8",
+   "stem": "Classify a development goal with no number, no date and no how.",
+   "options": [
+    "A wish, not a goal",
+    "A SMART goal, because it describes what the student wants",
+    "A checkpoint, because it marks where the student wants to be",
+    "A resource, because it tells the student what to work on"
+   ],
+   "answer": 0,
+   "why": "Practise what you teach yourself. See §10.8."
+  }
+ ]
+}

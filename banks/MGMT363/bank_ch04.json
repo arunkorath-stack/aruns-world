@@ -1,1 +1,1085 @@
-{"subject": "MGMT363", "chapter": 4, "title": "Critical Thinking: Claims, Assumptions, Evidence", "clos": ["CLO 1", "CLO 2"], "source": "MGMT363_Chapter4.pptx", "status": "published", "questions": [{"id": "363-04-I01", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.1", "stem": "Identify the three parts of an argument.", "options": ["The claim, the reason, the conclusion", "The mess, the symptom, the problem", "The cause, the effect, the fix", "The boss, the staff, the customer"], "answer": 0, "why": "Three words are enough to separate the parts. See §4.1."}, {"id": "363-04-I02", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.1", "stem": "Describe the claim.", "options": ["What someone wants you to accept — 'we should close the Deira branch'", "The evidence offered", "What follows if the reason holds", "The unstated assumption"], "answer": 0, "why": "Claim = what you are asked to accept. See §4.1."}, {"id": "363-04-I03", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.1", "stem": "Describe the reason.", "options": ["The evidence or argument offered for the claim — 'it has lost money for three quarters'", "What someone wants you to accept", "The final decision", "The hidden sentence"], "answer": 0, "why": "Reason = the evidence offered. See §4.1."}, {"id": "363-04-I04", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.1", "stem": "Describe the conclusion.", "options": ["What follows if the reason holds — 'closing it will improve total profit'", "The evidence", "The first sentence", "The budget"], "answer": 0, "why": "Conclusion = what follows if the reason holds. See §4.1."}, {"id": "363-04-I05", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.1", "stem": "Explain what happens when someone writes the three lines out in front of a meeting.", "options": ["Half of all bad arguments collapse", "The meeting gets longer", "Everyone agrees", "The claim is proved"], "answer": 0, "why": "Writing them separately is the first thing to do with any proposal. See §4.1."}, {"id": "363-04-I06", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.1", "stem": "Explain why asking 'what is the reason?' is a complete contribution to a meeting.", "options": ["If no reason can be found, there may not be one", "It ends the meeting", "It is polite only", "It proves the claim"], "answer": 0, "why": "Saying it politely is enough. See §4.1."}, {"id": "363-04-I07", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.2", "stem": "Identify the four moves for testing any argument, in order.", "options": ["What is claimed? What is assumed? Does the reason support the claim? How good is the evidence?", "Who said it? When? Where? How much?", "Agree, disagree, vote, act", "Claim, cost, benefit, risk"], "answer": 0, "why": "Order matters: move 2 kills more bad arguments than move 4. See §4.2."}, {"id": "363-04-I08", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.2", "stem": "Explain why move 2 is run before move 4.", "options": ["Finding the assumption kills more bad arguments than attacking the evidence, and it costs nothing", "Evidence is never important", "Move 4 is illegal", "Move 2 is faster to type"], "answer": 0, "why": "People usually attack the evidence first. See §4.2."}, {"id": "363-04-I09", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.2", "stem": "Describe move 1.", "options": ["State the claim in one sentence in your own words and check the speaker agrees", "Attack the evidence", "Find the budget", "Vote"], "answer": 0, "why": "Move 1: what exactly is being claimed. See §4.2."}, {"id": "363-04-I10", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.2", "stem": "Describe move 3.", "options": ["Check whether the reason actually supports the claim — a true reason can support a different conclusion", "Find the assumption", "Judge the evidence source", "State the claim"], "answer": 0, "why": "Move 3: does the reason support the claim. See §4.2."}, {"id": "363-04-I11", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.2", "stem": "Explain where the four moves should be used on your own work.", "options": ["On your own project report before the instructor does", "Only on others' proposals", "Never — they are for exams", "Only in meetings"], "answer": 0, "why": "Every mark in section 3 depends on them. See §4.2."}, {"id": "363-04-I12", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.3", "stem": "Describe an assumption.", "options": ["The sentence that must be true for the reason to support the claim — and which nobody said", "The claim itself", "The evidence", "The conclusion"], "answer": 0, "why": "The invisible sentence. See §4.3."}, {"id": "363-04-I13", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.3", "stem": "Identify the unstated assumption in 'staff are unhappy, so raise pay'.", "options": ["Pay is what they are unhappy about", "Staff deserve more", "The company can afford it", "Unhappy staff leave"], "answer": 0, "why": "The sentence between the reason and the claim. See §4.3."}, {"id": "363-04-I14", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.3", "stem": "Identify the unstated assumption in 'competitors have an app, so build an app'.", "options": ["Their app is why they are winning", "Apps are expensive", "Customers like apps", "We have developers"], "answer": 0, "why": "Nobody said it, and nobody checked it. See §4.3."}, {"id": "363-04-I15", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.3", "stem": "Identify the unstated assumption in 'sales fell after March, so the March change caused it'.", "options": ["Nothing else changed in March", "Sales always fall in March", "The change was bad", "Customers noticed"], "answer": 0, "why": "Nothing else changed — has anyone checked? See §4.3."}, {"id": "363-04-I16", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.3", "stem": "Describe how to find an assumption.", "options": ["Ask 'what would have to be true for this reason to lead to this claim?' then ask whether anyone checked it", "Ask who said it", "Ask how much it costs", "Ask the customer"], "answer": 0, "why": "Then ask whether it has been checked. See §4.3."}, {"id": "363-04-I17", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.4", "stem": "Identify the four tests for evidence.", "options": ["Source, size, age, fit", "Cost, speed, quality, risk", "Who, what, where, when", "Claim, reason, assumption, conclusion"], "answer": 0, "why": "A vocabulary for saying what is wrong without saying 'I disagree'. See §4.4."}, {"id": "363-04-I18", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.4", "stem": "Describe the source test.", "options": ["Who produced it, and did they want a result?", "How many observations?", "Is it still true?", "Is it evidence for this claim?"], "answer": 0, "why": "A supplier's own study of its product is a weak answer. See §4.4."}, {"id": "363-04-I19", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.4", "stem": "Describe the fit test.", "options": ["Is it evidence for THIS claim?", "Is it recent?", "Is it large?", "Is it from a good source?"], "answer": 0, "why": "Satisfaction data used to argue about price fails fit. See §4.4."}, {"id": "363-04-I20", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.4", "stem": "Identify the most common evidence failure in student work.", "options": ["Fit — the evidence is real, recent and large, and about something adjacent to the claim", "Source", "Size", "Age"], "answer": 0, "why": "Fit is the most common failure. See §4.4."}, {"id": "363-04-I21", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.4", "stem": "Explain what to state beside evidence in a report.", "options": ["Its source, size and date", "Only its conclusion", "The author's opinion", "The budget"], "answer": 0, "why": "Assume the reader will apply the four tests. See §4.4."}, {"id": "363-04-I22", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.5", "stem": "Identify the five weak moves.", "options": ["Attacking the person, the false choice, appeal to authority, one vivid case, because we always have", "Claim, reason, assumption, evidence, fit", "Mess, symptom, problem, tree, size", "Confirmation, anchoring, availability, sunk cost, groupthink"], "answer": 0, "why": "Naming them lets you object without attacking the person. See §4.5."}, {"id": "363-04-I23", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.5", "stem": "Describe the false choice.", "options": ["Offering two options as if there were only two — 'either we cut staff or we close'", "Treating status as evidence", "Letting one story outweigh the data", "Answering who said it"], "answer": 0, "why": "False choice = only two options offered. See §4.5."}, {"id": "363-04-I24", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.5", "stem": "Describe the appeal to authority.", "options": ["Treating status as evidence — 'the regional director thinks so'", "Offering two options only", "One vivid story", "Habit as a reason"], "answer": 0, "why": "Status is not evidence. See §4.5."}, {"id": "363-04-I25", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.5", "stem": "Describe how to answer any weak move.", "options": ["Agree with what is true in it, then ask for the reason", "Attack the speaker", "Ignore it", "Repeat your own claim louder"], "answer": 0, "why": "'That is a real example — do we know how common it is?' See §4.5."}, {"id": "363-04-I26", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.5", "stem": "Describe the 'one vivid case' move.", "options": ["Letting one story outweigh the data — 'my cousin had a bad experience'", "Treating habit as a reason", "Answering who said it", "Offering two options"], "answer": 0, "why": "One story vs the data. See §4.5."}, {"id": "363-04-I27", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.6", "stem": "Describe creative mode.", "options": ["Opens up — asks what else could be true or done, with judgement suspended", "Narrows down and tests", "Runs both at once", "Is only for creative people"], "answer": 0, "why": "Used in chapter 7 when generating alternatives. See §4.6."}, {"id": "363-04-I28", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.6", "stem": "Describe critical mode.", "options": ["Narrows down — asks whether this holds, what the evidence is, what is assumed", "Opens up with judgement suspended", "Is for analytical people only", "Is used only in exams"], "answer": 0, "why": "Used here and again in chapter 9. See §4.6."}, {"id": "363-04-I29", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.6", "stem": "Explain the failure the chapter warns about with the two modes.", "options": ["Running both at once — ideas are judged as spoken, so nothing new survives and nothing is tested properly", "Using creative mode at all", "Using critical mode at all", "Switching modes"], "answer": 0, "why": "Say out loud which mode the room is in. See §4.6."}, {"id": "363-04-I30", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.6", "stem": "Identify the practical rule for running the two modes in a meeting.", "options": ["Say which mode the room is in and for how long — 'ten minutes of options, no objections, then we test them'", "Always judge immediately", "Never test ideas", "Let the boss choose the mode"], "answer": 0, "why": "A complete meeting design. See §4.6."}, {"id": "363-04-I31", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.7", "stem": "Explain why testing your own reasoning is the hard part.", "options": ["It is neither easy nor enjoyable, and it separates a good report from a confident one", "It takes more time", "It needs software", "Nobody does it"], "answer": 0, "why": "Testing others' arguments is easy and slightly enjoyable. See §4.7."}, {"id": "363-04-I32", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.7", "stem": "Explain what it means if no evidence would change your mind.", "options": ["You are not holding a conclusion; you are holding a preference", "You are certain", "You have proof", "You are an expert"], "answer": 0, "why": "Ask what evidence would change your mind. See §4.7."}, {"id": "363-04-A01", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.1", "stem": "Classify 'the Deira branch has lost money for three quarters' in the closure proposal.", "options": ["The reason", "The claim", "The conclusion", "The assumption"], "answer": 0, "why": "Reason = the evidence offered. See §4.1 and Exercise 1."}, {"id": "363-04-A02", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.1", "stem": "Classify 'we should close Deira and move its two best staff to Bur Dubai'.", "options": ["The claim", "The reason", "The assumption", "The evidence"], "answer": 0, "why": "Claim = what you are asked to accept. See §4.1."}, {"id": "363-04-A03", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.1", "stem": "Classify 'this will lift group profit by roughly the amount Deira is losing'.", "options": ["The conclusion", "The claim", "The reason", "The assumption"], "answer": 0, "why": "What follows if the reason holds. See §4.1."}, {"id": "363-04-A04", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "4.1", "stem": "Analyse a proposal where no reason can be found. Determine the chapter's reading.", "options": ["There may not be one — ask politely for the reason", "The claim must be true", "The claim is false", "Vote on it"], "answer": 0, "why": "If you cannot find the reason, there may not be one. See §4.1."}, {"id": "363-04-A05", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.2", "stem": "Determine the move being used when someone asks 'so you are saying Deira should close because it loses money — is that right?'.", "options": ["Move 1 — stating the claim and checking the speaker agrees", "Move 2", "Move 3", "Move 4"], "answer": 0, "why": "State it in your own words and check. See §4.2."}, {"id": "363-04-A06", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "4.2", "stem": "Analyse 'the branch loses money' as a reason for closing it. Determine how it can be true and still not support the claim.", "options": ["Closing may not remove the costs or keep the customers, so the true reason may support a different conclusion", "It is false", "Losses never matter", "Only profit matters"], "answer": 0, "why": "Move 3: a true reason can support a different conclusion. See §4.2 and Exercise 1."}, {"id": "363-04-A07", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.2", "stem": "Determine the move with the best cost-to-damage ratio.", "options": ["Move 2 — finding the assumption costs nothing and kills most bad arguments", "Move 4", "Move 1", "Move 3"], "answer": 0, "why": "Move 2 costs nothing to run. See §4.2."}, {"id": "363-04-A08", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "4.3", "stem": "Analyse the Deira closure. Identify an unstated assumption.", "options": ["Deira's costs would disappear with it and its customers would not go elsewhere in the chain", "Deira has staff", "The other branches exist", "Profit matters"], "answer": 0, "why": "Three assumptions at least; this is the chapter's own example. See §4.3."}, {"id": "363-04-A09", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "4.3", "stem": "Analyse 'the other branches are profitable, so the location is the problem'. Determine the assumption.", "options": ["Nothing else differs between Deira and the other branches", "Locations never matter", "Profit is random", "Staff are the problem"], "answer": 0, "why": "What would have to be true for this reason to lead to this claim. See §4.3."}, {"id": "363-04-A10", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.3", "stem": "Determine how to check the assumption 'pay is what they are unhappy about'.", "options": ["Ask the staff, or look at exit interviews, before raising pay", "Raise pay and see", "Ask the manager", "Assume it is true"], "answer": 0, "why": "Ask whether anyone has checked it. See §4.3."}, {"id": "363-04-A11", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "4.3", "stem": "Analyse 'our staff are unhappy, so we should raise pay'. Determine the missing sentence.", "options": ["'Pay is the cause of the unhappiness'", "'Staff deserve pay'", "'We have money'", "'Unhappy staff work less'"], "answer": 0, "why": "The missing sentence sits between reason and claim. See §4.3 and the opening questions."}, {"id": "363-04-A12", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.4", "stem": "Classify a 2019 customer survey of 41 responses, used in 2026 for a closure decision.", "options": ["Weak on age and size", "Strong on all four", "Weak on fit only", "Weak on source only"], "answer": 0, "why": "Old and small. See §4.4 and Exercise 2."}, {"id": "363-04-A13", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.4", "stem": "Classify two Deira staff saying the location is poor.", "options": ["Weak on size and source — two people with an interest", "Strong evidence", "Weak on age only", "Weak on fit only"], "answer": 0, "why": "Three customers said so' is the chapter's weak-size example. See §4.4."}, {"id": "363-04-A14", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "4.4", "stem": "Analyse a national report on UAE high-street retail decline, used to justify closing Deira. Determine the test it may fail.", "options": ["Fit — it is about retail nationally, not about this branch's losses", "Age", "Size", "Source"], "answer": 0, "why": "Real, large, recent — and about something adjacent. See §4.4 and Exercise 2."}, {"id": "363-04-A15", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.4", "stem": "Classify the shopping centre's own footfall counts from this year.", "options": ["Reasonable on age and size; check the source's interest", "Weak on age", "Weak on size", "Perfect evidence"], "answer": 0, "why": "Who produced it, and did they want a result? See §4.4."}, {"id": "363-04-A16", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.4", "stem": "Select the additional evidence that best tests 'customers would not go to another branch'.", "options": ["Where Deira's loyalty-card customers also shop in the chain", "More staff opinions", "Another national report", "A supplier's study"], "answer": 0, "why": "Evidence that fits THIS claim. See §4.4."}, {"id": "363-04-A17", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.4", "stem": "Determine the chapter's view of a study from 2011.", "options": ["Age alone does not make it weak — what matters is whether the claim is the kind that goes stale", "Always weak", "Always strong", "Irrelevant"], "answer": 0, "why": "Is it still true of this situation? See §4.4 and the opening questions."}, {"id": "363-04-A18", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.5", "stem": "Classify 'Either we close Deira or we accept losses forever'.", "options": ["The false choice", "Attacking the person", "Appeal to authority", "One vivid case"], "answer": 0, "why": "Two options offered as if there were only two. See §4.5 and Exercise 3."}, {"id": "363-04-A19", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.5", "stem": "Classify 'The regional director has already decided, so there is no point arguing'.", "options": ["Appeal to authority", "The false choice", "Because we always have", "One vivid case"], "answer": 0, "why": "Status treated as evidence. See §4.5."}, {"id": "363-04-A20", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.5", "stem": "Classify 'My friend shopped there last month and it was empty'.", "options": ["One vivid case", "Appeal to authority", "Attacking the person", "The false choice"], "answer": 0, "why": "One story outweighing the data. See §4.5."}, {"id": "363-04-A21", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.5", "stem": "Classify 'We have had a branch in Deira for twenty years'.", "options": ["Because we always have", "One vivid case", "Appeal to authority", "The false choice"], "answer": 0, "why": "Habit as a reason. See §4.5."}, {"id": "363-04-A22", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.5", "stem": "Classify 'Noura only says that because she opened it'.", "options": ["Attacking the person", "The false choice", "One vivid case", "Because we always have"], "answer": 0, "why": "Answers who said it, not what was said. See §4.5."}, {"id": "363-04-A23", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.5", "stem": "Select the polite reply to 'my friend found it empty last month'.", "options": ["'That is a real example — do we know how common it is?'", "'Your friend is wrong'", "'Nobody cares about your friend'", "'So we should close'"], "answer": 0, "why": "Agree with what is true, ask for the reason. See §4.5."}, {"id": "363-04-A24", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "4.5", "stem": "Analyse the five meeting statements. Determine the one with something worth investigating.", "options": ["Khalid's empty shop — a real observation that footfall data could confirm or deny", "Maryam's authority", "Ahmed's false choice", "Sara's attack on Noura"], "answer": 0, "why": "One statement contains a checkable observation. See Exercise 3 and §4.5."}, {"id": "363-04-A25", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.6", "stem": "Classify a meeting where every idea is criticised the moment it is spoken.", "options": ["Running both modes at once — nothing new survives", "Good critical mode", "Good creative mode", "A pre-mortem"], "answer": 0, "why": "The failure: both at once. See §4.6."}, {"id": "363-04-A26", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.6", "stem": "Select the meeting design that uses both modes well.", "options": ["'Ten minutes of options with no objections, then we test them'", "'Judge each idea as it comes'", "'No testing today'", "'Only the boss speaks'"], "answer": 0, "why": "Say which mode the room is in. See §4.6."}, {"id": "363-04-A27", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "4.6", "stem": "Analyse a student who says 'I am an analytical type, not creative'. Determine the chapter's view.", "options": ["Both modes are needed in every problem; the skill is switching, not choosing", "The student is right", "Only creative people generate options", "Analytical people cannot decide"], "answer": 0, "why": "Two modes, not two kinds of people. See §4.6."}, {"id": "363-04-A28", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.7", "stem": "Determine what to do with an assumption in your own report that embarrasses you.", "options": ["Treat it as useful information and state it before the reader finds it", "Hide it", "Delete the report", "Blame the group"], "answer": 0, "why": "Naming your weakest assumption earns marks. See §4.7."}, {"id": "363-04-A29", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.7", "stem": "Select the best person to attack move 2 on your own argument.", "options": ["Someone outside the group, who has no reason to protect your idea", "Your closest teammate", "Yourself only", "The client"], "answer": 0, "why": "Give the three lines to an outsider. See §4.7."}, {"id": "363-04-A30", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "4.7", "stem": "Analyse a group that says 'nothing could change our recommendation'. Determine the chapter's reading.", "options": ["They hold a preference, not a conclusion", "They have proof", "They are confident experts", "They are finished"], "answer": 0, "why": "Ask what evidence would change your mind. See §4.7."}, {"id": "363-04-A31", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.7", "stem": "Determine the effect of stating your own weakest point first.", "options": ["It costs nothing and buys the rest of the argument credibility", "It loses marks", "It confuses the reader", "It is unprofessional"], "answer": 0, "why": "State it before the reader finds it. See §4.7."}, {"id": "363-04-A32", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "4.2", "stem": "Analyse a colleague who states a conclusion with total confidence and no reason. Determine what the four moves ask first.", "options": ["Move 1 then move 2: what exactly is claimed, and what is assumed — confidence is not a reason", "Accept it — confidence shows expertise", "Vote on it", "Attack the evidence"], "answer": 0, "why": "Confidence is not evidence. See §4.2 and the opening questions."}, {"id": "363-04-I33", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.7", "stem": "Describe the first step in testing your own reasoning.", "options": ["Write your claim, reason and assumption in three lines", "Ask the client to approve", "Delete weak evidence", "Add more adjectives"], "answer": 0, "why": "Three lines; if the assumption embarrasses you, that is useful. See §4.7."}, {"id": "363-04-I34", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "4.7", "stem": "Explain how section 3 of the project report is graded.", "options": ["On naming your own weakest assumption — hiding it and being found out loses marks", "On confidence", "On length", "On the number of sources"], "answer": 0, "why": "Naming it earns marks. See §4.7."}, {"id": "363-04-A33", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "4.6", "stem": "Determine the mode a group is in when it lists options with judgement suspended.", "options": ["Creative mode", "Critical mode", "Both at once", "Decision mode"], "answer": 0, "why": "Opens up, judgement suspended. See §4.6."}]}
+{
+ "subject": "MGMT363",
+ "chapter": 4,
+ "title": "Critical Thinking: Claims, Assumptions, Evidence",
+ "clos": [
+  "CLO 1",
+  "CLO 2"
+ ],
+ "source": "MGMT363_Chapter4.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "363-04-I01",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.1",
+   "stem": "Identify the three parts of an argument.",
+   "options": [
+    "The claim, the reason, the conclusion",
+    "The mess, the symptom, the problem",
+    "The cause, the effect, the fix",
+    "The premise, the evidence, the assumption"
+   ],
+   "answer": 0,
+   "why": "Three words are enough to separate the parts. See §4.1."
+  },
+  {
+   "id": "363-04-I02",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.1",
+   "stem": "Describe the claim.",
+   "options": [
+    "What someone wants you to accept — 'we should close the Deira branch'",
+    "The evidence or argument offered in support — 'it has lost money for three quarters'",
+    "What follows if the reason holds — 'closing it will improve total profit'",
+    "The unstated sentence that must be true for the argument to work"
+   ],
+   "answer": 0,
+   "why": "Claim = what you are asked to accept. See §4.1."
+  },
+  {
+   "id": "363-04-I03",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.1",
+   "stem": "Describe the reason.",
+   "options": [
+    "The evidence or argument offered for the claim — 'it has lost money for three quarters'",
+    "What someone wants you to accept — 'we should close the Deira branch'",
+    "The final decision taken at the end of the meeting once the whole argument has been heard by everyone",
+    "The hidden sentence that nobody said but that the whole argument depends on"
+   ],
+   "answer": 0,
+   "why": "Reason = the evidence offered. See §4.1."
+  },
+  {
+   "id": "363-04-I04",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.1",
+   "stem": "Describe the conclusion.",
+   "options": [
+    "What follows if the reason holds — 'closing it will improve total profit'",
+    "The evidence offered for the claim — 'the branch has lost money for three quarters'",
+    "The first sentence of the proposal, which states what the speaker wants",
+    "The budget that would be freed if the claim were accepted"
+   ],
+   "answer": 0,
+   "why": "Conclusion = what follows if the reason holds. See §4.1."
+  },
+  {
+   "id": "363-04-I05",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.1",
+   "stem": "Explain what happens when someone writes the three lines out in front of a meeting.",
+   "options": [
+    "Half of all bad arguments collapse",
+    "The meeting gets longer, because every line has to be agreed",
+    "Everyone agrees, because the argument is now clear to all",
+    "The claim is proved, because the three parts are in place"
+   ],
+   "answer": 0,
+   "why": "Writing them separately is the first thing to do with any proposal. See §4.1."
+  },
+  {
+   "id": "363-04-I06",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.1",
+   "stem": "Explain why asking 'what is the reason?' is a complete contribution to a meeting.",
+   "options": [
+    "If no reason can be found, there may not be one",
+    "It ends the meeting, because nobody can answer it",
+    "It is polite only, and has no effect on the decision",
+    "It proves the claim, because a reason is always found"
+   ],
+   "answer": 0,
+   "why": "Saying it politely is enough. See §4.1."
+  },
+  {
+   "id": "363-04-I07",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.2",
+   "stem": "Identify the four moves for testing any argument, in order.",
+   "options": [
+    "What is claimed? What is assumed? Does the reason support the claim? How good is the evidence?",
+    "Who said it? When did they say it? Where did they say it? How much will it cost?",
+    "Agree with what is true, disagree with what is false, vote on the rest, then act",
+    "What is the claim? What will it cost? What is the benefit? What is the risk?"
+   ],
+   "answer": 0,
+   "why": "Order matters: move 2 kills more bad arguments than move 4. See §4.2."
+  },
+  {
+   "id": "363-04-I08",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.2",
+   "stem": "Explain why move 2 is run before move 4.",
+   "options": [
+    "Finding the assumption kills more bad arguments than attacking the evidence, and it costs nothing",
+    "Evidence is never important, because any evidence can be found to support any claim",
+    "Move 4 is the hardest and should be left until the group is warmed up",
+    "Move 2 is faster to type into the notes, so it comes first in the record"
+   ],
+   "answer": 0,
+   "why": "People usually attack the evidence first. See §4.2."
+  },
+  {
+   "id": "363-04-I09",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.2",
+   "stem": "Describe move 1.",
+   "options": [
+    "State the claim in one sentence in your own words and check the speaker agrees",
+    "Attack the evidence offered for the claim and ask for its source, size and date",
+    "Find the budget that would be needed if the claim were accepted",
+    "Vote on whether the claim should be accepted before discussing it"
+   ],
+   "answer": 0,
+   "why": "Move 1: what exactly is being claimed. See §4.2."
+  },
+  {
+   "id": "363-04-I10",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.2",
+   "stem": "Describe move 3.",
+   "options": [
+    "Check whether the reason actually supports the claim — a true reason can support a different conclusion",
+    "Find the assumption that sits between the reason and the claim and ask whether it was checked",
+    "Judge the evidence source and ask whether the people who produced it wanted a result",
+    "State the claim in your own words and check that the speaker agrees with the wording"
+   ],
+   "answer": 0,
+   "why": "Move 3: does the reason support the claim. See §4.2."
+  },
+  {
+   "id": "363-04-I11",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.2",
+   "stem": "Explain where the four moves should be used on your own work.",
+   "options": [
+    "On your own project report before the instructor does",
+    "Only on others' proposals, because you already know your own reasoning",
+    "Never — they are for the exam and not for real work",
+    "Only in meetings, where arguments are made out loud"
+   ],
+   "answer": 0,
+   "why": "Every mark in section 3 depends on them. See §4.2."
+  },
+  {
+   "id": "363-04-I12",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.3",
+   "stem": "Describe an assumption.",
+   "options": [
+    "The sentence that must be true for the reason to support the claim — and which nobody said",
+    "The claim itself, restated in the speaker's own words",
+    "The evidence offered in support of the claim",
+    "The conclusion that follows if the reason holds"
+   ],
+   "answer": 0,
+   "why": "The invisible sentence. See §4.3."
+  },
+  {
+   "id": "363-04-I13",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.3",
+   "stem": "Identify the unstated assumption in 'staff are unhappy, so raise pay'.",
+   "options": [
+    "Pay is what they are unhappy about",
+    "Staff deserve more than they are currently paid",
+    "The company can afford to raise pay this year",
+    "Unhappy staff leave for better-paid jobs elsewhere"
+   ],
+   "answer": 0,
+   "why": "The sentence between the reason and the claim. See §4.3."
+  },
+  {
+   "id": "363-04-I14",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.3",
+   "stem": "Identify the unstated assumption in 'competitors have an app, so build an app'.",
+   "options": [
+    "Their app is why they are winning",
+    "Apps are expensive to build and maintain",
+    "Customers like apps and expect every business to have one",
+    "We have developers who could build an app in time"
+   ],
+   "answer": 0,
+   "why": "Nobody said it, and nobody checked it. See §4.3."
+  },
+  {
+   "id": "363-04-I15",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.3",
+   "stem": "Identify the unstated assumption in 'sales fell after March, so the March change caused it'.",
+   "options": [
+    "Nothing else changed in March",
+    "Sales always fall in March because of the season",
+    "The change was bad for customers and should be reversed",
+    "Customers noticed the change and reacted to it"
+   ],
+   "answer": 0,
+   "why": "Nothing else changed — has anyone checked? See §4.3."
+  },
+  {
+   "id": "363-04-I16",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.3",
+   "stem": "Describe how to find an assumption.",
+   "options": [
+    "Ask 'what would have to be true for this reason to lead to this claim?' then ask whether anyone checked it",
+    "Ask who said it and whether they have the authority to make the claim",
+    "Ask how much the claim would cost if it were accepted and acted on",
+    "Ask the customer whether the claim matches their experience of the business"
+   ],
+   "answer": 0,
+   "why": "Then ask whether it has been checked. See §4.3."
+  },
+  {
+   "id": "363-04-I17",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.4",
+   "stem": "Identify the four tests for evidence.",
+   "options": [
+    "Source, size, age, fit",
+    "Cost, speed, quality, risk",
+    "Who, what, where, when",
+    "Claim, reason, assumption, conclusion"
+   ],
+   "answer": 0,
+   "why": "A vocabulary for saying what is wrong without saying 'I disagree'. See §4.4."
+  },
+  {
+   "id": "363-04-I18",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.4",
+   "stem": "Describe the source test.",
+   "options": [
+    "Who produced it, and did they want a result?",
+    "How many observations does it rest on?",
+    "Is it still true of this situation today?",
+    "Is it evidence for this claim, or for a neighbouring one?"
+   ],
+   "answer": 0,
+   "why": "A supplier's own study of its product is a weak answer. See §4.4."
+  },
+  {
+   "id": "363-04-I19",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.4",
+   "stem": "Describe the fit test.",
+   "options": [
+    "Is it evidence for THIS claim?",
+    "Is it recent enough to still be true?",
+    "Is it large enough to be trusted?",
+    "Is it from a source with no interest in the result?"
+   ],
+   "answer": 0,
+   "why": "Satisfaction data used to argue about price fails fit. See §4.4."
+  },
+  {
+   "id": "363-04-I20",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.4",
+   "stem": "Identify the most common evidence failure in student work.",
+   "options": [
+    "Fit — the evidence is real, recent and large, and about something adjacent to the claim",
+    "Source — students rely on evidence produced by people who wanted a result",
+    "Size — students build arguments on two or three observations",
+    "Age — students use evidence that was true years ago but is stale today"
+   ],
+   "answer": 0,
+   "why": "Fit is the most common failure. See §4.4."
+  },
+  {
+   "id": "363-04-I21",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.4",
+   "stem": "Explain what to state beside evidence in a report.",
+   "options": [
+    "Its source, size and date",
+    "Only its conclusion, so that the report stays short",
+    "The author's opinion of how strong it is",
+    "The budget that the evidence supports"
+   ],
+   "answer": 0,
+   "why": "Assume the reader will apply the four tests. See §4.4."
+  },
+  {
+   "id": "363-04-I22",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.5",
+   "stem": "Identify the five weak moves.",
+   "options": [
+    "Attacking the person, the false choice, appeal to authority, one vivid case, because we always have",
+    "Claim, reason, assumption, evidence and fit",
+    "Mess, symptom, problem, tree and size",
+    "Confirmation, anchoring, availability, sunk cost and groupthink"
+   ],
+   "answer": 0,
+   "why": "Naming them lets you object without attacking the person. See §4.5."
+  },
+  {
+   "id": "363-04-I23",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.5",
+   "stem": "Describe the false choice.",
+   "options": [
+    "Offering two options as if there were only two — 'either we cut staff or we close'",
+    "Treating status as evidence — 'the regional director thinks so'",
+    "Letting one story outweigh the data — 'my cousin had a bad experience'",
+    "Answering who said it instead of what was said — 'she always exaggerates'"
+   ],
+   "answer": 0,
+   "why": "False choice = only two options offered. See §4.5."
+  },
+  {
+   "id": "363-04-I24",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.5",
+   "stem": "Describe the appeal to authority.",
+   "options": [
+    "Treating status as evidence — 'the regional director thinks so'",
+    "Offering two options only — 'either we cut staff or we close'",
+    "One vivid story — 'my cousin had a terrible experience at that branch last year'",
+    "Habit as a reason — 'we have always had a branch in Deira'"
+   ],
+   "answer": 0,
+   "why": "Status is not evidence. See §4.5."
+  },
+  {
+   "id": "363-04-I25",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.5",
+   "stem": "Describe how to answer any weak move.",
+   "options": [
+    "Agree with what is true in it, then ask for the reason",
+    "Attack the speaker, because a weak move shows a weak thinker",
+    "Ignore it and move on to the next point in the meeting",
+    "Repeat your own claim louder until the room accepts it"
+   ],
+   "answer": 0,
+   "why": "'That is a real example — do we know how common it is?' See §4.5."
+  },
+  {
+   "id": "363-04-I26",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.5",
+   "stem": "Describe the 'one vivid case' move.",
+   "options": [
+    "Letting one story outweigh the data — 'my cousin had a bad experience'",
+    "Treating habit as a reason — 'we have always done it this way'",
+    "Answering who said it instead of what was said — 'she always complains'",
+    "Offering two options as if there were only two — 'cut staff or close'"
+   ],
+   "answer": 0,
+   "why": "One story vs the data. See §4.5."
+  },
+  {
+   "id": "363-04-I27",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.6",
+   "stem": "Describe creative mode.",
+   "options": [
+    "Opens up — asks what else could be true or done, with judgement suspended",
+    "Narrows down and tests — asks whether the idea holds and what the evidence is",
+    "Runs both modes at once, judging each idea as it is spoken",
+    "Is only for creative people, who generate the options for others to test"
+   ],
+   "answer": 0,
+   "why": "Used in chapter 7 when generating alternatives. See §4.6."
+  },
+  {
+   "id": "363-04-I28",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.6",
+   "stem": "Describe critical mode.",
+   "options": [
+    "Narrows down — asks whether this holds, what the evidence is, what is assumed",
+    "Opens up with judgement suspended — asks what else could be true or could be done about it",
+    "Is for analytical people only, who test the ideas that others generate",
+    "Is used only in exams, where there is no time to generate options"
+   ],
+   "answer": 0,
+   "why": "Used here and again in chapter 9. See §4.6."
+  },
+  {
+   "id": "363-04-I29",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.6",
+   "stem": "Explain the failure the chapter warns about with the two modes.",
+   "options": [
+    "Running both at once — ideas are judged as spoken, so nothing new survives and nothing is tested properly",
+    "Using creative mode at all, because business decisions need evidence rather than ideas",
+    "Using critical mode at all, because criticism kills the ideas the business needs",
+    "Switching modes during a meeting, because the room loses track of what it is doing"
+   ],
+   "answer": 0,
+   "why": "Say out loud which mode the room is in. See §4.6."
+  },
+  {
+   "id": "363-04-I30",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.6",
+   "stem": "Identify the practical rule for running the two modes in a meeting.",
+   "options": [
+    "Say which mode the room is in and for how long — 'ten minutes of options, no objections, then we test them'",
+    "Always judge immediately, so that weak ideas do not waste the meeting's time",
+    "Never test ideas in the meeting, because testing belongs to the analysis afterwards",
+    "Let the boss choose the mode, because the boss is responsible for the decision"
+   ],
+   "answer": 0,
+   "why": "A complete meeting design. See §4.6."
+  },
+  {
+   "id": "363-04-I31",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.7",
+   "stem": "Explain why testing your own reasoning is the hard part.",
+   "options": [
+    "It is neither easy nor enjoyable, and it separates a good report from a confident one",
+    "It takes more time than testing other people's arguments",
+    "It needs software to record the claim, reason and assumption",
+    "Nobody does it, so there are no examples to learn from"
+   ],
+   "answer": 0,
+   "why": "Testing others' arguments is easy and slightly enjoyable. See §4.7."
+  },
+  {
+   "id": "363-04-I32",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.7",
+   "stem": "Explain what it means if no evidence would change your mind.",
+   "options": [
+    "You are not holding a conclusion; you are holding a preference",
+    "You are certain, which is the mark of an expert",
+    "You have proof, which is why no evidence could change it",
+    "You are an expert whose judgement is better than any evidence the others can produce"
+   ],
+   "answer": 0,
+   "why": "Ask what evidence would change your mind. See §4.7."
+  },
+  {
+   "id": "363-04-A01",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.1",
+   "stem": "Classify 'the Deira branch has lost money for three quarters' in the closure proposal.",
+   "options": [
+    "The reason",
+    "The claim",
+    "The conclusion",
+    "The assumption"
+   ],
+   "answer": 0,
+   "why": "Reason = the evidence offered. See §4.1 and Exercise 1."
+  },
+  {
+   "id": "363-04-A02",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.1",
+   "stem": "Classify 'we should close Deira and move its two best staff to Bur Dubai'.",
+   "options": [
+    "The claim",
+    "The reason",
+    "The assumption",
+    "The evidence"
+   ],
+   "answer": 0,
+   "why": "Claim = what you are asked to accept. See §4.1."
+  },
+  {
+   "id": "363-04-A03",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.1",
+   "stem": "Classify 'this will lift group profit by roughly the amount Deira is losing'.",
+   "options": [
+    "The conclusion",
+    "The claim",
+    "The reason",
+    "The assumption"
+   ],
+   "answer": 0,
+   "why": "What follows if the reason holds. See §4.1."
+  },
+  {
+   "id": "363-04-A04",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "4.1",
+   "stem": "Analyse a proposal where no reason can be found. Determine the chapter's reading.",
+   "options": [
+    "There may not be one — ask politely for the reason",
+    "The claim must be true, because the speaker is confident",
+    "The claim is false, because no reason was given",
+    "Vote on it, because the meeting cannot wait for a reason"
+   ],
+   "answer": 0,
+   "why": "If you cannot find the reason, there may not be one. See §4.1."
+  },
+  {
+   "id": "363-04-A05",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.2",
+   "stem": "Determine the move being used when someone asks 'so you are saying Deira should close because it loses money — is that right?'.",
+   "options": [
+    "Move 1 — stating the claim and checking the speaker agrees",
+    "Move 2 — finding the assumption behind the claim",
+    "Move 3 — checking whether the reason supports the claim",
+    "Move 4 — judging the quality and fit of the evidence"
+   ],
+   "answer": 0,
+   "why": "State it in your own words and check. See §4.2."
+  },
+  {
+   "id": "363-04-A06",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "4.2",
+   "stem": "Analyse 'the branch loses money' as a reason for closing it. Determine how it can be true and still not support the claim.",
+   "options": [
+    "Closing may not remove the costs or keep the customers, so the true reason may support a different conclusion",
+    "It is false, because the branch's accounts have not been audited",
+    "Losses never matter in a chain, because the other branches cover them",
+    "Only profit matters, and a loss-making branch should always be closed"
+   ],
+   "answer": 0,
+   "why": "Move 3: a true reason can support a different conclusion. See §4.2 and Exercise 1."
+  },
+  {
+   "id": "363-04-A07",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.2",
+   "stem": "Determine the move with the best cost-to-damage ratio.",
+   "options": [
+    "Move 2 — finding the assumption costs nothing and kills most bad arguments",
+    "Move 4 — judging the evidence settles the argument once and for all in front of the room",
+    "Move 1 — stating the claim stops most bad arguments before they start",
+    "Move 3 — checking the reason is the only move that needs no evidence"
+   ],
+   "answer": 0,
+   "why": "Move 2 costs nothing to run. See §4.2."
+  },
+  {
+   "id": "363-04-A08",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "4.3",
+   "stem": "Analyse the Deira closure. Identify an unstated assumption.",
+   "options": [
+    "Deira's costs would disappear with it and its customers would not go elsewhere in the chain",
+    "Deira has staff who would need to be redeployed or made redundant",
+    "The other branches exist and are trading profitably",
+    "Profit matters to the owners of the chain"
+   ],
+   "answer": 0,
+   "why": "Three assumptions at least; this is the chapter's own example. See §4.3."
+  },
+  {
+   "id": "363-04-A09",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "4.3",
+   "stem": "Analyse 'the other branches are profitable, so the location is the problem'. Determine the assumption.",
+   "options": [
+    "Nothing else differs between Deira and the other branches",
+    "Locations never matter to the performance of a retail branch",
+    "Profit is random and cannot be explained by location",
+    "Staff are the problem at Deira, not the location"
+   ],
+   "answer": 0,
+   "why": "What would have to be true for this reason to lead to this claim. See §4.3."
+  },
+  {
+   "id": "363-04-A10",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.3",
+   "stem": "Determine how to check the assumption 'pay is what they are unhappy about'.",
+   "options": [
+    "Ask the staff, or look at exit interviews, before raising pay",
+    "Raise pay and see whether the unhappiness disappears",
+    "Ask the manager, who knows the staff best",
+    "Assume it is true, because pay is usually the problem"
+   ],
+   "answer": 0,
+   "why": "Ask whether anyone has checked it. See §4.3."
+  },
+  {
+   "id": "363-04-A11",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "4.3",
+   "stem": "Analyse 'our staff are unhappy, so we should raise pay'. Determine the missing sentence.",
+   "options": [
+    "'Pay is the cause of the unhappiness'",
+    "'Staff deserve pay for the work they do'",
+    "'We have money to raise pay this year'",
+    "'Unhappy staff work less and leave sooner'"
+   ],
+   "answer": 0,
+   "why": "The missing sentence sits between reason and claim. See §4.3 and the opening questions."
+  },
+  {
+   "id": "363-04-A12",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.4",
+   "stem": "Classify a 2019 customer survey of 41 responses, used in 2026 for a closure decision.",
+   "options": [
+    "Weak on age and size",
+    "Strong on all four tests",
+    "Weak on fit only",
+    "Weak on source only"
+   ],
+   "answer": 0,
+   "why": "Old and small. See §4.4 and Exercise 2."
+  },
+  {
+   "id": "363-04-A13",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.4",
+   "stem": "Classify two Deira staff saying the location is poor.",
+   "options": [
+    "Weak on size and source — two people with an interest",
+    "Strong evidence from the people who know the branch",
+    "Weak on age only, because the staff have been there for years",
+    "Weak on fit only, because staff opinions are about the work not the location"
+   ],
+   "answer": 0,
+   "why": "Three customers said so' is the chapter's weak-size example. See §4.4."
+  },
+  {
+   "id": "363-04-A14",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "4.4",
+   "stem": "Analyse a national report on UAE high-street retail decline, used to justify closing Deira. Determine the test it may fail.",
+   "options": [
+    "Fit — it is about retail nationally, not about this branch's losses",
+    "Age — the report is from last year and the market has moved on",
+    "Size — the report covers too few shops to be reliable",
+    "Source — the report was produced by people who wanted a particular result from it"
+   ],
+   "answer": 0,
+   "why": "Real, large, recent — and about something adjacent. See §4.4 and Exercise 2."
+  },
+  {
+   "id": "363-04-A15",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.4",
+   "stem": "Classify the shopping centre's own footfall counts from this year.",
+   "options": [
+    "Reasonable on age and size; check the source's interest",
+    "Weak on age — footfall counts go out of date within weeks",
+    "Weak on size — one shopping centre is too small a sample",
+    "Perfect evidence that needs no further checking"
+   ],
+   "answer": 0,
+   "why": "Who produced it, and did they want a result? See §4.4."
+  },
+  {
+   "id": "363-04-A16",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.4",
+   "stem": "Select the additional evidence that best tests 'customers would not go to another branch'.",
+   "options": [
+    "Where Deira's loyalty-card customers also shop in the chain",
+    "More staff opinions from the Deira branch and the others",
+    "Another national report on retail trends in the UAE",
+    "A supplier's study of customer loyalty in shopping centres across the Gulf region"
+   ],
+   "answer": 0,
+   "why": "Evidence that fits THIS claim. See §4.4."
+  },
+  {
+   "id": "363-04-A17",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.4",
+   "stem": "Determine the chapter's view of a study from 2011.",
+   "options": [
+    "Age alone does not make it weak — what matters is whether the claim is the kind that goes stale",
+    "Always weak, because fifteen years is too long for any business evidence",
+    "Always strong, because older studies have been tested by time",
+    "Irrelevant, because evidence must be from the current year to count"
+   ],
+   "answer": 0,
+   "why": "Is it still true of this situation? See §4.4 and the opening questions."
+  },
+  {
+   "id": "363-04-A18",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.5",
+   "stem": "Classify 'Either we close Deira or we accept losses forever'.",
+   "options": [
+    "The false choice",
+    "Attacking the person",
+    "Appeal to authority",
+    "One vivid case"
+   ],
+   "answer": 0,
+   "why": "Two options offered as if there were only two. See §4.5 and Exercise 3."
+  },
+  {
+   "id": "363-04-A19",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.5",
+   "stem": "Classify 'The regional director has already decided, so there is no point arguing'.",
+   "options": [
+    "Appeal to authority",
+    "The false choice",
+    "Because we always have",
+    "One vivid case"
+   ],
+   "answer": 0,
+   "why": "Status treated as evidence. See §4.5."
+  },
+  {
+   "id": "363-04-A20",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.5",
+   "stem": "Classify 'My friend shopped there last month and it was empty'.",
+   "options": [
+    "One vivid case",
+    "Appeal to authority",
+    "Attacking the person",
+    "The false choice"
+   ],
+   "answer": 0,
+   "why": "One story outweighing the data. See §4.5."
+  },
+  {
+   "id": "363-04-A21",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.5",
+   "stem": "Classify 'We have had a branch in Deira for twenty years'.",
+   "options": [
+    "Because we always have",
+    "One vivid case from a friend",
+    "Appeal to authority",
+    "The false choice"
+   ],
+   "answer": 0,
+   "why": "Habit as a reason. See §4.5."
+  },
+  {
+   "id": "363-04-A22",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.5",
+   "stem": "Classify 'Noura only says that because she opened it'.",
+   "options": [
+    "Attacking the person",
+    "The false choice",
+    "One vivid case",
+    "Because we always have"
+   ],
+   "answer": 0,
+   "why": "Answers who said it, not what was said. See §4.5."
+  },
+  {
+   "id": "363-04-A23",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.5",
+   "stem": "Select the polite reply to 'my friend found it empty last month'.",
+   "options": [
+    "'That is a real example — do we know how common it is?'",
+    "'Your friend is wrong, because the footfall data shows the shop is busy'",
+    "'Nobody cares about your friend; we are here to look at the data'",
+    "'So we should close, because customers are finding it empty'"
+   ],
+   "answer": 0,
+   "why": "Agree with what is true, ask for the reason. See §4.5."
+  },
+  {
+   "id": "363-04-A24",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "4.5",
+   "stem": "Analyse the five meeting statements. Determine the one with something worth investigating.",
+   "options": [
+    "Khalid's empty shop — a real observation that footfall data could confirm or deny",
+    "Maryam's authority — the regional director has seen more branches than anyone in the room",
+    "Ahmed's false choice — cutting staff or closing are the only realistic options",
+    "Sara's attack on Noura — Noura's record on forecasts is relevant to her claim"
+   ],
+   "answer": 0,
+   "why": "One statement contains a checkable observation. See Exercise 3 and §4.5."
+  },
+  {
+   "id": "363-04-A25",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.6",
+   "stem": "Classify a meeting where every idea is criticised the moment it is spoken.",
+   "options": [
+    "Running both modes at once — nothing new survives",
+    "Good critical mode — weak ideas are removed before they waste time",
+    "Good creative mode — the criticism sharpens the ideas as they appear",
+    "A pre-mortem — the group is imagining how each idea could fail"
+   ],
+   "answer": 0,
+   "why": "The failure: both at once. See §4.6."
+  },
+  {
+   "id": "363-04-A26",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.6",
+   "stem": "Select the meeting design that uses both modes well.",
+   "options": [
+    "'Ten minutes of options with no objections, then we test them'",
+    "'Judge each idea as it comes, so that we do not waste time on weak ones'",
+    "'No testing today — we will decide which ideas to keep next week'",
+    "'Only the boss speaks, so that the meeting stays focused on one view'"
+   ],
+   "answer": 0,
+   "why": "Say which mode the room is in. See §4.6."
+  },
+  {
+   "id": "363-04-A27",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "4.6",
+   "stem": "Analyse a student who says 'I am an analytical type, not creative'. Determine the chapter's view.",
+   "options": [
+    "Both modes are needed in every problem; the skill is switching, not choosing",
+    "The student is right — people are either analytical or creative by nature",
+    "Only creative people generate options, so analytical students should test them",
+    "Analytical people cannot decide, so the student should work on decisions"
+   ],
+   "answer": 0,
+   "why": "Two modes, not two kinds of people. See §4.6."
+  },
+  {
+   "id": "363-04-A28",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.7",
+   "stem": "Determine what to do with an assumption in your own report that embarrasses you.",
+   "options": [
+    "Treat it as useful information and state it before the reader finds it",
+    "Hide it, because an embarrassing assumption weakens the report",
+    "Delete the report and start again from a different claim",
+    "Blame the group, because the assumption was agreed by everyone"
+   ],
+   "answer": 0,
+   "why": "Naming your weakest assumption earns marks. See §4.7."
+  },
+  {
+   "id": "363-04-A29",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.7",
+   "stem": "Select the best person to attack move 2 on your own argument.",
+   "options": [
+    "Someone outside the group, who has no reason to protect your idea",
+    "Your closest teammate, who knows the argument best",
+    "Yourself only, because nobody else knows the assumptions",
+    "The client, who will have to live with the recommendation"
+   ],
+   "answer": 0,
+   "why": "Give the three lines to an outsider. See §4.7."
+  },
+  {
+   "id": "363-04-A30",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "4.7",
+   "stem": "Analyse a group that says 'nothing could change our recommendation'. Determine the chapter's reading.",
+   "options": [
+    "They hold a preference, not a conclusion",
+    "They have proof, which is why the recommendation is certain",
+    "They are confident experts whose judgement is settled",
+    "They are finished, because the recommendation cannot be improved"
+   ],
+   "answer": 0,
+   "why": "Ask what evidence would change your mind. See §4.7."
+  },
+  {
+   "id": "363-04-A31",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.7",
+   "stem": "Determine the effect of stating your own weakest point first.",
+   "options": [
+    "It costs nothing and buys the rest of the argument credibility",
+    "It loses marks, because the reader sees the weakness first",
+    "It confuses the reader, who expects the strongest point first",
+    "It is unprofessional, because consultants should sound certain"
+   ],
+   "answer": 0,
+   "why": "State it before the reader finds it. See §4.7."
+  },
+  {
+   "id": "363-04-A32",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "4.2",
+   "stem": "Analyse a colleague who states a conclusion with total confidence and no reason. Determine what the four moves ask first.",
+   "options": [
+    "Move 1 then move 2: what exactly is claimed, and what is assumed — confidence is not a reason",
+    "Accept it — confidence shows expertise, and experts are usually right",
+    "Vote on it, because the group cannot test a claim with no reason",
+    "Attack the evidence, because that is where confident claims are weakest"
+   ],
+   "answer": 0,
+   "why": "Confidence is not evidence. See §4.2 and the opening questions."
+  },
+  {
+   "id": "363-04-I33",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.7",
+   "stem": "Describe the first step in testing your own reasoning.",
+   "options": [
+    "Write your claim, reason and assumption in three lines",
+    "Ask the client to approve the reasoning before it is written",
+    "Delete weak evidence so that the argument looks stronger",
+    "Add more adjectives so that the claim sounds convincing"
+   ],
+   "answer": 0,
+   "why": "Three lines; if the assumption embarrasses you, that is useful. See §4.7."
+  },
+  {
+   "id": "363-04-I34",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.7",
+   "stem": "Explain how section 3 of the project report is graded.",
+   "options": [
+    "On naming your own weakest assumption — hiding it and being found out loses marks",
+    "On confidence — a report that sounds certain is marked higher",
+    "On length — the longer the report, the more thorough the reasoning",
+    "On the number of sources cited in support of the claim"
+   ],
+   "answer": 0,
+   "why": "Naming it earns marks. See §4.7."
+  },
+  {
+   "id": "363-04-A33",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.6",
+   "stem": "Determine the mode a group is in when it lists options with judgement suspended.",
+   "options": [
+    "Creative mode",
+    "Critical mode",
+    "Both modes at once",
+    "Decision mode"
+   ],
+   "answer": 0,
+   "why": "Opens up, judgement suspended. See §4.6."
+  }
+ ]
+}

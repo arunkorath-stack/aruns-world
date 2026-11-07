@@ -1,0 +1,493 @@
+{
+ "subject": "MGMT160",
+ "chapter": 5,
+ "title": "Organising: Structure, Authority, Delegation and Coordination",
+ "clos": [
+  "CLO 1",
+  "CLO 2"
+ ],
+ "source": "Chapter05_Organising.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "160-05-I16",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.1",
+   "stem": "Explain the difference between planning and organising.",
+   "options": [
+    "Planning decides what to achieve; organising decides who does it and how",
+    "Planning is for small firms with few staff; organising is for big firms with many departments",
+    "They are the same function, described from the manager's and the employee's point of view",
+    "Organising comes before planning, because you must know who is available before you set goals"
+   ],
+   "answer": 0,
+   "why": "Planning = what; organising = who and how. See §5.1."
+  },
+  {
+   "id": "160-05-I17",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.1",
+   "stem": "Describe what employees experience when nothing is organised.",
+   "options": [
+    "Confusion about who does what, duplicated work and conflict over turf",
+    "Clear roles and fast decisions, because nobody has to wait for a manager",
+    "More free time, because nobody checks whether the work is done",
+    "Higher pay, because employees negotiate their own jobs directly with the owner"
+   ],
+   "answer": 0,
+   "why": "Without organising people work blind. See §5.1."
+  },
+  {
+   "id": "160-05-I18",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.2",
+   "stem": "Identify the three questions an organisation chart answers for an employee.",
+   "options": [
+    "Where am I, who is my boss, who are my teammates",
+    "How much do I earn, when is lunch, where is the car park",
+    "What is the mission, vision and goal",
+    "Who are the customers, suppliers and investors"
+   ],
+   "answer": 0,
+   "why": "The chart maps position, reporting line and team. See §5.2."
+  },
+  {
+   "id": "160-05-I19",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.2",
+   "stem": "Describe what the lines on an organisation chart show.",
+   "options": [
+    "Reporting relationships and the flow of authority and communication",
+    "Friendships between staff",
+    "The building's corridors and which offices are connected to each other",
+    "The order in which people were hired and how long each has been with the firm"
+   ],
+   "answer": 0,
+   "why": "Lines show who reports to whom. See §5.2."
+  },
+  {
+   "id": "160-05-I20",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.2",
+   "stem": "Explain why the chapter calls the organisation chart a one-page map.",
+   "options": [
+    "It shows all the jobs and reporting lines of the organisation on one page",
+    "It shows the location of every office in the building and who sits where",
+    "It replaces the need for managers, because everyone can see what they should do",
+    "It lists every employee's salary so that pay differences are open to all"
+   ],
+   "answer": 0,
+   "why": "The chart is a map of jobs, lines and authority. See §5.2."
+  },
+  {
+   "id": "160-05-I21",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.3",
+   "stem": "Describe what travels along the chain of command.",
+   "options": [
+    "Orders downward, and questions and problems upward",
+    "Only salaries, which are decided at the top and paid out at the bottom",
+    "Only customer complaints, which travel upward until someone solves them",
+    "Only written rules, which are issued by head office and read on the frontline"
+   ],
+   "answer": 0,
+   "why": "Orders, questions and problems move along the chain. See §5.3."
+  },
+  {
+   "id": "160-05-I22",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.4",
+   "stem": "Describe what a manager keeps when delegating properly.",
+   "options": [
+    "The final accountability for the result",
+    "Nothing — the task leaves completely and the manager no longer needs to think about it",
+    "The authority, but not the task, so that every decision still comes back for approval",
+    "The daily routine work, which the manager continues to do personally"
+   ],
+   "answer": 0,
+   "why": "Delegate the task, the authority and a clear standard; keep the accountability. See §5.4."
+  },
+  {
+   "id": "160-05-I23",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.4",
+   "stem": "Explain why managers who never delegate harm their teams.",
+   "options": [
+    "Employees have no room to grow and the best ones leave",
+    "Employees get too much free time, because the manager does all the interesting work",
+    "Delegation is required by employment law, so a manager who never delegates can be fined",
+    "Customers prefer dealing with the manager, so employees never build their own relationships"
+   ],
+   "answer": 0,
+   "why": "Two best employees resigned saying 'no room to grow'. See §5.4."
+  },
+  {
+   "id": "160-05-I24",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.5",
+   "stem": "Describe a narrow span of control.",
+   "options": [
+    "A manager leads only a few people with close supervision",
+    "A manager leads many people with little supervision and a lot of independence",
+    "A manager with no team of their own",
+    "A company with no managers at all, in which teams supervise themselves"
+   ],
+   "answer": 0,
+   "why": "Narrow span = few employees, close supervision. See §5.5."
+  },
+  {
+   "id": "160-05-I25",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.5",
+   "stem": "Identify what decentralisation wins.",
+   "options": [
+    "Speed and local fit",
+    "Consistency and control",
+    "Lower salaries",
+    "Fewer managers"
+   ],
+   "answer": 0,
+   "why": "Decentralisation wins speed and local fit; centralisation wins consistency and control. See §5.5."
+  },
+  {
+   "id": "160-05-I26",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.6",
+   "stem": "Describe grouping by function.",
+   "options": [
+    "Putting people with the same specialism together, such as all accountants in one department",
+    "Grouping people by the city or region in which they work",
+    "Grouping people by the product line they make or sell",
+    "Grouping people by the type of customer they serve"
+   ],
+   "answer": 0,
+   "why": "Function = same specialism together. See §5.6."
+  },
+  {
+   "id": "160-05-I27",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.6",
+   "stem": "Describe grouping by product.",
+   "options": [
+    "Each product line owns its own results end to end",
+    "All marketing staff sit together in one department serving every line",
+    "Teams are split by emirate, with each emirate selling the full range",
+    "Teams are split by customer size, from individuals to large corporates"
+   ],
+   "answer": 0,
+   "why": "Product grouping gives each line full ownership. See §5.6."
+  },
+  {
+   "id": "160-05-I28",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.7",
+   "stem": "Explain why specialisation needs coordination.",
+   "options": [
+    "Specialised departments only create value when their work joins up for the customer",
+    "Specialists never make mistakes, so coordination is needed only for the generalists",
+    "Coordination replaces specialisation once the organisation has grown large enough",
+    "Specialists do not need managers, so coordination is how the organisation controls them"
+   ],
+   "answer": 0,
+   "why": "Coordination is the price of specialisation. See §5.7."
+  },
+  {
+   "id": "160-05-I29",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.7",
+   "stem": "Describe the idea of one person accountable for the whole experience.",
+   "options": [
+    "A single owner who follows the customer across departments so nothing falls between the chairs",
+    "Every department has its own boss who answers for that department's part of the work",
+    "The customer manages the process by telling each department what the previous one did",
+    "Nobody is accountable, because the whole experience is the result of everybody's work"
+   ],
+   "answer": 0,
+   "why": "One accountable person stops work falling between the chairs. See §5.7."
+  },
+  {
+   "id": "160-05-I30",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.8",
+   "stem": "Describe the chapter's advice for a growing company.",
+   "options": [
+    "Redraw the chart, spans and delegation map as the company grows",
+    "Keep the founder approving everything, so that quality and culture are protected during growth",
+    "Hire managers in title only, so that staff have someone to report to without changing who decides",
+    "Stop growing once the structure that fitted the original team starts to show strain"
+   ],
+   "answer": 0,
+   "why": "Organising is not done once. See §5.8."
+  },
+  {
+   "id": "160-05-I31",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.8",
+   "stem": "Explain why the founder of a 90-person company becomes a bottleneck.",
+   "options": [
+    "Every decision waits for one person who cannot handle them all",
+    "Founders are lazy once the company is established",
+    "Employees refuse to decide because they fear being blamed for mistakes",
+    "The company has too few customers to justify more than one decision-maker"
+   ],
+   "answer": 0,
+   "why": "Extreme centralisation that fitted 15 people broke at 90. See §5.8."
+  },
+  {
+   "id": "160-05-I32",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "5.8",
+   "stem": "Identify a sign that a structure has broken.",
+   "options": [
+    "Managers quit saying they are managers in title only",
+    "Profits are rising faster than headcount",
+    "Customers are happy and the review scores are improving",
+    "The chart is published and every employee has a copy of it"
+   ],
+   "answer": 0,
+   "why": "Managers without real authority are a sign the structure is broken. See §5.8."
+  },
+  {
+   "id": "160-05-A16",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.1",
+   "stem": "Analyse a new restaurant where two waiters take the same table while another table waits. Determine the missing function.",
+   "options": [
+    "Organising — no clear assignment of who does what",
+    "Planning — no goal for the number of tables",
+    "Controlling — no measurement of how long each table waits",
+    "Leading — no motivation, so the waiters compete for the easy tables"
+   ],
+   "answer": 0,
+   "why": "Duplicated work and missed tasks are organising failures. See §5.1."
+  },
+  {
+   "id": "160-05-A17",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.1",
+   "stem": "Select the organising action that fixes 'nobody knows who to report to'.",
+   "options": [
+    "Publish a simple chart with one boss per person",
+    "Raise salaries so that employees are willing to work without clear direction",
+    "Hold a motivation speech so that employees feel part of one team",
+    "Set a sales target so that everyone knows what the business is trying to achieve"
+   ],
+   "answer": 0,
+   "why": "Structure answers who reports to whom. See §5.1."
+  },
+  {
+   "id": "160-05-A18",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.1",
+   "stem": "Determine the chapter's view of a manager who says 'everyone just helps each other'.",
+   "options": [
+    "It is missing structure — people complain about working blind, not about working hard",
+    "It is ideal teamwork, because the staff share the work without waiting for orders",
+    "It is good delegation, because the manager has handed the work to the team",
+    "It is a wide span of control, because the manager supervises everyone lightly"
+   ],
+   "answer": 0,
+   "why": "Nobody complains about working hard; everyone complains about working blind. See §5.1."
+  },
+  {
+   "id": "160-05-A19",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.4",
+   "stem": "Determine the chapter's name for giving someone a task without the authority to complete it.",
+   "options": [
+    "A trap, not delegation",
+    "Good delegation, because the manager keeps control of the decisions",
+    "Coordination, because the task is shared between the manager and the employee",
+    "Decentralisation, because the task has moved down the chart"
+   ],
+   "answer": 0,
+   "why": "Task without authority is a trap. See §5.4."
+  },
+  {
+   "id": "160-05-A20",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.4",
+   "stem": "Select the correct way to delegate the weekly supply order.",
+   "options": [
+    "Give the task, the authority to order up to a limit, and a clear standard; keep accountability",
+    "Give the task but approve every item yourself before the order is sent to the supplier",
+    "Give the task and never check it again, because checking shows a lack of trust",
+    "Give the task to three people at once so that someone is always available to do it"
+   ],
+   "answer": 0,
+   "why": "Task + authority + standard, keep accountability. See §5.4."
+  },
+  {
+   "id": "160-05-A21",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.5",
+   "stem": "Select the right span of control for a call centre of well-trained agents doing routine calls.",
+   "options": [
+    "Wide",
+    "Narrow",
+    "None",
+    "One agent per manager"
+   ],
+   "answer": 0,
+   "why": "Routine trained work fits a wide span. See §5.5."
+  },
+  {
+   "id": "160-05-A22",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.6",
+   "stem": "Select the grouping for a bank that serves students, families and large companies very differently.",
+   "options": [
+    "By customer type",
+    "By geography",
+    "By product",
+    "By function"
+   ],
+   "answer": 0,
+   "why": "Customer needs differ most. See §5.6."
+  },
+  {
+   "id": "160-05-A23",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.7",
+   "stem": "Select the coordination tool for three departments that keep blaming each other.",
+   "options": [
+    "A shared dashboard and clear handover rules",
+    "Longer hours so that the departments have more time to resolve their disputes",
+    "A bigger office so that the three departments can sit together on one floor",
+    "Replacing the slowest department with an outside supplier that meets its deadlines"
+   ],
+   "answer": 0,
+   "why": "Shared plans, handover rules and one accountable person coordinate. See §5.7."
+  },
+  {
+   "id": "160-05-A24",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.7",
+   "stem": "Analyse a patient who was discharged without medicine because the ward thought the pharmacy would deliver it and the pharmacy thought the ward would collect it. Determine the failure.",
+   "options": [
+    "Coordination — an assumed handover",
+    "Span of control — the ward manager had too many nurses to supervise",
+    "Delegation — the pharmacist delegated the delivery without the authority to do so",
+    "Departmentalisation — the ward and the pharmacy are grouped by the wrong principle"
+   ],
+   "answer": 0,
+   "why": "Assumed hand-offs let work fall between the chairs. See §5.7."
+  },
+  {
+   "id": "160-05-A25",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.7",
+   "stem": "Determine the first fix for a hotel where rooms are handed over late between housekeeping and reception.",
+   "options": [
+    "Write a clear handover rule with a time and an owner",
+    "Hire more receptionists so that someone is always free to check the rooms",
+    "Lower the room price so that guests complain less when the room is late",
+    "Close the restaurant so that housekeeping staff can concentrate on the rooms"
+   ],
+   "answer": 0,
+   "why": "Handover rules are a coordination tool. See §5.7."
+  },
+  {
+   "id": "160-05-A26",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "5.8",
+   "stem": "Analyse a company of 60 where every purchase still needs the founder's signature. Determine the fix.",
+   "options": [
+    "Delegate decision rights by money threshold and replace daily approvals with a weekly dashboard",
+    "Hire a second founder who shares the signing duty so that the queue moves twice as fast",
+    "Stop all purchases until the founder has time to review the purchasing policy",
+    "Ask staff to work longer hours so that purchases can be prepared before the founder arrives"
+   ],
+   "answer": 0,
+   "why": "Delegate by threshold; keep the big decisions at the top. See §5.8."
+  },
+  {
+   "id": "160-05-A27",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.8",
+   "stem": "Select the decisions the chapter says should stay at the top as a company grows.",
+   "options": [
+    "Hiring, pricing and brand",
+    "Daily supply orders from regular suppliers",
+    "Shift swaps between members of the same team",
+    "Small discounts offered to regular customers"
+   ],
+   "answer": 0,
+   "why": "Keep hiring, pricing and brand at the top. See §5.8."
+  },
+  {
+   "id": "160-05-A28",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "5.8",
+   "stem": "Determine the chapter's reason for publishing a new chart after reorganising.",
+   "options": [
+    "So everyone knows the new roles and reporting lines",
+    "To impress investors with a professional-looking organisation",
+    "Because the law requires companies above a certain size to publish their structure",
+    "To replace delegation, since a published chart tells everyone what to do"
+   ],
+   "answer": 0,
+   "why": "A published chart makes the new structure real. See §5.8."
+  }
+ ]
+}

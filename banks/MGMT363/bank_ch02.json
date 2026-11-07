@@ -1,1 +1,1037 @@
-{"subject": "MGMT363", "chapter": 2, "title": "Problem Framing and Decomposition", "clos": ["CLO 1", "CLO 2"], "source": "MGMT363_Chapter2.pptx", "status": "published", "questions": [{"id": "363-02-I01", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.1", "stem": "Describe a mess.", "options": ["A tangle of difficulties with no clear edge, such as 'things are not working in the branch'", "A specific gap between what is and what should be", "A visible sign that something is wrong", "A solution waiting to be approved"], "answer": 0, "why": "You cannot solve a mess; you can only cut a problem out of it. See §2.1."}, {"id": "363-02-I02", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.1", "stem": "Describe a symptom.", "options": ["The visible sign that something is wrong, such as 'complaints are up 40%'", "The cause of the trouble", "A gap written so you would know if it closed", "A tangle with no edge"], "answer": 0, "why": "Real, measurable — and not the thing to fix. See §2.1."}, {"id": "363-02-I03", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.1", "stem": "Describe a problem as the chapter defines it.", "options": ["A specific gap between what is happening and what should happen, written so you would know if it closed", "Anything a manager complains about", "The first solution that comes to mind", "A symptom with a number attached"], "answer": 0, "why": "This is the only one you can work on. See §2.1."}, {"id": "363-02-I04", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.1", "stem": "Identify the test that tells you whether you are still holding a mess or a symptom.", "options": ["Ask what evidence would show the problem is solved — if you cannot say, it is not yet a problem", "Ask the boss", "Count the complaints", "Check the budget"], "answer": 0, "why": "If you cannot name the evidence of solution, you have a mess or a symptom. See §2.1."}, {"id": "363-02-I05", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.1", "stem": "Explain why treating symptoms makes problems come back.", "options": ["The cause is untouched, so the visible sign returns", "Symptoms are not real", "Customers prefer symptoms", "Symptoms cannot be measured"], "answer": 0, "why": "Treating symptoms is why problems come back. See §2.1."}, {"id": "363-02-I06", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.2", "stem": "Describe what actually solved the elevator problem.", "options": ["Mirrors in the lobbies — the wait stopped feeling long and complaints stopped", "Faster motors", "A new shaft", "Fewer tenants"], "answer": 0, "why": "Nothing about the lifts changed. See §2.2."}, {"id": "363-02-I07", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.2", "stem": "Explain the real lesson of the elevator case.", "options": ["The frame decided which solutions were ever considered — the first frame ruled out the cheapest answer", "Always install mirrors", "Engineers are useless", "Tenants complain too much"], "answer": 0, "why": "The lesson is not 'install mirrors'. See §2.2."}, {"id": "363-02-I08", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.2", "stem": "Identify the frame that made mirrors visible as a solution.", "options": ["'Waiting feels unpleasant'", "'The lifts are too slow'", "'People wait too long'", "'The building is old'"], "answer": 0, "why": "Each frame opens different solutions at different costs. See §2.2."}, {"id": "363-02-I09", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.2", "stem": "Identify the solutions the frame 'the lifts are too slow' allows.", "options": ["Faster motors, a new shaft, better scheduling — costing millions", "Mirrors and screens", "Stagger start times", "Lower rent"], "answer": 0, "why": "An engineering frame gives engineering solutions. See §2.2."}, {"id": "363-02-I10", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.3", "stem": "Identify the four parts of a testable problem statement.", "options": ["The gap, the evidence, the scope, the constraint", "The cause, the solution, the budget, the owner", "The mess, the symptom, the problem, the plan", "The who, the why, the app, the deadline"], "answer": 0, "why": "Miss one and the statement cannot be tested. See §2.3."}, {"id": "363-02-I11", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.3", "stem": "Describe the 'gap' part of a problem statement.", "options": ["What is happening versus what should happen, in numbers — 'average wait 14 min; target 5'", "Who and where it applies", "What cannot change", "How you know"], "answer": 0, "why": "Weak: 'service is poor'. Strong: 14 min vs target 5. See §2.3."}, {"id": "363-02-I12", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.3", "stem": "Describe the 'scope' part of a problem statement.", "options": ["Who and where it applies — 'front counter, Deira, peak hours'", "How you know, and since when", "What cannot change", "The target number"], "answer": 0, "why": "Weak scope: 'the company'. See §2.3."}, {"id": "363-02-I13", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.3", "stem": "Describe the 'constraint' part of a problem statement.", "options": ["What cannot change — 'no extra staff before Q4'", "The gap in numbers", "The evidence source", "The chosen solution"], "answer": 0, "why": "The constraint names what cannot change. See §2.3."}, {"id": "363-02-I14", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.3", "stem": "Explain what must be absent from a strong problem statement.", "options": ["A solution — the moment 'we need an app' appears, framing has stopped", "Numbers", "Evidence", "A date"], "answer": 0, "why": "A strong problem statement contains no solution. See §2.3."}, {"id": "363-02-I15", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.3", "stem": "Describe the 'evidence' part of a problem statement.", "options": ["How you know, and since when — 'queue logs, Jan–Apr, 3 branches'", "The constraint on staff", "The solution budget", "The owner's opinion"], "answer": 0, "why": "Weak: none. Strong: queue logs with dates. See §2.3."}, {"id": "363-02-I16", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.4", "stem": "Describe an issue tree.", "options": ["A way of breaking a big problem into branches, and branches into smaller ones, until each is something a person could investigate this week", "A list of solutions", "A chart of who reports to whom", "A timeline of the project"], "answer": 0, "why": "'Sales are down' is too big; the tree cuts it. See §2.4."}, {"id": "363-02-I17", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.4", "stem": "Identify the two rules for an issue tree.", "options": ["No gaps and no overlaps", "Five branches and five levels", "One cause and one effect", "Big first and small last"], "answer": 0, "why": "Branches must cover the whole problem above, and each item sits in one branch only. See §2.4."}, {"id": "363-02-I18", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.4", "stem": "Explain the 'no overlaps' rule.", "options": ["An item must sit in one branch only, or you will count it twice", "Every branch must have five items", "Branches must overlap to be safe", "Overlaps make the tree bigger"], "answer": 0, "why": "Overlaps double-count. See §2.4."}, {"id": "363-02-I19", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.4", "stem": "Explain why students who make five branches at a level have usually gone wrong.", "options": ["They have almost always overlapped the branches", "Five is too few", "Trees need ten branches", "Five branches cost too much"], "answer": 0, "why": "Two branches at each level is usually enough. See §2.4."}, {"id": "363-02-I20", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.4", "stem": "Identify the first branches in the chapter's restaurant example.", "options": ["Fewer customers · customers spend less per visit", "Bad food · bad staff", "New competitor · old menu", "Prices · rent"], "answer": 0, "why": "Revenue fell 18% → fewer customers or less spend per visit. See §2.4."}, {"id": "363-02-I21", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.5", "stem": "Identify the four questions used to size a branch.", "options": ["How big is it? Can I get evidence? Could we change it? How fast could we know?", "Who is to blame? How much will it cost? Who approves? When is it due?", "Is it a mess? A symptom? A problem? A plan?", "Who? What? Where? When?"], "answer": 0, "why": "Size the branches, then work on the biggest useful one. See §2.5."}, {"id": "363-02-I22", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.5", "stem": "Describe the rule for choosing the branch to start on.", "options": ["Work first on the branch that is large, measurable and within your control", "Start with the easiest", "Start with the cheapest", "Start with the boss's favourite"], "answer": 0, "why": "Large, measurable, within your control. See §2.5."}, {"id": "363-02-I23", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.5", "stem": "Explain why a branch you cannot measure is a problem.", "options": ["It will stay an opinion forever", "It is always the biggest", "It costs the most", "It must be the cause"], "answer": 0, "why": "A branch you cannot measure stays an opinion. See §2.5."}, {"id": "363-02-I24", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.5", "stem": "Explain what to do if no branch is large, measurable and controllable.", "options": ["Say so plainly — that is a finding, not a failure", "Choose one anyway", "Give up the project", "Invent a measurement"], "answer": 0, "why": "Saying so plainly is a finding. See §2.5."}, {"id": "363-02-I25", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.5", "stem": "Explain why the exchange rate can be a cause and still be useless.", "options": ["You cannot change it, so it fails the 'could we change it?' question", "It is not measurable", "It is too small", "It is a symptom"], "answer": 0, "why": "A true cause outside your control does not help you. See §2.5."}, {"id": "363-02-I26", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.6", "stem": "Explain why framing is an exercise of power.", "options": ["Whoever writes the frame decides what counts as the problem", "Framing is done by the most senior person", "Only consultants frame", "Framing costs money"], "answer": 0, "why": "Framing is not neutral. See §2.6."}, {"id": "363-02-I27", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.6", "stem": "Explain what the frame 'staff motivation' rules out without saying so.", "options": ["'My supervision' as the cause", "All solutions", "Staff opinions", "The budget"], "answer": 0, "why": "The manager's frame excludes the manager. See §2.6."}, {"id": "363-02-I28", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.6", "stem": "Identify the professional question to ask any client about their problem.", "options": ["'What makes you say that is the problem?'", "'How much will you pay?'", "'Which app do you want?'", "'Who is to blame?'"], "answer": 0, "why": "Ask it politely, and always. See §2.6."}, {"id": "363-02-I29", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.6", "stem": "Explain why the people closest to the work should be asked first.", "options": ["They hold the evidence and are usually not asked", "They decide the budget", "They write the frame", "They own the company"], "answer": 0, "why": "Ask them first. See §2.6."}, {"id": "363-02-I30", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.6", "stem": "Explain what a brief that names the solution has done.", "options": ["Ended the framing stage before it began", "Saved time", "Proved the problem", "Found the cause"], "answer": 0, "why": "'We need an app' ends framing. See §2.6."}, {"id": "363-02-I31", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.1", "stem": "Identify the kind of statement 'things are not working in the branch' is.", "options": ["A mess", "A symptom", "A problem", "A constraint"], "answer": 0, "why": "No clear edge = a mess. See §2.1."}, {"id": "363-02-I32", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.2", "stem": "Identify the cost level of the 'waiting feels unpleasant' frame.", "options": ["Very small", "Millions", "Large", "Unknown"], "answer": 0, "why": "Mirrors and screens cost very little. See §2.2."}, {"id": "363-02-A01", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.1", "stem": "Classify 'our newest branch is failing' as said by the pharmacy owner.", "options": ["A mess — no clear edge", "A problem — a tested gap", "A symptom with a number", "A constraint"], "answer": 0, "why": "The owner hands you a mess. See §2.1 and Exercise 1."}, {"id": "363-02-A02", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.1", "stem": "Classify 'sales are 30% below the other branches'.", "options": ["A symptom — a measurable sign, not the thing to fix", "A mess", "A solution", "A constraint"], "answer": 0, "why": "Real, measurable, and not the thing to fix. See §2.1."}, {"id": "363-02-A03", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.1", "stem": "Classify 'he wants a marketing campaign'.", "options": ["A solution smuggled into the problem", "A symptom", "A problem statement", "Evidence"], "answer": 0, "why": "The owner has already chosen the solution. See §2.1 and §2.6."}, {"id": "363-02-A04", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.1", "stem": "Determine the chapter's view when a manager says 'our staff are unmotivated'.", "options": ["It may be the manager's or the system's problem — the frame decides what you investigate first", "It is always the staff's problem", "It is never a problem", "It is a solution"], "answer": 0, "why": "Whose problem it is changes what you investigate. See §2.1 and §2.6."}, {"id": "363-02-A05", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.2", "stem": "Analyse a client who says 'we need a mobile app'. Determine what has been decided and ruled out.", "options": ["The solution is decided and every non-app answer is ruled out without discussion", "Nothing has been decided", "Only the budget is decided", "The problem has been framed well"], "answer": 0, "why": "Five words that end framing. See §2.2 and §2.6."}, {"id": "363-02-A06", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.2", "stem": "Select the reframe of 'attendance at 8 a.m. lectures is poor' that opens the most new solutions.", "options": ["'Students do not see enough value in being there at 8 a.m.'", "'We need an attendance app'", "'Students are lazy'", "'The register is wrong'"], "answer": 0, "why": "A wider frame admits more than one answer, like the elevator rows. See §2.2 and Exercise 3."}, {"id": "363-02-A07", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.2", "stem": "Analyse the frame 'people wait too long' for the lifts. Determine a solution it makes visible.", "options": ["Stagger start times or add express floors", "Faster motors", "Mirrors", "Lower rent"], "answer": 0, "why": "Each frame opens its own solutions. See §2.2."}, {"id": "363-02-A08", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.2", "stem": "Determine the chapter's test for a good frame to take to a client.", "options": ["Wide enough to admit more than one answer, narrow enough to be testable", "As narrow as possible", "As wide as possible", "The one the client already chose"], "answer": 0, "why": "Wide enough and narrow enough. See Exercise 3 and §2.2."}, {"id": "363-02-A09", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.3", "stem": "Classify 'service is poor' as a gap statement.", "options": ["Weak — no numbers, cannot be tested", "Strong — short and clear", "Strong — it names the scope", "Weak — it names a solution"], "answer": 0, "why": "A gap needs what is vs what should be, in numbers. See §2.3."}, {"id": "363-02-A10", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.3", "stem": "Select the strongest problem statement.", "options": ["'Average prescription wait 22 min vs sister branches 9; till data, 11 months; new Ajman branch, all hours; no new staff this quarter'", "'The branch is slow and needs marketing'", "'Customers are unhappy'", "'We need a pharmacy robot'"], "answer": 0, "why": "Gap, evidence, scope, constraint — and no solution. See §2.3."}, {"id": "363-02-A11", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.3", "stem": "Analyse the statement 'wait is 14 minutes; target 5; front counter, Deira, peak hours; no extra staff before Q4'. Determine the missing part.", "options": ["Evidence — how you know and since when", "The gap", "The scope", "The constraint"], "answer": 0, "why": "Four parts: gap, evidence, scope, constraint. See §2.3."}, {"id": "363-02-A12", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.3", "stem": "Determine what to write when you lack evidence for a part of the statement.", "options": ["The question you would ask, instead of guessing", "A guess that sounds right", "Nothing — leave it blank", "The solution"], "answer": 0, "why": "Write the question instead of guessing. See Exercise 1 and §2.3."}, {"id": "363-02-A13", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.3", "stem": "Classify 'we need an attendance app that texts absent students' as a problem statement.", "options": ["Not a problem statement — it contains the solution", "A strong statement", "A good gap", "A good constraint"], "answer": 0, "why": "A strong statement contains no solution. See §2.3."}, {"id": "363-02-A14", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.4", "stem": "Analyse a tree whose first branches are 'fewer customers', 'lower prices' and 'fewer returning customers'. Determine the fault.", "options": ["Overlap — returning customers already sit inside fewer customers", "A gap", "Too few branches", "No fault"], "answer": 0, "why": "An item must sit in one branch only. See §2.4."}, {"id": "363-02-A15", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.4", "stem": "Analyse a tree for 'revenue fell' with only the branch 'fewer customers'. Determine the fault.", "options": ["A gap — customers spending less per visit is not covered", "An overlap", "Too many branches", "No fault"], "answer": 0, "why": "Branches must cover the whole problem above them. See §2.4."}, {"id": "363-02-A16", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.4", "stem": "Select the testable bottom branch in the restaurant example.", "options": ["'Regulars who used to come weekly now come monthly — check the loyalty data'", "'Revenue fell 18%'", "'Fewer customers'", "'The economy is bad'"], "answer": 0, "why": "Testable = something a person could check this week. See §2.4."}, {"id": "363-02-A17", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.4", "stem": "Determine the depth of the pharmacy issue tree Exercise 2 asks for.", "options": ["Three levels, checked for gaps and overlaps", "One level", "Ten levels", "As many as possible"], "answer": 0, "why": "Three levels deep. See Exercise 2 and §2.4."}, {"id": "363-02-A18", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.5", "stem": "Analyse a branch worth 2% of the gap. Determine the chapter's advice.", "options": ["Not worth a week of your time — size it and move on", "Start with it — it is easy", "Investigate it first", "Report it as the cause"], "answer": 0, "why": "A 2% branch is not worth a week. See §2.5."}, {"id": "363-02-A19", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.5", "stem": "Select the branch to start on: (a) big, measurable, controllable; (b) big, no data; (c) small, easy.", "options": ["(a) — large, measurable and within your control", "(b) — biggest first", "(c) — fastest first", "None — wait for more data"], "answer": 0, "why": "The rule names all three conditions. See §2.5."}, {"id": "363-02-A20", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.5", "stem": "Analyse 'the new clinic next door took our customers' as a branch. Determine why it may be abandoned even if true.", "options": ["You cannot change the clinic — it fails 'could we actually change it?'", "It is too small", "It cannot be measured", "It is not a cause"], "answer": 0, "why": "A true cause outside your control is useless to you. See §2.5 and Exercise 2."}, {"id": "363-02-A21", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.5", "stem": "Determine the branch the chapter prefers when two are equally big.", "options": ["The one you can settle in days rather than months", "The more expensive one", "The one the client likes", "The one with no data"], "answer": 0, "why": "Prefer the branch you can settle fast. See §2.5."}, {"id": "363-02-A22", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.6", "stem": "Analyse the department head's brief for an attendance app. Determine what the frame ruled out.", "options": ["Every reason for absence other than forgetting — timetable, teaching, value of the lecture", "Nothing", "Only the budget", "The students"], "answer": 0, "why": "A brief that names the solution rules out the rest. See Exercise 3 and §2.6."}, {"id": "363-02-A23", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.6", "stem": "Determine how to raise with the pharmacy owner that his marketing campaign may be premature.", "options": ["Ask politely 'what makes you say that is the problem?' and show the evidence sorted into mess, symptom and problem", "Tell him he is wrong", "Run the campaign anyway", "Refuse the project"], "answer": 0, "why": "The professional question, asked politely. See §2.6."}, {"id": "363-02-A24", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.6", "stem": "Analyse a project where the group simply agrees with the client's framing. Determine how the report is graded.", "options": ["Poorly — the report is graded on judging whether it was the right problem, not on agreeing", "Well — the client is always right", "Neutral", "It depends on the solution"], "answer": 0, "why": "Your first task is to establish whether it is the right problem. See §2.6."}, {"id": "363-02-A25", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.6", "stem": "Determine who should be asked first when diagnosing the pharmacy branch.", "options": ["The staff closest to the work — they hold the evidence", "The owner only", "The marketing agency", "The competitor"], "answer": 0, "why": "The people closest to the work are usually not asked. See §2.6."}, {"id": "363-02-A26", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.2", "stem": "Analyse 'the building manager installed mirrors'. Determine which move of the five it shows done well.", "options": ["Frame — a better frame found a cheaper solution", "Decide — the cheapest option won", "Diagnose — the lift motor was tested", "Generate — many options listed"], "answer": 0, "why": "The frame decided which solutions were considered. See §2.2."}, {"id": "363-02-A27", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.1", "stem": "Analyse 'two pharmacists resigned in four months'. Determine what it is.", "options": ["A symptom — a visible sign, possibly of the same underlying problem", "The problem statement", "A constraint", "The solution"], "answer": 0, "why": "Resignations are a visible sign, not the gap itself. See §2.1."}, {"id": "363-02-A28", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.3", "stem": "Determine the constraint in the pharmacy exercise given 'you have two weeks and permission to speak to two staff'.", "options": ["Two weeks and two staff interviews", "No constraint", "The marketing budget", "The clinic next door"], "answer": 0, "why": "Constraints are what cannot change. See §2.3 and Exercise 2."}, {"id": "363-02-A29", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.4", "stem": "Determine the purpose of writing 'testable' at the bottom of a tree.", "options": ["To reach something a person could investigate this week", "To end the project", "To impress the client", "To avoid evidence"], "answer": 0, "why": "Branches end when they are investigable this week. See §2.4."}, {"id": "363-02-A30", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.5", "stem": "Classify the finding 'no branch is both large and within our control'.", "options": ["A legitimate finding to report plainly", "A failure of the group", "A reason to invent data", "A reason to pick the client's favourite"], "answer": 0, "why": "That is a finding, not a failure. See §2.5."}, {"id": "363-02-A31", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.6", "stem": "Select the first task when a client hands you a problem.", "options": ["Establish whether it is the right problem", "Choose the solution", "Price the solution", "Agree with the client"], "answer": 0, "why": "Your first task is to test the frame. See §2.6."}, {"id": "363-02-A32", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.4", "stem": "Analyse a tree where 'new competitor' appears under both 'fewer new customers' and 'fewer returning customers'. Determine the fault.", "options": ["Overlap — the same item sits in two branches and will be counted twice", "A gap", "Correct — competitors affect both", "Too few levels"], "answer": 0, "why": "An item must sit in one branch only. See §2.4."}]}
+{
+ "subject": "MGMT363",
+ "chapter": 2,
+ "title": "Problem Framing and Decomposition",
+ "clos": [
+  "CLO 1",
+  "CLO 2"
+ ],
+ "source": "MGMT363_Chapter2.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "363-02-I01",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Describe a mess.",
+   "options": [
+    "A tangle of difficulties with no clear edge, such as 'things are not working in the branch'",
+    "A specific gap between what is happening and what should happen, written so you would know if it closed",
+    "A visible sign that something is wrong, such as a 40% rise in complaints over three months",
+    "A solution waiting to be approved by the owner before the team can start work on it"
+   ],
+   "answer": 0,
+   "why": "You cannot solve a mess; you can only cut a problem out of it. See §2.1."
+  },
+  {
+   "id": "363-02-I02",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Describe a symptom.",
+   "options": [
+    "The visible sign that something is wrong, such as 'complaints are up 40%'",
+    "The underlying cause of the trouble, which has to be found before anything can be fixed",
+    "A gap written so precisely that you would know the moment it closed",
+    "A tangle of difficulties with no clear edge that nobody in the branch can describe"
+   ],
+   "answer": 0,
+   "why": "Real, measurable — and not the thing to fix. See §2.1."
+  },
+  {
+   "id": "363-02-I03",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Describe a problem as the chapter defines it.",
+   "options": [
+    "A specific gap between what is happening and what should happen, written so you would know if it closed",
+    "Anything a manager complains about in a meeting, as long as it affects the results of the business in a measurable way",
+    "The first solution that comes to mind when a manager hears about a difficulty in the branch",
+    "A symptom with a number attached, such as 'complaints are up 40% since January'"
+   ],
+   "answer": 0,
+   "why": "This is the only one you can work on. See §2.1."
+  },
+  {
+   "id": "363-02-I04",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Identify the test that tells you whether you are still holding a mess or a symptom.",
+   "options": [
+    "Ask what evidence would show the problem is solved — if you cannot say, it is not yet a problem",
+    "Ask the boss whether the problem is worth working on and accept the answer",
+    "Count the complaints and compare the number with the other branches",
+    "Check the budget to see how much money is available to solve it"
+   ],
+   "answer": 0,
+   "why": "If you cannot name the evidence of solution, you have a mess or a symptom. See §2.1."
+  },
+  {
+   "id": "363-02-I05",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Explain why treating symptoms makes problems come back.",
+   "options": [
+    "The cause is untouched, so the visible sign returns",
+    "Symptoms are not real, so treating them wastes money without changing anything",
+    "Customers prefer symptoms, so they complain again once the symptom has gone",
+    "Symptoms cannot be measured, so nobody knows whether the treatment has worked"
+   ],
+   "answer": 0,
+   "why": "Treating symptoms is why problems come back. See §2.1."
+  },
+  {
+   "id": "363-02-I06",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.2",
+   "stem": "Describe what actually solved the elevator problem.",
+   "options": [
+    "Mirrors in the lobbies — the wait stopped feeling long and complaints stopped",
+    "Faster motors, which cut the average wait from three minutes to under two",
+    "A new shaft and an extra lift, which the building owner paid for over five years",
+    "Fewer tenants, because the complaints stopped once several offices moved out"
+   ],
+   "answer": 0,
+   "why": "Nothing about the lifts changed. See §2.2."
+  },
+  {
+   "id": "363-02-I07",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.2",
+   "stem": "Explain the real lesson of the elevator case.",
+   "options": [
+    "The frame decided which solutions were ever considered — the first frame ruled out the cheapest answer",
+    "Always install mirrors when customers complain about waiting, because the wait is mostly psychological",
+    "Engineers are useless on business problems because they only see mechanical causes",
+    "Tenants complain too much and managers should wait for complaints to fade before spending money"
+   ],
+   "answer": 0,
+   "why": "The lesson is not 'install mirrors'. See §2.2."
+  },
+  {
+   "id": "363-02-I08",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.2",
+   "stem": "Identify the frame that made mirrors visible as a solution.",
+   "options": [
+    "'Waiting feels unpleasant'",
+    "'The lifts are too slow'",
+    "'People wait too long for the lifts'",
+    "'The building is old'"
+   ],
+   "answer": 0,
+   "why": "Each frame opens different solutions at different costs. See §2.2."
+  },
+  {
+   "id": "363-02-I09",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.2",
+   "stem": "Identify the solutions the frame 'the lifts are too slow' allows.",
+   "options": [
+    "Faster motors, a new shaft, better scheduling — costing millions",
+    "Mirrors and screens in the lobbies, costing a few thousand dirhams",
+    "Stagger start times and add express floors, costing little",
+    "Lower the rent to compensate tenants for the waiting"
+   ],
+   "answer": 0,
+   "why": "An engineering frame gives engineering solutions. See §2.2."
+  },
+  {
+   "id": "363-02-I10",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Identify the four parts of a testable problem statement.",
+   "options": [
+    "The gap, the evidence, the scope, the constraint",
+    "The cause, the solution, the budget, the owner",
+    "The mess, the symptom, the problem, the plan",
+    "The who, the why, the method and the deadline"
+   ],
+   "answer": 0,
+   "why": "Miss one and the statement cannot be tested. See §2.3."
+  },
+  {
+   "id": "363-02-I11",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Describe the 'gap' part of a problem statement.",
+   "options": [
+    "What is happening versus what should happen, in numbers — 'average wait 14 min; target 5'",
+    "Who and where the problem applies — 'front counter, Deira branch, peak hours only'",
+    "What cannot change while the problem is being solved — 'no extra staff before the fourth quarter'",
+    "How you know the problem exists, and since when — 'queue logs, January to April'"
+   ],
+   "answer": 0,
+   "why": "Weak: 'service is poor'. Strong: 14 min vs target 5. See §2.3."
+  },
+  {
+   "id": "363-02-I12",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Describe the 'scope' part of a problem statement.",
+   "options": [
+    "Who and where it applies — 'front counter, Deira, peak hours'",
+    "How you know, and since when — 'queue logs from January to April'",
+    "What cannot change — 'no extra staff before the fourth quarter'",
+    "The target number — 'average wait of five minutes or less'"
+   ],
+   "answer": 0,
+   "why": "Weak scope: 'the company'. See §2.3."
+  },
+  {
+   "id": "363-02-I13",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Describe the 'constraint' part of a problem statement.",
+   "options": [
+    "What cannot change — 'no extra staff before Q4'",
+    "The gap in numbers — 'average wait 14 minutes against a target of 5'",
+    "The evidence source — 'queue logs from three branches over four months'",
+    "The chosen solution — 'a queue-management app for the front counter'"
+   ],
+   "answer": 0,
+   "why": "The constraint names what cannot change. See §2.3."
+  },
+  {
+   "id": "363-02-I14",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Explain what must be absent from a strong problem statement.",
+   "options": [
+    "A solution — the moment 'we need an app' appears, framing has stopped",
+    "Numbers — they belong in the diagnosis and the analysis, not in the problem statement itself",
+    "Evidence — it should be collected after the problem has been agreed",
+    "A date — deadlines belong in the plan, not in the problem statement"
+   ],
+   "answer": 0,
+   "why": "A strong problem statement contains no solution. See §2.3."
+  },
+  {
+   "id": "363-02-I15",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Describe the 'evidence' part of a problem statement.",
+   "options": [
+    "How you know, and since when — 'queue logs, Jan–Apr, 3 branches'",
+    "The constraint on staff — 'no new hires before the fourth quarter'",
+    "The solution budget — 'up to 40,000 dirhams approved by the owner'",
+    "The owner's opinion — 'the owner believes the staff are too slow'"
+   ],
+   "answer": 0,
+   "why": "Weak: none. Strong: queue logs with dates. See §2.3."
+  },
+  {
+   "id": "363-02-I16",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Describe an issue tree.",
+   "options": [
+    "A way of breaking a big problem into branches, and branches into smaller ones, until each is something a person could investigate this week",
+    "A list of possible solutions arranged from the cheapest to the most expensive, so that the client can choose",
+    "A chart of who reports to whom in the organisation, used to find the person responsible for the problem",
+    "A timeline of the project showing which part of the problem will be investigated in each week"
+   ],
+   "answer": 0,
+   "why": "'Sales are down' is too big; the tree cuts it. See §2.4."
+  },
+  {
+   "id": "363-02-I17",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Identify the two rules for an issue tree.",
+   "options": [
+    "No gaps and no overlaps",
+    "Five branches and five levels",
+    "One cause and one effect",
+    "Big first and small last"
+   ],
+   "answer": 0,
+   "why": "Branches must cover the whole problem above, and each item sits in one branch only. See §2.4."
+  },
+  {
+   "id": "363-02-I18",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Explain the 'no overlaps' rule.",
+   "options": [
+    "An item must sit in one branch only, or you will count it twice",
+    "Every branch must have exactly five items so that the tree is balanced",
+    "Branches must overlap to be safe, so that nothing is missed",
+    "Overlaps make the tree bigger, which makes it harder to present"
+   ],
+   "answer": 0,
+   "why": "Overlaps double-count. See §2.4."
+  },
+  {
+   "id": "363-02-I19",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Explain why students who make five branches at a level have usually gone wrong.",
+   "options": [
+    "They have almost always overlapped the branches",
+    "Five is too few to cover a problem of any size",
+    "Trees need ten branches at each level to be complete",
+    "Five branches cost too much time to investigate in a week"
+   ],
+   "answer": 0,
+   "why": "Two branches at each level is usually enough. See §2.4."
+  },
+  {
+   "id": "363-02-I20",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Identify the first branches in the chapter's restaurant example.",
+   "options": [
+    "Fewer customers · customers spend less per visit",
+    "Bad food · bad service from the staff",
+    "New competitor nearby · an old menu",
+    "Prices too high · rent too high"
+   ],
+   "answer": 0,
+   "why": "Revenue fell 18% → fewer customers or less spend per visit. See §2.4."
+  },
+  {
+   "id": "363-02-I21",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.5",
+   "stem": "Identify the four questions used to size a branch.",
+   "options": [
+    "How big is it? Can I get evidence? Could we change it? How fast could we know?",
+    "Who is to blame for it? How much will it cost to fix? Who approves the fix? When is it due?",
+    "Is it a mess? Is it a symptom? Is it a problem? Is it a plan?",
+    "Who is involved? What happened? Where did it happen? When did it start?"
+   ],
+   "answer": 0,
+   "why": "Size the branches, then work on the biggest useful one. See §2.5."
+  },
+  {
+   "id": "363-02-I22",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.5",
+   "stem": "Describe the rule for choosing the branch to start on.",
+   "options": [
+    "Work first on the branch that is large, measurable and within your control",
+    "Start with the easiest branch so that the team has an early success",
+    "Start with the cheapest branch to investigate so that the budget lasts",
+    "Start with the boss's favourite branch so that the project has the support it needs to continue"
+   ],
+   "answer": 0,
+   "why": "Large, measurable, within your control. See §2.5."
+  },
+  {
+   "id": "363-02-I23",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.5",
+   "stem": "Explain why a branch you cannot measure is a problem.",
+   "options": [
+    "It will stay an opinion forever",
+    "It is always the biggest branch in the tree",
+    "It costs the most to investigate properly",
+    "It must be the real cause of the problem"
+   ],
+   "answer": 0,
+   "why": "A branch you cannot measure stays an opinion. See §2.5."
+  },
+  {
+   "id": "363-02-I24",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.5",
+   "stem": "Explain what to do if no branch is large, measurable and controllable.",
+   "options": [
+    "Say so plainly — that is a finding, not a failure",
+    "Choose one anyway, because the client expects a recommendation",
+    "Give up the project, because nothing useful can be done",
+    "Invent a measurement so that at least one branch qualifies"
+   ],
+   "answer": 0,
+   "why": "Saying so plainly is a finding. See §2.5."
+  },
+  {
+   "id": "363-02-I25",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.5",
+   "stem": "Explain why the exchange rate can be a cause and still be useless.",
+   "options": [
+    "You cannot change it, so it fails the 'could we change it?' question",
+    "It is not measurable, so it stays an opinion in the report",
+    "It is too small to explain the gap on its own",
+    "It is a symptom rather than a cause of the problem"
+   ],
+   "answer": 0,
+   "why": "A true cause outside your control does not help you. See §2.5."
+  },
+  {
+   "id": "363-02-I26",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.6",
+   "stem": "Explain why framing is an exercise of power.",
+   "options": [
+    "Whoever writes the frame decides what counts as the problem",
+    "Framing is done by the most senior person in the room, whatever the evidence says",
+    "Only consultants frame problems, because managers are too close to the work",
+    "Framing costs money, so the person who pays decides how it is done"
+   ],
+   "answer": 0,
+   "why": "Framing is not neutral. See §2.6."
+  },
+  {
+   "id": "363-02-I27",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.6",
+   "stem": "Explain what the frame 'staff motivation' rules out without saying so.",
+   "options": [
+    "'My supervision' as the cause",
+    "All possible solutions to the problem",
+    "Staff opinions about what is wrong",
+    "The budget for fixing the problem"
+   ],
+   "answer": 0,
+   "why": "The manager's frame excludes the manager. See §2.6."
+  },
+  {
+   "id": "363-02-I28",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.6",
+   "stem": "Identify the professional question to ask any client about their problem.",
+   "options": [
+    "'What makes you say that is the problem?'",
+    "'How much are you prepared to pay to fix it?'",
+    "'Which app or system would you like us to build?'",
+    "'Who in the team is responsible for this?'"
+   ],
+   "answer": 0,
+   "why": "Ask it politely, and always. See §2.6."
+  },
+  {
+   "id": "363-02-I29",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.6",
+   "stem": "Explain why the people closest to the work should be asked first.",
+   "options": [
+    "They hold the evidence and are usually not asked",
+    "They decide the budget for solving the problem",
+    "They write the frame that the consultant works from",
+    "They own the company and will approve the solution"
+   ],
+   "answer": 0,
+   "why": "Ask them first. See §2.6."
+  },
+  {
+   "id": "363-02-I30",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.6",
+   "stem": "Explain what a brief that names the solution has done.",
+   "options": [
+    "Ended the framing stage before it began",
+    "Saved time by skipping the parts of the project that add little",
+    "Proved the problem exists, because the client has already thought about it",
+    "Found the cause, because a solution implies a cause"
+   ],
+   "answer": 0,
+   "why": "'We need an app' ends framing. See §2.6."
+  },
+  {
+   "id": "363-02-I31",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Identify the kind of statement 'things are not working in the branch' is.",
+   "options": [
+    "A mess",
+    "A symptom",
+    "A problem",
+    "A constraint"
+   ],
+   "answer": 0,
+   "why": "No clear edge = a mess. See §2.1."
+  },
+  {
+   "id": "363-02-I32",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.2",
+   "stem": "Identify the cost level of the 'waiting feels unpleasant' frame.",
+   "options": [
+    "Very small",
+    "Millions of dirhams",
+    "Large",
+    "Unknown"
+   ],
+   "answer": 0,
+   "why": "Mirrors and screens cost very little. See §2.2."
+  },
+  {
+   "id": "363-02-A01",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.1",
+   "stem": "Classify 'our newest branch is failing' as said by the pharmacy owner.",
+   "options": [
+    "A mess — no clear edge",
+    "A problem — a tested gap",
+    "A symptom with a number",
+    "A constraint"
+   ],
+   "answer": 0,
+   "why": "The owner hands you a mess. See §2.1 and Exercise 1."
+  },
+  {
+   "id": "363-02-A02",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.1",
+   "stem": "Classify 'sales are 30% below the other branches'.",
+   "options": [
+    "A symptom — a measurable sign, not the thing to fix",
+    "A mess — a tangle of difficulties with no clear edge",
+    "A solution — the branch needs to raise its sales by 30%",
+    "A constraint — the branch cannot change its position relative to the others"
+   ],
+   "answer": 0,
+   "why": "Real, measurable, and not the thing to fix. See §2.1."
+  },
+  {
+   "id": "363-02-A03",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.1",
+   "stem": "Classify 'he wants a marketing campaign'.",
+   "options": [
+    "A solution smuggled into the problem",
+    "A symptom — the owner's wish shows that something is wrong",
+    "A problem statement — it says what the owner wants to happen",
+    "Evidence — the owner's view is a source of information"
+   ],
+   "answer": 0,
+   "why": "The owner has already chosen the solution. See §2.1 and §2.6."
+  },
+  {
+   "id": "363-02-A04",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.1",
+   "stem": "Determine the chapter's view when a manager says 'our staff are unmotivated'.",
+   "options": [
+    "It may be the manager's or the system's problem — the frame decides what you investigate first",
+    "It is always the staff's problem, because motivation belongs to the individual",
+    "It is never a problem, because motivation cannot be measured",
+    "It is a solution, because the manager has decided what needs to change"
+   ],
+   "answer": 0,
+   "why": "Whose problem it is changes what you investigate. See §2.1 and §2.6."
+  },
+  {
+   "id": "363-02-A05",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.2",
+   "stem": "Analyse a client who says 'we need a mobile app'. Determine what has been decided and ruled out.",
+   "options": [
+    "The solution is decided and every non-app answer is ruled out without discussion",
+    "Nothing has been decided, because the client is only expressing a preference about the kind of solution",
+    "Only the budget is decided, because an app has a known cost",
+    "The problem has been framed well, because the client knows what is needed"
+   ],
+   "answer": 0,
+   "why": "Five words that end framing. See §2.2 and §2.6."
+  },
+  {
+   "id": "363-02-A06",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.2",
+   "stem": "Select the reframe of 'attendance at 8 a.m. lectures is poor' that opens the most new solutions.",
+   "options": [
+    "'Students do not see enough value in being there at 8 a.m.'",
+    "'We need an attendance app that texts students who are absent'",
+    "'Students are lazy and prefer to sleep late'",
+    "'The register is wrong and attendance is better than it looks'"
+   ],
+   "answer": 0,
+   "why": "A wider frame admits more than one answer, like the elevator rows. See §2.2 and Exercise 3."
+  },
+  {
+   "id": "363-02-A07",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.2",
+   "stem": "Analyse the frame 'people wait too long' for the lifts. Determine a solution it makes visible.",
+   "options": [
+    "Stagger start times or add express floors",
+    "Faster motors in the existing lifts",
+    "Mirrors in the lobbies on every floor",
+    "Lower rent for tenants on the upper floors"
+   ],
+   "answer": 0,
+   "why": "Each frame opens its own solutions. See §2.2."
+  },
+  {
+   "id": "363-02-A08",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.2",
+   "stem": "Determine the chapter's test for a good frame to take to a client.",
+   "options": [
+    "Wide enough to admit more than one answer, narrow enough to be testable",
+    "As narrow as possible, so that the investigation is quick",
+    "As wide as possible, so that no cause is missed",
+    "The one the client already chose, so that the project has the client's full support from the start"
+   ],
+   "answer": 0,
+   "why": "Wide enough and narrow enough. See Exercise 3 and §2.2."
+  },
+  {
+   "id": "363-02-A09",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.3",
+   "stem": "Classify 'service is poor' as a gap statement.",
+   "options": [
+    "Weak — no numbers, cannot be tested",
+    "Strong — short and clear enough for any manager to understand",
+    "Strong — it names the scope of the problem",
+    "Weak — it names a solution instead of a gap"
+   ],
+   "answer": 0,
+   "why": "A gap needs what is vs what should be, in numbers. See §2.3."
+  },
+  {
+   "id": "363-02-A10",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.3",
+   "stem": "Select the strongest problem statement.",
+   "options": [
+    "'Average prescription wait 22 min vs sister branches 9; till data, 11 months; new Ajman branch, all hours; no new staff this quarter'",
+    "'The branch is slow and needs a marketing campaign to bring back the customers it has lost to the clinic next door since it opened last spring'",
+    "'Customers are unhappy with the service at the new branch and have been complaining to the staff and the owner for several months'",
+    "'We need a pharmacy robot to speed up prescriptions at the new branch so that it can match the performance of the older branches'"
+   ],
+   "answer": 0,
+   "why": "Gap, evidence, scope, constraint — and no solution. See §2.3."
+  },
+  {
+   "id": "363-02-A11",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.3",
+   "stem": "Analyse the statement 'wait is 14 minutes; target 5; front counter, Deira, peak hours; no extra staff before Q4'. Determine the missing part.",
+   "options": [
+    "Evidence — how you know and since when",
+    "The gap — what is happening versus what should happen",
+    "The scope — who and where the problem applies",
+    "The constraint — what cannot change"
+   ],
+   "answer": 0,
+   "why": "Four parts: gap, evidence, scope, constraint. See §2.3."
+  },
+  {
+   "id": "363-02-A12",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.3",
+   "stem": "Determine what to write when you lack evidence for a part of the statement.",
+   "options": [
+    "The question you would ask, instead of guessing",
+    "A guess that sounds right, so that the statement is complete",
+    "Nothing — leave it blank so that the client fills it in",
+    "The solution, so that the client can see where the project is heading"
+   ],
+   "answer": 0,
+   "why": "Write the question instead of guessing. See Exercise 1 and §2.3."
+  },
+  {
+   "id": "363-02-A13",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.3",
+   "stem": "Classify 'we need an attendance app that texts absent students' as a problem statement.",
+   "options": [
+    "Not a problem statement — it contains the solution",
+    "A strong statement, because it is specific about what will happen",
+    "A good gap, because it names what is missing",
+    "A good constraint, because it limits the solution to one option"
+   ],
+   "answer": 0,
+   "why": "A strong statement contains no solution. See §2.3."
+  },
+  {
+   "id": "363-02-A14",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.4",
+   "stem": "Analyse a tree whose first branches are 'fewer customers', 'lower prices' and 'fewer returning customers'. Determine the fault.",
+   "options": [
+    "Overlap — returning customers already sit inside fewer customers",
+    "A gap — the tree does not cover customers who spend less per visit",
+    "Too few branches — a tree needs at least five at the first level",
+    "No fault — the three branches cover the problem completely"
+   ],
+   "answer": 0,
+   "why": "An item must sit in one branch only. See §2.4."
+  },
+  {
+   "id": "363-02-A15",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.4",
+   "stem": "Analyse a tree for 'revenue fell' with only the branch 'fewer customers'. Determine the fault.",
+   "options": [
+    "A gap — customers spending less per visit is not covered",
+    "An overlap — fewer customers already includes lower spending",
+    "Too many branches at the first level for a problem of this size",
+    "No fault — fewer customers is the only possible cause of lower revenue"
+   ],
+   "answer": 0,
+   "why": "Branches must cover the whole problem above them. See §2.4."
+  },
+  {
+   "id": "363-02-A16",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.4",
+   "stem": "Select the testable bottom branch in the restaurant example.",
+   "options": [
+    "'Regulars who used to come weekly now come monthly — check the loyalty data'",
+    "'Revenue fell 18% over the last two quarters compared with the same period last year'",
+    "'Fewer customers are visiting the restaurant than before'",
+    "'The economy is bad and people are eating out less often'"
+   ],
+   "answer": 0,
+   "why": "Testable = something a person could check this week. See §2.4."
+  },
+  {
+   "id": "363-02-A17",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.4",
+   "stem": "Determine the depth of the pharmacy issue tree Exercise 2 asks for.",
+   "options": [
+    "Three levels, checked for gaps and overlaps",
+    "One level, with the main causes listed side by side",
+    "Ten levels, so that nothing is missed",
+    "As many as possible in the time available"
+   ],
+   "answer": 0,
+   "why": "Three levels deep. See Exercise 2 and §2.4."
+  },
+  {
+   "id": "363-02-A18",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.5",
+   "stem": "Analyse a branch worth 2% of the gap. Determine the chapter's advice.",
+   "options": [
+    "Not worth a week of your time — size it and move on",
+    "Start with it — it is easy and gives the team an early success",
+    "Investigate it first, because small causes are often the real ones",
+    "Report it as the cause, because it is the one you can prove"
+   ],
+   "answer": 0,
+   "why": "A 2% branch is not worth a week. See §2.5."
+  },
+  {
+   "id": "363-02-A19",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.5",
+   "stem": "Select the branch to start on: (a) big, measurable, controllable; (b) big, no data; (c) small, easy.",
+   "options": [
+    "(a) — large, measurable and within your control",
+    "(b) — the biggest branch should always be investigated first",
+    "(c) — the fastest branch gives the team an early result",
+    "None — wait for more data before choosing any branch"
+   ],
+   "answer": 0,
+   "why": "The rule names all three conditions. See §2.5."
+  },
+  {
+   "id": "363-02-A20",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.5",
+   "stem": "Analyse 'the new clinic next door took our customers' as a branch. Determine why it may be abandoned even if true.",
+   "options": [
+    "You cannot change the clinic — it fails 'could we actually change it?'",
+    "It is too small to explain the fall in customers on its own",
+    "It cannot be measured, so it will stay an opinion",
+    "It is not a cause but a symptom of the branch's problems"
+   ],
+   "answer": 0,
+   "why": "A true cause outside your control is useless to you. See §2.5 and Exercise 2."
+  },
+  {
+   "id": "363-02-A21",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.5",
+   "stem": "Determine the branch the chapter prefers when two are equally big.",
+   "options": [
+    "The one you can settle in days rather than months",
+    "The more expensive one, because it matters more to the client",
+    "The one the client likes, because the project needs support",
+    "The one with no data, because it has not been investigated before"
+   ],
+   "answer": 0,
+   "why": "Prefer the branch you can settle fast. See §2.5."
+  },
+  {
+   "id": "363-02-A22",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.6",
+   "stem": "Analyse the department head's brief for an attendance app. Determine what the frame ruled out.",
+   "options": [
+    "Every reason for absence other than forgetting — timetable, teaching, value of the lecture",
+    "Nothing — the app would collect data on every reason for absence",
+    "Only the budget, because the app has a fixed cost",
+    "The students, because the app would be used by staff"
+   ],
+   "answer": 0,
+   "why": "A brief that names the solution rules out the rest. See Exercise 3 and §2.6."
+  },
+  {
+   "id": "363-02-A23",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.6",
+   "stem": "Determine how to raise with the pharmacy owner that his marketing campaign may be premature.",
+   "options": [
+    "Ask politely 'what makes you say that is the problem?' and show the evidence sorted into mess, symptom and problem",
+    "Tell him he is wrong, because the evidence does not support a marketing problem",
+    "Run the campaign anyway, because the client has the right to choose",
+    "Refuse the project, because a client who has chosen the solution does not need a consultant"
+   ],
+   "answer": 0,
+   "why": "The professional question, asked politely. See §2.6."
+  },
+  {
+   "id": "363-02-A24",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.6",
+   "stem": "Analyse a project where the group simply agrees with the client's framing. Determine how the report is graded.",
+   "options": [
+    "Poorly — the report is graded on judging whether it was the right problem, not on agreeing",
+    "Well — the client is always right about their own business",
+    "Neutral — the grade depends on the quality of the solution, not the frame",
+    "It depends on whether the solution works for the client"
+   ],
+   "answer": 0,
+   "why": "Your first task is to establish whether it is the right problem. See §2.6."
+  },
+  {
+   "id": "363-02-A25",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.6",
+   "stem": "Determine who should be asked first when diagnosing the pharmacy branch.",
+   "options": [
+    "The staff closest to the work — they hold the evidence",
+    "The owner only, because he knows the business best",
+    "The marketing agency, because it has studied the market",
+    "The competitor, because it knows why customers moved"
+   ],
+   "answer": 0,
+   "why": "The people closest to the work are usually not asked. See §2.6."
+  },
+  {
+   "id": "363-02-A26",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.2",
+   "stem": "Analyse 'the building manager installed mirrors'. Determine which move of the five it shows done well.",
+   "options": [
+    "Frame — a better frame found a cheaper solution",
+    "Decide — the cheapest option won the comparison",
+    "Diagnose — the lift motor was tested and found to be fine",
+    "Generate — many options were listed before one was chosen"
+   ],
+   "answer": 0,
+   "why": "The frame decided which solutions were considered. See §2.2."
+  },
+  {
+   "id": "363-02-A27",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.1",
+   "stem": "Analyse 'two pharmacists resigned in four months'. Determine what it is.",
+   "options": [
+    "A symptom — a visible sign, possibly of the same underlying problem",
+    "The problem statement — two resignations is the gap to close",
+    "A constraint — the branch cannot hire replacements quickly",
+    "The solution — the branch simply needs to replace the two pharmacists quickly"
+   ],
+   "answer": 0,
+   "why": "Resignations are a visible sign, not the gap itself. See §2.1."
+  },
+  {
+   "id": "363-02-A28",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.3",
+   "stem": "Determine the constraint in the pharmacy exercise given 'you have two weeks and permission to speak to two staff'.",
+   "options": [
+    "Two weeks and two staff interviews",
+    "No constraint — the exercise leaves the student free to choose",
+    "The marketing budget the owner has set aside",
+    "The clinic next door, which cannot be changed"
+   ],
+   "answer": 0,
+   "why": "Constraints are what cannot change. See §2.3 and Exercise 2."
+  },
+  {
+   "id": "363-02-A29",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.4",
+   "stem": "Determine the purpose of writing 'testable' at the bottom of a tree.",
+   "options": [
+    "To reach something a person could investigate this week",
+    "To end the project with a clear conclusion",
+    "To impress the client with the depth of the analysis",
+    "To avoid having to collect evidence for the higher branches"
+   ],
+   "answer": 0,
+   "why": "Branches end when they are investigable this week. See §2.4."
+  },
+  {
+   "id": "363-02-A30",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.5",
+   "stem": "Classify the finding 'no branch is both large and within our control'.",
+   "options": [
+    "A legitimate finding to report plainly",
+    "A failure of the group",
+    "A reason to invent data",
+    "A reason to pick the client's favourite"
+   ],
+   "answer": 0,
+   "why": "That is a finding, not a failure. See §2.5."
+  },
+  {
+   "id": "363-02-A31",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.6",
+   "stem": "Select the first task when a client hands you a problem.",
+   "options": [
+    "Establish whether it is the right problem",
+    "Choose the solution the client has asked for",
+    "Price the solution so that the client can approve the budget",
+    "Agree with the client so that the project can start quickly"
+   ],
+   "answer": 0,
+   "why": "Your first task is to test the frame. See §2.6."
+  },
+  {
+   "id": "363-02-A32",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.4",
+   "stem": "Analyse a tree where 'new competitor' appears under both 'fewer new customers' and 'fewer returning customers'. Determine the fault.",
+   "options": [
+    "Overlap — the same item sits in two branches and will be counted twice",
+    "A gap — the tree does not cover customers who spend less",
+    "Correct — competitors affect both new and returning customers",
+    "Too few levels — the tree should go deeper before naming any cause at all"
+   ],
+   "answer": 0,
+   "why": "An item must sit in one branch only. See §2.4."
+  }
+ ]
+}

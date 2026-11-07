@@ -1,0 +1,493 @@
+{
+ "subject": "MGMT160",
+ "chapter": 2,
+ "title": "The Evolution of Management Thought",
+ "clos": [
+  "CLO 1",
+  "CLO 2"
+ ],
+ "source": "Chapter02_Evolution_of_Management_Thought.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "160-02-I01",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Explain why management thinking evolved over time.",
+   "options": [
+    "Each idea was an answer to a real workplace problem of its time",
+    "Professors developed each idea in university libraries in order to publish textbooks",
+    "Governments ordered companies to adopt each new idea as the law changed",
+    "Managers wanted more impressive titles"
+   ],
+   "answer": 0,
+   "why": "Ideas are answers to problems: bigger firms, harder competition, new technology and more educated employees each produced a school of thinking. See §2.1."
+  },
+  {
+   "id": "160-02-I02",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.2",
+   "stem": "Identify the three waves of management thinking in the correct order.",
+   "options": [
+    "Classical → human relations → modern perspectives",
+    "Human relations → classical → modern perspectives",
+    "Modern perspectives → classical → human relations",
+    "Scientific management → systems → human relations"
+   ],
+   "answer": 0,
+   "why": "~1900s classical (efficiency), 1930s human relations (people), 1950s onward modern (systems and flexibility). See §2.2."
+  },
+  {
+   "id": "160-02-I03",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.2",
+   "stem": "Identify the main focus of the classical wave.",
+   "options": [
+    "Efficiency",
+    "People's feelings",
+    "Flexibility",
+    "Sustainability"
+   ],
+   "answer": 0,
+   "why": "Classical management focused on efficiency: Taylor measured the work, Fayol structured the organisation, Weber made it fair with rules. See §2.2."
+  },
+  {
+   "id": "160-02-I04",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Describe Taylor's scientific management.",
+   "options": [
+    "Study each job, find the one best way, train the right worker and link pay to output",
+    "Let every worker decide the best way to do the job and share the method with colleagues",
+    "Pay all workers the same rate so that nobody competes and the team stays happy",
+    "Replace managers with written rules that every worker can read and follow without supervision"
+   ],
+   "answer": 0,
+   "why": "Taylor's three ideas: better work methods (one best way), specialisation and training, efficiency with incentives. See §2.3."
+  },
+  {
+   "id": "160-02-I05",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Identify a disadvantage of scientific management.",
+   "options": [
+    "Boredom and burnout from repetition, and no room for the worker's ideas",
+    "Lower quality, because every worker is free to do the job in a different way",
+    "Slower training of new workers",
+    "More errors in safety-critical work, because the standard steps are never written down"
+   ],
+   "answer": 0,
+   "why": "Standardisation brings speed and consistency but kills morale and switches off the worker's brain, and breaks when surprises happen. See the table in §2.3."
+  },
+  {
+   "id": "160-02-I06",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Identify the thinker who first described the functions of planning, organising, leading and controlling.",
+   "options": [
+    "Henri Fayol",
+    "Frederick Taylor",
+    "Max Weber",
+    "Elton Mayo"
+   ],
+   "answer": 0,
+   "why": "Fayol (1916) invented P-O-L-C and the administrative principles such as unity of command. See §2.4."
+  },
+  {
+   "id": "160-02-I07",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Explain the principle of unity of command.",
+   "options": [
+    "Each person should have one boss",
+    "Every manager must command many people",
+    "All orders must be written down",
+    "The most senior person commands everyone"
+   ],
+   "answer": 0,
+   "why": "Unity of command — one boss per person — is one of Fayol's principles still used daily. See §2.4."
+  },
+  {
+   "id": "160-02-I08",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Describe Weber's idea of bureaucracy.",
+   "options": [
+    "Clear rules applied equally, a defined hierarchy, written records and positions earned by merit",
+    "Jobs given to relatives of the owner and decisions made according to the boss's mood that day",
+    "No fixed rules at all, so that managers stay flexible and can treat every case differently",
+    "Workers choosing their own managers by vote and changing them whenever results are poor"
+   ],
+   "answer": 0,
+   "why": "Weber's ideal large organisation replaced favouritism with fair rules, hierarchy, procedures and merit. See §2.4."
+  },
+  {
+   "id": "160-02-I09",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.5",
+   "stem": "Describe what the Hawthorne studies found.",
+   "options": [
+    "Workers performed better because someone was paying attention to them — not because of the lighting",
+    "Brighter lights always raise productivity, so factories should invest in better lighting first",
+    "Higher pay was the only thing that raised output; attention and lighting made no difference",
+    "Workers performed worse when they were watched, because observation made them nervous and slow"
+   ],
+   "answer": 0,
+   "why": "Productivity rose when lights went up AND when they went down — it was attention, not lighting. See §2.5."
+  },
+  {
+   "id": "160-02-I10",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.5",
+   "stem": "Identify the three things employees need, according to the human relations movement.",
+   "options": [
+    "To be respected, supported and included",
+    "To be timed, trained and paid by output",
+    "To follow rules, hierarchy and procedures",
+    "To work alone, quietly and quickly"
+   ],
+   "answer": 0,
+   "why": "Mayo's trio: respected, supported, included — the free management tool is attention. See §2.5."
+  },
+  {
+   "id": "160-02-I11",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.5",
+   "stem": "Differentiate engagement from happiness as the chapter explains it.",
+   "options": [
+    "Engagement is feeling respected, supported and included; happiness is a passing mood",
+    "Engagement is a passing mood; happiness is the long-term feeling that keeps people in a job",
+    "They mean the same thing, and the chapter uses the two words interchangeably",
+    "Happiness comes from the work itself; engagement comes from pay and benefits"
+   ],
+   "answer": 0,
+   "why": "A pizza party makes people happy for an hour; fair treatment and meaningful work make them engaged for years. See the answer to question 3 in §2.5."
+  },
+  {
+   "id": "160-02-I12",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.6",
+   "stem": "Describe the systems perspective.",
+   "options": [
+    "An organisation is one connected system — if one part fails, the others feel it",
+    "Each department should be managed as a separate business with its own goals and results",
+    "Each department is a separate business",
+    "Computer systems are the most important part of a modern business and deserve the most investment"
+   ],
+   "answer": 0,
+   "why": "Everything is connected; failures live between the boxes, so trace the chain instead of blaming the nearest person. See §2.6."
+  },
+  {
+   "id": "160-02-I13",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.7",
+   "stem": "Describe the contingency perspective.",
+   "options": [
+    "There is no single best way — the right style depends on the situation, people, environment and organisation",
+    "Scientific management is the best way in every workplace once the job has been studied properly",
+    "Managers should always use the people-first style, because people are the same everywhere",
+    "The best style is the one the manager is most comfortable with, because confidence drives results"
+   ],
+   "answer": 0,
+   "why": "Contingency thinking: 'it depends' is a serious answer, as long as you can say what it depends on. See §2.7."
+  },
+  {
+   "id": "160-02-I14",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.8",
+   "stem": "Identify today's management challenges listed in the chapter.",
+   "options": [
+    "Globalisation, technology and AI, hybrid work, new expectations",
+    "Factories, strikes, lighting and stopwatches",
+    "Family businesses, cousins, paperwork and favouritism",
+    "Low wages, long hours, no training and no job security"
+   ],
+   "answer": 0,
+   "why": "Today's challenges are different, not harder: globalisation, AI, hybrid work and employees' new expectations. See §2.8."
+  },
+  {
+   "id": "160-02-I15",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Identify the modern example the chapter uses to show scientific management alive today.",
+   "options": [
+    "A fast-food kitchen with the same layout and steps everywhere",
+    "A hospital emergency team debriefing after a difficult shift",
+    "A start-up design team deciding its own working methods",
+    "A family workshop of forty workers who all know each other"
+   ],
+   "answer": 0,
+   "why": "Every McDonald's has the same layout, steps and target seconds — that worldwide sameness is scientific management. See §2.3."
+  },
+  {
+   "id": "160-02-A01",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.7",
+   "stem": "Select the best-fit approach for a hospital emergency room during the shift.",
+   "options": [
+    "Weber's protocols and Taylor's standard procedures, with Mayo-style support after the shift",
+    "Mayo-style flexibility and open debate during emergencies, with written protocols afterwards",
+    "No fixed rules, so that doctors can be creative and respond to each patient as they see fit",
+    "Taylor's time-and-motion study of each patient, with the fastest doctor setting the standard"
+   ],
+   "answer": 0,
+   "why": "When seconds kill you want checklists and clear command; debrief and support the humans afterwards. See the table in §2.7."
+  },
+  {
+   "id": "160-02-A02",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.7",
+   "stem": "Select the best-fit approach for a creative technology start-up inventing a new product.",
+   "options": [
+    "Mayo-style flexibility and trust, with light structure only",
+    "Strict Taylor standardisation of every task",
+    "Weber's full bureaucracy with written procedures for everything",
+    "The same rules as a fast-food restaurant"
+   ],
+   "answer": 0,
+   "why": "You cannot standardise what has never been done; creativity needs freedom, safety to fail and ideas flowing upward. See §2.7."
+  },
+  {
+   "id": "160-02-A03",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.7",
+   "stem": "Select the best-fit mix for a fast-food restaurant with young part-time staff.",
+   "options": [
+    "Taylor's standardisation for the work plus Mayo's warmth for the people",
+    "Mayo's flexibility for the work plus Taylor's strict rules for how the people are treated",
+    "Weber's hierarchy and written procedures only, since young staff need clear authority",
+    "No standardisation at all, so that each part-timer can find their own best way of working"
+   ],
+   "answer": 0,
+   "why": "The burger process should be identical at every station, but part-timers stay or quit because of how the shift manager treats them. See §2.7."
+  },
+  {
+   "id": "160-02-A04",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Classify a delivery app that times its riders and a call centre that gives agents a script.",
+   "options": [
+    "Scientific management — Taylor's stopwatch became an algorithm",
+    "Human relations — the app and the script show attention to the workers' needs",
+    "Systems perspective — the company is tracing failures across its connected parts",
+    "Contingency perspective — the company chose the method that fits the situation"
+   ],
+   "answer": 0,
+   "why": "Timing work and scripting tasks is Taylor's 'one best way' in modern form. See §2.3."
+  },
+  {
+   "id": "160-02-A05",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Classify the problem when a student needs four stamps from four offices over three days to change one section.",
+   "options": [
+    "Bureaucracy where rules have become the goal instead of a tool",
+    "Scientific management working well, because every step is standardised and recorded",
+    "A human relations failure, because the office staff were not friendly to the student",
+    "A contingency approach, because each office treats the case according to its own situation"
+   ],
+   "answer": 0,
+   "why": "Rules become a problem when nobody remembers why and everyone still enforces them. Smart government keeps Weber's fairness and kills his paperwork. See §2.4."
+  },
+  {
+   "id": "160-02-A06",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "2.5",
+   "stem": "Determine the human relations lesson when a shift manager notices a tired employee's effort and the employee's work improves.",
+   "options": [
+    "Attention and respect move performance — the free management tool",
+    "Only pay can improve performance in the long run; attention gives a short-lived boost",
+    "Watching employees makes them nervous, so the improvement will not last beyond the shift",
+    "The lighting and working conditions should be improved before anything else is tried"
+   ],
+   "answer": 0,
+   "why": "Hawthorne's lesson: employees perform better when respected, supported and included. See §2.5."
+  },
+  {
+   "id": "160-02-A07",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "2.6",
+   "stem": "Analyse this chain: one missed maintenance inspection → one aircraft grounded → four flights delayed → hundreds miss connections → bookings fall next month. Determine the perspective that explains it.",
+   "options": [
+    "Systems perspective — a technical delay became a marketing problem through connected parts",
+    "Scientific management — the inspector worked too slowly and needs a standard time per inspection",
+    "Human relations — the crew were unhappy and so the passengers received poor service",
+    "Bureaucracy — too many rules delayed the inspection and grounded the aircraft unnecessarily"
+   ],
+   "answer": 0,
+   "why": "One failure travels across connected parts; nobody 'made a mistake' — the system did. See the airline example in §2.6."
+  },
+  {
+   "id": "160-02-A08",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "2.6",
+   "stem": "Compare how a weak manager and a systems manager respond to a failure.",
+   "options": [
+    "The weak manager blames the nearest person; the systems manager traces the chain and fixes the cause",
+    "Both blame the nearest person, but the systems manager documents the blame in writing",
+    "The systems manager blames the customer for the failure; the weak manager blames the supplier",
+    "The weak manager fixes the system; the systems manager dismisses the employee responsible"
+   ],
+   "answer": 0,
+   "why": "Systems managers trace the chain; weak managers blame the nearest person. See §2.6."
+  },
+  {
+   "id": "160-02-A09",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.7",
+   "stem": "Analyse a manager who says the same style works everywhere. Determine the chapter's answer.",
+   "options": [
+    "No — the strongest answers are mixes chosen by reading the situation",
+    "Yes — Taylor's style works everywhere once the tasks have been properly studied and standardised",
+    "Yes — Mayo's style works everywhere because people respond to attention in every culture",
+    "Yes — as long as the manager is experienced enough to apply the style with confidence"
+   ],
+   "answer": 0,
+   "why": "The same style everywhere fails. Read the situation, the people, the environment and the organisation, then choose. See the answer to question 4 in §2.7."
+  },
+  {
+   "id": "160-02-A10",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Determine the chapter's answer to 'should work always be standardised?'.",
+   "options": [
+    "Standardise the routine and the safety-critical; free the creative and the human",
+    "Standardise everything, always, because consistency is what customers and regulators pay for",
+    "Never standardise anything at all",
+    "Standardise only creative work, because routine work can safely be left to the individual"
+   ],
+   "answer": 0,
+   "why": "A surgeon follows a checklist and still makes judgement calls. See §2.3."
+  },
+  {
+   "id": "160-02-A11",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "2.5",
+   "stem": "Determine the better choice for a manager who wants long-term performance from a team: a monthly pizza party or fair treatment with meaningful work.",
+   "options": [
+    "Fair treatment and meaningful work — they build engagement for years",
+    "The pizza party — happiness is what matters most and the team will remember it",
+    "Neither — only pay affects performance over the long term, and both are distractions",
+    "Both are equally effective, so the manager should choose whichever is cheaper this month"
+   ],
+   "answer": 0,
+   "why": "Happiness is an hour's mood; engagement (respected, supported, included) lasts for years. See §2.5."
+  },
+  {
+   "id": "160-02-A12",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Classify a company where jobs go to the owner's cousins and decisions change with the boss's mood.",
+   "options": [
+    "The problem Weber's bureaucracy was designed to fix",
+    "A good example of Weber's bureaucracy, with authority flowing from the owner at the top",
+    "Scientific management, because the owner has found the one best way to run the firm",
+    "The systems perspective, because every decision is connected to the owner's judgement"
+   ],
+   "answer": 0,
+   "why": "Weber replaced favouritism and mood with fair rules, hierarchy and merit. See §2.4."
+  },
+  {
+   "id": "160-02-A13",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Analyse a factory that grew from 40 known workers to 2,000 strangers in 1910. Identify the problems that produced the classical schools.",
+   "options": [
+    "Communication, coordination, motivation, and productivity and quality",
+    "Hybrid work, AI, globalisation and sustainability",
+    "Too many managers and too few workers to carry out the actual production",
+    "Customers wanting cheaper products and governments demanding higher taxes"
+   ],
+   "answer": 0,
+   "why": "Instructions reaching 2,000 people, who does what, strangers not motivated, everyone working 'their own way' — each produced a school of thinking. See §2.1."
+  },
+  {
+   "id": "160-02-A14",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.7",
+   "stem": "Select one Taylor idea and one Mayo idea a café manager should keep together.",
+   "options": [
+    "A standard recipe and service steps (Taylor) plus noticing and thanking staff (Mayo)",
+    "Timing every customer's visit (Taylor) plus letting staff work with no rules at all (Mayo)",
+    "Dismissing the slowest workers each month (Taylor) plus a monthly pizza party (Mayo)",
+    "Written forms for every task (Taylor) plus leaving staff alone to get on with it (Mayo)"
+   ],
+   "answer": 0,
+   "why": "Standardise the routine work; give the people attention and respect. Both are needed in the café. See §2.7 and Exercise 2 task 4."
+  },
+  {
+   "id": "160-02-A15",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "2.8",
+   "stem": "Analyse the claim that management is harder today than in 1910. Determine the chapter's position.",
+   "options": [
+    "Different, not harder — each era solved its own problem with its own ideas and better tools",
+    "Much harder — AI and globalisation make the manager's job almost impossible today",
+    "Much easier — computers now do most of the planning and controlling for the manager",
+    "Exactly the same in every way, because people and organisations have not changed"
+   ],
+   "answer": 0,
+   "why": "The 1910 manager fought waste and chaos; today's fights complexity and speed with vastly better tools. See §2.8."
+  }
+ ]
+}

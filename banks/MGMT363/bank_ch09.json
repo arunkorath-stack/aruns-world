@@ -1,1 +1,1022 @@
-{"subject": "MGMT363", "chapter": 9, "title": "Deciding and Defending", "clos": ["CLO 2", "CLO 4", "CLO 6"], "source": "MGMT363_Chapter9.pptx", "status": "published", "questions": [{"id": "363-09-I01", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.1", "stem": "Describe the weighted decision matrix.", "options": ["Criteria with weights, each option scored on each criterion, weighted scores totalled", "A list of pros and cons", "A vote", "A risk table"], "answer": 0, "why": "Visible, arguable and repeatable — which is what defensible means. See §9.1."}, {"id": "363-09-I02", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.1", "stem": "Identify the rule that makes the matrix honest.", "options": ["Set the criteria and the weights before you look at the options", "Score the options first", "Let the boss choose the weights", "Change the weights until the favourite wins"], "answer": 0, "why": "Weights chosen afterwards are your preference wearing a table. See §9.1."}, {"id": "363-09-I03", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.1", "stem": "Explain what to do if the matrix winner surprises you.", "options": ["Do not adjust the weights — ask what the matrix knows that your instinct did not", "Adjust the weights", "Ignore the matrix", "Re-score the favourite higher"], "answer": 0, "why": "Ask what the matrix knows. See §9.1."}, {"id": "363-09-I04", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.1", "stem": "Identify the winning option in the chapter's example matrix.", "options": ["Option A with 64", "Option B with 39", "Option C with 51", "They tie"], "answer": 0, "why": "A 64, B 39, C 51. See §9.1."}, {"id": "363-09-I05", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.1", "stem": "Describe how a weighted score is calculated.", "options": ["Score times weight — a score of 4 on a weight-5 criterion gives 20", "Score plus weight", "Score divided by weight", "Weight only"], "answer": 0, "why": "4 × 5 = 20. See §9.1."}, {"id": "363-09-I06", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.2", "stem": "Identify the formula for sizing a risk.", "options": ["Threat = probability × seriousness, scoring high, medium and low as 3, 2 and 1", "Probability + seriousness", "Cost × time", "Seriousness only"], "answer": 0, "why": "Kepner-Tregoe potential problem analysis in its simplest form. See §9.2."}, {"id": "363-09-I07", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.2", "stem": "Identify the threat score that requires a written contingency.", "options": ["6 or more", "Any score", "9 only", "3 or more"], "answer": 0, "why": "Below 6, name it and move on. See §9.2."}, {"id": "363-09-I08", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.2", "stem": "Describe the contingency for 'staff do not use the new process' in the chapter's table.", "options": ["Train and pilot on one counter first", "Fire the staff", "Ignore it", "Buy new software"], "answer": 0, "why": "High × high = 9 → contingency. See §9.2."}, {"id": "363-09-I09", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.2", "stem": "Explain why listing risks is not enough.", "options": ["You must size them and do something about the biggest two", "Lists are too long", "Clients ignore lists", "Risks cannot be listed"], "answer": 0, "why": "Size them, then act on the biggest. See §9.2."}, {"id": "363-09-I10", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.2", "stem": "Identify the threat score for a medium-probability, high-seriousness risk.", "options": ["6", "9", "4", "3"], "answer": 0, "why": "2 × 3 = 6. See §9.2."}, {"id": "363-09-I11", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.3", "stem": "Describe a second-order effect.", "options": ["An effect the decision produces that it did not intend", "The main benefit", "The cost", "The first result"], "answer": 0, "why": "Every decision produces effects it did not intend. See §9.3."}, {"id": "363-09-I12", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.3", "stem": "Identify the question that finds second-order effects.", "options": ["'And then what?' asked twice", "'Why?' five times", "'Who is to blame?'", "'How much?'"], "answer": 0, "why": "Ask it twice of every recommendation. See §9.3."}, {"id": "363-09-I13", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.3", "stem": "Identify the second-order effect of an express lane for simple orders.", "options": ["Complex orders wait longer — and those customers spend most", "Simple orders move faster", "Staff are happier", "Costs fall"], "answer": 0, "why": "The second answer is where the cost hides. See §9.3."}, {"id": "363-09-I14", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.3", "stem": "Identify the second-order effect of a bonus per order processed.", "options": ["Staff avoid the difficult orders and quality falls", "More orders processed", "Lower pay", "Fewer customers"], "answer": 0, "why": "The first answer is the hoped-for benefit. See §9.3."}, {"id": "363-09-I15", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.3", "stem": "Explain why the second 'and then what?' matters most.", "options": ["The first answer is the hoped-for benefit; the second is where the cost usually hides", "The first answer is always wrong", "Managers ask it", "It is the shortest"], "answer": 0, "why": "It is what a good manager will ask you about. See §9.3."}, {"id": "363-09-I16", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.4", "stem": "Identify the four questions of the ethical screen.", "options": ["Who bears the cost? The public test. The reversal test. The precedent test.", "Is it legal? Is it cheap? Is it fast? Is it popular?", "Who? What? Where? When?", "Claim, reason, assumption, evidence"], "answer": 0, "why": "Four minutes, four questions. See §9.4."}, {"id": "363-09-I17", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.4", "stem": "Describe the reversal test.", "options": ["Would you accept this if you were on the receiving end?", "Would you be comfortable if it were reported?", "If everyone did this, would it be acceptable?", "Who bears the cost?"], "answer": 0, "why": "The reversal test. See §9.4."}, {"id": "363-09-I18", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.4", "stem": "Describe the precedent test.", "options": ["If everyone in the industry did this, would the outcome still be acceptable?", "Would you accept it yourself?", "Who bears the cost?", "Is it legal?"], "answer": 0, "why": "The precedent test. See §9.4."}, {"id": "363-09-I19", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.4", "stem": "Explain what to do when an ethical test fails.", "options": ["Say so in the report and state what you would do to reduce the harm", "Abandon the recommendation", "Hide it", "Ignore it"], "answer": 0, "why": "You are not required to abandon; you are required to say so. See §9.4."}, {"id": "363-09-I20", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.4", "stem": "Explain why 'legal and profitable' is not enough.", "options": ["A recommendation can be legal, profitable and still wrong — these are the questions asked when it goes badly in public", "Legal always means right", "Profit is unethical", "Clients dislike profit"], "answer": 0, "why": "Legal, profitable and still wrong. See §9.4."}, {"id": "363-09-I21", "quiz": 1, "bloom": "Understand", "clo": "CLO 6", "sec": "9.5", "stem": "Describe what AI is good for in problem solving.", "options": ["Widening options, suggesting causes, playing the challenger, rewriting for a different reader", "Providing evidence", "Making the decision", "Replacing the diagnosis"], "answer": 0, "why": "A thinking partner, not a thinker. See §9.5."}, {"id": "363-09-I22", "quiz": 1, "bloom": "Understand", "clo": "CLO 6", "sec": "9.5", "stem": "Describe what AI is bad for.", "options": ["Evidence — it produces plausible facts, numbers and sources that do not exist", "Rewriting text", "Listing options", "Arguing against you"], "answer": 0, "why": "Anything it gives as a fact must be checked. See §9.5."}, {"id": "363-09-I23", "quiz": 1, "bloom": "Understand", "clo": "CLO 6", "sec": "9.5", "stem": "Describe the Doshi and Hauser (2024) finding.", "options": ["AI raises individual creative output but reduces the collective diversity of ideas", "AI makes everyone equally creative", "AI has no effect", "AI only helps experts"], "answer": 0, "why": "Groups using it converge on similar answers. See §9.5."}, {"id": "363-09-I24", "quiz": 1, "bloom": "Understand", "clo": "CLO 6", "sec": "9.5", "stem": "Identify the course rule on AI.", "options": ["AI may help you think; it may not do the thinking that is assessed — and you declare what you used it for", "AI is banned", "AI may write the report", "AI use need not be declared"], "answer": 0, "why": "Declare what you used it for. See §9.5."}, {"id": "363-09-I25", "quiz": 1, "bloom": "Understand", "clo": "CLO 6", "sec": "9.5", "stem": "Explain what to do after AI widens your options.", "options": ["Deliberately go beyond it — groups using AI converge", "Stop there", "Choose the AI's favourite", "Delete the list"], "answer": 0, "why": "Use it to widen, then go beyond it. See §9.5."}, {"id": "363-09-I26", "quiz": 1, "bloom": "Understand", "clo": "CLO 4", "sec": "9.6", "stem": "Identify the six parts of the defence in order.", "options": ["Recommendation; the problem with evidence; what was rejected; cost and trade-offs; main risk and contingency; what you are still unsure about", "Problem; history; options; recommendation; thanks; questions", "Cost; benefit; risk; timeline; team; budget", "Claim; reason; assumption; evidence; conclusion; vote"], "answer": 0, "why": "Each answers the question the listener is actually asking. See §9.6."}, {"id": "363-09-I27", "quiz": 1, "bloom": "Understand", "clo": "CLO 4", "sec": "9.6", "stem": "Identify what comes first in the defence.", "options": ["The recommendation — 'what do you want me to do?'", "The history of the problem", "The team's names", "The budget"], "answer": 0, "why": "The recommendation, first, in 25 words. See §9.6."}, {"id": "363-09-I28", "quiz": 1, "bloom": "Understand", "clo": "CLO 4", "sec": "9.6", "stem": "Explain why the last line of the defence earns trust.", "options": ["Naming your remaining uncertainty makes everything before it more believable", "It is the longest", "It asks for money", "It ends the meeting"], "answer": 0, "why": "The one students omit. See §9.6."}, {"id": "363-09-I29", "quiz": 1, "bloom": "Understand", "clo": "CLO 4", "sec": "9.6", "stem": "Identify the question behind 'what else you considered and rejected'.", "options": ["'Did you actually think about it?'", "'What is this going to cost me?'", "'Is this a real problem?'", "'Are you being straight with me?'"], "answer": 0, "why": "Rejected options show you thought. See §9.6."}, {"id": "363-09-I30", "quiz": 1, "bloom": "Understand", "clo": "CLO 4", "sec": "9.6", "stem": "Explain why the defence is not salesmanship.", "options": ["It is a structure that answers the questions a manager will actually ask, in order", "It is louder", "It uses slides", "It avoids risks"], "answer": 0, "why": "Not salesmanship. See §9.6."}, {"id": "363-09-I31", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.2", "stem": "Describe what to do with a risk scoring below 6.", "options": ["Name it and move on — you cannot plan for everything", "Write a contingency", "Abandon the option", "Ignore it completely"], "answer": 0, "why": "Below 6, name it and move on. See §9.2."}, {"id": "363-09-I32", "quiz": 1, "bloom": "Understand", "clo": "CLO 2", "sec": "9.1", "stem": "Explain what 'defensible' means for a decision.", "options": ["Visible, arguable and repeatable — someone else could follow how it was reached", "Popular with the client", "Expensive", "Fast"], "answer": 0, "why": "Visible, arguable, repeatable. See §9.1."}, {"id": "363-09-A01", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "9.1", "stem": "Analyse a group that changes the weights after Option B wins unexpectedly. Determine the verdict.", "options": ["Dishonest — ask what the matrix knows instead of tuning the weights", "Correct — weights should fit instinct", "Neutral", "Required"], "answer": 0, "why": "Do not adjust the weights. See §9.1."}, {"id": "363-09-A02", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.1", "stem": "Determine the weighted score for a score of 3 on a weight-4 criterion.", "options": ["12", "7", "1", "34"], "answer": 0, "why": "3 × 4 = 12. See §9.1."}, {"id": "363-09-A03", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.1", "stem": "Select the correct sequence in the week-12 studio.", "options": ["Agree criteria and weights on the board, witnessed, then score the options", "Score the options, then agree the criteria", "Vote, then build the matrix", "Let the client set the weights"], "answer": 0, "why": "Criteria and weights before any option is scored. See Exercise 1 and §9.1."}, {"id": "363-09-A04", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "9.1", "stem": "Analyse a matrix with one criterion weighted 10 and four weighted 1. Determine the problem.", "options": ["One criterion decides everything — the matrix is a single preference wearing a table", "Nothing", "Too many criteria", "Too few options"], "answer": 0, "why": "Weights must reflect what matters, set before. See §9.1."}, {"id": "363-09-A05", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.2", "stem": "Determine the threat score and action for 'supplier cannot deliver in time' (medium, high).", "options": ["6 — write a contingency such as naming a second supplier", "3 — name and move on", "9 — abandon", "4 — ignore"], "answer": 0, "why": "2 × 3 = 6 → contingency. See §9.2."}, {"id": "363-09-A06", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.2", "stem": "Determine the action for 'system integration fails' scored 3 (low, high).", "options": ["Name it and ask IT to confirm before signing — no written contingency required", "Write a full contingency", "Abandon the option", "Run a pilot"], "answer": 0, "why": "Below 6: name and move on. See §9.2."}, {"id": "363-09-A07", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "9.2", "stem": "Analyse a report that lists ten risks and acts on none. Determine the fault.", "options": ["Risks were not sized, so nothing was done about the biggest", "Too many risks", "Too few risks", "Risks are irrelevant"], "answer": 0, "why": "Size them, then act on the biggest two. See §9.2."}, {"id": "363-09-A08", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.2", "stem": "Select the contingency for 'customers dislike the change' scored 4.", "options": ["Name it; optionally test with 20 customers and keep the old option", "A full written contingency plan", "Abandon the recommendation", "Ignore it"], "answer": 0, "why": "Score 4 is below 6. See §9.2."}, {"id": "363-09-A09", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "9.3", "stem": "Analyse 'cut opening hours to save cost'. Determine the second-order effect.", "options": ["Regulars shift to a competitor and do not return", "Costs fall", "Staff rest more", "Customers come later"], "answer": 0, "why": "The second answer hides the cost. See §9.3."}, {"id": "363-09-A10", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "9.3", "stem": "Analyse a bonus for calls handled per hour. Determine the likely second-order effect.", "options": ["Calls get shorter and difficult callers are avoided; quality falls", "More calls handled", "Higher pay", "Happier customers"], "answer": 0, "why": "Staff avoid the difficult ones. See §9.3."}, {"id": "363-09-A11", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.3", "stem": "Determine the chapter's distinction between a student answer and a professional one.", "options": ["The professional asks 'and then what?' twice and reports the inconvenient second answer", "The professional uses more slides", "The student is shorter", "The professional avoids risks"], "answer": 0, "why": "Ask it twice, of every recommendation. See §9.3."}, {"id": "363-09-A12", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "9.3", "stem": "Analyse 'add a pre-order shelf'. Determine a possible second-order effect.", "options": ["Counter customers wait longer while staff fill pre-orders", "Pre-orders rise", "Nothing changes", "Prices fall"], "answer": 0, "why": "And then what? twice. See §9.3."}, {"id": "363-09-A13", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "9.4", "stem": "Analyse a recommendation to cut the night cleaning shift. Determine the group the first ethical question points to.", "options": ["The cleaners who lose hours — with no voice in the meeting", "The shareholders", "The manager", "The customers only"], "answer": 0, "why": "Name every group affected, including those with no voice. See §9.4."}, {"id": "363-09-A14", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.4", "stem": "Classify 'would we be comfortable if this decision and our reason were reported accurately?'.", "options": ["The public test", "The reversal test", "The precedent test", "The cost question"], "answer": 0, "why": "The public test. See §9.4."}, {"id": "363-09-A15", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.4", "stem": "Determine the action when the precedent test fails but the recommendation stands.", "options": ["State the failure in the report and what you would do to reduce the harm", "Delete the recommendation", "Hide the failure", "Blame the client"], "answer": 0, "why": "Say so, and reduce the harm. See §9.4 and Exercise 2."}, {"id": "363-09-A16", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "9.4", "stem": "Analyse a recommendation that is legal and raises profit by charging hidden fees. Determine the screen's likely verdict.", "options": ["Fails the public and reversal tests", "Passes all four", "Fails only the cost question", "Passes because it is legal"], "answer": 0, "why": "Legal, profitable and still wrong. See §9.4."}, {"id": "363-09-A17", "quiz": 2, "bloom": "Apply", "clo": "CLO 6", "sec": "9.5", "stem": "Classify using AI to argue against your recommendation.", "options": ["Good use — the challenger role", "Bad use — evidence", "Bad use — replacing the decision", "Not allowed"], "answer": 0, "why": "Playing the challenger is a good use. See §9.5 and Exercise 3."}, {"id": "363-09-A18", "quiz": 2, "bloom": "Apply", "clo": "CLO 6", "sec": "9.5", "stem": "Classify citing three statistics an AI produced, without checking.", "options": ["Bad use — AI invents plausible facts and sources", "Good use", "Allowed if declared", "Required"], "answer": 0, "why": "Anything given as a fact must be checked. See §9.5."}, {"id": "363-09-A19", "quiz": 2, "bloom": "Analyse", "clo": "CLO 6", "sec": "9.5", "stem": "Analyse a group whose option list came only from AI. Determine the risk.", "options": ["Convergence — groups using AI produce similar answers; go beyond it deliberately", "None", "Too many options", "Too few words"], "answer": 0, "why": "Doshi and Hauser (2024). See §9.5."}, {"id": "363-09-A20", "quiz": 2, "bloom": "Apply", "clo": "CLO 6", "sec": "9.5", "stem": "Select the correct two-line AI declaration.", "options": ["'Used AI to widen options and as a challenger; did not use it for the diagnosis, the choice or the defence'", "'Did not use AI'", "'AI wrote the report'", "'Used AI for everything'"], "answer": 0, "why": "What you used it for, and what you did not. See §9.5 and Exercise 3."}, {"id": "363-09-A21", "quiz": 2, "bloom": "Apply", "clo": "CLO 6", "sec": "9.5", "stem": "Determine how many of three AI-supplied facts a group should expect to survive checking.", "options": ["Unknown until each is verified against a real source — that is the point of the exercise", "All three", "None", "Two"], "answer": 0, "why": "Verify each; report how many survived. See Exercise 3. See §9.5."}, {"id": "363-09-A22", "quiz": 2, "bloom": "Analyse", "clo": "CLO 4", "sec": "9.6", "stem": "Analyse a defence that opens with ten minutes of history. Determine the fault.", "options": ["The recommendation should come first — the listener is asking 'what do you want me to do?'", "Nothing", "Too short", "No slides"], "answer": 0, "why": "Recommendation first, in 25 words. See §9.6."}, {"id": "363-09-A23", "quiz": 2, "bloom": "Analyse", "clo": "CLO 4", "sec": "9.6", "stem": "Analyse a defence that never mentions what was rejected. Determine the question left unanswered.", "options": ["'Did you actually think about it?'", "'What is this going to cost me?'", "'Is this a real problem?'", "'What happens if it goes wrong?'"], "answer": 0, "why": "Rejected options answer that question. See §9.6."}, {"id": "363-09-A24", "quiz": 2, "bloom": "Apply", "clo": "CLO 4", "sec": "9.6", "stem": "Determine the word budget for the recommendation in the defence.", "options": ["About 25 words", "100 words", "300 words", "10 words"], "answer": 0, "why": "25 words. See §9.6."}, {"id": "363-09-A25", "quiz": 2, "bloom": "Analyse", "clo": "CLO 4", "sec": "9.6", "stem": "Analyse a defence that ends with 'we are completely certain this will work'. Determine the chapter's view.", "options": ["It loses trust — naming remaining uncertainty makes the rest more believable", "It is strong", "It is required", "It saves time"], "answer": 0, "why": "Naming uncertainty earns trust. See §9.6."}, {"id": "363-09-A26", "quiz": 2, "bloom": "Apply", "clo": "CLO 4", "sec": "9.6", "stem": "Determine the time limit for the studio defence.", "options": ["Under four minutes", "Ten minutes", "One minute", "Unlimited"], "answer": 0, "why": "Over four minutes is a fail. See Exercise 4. See §9.6."}, {"id": "363-09-A27", "quiz": 2, "bloom": "Apply", "clo": "CLO 4", "sec": "9.6", "stem": "Select the part that answers 'what happens if it goes wrong?'.", "options": ["The main risk and your contingency", "The cost and trade-offs", "The rejected options", "The recommendation"], "answer": 0, "why": "Risk and contingency. See §9.6."}, {"id": "363-09-A28", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "9.1", "stem": "Analyse a group whose matrix winner is the option their test in chapter 8 ruled out. Determine the fault.", "options": ["The test result was not used as a criterion or to remove the option", "Nothing", "The weights are wrong", "The matrix is too small"], "answer": 0, "why": "A test result feeds the decision. See §9.1 and §8.6."}, {"id": "363-09-A29", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "9.4", "stem": "Determine the ethical question that catches a recommendation harming a group not present.", "options": ["'Who bears the cost?' — name every group affected, including those with no voice", "The precedent test", "The public test", "The reversal test"], "answer": 0, "why": "Including the ones with no voice in the meeting. See §9.4."}, {"id": "363-09-A30", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "9.2", "stem": "Analyse 'staff do not use the new process' rated high and high. Determine the score.", "options": ["9 — a written contingency is required", "6", "3", "1"], "answer": 0, "why": "3 × 3 = 9. See §9.2."}, {"id": "363-09-A31", "quiz": 2, "bloom": "Apply", "clo": "CLO 4", "sec": "9.6", "stem": "Classify the sentence 'what we are still unsure about is whether the effect holds in a full month'.", "options": ["The sixth part of the defence — remaining uncertainty", "The recommendation", "The cost", "The rejected options"], "answer": 0, "why": "The part students omit. See §9.6."}]}
+{
+ "subject": "MGMT363",
+ "chapter": 9,
+ "title": "Deciding and Defending",
+ "clos": [
+  "CLO 2",
+  "CLO 4",
+  "CLO 6"
+ ],
+ "source": "MGMT363_Chapter9.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "363-09-I01",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.1",
+   "stem": "Describe the weighted decision matrix.",
+   "options": [
+    "Criteria with weights, each option scored on each criterion, weighted scores totalled",
+    "A list of pros and cons for each option, with the longer list of pros deciding the winner",
+    "A vote among the people in the meeting, with each person's vote counted equally",
+    "A risk table listing every risk of each option with its probability and seriousness"
+   ],
+   "answer": 0,
+   "why": "Visible, arguable and repeatable — which is what defensible means. See §9.1."
+  },
+  {
+   "id": "363-09-I02",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.1",
+   "stem": "Identify the rule that makes the matrix honest.",
+   "options": [
+    "Set the criteria and the weights before you look at the options",
+    "Score the options first so that the criteria reflect what actually matters about them",
+    "Let the boss choose the weights, because the boss is accountable for the decision",
+    "Change the weights until the result matches the team's instinct about the best option"
+   ],
+   "answer": 0,
+   "why": "Weights chosen afterwards are your preference wearing a table. See §9.1."
+  },
+  {
+   "id": "363-09-I03",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.1",
+   "stem": "Explain what to do if the matrix winner surprises you.",
+   "options": [
+    "Do not adjust the weights — ask what the matrix knows that your instinct did not",
+    "Adjust the weights, because a surprising result shows that the weights were wrong",
+    "Ignore the matrix and go with instinct, because experience beats arithmetic",
+    "Re-score the favourite higher on the criteria where it was marked down"
+   ],
+   "answer": 0,
+   "why": "Ask what the matrix knows. See §9.1."
+  },
+  {
+   "id": "363-09-I04",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.1",
+   "stem": "Identify the winning option in the chapter's example matrix.",
+   "options": [
+    "Option A with 64",
+    "Option B with 39",
+    "Option C with 51",
+    "They tie on 51"
+   ],
+   "answer": 0,
+   "why": "A 64, B 39, C 51. See §9.1."
+  },
+  {
+   "id": "363-09-I05",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.1",
+   "stem": "Describe how a weighted score is calculated.",
+   "options": [
+    "Score times weight — a score of 4 on a weight-5 criterion gives 20",
+    "Score plus weight — a score of 4 on a weight-5 criterion gives 9",
+    "Score divided by weight — a score of 4 on a weight-5 criterion gives 0.8",
+    "Weight only — the score is used to rank options within each criterion"
+   ],
+   "answer": 0,
+   "why": "4 × 5 = 20. See §9.1."
+  },
+  {
+   "id": "363-09-I06",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.2",
+   "stem": "Identify the formula for sizing a risk.",
+   "options": [
+    "Threat = probability × seriousness, scoring high, medium and low as 3, 2 and 1",
+    "Threat = probability + seriousness, scoring high, medium and low as 3, 2 and 1",
+    "Threat = cost × time, with the most expensive and slowest risk scoring highest",
+    "Threat = seriousness only, because probability cannot be estimated reliably"
+   ],
+   "answer": 0,
+   "why": "Kepner-Tregoe potential problem analysis in its simplest form. See §9.2."
+  },
+  {
+   "id": "363-09-I07",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.2",
+   "stem": "Identify the threat score that requires a written contingency.",
+   "options": [
+    "6 or more",
+    "Any score, because every risk deserves a contingency",
+    "9 only, because only a high-high risk is serious enough",
+    "3 or more, so that only the lowest risks are left without one"
+   ],
+   "answer": 0,
+   "why": "Below 6, name it and move on. See §9.2."
+  },
+  {
+   "id": "363-09-I08",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.2",
+   "stem": "Describe the contingency for 'staff do not use the new process' in the chapter's table.",
+   "options": [
+    "Train and pilot on one counter first",
+    "Replace the staff who refuse to follow the new process",
+    "Ignore it, because staff always adapt to new processes in time",
+    "Buy new software that forces the process on the staff"
+   ],
+   "answer": 0,
+   "why": "High × high = 9 → contingency. See §9.2."
+  },
+  {
+   "id": "363-09-I09",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.2",
+   "stem": "Explain why listing risks is not enough.",
+   "options": [
+    "You must size them and do something about the biggest two",
+    "Lists are too long for a manager to read in the time available",
+    "Clients ignore lists of risks and look only at the recommendation",
+    "Risks cannot be listed completely, so the list is always misleading"
+   ],
+   "answer": 0,
+   "why": "Size them, then act on the biggest. See §9.2."
+  },
+  {
+   "id": "363-09-I10",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.2",
+   "stem": "Identify the threat score for a medium-probability, high-seriousness risk.",
+   "options": [
+    "6",
+    "9",
+    "4",
+    "3"
+   ],
+   "answer": 0,
+   "why": "2 × 3 = 6. See §9.2."
+  },
+  {
+   "id": "363-09-I11",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.3",
+   "stem": "Describe a second-order effect.",
+   "options": [
+    "An effect the decision produces that it did not intend",
+    "The main benefit the decision was designed to produce",
+    "The cost of implementing the decision in the first year",
+    "The first result seen after the decision is implemented"
+   ],
+   "answer": 0,
+   "why": "Every decision produces effects it did not intend. See §9.3."
+  },
+  {
+   "id": "363-09-I12",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.3",
+   "stem": "Identify the question that finds second-order effects.",
+   "options": [
+    "'And then what?' asked twice",
+    "'Why?' asked five times",
+    "'Who is to blame?' asked of each department",
+    "'How much will it cost?' asked of each option"
+   ],
+   "answer": 0,
+   "why": "Ask it twice of every recommendation. See §9.3."
+  },
+  {
+   "id": "363-09-I13",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.3",
+   "stem": "Identify the second-order effect of an express lane for simple orders.",
+   "options": [
+    "Complex orders wait longer — and those customers spend most",
+    "Simple orders move faster and the queue at the counter looks shorter to everyone",
+    "Staff are happier because the work is easier to organise",
+    "Costs fall because fewer staff are needed at the counter"
+   ],
+   "answer": 0,
+   "why": "The second answer is where the cost hides. See §9.3."
+  },
+  {
+   "id": "363-09-I14",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.3",
+   "stem": "Identify the second-order effect of a bonus per order processed.",
+   "options": [
+    "Staff avoid the difficult orders and quality falls",
+    "More orders are processed and throughput rises",
+    "Lower pay for the staff who process the fewest orders",
+    "Fewer customers because the staff are too busy to serve them"
+   ],
+   "answer": 0,
+   "why": "The first answer is the hoped-for benefit. See §9.3."
+  },
+  {
+   "id": "363-09-I15",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.3",
+   "stem": "Explain why the second 'and then what?' matters most.",
+   "options": [
+    "The first answer is the hoped-for benefit; the second is where the cost usually hides",
+    "The first answer is always wrong, so only the second can be trusted",
+    "Managers ask it, so students must be ready to answer it",
+    "It is the shortest question and therefore the easiest to remember"
+   ],
+   "answer": 0,
+   "why": "It is what a good manager will ask you about. See §9.3."
+  },
+  {
+   "id": "363-09-I16",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.4",
+   "stem": "Identify the four questions of the ethical screen.",
+   "options": [
+    "Who bears the cost? The public test. The reversal test. The precedent test.",
+    "Is it legal? Is it cheap? Is it fast? Is it popular with the staff?",
+    "Who is affected? What happens to them? Where? When?",
+    "What is the claim? The reason? The assumption? The evidence?"
+   ],
+   "answer": 0,
+   "why": "Four minutes, four questions. See §9.4."
+  },
+  {
+   "id": "363-09-I17",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.4",
+   "stem": "Describe the reversal test.",
+   "options": [
+    "Would you accept this if you were on the receiving end?",
+    "Would you be comfortable if it were reported in the press?",
+    "If everyone in the industry did this, would the outcome still be acceptable?",
+    "Who bears the cost, including the groups with no voice in the meeting?"
+   ],
+   "answer": 0,
+   "why": "The reversal test. See §9.4."
+  },
+  {
+   "id": "363-09-I18",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.4",
+   "stem": "Describe the precedent test.",
+   "options": [
+    "If everyone in the industry did this, would the outcome still be acceptable?",
+    "Would you accept it yourself if you were on the receiving end?",
+    "Who bears the cost of the recommendation?",
+    "Is it legal under the current regulations?"
+   ],
+   "answer": 0,
+   "why": "The precedent test. See §9.4."
+  },
+  {
+   "id": "363-09-I19",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.4",
+   "stem": "Explain what to do when an ethical test fails.",
+   "options": [
+    "Say so in the report and state what you would do to reduce the harm",
+    "Abandon the recommendation, because a failed test means it cannot be made",
+    "Hide the failure, because it would weaken the recommendation",
+    "Ignore it, because the client decides what is acceptable"
+   ],
+   "answer": 0,
+   "why": "You are not required to abandon; you are required to say so. See §9.4."
+  },
+  {
+   "id": "363-09-I20",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.4",
+   "stem": "Explain why 'legal and profitable' is not enough.",
+   "options": [
+    "A recommendation can be legal, profitable and still wrong — these are the questions asked when it goes badly in public",
+    "Legal always means right, so the screen is only needed for recommendations that break the law",
+    "Profit is unethical, so a profitable recommendation always needs extra scrutiny",
+    "Clients dislike profit-driven recommendations and prefer ones framed around ethics"
+   ],
+   "answer": 0,
+   "why": "Legal, profitable and still wrong. See §9.4."
+  },
+  {
+   "id": "363-09-I21",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 6",
+   "sec": "9.5",
+   "stem": "Describe what AI is good for in problem solving.",
+   "options": [
+    "Widening options, suggesting causes, playing the challenger, rewriting for a different reader",
+    "Providing evidence, facts and sources for the claims in the report",
+    "Making the decision, because it has no bias and weighs the criteria consistently",
+    "Replacing the diagnosis, because it can see patterns the team cannot"
+   ],
+   "answer": 0,
+   "why": "A thinking partner, not a thinker. See §9.5."
+  },
+  {
+   "id": "363-09-I22",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 6",
+   "sec": "9.5",
+   "stem": "Describe what AI is bad for.",
+   "options": [
+    "Evidence — it produces plausible facts, numbers and sources that do not exist",
+    "Rewriting text for a different reader, because it loses the meaning",
+    "Listing options, because it produces too many to compare",
+    "Arguing against you, because it tends to agree with the user"
+   ],
+   "answer": 0,
+   "why": "Anything it gives as a fact must be checked. See §9.5."
+  },
+  {
+   "id": "363-09-I23",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 6",
+   "sec": "9.5",
+   "stem": "Describe the Doshi and Hauser (2024) finding.",
+   "options": [
+    "AI raises individual creative output but reduces the collective diversity of ideas",
+    "AI makes everyone equally creative, so talent no longer matters",
+    "AI has no effect on creative output in either direction",
+    "AI only helps experts, who know how to prompt it effectively"
+   ],
+   "answer": 0,
+   "why": "Groups using it converge on similar answers. See §9.5."
+  },
+  {
+   "id": "363-09-I24",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 6",
+   "sec": "9.5",
+   "stem": "Identify the course rule on AI.",
+   "options": [
+    "AI may help you think; it may not do the thinking that is assessed — and you declare what you used it for",
+    "AI is banned from every part of the course and its use is penalised",
+    "AI may write the report as long as the group checks it",
+    "AI use need not be declared, because it is a tool like a spreadsheet"
+   ],
+   "answer": 0,
+   "why": "Declare what you used it for. See §9.5."
+  },
+  {
+   "id": "363-09-I25",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 6",
+   "sec": "9.5",
+   "stem": "Explain what to do after AI widens your options.",
+   "options": [
+    "Deliberately go beyond it — groups using AI converge",
+    "Stop there, because the list is already wider than the group could produce",
+    "Choose the AI's favourite, because it has compared more options than the group",
+    "Delete the list and start again without AI"
+   ],
+   "answer": 0,
+   "why": "Use it to widen, then go beyond it. See §9.5."
+  },
+  {
+   "id": "363-09-I26",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 4",
+   "sec": "9.6",
+   "stem": "Identify the six parts of the defence in order.",
+   "options": [
+    "Recommendation; the problem with evidence; what was rejected; cost and trade-offs; main risk and contingency; what you are still unsure about",
+    "Problem; history of the problem; options considered; recommendation; thanks; questions from the audience",
+    "Cost; benefit; risk; timeline; team; budget",
+    "Claim; reason; assumption; evidence; conclusion; vote"
+   ],
+   "answer": 0,
+   "why": "Each answers the question the listener is actually asking. See §9.6."
+  },
+  {
+   "id": "363-09-I27",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 4",
+   "sec": "9.6",
+   "stem": "Identify what comes first in the defence.",
+   "options": [
+    "The recommendation — 'what do you want me to do?'",
+    "The history of the problem and how it was discovered",
+    "The team's names and the roles each person played",
+    "The budget required to implement the recommendation"
+   ],
+   "answer": 0,
+   "why": "The recommendation, first, in 25 words. See §9.6."
+  },
+  {
+   "id": "363-09-I28",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 4",
+   "sec": "9.6",
+   "stem": "Explain why the last line of the defence earns trust.",
+   "options": [
+    "Naming your remaining uncertainty makes everything before it more believable",
+    "It is the longest part of the defence and carries the most detail",
+    "It asks for money, which is the decision the listener has to make",
+    "It ends the meeting, so the listener remembers it best"
+   ],
+   "answer": 0,
+   "why": "The one students omit. See §9.6."
+  },
+  {
+   "id": "363-09-I29",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 4",
+   "sec": "9.6",
+   "stem": "Identify the question behind 'what else you considered and rejected'.",
+   "options": [
+    "'Did you actually think about it?'",
+    "'What is this going to cost me?'",
+    "'Is this a real problem?'",
+    "'Are you being completely straight with me?'"
+   ],
+   "answer": 0,
+   "why": "Rejected options show you thought. See §9.6."
+  },
+  {
+   "id": "363-09-I30",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 4",
+   "sec": "9.6",
+   "stem": "Explain why the defence is not salesmanship.",
+   "options": [
+    "It is a structure that answers the questions a manager will actually ask, in order",
+    "It is louder and more confident than a sales pitch",
+    "It uses slides rather than a spoken argument",
+    "It avoids mentioning risks that could worry the listener"
+   ],
+   "answer": 0,
+   "why": "Not salesmanship. See §9.6."
+  },
+  {
+   "id": "363-09-I31",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.2",
+   "stem": "Describe what to do with a risk scoring below 6.",
+   "options": [
+    "Name it and move on — you cannot plan for everything",
+    "Write a contingency, because every risk needs a plan",
+    "Abandon the option, because any risk is too much",
+    "Ignore it completely and leave it out of the report"
+   ],
+   "answer": 0,
+   "why": "Below 6, name it and move on. See §9.2."
+  },
+  {
+   "id": "363-09-I32",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 2",
+   "sec": "9.1",
+   "stem": "Explain what 'defensible' means for a decision.",
+   "options": [
+    "Visible, arguable and repeatable — someone else could follow how it was reached",
+    "Popular with the client, who will have to defend it to the board",
+    "Expensive enough to show that the analysis was thorough",
+    "Fast enough to be made before the opportunity passes"
+   ],
+   "answer": 0,
+   "why": "Visible, arguable, repeatable. See §9.1."
+  },
+  {
+   "id": "363-09-A01",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "9.1",
+   "stem": "Analyse a group that changes the weights after Option B wins unexpectedly. Determine the verdict.",
+   "options": [
+    "Dishonest — ask what the matrix knows instead of tuning the weights",
+    "Correct — weights should fit the team's instinct about what matters",
+    "Neutral — weights are a matter of judgement either way",
+    "Required — the matrix should always confirm the team's preferred option"
+   ],
+   "answer": 0,
+   "why": "Do not adjust the weights. See §9.1."
+  },
+  {
+   "id": "363-09-A02",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.1",
+   "stem": "Determine the weighted score for a score of 3 on a weight-4 criterion.",
+   "options": [
+    "12",
+    "7",
+    "1",
+    "34"
+   ],
+   "answer": 0,
+   "why": "3 × 4 = 12. See §9.1."
+  },
+  {
+   "id": "363-09-A03",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.1",
+   "stem": "Select the correct sequence in the week-12 studio.",
+   "options": [
+    "Agree criteria and weights on the board, witnessed, then score the options",
+    "Score the options first, then agree the criteria and weights that best explain the scores",
+    "Vote on the options, then build the matrix to document the vote",
+    "Let the client set the weights after seeing the options"
+   ],
+   "answer": 0,
+   "why": "Criteria and weights before any option is scored. See Exercise 1 and §9.1."
+  },
+  {
+   "id": "363-09-A04",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "9.1",
+   "stem": "Analyse a matrix with one criterion weighted 10 and four weighted 1. Determine the problem.",
+   "options": [
+    "One criterion decides everything — the matrix is a single preference wearing a table",
+    "Nothing — weights should reflect what matters most to the client",
+    "Too many criteria for the matrix to be useful",
+    "Too few options for the weights to discriminate between"
+   ],
+   "answer": 0,
+   "why": "Weights must reflect what matters, set before. See §9.1."
+  },
+  {
+   "id": "363-09-A05",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.2",
+   "stem": "Determine the threat score and action for 'supplier cannot deliver in time' (medium, high).",
+   "options": [
+    "6 — write a contingency such as naming a second supplier",
+    "3 — name it and move on",
+    "9 — abandon the option",
+    "4 — ignore it"
+   ],
+   "answer": 0,
+   "why": "2 × 3 = 6 → contingency. See §9.2."
+  },
+  {
+   "id": "363-09-A06",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.2",
+   "stem": "Determine the action for 'system integration fails' scored 3 (low, high).",
+   "options": [
+    "Name it and ask IT to confirm before signing — no written contingency required",
+    "Write a full contingency plan with a fallback system",
+    "Abandon the option, because integration failures are fatal",
+    "Run a pilot to test the integration before signing"
+   ],
+   "answer": 0,
+   "why": "Below 6: name and move on. See §9.2."
+  },
+  {
+   "id": "363-09-A07",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "9.2",
+   "stem": "Analyse a report that lists ten risks and acts on none. Determine the fault.",
+   "options": [
+    "Risks were not sized, so nothing was done about the biggest",
+    "Too many risks for a report of this length to cover properly",
+    "Too few risks for a project of this size",
+    "Risks are irrelevant once the decision has been made"
+   ],
+   "answer": 0,
+   "why": "Size them, then act on the biggest two. See §9.2."
+  },
+  {
+   "id": "363-09-A08",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.2",
+   "stem": "Select the contingency for 'customers dislike the change' scored 4.",
+   "options": [
+    "Name it; optionally test with 20 customers and keep the old option",
+    "A full written contingency plan with a communication strategy for every customer",
+    "Abandon the recommendation, because customer dislike is fatal",
+    "Ignore it, because customers always dislike change at first"
+   ],
+   "answer": 0,
+   "why": "Score 4 is below 6. See §9.2."
+  },
+  {
+   "id": "363-09-A09",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "9.3",
+   "stem": "Analyse 'cut opening hours to save cost'. Determine the second-order effect.",
+   "options": [
+    "Regulars shift to a competitor and do not return",
+    "Costs fall and the branch becomes more profitable",
+    "Staff rest more and are fresher during the open hours",
+    "Customers come later in the day and spend more"
+   ],
+   "answer": 0,
+   "why": "The second answer hides the cost. See §9.3."
+  },
+  {
+   "id": "363-09-A10",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "9.3",
+   "stem": "Analyse a bonus for calls handled per hour. Determine the likely second-order effect.",
+   "options": [
+    "Calls get shorter and difficult callers are avoided; quality falls",
+    "More calls are handled and waiting times fall",
+    "Higher pay for the staff who handle the most calls",
+    "Happier customers who reach an agent more quickly"
+   ],
+   "answer": 0,
+   "why": "Staff avoid the difficult ones. See §9.3."
+  },
+  {
+   "id": "363-09-A11",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.3",
+   "stem": "Determine the chapter's distinction between a student answer and a professional one.",
+   "options": [
+    "The professional asks 'and then what?' twice and reports the inconvenient second answer",
+    "The professional uses more slides and a longer presentation",
+    "The student is shorter and gets to the point faster",
+    "The professional avoids risks and recommends only safe options"
+   ],
+   "answer": 0,
+   "why": "Ask it twice, of every recommendation. See §9.3."
+  },
+  {
+   "id": "363-09-A12",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "9.3",
+   "stem": "Analyse 'add a pre-order shelf'. Determine a possible second-order effect.",
+   "options": [
+    "Counter customers wait longer while staff fill pre-orders",
+    "Pre-orders rise and the shelf is used by more customers",
+    "Nothing changes, because pre-orders replace counter orders one for one",
+    "Prices fall because the shelf reduces the cost of serving"
+   ],
+   "answer": 0,
+   "why": "And then what? twice. See §9.3."
+  },
+  {
+   "id": "363-09-A13",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "9.4",
+   "stem": "Analyse a recommendation to cut the night cleaning shift. Determine the group the first ethical question points to.",
+   "options": [
+    "The cleaners who lose hours — with no voice in the meeting",
+    "The shareholders who gain from the saving",
+    "The manager who proposed the cut",
+    "The customers only, who will notice the dirtier premises in the morning"
+   ],
+   "answer": 0,
+   "why": "Name every group affected, including those with no voice. See §9.4."
+  },
+  {
+   "id": "363-09-A14",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.4",
+   "stem": "Classify 'would we be comfortable if this decision and our reason were reported accurately?'.",
+   "options": [
+    "The public test",
+    "The reversal test",
+    "The precedent test",
+    "The cost question"
+   ],
+   "answer": 0,
+   "why": "The public test. See §9.4."
+  },
+  {
+   "id": "363-09-A15",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.4",
+   "stem": "Determine the action when the precedent test fails but the recommendation stands.",
+   "options": [
+    "State the failure in the report and what you would do to reduce the harm",
+    "Delete the recommendation and replace it with the second option",
+    "Hide the failure, because the client wants the recommendation",
+    "Blame the client, whose constraints made the failure unavoidable"
+   ],
+   "answer": 0,
+   "why": "Say so, and reduce the harm. See §9.4 and Exercise 2."
+  },
+  {
+   "id": "363-09-A16",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "9.4",
+   "stem": "Analyse a recommendation that is legal and raises profit by charging hidden fees. Determine the screen's likely verdict.",
+   "options": [
+    "Fails the public and reversal tests",
+    "Passes all four, because the fees are legal and disclosed in the terms",
+    "Fails only the cost question, because customers bear the cost",
+    "Passes because it is legal and the business needs the revenue"
+   ],
+   "answer": 0,
+   "why": "Legal, profitable and still wrong. See §9.4."
+  },
+  {
+   "id": "363-09-A17",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 6",
+   "sec": "9.5",
+   "stem": "Classify using AI to argue against your recommendation.",
+   "options": [
+    "Good use — the challenger role",
+    "Bad use — evidence",
+    "Bad use — replacing the decision",
+    "Not allowed"
+   ],
+   "answer": 0,
+   "why": "Playing the challenger is a good use. See §9.5 and Exercise 3."
+  },
+  {
+   "id": "363-09-A18",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 6",
+   "sec": "9.5",
+   "stem": "Classify citing three statistics an AI produced, without checking.",
+   "options": [
+    "Bad use — AI invents plausible facts and sources",
+    "Good use, because AI has read more sources than any student",
+    "Allowed if declared in the AI statement at the end of the report",
+    "Required, because the course asks for evidence from AI tools"
+   ],
+   "answer": 0,
+   "why": "Anything given as a fact must be checked. See §9.5."
+  },
+  {
+   "id": "363-09-A19",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 6",
+   "sec": "9.5",
+   "stem": "Analyse a group whose option list came only from AI. Determine the risk.",
+   "options": [
+    "Convergence — groups using AI produce similar answers; go beyond it deliberately",
+    "None — AI produces more options than any group could on its own",
+    "Too many options for the group to evaluate in the time",
+    "Too few words in each option for the client to understand them"
+   ],
+   "answer": 0,
+   "why": "Doshi and Hauser (2024). See §9.5."
+  },
+  {
+   "id": "363-09-A20",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 6",
+   "sec": "9.5",
+   "stem": "Select the correct two-line AI declaration.",
+   "options": [
+    "'Used AI to widen options and as a challenger; did not use it for the diagnosis, the choice or the defence'",
+    "'Did not use AI at any stage of the project, in line with the group's agreement'",
+    "'AI wrote the report, which the group then reviewed and approved'",
+    "'Used AI for everything, as the course rules permit for research'"
+   ],
+   "answer": 0,
+   "why": "What you used it for, and what you did not. See §9.5 and Exercise 3."
+  },
+  {
+   "id": "363-09-A21",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 6",
+   "sec": "9.5",
+   "stem": "Determine how many of three AI-supplied facts a group should expect to survive checking.",
+   "options": [
+    "Unknown until each is verified against a real source — that is the point of the exercise",
+    "All three, because AI tools are now accurate on factual questions",
+    "None, because AI tools invent every fact they are asked for",
+    "Two, because roughly a third of AI facts are wrong"
+   ],
+   "answer": 0,
+   "why": "Verify each; report how many survived. See Exercise 3. See §9.5."
+  },
+  {
+   "id": "363-09-A22",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 4",
+   "sec": "9.6",
+   "stem": "Analyse a defence that opens with ten minutes of history. Determine the fault.",
+   "options": [
+    "The recommendation should come first — the listener is asking 'what do you want me to do?'",
+    "Nothing — the history explains why the recommendation is needed",
+    "Too short — ten minutes is not enough to cover the problem's history",
+    "No slides, so the listener cannot follow the history"
+   ],
+   "answer": 0,
+   "why": "Recommendation first, in 25 words. See §9.6."
+  },
+  {
+   "id": "363-09-A23",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 4",
+   "sec": "9.6",
+   "stem": "Analyse a defence that never mentions what was rejected. Determine the question left unanswered.",
+   "options": [
+    "'Did you actually think about it?'",
+    "'What is this going to cost me?'",
+    "'Is this a real problem?'",
+    "'What happens if it goes wrong, and who pays?'"
+   ],
+   "answer": 0,
+   "why": "Rejected options answer that question. See §9.6."
+  },
+  {
+   "id": "363-09-A24",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 4",
+   "sec": "9.6",
+   "stem": "Determine the word budget for the recommendation in the defence.",
+   "options": [
+    "About 25 words",
+    "About 100 words",
+    "About 300 words",
+    "About 10 words"
+   ],
+   "answer": 0,
+   "why": "25 words. See §9.6."
+  },
+  {
+   "id": "363-09-A25",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 4",
+   "sec": "9.6",
+   "stem": "Analyse a defence that ends with 'we are completely certain this will work'. Determine the chapter's view.",
+   "options": [
+    "It loses trust — naming remaining uncertainty makes the rest more believable",
+    "It is strong, because confidence persuades the listener",
+    "It is required, because a defence must end with a clear and confident conclusion",
+    "It saves time, because the listener does not need to ask about doubts"
+   ],
+   "answer": 0,
+   "why": "Naming uncertainty earns trust. See §9.6."
+  },
+  {
+   "id": "363-09-A26",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 4",
+   "sec": "9.6",
+   "stem": "Determine the time limit for the studio defence.",
+   "options": [
+    "Under four minutes",
+    "Ten minutes",
+    "One minute",
+    "Unlimited, as long as every part is covered"
+   ],
+   "answer": 0,
+   "why": "Over four minutes is a fail. See Exercise 4. See §9.6."
+  },
+  {
+   "id": "363-09-A27",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 4",
+   "sec": "9.6",
+   "stem": "Select the part that answers 'what happens if it goes wrong?'.",
+   "options": [
+    "The main risk and your contingency",
+    "The cost and the trade-offs of the option",
+    "The options that were rejected",
+    "The recommendation itself"
+   ],
+   "answer": 0,
+   "why": "Risk and contingency. See §9.6."
+  },
+  {
+   "id": "363-09-A28",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "9.1",
+   "stem": "Analyse a group whose matrix winner is the option their test in chapter 8 ruled out. Determine the fault.",
+   "options": [
+    "The test result was not used as a criterion or to remove the option",
+    "Nothing — the matrix and the test answer two different questions about the option",
+    "The weights are wrong and should be adjusted to match the test",
+    "The matrix is too small and needs more criteria"
+   ],
+   "answer": 0,
+   "why": "A test result feeds the decision. See §9.1 and §8.6."
+  },
+  {
+   "id": "363-09-A29",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "9.4",
+   "stem": "Determine the ethical question that catches a recommendation harming a group not present.",
+   "options": [
+    "'Who bears the cost?' — name every group affected, including those with no voice",
+    "The precedent test — if everyone did this, would it be acceptable?",
+    "The public test — would you be comfortable if it were reported?",
+    "The reversal test — would you accept it on the receiving end?"
+   ],
+   "answer": 0,
+   "why": "Including the ones with no voice in the meeting. See §9.4."
+  },
+  {
+   "id": "363-09-A30",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "9.2",
+   "stem": "Analyse 'staff do not use the new process' rated high and high. Determine the score.",
+   "options": [
+    "9 — a written contingency is required",
+    "6 — a written contingency is required",
+    "3 — name it and move on",
+    "1 — name it and move on"
+   ],
+   "answer": 0,
+   "why": "3 × 3 = 9. See §9.2."
+  },
+  {
+   "id": "363-09-A31",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 4",
+   "sec": "9.6",
+   "stem": "Classify the sentence 'what we are still unsure about is whether the effect holds in a full month'.",
+   "options": [
+    "The sixth part of the defence — remaining uncertainty",
+    "The recommendation, stated in 25 words",
+    "The cost and the trade-offs",
+    "The options that were rejected"
+   ],
+   "answer": 0,
+   "why": "The part students omit. See §9.6."
+  }
+ ]
+}

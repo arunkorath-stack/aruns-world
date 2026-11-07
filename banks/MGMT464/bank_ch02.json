@@ -1,1 +1,1053 @@
-{"subject": "MGMT464", "chapter": 2, "title": "Hurdle 2 · The Mirror Cave — Leadership Traits and Ethics", "clos": ["CLO 1", "CLO 2"], "source": "Chapter02_Leadership_Traits_and_Ethics.pptx", "status": "published", "questions": [{"id": "464-02-I01", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.1", "stem": "Identify the five Big Five personality dimensions.", "options": ["Surgency, agreeableness, adjustment, conscientiousness, openness to experience", "Dominance, energy, confidence, integrity, intelligence", "Power, achievement, affiliation, control, warmth", "Honesty, courage, wisdom, justice, temperance"], "answer": 0, "why": "The Big Five hold up across cultures. See §2.1."}, {"id": "464-02-I02", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.1", "stem": "Describe surgency.", "options": ["Extraversion and dominance — wants to be in charge, outgoing, energetic; most linked to leadership emergence", "Warm and cooperative", "Calm under pressure", "Dependable and organised"], "answer": 0, "why": "Surgency = extraversion and dominance. See §2.1."}, {"id": "464-02-I03", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.1", "stem": "Identify the trait most consistently linked to job performance in any role.", "options": ["Conscientiousness", "Agreeableness", "Openness to experience", "Surgency"], "answer": 0, "why": "Dependable, hard-working, achievement-oriented. See §2.1."}, {"id": "464-02-I04", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.1", "stem": "Explain why the chapter says traits are 'tendencies, not destiny'.", "options": ["Behaviour can be developed regardless of personality profile", "Traits change every day", "Traits do not exist", "Only destiny matters"], "answer": 0, "why": "The textbook is clear that behaviour can be developed. See §2.1."}, {"id": "464-02-I05", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.1", "stem": "Describe what too much agreeableness does to a leader.", "options": ["The leader avoids hard decisions", "The leader becomes a bully", "The leader loses energy", "The leader stops learning"], "answer": 0, "why": "Helps interpersonal skill; too much and hard decisions are avoided. See §2.1."}, {"id": "464-02-I06", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.2", "stem": "Identify the trait the textbook treats as a precondition for the other eight.", "options": ["Dominance — the want to lead", "Intelligence", "Integrity", "Flexibility"], "answer": 0, "why": "If you do not want to be a leader, you will not be an effective one. See §2.2."}, {"id": "464-02-I07", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.2", "stem": "Describe an internal locus of control.", "options": ["Believing you control your fate and taking responsibility", "Blaming luck or others", "Wanting to be liked", "Avoiding risk"], "answer": 0, "why": "Internal vs external locus. See §2.2."}, {"id": "464-02-I08", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.2", "stem": "Identify the trait whose absence is the most cited reason careers derail.", "options": ["Sensitivity to others", "High energy", "Self-confidence", "Flexibility"], "answer": 0, "why": "Insensitivity — the most cited reason careers derail. See §2.2."}, {"id": "464-02-I09", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.2", "stem": "Describe what dominance without sensitivity, integrity or stability produces.", "options": ["A bully", "A servant leader", "A manager", "A follower"], "answer": 0, "why": "Dominance alone becomes bullying. See §2.2."}, {"id": "464-02-I10", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.2", "stem": "Identify the Big Five dimension that integrity maps to in the chapter table.", "options": ["Conscientiousness", "Agreeableness", "Surgency", "Openness"], "answer": 0, "why": "Integrity — conscientiousness. See §2.2."}, {"id": "464-02-I11", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.3", "stem": "Identify McClelland's three needs.", "options": ["Need for achievement, need for power, need for affiliation", "Need for money, status and safety", "Need for rest, food and friends", "Need for rules, order and control"], "answer": 0, "why": "Achievement Motivation Theory. See §2.3."}, {"id": "464-02-I12", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.3", "stem": "Describe the Leader Motive Profile.", "options": ["High socialised need for power, moderate need for achievement, lower need for affiliation", "High achievement, low power, high affiliation", "High affiliation only", "Equal in all three"], "answer": 0, "why": "The profile matters more than any single need. See §2.3."}, {"id": "464-02-I13", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.3", "stem": "Explain why a very high need for achievement can make a poor leader.", "options": ["The star performer prefers to do it all alone, but leadership means getting results through others", "Achievement is unethical", "Achievers lack energy", "Achievers are disliked"], "answer": 0, "why": "The surprise for many students. See §2.3."}, {"id": "464-02-I14", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.3", "stem": "Differentiate socialised power from personal power.", "options": ["Socialised power is used for the group's benefit; personal power for personal gain", "They are the same", "Socialised power is weaker", "Personal power is always better"], "answer": 0, "why": "Socialised power, not personal gain. See §2.3."}, {"id": "464-02-I15", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.4", "stem": "Describe Theory X.", "options": ["Employees dislike work, avoid responsibility and must be closely supervised and controlled", "Employees like work and accept responsibility", "Employees are all the same", "Employees need no leader"], "answer": 0, "why": "McGregor's Theory X. See §2.4."}, {"id": "464-02-I16", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.4", "stem": "Describe the Pygmalion effect.", "options": ["Leaders' expectations and treatment of followers explain and predict followers' performance — the self-fulfilling prophecy", "A Greek leadership trait", "Followers choosing their leader", "A test of intelligence"], "answer": 0, "why": "Expect much, and people rise to it. See §2.4."}, {"id": "464-02-I17", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.4", "stem": "Identify the attitude combination the textbook calls the effective style.", "options": ["Theory Y with a positive self-concept", "Theory X with a positive self-concept", "Theory Y with a negative self-concept", "Theory X with a negative self-concept"], "answer": 0, "why": "Top-left of the table. See §2.4."}, {"id": "464-02-I18", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.4", "stem": "Explain how self-concept can be built.", "options": ["Set goals, act, succeed small, repeat", "It is fixed at birth", "Only by praise from others", "By avoiding challenges"], "answer": 0, "why": "Self-concept can be built. See §2.4."}, {"id": "464-02-I19", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.5", "stem": "Identify the three levels of moral development in order.", "options": ["Preconventional, conventional, postconventional", "Conventional, preconventional, postconventional", "Low, medium, high integrity", "Personal, social, legal"], "answer": 0, "why": "Kohlberg's levels as used in the textbook. See §2.5."}, {"id": "464-02-I20", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.5", "stem": "Describe the conventional level.", "options": ["Living up to expectations defined by others — the group, the boss, the law; most people most of the time", "Self-interest: will I get caught?", "Universal principles regardless of the group", "Pure instinct"], "answer": 0, "why": "'Everyone does it' or 'my manager told me to'. See §2.5."}, {"id": "464-02-I21", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.5", "stem": "Identify the situational factors that raise unethical behaviour.", "options": ["High reward, low chance of being caught, group approval, the leader models it, intense pressure to perform", "Low reward and high supervision", "A strong ethical culture", "Clear standards and rewards for honesty"], "answer": 0, "why": "Personality decides how much situation it takes. See §2.5."}, {"id": "464-02-I22", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.5", "stem": "Explain the chapter's answer to 'good people, bad choices' at WorldCom.", "options": ["Both — a conventional-level person in a situation built to produce fraud", "Only personality", "Only the situation", "Neither; it was luck"], "answer": 0, "why": "Raise your own level AND redesign the situation. See §2.5."}, {"id": "464-02-I23", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.6", "stem": "Describe moral justification.", "options": ["Reinterpreting immoral behaviour as serving a higher purpose — 'it is for a good cause'", "'I was only following orders'", "'Everyone did it'", "'Others do far worse'"], "answer": 0, "why": "Moral justification. See §2.6."}, {"id": "464-02-I24", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.6", "stem": "Identify the rationalisation behind 'Everyone did it'.", "options": ["Diffusion of responsibility", "Displacement of responsibility", "Advantageous comparison", "Euphemistic labelling"], "answer": 0, "why": "No single person feels responsible in a group. See §2.6."}, {"id": "464-02-I25", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.6", "stem": "Identify the rationalisation behind 'creative accounting' or 'right-sizing'.", "options": ["Euphemistic labelling", "Attribution of blame", "Moral justification", "Disregard of consequences"], "answer": 0, "why": "Cosmetic words for wrong acts. See §2.6."}, {"id": "464-02-I26", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.6", "stem": "Explain what hearing a rationalisation in your own head means.", "options": ["It is the evidence that a line is being crossed — the arguments come after the decision", "It means the decision is right", "It means nothing", "It means others are wrong"], "answer": 0, "why": "The rationalisation is the warning. See §2.6."}, {"id": "464-02-I27", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.7", "stem": "Identify the four questions of the Rotary Four-Way Test.", "options": ["Is it the truth? Is it fair to all concerned? Will it build goodwill and better friendships? Will it be beneficial to all concerned?", "Is it legal? Is it cheap? Is it fast? Is it popular?", "Who? What? When? Where?", "Will I get caught? Will I get rich? Will I be liked? Will I win?"], "answer": 0, "why": "The Four-Way Test. See §2.7."}, {"id": "464-02-I28", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.7", "stem": "Describe the stakeholder approach to ethics.", "options": ["Create a win–win for all relevant stakeholders, or at least make sure none is unfairly harmed — and be able to say so to each face to face", "Maximise profit for shareholders", "Follow the law only", "Ask your friends"], "answer": 0, "why": "The most complete guide. See §2.7."}, {"id": "464-02-I29", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.7", "stem": "Identify what the textbook says about rewarding behaviour as an ethical leader.", "options": ["Reward ethical behaviour and punish unethical behaviour even when it made money", "Reward only results", "Ignore small failures", "Punish only when caught"], "answer": 0, "why": "Being an ethical leader. See §2.7."}, {"id": "464-02-I30", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.7", "stem": "Explain why integrity is a leadership trait, in the chapter's words.", "options": ["Trust is what makes influence possible at all", "Honest leaders earn more", "It is required by law", "It replaces other traits"], "answer": 0, "why": "Ethics and effectiveness are not opposites. See §2.7."}, {"id": "464-02-I31", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.2", "stem": "Identify the trait described as 'adjusts to different situations; open to change'.", "options": ["Flexibility", "Stability", "High energy", "Dominance"], "answer": 0, "why": "Flexibility — openness. See §2.2."}, {"id": "464-02-I32", "quiz": 1, "bloom": "Understand", "clo": "CLO 1", "sec": "2.4", "stem": "Describe a Theory X leader with a negative self-concept.", "options": ["Blames, does not trust or expect much of anyone", "Develops others", "Gives and accepts positive feedback", "Fears being disliked but trusts others"], "answer": 0, "why": "Bottom-right of the table. See §2.4."}, {"id": "464-02-A01", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.1", "stem": "In the Mirror Cave each rescuer sees their own nature. Classify Omar, who wants to be in charge, is outgoing and full of energy.", "options": ["High surgency", "High agreeableness", "High adjustment", "High openness"], "answer": 0, "why": "Omar: 'Let me lead the way — I'll take charge of the climb!' Surgency is extraversion and dominance. See §2.1."}, {"id": "464-02-A02", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.1", "stem": "Analyse Dana, who panics and turns moody whenever the gang is near. Determine the Big Five dimension she is low on.", "options": ["Adjustment — emotional stability", "Conscientiousness", "Openness", "Surgency"], "answer": 0, "why": "Followers read the leader's mood. See §2.1."}, {"id": "464-02-A03", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.1", "stem": "Analyse Noor, who is curious about every new path and happy to try the unknown tunnel. Classify the dimension.", "options": ["Openness to experience", "Agreeableness", "Adjustment", "Conscientiousness"], "answer": 0, "why": "Essential for the change element of leadership. See §2.1."}, {"id": "464-02-A04", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.1", "stem": "Analyse Rami, who is so eager to keep everyone happy that he refuses to choose between two routes. Determine the problem.", "options": ["Too much agreeableness — avoiding the hard decision", "Too much surgency", "Too much conscientiousness", "Too much openness"], "answer": 0, "why": "Too much agreeableness and the leader avoids hard decisions. See §2.1."}, {"id": "464-02-A05", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.2", "stem": "Classify the Crow chief, who takes charge of his gang but humiliates and bullies them.", "options": ["Dominance without agreeableness and sensitivity — domineering", "Sensitivity without dominance", "Integrity without energy", "Flexibility without intelligence"], "answer": 0, "why": "Watch out for dominance without agreeableness. See §2.2."}, {"id": "464-02-A06", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.2", "stem": "Analyse Rami after a failed river crossing, when he says the current was bad luck. Determine the trait concern.", "options": ["External locus of control — blaming luck instead of taking responsibility", "High self-confidence", "High sensitivity", "Flexibility"], "answer": 0, "why": "Internal locus takes responsibility. See §2.2."}, {"id": "464-02-A07", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.2", "stem": "Analyse a rescuer who keeps her word even when a small lie would be easier. Determine the trait and why it matters.", "options": ["Integrity — the base of trust that makes influence possible", "Dominance — the want to lead", "High energy — stamina", "Intelligence — problem solving"], "answer": 0, "why": "Integrity; small dishonesties destroy trust. See §2.2."}, {"id": "464-02-A08", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.2", "stem": "Analyse a brilliant strategist who ignores how the team feels and loses them. Determine the chapter's warning.", "options": ["Intelligence without people skills — insensitivity derails careers", "Too much flexibility", "Too little energy", "Too much integrity"], "answer": 0, "why": "Intelligence; watch out for no people skills. See §2.2."}, {"id": "464-02-A09", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.3", "stem": "Classify Omar, who wants to climb the fortress wall alone to prove he is the best.", "options": ["High need for achievement — the star performer who prefers to do it himself", "High socialised power", "High need for affiliation", "The Leader Motive Profile"], "answer": 0, "why": "High n-Ach: prefers to do it themselves. See §2.3."}, {"id": "464-02-A10", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.3", "stem": "Analyse Dana, who avoids every argument because she wants everyone to like her. Determine the need and the leadership risk.", "options": ["High need for affiliation — she will struggle to make unpopular decisions", "High need for power — she will bully", "Moderate achievement — ideal", "Low affiliation — cold"], "answer": 0, "why": "Lower affiliation lets leaders make unpopular decisions. See §2.3."}, {"id": "464-02-A11", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.3", "stem": "Analyse Rami, who wants to be in charge so that the team reaches Layla, sets moderate goals and accepts being disliked when needed. Determine the fit.", "options": ["He matches the Leader Motive Profile — socialised power, moderate achievement, lower affiliation", "He is a poor leader — too much power", "He should want more affiliation", "He has no motives"], "answer": 0, "why": "The profile that predicts leadership success. See §2.3."}, {"id": "464-02-A12", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.3", "stem": "Determine what the chapter predicts about delegation by a leader with very high n-Ach.", "options": ["He will do the work himself rather than get results through others", "He will delegate everything", "He will refuse all tasks", "He will hire more staff"], "answer": 0, "why": "Leadership means getting results through others. See §2.3."}, {"id": "464-02-A13", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.4", "stem": "Analyse the Crow chief, who watches every guard closely because 'they are lazy and will run'. Classify his attitude.", "options": ["Theory X", "Theory Y", "Pygmalion effect", "Positive self-concept"], "answer": 0, "why": "Employees dislike work and must be controlled. See §2.4."}, {"id": "464-02-A14", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.4", "stem": "Rami tells Noor 'you can find the path; I trust you', and she does. Determine the effect at work.", "options": ["The Pygmalion effect — expectations become performance", "Theory X", "Moral justification", "Diffusion of responsibility"], "answer": 0, "why": "Expect much and people rise to it. See §2.4."}, {"id": "464-02-A15", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.4", "stem": "Analyse a leader who trusts others but not himself and fears being disliked. Classify using the attitude table.", "options": ["Theory Y with a negative self-concept", "Theory Y with a positive self-concept", "Theory X with a positive self-concept", "Theory X with a negative self-concept"], "answer": 0, "why": "Theory Y / negative self-concept cell. See §2.4."}, {"id": "464-02-A16", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.4", "stem": "Determine why the Theory X guards perform worse than Rami's team, in the chapter's view.", "options": ["They were treated as if they were lazy, so they became so", "They were born lazy", "They were paid less", "They lacked training"], "answer": 0, "why": "Not because the people were lazy but because they were treated as if they were. See §2.4."}, {"id": "464-02-A17", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.5", "stem": "Classify a gang member who refuses to steal only because he fears being caught.", "options": ["Preconventional level", "Conventional level", "Postconventional level", "Ethical leader"], "answer": 0, "why": "'Will I get caught?' See §2.5."}, {"id": "464-02-A18", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.5", "stem": "Classify Dana, who would take a wrong order from Rami because 'the captain told me to'.", "options": ["Conventional level", "Preconventional level", "Postconventional level", "Socialised power"], "answer": 0, "why": "Living up to expectations defined by others. See §2.5."}, {"id": "464-02-A19", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.5", "stem": "Classify Noor, who refuses to leave an injured gang boy behind even though the team wants to move on.", "options": ["Postconventional — universal principles regardless of the group", "Conventional", "Preconventional", "External locus of control"], "answer": 0, "why": "Will break rules that violate principles. See §2.5."}, {"id": "464-02-A20", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.5", "stem": "Analyse the Crow camp: high reward, nobody checks, the chief steals openly and demands results. Determine why ordinary members turn bad.", "options": ["The situation is built to produce unethical behaviour", "They are all postconventional", "They lack intelligence", "They have high agreeableness"], "answer": 0, "why": "High reward, low detection, group approval, leader models it, pressure. See §2.5."}, {"id": "464-02-A21", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.6", "stem": "Classify the director's phrase 'every division does it' in the quarter-end case.", "options": ["Diffusion of responsibility", "Moral justification", "Euphemistic labelling", "Attribution of blame"], "answer": 0, "why": "Marking guide, task 1. See §2.6."}, {"id": "464-02-A22", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.6", "stem": "Classify 'the auditors never look'.", "options": ["Disregard or distortion of consequences", "Displacement of responsibility", "Advantageous comparison", "Moral justification"], "answer": 0, "why": "Minimising the harm. See §2.6."}, {"id": "464-02-A23", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.6", "stem": "Classify the Crow chief's 'the village deserved it — they refused to pay'.", "options": ["Attribution of blame", "Diffusion of responsibility", "Euphemistic labelling", "Displacement of responsibility"], "answer": 0, "why": "Claiming the victim provoked it. See §2.6."}, {"id": "464-02-A24", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.6", "stem": "Classify Omar's 'I only broke the gate because Rami ordered it'.", "options": ["Displacement of responsibility", "Advantageous comparison", "Moral justification", "Disregard of consequences"], "answer": 0, "why": "'I was only following orders.' See §2.6."}, {"id": "464-02-A25", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.6", "stem": "Classify 'we only borrowed the boat; the gang does far worse'.", "options": ["Advantageous comparison", "Euphemistic labelling", "Diffusion of responsibility", "Attribution of blame"], "answer": 0, "why": "Comparing to a bigger wrong. See §2.6."}, {"id": "464-02-A26", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.7", "stem": "Determine the stakeholders unfairly harmed in the quarter-end case if the manager complies.", "options": ["Investors and auditors who are misled, and whoever later carries the blame", "The director only", "Nobody", "The team's families"], "answer": 0, "why": "Marking guide, task 3. See §2.7."}, {"id": "464-02-A27", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.7", "stem": "Select the response the marking guide accepts for the quarter-end case.", "options": ["A respectful refusal or a lawful alternative, such as recording correctly and explaining the shortfall", "Silent compliance", "Reporting the director to the press first", "Quitting without a word"], "answer": 0, "why": "Task 4: refusal or lawful alternative, worded respectfully. See §2.7."}, {"id": "464-02-A28", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.7", "stem": "The Crow chief offers Rami gold to abandon Layla. Rami asks: 'Would I want to be on the receiving end of this?' Classify the guide he is using.", "options": ["The Golden Rule", "The Four-Way Test", "The stakeholder approach", "Discernment and advice"], "answer": 0, "why": "The Golden Rule. See §2.7."}, {"id": "464-02-A29", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.7", "stem": "Determine the trait the quarter-end decision requires most, according to the marking guide.", "options": ["Integrity, supported by self-confidence and stability", "Dominance", "Flexibility", "High energy"], "answer": 0, "why": "Task 4: integrity. See §2.7."}, {"id": "464-02-A30", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.7", "stem": "Analyse Rami, who praises honest scouts in public and dismisses a scout who lied even though the lie won a skirmish. Determine the ethical-leader practice.", "options": ["Rewarding ethical behaviour and punishing unethical behaviour even when it made money", "Leading by charisma", "Diffusing responsibility", "Theory X control"], "answer": 0, "why": "Being an ethical leader. See §2.7."}, {"id": "464-02-A31", "quiz": 2, "bloom": "Apply", "clo": "CLO 2", "sec": "2.5", "stem": "Determine the two things ethical leadership is about, according to the chapter.", "options": ["Raising your own level of moral development AND redesigning the situation for others", "Punishing and rewarding", "Rules and audits", "Profit and goodwill"], "answer": 0, "why": "Answer to question 4. See §2.5."}, {"id": "464-02-A32", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.1", "stem": "Analyse the chapter's claim about effective leaders across cultures. Determine the three Big Five dimensions they usually score high on.", "options": ["Surgency, adjustment and conscientiousness", "Agreeableness, openness and surgency", "Openness only", "Agreeableness and adjustment"], "answer": 0, "why": "Universality. See §2.1."}, {"id": "464-02-A33", "quiz": 2, "bloom": "Analyse", "clo": "CLO 2", "sec": "2.3", "stem": "Analyse the Crow chief, who enjoys power purely for himself. Classify his need for power.", "options": ["Personal power, not socialised power", "Socialised power", "Need for affiliation", "Need for achievement"], "answer": 0, "why": "Socialised power is used for the group's benefit. See §2.3."}]}
+{
+ "subject": "MGMT464",
+ "chapter": 2,
+ "title": "Hurdle 2 · The Mirror Cave — Leadership Traits and Ethics",
+ "clos": [
+  "CLO 1",
+  "CLO 2"
+ ],
+ "source": "Chapter02_Leadership_Traits_and_Ethics.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "464-02-I01",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Identify the five Big Five personality dimensions.",
+   "options": [
+    "Surgency, agreeableness, adjustment, conscientiousness, openness to experience",
+    "Dominance, high energy, self-confidence, integrity, intelligence",
+    "Need for power, need for achievement, need for affiliation, need for control and need for warmth",
+    "Honesty, courage, wisdom, justice, temperance"
+   ],
+   "answer": 0,
+   "why": "The Big Five hold up across cultures. See §2.1."
+  },
+  {
+   "id": "464-02-I02",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Describe surgency.",
+   "options": [
+    "Extraversion and dominance — wants to be in charge, outgoing, energetic; most linked to leadership emergence",
+    "Warmth and cooperation — gets on with everyone, trusts people readily and is easy to work with on any team or project",
+    "Calm under pressure — stays emotionally stable when the situation turns against the team",
+    "Dependable and organised — plans the work carefully, keeps every promise and finishes what is started"
+   ],
+   "answer": 0,
+   "why": "Surgency = extraversion and dominance. See §2.1."
+  },
+  {
+   "id": "464-02-I03",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Identify the trait most consistently linked to job performance in any role.",
+   "options": [
+    "Conscientiousness",
+    "Agreeableness",
+    "Openness to experience",
+    "Surgency"
+   ],
+   "answer": 0,
+   "why": "Dependable, hard-working, achievement-oriented. See §2.1."
+  },
+  {
+   "id": "464-02-I04",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Explain why the chapter says traits are 'tendencies, not destiny'.",
+   "options": [
+    "Behaviour can be developed regardless of personality profile",
+    "Traits change every day depending on the leader's mood and situation",
+    "Traits do not exist, so personality tests measure nothing useful",
+    "Only destiny matters, because traits are fixed at birth and cannot be changed"
+   ],
+   "answer": 0,
+   "why": "The textbook is clear that behaviour can be developed. See §2.1."
+  },
+  {
+   "id": "464-02-I05",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Describe what too much agreeableness does to a leader.",
+   "options": [
+    "The leader avoids hard decisions",
+    "The leader becomes a bully who dominates the team",
+    "The leader loses energy and stops pushing for results",
+    "The leader stops learning because everyone agrees with them"
+   ],
+   "answer": 0,
+   "why": "Helps interpersonal skill; too much and hard decisions are avoided. See §2.1."
+  },
+  {
+   "id": "464-02-I06",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.2",
+   "stem": "Identify the trait the textbook treats as a precondition for the other eight.",
+   "options": [
+    "Dominance — the want to lead",
+    "Intelligence — the ability to solve problems",
+    "Integrity — honesty and ethics",
+    "Flexibility — adjusting to different situations"
+   ],
+   "answer": 0,
+   "why": "If you do not want to be a leader, you will not be an effective one. See §2.2."
+  },
+  {
+   "id": "464-02-I07",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.2",
+   "stem": "Describe an internal locus of control.",
+   "options": [
+    "Believing you control your fate and taking responsibility",
+    "Blaming luck, other people or the situation whenever things go wrong",
+    "Wanting to be liked by the people you lead",
+    "Avoiding risk whenever the outcome is uncertain"
+   ],
+   "answer": 0,
+   "why": "Internal vs external locus. See §2.2."
+  },
+  {
+   "id": "464-02-I08",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.2",
+   "stem": "Identify the trait whose absence is the most cited reason careers derail.",
+   "options": [
+    "Sensitivity to others",
+    "High energy and stamina",
+    "Self-confidence in decisions",
+    "Flexibility in new situations"
+   ],
+   "answer": 0,
+   "why": "Insensitivity — the most cited reason careers derail. See §2.2."
+  },
+  {
+   "id": "464-02-I09",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.2",
+   "stem": "Describe what dominance without sensitivity, integrity or stability produces.",
+   "options": [
+    "A bully",
+    "A servant leader",
+    "A manager",
+    "A follower"
+   ],
+   "answer": 0,
+   "why": "Dominance alone becomes bullying. See §2.2."
+  },
+  {
+   "id": "464-02-I10",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.2",
+   "stem": "Identify the Big Five dimension that integrity maps to in the chapter table.",
+   "options": [
+    "Conscientiousness",
+    "Agreeableness",
+    "Surgency",
+    "Openness to experience"
+   ],
+   "answer": 0,
+   "why": "Integrity — conscientiousness. See §2.2."
+  },
+  {
+   "id": "464-02-I11",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Identify McClelland's three needs.",
+   "options": [
+    "Need for achievement, need for power, need for affiliation",
+    "Need for money, need for status, need for safety",
+    "Need for rest, need for food, need for friends",
+    "Need for rules, need for order, need for control and safety"
+   ],
+   "answer": 0,
+   "why": "Achievement Motivation Theory. See §2.3."
+  },
+  {
+   "id": "464-02-I12",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Describe the Leader Motive Profile.",
+   "options": [
+    "High socialised need for power, moderate need for achievement, lower need for affiliation",
+    "High need for achievement, low need for power and high need for affiliation with the team",
+    "High need for affiliation only, with the other two needs at low levels",
+    "Equal in all three needs, so that no single motive dominates"
+   ],
+   "answer": 0,
+   "why": "The profile matters more than any single need. See §2.3."
+  },
+  {
+   "id": "464-02-I13",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Explain why a very high need for achievement can make a poor leader.",
+   "options": [
+    "The star performer prefers to do it all alone, but leadership means getting results through others",
+    "Achievement is unethical when it comes at the expense of others in the team who are doing the routine work",
+    "Achievers lack the energy to lead because they spend it on their own work",
+    "Achievers are disliked by their teams because they set standards that nobody else can meet"
+   ],
+   "answer": 0,
+   "why": "The surprise for many students. See §2.3."
+  },
+  {
+   "id": "464-02-I14",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Differentiate socialised power from personal power.",
+   "options": [
+    "Socialised power is used for the group's benefit; personal power for personal gain",
+    "They are the same thing described from the leader's and the follower's points of view",
+    "Socialised power is weaker than personal power because it depends on the group's agreement",
+    "Personal power is always better because the leader can act without waiting for consent"
+   ],
+   "answer": 0,
+   "why": "Socialised power, not personal gain. See §2.3."
+  },
+  {
+   "id": "464-02-I15",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Describe Theory X.",
+   "options": [
+    "Employees dislike work, avoid responsibility and must be closely supervised and controlled",
+    "Employees like work, accept responsibility and can be trusted to manage themselves with little supervision",
+    "Employees are all the same, so one management style works for everyone",
+    "Employees need no leader, because the work itself tells them what to do"
+   ],
+   "answer": 0,
+   "why": "McGregor's Theory X. See §2.4."
+  },
+  {
+   "id": "464-02-I16",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Describe the Pygmalion effect.",
+   "options": [
+    "Leaders' expectations and treatment of followers explain and predict followers' performance — the self-fulfilling prophecy",
+    "A Greek leadership trait describing the leader who shapes followers into the image of himself",
+    "Followers choosing their leader based on the qualities they expect a leader to have",
+    "A test of intelligence used to select leaders in large organisations"
+   ],
+   "answer": 0,
+   "why": "Expect much, and people rise to it. See §2.4."
+  },
+  {
+   "id": "464-02-I17",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Identify the attitude combination the textbook calls the effective style.",
+   "options": [
+    "Theory Y with a positive self-concept",
+    "Theory X with a positive self-concept",
+    "Theory Y with a negative self-concept",
+    "Theory X with a negative self-concept"
+   ],
+   "answer": 0,
+   "why": "Top-left of the table. See §2.4."
+  },
+  {
+   "id": "464-02-I18",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Explain how self-concept can be built.",
+   "options": [
+    "Set goals, act, succeed small, repeat",
+    "It is fixed at birth and cannot be changed by experience",
+    "Only by praise from others, so leaders depend on their followers for it",
+    "By avoiding challenges, so that failures never damage it"
+   ],
+   "answer": 0,
+   "why": "Self-concept can be built. See §2.4."
+  },
+  {
+   "id": "464-02-I19",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.5",
+   "stem": "Identify the three levels of moral development in order.",
+   "options": [
+    "Preconventional, conventional, postconventional",
+    "Conventional, preconventional, postconventional",
+    "Low, medium and high integrity",
+    "Personal, social and legal"
+   ],
+   "answer": 0,
+   "why": "Kohlberg's levels as used in the textbook. See §2.5."
+  },
+  {
+   "id": "464-02-I20",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.5",
+   "stem": "Describe the conventional level.",
+   "options": [
+    "Living up to expectations defined by others — the group, the boss, the law; most people most of the time",
+    "Self-interest — will I get caught, and what is in it for me?",
+    "Universal principles followed regardless of what the group, the boss or the law expects, even at personal cost",
+    "Pure instinct — acting without any reasoning about right and wrong"
+   ],
+   "answer": 0,
+   "why": "'Everyone does it' or 'my manager told me to'. See §2.5."
+  },
+  {
+   "id": "464-02-I21",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.5",
+   "stem": "Identify the situational factors that raise unethical behaviour.",
+   "options": [
+    "High reward, low chance of being caught, group approval, the leader models it, intense pressure to perform",
+    "Low reward and high supervision, so that people feel their honesty is not trusted",
+    "A strong ethical culture that makes people complacent about their own behaviour",
+    "Clear standards and generous rewards for honesty, which paradoxically make dishonesty more tempting for the ambitious"
+   ],
+   "answer": 0,
+   "why": "Personality decides how much situation it takes. See §2.5."
+  },
+  {
+   "id": "464-02-I22",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.5",
+   "stem": "Explain the chapter's answer to 'good people, bad choices' at WorldCom.",
+   "options": [
+    "Both — a conventional-level person in a situation built to produce fraud",
+    "Only personality — the people involved were dishonest and would have cheated anywhere",
+    "Only the situation — anyone would have done the same under that pressure",
+    "Neither — it was luck that the fraud was discovered when it was"
+   ],
+   "answer": 0,
+   "why": "Raise your own level AND redesign the situation. See §2.5."
+  },
+  {
+   "id": "464-02-I23",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.6",
+   "stem": "Describe moral justification.",
+   "options": [
+    "Reinterpreting immoral behaviour as serving a higher purpose — 'it is for a good cause'",
+    "Shifting the blame to the person who gave the order — 'I was only following orders'",
+    "Spreading the blame across the whole group — 'everyone did it, so nobody in particular is responsible'",
+    "Comparing the behaviour with something worse — 'others do far worse than this'"
+   ],
+   "answer": 0,
+   "why": "Moral justification. See §2.6."
+  },
+  {
+   "id": "464-02-I24",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.6",
+   "stem": "Identify the rationalisation behind 'Everyone did it'.",
+   "options": [
+    "Diffusion of responsibility",
+    "Displacement of responsibility",
+    "Advantageous comparison",
+    "Euphemistic labelling"
+   ],
+   "answer": 0,
+   "why": "No single person feels responsible in a group. See §2.6."
+  },
+  {
+   "id": "464-02-I25",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.6",
+   "stem": "Identify the rationalisation behind 'creative accounting' or 'right-sizing'.",
+   "options": [
+    "Euphemistic labelling",
+    "Attribution of blame",
+    "Moral justification",
+    "Disregard of consequences"
+   ],
+   "answer": 0,
+   "why": "Cosmetic words for wrong acts. See §2.6."
+  },
+  {
+   "id": "464-02-I26",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.6",
+   "stem": "Explain what hearing a rationalisation in your own head means.",
+   "options": [
+    "It is the evidence that a line is being crossed — the arguments come after the decision",
+    "It means the decision is right, because you have thought it through carefully",
+    "It means nothing, because everyone rationalises every decision they make",
+    "It means that others are wrong to criticise, because you have reasons for the decision that they do not know"
+   ],
+   "answer": 0,
+   "why": "The rationalisation is the warning. See §2.6."
+  },
+  {
+   "id": "464-02-I27",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.7",
+   "stem": "Identify the four questions of the Rotary Four-Way Test.",
+   "options": [
+    "Is it the truth? Is it fair to all concerned? Will it build goodwill and better friendships? Will it be beneficial to all concerned?",
+    "Is it legal? Is it cheap? Is it fast? Is it popular with the people affected?",
+    "Who is involved? What will happen? When will it happen? Where will it happen?",
+    "Will I get caught? Will I get rich? Will I be liked? Will I win?"
+   ],
+   "answer": 0,
+   "why": "The Four-Way Test. See §2.7."
+  },
+  {
+   "id": "464-02-I28",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.7",
+   "stem": "Describe the stakeholder approach to ethics.",
+   "options": [
+    "Create a win–win for all relevant stakeholders, or at least make sure none is unfairly harmed — and be able to say so to each face to face",
+    "Maximise profit for shareholders, because they are the stakeholders who own the organisation and bear the risk",
+    "Follow the law only, because the law already balances the interests of the different stakeholders",
+    "Ask your friends what they would do, because people you trust will give you an honest answer"
+   ],
+   "answer": 0,
+   "why": "The most complete guide. See §2.7."
+  },
+  {
+   "id": "464-02-I29",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.7",
+   "stem": "Identify what the textbook says about rewarding behaviour as an ethical leader.",
+   "options": [
+    "Reward ethical behaviour and punish unethical behaviour even when it made money",
+    "Reward only results, because results are what the organisation exists to produce",
+    "Ignore small failures, because punishing them makes people hide bigger ones",
+    "Punish only when caught, because unproven suspicions damage trust"
+   ],
+   "answer": 0,
+   "why": "Being an ethical leader. See §2.7."
+  },
+  {
+   "id": "464-02-I30",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.7",
+   "stem": "Explain why integrity is a leadership trait, in the chapter's words.",
+   "options": [
+    "Trust is what makes influence possible at all",
+    "Honest leaders earn more over their careers than dishonest ones",
+    "It is required by law for leaders of listed companies",
+    "It replaces the other traits once a leader has it"
+   ],
+   "answer": 0,
+   "why": "Ethics and effectiveness are not opposites. See §2.7."
+  },
+  {
+   "id": "464-02-I31",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.2",
+   "stem": "Identify the trait described as 'adjusts to different situations; open to change'.",
+   "options": [
+    "Flexibility",
+    "Stability",
+    "High energy",
+    "Dominance"
+   ],
+   "answer": 0,
+   "why": "Flexibility — openness. See §2.2."
+  },
+  {
+   "id": "464-02-I32",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Describe a Theory X leader with a negative self-concept.",
+   "options": [
+    "Blames, does not trust or expect much of anyone",
+    "Develops others and expects the best of them",
+    "Gives and accepts positive feedback readily",
+    "Fears being disliked by the team but trusts others to do good work"
+   ],
+   "answer": 0,
+   "why": "Bottom-right of the table. See §2.4."
+  },
+  {
+   "id": "464-02-A01",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.1",
+   "stem": "In the Mirror Cave each rescuer sees their own nature. Classify Omar, who wants to be in charge, is outgoing and full of energy.",
+   "options": [
+    "High surgency",
+    "High agreeableness",
+    "High adjustment",
+    "High openness"
+   ],
+   "answer": 0,
+   "why": "Omar: 'Let me lead the way — I'll take charge of the climb!' Surgency is extraversion and dominance. See §2.1."
+  },
+  {
+   "id": "464-02-A02",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.1",
+   "stem": "Analyse Dana, who panics and turns moody whenever the gang is near. Determine the Big Five dimension she is low on.",
+   "options": [
+    "Adjustment — emotional stability",
+    "Conscientiousness — dependability",
+    "Openness — curiosity about the new",
+    "Surgency — dominance and energy"
+   ],
+   "answer": 0,
+   "why": "Followers read the leader's mood. See §2.1."
+  },
+  {
+   "id": "464-02-A03",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.1",
+   "stem": "Analyse Noor, who is curious about every new path and happy to try the unknown tunnel. Classify the dimension.",
+   "options": [
+    "Openness to experience",
+    "Agreeableness",
+    "Adjustment",
+    "Conscientiousness and adjustment"
+   ],
+   "answer": 0,
+   "why": "Essential for the change element of leadership. See §2.1."
+  },
+  {
+   "id": "464-02-A04",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.1",
+   "stem": "Analyse Rami, who is so eager to keep everyone happy that he refuses to choose between two routes. Determine the problem.",
+   "options": [
+    "Too much agreeableness — avoiding the hard decision",
+    "Too much surgency — wanting to be in charge of both routes",
+    "Too much conscientiousness — planning both routes in detail",
+    "Too much openness — being attracted to both routes"
+   ],
+   "answer": 0,
+   "why": "Too much agreeableness and the leader avoids hard decisions. See §2.1."
+  },
+  {
+   "id": "464-02-A05",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.2",
+   "stem": "Classify the Crow chief, who takes charge of his gang but humiliates and bullies them.",
+   "options": [
+    "Dominance without agreeableness and sensitivity — domineering",
+    "Sensitivity without dominance — too soft to lead",
+    "Integrity without energy — honest but passive",
+    "Flexibility without intelligence — adapting to every situation without thinking it through"
+   ],
+   "answer": 0,
+   "why": "Watch out for dominance without agreeableness. See §2.2."
+  },
+  {
+   "id": "464-02-A06",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.2",
+   "stem": "Analyse Rami after a failed river crossing, when he says the current was bad luck. Determine the trait concern.",
+   "options": [
+    "External locus of control — blaming luck instead of taking responsibility",
+    "High self-confidence — he is sure that the next crossing will succeed whatever the current does",
+    "High sensitivity — he is protecting the team from blame",
+    "Flexibility — he is adjusting his explanation to the situation"
+   ],
+   "answer": 0,
+   "why": "Internal locus takes responsibility. See §2.2."
+  },
+  {
+   "id": "464-02-A07",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.2",
+   "stem": "Analyse a rescuer who keeps her word even when a small lie would be easier. Determine the trait and why it matters.",
+   "options": [
+    "Integrity — the base of trust that makes influence possible",
+    "Dominance — the want to lead the group",
+    "High energy — the stamina to keep going",
+    "Intelligence — the ability to solve problems quickly under pressure"
+   ],
+   "answer": 0,
+   "why": "Integrity; small dishonesties destroy trust. See §2.2."
+  },
+  {
+   "id": "464-02-A08",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.2",
+   "stem": "Analyse a brilliant strategist who ignores how the team feels and loses them. Determine the chapter's warning.",
+   "options": [
+    "Intelligence without people skills — insensitivity derails careers",
+    "Too much flexibility — changing the plan too often for the team to follow",
+    "Too little energy — unable to keep up with the team",
+    "Too much integrity — refusing to compromise"
+   ],
+   "answer": 0,
+   "why": "Intelligence; watch out for no people skills. See §2.2."
+  },
+  {
+   "id": "464-02-A09",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.3",
+   "stem": "Classify Omar, who wants to climb the fortress wall alone to prove he is the best.",
+   "options": [
+    "High need for achievement — the star performer who prefers to do it himself",
+    "High socialised power — he wants to lead the whole group over the wall himself",
+    "High need for affiliation — he wants the team to admire him",
+    "The Leader Motive Profile — he has the motives of a leader"
+   ],
+   "answer": 0,
+   "why": "High n-Ach: prefers to do it themselves. See §2.3."
+  },
+  {
+   "id": "464-02-A10",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.3",
+   "stem": "Analyse Dana, who avoids every argument because she wants everyone to like her. Determine the need and the leadership risk.",
+   "options": [
+    "High need for affiliation — she will struggle to make unpopular decisions",
+    "High need for power — she will bully the team to get her way whenever she is challenged",
+    "Moderate need for achievement — the ideal level for a leader",
+    "Low need for affiliation — she is cold and distant from the team"
+   ],
+   "answer": 0,
+   "why": "Lower affiliation lets leaders make unpopular decisions. See §2.3."
+  },
+  {
+   "id": "464-02-A11",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.3",
+   "stem": "Analyse Rami, who wants to be in charge so that the team reaches Layla, sets moderate goals and accepts being disliked when needed. Determine the fit.",
+   "options": [
+    "He matches the Leader Motive Profile — socialised power, moderate achievement, lower affiliation",
+    "He is a poor leader — too much need for power and not enough concern for the feelings of the team",
+    "He should want more affiliation, because a leader needs to be liked",
+    "He has no motives of his own, because he acts only for Layla"
+   ],
+   "answer": 0,
+   "why": "The profile that predicts leadership success. See §2.3."
+  },
+  {
+   "id": "464-02-A12",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.3",
+   "stem": "Determine what the chapter predicts about delegation by a leader with very high n-Ach.",
+   "options": [
+    "He will do the work himself rather than get results through others",
+    "He will delegate everything so that he can concentrate on his own goals",
+    "He will refuse all tasks that do not carry a personal challenge",
+    "He will hire more staff to take on the work he does not want"
+   ],
+   "answer": 0,
+   "why": "Leadership means getting results through others. See §2.3."
+  },
+  {
+   "id": "464-02-A13",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.4",
+   "stem": "Analyse the Crow chief, who watches every guard closely because 'they are lazy and will run'. Classify his attitude.",
+   "options": [
+    "Theory X",
+    "Theory Y",
+    "Pygmalion effect",
+    "Positive self-concept"
+   ],
+   "answer": 0,
+   "why": "Employees dislike work and must be controlled. See §2.4."
+  },
+  {
+   "id": "464-02-A14",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.4",
+   "stem": "Rami tells Noor 'you can find the path; I trust you', and she does. Determine the effect at work.",
+   "options": [
+    "The Pygmalion effect — expectations become performance",
+    "Theory X — Rami is controlling Noor through trust",
+    "Moral justification — Rami is excusing a risky decision",
+    "Diffusion of responsibility — Rami is sharing the blame"
+   ],
+   "answer": 0,
+   "why": "Expect much and people rise to it. See §2.4."
+  },
+  {
+   "id": "464-02-A15",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.4",
+   "stem": "Analyse a leader who trusts others but not himself and fears being disliked. Classify using the attitude table.",
+   "options": [
+    "Theory Y with a negative self-concept",
+    "Theory Y with a positive self-concept",
+    "Theory X with a positive self-concept",
+    "Theory X with a negative self-concept"
+   ],
+   "answer": 0,
+   "why": "Theory Y / negative self-concept cell. See §2.4."
+  },
+  {
+   "id": "464-02-A16",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.4",
+   "stem": "Determine why the Theory X guards perform worse than Rami's team, in the chapter's view.",
+   "options": [
+    "They were treated as if they were lazy, so they became so",
+    "They were born lazy and the chief simply recognised it",
+    "They were paid less than Rami's team and had no reason to work",
+    "They lacked training, so they could not perform even when they tried"
+   ],
+   "answer": 0,
+   "why": "Not because the people were lazy but because they were treated as if they were. See §2.4."
+  },
+  {
+   "id": "464-02-A17",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.5",
+   "stem": "Classify a gang member who refuses to steal only because he fears being caught.",
+   "options": [
+    "Preconventional level",
+    "Conventional level",
+    "Postconventional level",
+    "Ethical leader"
+   ],
+   "answer": 0,
+   "why": "'Will I get caught?' See §2.5."
+  },
+  {
+   "id": "464-02-A18",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.5",
+   "stem": "Classify Dana, who would take a wrong order from Rami because 'the captain told me to'.",
+   "options": [
+    "Conventional level",
+    "Preconventional level",
+    "Postconventional level",
+    "Socialised power"
+   ],
+   "answer": 0,
+   "why": "Living up to expectations defined by others. See §2.5."
+  },
+  {
+   "id": "464-02-A19",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.5",
+   "stem": "Classify Noor, who refuses to leave an injured gang boy behind even though the team wants to move on.",
+   "options": [
+    "Postconventional — universal principles regardless of the group",
+    "Conventional — doing what the rest of the team expects",
+    "Preconventional — avoiding punishment for leaving him",
+    "External locus of control — blaming the situation for the boy's injury"
+   ],
+   "answer": 0,
+   "why": "Will break rules that violate principles. See §2.5."
+  },
+  {
+   "id": "464-02-A20",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.5",
+   "stem": "Analyse the Crow camp: high reward, nobody checks, the chief steals openly and demands results. Determine why ordinary members turn bad.",
+   "options": [
+    "The situation is built to produce unethical behaviour",
+    "They are all postconventional and follow their own principles",
+    "They lack the intelligence to see what they are doing",
+    "They have high agreeableness and go along with the chief"
+   ],
+   "answer": 0,
+   "why": "High reward, low detection, group approval, leader models it, pressure. See §2.5."
+  },
+  {
+   "id": "464-02-A21",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.6",
+   "stem": "Classify the director's phrase 'every division does it' in the quarter-end case.",
+   "options": [
+    "Diffusion of responsibility",
+    "Moral justification",
+    "Euphemistic labelling",
+    "Attribution of blame to the victims"
+   ],
+   "answer": 0,
+   "why": "Marking guide, task 1. See §2.6."
+  },
+  {
+   "id": "464-02-A22",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.6",
+   "stem": "Classify 'the auditors never look'.",
+   "options": [
+    "Disregard or distortion of consequences",
+    "Displacement of responsibility",
+    "Advantageous comparison with other divisions",
+    "Moral justification"
+   ],
+   "answer": 0,
+   "why": "Minimising the harm. See §2.6."
+  },
+  {
+   "id": "464-02-A23",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.6",
+   "stem": "Classify the Crow chief's 'the village deserved it — they refused to pay'.",
+   "options": [
+    "Attribution of blame",
+    "Diffusion of responsibility",
+    "Euphemistic labelling",
+    "Displacement of responsibility"
+   ],
+   "answer": 0,
+   "why": "Claiming the victim provoked it. See §2.6."
+  },
+  {
+   "id": "464-02-A24",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.6",
+   "stem": "Classify Omar's 'I only broke the gate because Rami ordered it'.",
+   "options": [
+    "Displacement of responsibility",
+    "Advantageous comparison with worse behaviour",
+    "Moral justification",
+    "Disregard of consequences"
+   ],
+   "answer": 0,
+   "why": "'I was only following orders.' See §2.6."
+  },
+  {
+   "id": "464-02-A25",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.6",
+   "stem": "Classify 'we only borrowed the boat; the gang does far worse'.",
+   "options": [
+    "Advantageous comparison",
+    "Euphemistic labelling",
+    "Diffusion of responsibility",
+    "Attribution of blame"
+   ],
+   "answer": 0,
+   "why": "Comparing to a bigger wrong. See §2.6."
+  },
+  {
+   "id": "464-02-A26",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.7",
+   "stem": "Determine the stakeholders unfairly harmed in the quarter-end case if the manager complies.",
+   "options": [
+    "Investors and auditors who are misled, and whoever later carries the blame",
+    "The director only, who will be blamed if the fraud is found",
+    "Nobody, because the revenue is real and only the timing changes",
+    "The team's families, who depend on the bonus that recording the revenue early would bring them"
+   ],
+   "answer": 0,
+   "why": "Marking guide, task 3. See §2.7."
+  },
+  {
+   "id": "464-02-A27",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.7",
+   "stem": "Select the response the marking guide accepts for the quarter-end case.",
+   "options": [
+    "A respectful refusal or a lawful alternative, such as recording correctly and explaining the shortfall",
+    "Silent compliance, because the director is responsible for the decision",
+    "Reporting the director to the press before speaking to anyone inside",
+    "Quitting without a word, so that the manager is not involved"
+   ],
+   "answer": 0,
+   "why": "Task 4: refusal or lawful alternative, worded respectfully. See §2.7."
+  },
+  {
+   "id": "464-02-A28",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.7",
+   "stem": "The Crow chief offers Rami gold to abandon Layla. Rami asks: 'Would I want to be on the receiving end of this?' Classify the guide he is using.",
+   "options": [
+    "The Golden Rule",
+    "The Four-Way Test",
+    "The stakeholder approach",
+    "Discernment and advice"
+   ],
+   "answer": 0,
+   "why": "The Golden Rule. See §2.7."
+  },
+  {
+   "id": "464-02-A29",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.7",
+   "stem": "Determine the trait the quarter-end decision requires most, according to the marking guide.",
+   "options": [
+    "Integrity, supported by self-confidence and stability",
+    "Dominance — the want to take charge of the situation",
+    "Flexibility — adjusting to what the director needs",
+    "High energy — the stamina to work through the quarter-end"
+   ],
+   "answer": 0,
+   "why": "Task 4: integrity. See §2.7."
+  },
+  {
+   "id": "464-02-A30",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.7",
+   "stem": "Analyse Rami, who praises honest scouts in public and dismisses a scout who lied even though the lie won a skirmish. Determine the ethical-leader practice.",
+   "options": [
+    "Rewarding ethical behaviour and punishing unethical behaviour even when it made money",
+    "Leading by charisma — the scouts follow Rami because they admire him and want his approval",
+    "Diffusing responsibility — Rami is sharing the blame for the lie",
+    "Theory X control — Rami is punishing to keep the scouts in line"
+   ],
+   "answer": 0,
+   "why": "Being an ethical leader. See §2.7."
+  },
+  {
+   "id": "464-02-A31",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "2.5",
+   "stem": "Determine the two things ethical leadership is about, according to the chapter.",
+   "options": [
+    "Raising your own level of moral development AND redesigning the situation for others",
+    "Punishing unethical behaviour and rewarding ethical behaviour",
+    "Writing clear rules and auditing compliance with them",
+    "Balancing profit for the owners with goodwill for the community, the regulators and the press"
+   ],
+   "answer": 0,
+   "why": "Answer to question 4. See §2.5."
+  },
+  {
+   "id": "464-02-A32",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.1",
+   "stem": "Analyse the chapter's claim about effective leaders across cultures. Determine the three Big Five dimensions they usually score high on.",
+   "options": [
+    "Surgency, adjustment and conscientiousness",
+    "Agreeableness, openness and surgency",
+    "Openness only, with the other four varying by culture",
+    "Agreeableness and adjustment, with the other three varying"
+   ],
+   "answer": 0,
+   "why": "Universality. See §2.1."
+  },
+  {
+   "id": "464-02-A33",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "2.3",
+   "stem": "Analyse the Crow chief, who enjoys power purely for himself. Classify his need for power.",
+   "options": [
+    "Personal power, not socialised power",
+    "Socialised power, used for the gang's benefit",
+    "Need for affiliation — he wants the gang's loyalty",
+    "Need for achievement — he wants to be the best chief"
+   ],
+   "answer": 0,
+   "why": "Socialised power is used for the group's benefit. See §2.3."
+  }
+ ]
+}

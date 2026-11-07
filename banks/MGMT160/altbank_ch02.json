@@ -1,0 +1,509 @@
+{
+ "subject": "MGMT160",
+ "chapter": 2,
+ "title": "The Evolution of Management Thought",
+ "clos": [
+  "CLO 1",
+  "CLO 2"
+ ],
+ "source": "Chapter02_Evolution_of_Management_Thought.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "160-02-I16",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Identify the four problems a factory of 2,000 strangers faced in 1910.",
+   "options": [
+    "Communication, coordination, motivation, and productivity and quality",
+    "Taxes, labour laws, customers and suppliers",
+    "Hybrid work, AI, globalisation and sustainability",
+    "Pay, offices, job titles and holiday entitlements"
+   ],
+   "answer": 0,
+   "why": "Each of these problems produced a school of management thinking. See §2.1."
+  },
+  {
+   "id": "160-02-I17",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Describe the chapter's view of management ideas.",
+   "options": [
+    "Each idea is an answer to a real workplace problem of its time",
+    "Ideas are invented by professors mainly so that students can be examined on them",
+    "Old ideas are always wrong and should be replaced as soon as a newer idea appears",
+    "New ideas always replace old ones completely, so only the latest wave matters today"
+   ],
+   "answer": 0,
+   "why": "Ideas are answers to problems; that is why they evolved. See §2.1."
+  },
+  {
+   "id": "160-02-I18",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Explain why bigger firms needed new management thinking.",
+   "options": [
+    "Instructions, roles and motivation that worked for 40 known workers broke with 2,000 strangers",
+    "Bigger firms had more money to spend on consultants, who sold them new ideas",
+    "Workers in big firms were less skilled than those in small workshops and needed more rules",
+    "Governments forced big firms to change their methods through new factory legislation"
+   ],
+   "answer": 0,
+   "why": "Growth broke the old informal way of managing. See §2.1."
+  },
+  {
+   "id": "160-02-I19",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.2",
+   "stem": "Identify the main focus of the human relations wave.",
+   "options": [
+    "People and their feelings at work",
+    "Efficiency and the one best way of doing each job",
+    "Flexibility, systems and reading the situation",
+    "Rules and hierarchy"
+   ],
+   "answer": 0,
+   "why": "The 1930s wave put people first after Hawthorne. See §2.2."
+  },
+  {
+   "id": "160-02-I20",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.2",
+   "stem": "Identify the approximate decade when each wave began.",
+   "options": [
+    "Classical ~1900s, human relations ~1930s, modern ~1950s onward",
+    "Classical ~1950s, human relations ~1900s, modern ~1930s onward",
+    "All three waves began together in the 1980s with the rise of management schools",
+    "Human relations ~1900s, classical ~1930s, modern ~1950s onward"
+   ],
+   "answer": 0,
+   "why": "~1900s efficiency, ~1930s people, ~1950s systems and flexibility. See §2.2."
+  },
+  {
+   "id": "160-02-I21",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Identify Taylor's three ideas.",
+   "options": [
+    "One best way, specialisation and training, pay linked to output",
+    "Clear rules, a defined hierarchy and written records of every decision",
+    "Attention, respect and inclusion for every worker on the floor",
+    "Plan the work, organise the people and lead by personal example"
+   ],
+   "answer": 0,
+   "why": "Scientific management: better methods, trained specialists, incentives. See §2.3."
+  },
+  {
+   "id": "160-02-I22",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Identify the thinker who designed the fair, rule-based large organisation.",
+   "options": [
+    "Max Weber",
+    "Frederick Taylor",
+    "Elton Mayo",
+    "Fayol"
+   ],
+   "answer": 0,
+   "why": "Weber's bureaucracy: clear rules applied equally, hierarchy, merit. See §2.4."
+  },
+  {
+   "id": "160-02-I23",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.5",
+   "stem": "Identify the thinker behind the Hawthorne studies.",
+   "options": [
+    "Elton Mayo",
+    "Max Weber",
+    "Frederick Taylor",
+    "Henri Fayol"
+   ],
+   "answer": 0,
+   "why": "Mayo's Hawthorne studies started the human relations movement. See §2.5."
+  },
+  {
+   "id": "160-02-I24",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.6",
+   "stem": "Explain the phrase 'failures live between the boxes'.",
+   "options": [
+    "Most problems happen in the hand-offs between departments, not inside one department",
+    "Failures are caused by the boxes on the organisation chart being drawn in the wrong order",
+    "Only the boxes at the top of the chart fail, because that is where the big decisions are made",
+    "Problems are always one person's fault, and the manager's job is to find out whose"
+   ],
+   "answer": 0,
+   "why": "Systems thinking: trace the chain across departments instead of blaming the nearest person. See §2.6."
+  },
+  {
+   "id": "160-02-I25",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.6",
+   "stem": "Describe what a systems manager does when something fails.",
+   "options": [
+    "Traces the chain of connected causes and fixes the root",
+    "Blames the person nearest to the failure and makes an example of them",
+    "Ignores the failure until a customer complains and then offers a discount",
+    "Adds a new rule immediately so that the same failure cannot happen again"
+   ],
+   "answer": 0,
+   "why": "Systems managers trace the chain. See §2.6."
+  },
+  {
+   "id": "160-02-I26",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.6",
+   "stem": "Identify the chapter's airline example of the systems perspective.",
+   "options": [
+    "One missed inspection grounded a plane, delayed four flights and lowered next month's bookings",
+    "A pilot who arrived late once and was dismissed to protect the airline's reputation",
+    "An airline that bought new planes and saw its maintenance costs fall the following year",
+    "A marketing campaign that failed because the advertising agency misunderstood the brief"
+   ],
+   "answer": 0,
+   "why": "One technical failure travelled through connected parts into a marketing problem. See §2.6."
+  },
+  {
+   "id": "160-02-I27",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.7",
+   "stem": "Identify the four things the right management style depends on.",
+   "options": [
+    "The situation, the people, the environment and the organisation",
+    "The manager's mood, age, title and salary",
+    "Taylor's, Fayol's, Weber's and Mayo's ideas",
+    "Profit, cost, time and quality"
+   ],
+   "answer": 0,
+   "why": "Contingency thinking: it depends on these four. See §2.7."
+  },
+  {
+   "id": "160-02-I28",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.7",
+   "stem": "Explain when 'it depends' is a serious answer.",
+   "options": [
+    "When you can say exactly what it depends on",
+    "When you do not want to make a decision and need more time to think",
+    "Never — managers must always have one clear rule for every situation",
+    "Only in creative companies, where there are no routine or safety-critical tasks"
+   ],
+   "answer": 0,
+   "why": "Contingency: 'it depends' is serious if you name the factors. See §2.7."
+  },
+  {
+   "id": "160-02-I29",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.7",
+   "stem": "Describe the contingency view of Taylor's and Mayo's ideas.",
+   "options": [
+    "Both are tools; the manager picks the mix that fits the situation",
+    "Taylor was right and Mayo was wrong, because efficiency is what pays the wages",
+    "Mayo was right and Taylor was wrong, because people are more important than methods",
+    "Neither is useful today, because both were developed for factories a century ago"
+   ],
+   "answer": 0,
+   "why": "The strongest answers are mixes chosen by reading the situation. See §2.7."
+  },
+  {
+   "id": "160-02-I30",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.8",
+   "stem": "Describe how the chapter compares the 1910 manager with today's manager.",
+   "options": [
+    "Different problems, not harder: waste and chaos then, complexity and speed now, with better tools",
+    "Today's manager has a much easier job, because computers handle the planning and the records",
+    "The 1910 manager had better tools, because the work was simpler and the workers obeyed",
+    "The problems are exactly the same, because people and organisations have not changed"
+   ],
+   "answer": 0,
+   "why": "Different, not harder. See §2.8."
+  },
+  {
+   "id": "160-02-I31",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.8",
+   "stem": "Identify what employees expect today that they did not expect in 1910.",
+   "options": [
+    "Meaning, flexibility and to be heard",
+    "Only a fair wage paid on time at the end of the week",
+    "A lifetime job in one factory with a pension at the end",
+    "Strict supervision and clear instructions for every task"
+   ],
+   "answer": 0,
+   "why": "New expectations are one of today's four challenges. See §2.8."
+  },
+  {
+   "id": "160-02-I32",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "2.8",
+   "stem": "Explain how AI changes management, according to the chapter.",
+   "options": [
+    "It is a new challenge managers must learn to use, like technology in every earlier era",
+    "It makes managers unnecessary, because the software can plan, organise and control",
+    "It has no real effect on management, because managing people has not changed",
+    "It only affects factories and warehouses, not offices, hospitals or schools"
+   ],
+   "answer": 0,
+   "why": "AI is one of today's challenges, to be met with today's tools. See §2.8."
+  },
+  {
+   "id": "160-02-A16",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Analyse a start-up that grew from 5 friends to 120 employees and now has confusion, duplicate work and low motivation. Determine the chapter's explanation.",
+   "options": [
+    "The same growth problems that produced the classical schools in 1910",
+    "The employees are lazy",
+    "The founders were bad people who did not care about the staff they hired",
+    "The product is wrong, so the employees have lost faith in the company's future"
+   ],
+   "answer": 0,
+   "why": "Communication, coordination and motivation break when a firm grows. See §2.1."
+  },
+  {
+   "id": "160-02-A17",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Determine the problem that produced Fayol's and Weber's ideas.",
+   "options": [
+    "Coordination — who does what in a large organisation",
+    "Lighting in the early factories",
+    "Customers wanting lower prices and better quality at the same time",
+    "Workers wanting shorter hours and better pay for the same output"
+   ],
+   "answer": 0,
+   "why": "Fayol structured the organisation; Weber made it fair. See §2.1 and §2.4."
+  },
+  {
+   "id": "160-02-A18",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "2.1",
+   "stem": "Determine the problem that produced Mayo's ideas.",
+   "options": [
+    "Motivation — strangers in big firms did not care about the work",
+    "Communication by letter to the factory floor",
+    "Technology — machines were replacing skilled workers faster than they could be retrained",
+    "Taxation — governments were taxing factories more heavily each year"
+   ],
+   "answer": 0,
+   "why": "Human relations answered the motivation problem. See §2.1 and §2.5."
+  },
+  {
+   "id": "160-02-A19",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Select the workplace where Taylor's standardisation fits best.",
+   "options": [
+    "A fast-food kitchen",
+    "A design start-up inventing a new product",
+    "A university research team",
+    "A jazz band"
+   ],
+   "answer": 0,
+   "why": "Routine, repeatable work is where the one best way wins. See §2.3."
+  },
+  {
+   "id": "160-02-A20",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "2.3",
+   "stem": "Analyse a factory that standardised every task and now has bored workers and no new ideas. Determine the cause.",
+   "options": [
+    "The known cost of scientific management: repetition kills morale and switches off the brain",
+    "The workers are not trained well enough to understand the reason behind each standard",
+    "The standards were too loose, so the workers lost confidence in the method",
+    "Pay was set too high, so the workers no longer had any incentive to suggest improvements"
+   ],
+   "answer": 0,
+   "why": "Standardisation trades creativity and morale for speed. See §2.3."
+  },
+  {
+   "id": "160-02-A21",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Determine the Fayol principle broken when a nurse receives orders from three different managers.",
+   "options": [
+    "Unity of command",
+    "Division of work",
+    "Scalar chain",
+    "Equity"
+   ],
+   "answer": 0,
+   "why": "One boss per person. See §2.4."
+  },
+  {
+   "id": "160-02-A22",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "2.4",
+   "stem": "Analyse a company that promotes the owner's nephew over a better-qualified employee. Determine what Weber would say.",
+   "options": [
+    "Positions must be earned by merit, not family",
+    "That is normal in a bureaucracy, where the owner's authority is final",
+    "Family loyalty is more important than qualifications in a growing business",
+    "It depends on the nephew's age and how long he has worked in the firm"
+   ],
+   "answer": 0,
+   "why": "Weber's bureaucracy replaced favouritism with merit. See §2.4."
+  },
+  {
+   "id": "160-02-A23",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "2.5",
+   "stem": "Determine the lesson for a manager whose team improved while she was simply observing them with interest.",
+   "options": [
+    "The Hawthorne effect — attention itself improves performance",
+    "Observation always makes people nervous, so the improvement must be a measurement error",
+    "The lights or working conditions must have changed at the same time without her noticing",
+    "The team was faking the improvement to impress her and will return to normal soon"
+   ],
+   "answer": 0,
+   "why": "Productivity rose because someone paid attention. See §2.5."
+  },
+  {
+   "id": "160-02-A24",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "2.5",
+   "stem": "Select the action that makes employees feel respected, supported and included.",
+   "options": [
+    "Asking for their ideas and acting on one of them",
+    "A yearly pizza party to thank the whole team for its effort",
+    "A bigger bonus for the top seller at the end of each quarter",
+    "A stricter attendance rule applied equally to every employee"
+   ],
+   "answer": 0,
+   "why": "Mayo's trio needs real attention, not treats. See §2.5."
+  },
+  {
+   "id": "160-02-A25",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "2.6",
+   "stem": "Analyse a hospital where the lab, pharmacy and ward each did their job but the patient waited six hours. Determine the perspective that explains it.",
+   "options": [
+    "Systems — the failure sits in the hand-offs between departments",
+    "Scientific management — the staff worked too slowly",
+    "Human relations — the staff were unhappy and did not care about the patient",
+    "Bureaucracy — too many forms had to be completed at each stage of the visit"
+   ],
+   "answer": 0,
+   "why": "Everything is connected; failures live between the boxes. See §2.6."
+  },
+  {
+   "id": "160-02-A26",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "2.6",
+   "stem": "Select the first action of a systems manager after a customer complaint.",
+   "options": [
+    "Trace the chain of events across departments to find the cause",
+    "Punish the employee who served the customer so that the team learns the lesson",
+    "Offer the customer a discount and move on to the next problem",
+    "Write a new rule immediately so that the complaint cannot be repeated"
+   ],
+   "answer": 0,
+   "why": "Trace the chain instead of blaming the nearest person. See §2.6."
+  },
+  {
+   "id": "160-02-A27",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "2.8",
+   "stem": "Classify a manager who runs a team split between the office and home.",
+   "options": [
+    "Facing the hybrid-work challenge",
+    "Facing a 1910 factory coordination problem",
+    "Using scientific management on knowledge workers",
+    "Using Weber's bureaucracy to control remote staff"
+   ],
+   "answer": 0,
+   "why": "Hybrid work is one of today's four challenges. See §2.8."
+  },
+  {
+   "id": "160-02-A28",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "2.8",
+   "stem": "Analyse a manager who says management today is impossible because of AI. Determine the chapter's response.",
+   "options": [
+    "Every era solved its own problem with its own ideas and better tools — this one is different, not harder",
+    "Agree — AI changes so fast that no manager can plan, organise or control effectively any more",
+    "AI has nothing to do with management, so the manager should concentrate on people",
+    "Managers should ignore AI until the technology settles down and the rules are clear"
+   ],
+   "answer": 0,
+   "why": "Different, not harder. See §2.8."
+  },
+  {
+   "id": "160-02-A29",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "2.8",
+   "stem": "Select the modern challenge behind a Dubai firm managing teams in four countries.",
+   "options": [
+    "Globalisation",
+    "Lighting in factories",
+    "Unity of command",
+    "Factory efficiency"
+   ],
+   "answer": 0,
+   "why": "Globalisation is one of today's challenges. See §2.8."
+  }
+ ]
+}

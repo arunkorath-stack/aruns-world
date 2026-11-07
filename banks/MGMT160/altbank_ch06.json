@@ -1,0 +1,558 @@
+{
+ "subject": "MGMT160",
+ "chapter": 6,
+ "title": "Leading: Leadership, Motivation, Teams, Communication and Conflict",
+ "clos": [
+  "CLO 1",
+  "CLO 2",
+  "CLO 5"
+ ],
+ "source": "Chapter06_Leading.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "160-06-I16",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "6.1",
+   "stem": "Explain the difference between a boss and a leader.",
+   "options": [
+    "People obey a boss because of the position; people follow a leader because of influence",
+    "A boss is paid more than a leader and has a bigger office and a longer job title",
+    "A leader always has a bigger team than a boss, because people ask to join a leader's team",
+    "There is no difference; the two words describe the same job from different points of view"
+   ],
+   "answer": 0,
+   "why": "People follow leaders; they only obey bosses. See §6.1."
+  },
+  {
+   "id": "160-06-I17",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "6.1",
+   "stem": "Describe why good managers need both management and leadership skills.",
+   "options": [
+    "Running the machine and making people want to run it are two different skill sets",
+    "Leadership is only for top managers, and management is for everyone below them",
+    "Management is only for small teams, and leadership is for large organisations",
+    "One replaces the other, so a manager who learns to lead no longer needs to manage"
+   ],
+   "answer": 0,
+   "why": "Two skill sets, not two job titles. See §6.1."
+  },
+  {
+   "id": "160-06-I18",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "6.2",
+   "stem": "Describe the laissez-faire style and when it fits.",
+   "options": [
+    "The manager sets direction and steps back; it fits experts and creatives but drowns beginners",
+    "The manager decides everything alone; it fits emergencies, new staff and safety-critical work",
+    "The manager votes on everything with the team; it fits new staff who need to feel involved",
+    "The manager is absent from the team; it fits nobody and is never the right choice"
+   ],
+   "answer": 0,
+   "why": "Laissez-faire: experts thrive, beginners drown. See §6.2."
+  },
+  {
+   "id": "160-06-I19",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "6.3",
+   "stem": "Describe the belonging level of Maslow's hierarchy.",
+   "options": [
+    "The need for friendship, team and acceptance at work",
+    "The need for pay, rest and a comfortable working environment",
+    "The need for job security and a predictable future",
+    "The need for recognition, respect and a sense of achievement"
+   ],
+   "answer": 0,
+   "why": "Level 3 is belonging — team and friendship. See §6.3."
+  },
+  {
+   "id": "160-06-I20",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "6.3",
+   "stem": "Explain why the chapter says motivation is not fixed.",
+   "options": [
+    "The same person performs differently under different managers",
+    "Motivation is decided at birth",
+    "Only pay changes motivation, and only for as long as the pay rise is remembered",
+    "Motivation never changes after the first job, because habits are formed early"
+   ],
+   "answer": 0,
+   "why": "Manager A vs Manager B: same person, different performance. See §6.3."
+  },
+  {
+   "id": "160-06-I21",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "6.4",
+   "stem": "Describe what happens when a manager fixes hygiene factors only.",
+   "options": [
+    "Complaints stop but nobody gets excited about the work",
+    "Employees become highly motivated and start to suggest improvements",
+    "Employees leave immediately, because fixing hygiene shows the manager has nothing else to offer",
+    "Productivity doubles, because comfortable employees work twice as hard"
+   ],
+   "answer": 0,
+   "why": "Hygiene removes dissatisfaction; motivators create satisfaction. See §6.4."
+  },
+  {
+   "id": "160-06-I22",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "6.5",
+   "stem": "Describe a team charter.",
+   "options": [
+    "A short agreement in week 1 on roles, communication, how conflict is handled and who leads",
+    "A list of team members' salaries and the share of the bonus each will receive",
+    "A legal contract with the customer that sets out what the team will deliver and when",
+    "The company's mission statement, signed by every member of the team on day one"
+   ],
+   "answer": 0,
+   "why": "The charter answers the four reasons teams fail before they appear. See §6.5."
+  },
+  {
+   "id": "160-06-I23",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "6.5",
+   "stem": "Explain the lesson of the Marshmallow Challenge.",
+   "options": [
+    "Prototype early and test often instead of planning one perfect attempt",
+    "Plan for as long as possible before building, so that the first attempt is the right one",
+    "Let the most senior person decide the design, so that the team does not waste time arguing",
+    "Never use the marshmallow until the structure is complete and has been checked by everyone"
+   ],
+   "answer": 0,
+   "why": "Children test early; business students collapse at the end. See §6.5."
+  },
+  {
+   "id": "160-06-I24",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "6.5",
+   "stem": "Identify the role of leadership in the chapter's view of teams.",
+   "options": [
+    "Shared, clear and chosen for the task — not just the loudest voice",
+    "Always the most senior person, because experience is what a team needs most",
+    "Nobody should lead the team",
+    "The customer leads, because the customer knows best what the team should deliver"
+   ],
+   "answer": 0,
+   "why": "Poor leadership is one of the four reasons teams fail. See §6.5."
+  },
+  {
+   "id": "160-06-I25",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "6.6",
+   "stem": "Describe the feedback stage of communication.",
+   "options": [
+    "Confirming what the receiver actually understood",
+    "Sending the message a second time in a different channel so that it is not missed",
+    "Writing the message down so that there is a record of what was said",
+    "Choosing the channel that best fits the message and the receiver"
+   ],
+   "answer": 0,
+   "why": "Feedback — confirming what landed — is the stage most managers skip. See §6.6."
+  },
+  {
+   "id": "160-06-I26",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "6.6",
+   "stem": "Identify the most expensive sentence in management, according to the chapter.",
+   "options": [
+    "'They obviously know what I mean'",
+    "'Let's have a meeting about it'",
+    "'Send me an email with the details'",
+    "'Good job, keep it up'"
+   ],
+   "answer": 0,
+   "why": "Assumptions are the most expensive barrier. See §6.6."
+  },
+  {
+   "id": "160-06-I27",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "6.6",
+   "stem": "Describe the 'wrong channel' barrier.",
+   "options": [
+    "Using a medium that does not fit the message, like a long instruction by text at 4:55 on Friday",
+    "Speaking too quietly in a noisy office, so that half the message is lost before it arrives",
+    "Using too many words, so that the receiver stops reading before the important part",
+    "Writing in capital letters, which the receiver reads as shouting and ignores"
+   ],
+   "answer": 0,
+   "why": "Channel and timing are barriers. See §6.6."
+  },
+  {
+   "id": "160-06-I28",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "6.7",
+   "stem": "Describe what high respect for hierarchy does to public disagreement.",
+   "options": [
+    "It makes disagreeing in public feel like humiliating the boss, so people stay silent",
+    "It makes people argue more loudly, because they want the boss to notice their loyalty",
+    "It has no effect on disagreement, because people who care about the work will always speak",
+    "It makes meetings shorter, because people agree quickly and get back to their desks"
+   ],
+   "answer": 0,
+   "why": "Harvest the insight privately through safe channels. See §6.7."
+  },
+  {
+   "id": "160-06-I29",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "6.7",
+   "stem": "Explain what a smart manager does about different cultural codes for time.",
+   "options": [
+    "Defines the code explicitly so a rule replaces a resentment",
+    "Judges latecomers as rude and excludes them from the meetings they miss",
+    "Ignores the difference and hopes the team will settle on one meaning by itself",
+    "Moves all meetings online, where lateness is less visible and less embarrassing"
+   ],
+   "answer": 0,
+   "why": "Look for the cultural code before judging the person. See §6.7."
+  },
+  {
+   "id": "160-06-I30",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "6.7",
+   "stem": "Describe a safe channel for disagreement.",
+   "options": [
+    "Written input before a meeting, or going round the table so everyone speaks",
+    "Shouting in the open office so that everyone can hear both sides of the argument",
+    "An anonymous complaint to HR only, so that nobody knows who disagreed",
+    "No channel at all — managers decide alone and the team is informed afterwards"
+   ],
+   "answer": 0,
+   "why": "Safe channels harvest honest views without public confrontation. See §6.7."
+  },
+  {
+   "id": "160-06-I31",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "6.8",
+   "stem": "Explain why zero disagreement in a team is a warning sign.",
+   "options": [
+    "Teams with zero disagreement usually have zero honesty",
+    "It means the team is perfect and has reached the highest stage of development",
+    "It means the manager is strong and has earned the complete trust of the team",
+    "It means the work is easy and does not raise questions worth arguing about"
+   ],
+   "answer": 0,
+   "why": "Task conflict about ideas is healthy. See §6.8."
+  },
+  {
+   "id": "160-06-I32",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "6.8",
+   "stem": "Describe the 'reframe to the task' move.",
+   "options": [
+    "Turn a fight between people back into a problem about the work",
+    "Give each person a new job so that they no longer have to work together",
+    "Blame both people equally so that neither feels they have won",
+    "Ask the team to vote on who is right so that the decision is shared"
+   ],
+   "answer": 0,
+   "why": "Move 3: reframe the relationship conflict as a task question. See §6.8."
+  },
+  {
+   "id": "160-06-A16",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Classify a supervisor whose staff do exactly what the rules say and nothing more.",
+   "options": [
+    "A boss who is obeyed, not a leader who is followed",
+    "A leader with strong influence whose team follows the rules out of respect",
+    "A laissez-faire leader who has given the team full freedom within the rules",
+    "A democratic leader whose team has agreed the rules and follows them exactly"
+   ],
+   "answer": 0,
+   "why": "Obedience without extra effort is the mark of a boss. See §6.1."
+  },
+  {
+   "id": "160-06-A17",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Determine the chapter's explanation when a team's output doubles after only the manager changed.",
+   "options": [
+    "The manager's influence changed how people wanted to work",
+    "The team members secretly changed, because the new manager hired better people",
+    "Pay was doubled at the same time, and the new manager took the credit",
+    "The office moved to a better building, and the team was happier in the new space"
+   ],
+   "answer": 0,
+   "why": "The manager explains most of engagement. See §6.1."
+  },
+  {
+   "id": "160-06-A18",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.1",
+   "stem": "Select the action that shows leadership rather than management.",
+   "options": [
+    "Explaining why the goal matters so the team wants to reach it",
+    "Writing the monthly budget and checking it against the forecast",
+    "Checking the schedule and adjusting the shifts for next week",
+    "Filing the reports on time so that head office has the numbers it needs"
+   ],
+   "answer": 0,
+   "why": "Leading makes people want to run the machine. See §6.1."
+  },
+  {
+   "id": "160-06-A19",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.2",
+   "stem": "Select the style for training a brand-new employee on a dangerous machine.",
+   "options": [
+    "Autocratic — clear instructions, no debate during the task",
+    "Laissez-faire — let them explore the machine and learn from their own mistakes",
+    "Democratic — vote with the new employee on which steps to follow and in which order",
+    "No style — let the machine teach the employee, since experience is the best teacher"
+   ],
+   "answer": 0,
+   "why": "Autocratic fits new staff and safety. See §6.2."
+  },
+  {
+   "id": "160-06-A20",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "6.2",
+   "stem": "Analyse a manager who uses the democratic style for a fire evacuation. Determine the problem.",
+   "options": [
+    "Wrong style for the situation — emergencies need fast autocratic decisions",
+    "Democracy is always wrong, because managers are paid to decide and not to ask",
+    "The manager should have used laissez-faire and let each person find their own exit",
+    "Nothing is wrong"
+   ],
+   "answer": 0,
+   "why": "Each style has a situation; knowing when to switch is the skill. See §6.2."
+  },
+  {
+   "id": "160-06-A21",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.3",
+   "stem": "Determine the Maslow level of a new employee who fears the company will close.",
+   "options": [
+    "Safety — job security",
+    "Esteem — respect and recognition",
+    "Self-actualisation — growth and meaning",
+    "Belonging — team and friendship"
+   ],
+   "answer": 0,
+   "why": "Safety = security of the job. See §6.3."
+  },
+  {
+   "id": "160-06-A22",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.3",
+   "stem": "Select the right response for an employee who feels left out of the team.",
+   "options": [
+    "Include them in team work and social moments — belonging",
+    "Give them a bigger bonus",
+    "Offer a promotion title so that they feel respected by the team",
+    "Give them a private office so that they can concentrate on their work"
+   ],
+   "answer": 0,
+   "why": "Match the response to the need: belonging. See §6.3."
+  },
+  {
+   "id": "160-06-A23",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.4",
+   "stem": "Classify 'the office is too hot and the computers are slow'.",
+   "options": [
+    "Hygiene factor complaints",
+    "Motivator complaints about the work itself",
+    "Theory Y assumptions about the staff",
+    "Self-actualisation needs that are not being met"
+   ],
+   "answer": 0,
+   "why": "Working conditions are hygiene. See §6.4."
+  },
+  {
+   "id": "160-06-A24",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 5",
+   "sec": "6.5",
+   "stem": "Analyse a team where nobody knows who is doing the report and two people wrote it. Determine the failure.",
+   "options": [
+    "Unclear roles",
+    "Poor leadership",
+    "Conflict left to rot",
+    "Too much talk"
+   ],
+   "answer": 0,
+   "why": "Unclear roles is one of the four classic team failures. See §6.5."
+  },
+  {
+   "id": "160-06-A25",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 5",
+   "sec": "6.5",
+   "stem": "Select the first thing a new project team should do in week 1.",
+   "options": [
+    "Agree a team charter: roles, communication, conflict and leadership",
+    "Build the final product immediately so that the team has something to show",
+    "Choose a team name and a logo first",
+    "Wait for the manager to assign roles and set the deadlines for each stage"
+   ],
+   "answer": 0,
+   "why": "The charter answers the four failures before they appear. See §6.5."
+  },
+  {
+   "id": "160-06-A26",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 5",
+   "sec": "6.5",
+   "stem": "Analyse a team that spent all its time planning the perfect solution and delivered nothing. Determine the lesson.",
+   "options": [
+    "Prototype early and improve — the Marshmallow Challenge lesson",
+    "Plan even longer next time so that the solution is perfect before building starts",
+    "Hire a consultant to tell the team what the perfect solution should look like",
+    "Work alone, because teams waste time arguing about the plan"
+   ],
+   "answer": 0,
+   "why": "Put the marshmallow on from minute one. See §6.5."
+  },
+  {
+   "id": "160-06-A27",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.6",
+   "stem": "Select the message that passes the feedback stage.",
+   "options": [
+    "'Please send the pricing section by Tuesday noon — reply to confirm you have it'",
+    "'Make it good, we need it soon, and let me know if you have any questions at all'",
+    "'Make it good, we need it soon'",
+    "'Do the usual and send it when it is ready; I trust you to get the details right'"
+   ],
+   "answer": 0,
+   "why": "Clear, specific, with a reply requested. See §6.6."
+  },
+  {
+   "id": "160-06-A28",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "6.6",
+   "stem": "Analyse a message sent by text at 4:55 pm on Friday asking for a big presentation. Identify the main barrier.",
+   "options": [
+    "Wrong channel and timing",
+    "Too much detail",
+    "Too polite",
+    "Correct channel, wrong person"
+   ],
+   "answer": 0,
+   "why": "Channel and timing are barriers. See §6.6."
+  },
+  {
+   "id": "160-06-A29",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.7",
+   "stem": "Determine the manager's move when one colleague treats 9:00 as 8:55 and another treats it as 'the morning'.",
+   "options": [
+    "Define the code: '9:00 means seated by 9:00'",
+    "Fire the late one, because punctuality is a basic requirement of any job",
+    "Ignore it, because the difference is cultural and will sort itself out in time",
+    "Start meetings at 10 so that both colleagues are more likely to arrive on time"
+   ],
+   "answer": 0,
+   "why": "A rule beats a resentment. See §6.7."
+  },
+  {
+   "id": "160-06-A30",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "6.7",
+   "stem": "Select the best way to get honest views from a team that never disagrees in public.",
+   "options": [
+    "Ask for written views before the meeting",
+    "Demand public debate so that the team learns to disagree in the open",
+    "Punish silence by recording who spoke and who did not in each meeting",
+    "Cancel meetings and decide alone, since the team will not speak anyway"
+   ],
+   "answer": 0,
+   "why": "Safe channels harvest the insight. See §6.7."
+  },
+  {
+   "id": "160-06-A31",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 5",
+   "sec": "6.8",
+   "stem": "Classify two designers arguing about which layout is better.",
+   "options": [
+    "Task conflict — healthy",
+    "Relationship conflict — the fire",
+    "A communication barrier",
+    "Groupthink"
+   ],
+   "answer": 0,
+   "why": "Conflict about ideas is healthy. See §6.8."
+  },
+  {
+   "id": "160-06-A32",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 5",
+   "sec": "6.8",
+   "stem": "Classify two colleagues who refuse to speak to each other after a personal insult.",
+   "options": [
+    "Relationship conflict — the fire",
+    "Task conflict — healthy disagreement about the work",
+    "Normal teamwork — colleagues often need time apart",
+    "A hygiene problem — the office is too crowded for the two of them"
+   ],
+   "answer": 0,
+   "why": "Conflict about people is the fire. See §6.8."
+  }
+ ]
+}

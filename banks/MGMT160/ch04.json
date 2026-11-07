@@ -1,0 +1,493 @@
+{
+ "subject": "MGMT160",
+ "chapter": 4,
+ "title": "Planning and Decision Making",
+ "clos": [
+  "CLO 1",
+  "CLO 2"
+ ],
+ "source": "Chapter04_Planning_and_Decision_Making.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "160-04-I01",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.1",
+   "stem": "Describe planning.",
+   "options": [
+    "Deciding in advance what to do, how, when and who",
+    "Working harder and longer whenever problems appear in the business",
+    "Writing a detailed report after the work is done to explain what happened",
+    "Telling staff to follow their instincts and deal with each situation as it comes"
+   ],
+   "answer": 0,
+   "why": "Planning converts 'whatever happens, happens' into 'if X happens, we do Y'. It is the first function because the other three need a plan to serve. See §4.1."
+  },
+  {
+   "id": "160-04-I02",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.1",
+   "stem": "Explain why planning is called the first function of management.",
+   "options": [
+    "Organising, leading and controlling all need a plan to serve",
+    "It is the easiest function to do",
+    "Managers are paid to plan, not to act, so planning takes most of their time",
+    "It was invented first, in 1916, before the other functions had names"
+   ],
+   "answer": 0,
+   "why": "The plan gives the other functions their direction. See §4.1."
+  },
+  {
+   "id": "160-04-I03",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.1",
+   "stem": "Explain the saying 'plans are nothing; planning is everything'.",
+   "options": [
+    "Plans change when reality surprises, but a team that planned can adjust quickly instead of panicking",
+    "Written plans are useless, so managers should spend their time acting rather than writing",
+    "Only the planning department matters; the rest of the organisation simply follows its instructions",
+    "Plans never change once they are written, so the planning stage must be done perfectly"
+   ],
+   "answer": 0,
+   "why": "The thinking survives even when the plan changes. See the answer to questions 1 and 2 in §4.1."
+  },
+  {
+   "id": "160-04-I04",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.2",
+   "stem": "Differentiate mission, vision and goals.",
+   "options": [
+    "Mission = why we exist; vision = where we are going; goals = what we will achieve, with numbers and dates",
+    "Mission = the numbers we must hit; vision = the daily tasks; goals = the company's history and values",
+    "Mission = where we are going; vision = why we exist; goals = the slogan and the logo",
+    "All three mean the same thing, and companies choose whichever word sounds best to customers"
+   ],
+   "answer": 0,
+   "why": "The mission explains the vision, the vision inspires the goals, the goals drive daily work. See §4.2."
+  },
+  {
+   "id": "160-04-I05",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.3",
+   "stem": "Identify the three levels of planning with their time horizons.",
+   "options": [
+    "Strategic — years; tactical — months; operational — days and weeks",
+    "Strategic — days and weeks; tactical — years; operational — months",
+    "Operational — years; strategic — days and weeks; tactical — months",
+    "Top — hours; middle — days and weeks; frontline — years"
+   ],
+   "answer": 0,
+   "why": "Three levels of planning match three levels of manager: top (years), middle (months), frontline (days). See §4.3."
+  },
+  {
+   "id": "160-04-I06",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.3",
+   "stem": "Identify the five parts of a SMART goal.",
+   "options": [
+    "Specific, Measurable, Achievable, Relevant, Time-bound",
+    "Simple, Modern, Ambitious, Rapid, Tested",
+    "Strategic, Managed, Approved, Reported, Tracked",
+    "Short, Meaningful, Affordable, Realistic, Timed"
+   ],
+   "answer": 0,
+   "why": "SMART is the quality test for a goal: the upgrade always adds a number, a date and a how. See §4.3."
+  },
+  {
+   "id": "160-04-I07",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.4",
+   "stem": "Identify the four boxes of a SWOT analysis.",
+   "options": [
+    "Strengths, Weaknesses, Opportunities, Threats",
+    "Sales, Workers, Orders, Taxes",
+    "Strategy, Work, Output, Time",
+    "Suppliers, Wages, Owners, Technology"
+   ],
+   "answer": 0,
+   "why": "Inside: strengths and weaknesses. Outside: opportunities and threats. See §4.4."
+  },
+  {
+   "id": "160-04-I08",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.4",
+   "stem": "Explain why plans fail, according to the chapter.",
+   "options": [
+    "Uncertainty without a Plan B, poor communication, lack of commitment and unrealistic goals",
+    "Too many meetings, too many reports and too many people involved in the planning",
+    "Managers planning too far ahead when the business should concentrate on this month",
+    "Teams working too hard on the plan and too little on the daily work that pays the wages"
+   ],
+   "answer": 0,
+   "why": "Four reasons plans fail; impossible targets teach teams that targets are decoration. See §4.4."
+  },
+  {
+   "id": "160-04-I09",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.5",
+   "stem": "Identify the six steps of decision-making in order.",
+   "options": [
+    "Identify the problem → gather information → generate alternatives → evaluate options → choose and act → evaluate results",
+    "Choose and act → gather information → identify the problem → evaluate results → generate alternatives → evaluate options",
+    "Generate alternatives → choose and act → identify the problem → gather information → evaluate options → evaluate results",
+    "Gather information → choose and act → identify the problem → generate alternatives → evaluate options → evaluate results"
+   ],
+   "answer": 0,
+   "why": "Decide the real problem first; solutions after. See §4.5."
+  },
+  {
+   "id": "160-04-I10",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.5",
+   "stem": "Explain why 'sales dropping' is not the real problem in step 1.",
+   "options": [
+    "It is a symptom — WHY sales drop is the problem",
+    "Sales never matter to managers, who should concentrate on costs and quality instead",
+    "Step 1 is about choosing a solution, and dropping sales do not point to any particular one",
+    "Dropping sales are always caused by staff, so the problem is a people problem"
+   ],
+   "answer": 0,
+   "why": "The real problem is the cause behind the symptom; almost everyone jumps to solutions. See §4.5."
+  },
+  {
+   "id": "160-04-I11",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.6",
+   "stem": "Differentiate rational from intuitive decisions.",
+   "options": [
+    "Rational uses data and the six steps in full; intuitive uses fast pattern-recognition built from experience",
+    "Rational decisions are always wrong because they are slow; intuitive decisions are always right because they are fast",
+    "Rational is for small decisions that do not matter; intuitive is for the big decisions that shape the business",
+    "They are the same thing with different names, and the chapter uses whichever word fits the sentence"
+   ],
+   "answer": 0,
+   "why": "Both are real ways to decide; the mistake is using the wrong engine for the situation. See §4.6."
+  },
+  {
+   "id": "160-04-I12",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.7",
+   "stem": "Identify the four bias traps described in the chapter.",
+   "options": [
+    "Overconfidence, emotional decisions, groupthink, confirmation bias",
+    "Laziness, greed, anger and fear of the boss",
+    "Planning, organising, leading and controlling",
+    "Strengths, weaknesses, opportunities and threats"
+   ],
+   "answer": 0,
+   "why": "Every brain falls into them; the more senior and confident the manager, the more dangerous. See §4.7."
+  },
+  {
+   "id": "160-04-I13",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.7",
+   "stem": "Describe groupthink.",
+   "options": [
+    "Everyone privately doubts but nobody speaks, so the group agrees its way off a cliff",
+    "A group that argues so much about every option that it cannot reach a decision in time",
+    "A group that thinks faster than one person",
+    "Deciding only with people who already share your opinion so that the meeting is short"
+   ],
+   "answer": 0,
+   "why": "Silence is read as agreement. The fix: collect written views before the meeting, ask the most junior first, appoint a devil's advocate. See §4.7."
+  },
+  {
+   "id": "160-04-I14",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.8",
+   "stem": "Describe the chapter's rule on AI in decision-making.",
+   "options": [
+    "AI is an adviser, not a judge — the manager stays accountable",
+    "AI should make all routine decisions because it has no emotions and no bias",
+    "AI should never be used by managers because it does not know the company's mission",
+    "AI decides, and the manager's job is to explain the decision to customers and staff"
+   ],
+   "answer": 0,
+   "why": "AI learns from past data, optimises the number it is given and does not know your mission or ethics; 'the AI decided' satisfies no customer, court or team. See §4.8."
+  },
+  {
+   "id": "160-04-I15",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "4.8",
+   "stem": "Explain when a manager should decide together with the team rather than alone.",
+   "options": [
+    "When the problem is complex, commitment matters, or the team knows things the manager cannot",
+    "When speed is critical and the decision has to be made in the next few minutes",
+    "When accountability is clearly the manager's and nobody else will be blamed",
+    "When the group adds no new information but wants to feel involved in the decision"
+   ],
+   "answer": 0,
+   "why": "Alone for speed and clear accountability; together for complexity and commitment. See §4.8."
+  },
+  {
+   "id": "160-04-A01",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.3",
+   "stem": "Select the goal that passes all five SMART tests.",
+   "options": [
+    "Raise weekday sales from 240 to 300 cups a day within 8 weeks by launching a morning combo and a loyalty card",
+    "Improve sales significantly over the coming months by serving customers better than any competitor",
+    "Become the best café in the UAE someday, known for quality, service and a loyal community",
+    "Work harder every day, open earlier, close later and make sure every customer leaves happy"
+   ],
+   "answer": 0,
+   "why": "The strong version adds a number, a date and a how. See §4.3."
+  },
+  {
+   "id": "160-04-A02",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "4.3",
+   "stem": "Analyse the goal 'Improve customer satisfaction'. Determine the SMART test it fails most clearly.",
+   "options": [
+    "Measurable — there is no number to know if you reached it",
+    "Relevant — it does not serve the mission of a café, which is to sell coffee",
+    "Achievable — it is impossible to improve satisfaction once customers have formed an opinion",
+    "Specific — it names the customers but not the staff who will serve them"
+   ],
+   "answer": 0,
+   "why": "'Improve' is a wish; a number — such as 'by 20% this semester' — makes it measurable. See §4.3."
+  },
+  {
+   "id": "160-04-A03",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.3",
+   "stem": "Classify the plan 'Standardise recipes this year so a second branch can copy them'.",
+   "options": [
+    "Tactical — months, middle managers",
+    "Strategic — years, top managers",
+    "Operational — days, frontline managers",
+    "A mission statement"
+   ],
+   "answer": 0,
+   "why": "Department-level plans over months are tactical. See §4.3."
+  },
+  {
+   "id": "160-04-A04",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.4",
+   "stem": "Determine the SWOT pair behind the move 'use our location to own the morning rush before anyone opens'.",
+   "options": [
+    "Strength + Opportunity — the attack move",
+    "Weakness + Threat — the defence move",
+    "Strength + Threat — the holding move",
+    "Weakness + Opportunity — the repair move"
+   ],
+   "answer": 0,
+   "why": "S + O is the attack move; W + T is the defence move. Pairing the boxes is planning. See §4.4."
+  },
+  {
+   "id": "160-04-A05",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.4",
+   "stem": "Determine the SWOT pair behind the move 'find a second coffee supplier before the chain arrives'.",
+   "options": [
+    "Weakness + Threat — the defence move",
+    "Strength + Opportunity — the attack move",
+    "Strength + Weakness",
+    "Opportunity + Threat"
+   ],
+   "answer": 0,
+   "why": "One supplier is a weakness; the chain opening is a threat. W + T defends. See §4.4."
+  },
+  {
+   "id": "160-04-A06",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "4.4",
+   "stem": "Analyse a student whose study plan said 'six hours a day' and who gave up in week two. Determine the planning barrier.",
+   "options": [
+    "Unrealistic goals",
+    "Poor communication",
+    "Uncertainty with no Plan B",
+    "Lack of resources"
+   ],
+   "answer": 0,
+   "why": "Impossible targets teach people that targets are decoration. See §4.4."
+  },
+  {
+   "id": "160-04-A07",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "4.5",
+   "stem": "Analyse the café owner who must choose ONE of: reduce prices, improve quality, increase marketing, fire staff — before knowing why sales dropped. Determine the mistake.",
+   "options": [
+    "Jumping to step 5 (choose) before step 1 (identify the real problem)",
+    "Choosing too few alternatives — four options are not enough for a decision this important",
+    "Gathering too much information — the owner should act before the sales fall further",
+    "Involving the team too early — the owner should decide alone and then inform the staff"
+   ],
+   "answer": 0,
+   "why": "A, B, C and D were all step-5 answers to a step-1 question. See the answer to question 3 in §4.5."
+  },
+  {
+   "id": "160-04-A08",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "4.5",
+   "stem": "Analyse the Bad Reviews case: 50-minute waits, wrong orders, exhausted staff. Determine the most likely real problem.",
+   "options": [
+    "Understaffing or poor organisation at peak hours — the three complaints share one cause",
+    "Customers who are too demanding and leave reviews after a single bad experience",
+    "A bad online review website that attracts complaints and hides the positive comments",
+    "Prices that are too high for the quality, so customers expect more than the café delivers"
+   ],
+   "answer": 0,
+   "why": "Step 1: look at what the complaints have in common; the rating is the symptom. See Exercise 2."
+  },
+  {
+   "id": "160-04-A09",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.5",
+   "stem": "Determine the right step-2 action for the student event nobody attended.",
+   "options": [
+    "Ask twenty students who did NOT come, and check when and where it was announced",
+    "Book a bigger hall for next time so that more students feel the event is important",
+    "Cancel all future events until the student club can show it has enough members",
+    "Ask the student club president to explain the failure and propose a new event"
+   ],
+   "answer": 0,
+   "why": "Gather information before opinions harden — from the people who did not come. See the sample in §4.5."
+  },
+  {
+   "id": "160-04-A10",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "4.6",
+   "stem": "Compare a veteran chef who 'knows' a dish is wrong before tasting it with a first-year manager whose gut says 'fire the new employee'. Determine the chapter's advice.",
+   "options": [
+    "Trust the chef's experienced intuition in a familiar situation; distrust the first-year manager's gut — it has not earned trust yet",
+    "Trust both — intuition is always right, because it comes from a deeper part of the mind than analysis",
+    "Trust neither — only data counts, and both the chef and the manager should wait for the numbers",
+    "Trust the first-year manager because the decision is urgent, and trust the chef only after tasting the dish"
+   ],
+   "answer": 0,
+   "why": "Experienced intuition is compressed data; in new situations 'gut feeling' is just bias wearing confidence. See §4.6."
+  },
+  {
+   "id": "160-04-A11",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.6",
+   "stem": "Select the right engine for choosing a new coffee supplier when there is time and data.",
+   "options": [
+    "Rational — data, analysis, the six steps in full",
+    "Intuitive — go with the first supplier you like, because first impressions are usually right",
+    "Emotional — choose the friendliest salesperson, because the relationship will matter later",
+    "Collective — let the team vote without information so that everyone feels committed"
+   ],
+   "answer": 0,
+   "why": "High stakes, time available, data available → rational. See §4.6."
+  },
+  {
+   "id": "160-04-A12",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.7",
+   "stem": "Identify the bias trap when a manager says 'I know this market — no need to check'.",
+   "options": [
+    "Overconfidence",
+    "Groupthink",
+    "Confirmation bias",
+    "Emotional decision"
+   ],
+   "answer": 0,
+   "why": "Experience earns a hypothesis, not a verdict; the fix is one independent check above a money threshold. See §4.7."
+  },
+  {
+   "id": "160-04-A13",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.7",
+   "stem": "Select the rule that prevents a manager from firing someone in a moment of fury.",
+   "options": [
+    "The 24-hour rule — no irreversible people decisions while angry",
+    "Ask 'we all agree, yes?' before acting so that the team shares responsibility",
+    "Look for evidence that supports the firing so that the decision can be defended later",
+    "Decide faster so that the anger does not grow and the decision is made with a clear head"
+   ],
+   "answer": 0,
+   "why": "The emotion fades; the decision stays. See the emotional-decisions trap in §4.7."
+  },
+  {
+   "id": "160-04-A14",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 2",
+   "sec": "4.7",
+   "stem": "Identify the bias trap when a team only looks for evidence that supports the idea it already likes.",
+   "options": [
+    "Confirmation bias",
+    "Overconfidence",
+    "Groupthink",
+    "Emotional decision"
+   ],
+   "answer": 0,
+   "why": "The favourite trap of smart people; the fix is to ask for the strongest evidence AGAINST. See §4.7."
+  },
+  {
+   "id": "160-04-A15",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 2",
+   "sec": "4.8",
+   "stem": "Analyse a manager who uses AI forecasting to predict the Iftar rush by hour but checks the plan against the restaurant's values and staff. Determine the chapter's view.",
+   "options": [
+    "Correct — AI as adviser for patterns and volume, with the manager accountable for judgement",
+    "Wrong — the manager should follow the AI exactly, because it has seen more Iftar seasons than any manager",
+    "Wrong — AI should not be used in restaurants at all",
+    "Correct only if the AI also decides the staffing, so that the forecast and the rota cannot disagree"
+   ],
+   "answer": 0,
+   "why": "AI is strongest where humans are weakest (patterns, volume) and weakest where humans are strongest (ethics, judgement in new situations). See §4.8."
+  }
+ ]
+}

@@ -1,0 +1,493 @@
+{
+ "subject": "MGMT160",
+ "chapter": 3,
+ "title": "Environment, Culture, Ethics, Social Responsibility and Sustainability",
+ "clos": [
+  "CLO 1",
+  "CLO 3"
+ ],
+ "source": "Chapter03_Environment_Culture_Ethics_Sustainability.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "160-03-I16",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.1",
+   "stem": "Identify the four internal environment factors.",
+   "options": [
+    "People, culture and leadership, technology and resources, structure",
+    "Economy, competitors, laws and politics, technology",
+    "Customers, suppliers, investors and government",
+    "Profit, people, planet and the law"
+   ],
+   "answer": 0,
+   "why": "Internal factors are the ones the organisation mostly controls. See §3.1."
+  },
+  {
+   "id": "160-03-I17",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.1",
+   "stem": "Explain why managers check the inside of the organisation first.",
+   "options": [
+    "One internal weakness spreads through the whole organisation",
+    "The outside environment never changes, so there is nothing to scan there",
+    "Internal factors cannot be controlled, so they must be identified before anything else",
+    "Customers do not matter until the organisation has sorted out its own problems"
+   ],
+   "answer": 0,
+   "why": "An internal weakness is felt everywhere, so managers scan inside first. See §3.1."
+  },
+  {
+   "id": "160-03-I18",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.2",
+   "stem": "Describe the 'economy' external force.",
+   "options": [
+    "Growth, inflation and interest rates that change what customers can spend",
+    "The rules, regulations and taxes set by the government of the country",
+    "Changing habits and values in society that alter what customers want",
+    "New tools and software that change how products are made and delivered"
+   ],
+   "answer": 0,
+   "why": "Economic forces change customers' spending power. See §3.2."
+  },
+  {
+   "id": "160-03-I19",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.2",
+   "stem": "Describe the 'technology' external force.",
+   "options": [
+    "New tools that change how products are made, sold and delivered",
+    "Taxes on sugary drinks that force companies to redesign their products",
+    "Health awareness among customers that pushes cafés to change their menus",
+    "A new competitor opening nearby"
+   ],
+   "answer": 0,
+   "why": "Technology changes how work is done; managers who read it early win. See §3.2."
+  },
+  {
+   "id": "160-03-I20",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.2",
+   "stem": "Explain what managers do with the five external forces.",
+   "options": [
+    "Read them early as signals and adapt before competitors do",
+    "Ignore them, because they cannot be controlled",
+    "Wait until they become real problems and then respond with a detailed plan",
+    "Report them to the government so that it can protect the industry"
+   ],
+   "answer": 0,
+   "why": "External forces are signals for managers who read them early. See §3.2."
+  },
+  {
+   "id": "160-03-I21",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.3",
+   "stem": "Identify the stakeholder groups named in the chapter.",
+   "options": [
+    "Customers, employees, investors, suppliers, government and community",
+    "Only the shareholders who own the company and receive its dividends",
+    "Only the customers who buy the products and the employees who make them",
+    "The managers and owners who make the decisions about the business"
+   ],
+   "answer": 0,
+   "why": "Freeman (1984): stakeholders are all groups affected by, or able to affect, the organisation. See §3.3."
+  },
+  {
+   "id": "160-03-I22",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.3",
+   "stem": "Explain what balancing stakeholders means.",
+   "options": [
+    "Making decisions that serve several groups' needs over time, not one group only",
+    "Giving every stakeholder group the same amount of money each year",
+    "Always choosing the investors first, because they own the company",
+    "Letting the local community decide how the business should be run"
+   ],
+   "answer": 0,
+   "why": "Balancing stakeholders is the manager's job. See §3.3."
+  },
+  {
+   "id": "160-03-I23",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.4",
+   "stem": "Describe the difference between a strong culture and an open culture.",
+   "options": [
+    "A strong culture has shared values everyone follows; an open culture also welcomes change and new ideas",
+    "Strong means a culture in a big company; open means a culture in a small start-up",
+    "They mean the same thing, and the chapter uses the two words interchangeably",
+    "An open culture has no shared values, so employees are free to behave as they like"
+   ],
+   "answer": 0,
+   "why": "Strong AND open beats strong alone. See §3.4."
+  },
+  {
+   "id": "160-03-I24",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.4",
+   "stem": "Explain the phrase 'how we do things here'.",
+   "options": [
+    "It is the simplest definition of organisational culture",
+    "It is the company's mission statement, printed on the wall of the reception area",
+    "It is the employee handbook that every new recruit signs on the first day",
+    "It is the organisation chart showing who reports to whom in the company"
+   ],
+   "answer": 0,
+   "why": "Culture = shared values, norms and behaviours — how things are done here. See §3.4."
+  },
+  {
+   "id": "160-03-I25",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.5",
+   "stem": "Describe the visible clue for a formal culture.",
+   "options": [
+    "Titles, dress codes, scheduled meetings and written procedures",
+    "First names, open desks and quick chats in the corridor instead of meetings",
+    "Substitutes celebrating goals they did not score from the bench",
+    "A green logo and pictures of forests on the company website"
+   ],
+   "answer": 0,
+   "why": "Formal cultures show in titles, dress and procedures. See §3.5."
+  },
+  {
+   "id": "160-03-I26",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.5",
+   "stem": "Describe the visible clue for a collaborative culture.",
+   "options": [
+    "People share credit and help each other without being asked",
+    "People compete for the best shifts and the most interesting projects",
+    "Everyone works alone in silence",
+    "Managers decide everything and staff wait to be told what to do"
+   ],
+   "answer": 0,
+   "why": "Collaboration shows in shared credit and unasked help. See §3.5."
+  },
+  {
+   "id": "160-03-I27",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.5",
+   "stem": "Explain why reading a culture matters for a new manager.",
+   "options": [
+    "It tells you how decisions really get made and what behaviour will be accepted",
+    "It shows the company's profit and how it compares with its competitors",
+    "It is required by law before a new manager can be appointed to the post",
+    "It replaces the need to plan, because the culture already decides what will happen"
+   ],
+   "answer": 0,
+   "why": "Reading the culture is how you avoid breaking unwritten rules. See §3.5."
+  },
+  {
+   "id": "160-03-I28",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "3.6",
+   "stem": "Describe the public test.",
+   "options": [
+    "Ask whether you would be comfortable if everyone knew what you did",
+    "Ask whether the public will buy the product once it is launched",
+    "Ask the government for permission before taking the action",
+    "Ask whether the action is profitable enough to justify the risk"
+   ],
+   "answer": 0,
+   "why": "Q4 of the framework: would you be comfortable if it were public. See §3.6."
+  },
+  {
+   "id": "160-03-I29",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "3.6",
+   "stem": "Describe the fairness question.",
+   "options": [
+    "Ask whether you would accept the same outcome if the roles were reversed",
+    "Ask whether the law allows the action in the country where you operate",
+    "Ask whether the action makes money for the company and its investors",
+    "Ask whether the boss agrees with the decision before you act on it"
+   ],
+   "answer": 0,
+   "why": "Q2: fair means the same outcome if roles were reversed. See §3.6."
+  },
+  {
+   "id": "160-03-I30",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "3.8",
+   "stem": "Explain why ethics scandals are more expensive today.",
+   "options": [
+    "Every customer carries a camera and an audience, so one bad decision is public in minutes",
+    "Laws are stricter than ever and fines for ethical failures have risen sharply",
+    "Companies have less money than before, so they cannot afford to pay for scandals",
+    "Customers are angrier than before and boycott companies more readily"
+   ],
+   "answer": 0,
+   "why": "Social-media accountability makes responsibility the job itself. See §3.8."
+  },
+  {
+   "id": "160-03-I31",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "3.8",
+   "stem": "Describe the chapter's conclusion about responsibility.",
+   "options": [
+    "Managing responsibly is the job itself, not decoration added after profit",
+    "Responsibility is a marketing cost",
+    "Only large companies need to manage responsibly, because only they are watched",
+    "Responsibility belongs to the legal department, which checks every decision"
+   ],
+   "answer": 0,
+   "why": "Responsibility is the job, not decoration. See §3.8."
+  },
+  {
+   "id": "160-03-I32",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "3.8",
+   "stem": "Identify the three pressures the chapter says make responsibility visible and fast.",
+   "options": [
+    "Social-media accountability, ethics scandals and sustainability pressure",
+    "Taxes, tariffs and rising interest rates",
+    "Hiring, firing and training employees",
+    "Planning, organising and controlling the work"
+   ],
+   "answer": 0,
+   "why": "These three pressures shape responsible management today. See §3.8."
+  },
+  {
+   "id": "160-03-A16",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "3.1",
+   "stem": "Classify a café whose best barista quit and whose coffee quality fell.",
+   "options": [
+    "An internal factor — people",
+    "An external force — economy",
+    "An external force — social trends",
+    "An external force — laws"
+   ],
+   "answer": 0,
+   "why": "People are an internal factor the organisation mostly controls. See §3.1."
+  },
+  {
+   "id": "160-03-A17",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "3.1",
+   "stem": "Classify a hotel's old booking software that crashes at peak times.",
+   "options": [
+    "An internal factor — technology and resources",
+    "An external force — technology changing how hotels are booked",
+    "An external force — competitors with better booking systems",
+    "A social trend towards booking hotels online at the last minute"
+   ],
+   "answer": 0,
+   "why": "The hotel's own systems are internal. See §3.1."
+  },
+  {
+   "id": "160-03-A18",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "3.1",
+   "stem": "Analyse a manager who blames staff when a company loses money during a global recession. Determine the chapter's view.",
+   "options": [
+    "The external environment changed; managers must adapt rather than blame",
+    "The staff caused the recession by demanding higher pay and working fewer hours",
+    "Blaming staff is good control",
+    "The company should close, because a recession makes profitable management impossible"
+   ],
+   "answer": 0,
+   "why": "Emirates' 2020 loss shows the environment, not bad managers, caused the fall. See §3.1."
+  },
+  {
+   "id": "160-03-A19",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "3.3",
+   "stem": "Select the stakeholder group that wants quality and fair prices.",
+   "options": [
+    "Customers",
+    "Investors",
+    "Government",
+    "Suppliers"
+   ],
+   "answer": 0,
+   "why": "Customers want quality at fair prices. See §3.3."
+  },
+  {
+   "id": "160-03-A20",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "3.3",
+   "stem": "Analyse a company that pays record dividends by cutting staff pay below the market. Determine the long-run risk.",
+   "options": [
+    "Losing talent and reputation, which eventually destroys shareholder value too",
+    "No risk — investors come first, and employees can always find work elsewhere",
+    "Customers will pay more for the products because the company is clearly well run",
+    "The government will reward the company for its strong financial performance"
+   ],
+   "answer": 0,
+   "why": "Mistreating one stakeholder group costs the others later. See §3.3."
+  },
+  {
+   "id": "160-03-A21",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "3.3",
+   "stem": "Determine the stakeholder group that wants compliance and taxes.",
+   "options": [
+    "Government",
+    "Community",
+    "Employees",
+    "Customers"
+   ],
+   "answer": 0,
+   "why": "Government wants compliance and taxes. See §3.3."
+  },
+  {
+   "id": "160-03-A22",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "3.4",
+   "stem": "Select the fitting culture for a game-design studio inventing new products.",
+   "options": [
+    "An open, flexible culture with freedom in how you work",
+    "A traditional culture with strict procedures and a clear chain of command",
+    "A culture with no values at all, so that nothing limits the designers' imagination",
+    "A military-style hierarchy in which every design decision is approved from the top"
+   ],
+   "answer": 0,
+   "why": "Creative work needs freedom; a careful culture fits safety-critical work. See §3.4."
+  },
+  {
+   "id": "160-03-A23",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "3.4",
+   "stem": "Analyse a company with a very strong culture that rejected a needed change. Determine the chapter's warning.",
+   "options": [
+    "A strong culture can turn blind — strong and open beats strong alone",
+    "Strong cultures always succeed in the end because employees are committed to them",
+    "Weak cultures are better because they offer no resistance to change",
+    "Culture does not affect change; only the budget and the timetable matter"
+   ],
+   "answer": 0,
+   "why": "Strong AND open. See §3.4."
+  },
+  {
+   "id": "160-03-A24",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "3.4",
+   "stem": "Determine the culture signal when new ideas are met with 'we have always done it this way'.",
+   "options": [
+    "A strong but closed culture",
+    "An open culture that has learned from experience",
+    "A collaborative culture in which everyone agrees",
+    "No culture at all, because nobody has thought about the question"
+   ],
+   "answer": 0,
+   "why": "Rejecting change is the sign of a closed culture. See §3.4."
+  },
+  {
+   "id": "160-03-A25",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "3.5",
+   "stem": "Classify a workplace where everyone uses first names, sits at open desks and decides in quick chats.",
+   "options": [
+    "Informal",
+    "Formal",
+    "Competitive",
+    "Closed"
+   ],
+   "answer": 0,
+   "why": "First names and quick chats are informal clues. See §3.5."
+  },
+  {
+   "id": "160-03-A26",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "3.5",
+   "stem": "Classify a sales floor where staff hide leads from each other.",
+   "options": [
+    "Competitive without a collaborative frame",
+    "Collaborative, because staff are protecting the team's results",
+    "Formal, because leads are recorded and tracked individually",
+    "Informal, because staff are managing their own leads without rules"
+   ],
+   "answer": 0,
+   "why": "Hiding leads is pure competition, not competition inside collaboration. See §3.5."
+  },
+  {
+   "id": "160-03-A27",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "3.5",
+   "stem": "Determine the first thing a new manager should do to read the culture.",
+   "options": [
+    "Watch for the visible clues: how people dress, speak, decide and share credit",
+    "Rewrite the values poster so that it describes the culture the manager wants",
+    "Change the dress code to signal that a new manager has arrived",
+    "Ask the CEO for the profit figures and the latest organisation chart"
+   ],
+   "answer": 0,
+   "why": "Three questions, a clue for each. See §3.5."
+  },
+  {
+   "id": "160-03-A28",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "3.7",
+   "stem": "Classify a firm that obeys the law and makes profit but cheats no one and gives nothing back.",
+   "options": [
+    "It reaches the ethical level but not the top level of Carroll's pyramid",
+    "It reaches the top level, because cheating nobody is the highest form of responsibility",
+    "It fails the legal level, because giving nothing back to the community is a legal duty",
+    "It fails the profit level, because a firm that gives nothing back cannot stay profitable"
+   ],
+   "answer": 0,
+   "why": "Profitable, legal, ethical — giving back is the fourth level. See §3.7."
+  }
+ ]
+}

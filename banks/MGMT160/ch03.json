@@ -1,0 +1,493 @@
+{
+ "subject": "MGMT160",
+ "chapter": 3,
+ "title": "Environment, Culture, Ethics, Social Responsibility and Sustainability",
+ "clos": [
+  "CLO 1",
+  "CLO 3"
+ ],
+ "source": "Chapter03_Environment_Culture_Ethics_Sustainability.pptx",
+ "status": "published",
+ "questions": [
+  {
+   "id": "160-03-I01",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.1",
+   "stem": "Describe the organisational environment.",
+   "options": [
+    "All the forces that affect an organisation, inside it and outside it",
+    "Only the competitors and customers in the market",
+    "The building, equipment and technology the company owns and uses every day",
+    "The natural environment around the office, including climate, air and water quality"
+   ],
+   "answer": 0,
+   "why": "The environment is inside (employees, culture, resources, structure) and outside (economy, competitors, laws, technology, social trends). See §3.1."
+  },
+  {
+   "id": "160-03-I02",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.1",
+   "stem": "Identify an internal environment factor.",
+   "options": [
+    "Culture and leadership — 'how we do things here'",
+    "The economy — growth, inflation and interest rates that change what customers spend",
+    "New laws and taxes that force companies to change their products and prices",
+    "Social trends — changing habits and values among the company's customers"
+   ],
+   "answer": 0,
+   "why": "Internal factors are the ones the organisation mostly controls: people, culture, technology and resources, structure. See §3.1."
+  },
+  {
+   "id": "160-03-I03",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.2",
+   "stem": "Identify the five external forces managers feel.",
+   "options": [
+    "Economy; competitors and customers; laws and politics; technology; social trends",
+    "Employees; culture and leadership; resources; structure; technology",
+    "Planning; organising; leading; controlling; ethics and responsibility",
+    "People; planet; profit; law; community and charity"
+   ],
+   "answer": 0,
+   "why": "The five external forces are signals to managers who read them early. See §3.2."
+  },
+  {
+   "id": "160-03-I04",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.3",
+   "stem": "Describe stakeholders.",
+   "options": [
+    "Groups affected by an organisation's decisions, or able to affect them",
+    "Only the people who own shares in the company and receive its dividends",
+    "Only the employees of the company",
+    "The government departments that regulate the business and collect its taxes"
+   ],
+   "answer": 0,
+   "why": "Freeman (1984): stakeholders include customers, employees, investors, suppliers, government and community. Balancing them is the job. See §3.3."
+  },
+  {
+   "id": "160-03-I05",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.3",
+   "stem": "Explain the chapter's mature answer to 'profit first, or people and society first?'.",
+   "options": [
+    "A false choice in the long run — the real question is the time horizon",
+    "Profit always comes first, because a company that does not pay its investors will not survive",
+    "People and society always come first, because profit is only a reward for serving them",
+    "Managers should never think about profit; that is the job of the owners and the investors"
+   ],
+   "answer": 0,
+   "why": "Companies that mistreat employees and society eventually lose customers, talent and their licence to operate, which destroys shareholder value too. See §3.3."
+  },
+  {
+   "id": "160-03-I06",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.4",
+   "stem": "Describe organisational culture.",
+   "options": [
+    "The shared values, norms and behaviours that shape the workplace atmosphere",
+    "The company's logo, colours, uniforms and the design of its offices and shops",
+    "The country where the company is based and the national customs of its people",
+    "The rules written in the employee handbook and signed by every new recruit"
+   ],
+   "answer": 0,
+   "why": "Culture is 'how things are done here' — values, unwritten norms, and behaviour. See §3.4."
+  },
+  {
+   "id": "160-03-I07",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.4",
+   "stem": "Explain the warning the chapter gives about a strong culture.",
+   "options": [
+    "A strong culture can turn blind and reject change exactly when change is needed",
+    "A strong culture always lowers performance",
+    "A strong culture is illegal in some countries because it discriminates against outsiders",
+    "A strong culture makes the best employees leave because it does not tolerate individuality"
+   ],
+   "answer": 0,
+   "why": "Strong AND open beats strong alone; a culture too confident in 'our way' rejects needed change. See §3.4 and §3.5."
+  },
+  {
+   "id": "160-03-I08",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 1",
+   "sec": "3.5",
+   "stem": "Identify the three questions used to read a culture.",
+   "options": [
+    "What values exist? Formal or informal? Competitive or collaborative?",
+    "Who is the boss? How much is the pay? How many staff are there?",
+    "Is it legal? Is it fair? Who may be harmed? Would it pass in public?",
+    "People? Planet? Profit? Which of the three comes first here?"
+   ],
+   "answer": 0,
+   "why": "Three questions, a visible clue for each, a reading for each. See §3.5."
+  },
+  {
+   "id": "160-03-I09",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "3.6",
+   "stem": "Identify the four questions of the ethical framework in order.",
+   "options": [
+    "Is it legal? Is it fair? Who may be harmed? The public test",
+    "Is it profitable? Is it fast? Is it easy? Is it secret?",
+    "Is it legal? Is it popular? Is it cheap? Is it new to the market?",
+    "Who decides? Who pays for it? Who benefits from it? Who needs to know?"
+   ],
+   "answer": 0,
+   "why": "Legal is the floor; fair means the same outcome if roles were reversed; harm uses the stakeholder map; the public test asks if you would be comfortable if everyone knew. See §3.6."
+  },
+  {
+   "id": "160-03-I10",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "3.6",
+   "stem": "Explain the phrase 'legal is the floor, not the goal'.",
+   "options": [
+    "Obeying the law is the minimum; an action can be legal and still unethical",
+    "Anything that is legal is automatically ethical, so the lawyer's approval settles the question",
+    "Laws are the highest standard a manager can reach, so compliance is the goal of ethics",
+    "Managers should ignore the law and follow their own ethics whenever the two disagree"
+   ],
+   "answer": 0,
+   "why": "Favouritism is often legal and still fails the fairness question — which proves legal ≠ ethical. See §3.6."
+  },
+  {
+   "id": "160-03-I11",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "3.7",
+   "stem": "Identify the four levels of Carroll's pyramid from the base upward.",
+   "options": [
+    "Be profitable → obey the law → act ethically → give back to community and environment",
+    "Give back to the community → act ethically → obey the law → be profitable",
+    "Obey the law → be profitable → give back to the community → act ethically",
+    "Act ethically → be popular with customers → be profitable → obey the law"
+   ],
+   "answer": 0,
+   "why": "A bankrupt company helps nobody, so profit is the base; each level builds on the one below. See §3.7."
+  },
+  {
+   "id": "160-03-I12",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "3.7",
+   "stem": "Identify the three lines of the triple bottom line.",
+   "options": [
+    "People, planet, profit",
+    "Price, product, promotion",
+    "Plan, process, performance",
+    "Law, ethics, charity"
+   ],
+   "answer": 0,
+   "why": "Elkington's triple bottom line: people (fair treatment), planet (energy, water, waste), profit (still essential). See §3.7."
+  },
+  {
+   "id": "160-03-I13",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "3.7",
+   "stem": "Describe sustainability as the chapter defines it.",
+   "options": [
+    "Meeting present needs without harming future generations",
+    "Spending a fixed share of each year's profits on charity and community projects",
+    "Using only recycled paper, low-energy lighting and electric vehicles in the business",
+    "Growing the company as fast as possible so that it can survive for future generations"
+   ],
+   "answer": 0,
+   "why": "Sustainability is measured on people, planet and profit, and lives in small operational decisions. See §3.7."
+  },
+  {
+   "id": "160-03-I14",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "3.7",
+   "stem": "Identify the chapter's greenwashing detector.",
+   "options": [
+    "Is there a number and a date, and does it touch the core business?",
+    "Is the logo green, and does the website have pictures of forests and oceans?",
+    "Does the CEO give a speech about the environment at the annual general meeting?",
+    "Does the company have a gift shop that sells eco-friendly products to its visitors?"
+   ],
+   "answer": 0,
+   "why": "Numbers and dates convince people, not green pictures; real sustainability touches the core business, not only the gift shop. See §3.7."
+  },
+  {
+   "id": "160-03-I15",
+   "quiz": 1,
+   "bloom": "Understand",
+   "clo": "CLO 3",
+   "sec": "3.8",
+   "stem": "Explain why managing responsibly is described as 'more visible and faster' today.",
+   "options": [
+    "Every customer carries a camera and an audience — one bad decision is public in minutes",
+    "Managers today have fewer tools than before, so their mistakes are harder to hide",
+    "Laws are weaker today than in the past, so companies are caught by the public instead",
+    "Customers no longer care about ethics, so companies must be faster to win them back"
+   ],
+   "answer": 0,
+   "why": "Social-media accountability, ethics scandals and sustainability pressures make responsibility the job itself, not decoration. See §3.8."
+  },
+  {
+   "id": "160-03-A01",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "3.1",
+   "stem": "Analyse Emirates' first annual loss in three decades in 2020. Determine the chapter's explanation.",
+   "options": [
+    "The external environment changed — the managers did not suddenly become bad",
+    "The managers made poor decisions about routes and fleet size in the years before 2020",
+    "The internal culture collapsed once the airline stopped hiring and training new crew",
+    "The company stopped planning for the future"
+   ],
+   "answer": 0,
+   "why": "Emirates' managers did not become bad; the environment changed, and adaptation later brought record profits. See the answer to question 2 in §3.1."
+  },
+  {
+   "id": "160-03-A02",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "3.2",
+   "stem": "Classify the UAE tax on sugary drinks that made drink companies redesign products.",
+   "options": [
+    "External force — laws and politics",
+    "Internal factor — culture and leadership",
+    "External force — social trends",
+    "Internal factor — technology and resources"
+   ],
+   "answer": 0,
+   "why": "Taxes and regulations are the 'laws and politics' external force. See the table in §3.2."
+  },
+  {
+   "id": "160-03-A03",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "3.2",
+   "stem": "Classify health awareness that pushed cafés to offer low-sugar menus.",
+   "options": [
+    "External force — social trends",
+    "External force — technology",
+    "Internal factor — structure",
+    "External force — economy"
+   ],
+   "answer": 0,
+   "why": "Changing habits and values are social trends; customers asked first. See §3.2."
+  },
+  {
+   "id": "160-03-A04",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "3.2",
+   "stem": "Classify a late schedule change that floods the registrar with complaints and overloads staff.",
+   "options": [
+    "An internal weakness felt everywhere",
+    "An external threat from competitors offering a better timetable",
+    "A social trend among students towards complaining online",
+    "An economic force that reduces the university's budget for staff"
+   ],
+   "answer": 0,
+   "why": "One internal weakness spreads through the organisation — that is why managers check the inside first. See §3.1."
+  },
+  {
+   "id": "160-03-A05",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "3.2",
+   "stem": "Analyse the hotel scan: high front-desk turnover, an outdated booking system, strong cash now, and two new hotels opening next year. Determine the best decision.",
+   "options": [
+    "Fix the turnover and upgrade the booking system this year, while cash is strong and before competitors open",
+    "Wait until the new hotels open and then react to whatever prices and services they offer",
+    "Cut prices immediately so that the new hotels find it hard to win customers when they open",
+    "Close the front desk and move all bookings to an app, so that staff turnover no longer matters"
+   ],
+   "answer": 0,
+   "why": "Connect an internal weakness to an external threat and act early. See the sample scan in §3.2."
+  },
+  {
+   "id": "160-03-A06",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "3.3",
+   "stem": "Determine the stakeholder group that wants stable, fair partnerships.",
+   "options": [
+    "Suppliers",
+    "Investors",
+    "Government",
+    "Customers"
+   ],
+   "answer": 0,
+   "why": "Suppliers want stable, fair partnerships; investors want returns; government wants compliance and taxes; customers want quality and fair prices. See §3.3."
+  },
+  {
+   "id": "160-03-A07",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 1",
+   "sec": "3.4",
+   "stem": "Determine the fitting culture for an airline's aircraft maintenance operation.",
+   "options": [
+    "Traditional — formal rules, clear hierarchy, defined procedures",
+    "Google-style — freedom in how you work, open desks and room for improvisation",
+    "No fixed culture — each engineer decides the method that fits the aircraft in front of them",
+    "A sales-style competitive culture in which engineers compete on the number of aircraft serviced"
+   ],
+   "answer": 0,
+   "why": "Where one improvisation can be a disaster, a careful, predictable culture fits. Neither culture is 'right' — each fits its situation. See §3.4."
+  },
+  {
+   "id": "160-03-A08",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 1",
+   "sec": "3.5",
+   "stem": "Analyse a sports team where players compete hard for starting positions, yet substitutes celebrate goals they did not score. Determine the reading.",
+   "options": [
+    "Competition inside a collaborative frame — the healthiest mix",
+    "A purely competitive culture, because players are fighting each other for starting positions",
+    "A purely collaborative culture, because everyone celebrates together whoever scores",
+    "A culture with no clear values, because the players' behaviour contradicts itself"
+   ],
+   "answer": 0,
+   "why": "Reading a culture: the clue (substitutes celebrate) shows collaboration framing the competition. See §3.5."
+  },
+  {
+   "id": "160-03-A09",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "3.6",
+   "stem": "Determine the verdict on a manager who gives the best shifts to his friends.",
+   "options": [
+    "Unethical — it fails the fairness question, even though it is usually legal",
+    "Ethical — managers may arrange the schedule as they see best",
+    "Ethical — it is legal, and legal is the standard by which a manager's actions are judged",
+    "It depends on the size of the company and whether the other staff have complained"
+   ],
+   "answer": 0,
+   "why": "Favouritism fails Q2 (fair?) and is often legal — which proves legal ≠ ethical. See §3.6."
+  },
+  {
+   "id": "160-03-A10",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "3.6",
+   "stem": "Determine the verdict on employee monitoring.",
+   "options": [
+    "It depends — announced, proportionate, work-related monitoring passes; secret spying fails",
+    "Always ethical — the employer owns the equipment and pays for the employee's time",
+    "Always unethical — monitoring shows a lack of trust that destroys engagement",
+    "Ethical only for senior staff, whose decisions carry more risk for the company"
+   ],
+   "answer": 0,
+   "why": "Secret spying fails the fairness and public tests — would you tell them? See §3.6."
+  },
+  {
+   "id": "160-03-A11",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "3.6",
+   "stem": "Determine the verdict on an app that hides fees until checkout.",
+   "options": [
+    "Unethical — built to pass unnoticed, which fails the fairness and public tests",
+    "Ethical — the customer can still cancel at checkout once the full price is shown",
+    "Ethical — all apps do it, and customers have come to expect fees at checkout",
+    "It depends on the size of the fee and whether it is mentioned somewhere in the terms"
+   ],
+   "answer": 0,
+   "why": "Hiding fees fails Q2 and Q4; being built to pass unnoticed is the confession. See §3.6."
+  },
+  {
+   "id": "160-03-A12",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 3",
+   "sec": "3.6",
+   "stem": "Analyse the product problem — a known fault, not dangerous today, costly to fix, invisible to most customers. Determine the chapter's position.",
+   "options": [
+    "Fix it, announce it honestly and turn the fix into a trust story",
+    "Ignore it — most customers will never notice, and the fault is not dangerous today",
+    "Wait until customers complain and then fix each case individually at the company's cost",
+    "Fix it quietly in the next production run without telling anyone that a fault existed"
+   ],
+   "answer": 0,
+   "why": "Ignoring may pass 'legal' and fails fair, harm and the public test; Volkswagen hid its diesel problem and paid tens of billions. See §3.6."
+  },
+  {
+   "id": "160-03-A13",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "3.7",
+   "stem": "Determine the level of Carroll's pyramid for a company that gives to charity while cheating its customers.",
+   "options": [
+    "It fails — charity cannot wash away cheating at the lower levels",
+    "The top level — giving back to the community is the highest responsibility a company can show",
+    "The ethical level — the company is doing more than the law requires by giving to charity",
+    "The legal level — the company is operating within the law and paying its taxes"
+   ],
+   "answer": 0,
+   "why": "Each level builds on the one below; giving back does not cancel unethical behaviour. See §3.7."
+  },
+  {
+   "id": "160-03-A14",
+   "quiz": 2,
+   "bloom": "Apply",
+   "clo": "CLO 3",
+   "sec": "3.7",
+   "stem": "Select the sustainability idea that is a genuine win–win for a university.",
+   "options": [
+    "Smart classroom cooling schedules — less energy and a smaller bill",
+    "Painting the campus buildings green",
+    "A speech by the president about the planet at the start of each academic year",
+    "A sustainability poster in the gift shop next to the recycled-paper notebooks"
+   ],
+   "answer": 0,
+   "why": "The best ideas name both wins — the planet effect and the money effect — and are decided by ordinary managers. See §3.7 and the take-away."
+  },
+  {
+   "id": "160-03-A15",
+   "quiz": 2,
+   "bloom": "Analyse",
+   "clo": "CLO 3",
+   "sec": "3.7",
+   "stem": "Compare two sustainability claims: 'We care deeply about the planet' and 'Cut packaging waste 30% by 2027'. Determine which passes the greenwashing test.",
+   "options": [
+    "The second — it has a number and a date",
+    "The first — it shows real feeling",
+    "Both pass equally",
+    "Neither — companies cannot be sustainable"
+   ],
+   "answer": 0,
+   "why": "Numbers and dates convince; adjectives do not. See the greenwashing detector in §3.7."
+  }
+ ]
+}
