@@ -93,7 +93,10 @@ function getQuiz(p){
   const pool=rows('Questions').filter(q=>q.subject===subject&&+q.chapter===chapter&&+q.quiz===quiz&&q.status==='published');
   if(pool.length<4) return {error:'This quiz is not published yet.'};
   const pick=shuffle(pool.slice()).slice(0,Math.min(n,pool.length));
-  return {questions:pick.map(q=>({id:q.id,stem:q.stem,bloom:q.bloom,clo:q.clo,sec:q.sec,options:shuffle([q.opt1,q.opt2,q.opt3,q.opt4].map(String))})),poolSize:pool.length};
+  // salt + SHA-256 of the correct option lets the page give instant feedback without sending answers in clear text
+  const salt=Utilities.getUuid();
+  const h=(s)=>Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256,salt+'|'+s,Utilities.Charset.UTF_8).map(b=>('0'+(b&255).toString(16)).slice(-2)).join('');
+  return {salt,questions:pick.map(q=>({id:q.id,stem:q.stem,bloom:q.bloom,clo:q.clo,sec:q.sec,options:shuffle([q.opt1,q.opt2,q.opt3,q.opt4].map(String)),h:h(String(q['opt'+(+q.answer+1)])),why:q.why})),poolSize:pool.length};
 }
 function submit(p){
   const id=String(p.studentId||'').trim(); if(!id) return {error:'studentId required'};

@@ -1,89 +1,256 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Chapter Quiz Hub · University of Kalba</title>
-<meta name="description" content="Open practice quizzes for Dr Arun Korath's management courses at the University of Kalba. Choose your subject, pick a chapter, test yourself, learn from your mistakes.">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<meta name="description" content="Open practice quizzes for Dr Arun Korath's management courses at the University of Kalba. Pick your world, choose a chapter, play, learn from your mistakes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Space+Grotesk:wght@400;500;700&family=Archivo+Black&family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0f1216;--panel:#171b21;--p2:#1d222a;--line:#262c35;--text:#e8ecf1;--muted:#8d97a5;--acc:#4ad3a2;--amb:#ffb84d;--red:#ff6b6b;--blue:#6aa9ff}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:15px;line-height:1.5}
-header{position:sticky;top:0;background:rgba(15,18,22,.95);border-bottom:1px solid var(--line);padding:10px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;z-index:5;backdrop-filter:blur(8px)}
-header b{font-size:15px}header a{color:var(--text);text-decoration:none}
-.who{font-size:12px;color:var(--muted)}.who b{color:var(--acc);font-size:12px}.who button{background:none;border:0;color:var(--muted);cursor:pointer;font:inherit;font-size:12px;text-decoration:underline}
-main{max-width:1100px;margin:0 auto 60px;padding:20px}
-h1{font-size:26px;margin:18px 0 6px}h2{font-size:18px;margin:26px 0 10px}p.sub{color:var(--muted);margin:0 0 16px}
-.k{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;cursor:pointer;transition:border-color .15s}.card:hover{border-color:var(--acc)}
-.card h3{margin:4px 0 6px;font-size:17px}.card .m{color:var(--muted);font-size:13px}
-.btn{background:var(--acc);color:#0b1410;border:0;padding:10px 16px;border-radius:8px;font:inherit;font-weight:600;cursor:pointer}.btn:disabled{opacity:.5;cursor:default}.btn.g{background:var(--panel);color:var(--text);border:1px solid var(--line)}.btn.s{padding:6px 10px;font-size:12px}
-.pill{display:inline-block;font-size:11px;padding:4px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);margin:2px 4px 2px 0;cursor:pointer;background:none;font-family:inherit}.pill.ok{color:var(--acc);border-color:#235b46}.pill.todo{color:var(--amb);border-color:#5e4420}.pill.lock{color:var(--muted);cursor:default}.pill.vid{color:var(--blue);border-color:#2a4a7a}
-.q{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;margin:12px 0}
-.q .stem{font-size:16px;font-weight:500;margin:6px 0 12px}.opt{display:block;width:100%;text-align:left;background:var(--p2);border:1px solid var(--line);color:var(--text);padding:11px 14px;border-radius:8px;margin:6px 0;cursor:pointer;font:inherit}.opt:hover{border-color:var(--blue)}.opt.pick{border-color:var(--acc);background:#1b2c26}
-.timer{font-family:'IBM Plex Mono',monospace;color:var(--amb);font-size:16px}.timer.low{color:var(--red)}
-table{width:100%;border-collapse:collapse;font-size:13px}th{text-align:left;color:var(--muted);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:8px;border-bottom:1px solid var(--line)}td{padding:10px 8px;border-bottom:1px solid #1f242c;vertical-align:middle}
-.bar{height:8px;background:#232931;border-radius:4px;overflow:hidden}.bar i{display:block;height:100%;background:var(--acc)}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px}.stat b{display:block;font-size:22px;margin-top:4px}
-.note{background:#1a1f26;border-left:3px solid var(--amb);padding:10px 14px;border-radius:0 8px 8px 0;font-size:13px;color:var(--muted);margin:14px 0}
-.err{background:#2c1b1b;border-left:3px solid var(--red);padding:10px 14px;border-radius:0 8px 8px 0;font-size:13px;margin:14px 0}
-.view{display:none}.view.on{display:block}
-label{display:block;font-size:12px;color:var(--muted);margin:10px 0 4px}input{width:100%;background:var(--p2);border:1px solid var(--line);color:var(--text);padding:10px;border-radius:8px;font:inherit}
-.you td{background:#17352a}
-.vidgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}.vid iframe,.vid video{width:100%;aspect-ratio:16/9;border:0;border-radius:8px;background:#000}
+/* ============ base ============ */
+:root{--bg:#0d0b14;--text:#f3f1f8;--muted:#a39fb3;--acc:#c66bff;--acc2:#ff8a5c;--ok:#48e39b;--bad:#ff5e7a;--panel:rgba(255,255,255,.06);--line:rgba(255,255,255,.12);--font:'Space Grotesk',system-ui,sans-serif;--display:'Caveat',cursive;--radius:16px}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.5;overflow-x:hidden;transition:background .6s}
+a{color:inherit}button{font-family:inherit}
+#scene{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+header{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 22px;backdrop-filter:blur(10px);background:rgba(0,0,0,.25);border-bottom:1px solid var(--line)}
+header .brand{font-family:var(--display);font-size:26px;text-decoration:none;letter-spacing:.01em;line-height:1}
+header .brand small{display:block;font-family:var(--font);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:2px}
+.who{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:10px}.who b{color:var(--acc)}
+.icon{background:var(--panel);border:1px solid var(--line);color:var(--text);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:15px;display:inline-grid;place-items:center}
+.who button.link{background:none;border:0;color:var(--muted);cursor:pointer;font:inherit;font-size:12px;text-decoration:underline}
+main{position:relative;z-index:1;max-width:1120px;margin:0 auto 70px;padding:22px}
+h1{font-family:var(--display);font-size:clamp(34px,6vw,58px);line-height:1.02;margin:16px 0 8px}
+h2{font-size:20px;margin:28px 0 10px}p.sub{color:var(--muted);margin:0 0 18px;max-width:720px}
+.k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.btn{background:var(--acc);color:#120a1f;border:0;padding:12px 20px;border-radius:999px;font:inherit;font-weight:700;cursor:pointer;transition:transform .12s,box-shadow .2s;box-shadow:0 8px 24px -10px var(--acc)}.btn:hover{transform:translateY(-2px)}.btn:active{transform:scale(.97)}.btn:disabled{opacity:.5;cursor:default;transform:none}
+.btn.g{background:var(--panel);color:var(--text);border:1px solid var(--line);box-shadow:none}.btn.s{padding:7px 12px;font-size:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px;backdrop-filter:blur(6px)}
+.view{display:none}.view.on{display:block;animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+label{display:block;font-size:12px;color:var(--muted);margin:12px 0 4px}input{width:100%;background:rgba(0,0,0,.35);border:1px solid var(--line);color:var(--text);padding:12px;border-radius:10px;font:inherit}
+.err{background:rgba(255,94,122,.12);border-left:3px solid var(--bad);padding:10px 14px;border-radius:0 10px 10px 0;font-size:13px;margin:14px 0}
+.note{background:var(--panel);border-left:3px solid var(--acc2);padding:10px 14px;border-radius:0 10px 10px 0;font-size:13px;color:var(--muted);margin:14px 0}
 .spin{display:inline-block;width:14px;height:14px;border:2px solid var(--line);border-top-color:var(--acc);border-radius:50%;animation:sp .8s linear infinite;vertical-align:middle;margin-right:6px}@keyframes sp{to{transform:rotate(360deg)}}
-.review .q{border-left:4px solid var(--acc)}.review .q.bad{border-left-color:var(--red)}
-.big{font-size:34px;font-weight:700;margin:4px 0}
-@media (max-width:640px){td,th{padding:8px 4px}.hide-m{display:none}}
-footer{color:var(--muted);font-size:12px;text-align:center;padding:30px 20px;border-top:1px solid var(--line)}
-</style></head><body>
-<header><a href="#" onclick="go('subjects');return false"><b>🎓 Chapter Quiz Hub · University of Kalba</b></a><div class="who" id="who"></div></header>
+.pill{display:inline-block;font-size:11px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted);margin:2px 4px 2px 0;background:none}
+table{width:100%;border-collapse:collapse;font-size:13px}th{text-align:left;color:var(--muted);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:8px;border-bottom:1px solid var(--line)}td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+.you td{background:rgba(255,255,255,.07)}
+.bar{height:8px;background:rgba(255,255,255,.1);border-radius:4px;overflow:hidden}.bar i{display:block;height:100%;background:var(--acc)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}.stat b{display:block;font-size:24px;margin-top:4px}
+.vidgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}.vid iframe,.vid video{width:100%;aspect-ratio:16/9;border:0;border-radius:10px;background:#000}
+footer{position:relative;z-index:1;color:var(--muted);font-size:12px;text-align:center;padding:30px 20px;border-top:1px solid var(--line)}
+@media (max-width:640px){td,th{padding:8px 4px}.hide-m{display:none}main{padding:14px}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* ============ HUB (choose your world) ============ */
+.portals{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:22px}
+.portal{position:relative;border-radius:22px;overflow:hidden;min-height:330px;cursor:pointer;border:1px solid var(--line);transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column;justify-content:flex-end;color:#fff}
+.portal:hover{transform:translateY(-6px) scale(1.01);box-shadow:0 30px 60px -30px rgba(0,0,0,.9)}
+.portal .mini{position:absolute;inset:0}
+.portal .txt{position:relative;padding:18px;background:linear-gradient(to top,rgba(0,0,0,.75),transparent)}
+.portal .txt .k{color:rgba(255,255,255,.75)}.portal h3{margin:4px 0 2px;font-size:26px;line-height:1.05}.portal .m{font-size:13px;opacity:.85}
+.portal .cta{display:inline-block;margin-top:10px;font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:999px;background:#fff;color:#111}
+/* mini scenes */
+.mini.drive{background:radial-gradient(ellipse at 50% 70%,#2b1646 0,#0b0714 60%)}
+.mini.drive .floor{position:absolute;inset:0;background-image:radial-gradient(circle,#8a4bff33 1px,transparent 1.6px);background-size:26px 26px;transform:perspective(300px) rotateX(55deg) translateY(40px) scale(2);transform-origin:50% 100%;animation:floor 6s linear infinite}
+@keyframes floor{to{background-position:0 52px}}
+.mini.drive .disc{position:absolute;left:50%;top:48%;width:170px;height:70px;margin-left:-85px;border-radius:50%;background:#ff9a4a;box-shadow:0 0 0 3px #d9a6ff,0 0 40px #b06cff}
+.mini.drive .tree{position:absolute;width:48px;height:48px;border-radius:50%;background:#ff7fb0;box-shadow:0 0 20px #ff7fb0aa}
+.mini.drive .car{position:absolute;left:50%;top:38%;margin-left:-26px;width:52px;height:30px;background:#ff3c5a;border-radius:8px;box-shadow:0 10px 0 -4px #000,0 0 18px #ff3c5a}
+.mini.drive .car:after{content:'';position:absolute;left:10px;top:6px;width:32px;height:14px;background:#1b1330;border-radius:5px}
+.mini.drive .hand{position:absolute;right:16px;top:28px;font-family:var(--display);font-size:22px;color:#fff;transform:rotate(-6deg)}
+.mini.island{background:linear-gradient(#5e8dff,#c8dbff 55%,#6d5bff 56%)}
+.mini.island .isle{position:absolute;left:-20%;right:-20%;top:52%;height:70%;background:#5b48ff;border-radius:50%;box-shadow:inset 0 30px 60px #3a2bd1}
+.mini.island .ring{position:absolute;left:12%;right:12%;top:63%;height:28%;border-radius:50%;background:#7b6bff}
+.mini.island .tr{position:absolute;width:0;height:0;border-left:14px solid transparent;border-right:14px solid transparent;border-bottom:34px solid #4a37e8}
+.mini.island .hut{position:absolute;width:40px;height:26px;background:#ff8a6a;border-radius:4px}.mini.island .hut:before{content:'';position:absolute;left:-4px;top:-14px;width:0;height:0;border-left:24px solid transparent;border-right:24px solid transparent;border-bottom:14px solid #ff6f4e}
+.mini.island .hand{position:absolute;left:0;right:0;top:12%;text-align:center;font-family:'Archivo Black',sans-serif;font-size:12px;letter-spacing:.16em;color:#111}
+.mini.gallery{background:radial-gradient(ellipse at 50% 20%,#2a2419 0,#0a0908 65%)}
+.mini.gallery .frame{position:absolute;left:50%;top:18%;width:120px;height:150px;margin-left:-60px;border:2px solid #c9a961;outline:1px solid #5b4a2a;outline-offset:6px;background:linear-gradient(#1a1610,#0d0b08);display:grid;place-items:center;font-family:'Cinzel',serif;color:#c9a961;font-size:30px}
+.mini.gallery .torch{position:absolute;top:34%;width:10px;height:28px;border-radius:5px;background:#5a4123}.mini.gallery .torch:before{content:'';position:absolute;left:-7px;top:-20px;width:24px;height:26px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;background:radial-gradient(#fff2b0,#ff9b2f 50%,transparent 72%);animation:flk 1.1s ease-in-out infinite alternate}
+@keyframes flk{from{transform:scale(1) translateY(0);opacity:.9}to{transform:scale(1.18) translateY(-2px);opacity:1}}
+.mini.gallery .orn{position:absolute;left:0;right:0;top:8%;text-align:center;color:#c9a961;font-family:'Cinzel',serif;font-size:11px;letter-spacing:.3em}
+
+/* ============ THEME: DRIVE (bruno-simon) ============ */
+body.t-drive{--bg:#0b0714;--acc:#c66bff;--acc2:#ff8a5c;--display:'Caveat',cursive}
+body.t-drive #scene .floor{position:absolute;inset:-10% -10% 0;background-image:radial-gradient(circle,#9b5cff55 1.2px,transparent 2px);background-size:34px 34px;transform:perspective(600px) rotateX(60deg) scale(2.4);transform-origin:50% 100%;animation:floor 9s linear infinite;opacity:.7}
+body.t-drive #scene .glow{position:absolute;left:50%;top:60%;width:60vw;height:30vh;margin-left:-30vw;border-radius:50%;background:radial-gradient(#7b3cff55,transparent 70%);filter:blur(20px)}
+body.t-drive .btn{box-shadow:0 0 24px -4px var(--acc)}
+/* road map of chapters */
+.road{position:relative;display:grid;grid-template-columns:1fr;gap:0;margin-top:10px}
+.road .seg{position:relative;display:flex;align-items:center;gap:16px;padding:14px 0 14px 10px;min-height:92px}
+.road .seg:before{content:'';position:absolute;left:36px;top:0;bottom:0;width:6px;background:repeating-linear-gradient(#ffb04a 0 14px,transparent 14px 26px);opacity:.75;border-radius:3px}
+.road .seg:first-child:before{top:50%}.road .seg:last-child:before{bottom:50%}
+.cp{position:relative;z-index:1;width:58px;height:58px;border-radius:50%;flex:none;display:grid;place-items:center;font-family:var(--display);font-size:28px;font-weight:700;background:#17102a;border:3px solid #6f44c9;box-shadow:0 0 18px #7b3cff66;cursor:pointer;transition:transform .15s}.cp:hover{transform:scale(1.08)}
+.cp.done{background:#ff9a4a;border-color:#ffd39b;color:#2a1200;box-shadow:0 0 26px #ff9a4a99}.cp.part{background:#3d2a6b;border-color:#c66bff}.cp.lock{opacity:.45;cursor:default}
+.cp .car{position:absolute;left:-46px;top:12px;font-size:28px;filter:drop-shadow(0 0 8px #ff3c5a);animation:bob 1.6s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.seg .info{flex:1;cursor:pointer;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 16px;transition:border-color .2s}.seg .info:hover{border-color:var(--acc)}
+.seg .info b{font-size:17px}.seg .info .m{font-size:12px;color:var(--muted);margin-top:4px}
+.hand{font-family:'Caveat',cursive;font-size:22px;color:#fff;opacity:.9}
+
+/* ============ THEME: ISLAND (joshuasworld) ============ */
+body.t-island{--bg:#5e8dff;--text:#111;--muted:#2b2a4a;--acc:#5b48ff;--acc2:#ff6f4e;--ok:#15b36b;--bad:#e63f5c;--panel:rgba(255,255,255,.82);--line:rgba(20,20,60,.12);--display:'Archivo Black',sans-serif}
+body.t-island{background:linear-gradient(#4f82ff,#d6e4ff 48%,#6557ff 48.2%,#4c3ae0)}
+body.t-island header{background:rgba(255,255,255,.55);color:#111}body.t-island .who b{color:var(--acc)}
+body.t-island h1{font-family:'Archivo Black',sans-serif;text-transform:uppercase;letter-spacing:-.01em;font-size:clamp(30px,5vw,50px)}
+body.t-island header .brand{font-family:'Archivo Black',sans-serif;font-size:16px;text-transform:uppercase;letter-spacing:.04em}
+body.t-island .btn{color:#fff;box-shadow:0 10px 24px -10px #2b1fb0}body.t-island .btn.g{color:#111}
+body.t-island .icon{color:#111}
+body.t-island #scene .isle{position:absolute;left:-15%;right:-15%;top:46%;height:90%;border-radius:50%;background:#5b48ff;box-shadow:inset 0 40px 90px #3728c9}
+body.t-island #scene .ring{position:absolute;left:8%;right:8%;top:60%;height:40%;border-radius:50%;background:#7a6bff;opacity:.7}
+body.t-island #scene .tr{position:absolute;width:0;height:0;border-left:22px solid transparent;border-right:22px solid transparent;border-bottom:56px solid #4a37e8;filter:drop-shadow(0 6px 0 #3324bf)}
+body.t-island #scene .cloud{position:absolute;width:140px;height:40px;border-radius:40px;background:rgba(255,255,255,.75);animation:drift 40s linear infinite}
+@keyframes drift{from{transform:translateX(-200px)}to{transform:translateX(110vw)}}
+body.t-island .card{background:rgba(255,255,255,.88)}
+body.t-island table{color:#111}body.t-island .stat{background:rgba(255,255,255,.85)}body.t-island .you td{background:#e9e5ff}
+/* 3D ring of chapters */
+.ring3d{position:relative;height:430px;perspective:1100px;user-select:none;touch-action:pan-y;margin-top:6px;cursor:grab}
+.ring3d.drag{cursor:grabbing}
+.ring3d .stage{position:absolute;left:50%;top:50%;width:0;height:0;transform-style:preserve-3d;transition:transform .08s linear}
+.tent{position:absolute;left:-110px;top:-120px;width:220px;height:230px;transform-style:preserve-3d;backface-visibility:hidden}
+.tent .body{position:absolute;inset:40px 0 0;background:#fff;border-radius:14px;border:2px solid #2b1fb0;padding:14px;color:#111;box-shadow:0 20px 40px -20px #1a1360;cursor:pointer;transition:transform .2s}
+.tent .roof{position:absolute;left:10px;right:10px;top:0;height:52px;background:#ff6f4e;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.tent .roof:after{content:'';position:absolute;left:50%;top:-14px;width:4px;height:16px;background:#2b1fb0;margin-left:-2px}
+.tent .n{font-family:'Archivo Black',sans-serif;font-size:34px;line-height:1;color:#5b48ff}
+.tent .t{font-weight:700;font-size:14px;line-height:1.25;margin:6px 0;max-height:54px;overflow:hidden}
+.tent .m{font-size:11px;color:#55527a}
+.tent .body:hover{transform:translateY(-6px)}
+.tent.front .body{outline:3px solid #ff6f4e}
+.ring3d .hint{position:absolute;left:0;right:0;top:4px;text-align:center;font-family:'Archivo Black',sans-serif;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#1a1360;pointer-events:none}
+.ring3d .hint span{display:inline-block;animation:wig 1.4s ease-in-out infinite}
+@keyframes wig{0%,100%{transform:translateX(-6px)}50%{transform:translateX(6px)}}
+.ringnav{display:flex;justify-content:center;gap:8px;margin-top:-6px}
+
+/* ============ THEME: GALLERY (adrianleon) ============ */
+body.t-gallery{--bg:#0a0908;--text:#e9e2d0;--muted:#9a9079;--acc:#c9a961;--acc2:#e0b96a;--ok:#9ccf7a;--bad:#d9646a;--panel:rgba(255,255,255,.04);--line:rgba(201,169,97,.25);--display:'Cinzel',serif;--radius:4px}
+body.t-gallery{font-family:'Cormorant Garamond',serif;font-size:18px}
+body.t-gallery header .brand{font-family:'Cinzel',serif;font-size:18px;letter-spacing:.2em;text-transform:uppercase}
+body.t-gallery h1{font-family:'Cinzel',serif;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:clamp(26px,4.6vw,46px)}
+body.t-gallery h2{font-family:'Cinzel',serif;letter-spacing:.12em;font-weight:500;text-transform:uppercase;font-size:15px;color:var(--acc)}
+body.t-gallery .k{font-family:'Cinzel',serif;color:var(--acc);letter-spacing:.22em}
+body.t-gallery .btn{background:transparent;color:var(--acc);border:1px solid var(--acc);border-radius:2px;font-family:'Cinzel',serif;letter-spacing:.18em;text-transform:uppercase;font-size:12px;box-shadow:none;outline:1px solid rgba(201,169,97,.25);outline-offset:4px}
+body.t-gallery .btn:hover{background:rgba(201,169,97,.12)}
+body.t-gallery #scene .vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,rgba(90,70,30,.25),transparent 55%),radial-gradient(ellipse at 50% 100%,#000 0,transparent 60%)}
+body.t-gallery #scene .torch{position:absolute;top:40%;width:14px;height:60px;border-radius:7px;background:linear-gradient(#5a4123,#2b1e10)}
+body.t-gallery #scene .torch:before{content:'';position:absolute;left:-16px;top:-38px;width:46px;height:52px;border-radius:50%/60% 60% 40% 40%;background:radial-gradient(#fff3bd,#ff9b2f 45%,transparent 72%);filter:blur(1px);animation:flk .9s ease-in-out infinite alternate}
+body.t-gallery #scene .torch:after{content:'';position:absolute;left:-120px;top:-130px;width:260px;height:260px;border-radius:50%;background:radial-gradient(#ff9b2f22,transparent 70%);animation:flk 1.3s ease-in-out infinite alternate}
+body.t-gallery .orn{text-align:center;color:var(--acc);letter-spacing:.4em;font-family:'Cinzel',serif;font-size:12px;margin:6px 0 14px}
+.wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:26px;margin-top:16px}
+.plate{position:relative;border:2px solid var(--acc);outline:1px solid rgba(201,169,97,.35);outline-offset:7px;background:linear-gradient(#17130d,#0d0b08);padding:26px 18px 18px;min-height:210px;cursor:pointer;transition:transform .25s,box-shadow .25s;text-align:center}
+.plate:hover{transform:translateY(-6px);box-shadow:0 30px 50px -30px #ff9b2f66}
+.plate .num{font-family:'Cinzel',serif;font-size:34px;color:var(--acc);line-height:1}
+.plate .t{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;line-height:1.25;margin:8px 0 10px;color:#eee6d2}
+.plate .m{font-size:13px;color:var(--muted);font-family:'Cinzel',serif;letter-spacing:.08em}
+.plate.done{box-shadow:inset 0 0 40px #ff9b2f22}.plate.lock{opacity:.5;cursor:default}
+.plate .seal{position:absolute;right:10px;top:10px;font-size:18px}
+
+/* ============ chapter panel (all themes) ============ */
+.panel{margin-top:18px}
+.quizbtns{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.qb{border:1px solid var(--line);border-radius:var(--radius);padding:16px;background:rgba(0,0,0,.18);cursor:pointer;transition:transform .15s,border-color .15s}.qb:hover{transform:translateY(-3px);border-color:var(--acc)}
+.qb.lock{opacity:.45;cursor:default}.qb .big{font-size:22px;font-weight:700;margin:2px 0}.qb .m{font-size:12px;color:var(--muted)}
+body.t-island .qb{background:#fff}
+@media (max-width:560px){.quizbtns{grid-template-columns:1fr}}
+
+/* ============ QUIZ (game) ============ */
+.hud{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:6px 0 14px}
+.prog{display:flex;gap:4px;flex:1;min-width:200px}.prog i{flex:1;height:10px;border-radius:5px;background:rgba(255,255,255,.14);transition:background .3s}.prog i.ok{background:var(--ok)}.prog i.bad{background:var(--bad)}.prog i.cur{background:var(--acc);animation:pulse 1s ease-in-out infinite}
+body.t-island .prog i{background:rgba(0,0,0,.14)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+.hudk{font-size:13px;display:flex;align-items:center;gap:6px;background:var(--panel);border:1px solid var(--line);padding:6px 12px;border-radius:999px}.hudk b{font-size:15px}
+.hudk.hot{border-color:var(--acc2);box-shadow:0 0 16px -4px var(--acc2)}
+.timer{font-variant-numeric:tabular-nums}.timer.low{color:var(--bad)}
+.qcard{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:24px;backdrop-filter:blur(10px);animation:slidein .35s cubic-bezier(.2,.8,.2,1)}
+@keyframes slidein{from{opacity:0;transform:translateX(40px) rotate(.5deg)}to{opacity:1;transform:none}}
+.qcard .stem{font-size:clamp(19px,2.6vw,25px);font-weight:600;line-height:1.3;margin:8px 0 18px}
+body.t-gallery .qcard .stem{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(22px,2.8vw,28px)}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:640px){.opts{grid-template-columns:1fr}}
+.opt{position:relative;display:flex;gap:12px;align-items:flex-start;text-align:left;background:rgba(0,0,0,.22);border:2px solid var(--line);color:var(--text);padding:14px 16px 14px 14px;border-radius:16px;cursor:pointer;font:inherit;font-size:15px;line-height:1.35;transition:transform .12s,border-color .15s,background .2s;min-height:64px}
+.opt:hover:not(:disabled){transform:translateY(-3px);border-color:var(--acc)}.opt:disabled{cursor:default}
+.opt .key{flex:none;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:var(--panel);border:1px solid var(--line);font-weight:700;font-size:13px}
+.opt.ok{border-color:var(--ok);background:rgba(72,227,155,.15);animation:pop .4s}.opt.bad{border-color:var(--bad);background:rgba(255,94,122,.15);animation:shake .4s}.opt.dim{opacity:.45}
+body.t-island .opt{background:#fff;color:#111}body.t-island .opt .key{background:#efeeff;color:#2b1fb0}
+@keyframes pop{0%{transform:scale(1)}40%{transform:scale(1.04)}100%{transform:scale(1)}}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}
+.verdict{margin-top:16px;border-radius:16px;padding:16px 18px;border:1px solid var(--line);animation:fade .3s;background:rgba(0,0,0,.25)}
+.verdict.ok{border-color:var(--ok)}.verdict.bad{border-color:var(--bad)}
+.verdict .h{font-family:var(--display);font-size:26px;line-height:1;margin-bottom:6px}.verdict.ok .h{color:var(--ok)}.verdict.bad .h{color:var(--bad)}
+.verdict .why{color:var(--muted);font-size:14px;margin-top:6px}
+body.t-island .verdict{background:#fff}body.t-island .verdict .why{color:#444}
+.xpfloat{position:fixed;z-index:9;pointer-events:none;font-family:var(--display);font-size:30px;font-weight:700;color:var(--acc2);animation:rise 1.1s ease-out forwards;text-shadow:0 2px 10px rgba(0,0,0,.4)}
+@keyframes rise{from{opacity:1;transform:translateY(0) scale(.9)}to{opacity:0;transform:translateY(-90px) scale(1.25)}}
+.toast{position:fixed;left:50%;top:80px;transform:translateX(-50%);z-index:9;background:var(--acc2);color:#1a0d00;font-family:var(--display);font-size:28px;padding:8px 22px;border-radius:999px;animation:toast 1.6s ease forwards;pointer-events:none;box-shadow:0 10px 30px -10px #000}
+@keyframes toast{0%{opacity:0;transform:translate(-50%,-20px) scale(.8)}15%{opacity:1;transform:translate(-50%,0) scale(1.05)}80%{opacity:1}100%{opacity:0;transform:translate(-50%,-10px)}}
+#confetti{position:fixed;inset:0;z-index:8;pointer-events:none}
+
+/* ============ RESULT ============ */
+.resgrid{display:grid;grid-template-columns:220px 1fr;gap:22px;align-items:center}
+@media (max-width:640px){.resgrid{grid-template-columns:1fr;text-align:center}}
+.ringwrap{position:relative;width:200px;height:200px;margin:0 auto}
+.ringwrap svg{transform:rotate(-90deg)}.ringwrap .c{fill:none;stroke:rgba(255,255,255,.12);stroke-width:14}.ringwrap .v{fill:none;stroke:var(--acc);stroke-width:14;stroke-linecap:round;stroke-dasharray:565;stroke-dashoffset:565;transition:stroke-dashoffset 1.4s cubic-bezier(.2,.8,.2,1)}
+body.t-island .ringwrap .c{stroke:rgba(0,0,0,.12)}
+.ringwrap .num{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--display);font-size:52px;line-height:1}
+.rank{font-family:var(--display);font-size:clamp(30px,5vw,46px);line-height:1.05;margin:4px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.chip{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px}
+.review .q{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--ok);border-radius:14px;padding:16px;margin:10px 0}.review .q.bad{border-left-color:var(--bad)}
+.review .stem{font-weight:600;margin:4px 0 8px}
+</style></head><body class="t-hub">
+<div id="scene"></div>
+<canvas id="confetti"></canvas>
+<header><a href="#" class="brand" onclick="goHub();return false" id="brand">Chapter Quiz Hub<small>University of Kalba · Dr Arun Korath</small></a><div class="who" id="who"></div></header>
 <main>
 
-<section class="view on" id="v-subjects">
-  <h1>Choose your subject</h1>
-  <p class="sub">Open practice — any chapter, any time, unlimited attempts. Your best score and your first attempt are both recorded. Dr Arun Korath · College of Business Administration</p>
-  <div id="subjectsGrid" class="grid"><span class="spin"></span> Loading subjects…</div>
+<section class="view on" id="v-hub">
+  <h1>Pick your world.</h1>
+  <p class="sub">Every subject is its own little world. Open practice — any chapter, any time, unlimited attempts. Your best score and your first try are both recorded; on the dashboard you appear only as a codename.</p>
+  <div id="portals" class="portals"><span class="spin"></span> Loading worlds…</div>
 </section>
 
 <section class="view" id="v-ident">
-  <button class="btn g" onclick="go('subjects')">← Subjects</button>
-  <h1 id="identTitle">Tell us who you are (once)</h1>
-  <p class="sub">Your name and student ID are saved so your practice counts. They are never shown on any page — on the dashboard you appear as a codename. This device will remember you.</p>
-  <div class="card" style="max-width:440px;cursor:default">
+  <button class="btn g s" onclick="goHub()">← Worlds</button>
+  <h1 id="identTitle">Who's playing?</h1>
+  <p class="sub">Your name and student ID are saved once so your practice counts. They are never shown on any page — on the dashboard you get a codename. This device will remember you.</p>
+  <div class="card" style="max-width:440px">
     <label>Student ID</label><input id="inId" placeholder="e.g. 202412345" autocomplete="off">
     <label>Full name</label><input id="inName" placeholder="As on your university record">
     <div id="identErr"></div>
-    <br><button class="btn" id="identBtn" onclick="identify()">Start practising →</button>
+    <br><button class="btn" id="identBtn" onclick="identify()">Let's go →</button>
   </div>
 </section>
 
 <section class="view" id="v-chapters">
-  <button class="btn g" onclick="go('subjects')">← Subjects</button> <button class="btn g" onclick="openDash()">📊 Dashboard</button>
-  <h1 id="chTitle"></h1>
-  <p class="sub">Two quizzes per chapter, always open. <b>Quiz 1 · Ideas</b> checks understanding. <b>Quiz 2 · Applied</b> asks you to apply and analyse. Each attempt draws 10 random questions from the chapter's bank; 12 minutes; unlimited attempts.</p>
+  <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn g s" onclick="goHub()">← Worlds</button> <button class="btn g s" onclick="openDash()">📊 Dashboard</button></div>
+  <div id="chHead"></div>
   <div id="generalVideos"></div>
-  <div style="overflow:auto"><table id="chTable"></table></div>
-  <div id="vidPanel"></div>
+  <div id="chScene"></div>
+  <div id="chPanel" class="panel"></div>
 </section>
 
 <section class="view" id="v-quiz">
-  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px"><div><div class="k" id="qzK"></div><h1 id="qzTitle" style="margin:4px 0"></h1></div><div class="timer" id="timer">12:00</div></div>
-  <p class="sub">Choose one answer per question. The review with correct answers and explanations appears after you submit.</p>
-  <div id="qs"></div>
+  <div class="k" id="qzK"></div>
+  <div class="hud">
+    <div class="prog" id="prog"></div>
+    <div class="hudk" id="hudStreak">🔥 <b id="streak">0</b></div>
+    <div class="hudk">✨ <b id="xp">0</b> XP</div>
+    <div class="hudk timer" id="timer">⏱ 12:00</div>
+  </div>
+  <div id="qbox"></div>
   <div id="qzErr"></div>
-  <button class="btn" id="submitBtn" onclick="submitQuiz()">Submit quiz</button> <button class="btn g" onclick="if(confirm('Leave this attempt? It will not be saved.')){stopTimer();go('chapters')}">Cancel</button>
+  <p style="margin-top:14px"><button class="btn g s" onclick="if(confirm('Leave this attempt? It will not be saved.')){stopTimer();openChapters()}">Quit attempt</button> <span class="k" style="margin-left:8px">keys 1–4 answer · Enter next</span></p>
 </section>
 
 <section class="view" id="v-result">
   <div id="resHead"></div>
-  <h2>Your review</h2>
+  <h2 id="revTitle">Your review</h2>
   <div class="review" id="review"></div>
-  <p><button class="btn" onclick="go('chapters')">Back to chapters</button> <button class="btn g" onclick="retry()">↻ Try this quiz again</button> <button class="btn g" onclick="openDash()">📊 Dashboard</button></p>
+  <p><button class="btn" onclick="retry()">↻ Play again</button> <button class="btn g" onclick="openChapters()">Back to chapters</button> <button class="btn g" onclick="openDash()">📊 Dashboard</button></p>
 </section>
 
 <section class="view" id="v-dash">
-  <button class="btn g" onclick="go('chapters')">← Chapters</button>
-  <h1>Dashboard · <span id="dashSubj"></span></h1>
-  <p class="sub">Anonymised — every student sees this same page. Codenames only; you are highlighted.</p>
+  <button class="btn g s" onclick="openChapters()">← Chapters</button>
+  <h1>Dashboard</h1>
+  <p class="sub" id="dashSubj">Anonymised — every student sees this same page. Codenames only; you are highlighted.</p>
   <div id="dashBody"><span class="spin"></span> Loading…</div>
 </section>
 
@@ -91,7 +258,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;padding:30px 20px;bor
 <footer>Questions are generated from the chapter decks and reviewed by the instructor. Practice quizzes are formative: they help you learn, they are not your exam. Problems? Tell Dr Korath in class.</footer>
 
 <script>
-/* ---------------- config & API ---------------- */
+/* ================= config & API ================= */
 let CFG={scriptUrl:''};
 async function loadCfg(){ try{ CFG=await (await fetch('config.json?'+Date.now())).json(); }catch(e){} }
 async function api(action,data){
@@ -100,89 +267,191 @@ async function api(action,data){
   const j=await r.json(); if(j.error) throw new Error(j.error); return j;
 }
 const $=s=>document.querySelector(s); const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-const S={student:null,subjects:[],subject:null,chapter:null,quiz:null,questions:[],picks:{},start:0,progress:{},videos:[]};
+const S={student:null,subjects:[],subject:null,chapter:null,quiz:null,questions:[],salt:'',answers:{},idx:0,start:0,qStart:0,streak:0,bestStreak:0,xp:0,progress:{},videos:[],theme:null,locked:false};
 try{S.student=JSON.parse(localStorage.getItem('qh_student')||'null')}catch{}
+let muted=localStorage.getItem('qh_mute')==='1';
 
+/* ================= THEMES ================= */
+const THEMES={
+  drive:{name:'Night Drive',brand:'Night Drive 🚗',tag:'Drive the road. Every chapter is a checkpoint. Reach the end with a full tank of knowledge.',cta:'Click to start',panelCta:'Start the engine',ranks:['Parked','Learner driver','Road runner','Night racer','Road legend 🏆'],chapterWord:'Checkpoint'},
+  island:{name:"Idea Island",brand:'IDEA ISLAND',tag:'Drag to explore. Every chapter is a place on the island. Visit them all.',cta:'Explore the island →',panelCta:'Visit this place',ranks:['Tourist','Camper','Explorer','Trailblazer','Island legend 🏆'],chapterWord:'Place'},
+  gallery:{name:'The Leadership Gallery',brand:'The Gallery',tag:'Walk the halls. Every chapter is a work on the wall. Study each one until you can read it in the dark.',cta:'Enter the gallery →',panelCta:'Study this work',ranks:['Visitor','Apprentice','Connoisseur','Curator','Master of the Gallery 🏆'],chapterWord:'Hall'}
+};
+const SUBJECT_THEME={MGMT160:'drive',MGMT363:'island',MGMT464:'gallery'};
+const order=['drive','island','gallery'];
+function themeKey(code,i){return SUBJECT_THEME[code]||order[(i||0)%3]}
+function setTheme(key){
+  document.body.className='t-'+(key||'hub'); S.theme=key?THEMES[key]:null;
+  const sc=$('#scene'); sc.innerHTML='';
+  if(key==='drive'){ sc.innerHTML='<div class="glow"></div><div class="floor"></div>'; }
+  if(key==='island'){ let t=''; for(let i=0;i<14;i++){const x=Math.random()*100,y=58+Math.random()*38,s=.6+Math.random()*.9;t+=`<div class="tr" style="left:${x}%;top:${y}%;transform:scale(${s})"></div>`;} sc.innerHTML=`<div class="cloud" style="top:8%;animation-delay:-5s"></div><div class="cloud" style="top:18%;width:90px;animation-delay:-22s"></div><div class="isle"></div><div class="ring"></div>${t}`; }
+  if(key==='gallery'){ sc.innerHTML='<div class="vig"></div><div class="torch" style="left:6%"></div><div class="torch" style="right:6%"></div>'; }
+  $('#brand').innerHTML=(S.theme?esc(S.theme.brand):'Chapter Quiz Hub')+'<small>University of Kalba · Dr Arun Korath</small>';
+}
+
+/* ================= nav ================= */
 function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.remove('on'));$('#v-'+v).classList.add('on');window.scrollTo(0,0);renderWho()}
-function renderWho(){$('#who').innerHTML=S.student?`Signed in as <b>${esc(S.student.codename)}</b> <button onclick="signOut()">not you?</button>`:'<span>Not signed in</span>'}
-function signOut(){localStorage.removeItem('qh_student');S.student=null;go('subjects')}
+function goHub(){stopTimer();setTheme(null);go('hub')}
+function renderWho(){$('#who').innerHTML=(S.student?`Playing as <b>${esc(S.student.codename)}</b> <button class="link" onclick="signOut()">not you?</button>`:'<span>Not signed in</span>')+`<button class="icon" title="sound" onclick="toggleMute()">${muted?'🔇':'🔊'}</button>`}
+function signOut(){localStorage.removeItem('qh_student');S.student=null;goHub()}
+function toggleMute(){muted=!muted;localStorage.setItem('qh_mute',muted?'1':'0');renderWho();if(!muted)snd('tick')}
 
-/* ---------------- subjects ---------------- */
+/* ================= HUB ================= */
+function miniScene(key){
+  if(key==='drive') return `<div class="mini drive"><div class="floor"></div><div class="disc"></div><div class="tree" style="left:28%;top:22%"></div><div class="tree" style="left:60%;top:16%;width:62px;height:62px"></div><div class="tree" style="left:40%;top:10%;width:40px;height:40px"></div><div class="car"></div><div class="hand">click to start ↙</div></div>`;
+  if(key==='island') return `<div class="mini island"><div class="hand">↔ drag to explore</div><div class="isle"></div><div class="ring"></div><div class="tr" style="left:12%;top:40%"></div><div class="tr" style="left:78%;top:44%"></div><div class="tr" style="left:30%;top:58%;transform:scale(.8)"></div><div class="tr" style="left:62%;top:62%;transform:scale(.7)"></div><div class="hut" style="left:46%;top:52%"></div><div class="hut" style="left:20%;top:66%;transform:scale(.8)"></div></div>`;
+  return `<div class="mini gallery"><div class="orn">✦ ❧ ✦</div><div class="torch" style="left:18%"></div><div class="torch" style="right:18%"></div><div class="frame">I</div></div>`;
+}
 async function loadSubjects(){
   try{ const j=await api('subjects',{}); S.subjects=j.subjects; }
-  catch(e){ $('#subjectsGrid').innerHTML=`<div class="err">Could not load subjects: ${esc(e.message)}</div>`; return; }
-  $('#subjectsGrid').innerHTML=S.subjects.map(s=>{const pub=s.chapters.filter(c=>c.q1>0||c.q2>0).length;return`<div class="card" onclick="pickSubject('${esc(s.code)}')"><div class="k">${esc(s.code)} · ${esc(s.term||'')}</div><h3>${esc(s.title)}</h3><div class="m">${s.chapters.length} chapters · ${pub} with quizzes ready${s.chapters.some(c=>c.videos>0)||s.generalVideos?' · 🎬 class videos':''}</div><p style="margin:8px 0 0;font-size:12px;color:var(--acc)">▶ Start practising</p></div>`}).join('')||'<div class="note">No subjects published yet.</div>';
+  catch(e){ $('#portals').innerHTML=`<div class="err">Could not load subjects: ${esc(e.message)}</div>`; return; }
+  $('#portals').innerHTML=S.subjects.map((s,i)=>{const key=themeKey(s.code,i),t=THEMES[key];const pub=s.chapters.filter(c=>c.q1>0||c.q2>0).length;
+    return`<div class="portal" onclick="pickSubject('${esc(s.code)}')">${miniScene(key)}<div class="txt"><div class="k">${esc(s.code)} · ${esc(s.term||'')}</div><h3>${esc(s.title)}</h3><div class="m">${esc(t.name)} · ${s.chapters.length} chapters · ${pub} ready to play${s.chapters.some(c=>c.videos>0)||s.generalVideos?' · 🎬 videos':''}</div><span class="cta">${esc(t.cta)}</span></div></div>`}).join('')||'<div class="note">No subjects published yet.</div>';
 }
-function pickSubject(code){S.subject=S.subjects.find(s=>s.code===code); if(!S.student){$('#identTitle').textContent=S.subject.code+' · tell us who you are (once)';go('ident');$('#inId').focus();} else openChapters();}
+function pickSubject(code){S.subject=S.subjects.find(s=>s.code===code);const i=S.subjects.indexOf(S.subject);setTheme(themeKey(code,i));snd('tick');
+  if(!S.student){$('#identTitle').textContent=S.subject.code+' · who\'s playing?';go('ident');$('#inId').focus();} else openChapters();}
 async function identify(){
   const id=$('#inId').value.trim(), name=$('#inName').value.trim(); $('#identErr').innerHTML='';
   if(id.length<4||name.length<3){$('#identErr').innerHTML='<div class="err">Please enter your student ID and full name.</div>';return;}
   $('#identBtn').disabled=true;$('#identBtn').innerHTML='<span class="spin"></span>Saving…';
   try{ const j=await api('register',{studentId:id,name,subject:S.subject.code}); S.student={studentId:j.studentId,name,codename:j.codename}; localStorage.setItem('qh_student',JSON.stringify(S.student)); openChapters(); }
   catch(e){ $('#identErr').innerHTML=`<div class="err">${esc(e.message)}</div>`; }
-  $('#identBtn').disabled=false;$('#identBtn').textContent='Start practising →';
+  $('#identBtn').disabled=false;$('#identBtn').textContent="Let's go →";
 }
 
-/* ---------------- chapters ---------------- */
+/* ================= CHAPTERS (themed scenes) ================= */
+function chState(c){const p1=S.progress[c.chapter+'-1'],p2=S.progress[c.chapter+'-2'];const avail=(c.q1>0?1:0)+(c.q2>0?1:0);if(!avail)return'lock';const done=(p1?1:0)+(p2?1:0);return done===avail?'done':done?'part':'todo'}
+function bestPct(c){const b=[S.progress[c.chapter+'-1'],S.progress[c.chapter+'-2']].filter(Boolean);return b.length?Math.round(100*b.reduce((a,p)=>a+p.best/p.total,0)/b.length):null}
 async function openChapters(){
-  go('chapters'); const s=S.subject; $('#chTitle').textContent=s.code+' · '+s.title; $('#vidPanel').innerHTML='';
-  $('#chTable').innerHTML='<tr><td><span class="spin"></span> Loading your progress…</td></tr>';
+  stopTimer();go('chapters'); const s=S.subject,t=S.theme; $('#chPanel').innerHTML='';
+  $('#chHead').innerHTML=`<h1>${esc(t.name)}</h1><p class="sub"><b>${esc(s.code)} · ${esc(s.title)}</b><br>${esc(t.tag)} Two quizzes per chapter: <b>Quiz 1 · Ideas</b> checks understanding, <b>Quiz 2 · Applied</b> makes you apply and analyse. 10 questions, instant feedback, unlimited attempts.</p>`;
+  $('#chScene').innerHTML='<span class="spin"></span> Loading your progress…';
   try{ const [p,v]=await Promise.all([api('myProgress',{studentId:S.student.studentId,subject:s.code}),api('videos',{subject:s.code})]); S.progress=p.progress; S.videos=v.videos; }catch(e){ S.progress={}; S.videos=[]; }
   const gen=S.videos.filter(v=>!v.chapter);
   $('#generalVideos').innerHTML=gen.length?`<div class="k" style="margin:8px 0">Course videos</div><div class="vidgrid" style="margin-bottom:16px">${gen.map(vidCard).join('')}</div>`:'';
-  $('#chTable').innerHTML=`<tr><th>Ch</th><th>Chapter</th><th class="hide-m">CLOs</th><th>Class video</th><th>Quiz 1 · Ideas</th><th>Quiz 2 · Applied</th><th>Best · attempts</th></tr>`+s.chapters.map(c=>{
-    const p1=S.progress[c.chapter+'-1'],p2=S.progress[c.chapter+'-2'];const vids=S.videos.filter(v=>v.chapter===c.chapter);
-    const cell=(q,p,n)=>n===0?`<span class="pill lock">coming soon</span>`:p?`<button class="pill ok" onclick="startQuiz(${c.chapter},${q})">best ${p.best}/${p.total} · ↻ retry</button>`:`<button class="pill todo" onclick="startQuiz(${c.chapter},${q})">▶ Take quiz</button>`;
-    const bests=[p1,p2].filter(Boolean);const bestPct=bests.length?Math.round(100*bests.reduce((a,p)=>a+p.best/p.total,0)/bests.length):null;const att=(p1?.attempts||0)+(p2?.attempts||0);
-    return`<tr><td>${c.chapter}</td><td><b>${esc(c.title)}</b></td><td class="hide-m" style="color:var(--muted)">${esc(c.clos||'')}</td><td>${vids.length?`<button class="pill vid" onclick="showVids(${c.chapter})">▶ Watch (${vids.length})</button>`:'<span class="pill lock">no video yet</span>'}</td><td>${cell(1,p1,c.q1)}</td><td>${cell(2,p2,c.q2)}</td><td>${bestPct===null?'—':bestPct+'%'} · ${att}</td></tr>`}).join('');
+  const key=document.body.className.replace('t-','');
+  if(key==='drive') renderRoad(); else if(key==='island') renderRing(); else renderWall();
+}
+function renderRoad(){
+  const chs=S.subject.chapters; let last=-1; chs.forEach((c,i)=>{if(chState(c)==='done'||chState(c)==='part')last=i});
+  $('#chScene').innerHTML=`<div class="hand">${last<0?'↓ your car is waiting at checkpoint 1 — click it':'↓ you have driven to checkpoint '+chs[last].chapter+' — keep going'}</div><div class="road">${chs.map((c,i)=>{const st=chState(c),bp=bestPct(c);const vids=S.videos.filter(v=>v.chapter===c.chapter).length;
+    return`<div class="seg"><div class="cp ${st}" onclick="openChapterPanel(${c.chapter})">${c.chapter}${i===Math.max(last,0)?'<span class="car">🚗</span>':''}</div><div class="info" onclick="openChapterPanel(${c.chapter})"><b>${esc(c.title)}</b><div class="m">${st==='lock'?'🔒 coming soon':st==='done'?'✅ both quizzes played · best '+bp+'%':st==='part'?'🟡 one quiz played · best '+bp+'%':'▶ not played yet'}${vids?' · 🎬 '+vids+' video'+(vids>1?'s':''):''}</div></div></div>`}).join('')}</div>`;
+}
+let ring={angle:0,vel:0,n:0,dragging:false,lastX:0,raf:null};
+function renderRing(){
+  const chs=S.subject.chapters; ring.n=chs.length; const r=Math.max(260,chs.length*42);
+  $('#chScene').innerHTML=`<div class="ring3d" id="ring3d"><div class="hint"><span>◀</span> drag to explore <span>▶</span></div><div class="stage" id="stage" style="transform:translateZ(-${r}px) rotateY(0deg)">${chs.map((c,i)=>{const st=chState(c),bp=bestPct(c);const a=360/chs.length*i;
+    return`<div class="tent" data-i="${i}" style="transform:rotateY(${a}deg) translateZ(${r}px)"><div class="roof"></div><div class="body" onclick="ringClick(${i},${c.chapter})"><div class="n">${c.chapter}</div><div class="t">${esc(c.title)}</div><div class="m">${st==='lock'?'🔒 coming soon':st==='done'?'✅ visited · best '+bp+'%':st==='part'?'🟡 half visited · best '+bp+'%':'🏕 not visited yet'}</div></div></div>`}).join('')}</div></div><div class="ringnav"><button class="btn g s" onclick="spin(1)">◀ prev</button><button class="btn g s" onclick="spin(-1)">next ▶</button></div>`;
+  const el=$('#ring3d'); ring.angle=0;ring.vel=0;
+  const down=e=>{ring.dragging=true;ring.lastX=(e.touches?e.touches[0].clientX:e.clientX);el.classList.add('drag');ring.vel=0};
+  const move=e=>{if(!ring.dragging)return;const x=(e.touches?e.touches[0].clientX:e.clientX);const dx=x-ring.lastX;ring.lastX=x;ring.angle+=dx*.4;ring.vel=dx*.4;applyRing()};
+  const up=()=>{if(!ring.dragging)return;ring.dragging=false;el.classList.remove('drag');inertia()};
+  el.addEventListener('mousedown',down);window.addEventListener('mousemove',move);window.addEventListener('mouseup',up);
+  el.addEventListener('touchstart',down,{passive:true});el.addEventListener('touchmove',move,{passive:true});el.addEventListener('touchend',up);
+  applyRing();
+}
+function applyRing(){const st=$('#stage');if(!st)return;const r=st.style.transform.match(/translateZ\((-?\d+)px\)/)[1];st.style.transform=`translateZ(${r}px) rotateY(${ring.angle}deg)`;const step=360/ring.n;const front=((Math.round(-ring.angle/step)%ring.n)+ring.n)%ring.n;document.querySelectorAll('.tent').forEach(t=>t.classList.toggle('front',+t.dataset.i===front))}
+function inertia(){cancelAnimationFrame(ring.raf);const f=()=>{if(ring.dragging)return;ring.vel*=.93;ring.angle+=ring.vel;applyRing();if(Math.abs(ring.vel)>.05)ring.raf=requestAnimationFrame(f);else snapRing()};ring.raf=requestAnimationFrame(f)}
+function snapRing(){const step=360/ring.n;const target=Math.round(ring.angle/step)*step;const f=()=>{ring.angle+=(target-ring.angle)*.2;applyRing();if(Math.abs(target-ring.angle)>.3)ring.raf=requestAnimationFrame(f);else{ring.angle=target;applyRing()}};ring.raf=requestAnimationFrame(f)}
+function spin(d){const step=360/ring.n;ring.angle+=d*step;snapRing();snd('tick')}
+function ringClick(i,ch){const step=360/ring.n;const front=((Math.round(-ring.angle/step)%ring.n)+ring.n)%ring.n;if(front!==i){ring.angle=-i*step;snapRing();}openChapterPanel(ch)}
+function roman(n){const m=[[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']];let s='';for(const[v,r]of m){while(n>=v){s+=r;n-=v}}return s||String(n)}
+function renderWall(){
+  $('#chScene').innerHTML=`<div class="orn">✦ ❧ ✦</div><div class="wall">${S.subject.chapters.map(c=>{const st=chState(c),bp=bestPct(c);return`<div class="plate ${st}" onclick="openChapterPanel(${c.chapter})"><span class="seal">${st==='done'?'🏅':st==='part'?'🕯':st==='lock'?'🔒':''}</span><div class="num">${roman(c.chapter)}</div><div class="t">${esc(c.title)}</div><div class="m">${st==='lock'?'Not yet hung':st==='todo'?'Unstudied':'Best '+bp+'%'}</div></div>`}).join('')}</div>`;
+}
+function openChapterPanel(ch){
+  const c=S.subject.chapters.find(x=>x.chapter===ch),t=S.theme; if(!c)return; snd('tick');
+  const p1=S.progress[ch+'-1'],p2=S.progress[ch+'-2'];const vids=S.videos.filter(v=>v.chapter===ch);
+  const qb=(q,p,n,label,desc)=>n===0?`<div class="qb lock"><div class="k">Quiz ${q} · ${label}</div><div class="big">Coming soon</div><div class="m">${desc}</div></div>`:`<div class="qb" onclick="startQuiz(${ch},${q})"><div class="k">Quiz ${q} · ${label}</div><div class="big">${p?`Best ${p.best}/${p.total} · ↻ play again`:'▶ Play'}</div><div class="m">${desc}${p?` · ${p.attempts} attempt${p.attempts>1?'s':''}`:''}</div></div>`;
+  $('#chPanel').innerHTML=`<div class="card" id="chCard"><div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start"><div><div class="k">${esc(t.chapterWord)} ${ch} · ${esc(c.clos||'')}</div><h2 style="margin:4px 0 0">${esc(c.title)}</h2></div><button class="btn g s" onclick="$('#chPanel').innerHTML=''">close</button></div>
+  <div class="quizbtns">${qb(1,p1,c.q1,'Ideas','Understand the chapter')}${qb(2,p2,c.q2,'Applied','Apply & analyse cases')}</div>
+  ${vids.length?`<div class="k" style="margin:10px 0 8px">🎬 Class video${vids.length>1?'s':''}</div><div class="vidgrid">${vids.map(vidCard).join('')}</div>`:'<div class="m" style="font-size:12px;color:var(--muted)">No class video for this chapter yet.</div>'}</div>`;
+  $('#chCard').scrollIntoView({behavior:'smooth',block:'start'});
 }
 function ytId(u){const m=String(u).match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/);return m?m[1]:null}
 function driveId(u){const m=String(u).match(/drive\.google\.com\/file\/d\/([\w-]+)/);return m?m[1]:null}
 function vidCard(v){const y=ytId(v.url),d=driveId(v.url);let player=y?`<iframe src="https://www.youtube.com/embed/${y}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`:d?`<iframe src="https://drive.google.com/file/d/${d}/preview" allow="autoplay" allowfullscreen></iframe>`:/\.(mp4|webm|m4v)(\?|$)/i.test(v.url)?`<video controls src="${esc(v.url)}"></video>`:`<a class="btn g" href="${esc(v.url)}" target="_blank" rel="noopener">▶ Open video</a>`;return`<div class="vid">${player}<p style="margin:8px 0 0;font-size:14px"><b>${esc(v.title)}</b>${v.minutes?`<br><span style="color:var(--muted);font-size:12px">${esc(v.minutes)} min</span>`:''}</p></div>`}
-function showVids(ch){const vids=S.videos.filter(v=>v.chapter===ch);$('#vidPanel').innerHTML=`<div class="q"><div style="display:flex;justify-content:space-between"><div class="k">${esc(S.subject.code)} · Chapter ${ch} · class videos</div><button class="btn g s" onclick="$('#vidPanel').innerHTML=''">close</button></div><div class="vidgrid" style="margin-top:10px">${vids.map(vidCard).join('')}</div><p style="font-size:12px;color:var(--muted);margin:10px 0 0">Watch, then take Quiz 1 and Quiz 2 for this chapter.</p></div>`;$('#vidPanel').scrollIntoView({behavior:'smooth'})}
 
-/* ---------------- quiz ---------------- */
-let tInt=null;const LIMIT=12*60;
+/* ================= QUIZ (game) ================= */
+let tInt=null;const LIMIT=12*60;const enc=new TextEncoder();
+async function sha(s){const b=await crypto.subtle.digest('SHA-256',enc.encode(s));return [...new Uint8Array(b)].map(v=>v.toString(16).padStart(2,'0')).join('')}
 async function startQuiz(ch,q){
-  S.chapter=ch;S.quiz=q;S.picks={};const c=S.subject.chapters.find(x=>x.chapter===ch);
-  $('#qzK').textContent=`${S.subject.code} · Chapter ${ch} · Quiz ${q} · ${q===1?'Ideas':'Applied'}`;$('#qzTitle').textContent=c.title;$('#qs').innerHTML='<span class="spin"></span> Preparing your questions…';$('#qzErr').innerHTML='';go('quiz');
-  try{ const j=await api('getQuiz',{subject:S.subject.code,chapter:ch,quiz:q,n:10}); S.questions=j.questions; }
-  catch(e){ $('#qs').innerHTML=`<div class="err">${esc(e.message)}</div>`; return; }
-  $('#qs').innerHTML=S.questions.map((x,n)=>`<div class="q" id="q-${x.id}"><div class="k">Q${n+1} of ${S.questions.length} · ${esc(x.clo)} · §${esc(x.sec)} · ${esc(x.bloom)}</div><div class="stem">${esc(x.stem)}</div>${x.options.map(o=>`<button class="opt" onclick="pick('${x.id}',this)">${esc(o)}</button>`).join('')}</div>`).join('');
-  S.start=Date.now();startTimer();
+  S.chapter=ch;S.quiz=q;S.answers={};S.idx=0;S.streak=0;S.bestStreak=0;S.xp=0;S.locked=false;const c=S.subject.chapters.find(x=>x.chapter===ch);
+  $('#qzK').textContent=`${S.subject.code} · ${S.theme.chapterWord} ${ch} · Quiz ${q} · ${q===1?'Ideas':'Applied'} · ${c.title}`;$('#qbox').innerHTML='<div class="qcard"><span class="spin"></span> Shuffling your questions…</div>';$('#qzErr').innerHTML='';$('#prog').innerHTML='';go('quiz');
+  try{ const j=await api('getQuiz',{subject:S.subject.code,chapter:ch,quiz:q,n:10}); S.questions=j.questions; S.salt=j.salt||''; }
+  catch(e){ $('#qbox').innerHTML=`<div class="err">${esc(e.message)}</div>`; return; }
+  // pre-compute which option is correct (salted hash from the server)
+  for(const x of S.questions){ x.correctIdx=-1; if(x.h&&S.salt){ const hs=await Promise.all(x.options.map(o=>sha(S.salt+'|'+o))); x.correctIdx=hs.indexOf(x.h);} }
+  $('#prog').innerHTML=S.questions.map(()=>'<i></i>').join('');
+  S.start=Date.now();startTimer();updateHud();showQ();snd('start');
 }
-function pick(id,b){S.picks[id]=b.textContent;document.querySelectorAll(`#q-${CSS.escape(id)} .opt`).forEach(x=>x.classList.remove('pick'));b.classList.add('pick')}
-function startTimer(){stopTimer();const tick=()=>{const left=LIMIT-Math.floor((Date.now()-S.start)/1000);const el=$('#timer');el.textContent='⏱ '+String(Math.max(0,Math.floor(left/60))).padStart(2,'0')+':'+String(Math.max(0,left%60)).padStart(2,'0');el.classList.toggle('low',left<60);if(left<=0){stopTimer();submitQuiz(true)}};tick();tInt=setInterval(tick,1000)}
+function updateHud(){$('#streak').textContent=S.streak;$('#xp').textContent=S.xp;$('#hudStreak').classList.toggle('hot',S.streak>=3);document.querySelectorAll('#prog i').forEach((el,i)=>{const a=S.answers[S.questions[i]?.id];el.className=a?(a.ok?'ok':'bad'):(i===S.idx?'cur':'')})}
+function showQ(){
+  const x=S.questions[S.idx]; if(!x){finish();return;} S.qStart=Date.now(); S.locked=false; updateHud();
+  $('#qbox').innerHTML=`<div class="qcard"><div class="k">Q${S.idx+1} of ${S.questions.length} · ${esc(x.clo)} · §${esc(x.sec)} · ${esc(x.bloom)}</div><div class="stem">${esc(x.stem)}</div><div class="opts">${x.options.map((o,i)=>`<button class="opt" id="opt${i}" onclick="pick(${i})"><span class="key">${i+1}</span><span>${esc(o)}</span></button>`).join('')}</div><div id="verdict"></div></div>`;
+}
+function pick(i){
+  if(S.locked)return; S.locked=true; const x=S.questions[S.idx]; const known=x.correctIdx>=0; const ok=known?i===x.correctIdx:null;
+  const secs=(Date.now()-S.qStart)/1000;
+  S.answers[x.id]={chosen:x.options[i],ok:ok===true};
+  document.querySelectorAll('.opt').forEach((b,k)=>{b.disabled=true;if(known){if(k===x.correctIdx)b.classList.add('ok');else if(k===i)b.classList.add('bad');else b.classList.add('dim')}else if(k===i)b.classList.add('ok')});
+  let gained=0,msg='';
+  if(ok){S.streak++;S.bestStreak=Math.max(S.bestStreak,S.streak);gained=100+Math.min(S.streak-1,5)*20+(secs<10?50:secs<20?20:0);S.xp+=gained;snd('ok');confetti(S.streak>=3?120:50);
+    const b=$('#opt'+i).getBoundingClientRect();floatXp('+'+gained,b.left+b.width/2,b.top);
+    if(S.streak===3)toast('🔥 On fire!');else if(S.streak===5)toast('⚡ Unstoppable!');else if(S.streak===8)toast('👑 Legendary!');
+    msg=['Nice!','Correct!','Yes!','Sharp.','Exactly.','You got it!'][Math.floor(Math.random()*6)];
+  } else if(ok===false){S.streak=0;snd('bad');msg=['Not quite.','Close — but no.','Hmm, no.','Not this one.'][Math.floor(Math.random()*4)];}
+  else {msg='Answer saved';}
+  const last=S.idx===S.questions.length-1;
+  $('#verdict').innerHTML=`<div class="verdict ${ok?'ok':ok===false?'bad':''}"><div class="h">${msg}${ok?` <span style="font-size:16px;color:var(--acc2)">+${gained} XP${secs<10?' · speed bonus':''}</span>`:''}</div>${known&&!ok?`<div><b>Correct answer:</b> ${esc(x.options[x.correctIdx])}</div>`:''}${x.why?`<div class="why"><b>Why:</b> ${esc(x.why)}</div>`:''}<p style="margin:12px 0 0"><button class="btn" id="nextBtn" onclick="next()">${last?'See my result →':'Next →'}</button></p></div>`;
+  updateHud(); setTimeout(()=>$('#nextBtn')?.focus(),50);
+}
+function next(){S.idx++;showQ();snd('tick')}
+document.addEventListener('keydown',e=>{if(!$('#v-quiz').classList.contains('on'))return;if(/^[1-4]$/.test(e.key)&&!S.locked){const b=$('#opt'+(+e.key-1));if(b)b.click()}else if(e.key==='Enter'&&S.locked&&$('#nextBtn')){e.preventDefault();next()}});
+function startTimer(){stopTimer();const tick=()=>{const left=LIMIT-Math.floor((Date.now()-S.start)/1000);const el=$('#timer');el.textContent='⏱ '+String(Math.max(0,Math.floor(left/60))).padStart(2,'0')+':'+String(Math.max(0,left%60)).padStart(2,'0');el.classList.toggle('low',left<60);if(left<=0){stopTimer();finish(true)}};tick();tInt=setInterval(tick,1000)}
 function stopTimer(){if(tInt)clearInterval(tInt);tInt=null}
-async function submitQuiz(auto){
-  const unanswered=S.questions.filter(q=>!S.picks[q.id]).length;
-  if(!auto&&unanswered&&!confirm(`${unanswered} question${unanswered>1?'s':''} not answered. Submit anyway?`))return;
-  stopTimer();$('#submitBtn').disabled=true;$('#submitBtn').innerHTML='<span class="spin"></span>Marking…';
+async function finish(auto){
+  stopTimer(); $('#qbox').innerHTML='<div class="qcard"><span class="spin"></span> Saving your score…</div>';
   try{
-    const j=await api('submit',{studentId:S.student.studentId,subject:S.subject.code,chapter:S.chapter,quiz:S.quiz,seconds:Math.round((Date.now()-S.start)/1000),answers:S.questions.map(q=>({id:q.id,chosen:S.picks[q.id]||''}))});
-    renderResult(j);go('result');
-  }catch(e){ $('#qzErr').innerHTML=`<div class="err">Could not submit: ${esc(e.message)} — your answers are still on screen; try again.</div>`; }
-  $('#submitBtn').disabled=false;$('#submitBtn').textContent='Submit quiz';
+    const j=await api('submit',{studentId:S.student.studentId,subject:S.subject.code,chapter:S.chapter,quiz:S.quiz,seconds:Math.round((Date.now()-S.start)/1000),answers:S.questions.map(q=>({id:q.id,chosen:S.answers[q.id]?.chosen||''}))});
+    renderResult(j);go('result');snd('done');if(j.score/j.total>=.7)confetti(260);
+  }catch(e){ $('#qbox').innerHTML=`<div class="err">Could not save: ${esc(e.message)}</div><p><button class="btn" onclick="finish()">Try saving again</button></p>`; }
 }
 function renderResult(j){
-  const pct=Math.round(100*j.score/j.total);const wrong=j.items.filter(i=>!i.ok).length;
+  const pct=Math.round(100*j.score/j.total);const wrong=j.items.filter(i=>!i.ok).length;const t=S.theme;
+  const rank=t.ranks[pct>=90?4:pct>=75?3:pct>=55?2:pct>=30?1:0];
   const clo=Object.entries(j.byClo).map(([k,v])=>`${k}: ${v.ok}/${v.n}`).join(' · ');
-  $('#resHead').innerHTML=`<div class="q"><div class="k">${esc(S.subject.code)} · Chapter ${S.chapter} · Quiz ${S.quiz} · ${S.quiz===1?'Ideas':'Applied'} · attempt ${j.attemptNo} · saved as ${esc(j.codename)}</div><div class="big">${j.score}/${j.total} · ${pct}%</div><div class="bar" style="max-width:320px"><i style="width:${pct}%"></i></div><p style="margin:10px 0 0;color:var(--muted)">${clo}${j.attemptNo>1?` · your best on this quiz: ${j.best}/${j.total}`:''}.<br>${wrong===0?'No mistakes — well done.':`You made ${wrong} mistake${wrong>1?'s':''}. Each one is explained below with the slide section to re-read.`}</p></div>`;
-  $('#review').innerHTML=j.items.map((i,n)=>`<div class="q ${i.ok?'':'bad'}"><div class="k">Q${n+1} · ${esc(i.clo)} · §${esc(i.sec)} · ${i.ok?'<span style="color:var(--acc)">✓ correct</span>':'<span style="color:var(--red)">✗ wrong</span>'}</div><div class="stem">${esc(i.stem)}</div>${i.ok?'':`<div style="color:var(--red);font-size:14px">Your answer: ${i.chosen?esc(i.chosen):'(not answered)'}</div>`}<div style="color:var(--acc);font-size:14px">Correct answer: ${esc(i.correct)}</div><div style="color:var(--muted);font-size:13px;margin-top:6px"><b>Why:</b> ${esc(i.why)}</div></div>`).join('');
+  const secs=Math.round((Date.now()-S.start)/1000);
+  $('#resHead').innerHTML=`<div class="card"><div class="k">${esc(S.subject.code)} · ${esc(t.chapterWord)} ${S.chapter} · Quiz ${S.quiz} · ${S.quiz===1?'Ideas':'Applied'} · attempt ${j.attemptNo} · saved as ${esc(j.codename)}</div>
+  <div class="resgrid"><div class="ringwrap"><svg width="200" height="200" viewBox="0 0 200 200"><circle class="c" cx="100" cy="100" r="90"/><circle class="v" id="ringv" cx="100" cy="100" r="90"/></svg><div class="num">${pct}%</div></div>
+  <div><div class="k">Your rank this round</div><div class="rank">${esc(rank)}</div><div class="chips"><span class="chip">🎯 ${j.score}/${j.total} correct</span><span class="chip">✨ ${S.xp} XP</span><span class="chip">🔥 best streak ${S.bestStreak}</span><span class="chip">⏱ ${Math.floor(secs/60)}m ${secs%60}s</span>${j.attemptNo>1?`<span class="chip">🏅 your best: ${j.best}/${j.total}</span>`:''}</div><p style="color:var(--muted);margin:6px 0 0">${clo}.<br>${wrong===0?'No mistakes — a perfect run.':`${wrong} mistake${wrong>1?'s':''} below, each with the slide section to re-read. Fix them, then play again to beat your best.`}</p></div></div></div>`;
+  setTimeout(()=>{$('#ringv').style.strokeDashoffset=565-565*pct/100},60);
+  $('#revTitle').textContent=wrong?'Your mistakes & the right answers':'Your review';
+  $('#review').innerHTML=j.items.map((i,n)=>`<div class="q ${i.ok?'':'bad'}"><div class="k">Q${n+1} · ${esc(i.clo)} · §${esc(i.sec)} · ${i.ok?'<span style="color:var(--ok)">✓ correct</span>':'<span style="color:var(--bad)">✗ wrong</span>'}</div><div class="stem">${esc(i.stem)}</div>${i.ok?'':`<div style="color:var(--bad);font-size:14px">Your answer: ${i.chosen?esc(i.chosen):'(not answered)'}</div>`}<div style="color:var(--ok);font-size:14px">Correct answer: ${esc(i.correct)}</div><div style="color:var(--muted);font-size:13px;margin-top:6px"><b>Why:</b> ${esc(i.why)}</div></div>`).join('');
 }
 function retry(){startQuiz(S.chapter,S.quiz)}
 
-/* ---------------- dashboard ---------------- */
+/* ================= juice: confetti, floats, toasts, sound ================= */
+const cv=$('#confetti'),cx=cv.getContext('2d');let parts=[],cRaf=null;
+function sizeCv(){cv.width=innerWidth;cv.height=innerHeight}sizeCv();addEventListener('resize',sizeCv);
+function confetti(n){const cols=[getComputedStyle(document.body).getPropertyValue('--acc'),getComputedStyle(document.body).getPropertyValue('--acc2'),getComputedStyle(document.body).getPropertyValue('--ok'),'#fff'];for(let i=0;i<n;i++)parts.push({x:innerWidth/2+(Math.random()-.5)*200,y:innerHeight*.35,vx:(Math.random()-.5)*14,vy:-Math.random()*12-4,g:.35,r:Math.random()*6+3,c:cols[i%cols.length],a:Math.random()*6,s:(Math.random()-.5)*.3,l:1});if(!cRaf)loop()}
+function loop(){cx.clearRect(0,0,cv.width,cv.height);parts.forEach(p=>{p.vy+=p.g;p.x+=p.vx;p.y+=p.vy;p.a+=p.s;p.l-=.012;cx.save();cx.globalAlpha=Math.max(0,p.l);cx.translate(p.x,p.y);cx.rotate(p.a);cx.fillStyle=p.c;cx.fillRect(-p.r,-p.r/2,p.r*2,p.r);cx.restore()});parts=parts.filter(p=>p.l>0&&p.y<cv.height+20);cRaf=parts.length?requestAnimationFrame(loop):(cx.clearRect(0,0,cv.width,cv.height),null)}
+function floatXp(txt,x,y){const d=document.createElement('div');d.className='xpfloat';d.textContent=txt;d.style.left=(x-30)+'px';d.style.top=(y-10)+'px';document.body.appendChild(d);setTimeout(()=>d.remove(),1200)}
+function toast(txt){const d=document.createElement('div');d.className='toast';d.textContent=txt;document.body.appendChild(d);setTimeout(()=>d.remove(),1700);snd('toast')}
+let AC=null;function snd(kind){if(muted)return;try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();const t=AC.currentTime;const tone=(f,st,d,type='sine',g=.08)=>{const o=AC.createOscillator(),v=AC.createGain();o.type=type;o.frequency.setValueAtTime(f,t+st);v.gain.setValueAtTime(0,t+st);v.gain.linearRampToValueAtTime(g,t+st+.01);v.gain.exponentialRampToValueAtTime(.0001,t+st+d);o.connect(v).connect(AC.destination);o.start(t+st);o.stop(t+st+d+.02)};
+  if(kind==='ok'){tone(660,0,.12);tone(880,.1,.18)}else if(kind==='bad'){tone(220,0,.25,'square',.05);tone(180,.12,.3,'square',.05)}else if(kind==='tick'){tone(520,0,.06,'triangle',.04)}else if(kind==='toast'){tone(784,0,.1);tone(988,.1,.1);tone(1175,.2,.2)}else if(kind==='start'){tone(440,0,.1);tone(554,.1,.1);tone(659,.2,.2)}else if(kind==='done'){[523,659,784,1047].forEach((f,i)=>tone(f,i*.12,.25))}}catch(e){}}
+
+/* ================= DASHBOARD ================= */
 async function openDash(){
-  go('dash');$('#dashSubj').textContent=S.subject.code+' '+S.subject.title;$('#dashBody').innerHTML='<span class="spin"></span> Loading…';
+  stopTimer();go('dash');$('#dashSubj').innerHTML=`<b>${esc(S.subject.code)} · ${esc(S.subject.title)}</b> — anonymised; every student sees this same page. Codenames only; you are highlighted.`;$('#dashBody').innerHTML='<span class="spin"></span> Loading…';
   let d;try{d=await api('dashboard',{subject:S.subject.code})}catch(e){$('#dashBody').innerHTML=`<div class="err">${esc(e.message)}</div>`;return}
   const me=S.student?.codename;const pct=v=>v===null||v===undefined?'—':v+'%';
-  $('#dashBody').innerHTML=`<div class="stats"><div class="stat"><div class="k">Students practising</div><b>${d.students}</b></div><div class="stat"><div class="k">Quizzes taken</div><b>${d.attempts}</b></div><div class="stat"><div class="k">Class average (best)</div><b>${pct(d.classAvgBest)}</b></div><div class="stat"><div class="k">Class average (first try)</div><b>${pct(d.classAvgFirst)}</b></div><div class="stat"><div class="k">Weakest section</div><b style="font-size:15px">${d.weakest[0]?esc(d.weakest[0].sec)+' · '+d.weakest[0].pct+'%':'—'}</b></div></div>
-  <h2>Marks by chapter (class averages)</h2><div style="overflow:auto"><table><tr><th>Chapter</th><th>Quiz 1 best</th><th class="hide-m">Quiz 1 first try</th><th>Quiz 2 best</th><th class="hide-m">Quiz 2 first try</th><th>Students</th></tr>${d.chapters.map(c=>`<tr><td>${c.chapter} ${esc(c.title)}</td><td>${pct(c.q1best)}</td><td class="hide-m">${pct(c.q1first)}</td><td>${pct(c.q2best)}</td><td class="hide-m">${pct(c.q2first)}</td><td>${c.students}</td></tr>`).join('')}</table></div>
-  ${d.weakest.length?`<h2>Sections the class finds hardest</h2><table>${d.weakest.map(w=>`<tr><td>${esc(w.sec)}</td><td><div class="bar" style="width:160px"><i style="width:${w.pct}%;background:${w.pct<60?'var(--red)':'var(--amb)'}"></i></div></td><td>${w.pct}% correct · ${w.n} answers</td></tr>`).join('')}</table>`:''}
-  <h2>Leaderboard (codenames)</h2><div style="overflow:auto"><table><tr><th>#</th><th>Codename</th><th>Quizzes</th><th>Best avg</th><th>First-try avg</th><th class="hide-m">Attempts</th></tr>${d.leaderboard.map((s,i)=>`<tr class="${s.codename===me?'you':''}"><td>${i+1}</td><td>${esc(s.codename)}${s.codename===me?' <span class="pill ok" style="cursor:default">you</span>':''}</td><td>${s.quizzesDone}</td><td><b>${pct(s.bestAvg)}</b></td><td>${pct(s.firstAvg)}</td><td class="hide-m">${s.attempts}</td></tr>`).join('')||'<tr><td colspan="6" style="color:var(--muted)">No attempts yet — be the first.</td></tr>'}</table></div>`;
+  $('#dashBody').innerHTML=`<div class="stats"><div class="stat"><div class="k">Players</div><b>${d.students}</b></div><div class="stat"><div class="k">Quizzes played</div><b>${d.attempts}</b></div><div class="stat"><div class="k">Class average (best)</div><b>${pct(d.classAvgBest)}</b></div><div class="stat"><div class="k">Class average (first try)</div><b>${pct(d.classAvgFirst)}</b></div><div class="stat"><div class="k">Hardest section</div><b style="font-size:15px">${d.weakest[0]?esc(d.weakest[0].sec)+' · '+d.weakest[0].pct+'%':'—'}</b></div></div>
+  <h2>Marks by chapter (class averages)</h2><div style="overflow:auto"><table><tr><th>Chapter</th><th>Quiz 1 best</th><th class="hide-m">Quiz 1 first try</th><th>Quiz 2 best</th><th class="hide-m">Quiz 2 first try</th><th>Players</th></tr>${d.chapters.map(c=>`<tr><td>${c.chapter} ${esc(c.title)}</td><td>${pct(c.q1best)}</td><td class="hide-m">${pct(c.q1first)}</td><td>${pct(c.q2best)}</td><td class="hide-m">${pct(c.q2first)}</td><td>${c.students}</td></tr>`).join('')}</table></div>
+  ${d.weakest.length?`<h2>Sections the class finds hardest</h2><table>${d.weakest.map(w=>`<tr><td>${esc(w.sec)}</td><td><div class="bar" style="width:160px"><i style="width:${w.pct}%;background:${w.pct<60?'var(--bad)':'var(--acc2)'}"></i></div></td><td>${w.pct}% correct · ${w.n} answers</td></tr>`).join('')}</table>`:''}
+  <h2>Leaderboard (codenames)</h2><div style="overflow:auto"><table><tr><th>#</th><th>Codename</th><th>Quizzes</th><th>Best avg</th><th>First-try avg</th><th class="hide-m">Attempts</th></tr>${d.leaderboard.map((s,i)=>`<tr class="${s.codename===me?'you':''}"><td>${i<3?['🥇','🥈','🥉'][i]:i+1}</td><td>${esc(s.codename)}${s.codename===me?' <span class="pill">you</span>':''}</td><td>${s.quizzesDone}</td><td><b>${pct(s.bestAvg)}</b></td><td>${pct(s.firstAvg)}</td><td class="hide-m">${s.attempts}</td></tr>`).join('')||'<tr><td colspan="6" style="color:var(--muted)">No attempts yet — be the first.</td></tr>'}</table></div>`;
 }
 
-/* ---------------- boot ---------------- */
+/* ================= boot ================= */
 (async()=>{await loadCfg();renderWho();loadSubjects();})();
 </script></body></html>
