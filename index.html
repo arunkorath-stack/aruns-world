@@ -98,6 +98,9 @@ body.t-island .icon{color:#111}
 body.t-island #scene .isle{position:absolute;left:-15%;right:-15%;top:46%;height:90%;border-radius:50%;background:#5b48ff;box-shadow:inset 0 40px 90px #3728c9}
 body.t-island #scene .ring{position:absolute;left:8%;right:8%;top:60%;height:40%;border-radius:50%;background:#7a6bff;opacity:.7}
 body.t-island #scene .tr{position:absolute;width:0;height:0;border-left:22px solid transparent;border-right:22px solid transparent;border-bottom:56px solid #4a37e8;filter:drop-shadow(0 6px 0 #3324bf)}
+body.t-island #scene .sea{position:absolute;left:0;right:0;top:48%;height:12%;background:repeating-linear-gradient(90deg,transparent 0 40px,rgba(255,255,255,.35) 40px 60px);opacity:.6;animation:seadrift 6s linear infinite}@keyframes seadrift{to{background-position:120px 0}}
+body.t-island #scene .ship{position:absolute;top:44%;font-size:54px;line-height:1;filter:drop-shadow(0 6px 10px rgba(0,0,0,.35));animation:sail 38s linear infinite,sway 2.2s ease-in-out infinite}@keyframes sail{from{left:-10%}to{left:110%}}
+body.t-island #scene .gull{position:absolute;font-size:20px;animation:drift 26s linear infinite}
 body.t-island #scene .cloud{position:absolute;width:140px;height:40px;border-radius:40px;background:rgba(255,255,255,.75);animation:drift 40s linear infinite}
 @keyframes drift{from{transform:translateX(-200px)}to{transform:translateX(110vw)}}
 body.t-island .card{background:rgba(255,255,255,.88)}
@@ -161,7 +164,15 @@ body.t-island .prog i{background:rgba(0,0,0,.14)}
 .side{position:sticky;top:70px}
 .sidehint{font-size:12px;color:var(--muted);text-align:center;margin-top:8px;min-height:18px}
 .journey.vert{height:600px;margin:0;--asph:#26262e;--k1:#e63946;--k2:#fff;--dash:#e8e8e8}
-body.t-island .journey.vert{--asph:#d9b36b;--k1:#15b36b;--k2:#fff;--dash:#fff}
+body.t-island .journey.vert{--asph:#2f7df6;--k1:#ff6f4e;--k2:#fff;--dash:rgba(255,255,255,.75)}
+body.t-island .journey.vert .track{background-image:repeating-linear-gradient(180deg,rgba(255,255,255,.55) 0 6px,transparent 6px 26px),repeating-linear-gradient(180deg,transparent 0 13px,rgba(255,255,255,.3) 13px 19px,transparent 19px 26px),linear-gradient(180deg,#4f9bff,#2457d8);background-size:3px 100%,14px 100%,100% 100%;background-position:32% 0,68% 0,0 0;background-repeat:no-repeat;box-shadow:0 0 0 3px #fff,0 12px 30px -10px rgba(0,0,0,.5)}
+body.t-island .journey.vert .track:before,body.t-island .journey.vert .track:after{width:9px;background:repeating-linear-gradient(180deg,var(--k1) 0 10px,transparent 10px 34px);border-radius:0}
+@keyframes seaflow{to{background-position:32% 26px,68% 26px,0 0}}
+body.t-island .journey.vert .track{animation-name:seaflow}
+body.t-island .journey.vert .trav{animation:sway 1.8s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotate(-4deg) translateY(0)}50%{transform:rotate(4deg) translateY(-3px)}}
+body.t-island .journey.vert .trav.go{animation:none;transform:scale(1.15) rotate(-6deg)}
+body.t-island .journey.vert .node{background:#fff;color:#2b1fb0;border-color:#2b1fb0}body.t-island .spec{filter:drop-shadow(0 2px 3px rgba(0,0,0,.3))}
 body.t-gallery .journey.vert{--asph:#2a1414;--k1:#c9a961;--k2:#4a3a20;--dash:#c9a961}
 .journey.vert .track{left:50%;right:auto;top:1%;bottom:1%;width:48px;height:auto;margin-left:-24px;border-radius:10px;opacity:1;background-color:var(--asph);background-image:repeating-linear-gradient(180deg,var(--dash) 0 14px,transparent 14px 40px);background-size:4px 100%;background-position:50% 0;background-repeat:no-repeat;box-shadow:0 0 0 2px rgba(0,0,0,.35),0 12px 30px -10px rgba(0,0,0,.8);animation:roadflow 1.6s linear infinite}
 .journey.vert .track:before,.journey.vert .track:after{content:'';position:absolute;top:0;bottom:0;width:7px;background:repeating-linear-gradient(180deg,var(--k1) 0 14px,var(--k2) 14px 28px);animation:kerbflow 1.6s linear infinite}
@@ -240,7 +251,7 @@ body.t-island .verdict{background:#fff}body.t-island .verdict .why{color:#444}
 
 /* ============ RESULT: high-speed dash to the next location ============ */
 .dash{position:relative;height:150px;margin:14px 0 4px;border-radius:16px;overflow:hidden;background:linear-gradient(#0000,#0003);--asph:#26262e;--k1:#e63946;--k2:#fff;--dash:#e8e8e8}
-body.t-island .dash{--asph:#d9b36b;--k1:#15b36b;--k2:#fff;--dash:#fff}body.t-gallery .dash{--asph:#2a1414;--k1:#c9a961;--k2:#4a3a20;--dash:#c9a961}
+body.t-island .dash{--asph:#2f7df6;--k1:#ff6f4e;--k2:#fff;--dash:rgba(255,255,255,.8)}body.t-island .dash .dtrack{background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.55) 0 6px,transparent 6px 26px),linear-gradient(180deg,#4f9bff,#2457d8);background-size:100% 3px,100% 100%;background-position:0 50%,0 0;box-shadow:0 0 0 3px #fff}body.t-island .dash .dtrack:before,body.t-island .dash .dtrack:after{height:9px;background:repeating-linear-gradient(90deg,var(--k1) 0 10px,transparent 10px 34px)}body.t-island .dash .dn{background:#ffe9a8;border-color:#2b1fb0;color:#2b1fb0}body.t-island .dash .dcar{animation:sway 1.8s ease-in-out infinite}body.t-island .dash .hump{border-radius:50% 50% 0 0;background:linear-gradient(#fff,#4f9bff);box-shadow:none;height:22px;top:70px}body.t-gallery .dash{--asph:#2a1414;--k1:#c9a961;--k2:#4a3a20;--dash:#c9a961}
 .dash .dtrack{position:absolute;left:0;right:0;top:58px;height:46px;background-color:var(--asph);background-image:repeating-linear-gradient(90deg,var(--dash) 0 16px,transparent 16px 44px);background-size:100% 4px;background-position:0 50%;background-repeat:no-repeat}
 .dash .dtrack:before,.dash .dtrack:after{content:'';position:absolute;left:0;right:0;height:7px;background:repeating-linear-gradient(90deg,var(--k1) 0 14px,var(--k2) 14px 28px)}.dash .dtrack:before{top:0}.dash .dtrack:after{bottom:0}
 .dash.run .dtrack{animation:dflow .12s linear infinite}.dash.run .dtrack:before,.dash.run .dtrack:after{animation:dkerb .12s linear infinite}
@@ -365,7 +376,7 @@ let muted=localStorage.getItem('qh_mute')==='1';
 /* ================= THEMES ================= */
 const THEMES={
   drive:{name:'Night Drive',brand:'Night Drive 🚗',tag:'Drive the road. Every checkpoint hides a trophy. Clear both quizzes of a chapter to win it.',cta:'Click to start',panelCta:'Start the engine',ranks:['Parked','Learner driver','Road runner','Night racer','Road legend 🏆'],chapterWord:'Checkpoint',treasures:['🏁','🔧','⛽','🛞','🏎️','🎖️','🚦','🗝️','💎','🏆'],treasureWord:'trophy',badge:'Road Legend'},
-  island:{name:"Idea Island",brand:'IDEA ISLAND',tag:'Drag to explore. Every place on the island hides a treasure. Clear both quizzes of a chapter to dig it up.',cta:'Explore the island →',panelCta:'Visit this place',ranks:['Tourist','Camper','Explorer','Trailblazer','Island legend 🏆'],chapterWord:'Place',treasures:['🗝️','🐚','🪙','📿','🏺','🧭','🗺️','⚓','💎','💰'],treasureWord:'treasure',badge:'Island Legend'},
+  island:{name:"Idea Island",brand:'IDEA ISLAND 🚢',tag:'Drag to explore. Each island is waiting for your rescue ship. Clear both quizzes of a chapter to reach it and bring home its treasure.',cta:'Set sail →',panelCta:'Sail to this island',ranks:['Deckhand','Sailor','Navigator','Captain','Admiral of the islands 🏆'],chapterWord:'Island',treasures:['🗝️','🐚','🪙','📿','🏺','🧭','🗺️','⚓','💎','💰'],treasureWord:'treasure',badge:'Island Legend'},
   gallery:{name:'The Leadership Gallery',brand:'The Gallery',tag:'Walk the halls. Every hall keeps a relic. Clear both quizzes of a chapter to claim it.',cta:'Enter the gallery →',panelCta:'Study this work',ranks:['Visitor','Apprentice','Connoisseur','Curator','Master of the Gallery 🏆'],chapterWord:'Hall',treasures:['🕯️','📜','🖼️','⚜️','🏺','💍','🔑','🪞','👑','🏆'],treasureWord:'relic',badge:'Master of the Gallery'}
 };
 function treasureOf(ch){const t=S.theme||THEMES.drive;return t.treasures[(ch-1)%t.treasures.length]}
@@ -376,7 +387,7 @@ function setTheme(key){
   document.body.className='t-'+(key||'hub'); S.theme=key?THEMES[key]:null;
   const sc=$('#scene'); sc.innerHTML='';
   if(key==='drive'){ sc.innerHTML='<div class="glow"></div><div class="floor"></div>'; }
-  if(key==='island'){ let t=''; for(let i=0;i<14;i++){const x=Math.random()*100,y=58+Math.random()*38,s=.6+Math.random()*.9;t+=`<div class="tr" style="left:${x}%;top:${y}%;transform:scale(${s})"></div>`;} sc.innerHTML=`<div class="cloud" style="top:8%;animation-delay:-5s"></div><div class="cloud" style="top:18%;width:90px;animation-delay:-22s"></div><div class="isle"></div><div class="ring"></div>${t}`; }
+  if(key==='island'){ let t=''; for(let i=0;i<14;i++){const x=Math.random()*100,y=58+Math.random()*38,s=.6+Math.random()*.9;t+=`<div class="tr" style="left:${x}%;top:${y}%;transform:scale(${s})"></div>`;} sc.innerHTML=`<div class="cloud" style="top:8%;animation-delay:-5s"></div><div class="cloud" style="top:18%;width:90px;animation-delay:-22s"></div><div class="sea"></div><div class="ship">🚢</div><div class="gull" style="top:22%;animation-delay:-3s">🕊️</div><div class="isle"></div><div class="ring"></div>${t}`; }
   if(key==='gallery'){ sc.innerHTML='<div class="vig"></div><div class="torch" style="left:6%"></div><div class="torch" style="right:6%"></div>'; }
   $('#brand').innerHTML=(S.theme?esc(S.theme.brand):'Chapter Quiz Hub')+'<small>University of Kalba · Dr Arun Korath</small>';
 }
@@ -439,8 +450,8 @@ function renderRoad(){
 let ring={angle:0,vel:0,n:0,dragging:false,lastX:0,raf:null};
 function renderRing(){
   const chs=S.subject.chapters; ring.n=chs.length; const r=Math.max(260,chs.length*42);
-  $('#chScene').innerHTML=`<div class="ring3d" id="ring3d"><div class="hint"><span>◀</span> drag to explore <span>▶</span></div><div class="stage" id="stage" style="transform:translateZ(-${r}px) rotateY(0deg)">${chs.map((c,i)=>{const st=chState(c),bp=bestPct(c);const a=360/chs.length*i;
-    return`<div class="tent" data-i="${i}" style="transform:rotateY(${a}deg) translateZ(${r}px)"><div class="roof"></div><div class="body" onclick="ringClick(${i},${c.chapter})"><div class="n">${st==='done'?treasureOf(c.chapter):c.chapter}</div><div class="t">${esc(c.title)}</div><div class="m">${st==='lock'?'🔒 coming soon':st==='done'?'✅ treasure dug up · '+bp+'%':st==='part'?'🟡 one quiz done · next open · '+bp+'%':'🏕 open now — visit'}</div></div></div>`}).join('')}</div></div><div class="ringnav"><button class="btn g s" onclick="spin(1)">◀ prev</button><button class="btn g s" onclick="spin(-1)">next ▶</button></div>`;
+  $('#chScene').innerHTML=`<div class="ring3d" id="ring3d"><div class="hint"><span>◀</span> drag to sail around the islands <span>▶</span></div><div class="stage" id="stage" style="transform:translateZ(-${r}px) rotateY(0deg)">${chs.map((c,i)=>{const st=chState(c),bp=bestPct(c);const a=360/chs.length*i;
+    return`<div class="tent" data-i="${i}" style="transform:rotateY(${a}deg) translateZ(${r}px)"><div class="roof"></div><div class="body" onclick="ringClick(${i},${c.chapter})"><div class="n">${st==='done'?treasureOf(c.chapter):c.chapter}</div><div class="t">${esc(c.title)}</div><div class="m">${st==='lock'?'🔒 coming soon':st==='done'?'🏝️ island saved · treasure '+treasureOf(c.chapter)+' · '+bp+'%':st==='part'?'🟡 one quiz done · the ship is halfway · '+bp+'%':'🚢 send the rescue ship'}</div></div></div>`}).join('')}</div></div><div class="ringnav"><button class="btn g s" onclick="spin(1)">◀ prev</button><button class="btn g s" onclick="spin(-1)">next ▶</button></div>`;
   const el=$('#ring3d'); ring.angle=0;ring.vel=0;
   const down=e=>{ring.dragging=true;ring.lastX=(e.touches?e.touches[0].clientX:e.clientX);el.classList.add('drag');ring.vel=0};
   const move=e=>{if(!ring.dragging)return;const x=(e.touches?e.touches[0].clientX:e.clientX);const dx=x-ring.lastX;ring.lastX=x;ring.angle+=dx*.4;ring.vel=dx*.4;applyRing()};
@@ -491,22 +502,23 @@ async function startQuiz(ch,q){
   buildJourney();
   S.start=Date.now();startTimer();updateHud();showQ();snd('start');
 }
-const TRAV={drive:{icon:'🚗',goal:'🏆',goalWord:'Trophy',stop:'Checkpoint',blocked:'Road blocked — try another way',clear:'Road clear — drive on!'},island:{icon:'🛵',goal:'💰',goalWord:'Treasure',stop:'Place',blocked:'Wrong path — try another trail',clear:'Trail found — ride on!'},gallery:{icon:'🕯',goal:'👑',goalWord:'Relic',stop:'Hall',blocked:'That door is locked — try another',clear:'Door opens — walk on'}};
+const TRAV={drive:{icon:'🚗',goal:'🏆',goalWord:'Trophy',stop:'Checkpoint',blocked:'Road blocked — try another way',clear:'Road clear — drive on!'},island:{icon:'🚢',goal:'🏝️',goalWord:'Island saved',stop:'Buoy',blocked:'Rough sea — steer another course',clear:'Calm water — full steam ahead!'},gallery:{icon:'🕯',goal:'👑',goalWord:'Relic',stop:'Hall',blocked:'That door is locked — try another',clear:'Door opens — walk on'}};
 function trav(){return TRAV[document.body.className.replace('t-','')]||TRAV.drive}
 function nodeX(i){const n=S.questions.length;return 4+92*i/n}
 function isVert(){return innerWidth>760}
 function nodeY(i){const n=S.questions.length;return 94-90*i/n} // bottom → top
 function placeNode(el,i){ if(isVert()){el.style.top=nodeY(i)+'%';el.style.left='50%'}else{el.style.left=nodeX(i)+'%';el.style.top=''} }
 function placeTrav(i){const tr=$('#trav');if(!tr)return; if(isVert()){tr.style.top='calc('+nodeY(i)+'% - 22px)';tr.style.left='50%'}else{tr.style.left=nodeX(i)+'%';tr.style.top=''}}
-const HURDLES={drive:[['🚧','ROAD CLOSED'],['👮','STOP — POLICE'],['🛑','NO ENTRY'],['🚦','RED LIGHT'],['🚜','SLOW — TRACTOR']],island:[['🪨','ROCKFALL'],['🌊','FLOODED TRAIL'],['🐊','CROC CROSSING'],['🌴','FALLEN TREE'],['🚧','TRAIL CLOSED']],gallery:[['🔒','LOCKED DOOR'],['⛓️','CHAINED'],['🛡️','GUARDED'],['🕯️','DARK HALL'],['🚪','CLOSED']]};
+const HURDLES={drive:[['🚧','ROAD CLOSED'],['👮','STOP — POLICE'],['🛑','NO ENTRY'],['🚦','RED LIGHT'],['🚜','SLOW — TRACTOR']],island:[['🌊','STORM WAVES'],['🦈','SHARK WATERS'],['🪨','HIDDEN REEF'],['🌫️','THICK FOG'],['🏴‍☠️','PIRATES AHEAD'],['🌀','WHIRLPOOL']],gallery:[['🔒','LOCKED DOOR'],['⛓️','CHAINED'],['🛡️','GUARDED'],['🕯️','DARK HALL'],['🚪','CLOSED']]};
 function showHurdle(){const k=document.body.className.replace('t-','');const list=HURDLES[k]||HURDLES.drive;const h=list[Math.floor(Math.random()*list.length)];let el=$('#hurdle');if(!el){el=document.createElement('div');el.id='hurdle';el.className='hurdle';$('#journey').appendChild(el);}else{el.className='hurdle';}
   el.innerHTML=`${h[0]}<span class="sign">${h[1]}</span>`; const n=S.questions.length; if(isVert()){el.style.top='calc('+((nodeY(S.idx)+nodeY(Math.min(S.idx+1,n)))/2)+'% - 22px)';el.style.left='50%';}else{el.style.left=((nodeX(S.idx)+nodeX(Math.min(S.idx+1,n)))/2)+'%';}
   $('#sideHint').textContent=h[1].toLowerCase()+' — find another way'}
 function liftHurdle(){const el=$('#hurdle');if(!el)return;el.classList.add('lift');setTimeout(()=>el.remove(),650)}
-const CROWD=['🙋','🙌','👏','🎉','📣','🧑‍🤝‍🧑','👨‍👩‍👧','🧍','🚩','📸','🙋‍♀️','🙋‍♂️','🥳','🧑‍🦱','👩‍🦰'];
-function crowd(n,leftRange,topFn){let h='';for(let i=0;i<n;i++){const e=CROWD[Math.floor(Math.random()*CROWD.length)];const l=leftRange[0]+Math.random()*(leftRange[1]-leftRange[0]);h+=`<span class="spec ${Math.random()<.3?'wild':''}" style="left:${l.toFixed(1)}%;top:${topFn(i,n)};--d:${(1+Math.random()*1.2).toFixed(2)}s;animation-delay:-${(Math.random()*2).toFixed(2)}s;font-size:${15+Math.round(Math.random()*6)}px">${e}</span>`}return h}
+const CROWDS={drive:['🙋','🙌','👏','🎉','📣','🧑‍🤝‍🧑','👨‍👩‍👧','🧍','🚩','📸','🙋‍♀️','🙋‍♂️','🥳','🧑‍🦱','👩‍🦰'],island:['🙋','🙋‍♀️','🙋‍♂️','🏝️','🌴','🐬','🐢','⛵','🐠','🏖️','🪸','🦜','🛟','🏕️','🌺'],gallery:['🕯️','🧑‍🎨','🖼️','🗿','👨‍🦳','👩‍🦳','🎩','📜','🏺','⚜️','🧐','👒','🎻','🧑‍🏫','🪞']};
+function CROWD_(){return CROWDS[document.body.className.replace('t-','')]||CROWDS.drive}
+function crowd(n,leftRange,topFn){let h='';for(let i=0;i<n;i++){const C=CROWD_();const e=C[Math.floor(Math.random()*C.length)];const l=leftRange[0]+Math.random()*(leftRange[1]-leftRange[0]);h+=`<span class="spec ${Math.random()<.3?'wild':''}" style="left:${l.toFixed(1)}%;top:${topFn(i,n)};--d:${(1+Math.random()*1.2).toFixed(2)}s;animation-delay:-${(Math.random()*2).toFixed(2)}s;font-size:${15+Math.round(Math.random()*6)}px">${e}</span>`}return h}
 function buildJourney(){const n=S.questions.length,t=trav();$('#journey').innerHTML=`<div class="track" id="track"></div>${crowd(9,[1,16],(i,k)=>(3+94*i/k+Math.random()*6).toFixed(1)+'%')}${crowd(10,[80,94],(i,k)=>(2+94*i/k+Math.random()*6).toFixed(1)+'%')}${S.questions.map((q,i)=>`<div class="node" id="node${i}">${i+1}<span class="lbl">§${esc(q.sec)}</span></div>`).join('')}<div class="node goal" id="node${n}">${t.goal}<span class="lbl">${t.goalWord}</span></div><div class="trav" id="trav">${t.icon}</div>`;
-  for(let i=0;i<=n;i++) placeNode($('#node'+i),i); placeTrav(0); $('#sideHint').textContent='engine running — answer to race'}
+  for(let i=0;i<=n;i++) placeNode($('#node'+i),i); placeTrav(0); $('#sideHint').textContent=document.body.classList.contains('t-island')?'engines humming — answer to sail on':'engine running — answer to race'}
 addEventListener('resize',()=>{if($('#v-quiz').classList.contains('on')&&S.questions.length){for(let i=0;i<=S.questions.length;i++){const el=$('#node'+i);if(el)placeNode(el,i)}placeTrav(S.idx)}});
 function updateHud(){$('#streak').textContent=S.streak;$('#xp').textContent=S.xp;$('#hudStreak').classList.toggle('hot',S.streak>=3);$('#stopNo').textContent=Math.min(S.idx+1,S.questions.length);$('#hudStop').lastChild.textContent='/'+S.questions.length;const ch=Math.min(4,(S.questions[S.idx]?.chain||[1]).length);$('#tries').textContent='●'.repeat(Math.max(0,ch-S.tries))+'○'.repeat(Math.min(ch,S.tries));
   S.questions.forEach((q,i)=>{const el=$('#node'+i);if(!el)return;const a=S.answers[q.id];el.className='node'+(a&&a.done?(a.ok?' ok':' retry'):(i===S.idx?' cur':''))});
@@ -552,14 +564,14 @@ function pick(i){
   let gained=0;
   if(first){S.streak++;S.bestStreak=Math.max(S.bestStreak,S.streak);gained=100+Math.min(S.streak-1,5)*20+(secs<10?50:secs<20?20:0);}
   else gained=S.tries===1?50:S.tries===2?30:15;
-  S.xp+=gained; snd('ok'); confetti(first&&S.streak>=3?120:first?50:20); $('#sideHint').textContent='green light — press Enter to race';
+  S.xp+=gained; snd('ok'); confetti(first&&S.streak>=3?120:first?50:20); $('#sideHint').textContent=document.body.classList.contains('t-island')?'calm water — press Enter to sail':'green light — press Enter to race';
   const b=$('#opt'+i).getBoundingClientRect();floatXp('+'+gained,b.left+b.width/2,b.top);
   if(first){ if(S.streak===3)toast('🔥 On fire!');else if(S.streak===5)toast('⚡ Unstoppable!');else if(S.streak===8)toast('👑 Legendary!'); }
   const msg=first?['Nice!','Correct!','Yes!','Sharp.','Exactly.','You got it!'][Math.floor(Math.random()*6)]:'Found the way.';
   $('#verdict').innerHTML=`<div class="verdict ok"><div class="h">${msg} <span style="font-size:16px;color:var(--acc2)">+${gained} XP${first&&secs<10?' · speed bonus':''}${first?'':' · on chance '+(S.tries+1)}</span></div><div style="font-size:14px;color:var(--ok)">${esc(t.clear)}</div>${x.why?`<div class="why"><b>Why:</b> ${esc(x.why)}</div>`:''}<p style="margin:12px 0 0"><button class="btn" id="nextBtn" onclick="next()">${last?'Reach the goal →':'Move to the next stop →'}</button></p></div>`;
   updateHud(); setTimeout(()=>$('#nextBtn')?.focus(),50);
 }
-function next(){const tr=$('#trav'),tk=$('#track');tr.classList.add('go');tk&&tk.classList.add('run');S.idx++;placeTrav(S.idx);$('#sideHint').textContent='🏎 full throttle…';setTimeout(()=>{tr.classList.remove('go');tk&&tk.classList.remove('run')},1400);snd('drive');liftHurdle();setTimeout(showQ,S.idx<S.questions.length?500:1300)}
+function next(){const tr=$('#trav'),tk=$('#track');tr.classList.add('go');tk&&tk.classList.add('run');S.idx++;placeTrav(S.idx);$('#sideHint').textContent=document.body.classList.contains('t-island')?'🚢 full steam ahead…':'🏎 full throttle…';setTimeout(()=>{tr.classList.remove('go');tk&&tk.classList.remove('run')},1400);snd('drive');liftHurdle();setTimeout(showQ,S.idx<S.questions.length?500:1300)}
 document.addEventListener('keydown',e=>{if(!$('#v-quiz').classList.contains('on'))return;if(/^[1-4]$/.test(e.key)&&!S.locked){const b=$('#opt'+(+e.key-1));if(b)b.click()}else if(e.key==='Enter'&&S.locked&&$('#nextBtn')&&!$('#nextBtn').disabled){e.preventDefault();$('#nextBtn').click()}});
 function startTimer(){stopTimer();const tick=()=>{const left=LIMIT-Math.floor((Date.now()-S.start)/1000);const el=$('#timer');el.textContent='⏱ '+String(Math.max(0,Math.floor(left/60))).padStart(2,'0')+':'+String(Math.max(0,left%60)).padStart(2,'0');el.classList.toggle('low',left<60);if(left<=0){stopTimer();finish(true)}};tick();tInt=setInterval(tick,1000)}
 function stopTimer(){if(tInt)clearInterval(tInt);tInt=null}
@@ -593,13 +605,13 @@ const FAST_SECS=150; // finishing 8 stops in under 2½ minutes = speed run → h
 function renderDash(j){const w=$('#dashWrap');if(!w)return;const t=trav(),chs=S.subject.chapters,n=chs.length;const secs=Math.round((Date.now()-S.start)/1000);const fast=S.idx>=S.questions.length&&secs<FAST_SECS;
   const from=chs.findIndex(c=>c.chapter===S.chapter);let to=S.next?chs.findIndex(c=>c.chapter===S.next.chapter):-1;const finish=to<0;
   const X=i=>6+88*i/Math.max(1,n);const fx=X(n); // finish flag after the last chapter
-  const say=finish?(S.allDone?'🏁 Every race won — champion lap!':'🏁 Cool-down lap to the finish'):S.next.chapter===S.chapter?'⚡ Same chapter — one more race here':`🏎 Chapter done — racing to ${esc(t.stop).toLowerCase()} ${S.next.chapter}!`;
-  w.innerHTML=`<div class="dash" id="dash"><div class="say">${say}</div>${crowd(8,[2,96],()=>'')}<div class="dtrack"></div>${chs.map((c,i)=>`<div class="dn ${chDone(c)?'done':''}" style="left:${X(i)}%">${chDone(c)?treasureOf(c.chapter):c.chapter}<span class="dl">${esc(t.stop)} ${c.chapter}</span></div>`).join('')}<div class="dn fin" style="left:${fx}%">🏁</div>${fast?`<div class="hump" id="hump" style="left:${(X(from)+(finish?fx:X(to)))/2}%"></div>`:''}<div class="dcar" id="dcar" style="left:${X(from)}%">${t.icon}</div><div class="flash" id="dflash"></div></div>`;
+  const isl=document.body.classList.contains('t-island');const say=finish?(S.allDone?(isl?'🏝️ Every island saved — admiral!':'🏁 Every race won — champion lap!'):(isl?'⚓ Sailing home to harbour':'🏁 Cool-down lap to the finish')):S.next.chapter===S.chapter?(isl?'⚓ Same island — one more quiz here':'⚡ Same chapter — one more race here'):(isl?`🚢 Island ${S.chapter} saved — full steam to island ${S.next.chapter}!`:`🏎 Chapter done — racing to ${esc(t.stop).toLowerCase()} ${S.next.chapter}!`);
+  w.innerHTML=`<div class="dash" id="dash"><div class="say">${say}</div>${crowd(8,[2,96],()=>'')}<div class="dtrack"></div>${chs.map((c,i)=>`<div class="dn ${chDone(c)?'done':''}" style="left:${X(i)}%">${chDone(c)?treasureOf(c.chapter):c.chapter}<span class="dl">${esc(S.theme.chapterWord)} ${c.chapter}</span></div>`).join('')}<div class="dn fin" style="left:${fx}%">🏁</div>${fast?`<div class="hump" id="hump" style="left:${(X(from)+(finish?fx:X(to)))/2}%"></div>`:''}<div class="dcar" id="dcar" style="left:${X(from)}%">${t.icon}</div><div class="flash" id="dflash"></div></div>`;
   document.querySelectorAll('#dash .spec').forEach((e,i)=>{e.classList.add(i%2?'top':'bot');e.style.top=''});
   const car=$('#dcar'),dash=$('#dash');const target=finish?fx:X(to);
   if(from<0||(!finish&&to===from)){return;}
   setTimeout(()=>{dash.classList.add('run');accel();car.style.left=target+'%';},400);
-  if(fast){setTimeout(()=>{car.classList.add('jump');snd('jump');$('#dflash').classList.add('on');toast('🛫 Speed run! Hump — big air!');confetti(80)},400+1150);}
+  if(fast){setTimeout(()=>{car.classList.add('jump');snd('jump');$('#dflash').classList.add('on');toast(document.body.classList.contains('t-island')?'🌊 Speed run! Big wave — jump!':'🛫 Speed run! Hump — big air!');confetti(80)},400+1150);}
   setTimeout(()=>{dash.classList.remove('run');snd('skid');if(finish&&S.allDone)confetti(200);},400+2450);
 }
 
@@ -611,7 +623,7 @@ function loop(){cx.clearRect(0,0,cv.width,cv.height);parts.forEach(p=>{p.vy+=p.g
 function floatXp(txt,x,y){const d=document.createElement('div');d.className='xpfloat';d.textContent=txt;d.style.left=(x-30)+'px';d.style.top=(y-10)+'px';document.body.appendChild(d);setTimeout(()=>d.remove(),1200)}
 function toast(txt){const d=document.createElement('div');d.className='toast';d.textContent=txt;document.body.appendChild(d);setTimeout(()=>d.remove(),1700);snd('toast')}
 let AC=null,ENG=null;
-function engBase(){const k=document.body.className.replace('t-','');return k==='island'?90:k==='gallery'?44:58}
+function engBase(){const k=document.body.className.replace('t-','');return k==='island'?36:k==='gallery'?44:58}
 /* racing engine: two detuned saws + sub square + exhaust noise, filtered, with a throbbing idle */
 function engine(on){ if(!on||muted){ if(ENG){try{ENG.g.gain.setTargetAtTime(0,AC.currentTime,.2);const e=ENG;setTimeout(()=>{try{e.nodes.forEach(n=>n.stop())}catch(x){}},900);}catch(x){} ENG=null;} return; }
   if(ENG) return; try{ AC=AC||new (window.AudioContext||window.webkitAudioContext)(); if(AC.state==='suspended')AC.resume(); const k=document.body.className.replace('t-',''); const base=engBase();
@@ -639,7 +651,7 @@ function accel(){ if(!ENG||muted){snd('whoosh');return;} const t=AC.currentTime;
   let at=t; [[3.2,.5],[3.6,.5],[4,.55],[4.4,.6]].forEach(([m,d],i)=>{setRpm(m,at,d); at+=d; hold(m*.62,at+.01);}); setRpm(1,at+.02,.5); ENG.g.gain.setTargetAtTime(.08,at+.1,.4); }
 function noise(d,g=.12,fc=1800,type='bandpass'){ if(muted)return; AC=AC||new (window.AudioContext||window.webkitAudioContext)(); const n=AC.createBufferSource(),b=AC.createBuffer(1,AC.sampleRate*d,AC.sampleRate),dd=b.getChannelData(0); for(let i=0;i<dd.length;i++)dd[i]=(Math.random()*2-1)*(1-i/dd.length); n.buffer=b; const f=AC.createBiquadFilter();f.type=type;f.frequency.value=fc;f.Q.value=1.2; const v=AC.createGain();v.gain.value=g; n.connect(f).connect(v).connect(AC.destination); n.start(); }
 function snd(kind){if(muted)return;try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();if(AC.state==='suspended')AC.resume();const t=AC.currentTime;const tone=(f,st,d,type='sine',g=.08)=>{const o=AC.createOscillator(),v=AC.createGain();o.type=type;o.frequency.setValueAtTime(f,t+st);v.gain.setValueAtTime(0,t+st);v.gain.linearRampToValueAtTime(g,t+st+.01);v.gain.exponentialRampToValueAtTime(.0001,t+st+d);o.connect(v).connect(AC.destination);o.start(t+st);o.stop(t+st+d+.02)};
-  if(kind==='ok'){tone(660,0,.12);tone(880,.1,.18)}else if(kind==='drive'){rev();noise(.25,.1,2400,'bandpass');setTimeout(()=>noise(.5,.07,1100,'lowpass'),150)}else if(kind==='skid'){noise(.55,.16,2200,'bandpass');setTimeout(()=>noise(.3,.08,600,'lowpass'),300)}else if(kind==='jump'){noise(.5,.1,3000,'highpass');tone(300,0,.5,'sine',.07);const o=AC.createOscillator(),v=AC.createGain();o.type='triangle';o.frequency.setValueAtTime(300,t);o.frequency.exponentialRampToValueAtTime(900,t+.45);v.gain.setValueAtTime(.06,t);v.gain.exponentialRampToValueAtTime(.0001,t+.7);o.connect(v).connect(AC.destination);o.start(t);o.stop(t+.75);setTimeout(()=>{noise(.2,.2,500,'lowpass');tone(80,0,.25,'sine',.15)},700)}else if(kind==='whoosh'){noise(1.2,.12,1200,'bandpass')}else if(kind==='bad'){noise(.45,.14,2600,'bandpass');tone(330,.05,.35,'square',.06);tone(262,.05,.35,'square',.06);tone(220,0,.25,'square',.04)}else if(kind==='tick'){tone(520,0,.06,'triangle',.04)}else if(kind==='toast'){tone(784,0,.1);tone(988,.1,.1);tone(1175,.2,.2)}else if(kind==='start'){tone(440,0,.1);tone(554,.1,.1);tone(659,.2,.2)}else if(kind==='done'){[523,659,784,1047].forEach((f,i)=>tone(f,i*.12,.25))}}catch(e){}}
+  if(kind==='ok'){tone(660,0,.12);tone(880,.1,.18)}else if(kind==='drive'){rev();if(document.body.classList.contains('t-island')){tone(196,0,.9,'sawtooth',.05);tone(247,0,.9,'sawtooth',.05);noise(.9,.06,500,'lowpass')}else{noise(.25,.1,2400,'bandpass');setTimeout(()=>noise(.5,.07,1100,'lowpass'),150)}}else if(kind==='skid'){noise(.55,.16,2200,'bandpass');setTimeout(()=>noise(.3,.08,600,'lowpass'),300)}else if(kind==='jump'){noise(.5,.1,3000,'highpass');tone(300,0,.5,'sine',.07);const o=AC.createOscillator(),v=AC.createGain();o.type='triangle';o.frequency.setValueAtTime(300,t);o.frequency.exponentialRampToValueAtTime(900,t+.45);v.gain.setValueAtTime(.06,t);v.gain.exponentialRampToValueAtTime(.0001,t+.7);o.connect(v).connect(AC.destination);o.start(t);o.stop(t+.75);setTimeout(()=>{noise(.2,.2,500,'lowpass');tone(80,0,.25,'sine',.15)},700)}else if(kind==='whoosh'){noise(1.2,.12,1200,'bandpass')}else if(kind==='bad'){noise(.45,.14,2600,'bandpass');tone(330,.05,.35,'square',.06);tone(262,.05,.35,'square',.06);tone(220,0,.25,'square',.04)}else if(kind==='tick'){tone(520,0,.06,'triangle',.04)}else if(kind==='toast'){tone(784,0,.1);tone(988,.1,.1);tone(1175,.2,.2)}else if(kind==='start'){tone(440,0,.1);tone(554,.1,.1);tone(659,.2,.2)}else if(kind==='done'){[523,659,784,1047].forEach((f,i)=>tone(f,i*.12,.25))}}catch(e){}}
 
 /* ================= DASHBOARD ================= */
 async function openDash(){
