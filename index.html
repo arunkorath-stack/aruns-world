@@ -280,6 +280,32 @@ body.t-island .scene .narr{color:#1a1360;border-color:#1a136033}
 .yourcall{font-family:var(--display);font-size:22px;color:var(--acc2);margin:6px 0 2px}
 .cursor{display:inline-block;width:2px;height:1em;background:#111;vertical-align:-2px;margin-left:1px;animation:blink .7s steps(1) infinite}@keyframes blink{50%{opacity:0}}
 
+.scene .props{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.scene .props span{position:absolute;font-size:64px;opacity:.28;filter:blur(.3px)}
+.scene .props span:nth-child(1){left:3%;top:8%}.scene .props span:nth-child(2){right:4%;top:10%;font-size:54px}.scene .props span:nth-child(3){left:40%;top:4%;font-size:40px}.scene .props span:nth-child(4){right:30%;top:14%;font-size:34px}
+.scene .floor{position:absolute;left:0;right:0;bottom:0;height:34%;opacity:.5}
+.scene[data-bg=office]{--scenebg:linear-gradient(180deg,#1e2a44 0,#2c3e66 60%,#3a4a70 100%)}
+.scene[data-bg=cafe]{--scenebg:linear-gradient(180deg,#3b2415 0,#5a3a22 60%,#7a5a3a 100%)}
+.scene[data-bg=hospital]{--scenebg:linear-gradient(180deg,#cfe8f3 0,#e8f4f8 60%,#bfd8e6 100%)}
+.scene[data-bg=hospital] .bubble,.scene[data-bg=shop] .bubble{box-shadow:0 10px 24px -10px rgba(0,0,0,.4)}
+.scene[data-bg=factory]{--scenebg:linear-gradient(180deg,#2b2f33 0,#3f464c 60%,#5b6066 100%)}
+.scene[data-bg=shop]{--scenebg:linear-gradient(180deg,#f6e7c8 0,#f3d9a3 60%,#d9b36b 100%)}
+.scene[data-bg=street]{--scenebg:linear-gradient(180deg,#0f1b3a 0,#24366b 60%,#3b4a7a 100%)}
+.scene[data-bg=meeting]{--scenebg:linear-gradient(180deg,#2a2140 0,#3a2d5a 60%,#4a3b70 100%)}
+.scene[data-bg=mountain]{--scenebg:linear-gradient(180deg,#0a0d1f 0,#1c2440 55%,#3b3a2a 100%)}
+.scene[data-bg=fortress]{--scenebg:linear-gradient(180deg,#120a0a 0,#2a1414 60%,#3a2a1a 100%)}
+.scene[data-bg=camp]{--scenebg:linear-gradient(180deg,#0b0f1f 0,#1f2a3a 55%,#3a3020 100%)}
+.scene[data-bg=sea]{--scenebg:linear-gradient(180deg,#9fd0ff 0,#5fa8ff 55%,#2457d8 100%)}
+.scene[data-bg=village]{--scenebg:linear-gradient(180deg,#4a1c0f 0,#7a2e14 50%,#2a1a10 100%)}
+.scene[data-bg=hotel]{--scenebg:linear-gradient(180deg,#2a1e3a 0,#4a3060 60%,#6a4a7a 100%)}
+.scene[data-bg=school]{--scenebg:linear-gradient(180deg,#1e3a2a 0,#2e5a3a 60%,#4a7a4a 100%)}
+.scene[data-bg=airport]{--scenebg:linear-gradient(180deg,#1a2a3a 0,#2a4a6a 60%,#6a8aaa 100%)}
+.scene[data-bg=home]{--scenebg:linear-gradient(180deg,#3a2a2a 0,#5a4040 60%,#7a5a50 100%)}
+.scene[data-bg=lab]{--scenebg:linear-gradient(180deg,#0f2a2a 0,#1a4a4a 60%,#2a6a6a 100%)}
+.scene[data-bg=hospital] .narr,.scene[data-bg=shop] .narr,.scene[data-bg=sea] .narr{color:#1a1360}
+.scene[data-bg=hospital] .actor .nm,.scene[data-bg=shop] .actor .nm,.scene[data-bg=sea] .actor .nm{color:#1a1360}
+.vbtn{font-size:11px}
+
 /* ============ RESULT: high-speed dash to the next location ============ */
 .dash{position:relative;height:150px;margin:14px 0 4px;border-radius:16px;overflow:hidden;background:linear-gradient(#0000,#0003);--asph:#26262e;--k1:#e63946;--k2:#fff;--dash:#e8e8e8}
 body.t-island .dash{--asph:#2f7df6;--k1:#ff6f4e;--k2:#fff;--dash:rgba(255,255,255,.8)}body.t-island .dash .dtrack{background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.55) 0 6px,transparent 6px 26px),linear-gradient(180deg,#4f9bff,#2457d8);background-size:100% 3px,100% 100%;background-position:0 50%,0 0;box-shadow:0 0 0 3px #fff}body.t-island .dash .dtrack:before,body.t-island .dash .dtrack:after{height:9px;background:repeating-linear-gradient(90deg,var(--k1) 0 10px,transparent 10px 34px)}body.t-island .dash .dn{background:#ffe9a8;border-color:#2b1fb0;color:#2b1fb0}body.t-island .dash .dcar{animation:sway 1.8s ease-in-out infinite}body.t-island .dash .hump{border-radius:50% 50% 0 0;background:linear-gradient(#fff,#4f9bff);box-shadow:none;height:22px;top:70px}body.t-gallery .dash{--asph:#3b2a1a;--k1:#c9a961;--k2:#5a4123;--dash:#e8d6a8}
@@ -431,7 +457,7 @@ function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.remove(
 function goHub(){stopTimer();engine(false);if(window.G3D)G3D.destroy();S.g3d=false;setTheme(null);go('hub')}
 function renderWho(){$('#who').innerHTML=(S.student?`Playing as <b>${esc(S.student.codename)}</b> <button class="link" onclick="signOut()">not you?</button>`:'<span>Not signed in</span>')+`<button class="icon" title="sound" onclick="toggleMute()">${muted?'🔇':'🔊'}</button>`}
 function signOut(){localStorage.removeItem('qh_student');S.student=null;goHub()}
-function toggleMute(){muted=!muted;localStorage.setItem('qh_mute',muted?'1':'0');renderWho();if(muted)engine(false);else{snd('tick');if($('#v-quiz').classList.contains('on'))engine(true)}}
+function toggleMute(){muted=!muted;localStorage.setItem('qh_mute',muted?'1':'0');renderWho();if(muted){engine(false);hush();}else{snd('tick');if($('#v-quiz').classList.contains('on'))engine(true)}}
 
 /* ================= HUB ================= */
 function miniScene(key){
@@ -573,20 +599,31 @@ const REACT=[[/angry|shout|complain|furious|refus/i,'😠'],[/tired|exhaust|quit
 function autoScene(x){ const sents=String(x.stem).match(/[^.!?]+[.!?]+/g)||[String(x.stem)]; const ask=sents.length>1?sents[sents.length-1].trim():null; const situ=sents.length>1?sents.slice(0,-1):sents; const cast=castFor(); const lines=[]; let who=0;
   situ.forEach((t,i)=>{ t=t.trim(); lines.push(['N',t]); const r=REACT.find(([re])=>re.test(t)); const mood=r?r[1]:['🤔','💭','👀','😮'][i%4]; const a=cast[who%Math.min(3,cast.length)]; lines.push([a[1],mood+' '+['Hmm…','So that is the situation.','What do we do now?','Look at this.','Captain?','That changes things.'][(i+who)%6],'think']); who++; });
   return {lines,ask}; }
-function sceneFor(x){ const code=S.subject.code; const ex=(SCN[code]||{})[x.id]; if(!ex){ const sents=String(x.stem).match(/[^.!?]+[.!?]+/g)||[]; if(sents.length<2) return null; } if(ex&&ex.length){ const sents=String(x.stem).match(/[^.!?]+[.!?]+/g)||[String(x.stem)]; return {lines:ex.map(l=>[l[0],l[1],l[2]||'']),ask:sents.length>1?sents[sents.length-1].trim():null,explicit:true}; } return autoScene(x); }
+function sceneFor(x){ const code=S.subject.code; const ex=(SCN[code]||{})[x.id]; if(!ex){ const sents=String(x.stem).match(/[^.!?]+[.!?]+/g)||[]; if(sents.length<2) return null; } if(ex&&ex.length){ const sents=String(x.stem).match(/[^.!?]+[.!?]+/g)||[String(x.stem)]; const bgl=ex.find(l=>l[0]==='bg'); return {bg:bgl?bgl[1]:'',lines:ex.filter(l=>l[0]!=='bg').map(l=>[l[0],l[1],l[2]||'']),ask:sents.length>1?sents[sents.length-1].trim():null,explicit:true}; } const a=autoScene(x); a.bg=guessBg(x.stem); return a; }
+function guessBg(t){ t=String(t); const m=[[/caf[eé]|barista|espresso|coffee/i,'cafe'],[/hospital|clinic|nurse|patient|ward|doctor/i,'hospital'],[/factory|plant|assembly|machine|production/i,'factory'],[/shop|store|retail|cashier|customer|counter|branch/i,'shop'],[/hotel|guest|resort/i,'hotel'],[/school|teacher|student|class/i,'school'],[/airport|airline|flight/i,'airport'],[/warehouse|delivery|supplier|stock|logistic/i,'warehouse'],[/meeting|board|presentation|director/i,'meeting'],[/village|burning/i,'village'],[/fortress|tower|gang|crow/i,'fortress'],[/mountain|pass|cliff|trail/i,'mountain'],[/camp|night|fire/i,'camp'],[/sea|ship|boat|island|wave/i,'sea'],[/bank|loan|finance|invest/i,'bank'],[/kitchen|chef|restaurant/i,'kitchen'],[/home|family|house/i,'home'],[/lab|research|data|software|app|system/i,'lab']]; const h=m.find(([re])=>re.test(t)); return h?h[1]:'office'; }
+const BG={office:['🏢','🖥️','🪴','📈'],cafe:['☕','🧁','🪑','🫖'],hospital:['🏥','🛏️','💊','🩺'],factory:['🏭','⚙️','📦','🦺'],shop:['🛍️','🧾','🏪','🛒'],street:['🏙️','🚕','🚦','🌃'],meeting:['📊','🪑','📋','🖊️'],mountain:['🏔️','🌲','🦅','🪨'],fortress:['🏰','⛓️','🕯️','🗝️'],camp:['🏕️','🔥','🌙','🪵'],sea:['🌊','⛵','🐬','☁️'],village:['🏘️','🔥','🐓','🌾'],hotel:['🏨','🛎️','🧳','🍽️'],school:['🏫','📚','✏️','🎒'],airport:['✈️','🧳','🛫','🛂'],home:['🏠','🛋️','📺','🪴'],lab:['🧪','🔬','💻','📐'],bank:['🏦','💳','📉','🧮'],kitchen:['🍳','🔪','🥘','🧑‍🍳'],warehouse:['📦','🚚','🏗️','📋']};
+function setBg(key){const sc=$('#sceneBox');if(!sc)return;const k=BG[key]?key:'';sc.dataset.bg=k;$('#sceneProps').innerHTML=(BG[k]||[]).map(e=>`<span>${e}</span>`).join('');}
+/* voices: one browser voice per character, different pitch and rate */
+let VOICES=[];function loadVoices(){try{VOICES=speechSynthesis.getVoices().filter(v=>/^en/i.test(v.lang));}catch(e){VOICES=[];}}
+if('speechSynthesis' in window){loadVoices();speechSynthesis.onvoiceschanged=loadVoices;}
+const VPROF={}; // name → {voice,pitch,rate}
+function voiceFor(name,idx){ if(VPROF[name])return VPROF[name]; const fem=/noor|dana|layla|maya|lina|she|her|nurse|ms|mrs|mother|sister|aisha|fatima|sara|mariam|hessa|salma|huda|reem|amal|amna|manager maya/i.test(name); const pref=VOICES.filter(v=>fem?/female|zira|samantha|susan|karen|moira|tessa|fiona|victoria|aria|jenny|sonia|libby|hazel|heera|neerja/i.test(v.name):/male|david|daniel|alex|fred|george|ryan|guy|mark|james|oliver|prabhat|ravi/i.test(v.name)); const pool=pref.length?pref:VOICES; const v=pool.length?pool[idx%pool.length]:null; const prof={voice:v,pitch:fem?1.15+((idx*7)%3)*.1:.85+((idx*5)%3)*.1,rate:.98+((idx*3)%3)*.05}; if(/crow|chief|villain|gang/i.test(name)){prof.pitch=.6;prof.rate=.9;} VPROF[name]=prof; return prof; }
+function speak(text,name,idx,onend){ if(muted||!('speechSynthesis' in window)){onend&&onend();return null;} try{ speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(text.replace(/[\p{Extended_Pictographic}]/gu,'')); const pr=voiceFor(name,idx); if(pr.voice)u.voice=pr.voice; u.pitch=pr.pitch; u.rate=pr.rate; u.volume=1; let done=false; const fin=()=>{if(done)return;done=true;onend&&onend();}; u.onend=fin; u.onerror=fin; speechSynthesis.speak(u); setTimeout(fin,Math.max(1500,text.length*95)); return u; }catch(e){ onend&&onend(); return null; } }
+function hush(){ try{ speechSynthesis.cancel(); }catch(e){} }
 let SC={timer:null,done:false};
 function playScene(sc,onDone){ SC.done=false; clearTimeout(SC.timer); const cast=castFor(); const names=[...new Set(sc.lines.filter(l=>l[0]!=='N').map(l=>l[0]))]; const parseWho=n=>{const m=n.match(/^(\p{Extended_Pictographic}[\p{Emoji_Modifier}\u200d\p{Extended_Pictographic}\ufe0f]*)\s+(.+)$/u);return m?[m[1],m[2],'']:null}; const actors=names.length?names.map(n=>parseWho(n)||cast.find(c=>c[1]===n)||[ '🧑',n,'' ]):cast.slice(0,3);
   $('#sceneCast').innerHTML=actors.map((a,i)=>`<div class="actor" id="actor${i}" data-name="${esc(a[1])}"><div class="bub" id="bub${i}"></div><div class="av">${a[0]}</div><div class="nm">${esc(a[1])}</div></div>`).join('');
-  $('#sceneProg').innerHTML=sc.lines.map(()=>'<i></i>').join('');
+  $('#sceneProg').innerHTML=sc.lines.map(()=>'<i></i>').join(''); setBg(sc.bg||'');
   let i=0; const step=()=>{ if(SC.done)return; document.querySelectorAll('.actor').forEach(a=>a.classList.remove('on')); document.querySelectorAll('.actor .bub').forEach(b=>b.innerHTML='');
     if(i>=sc.lines.length){ finishScene(onDone); return; }
     const [who,text,kind]=sc.lines[i]; $('#sceneProg').children[i].classList.add('ok'); snd('tick');
-    if(who==='N'){ typeInto($('#sceneNarr'),'📜 '+text,()=>{SC.timer=setTimeout(step,700)}); }
-    else{ const k=actors.findIndex(a=>a[1]===who); const ac=$('#actor'+(k<0?0:k)); ac.classList.add('on'); const b=ac.querySelector('.bub'); b.innerHTML=`<div class="bubble ${kind==='think'?'think':''}"><span class="tx"></span><span class="cursor"></span></div>`; typeInto(b.querySelector('.tx'),text,()=>{b.querySelector('.cursor')?.remove();SC.timer=setTimeout(step,Math.max(600,text.length*18))}); }
+    let spoken=false,typed=false; const go=()=>{ if(spoken&&typed){ SC.timer=setTimeout(step,who==='N'?350:450);} };
+    if(who==='N'){ speak(text,'Narrator',99,()=>{spoken=true;go()}); typeInto($('#sceneNarr'),'📜 '+text,()=>{typed=true;go()}); }
+    else{ const k=actors.findIndex(a=>a[1]===who); const ac=$('#actor'+(k<0?0:k)); ac.classList.add('on'); const b=ac.querySelector('.bub'); b.innerHTML=`<div class="bubble ${kind==='think'?'think':''}"><span class="tx"></span><span class="cursor"></span></div>`; speak(text,who,k<0?0:k,()=>{spoken=true;go()}); typeInto(b.querySelector('.tx'),text,()=>{b.querySelector('.cursor')?.remove();typed=true;go()}); }
     i++; };
   step(); }
 function typeInto(el,text,cb){ if(!el){cb();return;} let n=0; el.textContent=''; const sp=text.length>120?10:18; const tick=()=>{ if(SC.done){el.textContent=text;return;} n+=2; el.textContent=text.slice(0,n); if(n<text.length) SC.timer=setTimeout(tick,sp); else cb(); }; tick(); }
-function finishScene(onDone){ SC.done=true; clearTimeout(SC.timer); document.querySelectorAll('.actor').forEach(a=>a.classList.remove('on')); const c=$('#sceneCard'); if(c&&!c.classList.contains('revealed')){ c.classList.add('revealed'); $('#sceneCtl').innerHTML='<button class="btn g s" onclick="replayScene()">↻ replay scene</button>'; onDone&&onDone(); } }
+function finishScene(onDone){ SC.done=true; clearTimeout(SC.timer); hush(); document.querySelectorAll('.actor').forEach(a=>a.classList.remove('on')); const c=$('#sceneCard'); if(c&&!c.classList.contains('revealed')){ c.classList.add('revealed'); $('#sceneCtl').innerHTML='<button class="btn g s" onclick="replayScene()">↻ replay scene</button>'; onDone&&onDone(); } }
 function skipScene(){ finishScene(()=>{ S.qStart=Date.now(); S.locked=false; }); }
 function replayScene(){ const c=$('#sceneCard'); if(!c)return; c.classList.remove('revealed'); $('#sceneCtl').innerHTML='<button class="btn g s" onclick="skipScene()">skip ▶▶</button>'; $('#sceneNarr').textContent=''; playScene(SC.cur,()=>{}); }
 function renderStopQ(){
@@ -596,7 +633,7 @@ function renderStopQ(){
   const head=`${alt?`<div class="altbar">🧭 Another way · same idea (§${esc(p.sec)}), new question · chance ${S.tries+1} of ${Math.min(4,p.chain.length)}</div>`:''}<div class="k">${esc(trav().stop)} ${S.idx+1} of ${S.questions.length} · ${esc(x.clo)} · §${esc(x.sec)} · ${esc(x.bloom)}</div>`;
   if(S.quiz===2){ // acted scene first, then the question
     const sc=sceneFor(x); if(sc){ SC.cur=sc; S.locked=true;
-    $('#qbox').innerHTML=`<div class="qcard" id="sceneCard">${head}<div class="scene"><div class="lbl">🎬 Scene · §${esc(x.sec)}${sc.explicit?'':' · the situation'}</div><div class="ctl" id="sceneCtl"><button class="btn g s" onclick="skipScene()">skip ▶▶</button></div><div class="cast" id="sceneCast"></div><div class="narr" id="sceneNarr"></div><div class="prog" id="sceneProg"></div></div><div class="ask"><div class="yourcall">🎬 Your call${sc.ask?'':':'}</div><div class="stem">${esc(sc.ask||x.stem)}</div>${opts}<div id="verdict"></div></div></div>`;
+    $('#qbox').innerHTML=`<div class="qcard" id="sceneCard">${head}<div class="scene" id="sceneBox"><div class="props" id="sceneProps"></div><div class="lbl">🎬 Scene · §${esc(x.sec)}${sc.explicit?'':' · the situation'}</div><div class="ctl" id="sceneCtl"><button class="btn g s" onclick="skipScene()">skip ▶▶</button></div><div class="cast" id="sceneCast"></div><div class="narr" id="sceneNarr"></div><div class="prog" id="sceneProg"></div></div><div class="ask"><div class="yourcall">🎬 Your call${sc.ask?'':':'}</div><div class="stem">${esc(sc.ask||x.stem)}</div>${opts}<div id="verdict"></div></div></div>`;
     playScene(sc,()=>{ S.qStart=Date.now(); S.locked=false; snd('toast'); });
     return; }
   }
