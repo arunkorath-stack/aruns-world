@@ -173,7 +173,7 @@ body.t-island .journey.vert .trav{animation:sway 1.8s ease-in-out infinite}
 @keyframes sway{0%,100%{transform:rotate(-4deg) translateY(0)}50%{transform:rotate(4deg) translateY(-3px)}}
 body.t-island .journey.vert .trav.go{animation:none;transform:scale(1.15) rotate(-6deg)}
 body.t-island .journey.vert .node{background:#fff;color:#2b1fb0;border-color:#2b1fb0}body.t-island .spec{filter:drop-shadow(0 2px 3px rgba(0,0,0,.3))}
-body.t-gallery .journey.vert{--asph:#2a1414;--k1:#c9a961;--k2:#4a3a20;--dash:#c9a961}
+body.t-gallery .journey.vert{--asph:#3b2a1a;--k1:#c9a961;--k2:#5a4123;--dash:#e8d6a8}
 .journey.vert .track{left:50%;right:auto;top:1%;bottom:1%;width:48px;height:auto;margin-left:-24px;border-radius:10px;opacity:1;background-color:var(--asph);background-image:repeating-linear-gradient(180deg,var(--dash) 0 14px,transparent 14px 40px);background-size:4px 100%;background-position:50% 0;background-repeat:no-repeat;box-shadow:0 0 0 2px rgba(0,0,0,.35),0 12px 30px -10px rgba(0,0,0,.8);animation:roadflow 1.6s linear infinite}
 .journey.vert .track:before,.journey.vert .track:after{content:'';position:absolute;top:0;bottom:0;width:7px;background:repeating-linear-gradient(180deg,var(--k1) 0 14px,var(--k2) 14px 28px);animation:kerbflow 1.6s linear infinite}
 .journey.vert .track:before{left:0;border-radius:10px 0 0 10px}.journey.vert .track:after{right:0;border-radius:0 10px 10px 0}
@@ -249,9 +249,39 @@ body.t-island .verdict{background:#fff}body.t-island .verdict .why{color:#444}
 @keyframes toast{0%{opacity:0;transform:translate(-50%,-20px) scale(.8)}15%{opacity:1;transform:translate(-50%,0) scale(1.05)}80%{opacity:1}100%{opacity:0;transform:translate(-50%,-10px)}}
 #confetti{position:fixed;inset:0;z-index:8;pointer-events:none}
 
+/* ============ CUT-SCENE (Quiz 2: characters act the situation) ============ */
+.scene{position:relative;border-radius:18px;overflow:hidden;margin:0 0 14px;padding:12px 14px 10px;border:1px solid var(--line);background:var(--scenebg,linear-gradient(#1b1430,#0d0b14))}
+body.t-drive .scene{--scenebg:linear-gradient(180deg,#1b1038 0,#2a1646 70%,#3b1f5a 100%)}
+body.t-island .scene{--scenebg:linear-gradient(180deg,#9fd0ff 0,#d6ecff 55%,#f1dfa8 56%,#e3c77f 100%)}
+body.t-gallery .scene{--scenebg:linear-gradient(180deg,#0a0908 0,#1c1510 60%,#2d2114 100%)}
+.scene .lbl{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc2)}
+.scene .ctl{position:absolute;right:10px;top:8px;display:flex;gap:6px;z-index:5}
+.scene .cast{display:flex;gap:10px;align-items:flex-end;justify-content:space-around;min-height:200px;padding-top:96px}
+.actor{position:relative;text-align:center;width:31%;max-width:180px;transition:transform .3s,opacity .3s;opacity:.55}
+.actor.on{opacity:1;transform:translateY(-4px) scale(1.06)}
+.actor .av{font-size:48px;line-height:1;display:inline-block;animation:breathe 2.6s ease-in-out infinite;filter:drop-shadow(0 6px 8px rgba(0,0,0,.5))}
+.actor.on .av{animation:talk .32s ease-in-out infinite}
+@keyframes breathe{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes talk{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-6px) rotate(3deg)}}
+.actor .nm{font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-top:4px;color:var(--text);opacity:.8}
+body.t-island .actor .nm{color:#1a1360}
+.actor .bubble{position:absolute;bottom:calc(100% - 6px);left:50%;transform:translateX(-50%);width:max-content;max-width:min(300px,42vw);background:#fff;color:#111;border-radius:14px;padding:8px 12px;font-size:14px;line-height:1.3;box-shadow:0 10px 24px -10px rgba(0,0,0,.6);text-align:left;z-index:4;animation:bub .25s cubic-bezier(.2,1.3,.4,1)}
+.actor .bubble:after{content:'';position:absolute;left:50%;top:100%;margin-left:-8px;border:8px solid transparent;border-top-color:#fff}
+.actor .bubble.think{border-radius:50% 50% 50% 50%/60% 60% 40% 40%;font-style:italic;background:#f3f0ff}
+@keyframes bub{from{opacity:0;transform:translate(-50%,8px) scale(.85)}to{opacity:1;transform:translate(-50%,0) scale(1)}}
+.scene .narr{margin-top:10px;min-height:22px;font-size:14px;font-style:italic;color:var(--text);opacity:.9;border-top:1px dashed var(--line);padding-top:8px}
+body.t-island .scene .narr{color:#1a1360;border-color:#1a136033}
+.scene .prog{margin-top:8px;height:4px}
+.scene .prog i{height:4px}
+.qcard .ask{display:none}.qcard.revealed .ask{display:block;animation:slidein .4s cubic-bezier(.2,.8,.2,1)}
+.qcard.revealed .scene{min-height:0}.qcard.revealed .scene .cast{min-height:0;padding-top:0;transform:scale(.6);transform-origin:left top;height:70px;overflow:visible}
+.qcard.revealed .actor .bubble{display:none}.qcard.revealed .scene .narr{display:none}.qcard.revealed .scene .prog{display:none}
+.yourcall{font-family:var(--display);font-size:22px;color:var(--acc2);margin:6px 0 2px}
+.cursor{display:inline-block;width:2px;height:1em;background:#111;vertical-align:-2px;margin-left:1px;animation:blink .7s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+
 /* ============ RESULT: high-speed dash to the next location ============ */
 .dash{position:relative;height:150px;margin:14px 0 4px;border-radius:16px;overflow:hidden;background:linear-gradient(#0000,#0003);--asph:#26262e;--k1:#e63946;--k2:#fff;--dash:#e8e8e8}
-body.t-island .dash{--asph:#2f7df6;--k1:#ff6f4e;--k2:#fff;--dash:rgba(255,255,255,.8)}body.t-island .dash .dtrack{background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.55) 0 6px,transparent 6px 26px),linear-gradient(180deg,#4f9bff,#2457d8);background-size:100% 3px,100% 100%;background-position:0 50%,0 0;box-shadow:0 0 0 3px #fff}body.t-island .dash .dtrack:before,body.t-island .dash .dtrack:after{height:9px;background:repeating-linear-gradient(90deg,var(--k1) 0 10px,transparent 10px 34px)}body.t-island .dash .dn{background:#ffe9a8;border-color:#2b1fb0;color:#2b1fb0}body.t-island .dash .dcar{animation:sway 1.8s ease-in-out infinite}body.t-island .dash .hump{border-radius:50% 50% 0 0;background:linear-gradient(#fff,#4f9bff);box-shadow:none;height:22px;top:70px}body.t-gallery .dash{--asph:#2a1414;--k1:#c9a961;--k2:#4a3a20;--dash:#c9a961}
+body.t-island .dash{--asph:#2f7df6;--k1:#ff6f4e;--k2:#fff;--dash:rgba(255,255,255,.8)}body.t-island .dash .dtrack{background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.55) 0 6px,transparent 6px 26px),linear-gradient(180deg,#4f9bff,#2457d8);background-size:100% 3px,100% 100%;background-position:0 50%,0 0;box-shadow:0 0 0 3px #fff}body.t-island .dash .dtrack:before,body.t-island .dash .dtrack:after{height:9px;background:repeating-linear-gradient(90deg,var(--k1) 0 10px,transparent 10px 34px)}body.t-island .dash .dn{background:#ffe9a8;border-color:#2b1fb0;color:#2b1fb0}body.t-island .dash .dcar{animation:sway 1.8s ease-in-out infinite}body.t-island .dash .hump{border-radius:50% 50% 0 0;background:linear-gradient(#fff,#4f9bff);box-shadow:none;height:22px;top:70px}body.t-gallery .dash{--asph:#3b2a1a;--k1:#c9a961;--k2:#5a4123;--dash:#e8d6a8}
 .dash .dtrack{position:absolute;left:0;right:0;top:58px;height:46px;background-color:var(--asph);background-image:repeating-linear-gradient(90deg,var(--dash) 0 16px,transparent 16px 44px);background-size:100% 4px;background-position:0 50%;background-repeat:no-repeat}
 .dash .dtrack:before,.dash .dtrack:after{content:'';position:absolute;left:0;right:0;height:7px;background:repeating-linear-gradient(90deg,var(--k1) 0 14px,var(--k2) 14px 28px)}.dash .dtrack:before{top:0}.dash .dtrack:after{bottom:0}
 .dash.run .dtrack{animation:dflow .12s linear infinite}.dash.run .dtrack:before,.dash.run .dtrack:after{animation:dkerb .12s linear infinite}
@@ -377,7 +407,7 @@ let muted=localStorage.getItem('qh_mute')==='1';
 const THEMES={
   drive:{name:'Night Drive',brand:'Night Drive 🚗',tag:'Drive the road. Every checkpoint hides a trophy. Clear both quizzes of a chapter to win it.',cta:'Click to start',panelCta:'Start the engine',ranks:['Parked','Learner driver','Road runner','Night racer','Road legend 🏆'],chapterWord:'Checkpoint',treasures:['🏁','🔧','⛽','🛞','🏎️','🎖️','🚦','🗝️','💎','🏆'],treasureWord:'trophy',badge:'Road Legend'},
   island:{name:"Idea Island",brand:'IDEA ISLAND 🚢',tag:'Drag to explore. Each island is waiting for your rescue ship. Clear both quizzes of a chapter to reach it and bring home its treasure.',cta:'Set sail →',panelCta:'Sail to this island',ranks:['Deckhand','Sailor','Navigator','Captain','Admiral of the islands 🏆'],chapterWord:'Island',treasures:['🗝️','🐚','🪙','📿','🏺','🧭','🗺️','⚓','💎','💰'],treasureWord:'treasure',badge:'Island Legend'},
-  gallery:{name:'The Leadership Gallery',brand:'The Gallery',tag:'Walk the halls. Every hall keeps a relic. Clear both quizzes of a chapter to claim it.',cta:'Enter the gallery →',panelCta:'Study this work',ranks:['Visitor','Apprentice','Connoisseur','Curator','Master of the Gallery 🏆'],chapterWord:'Hall',treasures:['🕯️','📜','🖼️','⚜️','🏺','💍','🔑','🪞','👑','🏆'],treasureWord:'relic',badge:'Master of the Gallery'}
+  gallery:{name:'The Rescue',brand:'The Rescue 🔦',tag:'Layla has been taken by the Crow gang. Captain Rami and his three followers — Noor, Omar and Dana — must cross one hurdle per chapter to reach her. Clear both quizzes of a chapter to pass its gate and win a token.',cta:'Join the rescue →',panelCta:'Face this hurdle',ranks:['Villager','Scout','Pathfinder','Captain','Leader of the Rescue 🏆'],chapterWord:'Hurdle',treasures:['🔦','🗺️','🪢','🛡️','🔥','🗝️','📯','⚔️','🧭','👑'],treasureWord:'token',badge:'Leader of the Rescue'}
 };
 function treasureOf(ch){const t=S.theme||THEMES.drive;return t.treasures[(ch-1)%t.treasures.length]}
 const SUBJECT_THEME={MGMT160:'drive',MGMT363:'island',MGMT464:'gallery'};
@@ -403,7 +433,7 @@ function toggleMute(){muted=!muted;localStorage.setItem('qh_mute',muted?'1':'0')
 function miniScene(key){
   if(key==='drive') return `<div class="mini drive"><div class="floor"></div><div class="disc"></div><div class="tree" style="left:28%;top:22%"></div><div class="tree" style="left:60%;top:16%;width:62px;height:62px"></div><div class="tree" style="left:40%;top:10%;width:40px;height:40px"></div><div class="car"></div><div class="hand">click to start ↙</div></div>`;
   if(key==='island') return `<div class="mini island"><div class="hand">↔ drag to explore</div><div class="isle"></div><div class="ring"></div><div class="tr" style="left:12%;top:40%"></div><div class="tr" style="left:78%;top:44%"></div><div class="tr" style="left:30%;top:58%;transform:scale(.8)"></div><div class="tr" style="left:62%;top:62%;transform:scale(.7)"></div><div class="hut" style="left:46%;top:52%"></div><div class="hut" style="left:20%;top:66%;transform:scale(.8)"></div></div>`;
-  return `<div class="mini gallery"><div class="orn">✦ ❧ ✦</div><div class="torch" style="left:18%"></div><div class="torch" style="right:18%"></div><div class="frame">I</div></div>`;
+  return `<div class="mini gallery"><div class="orn">A RESCUE STORY</div><div class="torch" style="left:18%"></div><div class="torch" style="right:18%"></div><div class="frame" style="font-size:44px">🧗</div></div>`;
 }
 async function loadSubjects(){
   try{ const j=await api('subjects',{}); S.subjects=j.subjects; }
@@ -430,7 +460,7 @@ function treasureCount(){return S.subject.chapters.filter(chDone).length}
 function bestPct(c){const b=[S.progress[c.chapter+'-1'],S.progress[c.chapter+'-2']].filter(Boolean);return b.length?Math.round(100*b.reduce((a,p)=>a+p.best/p.total,0)/b.length):null}
 async function openChapters(){
   stopTimer(); engine(false);go('chapters'); const s=S.subject,t=S.theme; $('#chPanel').innerHTML='';
-  $('#chHead').innerHTML=`<h1>${esc(t.name)}</h1><p class="sub"><b>${esc(s.code)} · ${esc(s.title)}</b><br>${esc(t.tag)} Two quizzes per chapter: <b>Quiz 1 · Ideas</b> checks understanding, <b>Quiz 2 · Applied</b> makes you apply and analyse. Start with <b>any chapter you like</b>, in any order — but <b>each quiz can be taken only once</b>. Each quiz is a journey of 8 stops: answer correctly to move on; a wrong answer opens <b>another way</b> — a new question on the same idea — up to three times, then a study stop. Only your first answer at each stop counts for your mark.</p><div id="badgeBar"></div>`;
+  $('#chHead').innerHTML=`<h1>${esc(t.name)}</h1><p class="sub"><b>${esc(s.code)} · ${esc(s.title)}</b><br>${esc(t.tag)} Two quizzes per chapter: <b>Quiz 1 · Ideas</b> checks understanding, <b>Quiz 2 · Applied</b> makes you apply and analyse. Start with <b>any chapter you like</b>, in any order — but <b>each quiz can be taken only once</b>. <b>Quiz 2 is acted out</b>: characters play the situation in a short scene, then you make the call. Each quiz is a journey of 8 stops: answer correctly to move on; a wrong answer opens <b>another way</b> — a new question on the same idea — up to three times, then a study stop. Only your first answer at each stop counts for your mark.</p><div id="badgeBar"></div>`;
   $('#chScene').innerHTML='<span class="spin"></span> Loading your progress…';
   try{ const [p,v]=await Promise.all([api('myProgress',{studentId:S.student.studentId,subject:s.code}),api('videos',{subject:s.code})]); S.progress=p.progress; S.levels=p.levels||[]; S.next=p.next||null; S.allDone=!!p.allDone; S.videos=v.videos; }catch(e){ S.progress={}; S.videos=[]; S.levels=[]; S.next=null; S.allDone=false; }
   renderBadgeBar();
@@ -467,7 +497,7 @@ function spin(d){const step=360/ring.n;ring.angle+=d*step;snapRing();snd('tick')
 function ringClick(i,ch){const step=360/ring.n;const front=((Math.round(-ring.angle/step)%ring.n)+ring.n)%ring.n;if(front!==i){ring.angle=-i*step;snapRing();}openChapterPanel(ch)}
 function roman(n){const m=[[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']];let s='';for(const[v,r]of m){while(n>=v){s+=r;n-=v}}return s||String(n)}
 function renderWall(){
-  $('#chScene').innerHTML=`<div class="orn">✦ ❧ ✦</div><div class="wall">${S.subject.chapters.map(c=>{const st=chState(c),bp=bestPct(c);return`<div class="plate ${st==='locked'?'lock':st}" onclick="openChapterPanel(${c.chapter})"><span class="seal">${st==='done'?treasureOf(c.chapter):st==='part'?'🕯':st==='lock'||st==='locked'?'🔒':'✦'}</span><div class="num">${roman(c.chapter)}</div><div class="t">${esc(c.title)}</div><div class="m">${st==='lock'?'Not yet hung':st==='open'?'Open now':st==='part'?'Half studied · '+bp+'%':'Relic claimed · '+bp+'%'}</div></div>`}).join('')}</div>`;
+  $('#chScene').innerHTML=`<div class="orn">🔦 THE ROAD TO THE CROW FORTRESS 🏰</div><div class="wall">${S.subject.chapters.map(c=>{const st=chState(c),bp=bestPct(c);return`<div class="plate ${st==='locked'?'lock':st}" onclick="openChapterPanel(${c.chapter})"><span class="seal">${st==='done'?treasureOf(c.chapter):st==='part'?'🕯':st==='lock'||st==='locked'?'🔒':'✦'}</span><div class="num">${roman(c.chapter)}</div><div class="t">${esc(c.title)}</div><div class="m">${st==='lock'?'Gate not yet built':st==='open'?'Hurdle ahead — face it':st==='part'?'Half crossed · '+bp+'%':'Gate passed · token won · '+bp+'%'}</div></div>`}).join('')}</div>`;
 }
 function openChapterPanel(ch){
   const c=S.subject.chapters.find(x=>x.chapter===ch),t=S.theme; if(!c)return; snd('tick');
@@ -494,7 +524,7 @@ async function sha(s){const b=await crypto.subtle.digest('SHA-256',enc.encode(s)
 async function startQuiz(ch,q){
   S.chapter=ch;S.quiz=q;S.answers={};S.idx=0;S.streak=0;S.bestStreak=0;S.xp=0;S.locked=false;S.retries=0;S.tries=0;S.studied=0;const c=S.subject.chapters.find(x=>x.chapter===ch);
   $('#qzK').textContent=`${S.subject.code} · ${S.theme.chapterWord} ${ch} · Quiz ${q} · ${q===1?'Ideas':'Applied'} · ${c.title}`;$('#qbox').innerHTML='<div class="qcard"><span class="spin"></span> Shuffling your questions…</div>';$('#qzErr').innerHTML='';$('#journey').innerHTML='';go('quiz');
-  try{ const j=await api('getQuiz',{subject:S.subject.code,chapter:ch,quiz:q,n:8,studentId:S.student.studentId}); S.questions=j.questions; S.salt=j.salt||''; }
+  try{ const [j]=await Promise.all([api('getQuiz',{subject:S.subject.code,chapter:ch,quiz:q,n:8,studentId:S.student.studentId}),q===2?loadScenes(S.subject.code):null]); S.questions=j.questions; S.salt=j.salt||''; }
   catch(e){ $('#qbox').innerHTML=`<div class="err">${esc(e.message)}</div>`; return; }
   // pre-compute which option is correct (salted hash from the server)
   const prep=async x=>{ x.correctIdx=-1; if(x.h&&S.salt){ const hs=await Promise.all(x.options.map(o=>sha(S.salt+'|'+o))); x.correctIdx=hs.indexOf(x.h);} };
@@ -502,19 +532,19 @@ async function startQuiz(ch,q){
   buildJourney();
   S.start=Date.now();startTimer();updateHud();showQ();snd('start');
 }
-const TRAV={drive:{icon:'🚗',goal:'🏆',goalWord:'Trophy',stop:'Checkpoint',blocked:'Road blocked — try another way',clear:'Road clear — drive on!'},island:{icon:'🚢',goal:'🏝️',goalWord:'Island saved',stop:'Buoy',blocked:'Rough sea — steer another course',clear:'Calm water — full steam ahead!'},gallery:{icon:'🕯',goal:'👑',goalWord:'Relic',stop:'Hall',blocked:'That door is locked — try another',clear:'Door opens — walk on'}};
+const TRAV={drive:{icon:'🚗',goal:'🏆',goalWord:'Trophy',stop:'Checkpoint',blocked:'Road blocked — try another way',clear:'Road clear — drive on!'},island:{icon:'🚢',goal:'🏝️',goalWord:'Island saved',stop:'Buoy',blocked:'Rough sea — steer another course',clear:'Calm water — full steam ahead!'},gallery:{icon:'🧗',goal:'🚪',goalWord:'Gate opens',stop:'Step',blocked:'A gang trap! — find another way',clear:'Trap cleared — the team moves on'}};
 function trav(){return TRAV[document.body.className.replace('t-','')]||TRAV.drive}
 function nodeX(i){const n=S.questions.length;return 4+92*i/n}
 function isVert(){return innerWidth>760}
 function nodeY(i){const n=S.questions.length;return 94-90*i/n} // bottom → top
 function placeNode(el,i){ if(isVert()){el.style.top=nodeY(i)+'%';el.style.left='50%'}else{el.style.left=nodeX(i)+'%';el.style.top=''} }
 function placeTrav(i){const tr=$('#trav');if(!tr)return; if(isVert()){tr.style.top='calc('+nodeY(i)+'% - 22px)';tr.style.left='50%'}else{tr.style.left=nodeX(i)+'%';tr.style.top=''}}
-const HURDLES={drive:[['🚧','ROAD CLOSED'],['👮','STOP — POLICE'],['🛑','NO ENTRY'],['🚦','RED LIGHT'],['🚜','SLOW — TRACTOR']],island:[['🌊','STORM WAVES'],['🦈','SHARK WATERS'],['🪨','HIDDEN REEF'],['🌫️','THICK FOG'],['🏴‍☠️','PIRATES AHEAD'],['🌀','WHIRLPOOL']],gallery:[['🔒','LOCKED DOOR'],['⛓️','CHAINED'],['🛡️','GUARDED'],['🕯️','DARK HALL'],['🚪','CLOSED']]};
+const HURDLES={drive:[['🚧','ROAD CLOSED'],['👮','STOP — POLICE'],['🛑','NO ENTRY'],['🚦','RED LIGHT'],['🚜','SLOW — TRACTOR']],island:[['🌊','STORM WAVES'],['🦈','SHARK WATERS'],['🪨','HIDDEN REEF'],['🌫️','THICK FOG'],['🏴‍☠️','PIRATES AHEAD'],['🌀','WHIRLPOOL']],gallery:[['🪤','GANG TRAP'],['🏴‍☠️','CROW LOOKOUT'],['🔥','FIRE ON THE PATH'],['🪨','ROCKFALL'],['⛓️','CHAINED GATE'],['🐺','WOLVES']]};
 function showHurdle(){const k=document.body.className.replace('t-','');const list=HURDLES[k]||HURDLES.drive;const h=list[Math.floor(Math.random()*list.length)];let el=$('#hurdle');if(!el){el=document.createElement('div');el.id='hurdle';el.className='hurdle';$('#journey').appendChild(el);}else{el.className='hurdle';}
   el.innerHTML=`${h[0]}<span class="sign">${h[1]}</span>`; const n=S.questions.length; if(isVert()){el.style.top='calc('+((nodeY(S.idx)+nodeY(Math.min(S.idx+1,n)))/2)+'% - 22px)';el.style.left='50%';}else{el.style.left=((nodeX(S.idx)+nodeX(Math.min(S.idx+1,n)))/2)+'%';}
   $('#sideHint').textContent=h[1].toLowerCase()+' — find another way'}
 function liftHurdle(){const el=$('#hurdle');if(!el)return;el.classList.add('lift');setTimeout(()=>el.remove(),650)}
-const CROWDS={drive:['🙋','🙌','👏','🎉','📣','🧑‍🤝‍🧑','👨‍👩‍👧','🧍','🚩','📸','🙋‍♀️','🙋‍♂️','🥳','🧑‍🦱','👩‍🦰'],island:['🙋','🙋‍♀️','🙋‍♂️','🏝️','🌴','🐬','🐢','⛵','🐠','🏖️','🪸','🦜','🛟','🏕️','🌺'],gallery:['🕯️','🧑‍🎨','🖼️','🗿','👨‍🦳','👩‍🦳','🎩','📜','🏺','⚜️','🧐','👒','🎻','🧑‍🏫','🪞']};
+const CROWDS={drive:['🙋','🙌','👏','🎉','📣','🧑‍🤝‍🧑','👨‍👩‍👧','🧍','🚩','📸','🙋‍♀️','🙋‍♂️','🥳','🧑‍🦱','👩‍🦰'],island:['🙋','🙋‍♀️','🙋‍♂️','🏝️','🌴','🐬','🐢','⛵','🐠','🏖️','🪸','🦜','🛟','🏕️','🌺'],gallery:['🙋','🏮','🔦','🐎','👵','👨‍🌾','🧒','🙏','🕯️','🌲','🏕️','🦉','🪵','🧑‍🤝‍🧑','🔥']};
 function CROWD_(){return CROWDS[document.body.className.replace('t-','')]||CROWDS.drive}
 function crowd(n,leftRange,topFn){let h='';for(let i=0;i<n;i++){const C=CROWD_();const e=C[Math.floor(Math.random()*C.length)];const l=leftRange[0]+Math.random()*(leftRange[1]-leftRange[0]);h+=`<span class="spec ${Math.random()<.3?'wild':''}" style="left:${l.toFixed(1)}%;top:${topFn(i,n)};--d:${(1+Math.random()*1.2).toFixed(2)}s;animation-delay:-${(Math.random()*2).toFixed(2)}s;font-size:${15+Math.round(Math.random()*6)}px">${e}</span>`}return h}
 function buildJourney(){const n=S.questions.length,t=trav();$('#journey').innerHTML=`<div class="track" id="track"></div>${crowd(9,[1,16],(i,k)=>(3+94*i/k+Math.random()*6).toFixed(1)+'%')}${crowd(10,[80,94],(i,k)=>(2+94*i/k+Math.random()*6).toFixed(1)+'%')}${S.questions.map((q,i)=>`<div class="node" id="node${i}">${i+1}<span class="lbl">§${esc(q.sec)}</span></div>`).join('')}<div class="node goal" id="node${n}">${t.goal}<span class="lbl">${t.goalWord}</span></div><div class="trav" id="trav">${t.icon}</div>`;
@@ -527,10 +557,43 @@ function showQ(){
   const p=S.questions[S.idx]; if(!p){finish();return;} S.tries=0; renderStopQ(); $('#qzK').scrollIntoView({behavior:'smooth',block:'start'}); engine(true);
 }
 function curQ(){const p=S.questions[S.idx];return p.chain[Math.min(S.tries,p.chain.length-1)]}
+/* ---- cut-scenes: a short acted situation before every Quiz 2 question ---- */
+const CAST={drive:[['👩‍💼','Maya','the manager'],['👨‍🔧','Sam','the team'],['🧑‍💻','Lina','the analyst']],island:[['🧑‍✈️','Captain Zed','the captain'],['👩‍🔬','Noor','the thinker'],['🧔','Omar','the crew']],gallery:[['🧔','Rami','the leader'],['👩‍🦱','Noor','the thinker'],['💪','Omar','the strong one'],['👩‍🦰','Dana','the talker'],['🦹','Crow chief','the villain'],['👸','Layla','the captive']]};
+function castFor(){return CAST[document.body.className.replace('t-','')]||CAST.drive}
+const SCN={}; // explicit scripts per subject, loaded from scenes/<CODE>.json : {questionId:[["Name","line"],["N","narration"],...]}
+async function loadScenes(code){ if(SCN[code]) return; try{ const r=await fetch(`scenes/${code}.json?${Date.now()}`); SCN[code]=r.ok?await r.json():{}; }catch(e){ SCN[code]={}; } }
+const REACT=[[/angry|shout|complain|furious|refus/i,'😠'],[/tired|exhaust|quit|give up|burn/i,'😩'],[/data|number|report|figure|chart|survey|%/i,'📊'],[/meeting|discuss|team|group/i,'🗣️'],[/money|cost|price|budget|profit|dirham|bonus|pay/i,'💰'],[/fast|quick|second|minute|hurry|late|deadline/i,'⏱️'],[/customer|client|guest/i,'🙋'],[/idea|plan|option|propos|creative/i,'💡'],[/risk|danger|fail|wrong|crash|storm|trap/i,'😬'],[/ai|tool|software|system|app|digital/i,'🤖'],[/ethic|honest|bribe|fair|lie/i,'⚖️'],[/new|change|launch|start/i,'🚀']];
+function autoScene(x){ const sents=String(x.stem).match(/[^.!?]+[.!?]+/g)||[String(x.stem)]; const ask=sents.length>1?sents[sents.length-1].trim():null; const situ=sents.length>1?sents.slice(0,-1):sents; const cast=castFor(); const lines=[]; let who=0;
+  situ.forEach((t,i)=>{ t=t.trim(); lines.push(['N',t]); const r=REACT.find(([re])=>re.test(t)); const mood=r?r[1]:['🤔','💭','👀','😮'][i%4]; const a=cast[who%Math.min(3,cast.length)]; lines.push([a[1],mood+' '+['Hmm…','So that is the situation.','What do we do now?','Look at this.','Captain?','That changes things.'][(i+who)%6],'think']); who++; });
+  return {lines,ask}; }
+function sceneFor(x){ const code=S.subject.code; const ex=(SCN[code]||{})[x.id]; if(ex&&ex.length){ const sents=String(x.stem).match(/[^.!?]+[.!?]+/g)||[String(x.stem)]; return {lines:ex.map(l=>[l[0],l[1],l[2]||'']),ask:sents.length>1?sents[sents.length-1].trim():null,explicit:true}; } return autoScene(x); }
+let SC={timer:null,done:false};
+function playScene(sc,onDone){ SC.done=false; clearTimeout(SC.timer); const cast=castFor(); const names=[...new Set(sc.lines.filter(l=>l[0]!=='N').map(l=>l[0]))]; const actors=names.length?names.map(n=>cast.find(c=>c[1]===n)||[ '🧑',n,'' ]):cast.slice(0,3);
+  $('#sceneCast').innerHTML=actors.map((a,i)=>`<div class="actor" id="actor${i}" data-name="${esc(a[1])}"><div class="bub" id="bub${i}"></div><div class="av">${a[0]}</div><div class="nm">${esc(a[1])}</div></div>`).join('');
+  $('#sceneProg').innerHTML=sc.lines.map(()=>'<i></i>').join('');
+  let i=0; const step=()=>{ if(SC.done)return; document.querySelectorAll('.actor').forEach(a=>a.classList.remove('on')); document.querySelectorAll('.actor .bub').forEach(b=>b.innerHTML='');
+    if(i>=sc.lines.length){ finishScene(onDone); return; }
+    const [who,text,kind]=sc.lines[i]; $('#sceneProg').children[i].classList.add('ok'); snd('tick');
+    if(who==='N'){ typeInto($('#sceneNarr'),'📜 '+text,()=>{SC.timer=setTimeout(step,700)}); }
+    else{ const k=actors.findIndex(a=>a[1]===who); const ac=$('#actor'+(k<0?0:k)); ac.classList.add('on'); const b=ac.querySelector('.bub'); b.innerHTML=`<div class="bubble ${kind==='think'?'think':''}"><span class="tx"></span><span class="cursor"></span></div>`; typeInto(b.querySelector('.tx'),text,()=>{b.querySelector('.cursor')?.remove();SC.timer=setTimeout(step,Math.max(600,text.length*18))}); }
+    i++; };
+  step(); }
+function typeInto(el,text,cb){ if(!el){cb();return;} let n=0; el.textContent=''; const sp=text.length>120?10:18; const tick=()=>{ if(SC.done){el.textContent=text;return;} n+=2; el.textContent=text.slice(0,n); if(n<text.length) SC.timer=setTimeout(tick,sp); else cb(); }; tick(); }
+function finishScene(onDone){ SC.done=true; clearTimeout(SC.timer); document.querySelectorAll('.actor').forEach(a=>a.classList.remove('on')); const c=$('#sceneCard'); if(c&&!c.classList.contains('revealed')){ c.classList.add('revealed'); $('#sceneCtl').innerHTML='<button class="btn g s" onclick="replayScene()">↻ replay scene</button>'; onDone&&onDone(); } }
+function skipScene(){ finishScene(()=>{ S.qStart=Date.now(); S.locked=false; }); }
+function replayScene(){ const c=$('#sceneCard'); if(!c)return; c.classList.remove('revealed'); $('#sceneCtl').innerHTML='<button class="btn g s" onclick="skipScene()">skip ▶▶</button>'; $('#sceneNarr').textContent=''; playScene(SC.cur,()=>{}); }
 function renderStopQ(){
   const p=S.questions[S.idx], x=curQ(); S.qStart=Date.now(); S.locked=false; updateHud();
   const alt=S.tries>0;
-  $('#qbox').innerHTML=`<div class="qcard">${alt?`<div class="altbar">🧭 Another way · same idea (§${esc(p.sec)}), new question · chance ${S.tries+1} of ${Math.min(4,p.chain.length)}</div>`:''}<div class="k">${esc(trav().stop)} ${S.idx+1} of ${S.questions.length} · ${esc(x.clo)} · §${esc(x.sec)} · ${esc(x.bloom)}</div><div class="stem">${esc(x.stem)}</div><div class="opts">${x.options.map((o,i)=>`<button class="opt" id="opt${i}" onclick="pick(${i})"><span class="key">${i+1}</span><span>${esc(o)}</span></button>`).join('')}</div><div id="verdict"></div></div>`;
+  const opts=`<div class="opts">${x.options.map((o,i)=>`<button class="opt" id="opt${i}" onclick="pick(${i})"><span class="key">${i+1}</span><span>${esc(o)}</span></button>`).join('')}</div>`;
+  const head=`${alt?`<div class="altbar">🧭 Another way · same idea (§${esc(p.sec)}), new question · chance ${S.tries+1} of ${Math.min(4,p.chain.length)}</div>`:''}<div class="k">${esc(trav().stop)} ${S.idx+1} of ${S.questions.length} · ${esc(x.clo)} · §${esc(x.sec)} · ${esc(x.bloom)}</div>`;
+  if(S.quiz===2){ // acted scene first, then the question
+    const sc=sceneFor(x); SC.cur=sc; S.locked=true;
+    $('#qbox').innerHTML=`<div class="qcard" id="sceneCard">${head}<div class="scene"><div class="lbl">🎬 Scene · §${esc(x.sec)}${sc.explicit?'':' · the situation'}</div><div class="ctl" id="sceneCtl"><button class="btn g s" onclick="skipScene()">skip ▶▶</button></div><div class="cast" id="sceneCast"></div><div class="narr" id="sceneNarr"></div><div class="prog" id="sceneProg"></div></div><div class="ask"><div class="yourcall">🎬 Your call${sc.ask?'':':'}</div><div class="stem">${esc(sc.ask||x.stem)}</div>${opts}<div id="verdict"></div></div></div>`;
+    playScene(sc,()=>{ S.qStart=Date.now(); S.locked=false; snd('toast'); });
+    return;
+  }
+  $('#qbox').innerHTML=`<div class="qcard">${head}<div class="stem">${esc(x.stem)}</div>${opts}<div id="verdict"></div></div>`;
 }
 function pick(i){
   if(S.locked)return; const p=S.questions[S.idx], x=curQ(); const known=x.correctIdx>=0; const t=trav();
@@ -572,7 +635,7 @@ function pick(i){
   updateHud(); setTimeout(()=>$('#nextBtn')?.focus(),50);
 }
 function next(){const tr=$('#trav'),tk=$('#track');tr.classList.add('go');tk&&tk.classList.add('run');S.idx++;placeTrav(S.idx);$('#sideHint').textContent=document.body.classList.contains('t-island')?'🚢 full steam ahead…':'🏎 full throttle…';setTimeout(()=>{tr.classList.remove('go');tk&&tk.classList.remove('run')},1400);snd('drive');liftHurdle();setTimeout(showQ,S.idx<S.questions.length?500:1300)}
-document.addEventListener('keydown',e=>{if(!$('#v-quiz').classList.contains('on'))return;if(/^[1-4]$/.test(e.key)&&!S.locked){const b=$('#opt'+(+e.key-1));if(b)b.click()}else if(e.key==='Enter'&&S.locked&&$('#nextBtn')&&!$('#nextBtn').disabled){e.preventDefault();$('#nextBtn').click()}});
+document.addEventListener('keydown',e=>{if(!$('#v-quiz').classList.contains('on'))return;if(/^[1-4]$/.test(e.key)&&!S.locked){const b=$('#opt'+(+e.key-1));if(b)b.click()}else if(e.key==='Enter'&&S.locked&&$('#nextBtn')&&!$('#nextBtn').disabled){e.preventDefault();$('#nextBtn').click()}else if(e.key==='Enter'&&$('#sceneCard')&&!$('#sceneCard').classList.contains('revealed')){e.preventDefault();skipScene()}});
 function startTimer(){stopTimer();const tick=()=>{const left=LIMIT-Math.floor((Date.now()-S.start)/1000);const el=$('#timer');el.textContent='⏱ '+String(Math.max(0,Math.floor(left/60))).padStart(2,'0')+':'+String(Math.max(0,left%60)).padStart(2,'0');el.classList.toggle('low',left<60);if(left<=0){stopTimer();finish(true)}};tick();tInt=setInterval(tick,1000)}
 function stopTimer(){if(tInt)clearInterval(tInt);tInt=null}
 async function finish(auto){
@@ -595,6 +658,7 @@ function renderResult(j){
   const c=S.subject.chapters.find(x=>x.chapter===S.chapter); const gotTreasure=chDone(c);
   $('#resHead').innerHTML+='<div id="dashWrap"></div>'+(gotTreasure?`<div class="card reward"><span class="tre got big">${treasureOf(S.chapter)}</span><div><div class="k">${esc(t.chapterWord)} ${S.chapter} complete</div><b>You won the ${esc(t.treasureWord)} of this ${esc(t.chapterWord).toLowerCase()}!</b><div style="color:var(--muted)">${treasureCount()} of ${S.subject.chapters.length} ${esc(t.treasureWord)}s collected.</div></div></div>`:'')+
     (S.allDone?`<div class="badge"><div class="medal">🎖️</div><div><div class="k">Subject badge unlocked</div><div class="bt">${esc(t.badge)} · Expert in ${esc(S.subject.title)}</div><div class="bm">You have completed every level of ${esc(S.subject.code)}. You are now ready to go to the market and show your skills.</div></div></div>`:'');
+  if(S.allDone&&document.body.classList.contains('t-gallery')) $('#resHead').innerHTML+=`<div class="card reward" style="border-color:var(--ok)"><span class="tre got big">👸</span><div><div class="k">The end of the story</div><b>Layla is free.</b><div style="color:var(--muted)">Captain Rami, Noor, Omar and Dana walk her home — and the village knows who led the rescue.</div></div></div>`;
   $('#resBtns').innerHTML=(S.next?`<button class="btn" onclick="startQuiz(${S.next.chapter},${S.next.quiz})">Next race → ${esc(t.chapterWord)} ${S.next.chapter} · Quiz ${S.next.quiz}</button> `:'')+`<button class="btn g" onclick="openChapters()">Back to the map</button> <button class="btn g" onclick="openDash()">📊 Dashboard</button>`;
   $('#revTitle').textContent=wrong?'Your wrong turns & the right way':'Your journey log';
   $('#review').innerHTML=j.items.map((i,n)=>`<div class="q ${i.ok?'':'bad'}"><div class="k">Stop ${n+1} · ${esc(i.clo)} · §${esc(i.sec)} · ${i.ok?'<span style="color:var(--ok)">✓ first try</span>':'<span style="color:var(--bad)">✗ wrong turn first</span>'}</div><div class="stem">${esc(i.stem)}</div>${i.ok?'':`<div style="color:var(--bad);font-size:14px">Your first answer: ${i.chosen?esc(i.chosen):'(not answered)'}</div>`}<div style="color:var(--ok);font-size:14px">Correct answer: ${esc(i.correct)}</div><div style="color:var(--muted);font-size:13px;margin-top:6px"><b>Why:</b> ${esc(i.why)}</div></div>`).join('');
@@ -605,7 +669,7 @@ const FAST_SECS=150; // finishing 8 stops in under 2½ minutes = speed run → h
 function renderDash(j){const w=$('#dashWrap');if(!w)return;const t=trav(),chs=S.subject.chapters,n=chs.length;const secs=Math.round((Date.now()-S.start)/1000);const fast=S.idx>=S.questions.length&&secs<FAST_SECS;
   const from=chs.findIndex(c=>c.chapter===S.chapter);let to=S.next?chs.findIndex(c=>c.chapter===S.next.chapter):-1;const finish=to<0;
   const X=i=>6+88*i/Math.max(1,n);const fx=X(n); // finish flag after the last chapter
-  const isl=document.body.classList.contains('t-island');const say=finish?(S.allDone?(isl?'🏝️ Every island saved — admiral!':'🏁 Every race won — champion lap!'):(isl?'⚓ Sailing home to harbour':'🏁 Cool-down lap to the finish')):S.next.chapter===S.chapter?(isl?'⚓ Same island — one more quiz here':'⚡ Same chapter — one more race here'):(isl?`🚢 Island ${S.chapter} saved — full steam to island ${S.next.chapter}!`:`🏎 Chapter done — racing to ${esc(t.stop).toLowerCase()} ${S.next.chapter}!`);
+  const isl=document.body.classList.contains('t-island'),res=document.body.classList.contains('t-gallery');if(res){/* rescue wording */}const say=res?(finish?(S.allDone?'👑 Layla is free — the whole road is crossed!':'🏰 Marching on to the Crow fortress'):S.next.chapter===S.chapter?'🔦 Same hurdle — one more test here':`🏃 Hurdle ${S.chapter} crossed — running to hurdle ${S.next.chapter}!`):finish?(S.allDone?(isl?'🏝️ Every island saved — admiral!':'🏁 Every race won — champion lap!'):(isl?'⚓ Sailing home to harbour':'🏁 Cool-down lap to the finish')):S.next.chapter===S.chapter?(isl?'⚓ Same island — one more quiz here':'⚡ Same chapter — one more race here'):(isl?`🚢 Island ${S.chapter} saved — full steam to island ${S.next.chapter}!`:`🏎 Chapter done — racing to ${esc(t.stop).toLowerCase()} ${S.next.chapter}!`);
   w.innerHTML=`<div class="dash" id="dash"><div class="say">${say}</div>${crowd(8,[2,96],()=>'')}<div class="dtrack"></div>${chs.map((c,i)=>`<div class="dn ${chDone(c)?'done':''}" style="left:${X(i)}%">${chDone(c)?treasureOf(c.chapter):c.chapter}<span class="dl">${esc(S.theme.chapterWord)} ${c.chapter}</span></div>`).join('')}<div class="dn fin" style="left:${fx}%">🏁</div>${fast?`<div class="hump" id="hump" style="left:${(X(from)+(finish?fx:X(to)))/2}%"></div>`:''}<div class="dcar" id="dcar" style="left:${X(from)}%">${t.icon}</div><div class="flash" id="dflash"></div></div>`;
   document.querySelectorAll('#dash .spec').forEach((e,i)=>{e.classList.add(i%2?'top':'bot');e.style.top=''});
   const car=$('#dcar'),dash=$('#dash');const target=finish?fx:X(to);
