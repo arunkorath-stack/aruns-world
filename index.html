@@ -547,14 +547,14 @@ function pick(i){
     const hasAlt=S.tries+1<p.chain.length;
     if(hasAlt){
       S.tries++;
-      $('#verdict').innerHTML=`<div class="verdict bad"><div class="h">${esc(t.blocked)}</div><div class="why">Not this one. The road is blocked here — but there is <b>another way</b> to the same idea (§${esc(x.sec)}). Think about it again, then answer a different question on the same point.</div><p style="margin:12px 0 0"><button class="btn" id="nextBtn" onclick="renderStopQ();snd('tick')">Show me another way →</button></p></div>`;
+      $('#verdict').innerHTML=`<div class="verdict bad"><div class="h">${esc(t.blocked)}</div><div class="why">Not this one. The way is blocked here — but there is <b>another way</b> to the same idea (§${esc(x.sec)}). Think about it again, then answer a different question on the same point.</div><p style="margin:12px 0 0"><button class="btn" id="nextBtn" onclick="renderStopQ();snd('tick')">Show me another way →</button></p></div>`;
       updateHud(); setTimeout(()=>$('#nextBtn')?.focus(),50); return;
     }
     // all chances used → study card, then move on (0 XP)
     S.answers[p.id].done=true; S.answers[p.id].studied=true; S.studied=(S.studied||0)+1;
     document.querySelectorAll('.opt').forEach((bb,k)=>{if(k===x.correctIdx)bb.classList.add('ok');else bb.classList.add('dim')});
     const lessons=p.chain.filter(q=>q.correctIdx>=0).map(q=>`<li><b>${esc(q.stem)}</b><br><span style="color:var(--ok)">${esc(q.options[q.correctIdx])}</span>${q.why?`<br><span class="why">${esc(q.why)}</span>`:''}</li>`).join('');
-    $('#verdict').innerHTML=`<div class="verdict bad study"><div class="h">📖 Study stop</div><div>Every way to this idea was blocked. Read the explanations below carefully — the road opens only after you have studied them.</div><ul class="lessons">${lessons}</ul><p style="margin:12px 0 0"><button class="btn" id="nextBtn" disabled onclick="next()">Read first… <span id="studyCount">15</span>s</button></p></div>`;
+    $('#verdict').innerHTML=`<div class="verdict bad study"><div class="h">📖 Study stop</div><div>Every way to this idea was blocked. Read the explanations below carefully — the way opens only after you have studied them.</div><ul class="lessons">${lessons}</ul><p style="margin:12px 0 0"><button class="btn" id="nextBtn" disabled onclick="next()">Read first… <span id="studyCount">15</span>s</button></p></div>`;
     let n=15; const iv=setInterval(()=>{n--;const c=$('#studyCount');if(!c){clearInterval(iv);return;}c.textContent=n;if(n<=0){clearInterval(iv);const b=$('#nextBtn');b.disabled=false;b.innerHTML=last?'I have studied it — reach the goal →':'I have studied it — move on →';b.focus();}},1000);
     updateHud(); return;
   }
