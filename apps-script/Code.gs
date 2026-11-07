@@ -89,7 +89,7 @@ function uniqueCodename(id){
   while(used.has(c)){ k++; c=codenameFor(id+'#'+k); }
   return c;
 }
-/* levels: ordered list of (chapter,quiz) that have published questions; a student may only play the first one not yet attempted */
+/* levels: list of (chapter,quiz) with published questions. Any level may be played in any order, but each only once; `next` is just the suggested (first unplayed) one */
 function levelsFor(subject){
   const qs=rows('Questions').filter(q=>q.subject===subject&&q.status==='published');
   const chs=rows('Chapters').filter(c=>c.subject===subject&&String(c.active).toLowerCase()!=='false').map(c=>+c.chapter).sort((a,b)=>a-b);
@@ -100,11 +100,12 @@ function nextLevel(subject,studentId){
   const id=String(studentId||'').trim().toUpperCase();
   const done=new Set(rows('Attempts').filter(r=>r.subject===subject&&String(r.studentId).trim().toUpperCase()===id).map(r=>r.chapter+'-'+r.quiz));
   const lv=levelsFor(subject); const nxt=lv.find(l=>!done.has(l.chapter+'-'+l.quiz))||null;
-  return {levels:lv,done:[...done],next:nxt,allDone:lv.length>0&&!nxt};
+  const open=lv.filter(l=>!done.has(l.chapter+'-'+l.quiz));
+  return {levels:lv,done:[...done],open,next:nxt,allDone:lv.length>0&&!nxt};
 }
 function getQuiz(p){
   const subject=p.subject, chapter=+p.chapter, quiz=+p.quiz, n=+(p.n||10);
-  if(p.studentId){ const nl=nextLevel(subject,p.studentId); if(nl.done.indexOf(chapter+'-'+quiz)>=0) return {error:'You have already taken this quiz. Each quiz can be attempted only once.'}; if(!nl.next||nl.next.chapter!==chapter||nl.next.quiz!==quiz) return {error:'This level is locked. Finish the earlier levels first.'}; }
+  if(p.studentId){ const nl=nextLevel(subject,p.studentId); if(nl.done.indexOf(chapter+'-'+quiz)>=0) return {error:'You have already taken this quiz. Each quiz can be attempted only once.'}; }
   const pool=rows('Questions').filter(q=>q.subject===subject&&+q.chapter===chapter&&+q.quiz===quiz&&q.status==='published');
   if(pool.length<4) return {error:'This quiz is not published yet.'};
   // choose primaries spread across sections (round-robin), so every stop keeps spare questions of its own section as alternatives
@@ -130,7 +131,6 @@ function submit(p){
   try{
     const nl=nextLevel(subject,id);
     if(nl.done.indexOf(chapter+'-'+quiz)>=0) return {error:'You have already taken this quiz. Each quiz can be attempted only once.'};
-    if(!nl.next||nl.next.chapter!==chapter||nl.next.quiz!==quiz) return {error:'This level is locked. Finish the earlier levels first.'};
     const bank={}; rows('Questions').filter(q=>q.subject===subject&&+q.chapter===chapter&&+q.quiz===quiz).forEach(q=>bank[q.id]=q);
     const answers=Array.isArray(p.answers)?p.answers:[];
     const attemptId=Utilities.getUuid(), now=new Date();
@@ -154,7 +154,7 @@ function myProgress(p){
   const at=rows('Attempts').filter(r=>String(r.studentId).trim().toUpperCase()===id&&(!p.subject||r.subject===p.subject));
   const prog={}; at.forEach(r=>{const k=r.chapter+'-'+r.quiz; prog[k]=prog[k]||{best:0,attempts:0,total:+r.total}; prog[k].attempts++; prog[k].best=Math.max(prog[k].best,+r.score); prog[k].total=+r.total;});
   const nl=p.subject?nextLevel(p.subject,id):{levels:[],next:null,allDone:false,done:[]};
-  return {progress:prog,levels:nl.levels,next:nl.next,allDone:nl.allDone};
+  return {progress:prog,levels:nl.levels,open:nl.open||[],next:nl.next,allDone:nl.allDone};
 }
 function videos(p){ return {videos:rows('Videos').filter(v=>v.subject===p.subject).map(v=>({id:v.id,chapter:v.chapter===''?0:+v.chapter,title:v.title,url:String(v.url),minutes:v.minutes}))}; }
 function dashboard(p){

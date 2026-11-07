@@ -156,29 +156,39 @@ body.t-island .qb{background:#fff}
 .prog{display:flex;gap:4px;flex:1;min-width:200px}.prog i{flex:1;height:10px;border-radius:5px;background:rgba(255,255,255,.14);transition:background .3s}.prog i.ok{background:var(--ok)}.prog i.bad{background:var(--bad)}.prog i.cur{background:var(--acc);animation:pulse 1s ease-in-out infinite}
 body.t-island .prog i{background:rgba(0,0,0,.14)}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
-.quizwrap{display:grid;grid-template-columns:190px 1fr;gap:18px;align-items:start}
+.quizwrap{display:grid;grid-template-columns:1fr 240px;gap:18px;align-items:start}
+.side{order:2}
 .side{position:sticky;top:70px}
 .sidehint{font-size:12px;color:var(--muted);text-align:center;margin-top:8px;min-height:18px}
-.journey.vert{height:560px;margin:0}
-.journey.vert .track{left:50%;right:auto;top:4%;bottom:4%;width:8px;height:auto;margin-left:-4px;background:repeating-linear-gradient(180deg,var(--acc2) 0 14px,transparent 14px 24px)}
-body.t-island .journey.vert .track{background:repeating-linear-gradient(180deg,#2b1fb0 0 14px,transparent 14px 24px)}
-body.t-gallery .journey.vert .track{background:linear-gradient(180deg,transparent,var(--acc),transparent)}
+.journey.vert{height:600px;margin:0;--asph:#26262e;--k1:#e63946;--k2:#fff;--dash:#e8e8e8}
+body.t-island .journey.vert{--asph:#d9b36b;--k1:#15b36b;--k2:#fff;--dash:#fff}
+body.t-gallery .journey.vert{--asph:#2a1414;--k1:#c9a961;--k2:#4a3a20;--dash:#c9a961}
+.journey.vert .track{left:50%;right:auto;top:1%;bottom:1%;width:48px;height:auto;margin-left:-24px;border-radius:10px;opacity:1;background-color:var(--asph);background-image:repeating-linear-gradient(180deg,var(--dash) 0 14px,transparent 14px 40px);background-size:4px 100%;background-position:50% 0;background-repeat:no-repeat;box-shadow:0 0 0 2px rgba(0,0,0,.35),0 12px 30px -10px rgba(0,0,0,.8);animation:roadflow 1.6s linear infinite}
+.journey.vert .track:before,.journey.vert .track:after{content:'';position:absolute;top:0;bottom:0;width:7px;background:repeating-linear-gradient(180deg,var(--k1) 0 14px,var(--k2) 14px 28px);animation:kerbflow 1.6s linear infinite}
+.journey.vert .track:before{left:0;border-radius:10px 0 0 10px}.journey.vert .track:after{right:0;border-radius:0 10px 10px 0}
+.journey.vert .track.run,.journey.vert .track.run:before,.journey.vert .track.run:after{animation-duration:.14s}
+@keyframes roadflow{to{background-position:50% 40px}}@keyframes kerbflow{to{background-position:0 28px}}
+.spec{position:absolute;font-size:17px;line-height:1;z-index:1;transform-origin:50% 100%;animation:cheer var(--d,1.4s) ease-in-out infinite;filter:drop-shadow(0 2px 3px rgba(0,0,0,.5));pointer-events:none}
+.spec.wild{animation-name:cheerwild}
+@keyframes cheer{0%,100%{transform:translateY(0) rotate(-7deg)}50%{transform:translateY(-3px) rotate(7deg)}}
+@keyframes cheerwild{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-9px) scale(1.15)}}
+.journey.vert .node{background:#111;border-color:#fff;color:#fff}body.t-island .journey.vert .node{background:#fff;color:#2b1fb0;border-color:#2b1fb0}
 .journey.vert .node{left:50%;top:auto;margin-left:-14px}
 .journey.vert .node.goal{margin-left:-20px}
-.journey.vert .node .lbl{top:50%;left:auto;right:40px;transform:translateY(-50%);text-align:right}
-.journey.vert .node.goal .lbl{right:50px}
-.journey.vert .trav{left:50%;top:auto;margin-left:-18px;transition:top .9s cubic-bezier(.3,1.3,.4,1)}
-.journey.vert .trav{transform:rotate(90deg);animation:bobv 1.6s ease-in-out infinite}
+.journey.vert .node .lbl{top:50%;left:34px;right:auto;transform:translateY(-50%);text-align:left;color:var(--text);opacity:.8}
+.journey.vert .node.goal .lbl{left:44px}
+.journey.vert .trav{left:50%;top:auto;margin-left:-18px;transition:top 1.35s cubic-bezier(.5,0,.15,1),transform .3s}
+.journey.vert .trav{transform:rotate(90deg);animation:idle .22s ease-in-out infinite}
 body.t-gallery .journey.vert .trav,body.t-island .journey.vert .trav{transform:none}
-@keyframes bobv{0%,100%{translate:0 0}50%{translate:0 -4px}}
-.journey.vert .trav.go{animation:hopv .9s ease-in-out}
-@keyframes hopv{0%{translate:0 0}30%{translate:-14px -6px}70%{translate:10px -3px}100%{translate:0 0}}
+@keyframes idle{0%,100%{translate:0 0}50%{translate:0 -1px}}
+.journey.vert .trav.go{animation:none;transform:rotate(90deg) scale(1.12);filter:drop-shadow(0 4px 6px rgba(0,0,0,.5)) drop-shadow(0 14px 4px rgba(255,255,255,.25))}
+body.t-gallery .journey.vert .trav.go,body.t-island .journey.vert .trav.go{transform:scale(1.12)}
 .hurdle{position:absolute;left:50%;margin-left:-22px;width:44px;height:44px;display:grid;place-items:center;font-size:30px;filter:drop-shadow(0 4px 8px rgba(0,0,0,.6));z-index:3;animation:slam .5s cubic-bezier(.2,1.4,.4,1)}
 .hurdle.lift{animation:lift .6s ease-in forwards}
 .hurdle .sign{position:absolute;left:48px;top:50%;transform:translateY(-50%);white-space:nowrap;font-size:11px;font-weight:700;background:var(--bad);color:#fff;padding:3px 8px;border-radius:6px;letter-spacing:.06em}
 @keyframes slam{0%{transform:translateY(-40px) scale(.5);opacity:0}60%{transform:translateY(4px) scale(1.1);opacity:1}100%{transform:none}}
 @keyframes lift{to{transform:translateY(-30px) rotate(-25deg);opacity:0}}
-@media (max-width:760px){.quizwrap{grid-template-columns:1fr}.side{position:static}.journey.vert{height:96px}.journey.vert .track{left:4%;right:4%;top:46px;bottom:auto;width:auto;height:8px;margin:0;background:repeating-linear-gradient(90deg,var(--acc2) 0 14px,transparent 14px 24px)}.journey.vert .node{left:auto;top:36px;margin-left:-14px}.journey.vert .node .lbl{top:32px;left:50%;right:auto;transform:translateX(-50%);text-align:center}.journey.vert .trav{top:-2px;margin-left:-18px;transform:none;transition:left .9s cubic-bezier(.3,1.3,.4,1)}.hurdle{top:30px!important;margin-left:-22px}.hurdle .sign{display:none}}
+@media (max-width:760px){.quizwrap{grid-template-columns:1fr}.side{position:static;order:-1}.spec{display:none}.journey.vert{height:96px}.journey.vert .track{left:4%;right:4%;top:40px;bottom:auto;width:auto;height:20px;margin:0;background-image:repeating-linear-gradient(90deg,var(--dash) 0 14px,transparent 14px 40px);background-size:100% 3px;background-position:0 50%;animation:none}.journey.vert .track:before,.journey.vert .track:after{display:none}.journey.vert .trav{transition:left 1.35s cubic-bezier(.5,0,.15,1)}.journey.vert .node{left:auto;top:36px;margin-left:-14px}.journey.vert .node .lbl{top:32px;left:50%;right:auto;transform:translateX(-50%);text-align:center}.journey.vert .trav{top:-2px;margin-left:-18px;transform:none;transition:left .9s cubic-bezier(.3,1.3,.4,1)}.hurdle{top:30px!important;margin-left:-22px}.hurdle .sign{display:none}}
 .journey{position:relative;height:96px;margin:10px 0 6px;user-select:none}
 .journey .track{position:absolute;left:4%;right:4%;top:46px;height:8px;border-radius:4px;background:repeating-linear-gradient(90deg,var(--acc2) 0 14px,transparent 14px 24px);opacity:.55}
 body.t-island .journey .track{background:repeating-linear-gradient(90deg,#2b1fb0 0 14px,transparent 14px 24px)}
@@ -190,8 +200,7 @@ body.t-gallery .journey .node{border-radius:2px;border-color:var(--acc)}
 .journey .node.goal{width:40px;height:40px;margin-left:-20px;top:30px;font-size:20px;background:var(--panel)}
 .journey .node .lbl{position:absolute;top:32px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:.06em;color:var(--muted);white-space:nowrap}
 .journey .trav{position:absolute;top:-2px;margin-left:-18px;font-size:34px;line-height:1;filter:drop-shadow(0 4px 6px rgba(0,0,0,.5));transition:left .9s cubic-bezier(.3,1.3,.4,1);animation:bob 1.6s ease-in-out infinite;z-index:2}
-.journey .trav.go{animation:hop .9s ease-in-out}
-@keyframes hop{0%{transform:translateY(0) rotate(0)}30%{transform:translateY(-22px) rotate(-8deg)}70%{transform:translateY(-10px) rotate(6deg)}100%{transform:translateY(0)}}
+.journey .trav.go{animation:none;transform:scale(1.12)}
 .tre{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--panel);border:1px solid var(--line);font-size:18px;opacity:.5}.tre.got{opacity:1;border-color:var(--acc2);box-shadow:0 0 14px -2px var(--acc2);animation:pop .5s}.tre.big{width:52px;height:52px;font-size:28px}.tre i{font-style:normal;color:var(--muted);font-size:14px}
 .shelf{margin:10px 0 4px}.tres{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .badge{display:flex;gap:16px;align-items:center;background:linear-gradient(135deg,color-mix(in srgb,var(--acc2) 25%,transparent),var(--panel));border:1px solid var(--acc2);border-radius:18px;padding:16px 18px;margin:12px 0;animation:fade .5s}.badge .medal{font-size:54px;line-height:1;filter:drop-shadow(0 6px 10px rgba(0,0,0,.4))}.badge .bt{font-family:var(--display);font-size:26px;line-height:1.1;margin:2px 0}.badge .bm{font-size:14px;color:var(--muted)}
@@ -229,6 +238,23 @@ body.t-island .verdict{background:#fff}body.t-island .verdict .why{color:#444}
 @keyframes toast{0%{opacity:0;transform:translate(-50%,-20px) scale(.8)}15%{opacity:1;transform:translate(-50%,0) scale(1.05)}80%{opacity:1}100%{opacity:0;transform:translate(-50%,-10px)}}
 #confetti{position:fixed;inset:0;z-index:8;pointer-events:none}
 
+/* ============ RESULT: high-speed dash to the next location ============ */
+.dash{position:relative;height:150px;margin:14px 0 4px;border-radius:16px;overflow:hidden;background:linear-gradient(#0000,#0003);--asph:#26262e;--k1:#e63946;--k2:#fff;--dash:#e8e8e8}
+body.t-island .dash{--asph:#d9b36b;--k1:#15b36b;--k2:#fff;--dash:#fff}body.t-gallery .dash{--asph:#2a1414;--k1:#c9a961;--k2:#4a3a20;--dash:#c9a961}
+.dash .dtrack{position:absolute;left:0;right:0;top:58px;height:46px;background-color:var(--asph);background-image:repeating-linear-gradient(90deg,var(--dash) 0 16px,transparent 16px 44px);background-size:100% 4px;background-position:0 50%;background-repeat:no-repeat}
+.dash .dtrack:before,.dash .dtrack:after{content:'';position:absolute;left:0;right:0;height:7px;background:repeating-linear-gradient(90deg,var(--k1) 0 14px,var(--k2) 14px 28px)}.dash .dtrack:before{top:0}.dash .dtrack:after{bottom:0}
+.dash.run .dtrack{animation:dflow .12s linear infinite}.dash.run .dtrack:before,.dash.run .dtrack:after{animation:dkerb .12s linear infinite}
+@keyframes dflow{to{background-position:-44px 50%}}@keyframes dkerb{to{background-position:-28px 0}}
+.dash .dn{position:absolute;top:66px;width:30px;height:30px;margin-left:-15px;border-radius:50%;background:#111;border:2px solid #fff;color:#fff;display:grid;place-items:center;font-size:12px;font-weight:700;z-index:2}.dash .dn.done{background:var(--acc2);color:#1a0d00;border-color:#ffd39b}.dash .dn .dl{position:absolute;top:34px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:.06em;color:var(--text);white-space:nowrap;opacity:.8}
+.dash .dn.fin{background:repeating-conic-gradient(#000 0 25%,#fff 0 50%) 0 0/10px 10px;border-color:#fff;font-size:0}
+.dash .dcar{position:absolute;top:60px;margin-left:-20px;font-size:38px;line-height:1;z-index:3;transition:left 2.4s cubic-bezier(.55,0,.2,1);filter:drop-shadow(0 4px 6px rgba(0,0,0,.5))}
+.dash .dcar.jump{animation:djump .8s cubic-bezier(.3,.6,.4,1)}
+@keyframes djump{0%{transform:translateY(0) rotate(0)}35%{transform:translateY(-46px) rotate(-16deg)}70%{transform:translateY(-30px) rotate(6deg)}100%{transform:translateY(0) rotate(0)}}
+.dash .hump{position:absolute;top:66px;width:26px;height:30px;margin-left:-13px;border-radius:13px 13px 0 0;background:repeating-linear-gradient(135deg,#ffb703 0 6px,#111 6px 12px);z-index:1;box-shadow:0 0 10px #ffb703aa}
+.dash .spec{font-size:19px}.dash .spec.top{top:14px}.dash .spec.bot{top:116px}
+.dash .say{position:absolute;left:14px;top:10px;font-family:var(--display);font-size:22px;color:var(--text);z-index:4;text-shadow:0 2px 8px rgba(0,0,0,.5)}
+.dash .flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:5}.dash .flash.on{animation:flash .5s ease-out}@keyframes flash{from{opacity:.8}to{opacity:0}}
+
 /* ============ RESULT ============ */
 .resgrid{display:grid;grid-template-columns:220px 1fr;gap:22px;align-items:center}
 @media (max-width:640px){.resgrid{grid-template-columns:1fr;text-align:center}}
@@ -249,7 +275,7 @@ body.t-island .ringwrap .c{stroke:rgba(0,0,0,.12)}
 
 <section class="view on" id="v-hub">
   <h1>Pick your world.</h1>
-  <p class="sub">Every subject is its own little world. Open practice — any chapter, any time, unlimited attempts. Your best score and your first try are both recorded; on the dashboard you appear only as a codename.</p>
+  <p class="sub">Every subject is its own little world. Start any chapter, in any order — each quiz is one race you can run once. Every answer is recorded; on the dashboard you appear only as a codename.</p>
   <div id="portals" class="portals"><span class="spin"></span> Loading worlds…</div>
 </section>
 
@@ -276,7 +302,6 @@ body.t-island .ringwrap .c{stroke:rgba(0,0,0,.12)}
 <section class="view" id="v-quiz">
   <div class="k" id="qzK"></div>
   <div class="quizwrap">
-  <aside class="side"><div class="journey vert" id="journey"></div><div class="sidehint" id="sideHint"></div></aside>
   <div class="qmain">
   <div class="hud">
     <div class="hudk" id="hudStop">📍 <b id="stopNo">1</b>/8</div>
@@ -287,8 +312,10 @@ body.t-island .ringwrap .c{stroke:rgba(0,0,0,.12)}
   </div>
   <div id="qbox"></div>
   <div id="qzErr"></div>
-  <p style="margin-top:14px"><button class="btn g s" onclick="if(confirm('Stop here? This counts as your one attempt — the stops you have not reached will be marked wrong.')){finish(true)}">Stop &amp; submit</button> <span class="k" style="margin-left:8px">answer correctly to move to the next stop · keys 1–4 · Enter = go</span></p>
-  </div></div>
+  <p style="margin-top:14px"><button class="btn g s" onclick="if(confirm('Stop here? This counts as your one attempt — the stops you have not reached will be marked wrong.')){finish(true)}">Stop &amp; submit</button> <span class="k" style="margin-left:8px">answer correctly to race to the next stop · keys 1–4 · Enter = go</span></p>
+  </div>
+  <aside class="side"><div class="journey vert" id="journey"></div><div class="sidehint" id="sideHint"></div></aside>
+  </div>
 </section>
 
 <section class="view" id="v-result">
@@ -385,14 +412,14 @@ async function identify(){
 }
 
 /* ================= CHAPTERS (themed scenes) ================= */
-function qState(ch,q){ if(S.progress[ch+'-'+q]) return 'done'; if(S.next&&S.next.chapter===ch&&S.next.quiz===q) return 'open'; const c=S.subject.chapters.find(x=>x.chapter===ch); if(!c||(q===1?c.q1:c.q2)<4) return 'none'; return 'locked'; }
+function qState(ch,q){ if(S.progress[ch+'-'+q]) return 'done'; const c=S.subject.chapters.find(x=>x.chapter===ch); if(!c||(q===1?c.q1:c.q2)<4) return 'none'; return 'open'; } // any published quiz is open until it has been taken once
 function chState(c){const s1=qState(c.chapter,1),s2=qState(c.chapter,2);const avail=[s1,s2].filter(x=>x!=='none');if(!avail.length)return'lock';if(avail.every(x=>x==='done'))return'done';if(avail.includes('done'))return'part';if(avail.includes('open'))return'open';return'locked'}
 function chDone(c){return chState(c)==='done'}
 function treasureCount(){return S.subject.chapters.filter(chDone).length}
 function bestPct(c){const b=[S.progress[c.chapter+'-1'],S.progress[c.chapter+'-2']].filter(Boolean);return b.length?Math.round(100*b.reduce((a,p)=>a+p.best/p.total,0)/b.length):null}
 async function openChapters(){
   stopTimer(); engine(false);go('chapters'); const s=S.subject,t=S.theme; $('#chPanel').innerHTML='';
-  $('#chHead').innerHTML=`<h1>${esc(t.name)}</h1><p class="sub"><b>${esc(s.code)} · ${esc(s.title)}</b><br>${esc(t.tag)} Two quizzes per chapter: <b>Quiz 1 · Ideas</b> checks understanding, <b>Quiz 2 · Applied</b> makes you apply and analyse. Levels open one at a time and <b>each quiz can be taken once</b>. Each quiz is a journey of 8 stops: answer correctly to move on; a wrong answer opens <b>another way</b> — a new question on the same idea — up to three times, then a study stop. Only your first answer at each stop counts for your mark.</p><div id="badgeBar"></div>`;
+  $('#chHead').innerHTML=`<h1>${esc(t.name)}</h1><p class="sub"><b>${esc(s.code)} · ${esc(s.title)}</b><br>${esc(t.tag)} Two quizzes per chapter: <b>Quiz 1 · Ideas</b> checks understanding, <b>Quiz 2 · Applied</b> makes you apply and analyse. Start with <b>any chapter you like</b>, in any order — but <b>each quiz can be taken only once</b>. Each quiz is a journey of 8 stops: answer correctly to move on; a wrong answer opens <b>another way</b> — a new question on the same idea — up to three times, then a study stop. Only your first answer at each stop counts for your mark.</p><div id="badgeBar"></div>`;
   $('#chScene').innerHTML='<span class="spin"></span> Loading your progress…';
   try{ const [p,v]=await Promise.all([api('myProgress',{studentId:S.student.studentId,subject:s.code}),api('videos',{subject:s.code})]); S.progress=p.progress; S.levels=p.levels||[]; S.next=p.next||null; S.allDone=!!p.allDone; S.videos=v.videos; }catch(e){ S.progress={}; S.videos=[]; S.levels=[]; S.next=null; S.allDone=false; }
   renderBadgeBar();
@@ -402,18 +429,18 @@ async function openChapters(){
   if(key==='drive') renderRoad(); else if(key==='island') renderRing(); else renderWall();
 }
 function renderBadgeBar(){const t=S.theme,s=S.subject;const got=S.subject.chapters.filter(chDone);const shelf=S.subject.chapters.map(c=>`<span class="tre ${chDone(c)?'got':''}" title="${esc(t.chapterWord)} ${c.chapter}${chDone(c)?' · collected':' · not yet'}">${chDone(c)?treasureOf(c.chapter):'<i>?</i>'}</span>`).join('');
-  const nextTxt=S.allDone?'':S.next?`Next level open: <b>${esc(t.chapterWord)} ${S.next.chapter} · Quiz ${S.next.quiz}</b>`:'No level is open yet — the first quiz will appear here when it is published.';
+  const open=S.subject.chapters.reduce((n,c)=>n+[1,2].filter(q=>qState(c.chapter,q)==='open').length,0);const nextTxt=S.allDone?'':S.next?`${open} quiz${open===1?'':'zes'} open — pick any. Suggested next: <b>${esc(t.chapterWord)} ${S.next.chapter} · Quiz ${S.next.quiz}</b>`:'No quiz is published yet — the first one will appear here soon.';
   $('#badgeBar').innerHTML=`${S.allDone?`<div class="badge"><div class="medal">🎖️</div><div><div class="k">Subject badge unlocked</div><div class="bt">${esc(t.badge)} · Expert in ${esc(s.title)}</div><div class="bm">You have completed every level of ${esc(s.code)}. You are now ready to go to the market and show your skills.</div></div></div>`:''}<div class="shelf"><span class="k">${esc(t.treasureWord)}s collected · ${got.length}/${s.chapters.length}</span><div class="tres">${shelf}</div><div class="k" style="margin-top:6px">${nextTxt}</div></div>`}
 function renderRoad(){
-  const chs=S.subject.chapters; let cur=chs.findIndex(c=>['open','part'].includes(chState(c))); if(cur<0) cur=S.allDone?chs.length-1:0;
-  $('#chScene').innerHTML=`<div class="hand">${S.allDone?'🏁 you have driven the whole road — every trophy is yours':'↓ your car is at checkpoint '+chs[cur].chapter+' — click it to play'}</div><div class="road">${chs.map((c,i)=>{const st=chState(c),bp=bestPct(c);const vids=S.videos.filter(v=>v.chapter===c.chapter).length;
-    return`<div class="seg"><div class="cp ${st==='locked'?'lock':st==='open'?'part':st}" onclick="openChapterPanel(${c.chapter})">${st==='done'?treasureOf(c.chapter):c.chapter}${i===cur?'<span class="car">🚗</span>':''}</div><div class="info" onclick="openChapterPanel(${c.chapter})"><b>${esc(c.title)}</b><div class="m">${st==='lock'?'🔒 coming soon':st==='locked'?'🔒 locked — finish the earlier checkpoints':st==='done'?'✅ complete · '+treasureOf(c.chapter)+' trophy won · '+bp+'%':st==='part'?'🟡 one quiz done · next quiz open · '+bp+'%':'▶ open now'}${vids?' · 🎬 '+vids+' video'+(vids>1?'s':''):''}</div></div></div>`}).join('')}</div>`;
+  const chs=S.subject.chapters; let cur=S.next?chs.findIndex(c=>c.chapter===S.next.chapter):-1; if(cur<0) cur=S.allDone?chs.length-1:0;
+  $('#chScene').innerHTML=`<div class="hand">${S.allDone?'🏁 you have driven the whole road — every trophy is yours':'↓ your car is parked at checkpoint '+chs[cur].chapter+' — click any open checkpoint to race'}</div><div class="road">${chs.map((c,i)=>{const st=chState(c),bp=bestPct(c);const vids=S.videos.filter(v=>v.chapter===c.chapter).length;
+    return`<div class="seg"><div class="cp ${st==='locked'?'lock':st==='open'?'part':st}" onclick="openChapterPanel(${c.chapter})">${st==='done'?treasureOf(c.chapter):c.chapter}${i===cur?'<span class="car">🚗</span>':''}</div><div class="info" onclick="openChapterPanel(${c.chapter})"><b>${esc(c.title)}</b><div class="m">${st==='lock'?'🔒 coming soon':st==='done'?'✅ complete · '+treasureOf(c.chapter)+' trophy won · '+bp+'%':st==='part'?'🟡 one quiz done · next quiz open · '+bp+'%':'▶ open now'}${vids?' · 🎬 '+vids+' video'+(vids>1?'s':''):''}</div></div></div>`}).join('')}</div>`;
 }
 let ring={angle:0,vel:0,n:0,dragging:false,lastX:0,raf:null};
 function renderRing(){
   const chs=S.subject.chapters; ring.n=chs.length; const r=Math.max(260,chs.length*42);
   $('#chScene').innerHTML=`<div class="ring3d" id="ring3d"><div class="hint"><span>◀</span> drag to explore <span>▶</span></div><div class="stage" id="stage" style="transform:translateZ(-${r}px) rotateY(0deg)">${chs.map((c,i)=>{const st=chState(c),bp=bestPct(c);const a=360/chs.length*i;
-    return`<div class="tent" data-i="${i}" style="transform:rotateY(${a}deg) translateZ(${r}px)"><div class="roof"></div><div class="body" onclick="ringClick(${i},${c.chapter})"><div class="n">${st==='done'?treasureOf(c.chapter):c.chapter}</div><div class="t">${esc(c.title)}</div><div class="m">${st==='lock'?'🔒 coming soon':st==='locked'?'🔒 locked — visit earlier places first':st==='done'?'✅ treasure dug up · '+bp+'%':st==='part'?'🟡 one quiz done · next open · '+bp+'%':'🏕 open now — visit'}</div></div></div>`}).join('')}</div></div><div class="ringnav"><button class="btn g s" onclick="spin(1)">◀ prev</button><button class="btn g s" onclick="spin(-1)">next ▶</button></div>`;
+    return`<div class="tent" data-i="${i}" style="transform:rotateY(${a}deg) translateZ(${r}px)"><div class="roof"></div><div class="body" onclick="ringClick(${i},${c.chapter})"><div class="n">${st==='done'?treasureOf(c.chapter):c.chapter}</div><div class="t">${esc(c.title)}</div><div class="m">${st==='lock'?'🔒 coming soon':st==='done'?'✅ treasure dug up · '+bp+'%':st==='part'?'🟡 one quiz done · next open · '+bp+'%':'🏕 open now — visit'}</div></div></div>`}).join('')}</div></div><div class="ringnav"><button class="btn g s" onclick="spin(1)">◀ prev</button><button class="btn g s" onclick="spin(-1)">next ▶</button></div>`;
   const el=$('#ring3d'); ring.angle=0;ring.vel=0;
   const down=e=>{ring.dragging=true;ring.lastX=(e.touches?e.touches[0].clientX:e.clientX);el.classList.add('drag');ring.vel=0};
   const move=e=>{if(!ring.dragging)return;const x=(e.touches?e.touches[0].clientX:e.clientX);const dx=x-ring.lastX;ring.lastX=x;ring.angle+=dx*.4;ring.vel=dx*.4;applyRing()};
@@ -429,7 +456,7 @@ function spin(d){const step=360/ring.n;ring.angle+=d*step;snapRing();snd('tick')
 function ringClick(i,ch){const step=360/ring.n;const front=((Math.round(-ring.angle/step)%ring.n)+ring.n)%ring.n;if(front!==i){ring.angle=-i*step;snapRing();}openChapterPanel(ch)}
 function roman(n){const m=[[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']];let s='';for(const[v,r]of m){while(n>=v){s+=r;n-=v}}return s||String(n)}
 function renderWall(){
-  $('#chScene').innerHTML=`<div class="orn">✦ ❧ ✦</div><div class="wall">${S.subject.chapters.map(c=>{const st=chState(c),bp=bestPct(c);return`<div class="plate ${st==='locked'?'lock':st}" onclick="openChapterPanel(${c.chapter})"><span class="seal">${st==='done'?treasureOf(c.chapter):st==='part'?'🕯':st==='lock'||st==='locked'?'🔒':'✦'}</span><div class="num">${roman(c.chapter)}</div><div class="t">${esc(c.title)}</div><div class="m">${st==='lock'?'Not yet hung':st==='locked'?'Locked':st==='open'?'Open now':st==='part'?'Half studied · '+bp+'%':'Relic claimed · '+bp+'%'}</div></div>`}).join('')}</div>`;
+  $('#chScene').innerHTML=`<div class="orn">✦ ❧ ✦</div><div class="wall">${S.subject.chapters.map(c=>{const st=chState(c),bp=bestPct(c);return`<div class="plate ${st==='locked'?'lock':st}" onclick="openChapterPanel(${c.chapter})"><span class="seal">${st==='done'?treasureOf(c.chapter):st==='part'?'🕯':st==='lock'||st==='locked'?'🔒':'✦'}</span><div class="num">${roman(c.chapter)}</div><div class="t">${esc(c.title)}</div><div class="m">${st==='lock'?'Not yet hung':st==='open'?'Open now':st==='part'?'Half studied · '+bp+'%':'Relic claimed · '+bp+'%'}</div></div>`}).join('')}</div>`;
 }
 function openChapterPanel(ch){
   const c=S.subject.chapters.find(x=>x.chapter===ch),t=S.theme; if(!c)return; snd('tick');
@@ -438,7 +465,7 @@ function openChapterPanel(ch){
     if(st==='none')return`<div class="qb lock"><div class="k">Quiz ${q} · ${label}</div><div class="big">Coming soon</div><div class="m">${desc}</div></div>`;
     if(st==='done')return`<div class="qb done"><div class="k">Quiz ${q} · ${label}</div><div class="big">✅ ${p.best}/${p.total}</div><div class="m">${desc} · taken (one attempt only)</div></div>`;
     if(st==='open')return`<div class="qb open" onclick="startQuiz(${ch},${q})"><div class="k">Quiz ${q} · ${label}</div><div class="big">▶ Play — open now</div><div class="m">${desc} · one attempt, 8 stops</div></div>`;
-    return`<div class="qb lock"><div class="k">Quiz ${q} · ${label}</div><div class="big">🔒 Locked</div><div class="m">${desc} · finish ${S.next?esc(t.chapterWord)+' '+S.next.chapter+' · Quiz '+S.next.quiz:'the earlier levels'} first</div></div>`};
+    return`<div class="qb lock"><div class="k">Quiz ${q} · ${label}</div><div class="big">🔒 Locked</div><div class="m">${desc}</div></div>`};
   const done=chDone(c);
   $('#chPanel').innerHTML=`<div class="card" id="chCard"><div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start"><div><div class="k">${esc(t.chapterWord)} ${ch} · ${esc(c.clos||'')}</div><h2 style="margin:4px 0 0">${esc(c.title)}</h2></div><button class="btn g s" onclick="$('#chPanel').innerHTML=''">close</button></div>
   <div class="goalline">${done?`<span class="tre got big">${treasureOf(ch)}</span> <b>${esc(t.treasureWord)} collected!</b> You finished both quizzes of this ${esc(t.chapterWord).toLowerCase()}.`:`<span class="tre big"><i>?</i></span> <b>Goal:</b> win the ${esc(t.treasureWord)} of this ${esc(t.chapterWord).toLowerCase()} by completing Quiz 1 and Quiz 2.`}</div>
@@ -475,9 +502,11 @@ const HURDLES={drive:[['🚧','ROAD CLOSED'],['👮','STOP — POLICE'],['🛑',
 function showHurdle(){const k=document.body.className.replace('t-','');const list=HURDLES[k]||HURDLES.drive;const h=list[Math.floor(Math.random()*list.length)];let el=$('#hurdle');if(!el){el=document.createElement('div');el.id='hurdle';el.className='hurdle';$('#journey').appendChild(el);}else{el.className='hurdle';}
   el.innerHTML=`${h[0]}<span class="sign">${h[1]}</span>`; const n=S.questions.length; if(isVert()){el.style.top='calc('+((nodeY(S.idx)+nodeY(Math.min(S.idx+1,n)))/2)+'% - 22px)';el.style.left='50%';}else{el.style.left=((nodeX(S.idx)+nodeX(Math.min(S.idx+1,n)))/2)+'%';}
   $('#sideHint').textContent=h[1].toLowerCase()+' — find another way'}
-function liftHurdle(){const el=$('#hurdle');if(!el)return;el.classList.add('lift');setTimeout(()=>el.remove(),650);$('#sideHint').textContent='road clear — moving on'}
-function buildJourney(){const n=S.questions.length,t=trav();$('#journey').innerHTML=`<div class="track"></div>${S.questions.map((q,i)=>`<div class="node" id="node${i}">${i+1}<span class="lbl">§${esc(q.sec)}</span></div>`).join('')}<div class="node goal" id="node${n}">${t.goal}<span class="lbl">${t.goalWord}</span></div><div class="trav" id="trav">${t.icon}</div>`;
-  for(let i=0;i<=n;i++) placeNode($('#node'+i),i); placeTrav(0); $('#sideHint').textContent='engine on — answer to move'}
+function liftHurdle(){const el=$('#hurdle');if(!el)return;el.classList.add('lift');setTimeout(()=>el.remove(),650)}
+const CROWD=['🙋','🙌','👏','🎉','📣','🧑‍🤝‍🧑','👨‍👩‍👧','🧍','🚩','📸','🙋‍♀️','🙋‍♂️','🥳','🧑‍🦱','👩‍🦰'];
+function crowd(n,leftRange,topFn){let h='';for(let i=0;i<n;i++){const e=CROWD[Math.floor(Math.random()*CROWD.length)];const l=leftRange[0]+Math.random()*(leftRange[1]-leftRange[0]);h+=`<span class="spec ${Math.random()<.3?'wild':''}" style="left:${l.toFixed(1)}%;top:${topFn(i,n)};--d:${(1+Math.random()*1.2).toFixed(2)}s;animation-delay:-${(Math.random()*2).toFixed(2)}s;font-size:${15+Math.round(Math.random()*6)}px">${e}</span>`}return h}
+function buildJourney(){const n=S.questions.length,t=trav();$('#journey').innerHTML=`<div class="track" id="track"></div>${crowd(9,[1,16],(i,k)=>(3+94*i/k+Math.random()*6).toFixed(1)+'%')}${crowd(10,[80,94],(i,k)=>(2+94*i/k+Math.random()*6).toFixed(1)+'%')}${S.questions.map((q,i)=>`<div class="node" id="node${i}">${i+1}<span class="lbl">§${esc(q.sec)}</span></div>`).join('')}<div class="node goal" id="node${n}">${t.goal}<span class="lbl">${t.goalWord}</span></div><div class="trav" id="trav">${t.icon}</div>`;
+  for(let i=0;i<=n;i++) placeNode($('#node'+i),i); placeTrav(0); $('#sideHint').textContent='engine running — answer to race'}
 addEventListener('resize',()=>{if($('#v-quiz').classList.contains('on')&&S.questions.length){for(let i=0;i<=S.questions.length;i++){const el=$('#node'+i);if(el)placeNode(el,i)}placeTrav(S.idx)}});
 function updateHud(){$('#streak').textContent=S.streak;$('#xp').textContent=S.xp;$('#hudStreak').classList.toggle('hot',S.streak>=3);$('#stopNo').textContent=Math.min(S.idx+1,S.questions.length);$('#hudStop').lastChild.textContent='/'+S.questions.length;const ch=Math.min(4,(S.questions[S.idx]?.chain||[1]).length);$('#tries').textContent='●'.repeat(Math.max(0,ch-S.tries))+'○'.repeat(Math.min(ch,S.tries));
   S.questions.forEach((q,i)=>{const el=$('#node'+i);if(!el)return;const a=S.answers[q.id];el.className='node'+(a&&a.done?(a.ok?' ok':' retry'):(i===S.idx?' cur':''))});
@@ -523,23 +552,23 @@ function pick(i){
   let gained=0;
   if(first){S.streak++;S.bestStreak=Math.max(S.bestStreak,S.streak);gained=100+Math.min(S.streak-1,5)*20+(secs<10?50:secs<20?20:0);}
   else gained=S.tries===1?50:S.tries===2?30:15;
-  S.xp+=gained; snd('ok'); confetti(first&&S.streak>=3?120:first?50:20); $('#sideHint').textContent='road clear — press Enter to drive';
+  S.xp+=gained; snd('ok'); confetti(first&&S.streak>=3?120:first?50:20); $('#sideHint').textContent='green light — press Enter to race';
   const b=$('#opt'+i).getBoundingClientRect();floatXp('+'+gained,b.left+b.width/2,b.top);
   if(first){ if(S.streak===3)toast('🔥 On fire!');else if(S.streak===5)toast('⚡ Unstoppable!');else if(S.streak===8)toast('👑 Legendary!'); }
   const msg=first?['Nice!','Correct!','Yes!','Sharp.','Exactly.','You got it!'][Math.floor(Math.random()*6)]:'Found the way.';
   $('#verdict').innerHTML=`<div class="verdict ok"><div class="h">${msg} <span style="font-size:16px;color:var(--acc2)">+${gained} XP${first&&secs<10?' · speed bonus':''}${first?'':' · on chance '+(S.tries+1)}</span></div><div style="font-size:14px;color:var(--ok)">${esc(t.clear)}</div>${x.why?`<div class="why"><b>Why:</b> ${esc(x.why)}</div>`:''}<p style="margin:12px 0 0"><button class="btn" id="nextBtn" onclick="next()">${last?'Reach the goal →':'Move to the next stop →'}</button></p></div>`;
   updateHud(); setTimeout(()=>$('#nextBtn')?.focus(),50);
 }
-function next(){const tr=$('#trav');tr.classList.add('go');S.idx++;placeTrav(S.idx);setTimeout(()=>tr.classList.remove('go'),900);snd('drive');liftHurdle();setTimeout(showQ,S.idx<S.questions.length?350:900)}
+function next(){const tr=$('#trav'),tk=$('#track');tr.classList.add('go');tk&&tk.classList.add('run');S.idx++;placeTrav(S.idx);$('#sideHint').textContent='🏎 full throttle…';setTimeout(()=>{tr.classList.remove('go');tk&&tk.classList.remove('run')},1400);snd('drive');liftHurdle();setTimeout(showQ,S.idx<S.questions.length?500:1300)}
 document.addEventListener('keydown',e=>{if(!$('#v-quiz').classList.contains('on'))return;if(/^[1-4]$/.test(e.key)&&!S.locked){const b=$('#opt'+(+e.key-1));if(b)b.click()}else if(e.key==='Enter'&&S.locked&&$('#nextBtn')&&!$('#nextBtn').disabled){e.preventDefault();$('#nextBtn').click()}});
 function startTimer(){stopTimer();const tick=()=>{const left=LIMIT-Math.floor((Date.now()-S.start)/1000);const el=$('#timer');el.textContent='⏱ '+String(Math.max(0,Math.floor(left/60))).padStart(2,'0')+':'+String(Math.max(0,left%60)).padStart(2,'0');el.classList.toggle('low',left<60);if(left<=0){stopTimer();finish(true)}};tick();tInt=setInterval(tick,1000)}
 function stopTimer(){if(tInt)clearInterval(tInt);tInt=null}
 async function finish(auto){
-  stopTimer(); engine(false); $('#qbox').innerHTML='<div class="qcard"><span class="spin"></span> Saving your score…</div>';
+  stopTimer(); $('#qbox').innerHTML='<div class="qcard"><span class="spin"></span> Saving your score…</div>';
   try{
     const j=await api('submit',{studentId:S.student.studentId,subject:S.subject.code,chapter:S.chapter,quiz:S.quiz,seconds:Math.round((Date.now()-S.start)/1000),answers:S.questions.map(q=>({id:q.id,chosen:S.answers[q.id]?.chosen||'',chances:S.answers[q.id]?.chances||[],studied:!!S.answers[q.id]?.studied}))});
     S.progress[S.chapter+'-'+S.quiz]={best:j.score,attempts:1,total:j.total}; S.next=j.next||null; S.allDone=!!j.allDone;
-    renderResult(j);go('result');snd('done');if(j.score/j.total>=.7)confetti(260);
+    renderResult(j);go('result');snd('done');if(j.score/j.total>=.7)confetti(260);setTimeout(()=>renderDash(j),700);
   }catch(e){ $('#qbox').innerHTML=`<div class="err">Could not save: ${esc(e.message)}</div><p><button class="btn" onclick="finish()">Try saving again</button></p>`; }
 }
 function renderResult(j){
@@ -552,11 +581,26 @@ function renderResult(j){
   <div><div class="k">${S.idx>=S.questions.length?'You reached the goal! · your rank':'Your rank this round'}</div><div class="rank">${esc(rank)}</div><div class="chips"><span class="chip">🎯 ${j.score}/${j.total} correct</span><span class="chip">✨ ${S.xp} XP</span><span class="chip">🔥 best streak ${S.bestStreak}</span><span class="chip">🚧 ${S.retries} wrong turn${S.retries===1?'':'s'}</span>${S.studied?`<span class="chip">📖 ${S.studied} study stop${S.studied===1?'':'s'}</span>`:''}<span class="chip">⏱ ${Math.floor(secs/60)}m ${secs%60}s</span>${j.attemptNo>1?`<span class="chip">🏅 your best: ${j.best}/${j.total}</span>`:''}</div><p style="color:var(--muted);margin:6px 0 0">${clo}.<br>Your mark counts only your <b>first</b> answer at each stop. ${wrong===0?'No wrong turns on the first try — a perfect journey.':`${wrong} stop${wrong>1?'s':''} needed another way; each is explained below with the slide section to re-read.`}</p></div></div></div>`;
   setTimeout(()=>{$('#ringv').style.strokeDashoffset=565-565*pct/100},60);
   const c=S.subject.chapters.find(x=>x.chapter===S.chapter); const gotTreasure=chDone(c);
-  $('#resHead').innerHTML+=(gotTreasure?`<div class="card reward"><span class="tre got big">${treasureOf(S.chapter)}</span><div><div class="k">${esc(t.chapterWord)} ${S.chapter} complete</div><b>You won the ${esc(t.treasureWord)} of this ${esc(t.chapterWord).toLowerCase()}!</b><div style="color:var(--muted)">${treasureCount()} of ${S.subject.chapters.length} ${esc(t.treasureWord)}s collected.</div></div></div>`:'')+
+  $('#resHead').innerHTML+='<div id="dashWrap"></div>'+(gotTreasure?`<div class="card reward"><span class="tre got big">${treasureOf(S.chapter)}</span><div><div class="k">${esc(t.chapterWord)} ${S.chapter} complete</div><b>You won the ${esc(t.treasureWord)} of this ${esc(t.chapterWord).toLowerCase()}!</b><div style="color:var(--muted)">${treasureCount()} of ${S.subject.chapters.length} ${esc(t.treasureWord)}s collected.</div></div></div>`:'')+
     (S.allDone?`<div class="badge"><div class="medal">🎖️</div><div><div class="k">Subject badge unlocked</div><div class="bt">${esc(t.badge)} · Expert in ${esc(S.subject.title)}</div><div class="bm">You have completed every level of ${esc(S.subject.code)}. You are now ready to go to the market and show your skills.</div></div></div>`:'');
-  $('#resBtns').innerHTML=(S.next?`<button class="btn" onclick="startQuiz(${S.next.chapter},${S.next.quiz})">Next level → ${esc(t.chapterWord)} ${S.next.chapter} · Quiz ${S.next.quiz}</button> `:'')+`<button class="btn g" onclick="openChapters()">Back to the map</button> <button class="btn g" onclick="openDash()">📊 Dashboard</button>`;
+  $('#resBtns').innerHTML=(S.next?`<button class="btn" onclick="startQuiz(${S.next.chapter},${S.next.quiz})">Next race → ${esc(t.chapterWord)} ${S.next.chapter} · Quiz ${S.next.quiz}</button> `:'')+`<button class="btn g" onclick="openChapters()">Back to the map</button> <button class="btn g" onclick="openDash()">📊 Dashboard</button>`;
   $('#revTitle').textContent=wrong?'Your wrong turns & the right way':'Your journey log';
   $('#review').innerHTML=j.items.map((i,n)=>`<div class="q ${i.ok?'':'bad'}"><div class="k">Stop ${n+1} · ${esc(i.clo)} · §${esc(i.sec)} · ${i.ok?'<span style="color:var(--ok)">✓ first try</span>':'<span style="color:var(--bad)">✗ wrong turn first</span>'}</div><div class="stem">${esc(i.stem)}</div>${i.ok?'':`<div style="color:var(--bad);font-size:14px">Your first answer: ${i.chosen?esc(i.chosen):'(not answered)'}</div>`}<div style="color:var(--ok);font-size:14px">Correct answer: ${esc(i.correct)}</div><div style="color:var(--muted);font-size:13px;margin-top:6px"><b>Why:</b> ${esc(i.why)}</div></div>`).join('');
+}
+
+/* ================= high-speed dash to the next location ================= */
+const FAST_SECS=150; // finishing 8 stops in under 2½ minutes = speed run → hump + jump
+function renderDash(j){const w=$('#dashWrap');if(!w)return;const t=trav(),chs=S.subject.chapters,n=chs.length;const secs=Math.round((Date.now()-S.start)/1000);const fast=S.idx>=S.questions.length&&secs<FAST_SECS;
+  const from=chs.findIndex(c=>c.chapter===S.chapter);let to=S.next?chs.findIndex(c=>c.chapter===S.next.chapter):-1;const finish=to<0;
+  const X=i=>6+88*i/Math.max(1,n);const fx=X(n); // finish flag after the last chapter
+  const say=finish?(S.allDone?'🏁 Every race won — champion lap!':'🏁 Cool-down lap to the finish'):S.next.chapter===S.chapter?'⚡ Same chapter — one more race here':`🏎 Chapter done — racing to ${esc(t.stop).toLowerCase()} ${S.next.chapter}!`;
+  w.innerHTML=`<div class="dash" id="dash"><div class="say">${say}</div>${crowd(8,[2,96],()=>'')}<div class="dtrack"></div>${chs.map((c,i)=>`<div class="dn ${chDone(c)?'done':''}" style="left:${X(i)}%">${chDone(c)?treasureOf(c.chapter):c.chapter}<span class="dl">${esc(t.stop)} ${c.chapter}</span></div>`).join('')}<div class="dn fin" style="left:${fx}%">🏁</div>${fast?`<div class="hump" id="hump" style="left:${(X(from)+(finish?fx:X(to)))/2}%"></div>`:''}<div class="dcar" id="dcar" style="left:${X(from)}%">${t.icon}</div><div class="flash" id="dflash"></div></div>`;
+  document.querySelectorAll('#dash .spec').forEach((e,i)=>{e.classList.add(i%2?'top':'bot');e.style.top=''});
+  const car=$('#dcar'),dash=$('#dash');const target=finish?fx:X(to);
+  if(from<0||(!finish&&to===from)){return;}
+  setTimeout(()=>{dash.classList.add('run');accel();car.style.left=target+'%';},400);
+  if(fast){setTimeout(()=>{car.classList.add('jump');snd('jump');$('#dflash').classList.add('on');toast('🛫 Speed run! Hump — big air!');confetti(80)},400+1150);}
+  setTimeout(()=>{dash.classList.remove('run');snd('skid');if(finish&&S.allDone)confetti(200);},400+2450);
 }
 
 /* ================= juice: confetti, floats, toasts, sound ================= */
@@ -567,18 +611,35 @@ function loop(){cx.clearRect(0,0,cv.width,cv.height);parts.forEach(p=>{p.vy+=p.g
 function floatXp(txt,x,y){const d=document.createElement('div');d.className='xpfloat';d.textContent=txt;d.style.left=(x-30)+'px';d.style.top=(y-10)+'px';document.body.appendChild(d);setTimeout(()=>d.remove(),1200)}
 function toast(txt){const d=document.createElement('div');d.className='toast';d.textContent=txt;document.body.appendChild(d);setTimeout(()=>d.remove(),1700);snd('toast')}
 let AC=null,ENG=null;
-function engine(on){ if(!on||muted){ if(ENG){try{ENG.g.gain.setTargetAtTime(0,AC.currentTime,.15);const e=ENG;setTimeout(()=>{try{e.o.stop();e.o2.stop();e.lfo.stop()}catch(x){}},600);}catch(x){} ENG=null;} return; }
-  if(ENG) return; try{ AC=AC||new (window.AudioContext||window.webkitAudioContext)(); if(AC.state==='suspended')AC.resume(); const k=document.body.className.replace('t-',''); const base=k==='island'?95:k==='gallery'?48:62;
-    const o=AC.createOscillator(),o2=AC.createOscillator(),g=AC.createGain(),f=AC.createBiquadFilter(),lfo=AC.createOscillator(),lg=AC.createGain();
-    o.type=k==='gallery'?'sine':'sawtooth';o.frequency.value=base;o2.type='square';o2.frequency.value=base*1.5;f.type='lowpass';f.frequency.value=k==='gallery'?220:420;
-    lfo.frequency.value=k==='island'?22:k==='gallery'?1.2:14;lg.gain.value=k==='gallery'?4:9;lfo.connect(lg).connect(o.frequency);
-    g.gain.value=0;o.connect(f);o2.connect(f);f.connect(g).connect(AC.destination);o.start();o2.start();lfo.start();g.gain.setTargetAtTime(k==='gallery'?.025:.045,AC.currentTime,.3);
-    ENG={o,o2,g,f,lfo}; }catch(e){}
+function engBase(){const k=document.body.className.replace('t-','');return k==='island'?90:k==='gallery'?44:58}
+/* racing engine: two detuned saws + sub square + exhaust noise, filtered, with a throbbing idle */
+function engine(on){ if(!on||muted){ if(ENG){try{ENG.g.gain.setTargetAtTime(0,AC.currentTime,.2);const e=ENG;setTimeout(()=>{try{e.nodes.forEach(n=>n.stop())}catch(x){}},900);}catch(x){} ENG=null;} return; }
+  if(ENG) return; try{ AC=AC||new (window.AudioContext||window.webkitAudioContext)(); if(AC.state==='suspended')AC.resume(); const k=document.body.className.replace('t-',''); const base=engBase();
+    const o=AC.createOscillator(),o2=AC.createOscillator(),o3=AC.createOscillator(),g=AC.createGain(),f=AC.createBiquadFilter(),lfo=AC.createOscillator(),lg=AC.createGain(),dist=AC.createWaveShaper();
+    o.type=k==='gallery'?'sine':'sawtooth';o2.type=k==='gallery'?'sine':'sawtooth';o3.type='square';
+    o.frequency.value=base;o2.frequency.value=base*1.012;o3.frequency.value=base/2;
+    const curve=new Float32Array(256);for(let i=0;i<256;i++){const x=i/128-1;curve[i]=Math.tanh(x*2.2)}dist.curve=curve;
+    f.type='lowpass';f.frequency.value=k==='gallery'?240:520;f.Q.value=1.4;
+    lfo.type='sine';lfo.frequency.value=k==='gallery'?1.2:k==='island'?19:11;lg.gain.value=k==='gallery'?3:7;lfo.connect(lg);lg.connect(o.frequency);lg.connect(o2.frequency);
+    // exhaust rumble: looping brown-ish noise
+    const nb=AC.createBuffer(1,AC.sampleRate*2,AC.sampleRate),d=nb.getChannelData(0);let last=0;for(let i=0;i<d.length;i++){last=(last+(Math.random()*2-1)*.04)/1.04;d[i]=last*3.5}
+    const ns=AC.createBufferSource();ns.buffer=nb;ns.loop=true;const nf=AC.createBiquadFilter();nf.type='lowpass';nf.frequency.value=180;const ng=AC.createGain();ng.gain.value=k==='gallery'?.15:.5;ns.connect(nf).connect(ng).connect(f);
+    const og=AC.createGain();og.gain.value=.5;o.connect(og);o2.connect(og);o3.connect(og);og.connect(dist).connect(f);f.connect(g).connect(AC.destination);
+    g.gain.value=0;[o,o2,o3,lfo,ns].forEach(n=>n.start());g.gain.setTargetAtTime(k==='gallery'?.035:.08,AC.currentTime,.4);
+    ENG={o,o2,o3,g,f,lfo,nf,nodes:[o,o2,o3,lfo,ns]}; }catch(e){}
 }
-function rev(){ if(!ENG||muted)return; const t=AC.currentTime; const k=document.body.className.replace('t-',''); const base=k==='island'?95:k==='gallery'?48:62; ENG.o.frequency.cancelScheduledValues(t); ENG.o.frequency.setValueAtTime(base,t); ENG.o.frequency.linearRampToValueAtTime(base*2.6,t+.6); ENG.o.frequency.linearRampToValueAtTime(base,t+1.6); ENG.f.frequency.setValueAtTime(420,t); ENG.f.frequency.linearRampToValueAtTime(1400,t+.5); ENG.f.frequency.linearRampToValueAtTime(420,t+1.6); ENG.g.gain.setTargetAtTime(.09,t,.1); ENG.g.gain.setTargetAtTime(.045,t+1.2,.3); }
-function noise(d,g=.12,fc=1800,type='bandpass'){ const n=AC.createBufferSource(),b=AC.createBuffer(1,AC.sampleRate*d,AC.sampleRate),dd=b.getChannelData(0); for(let i=0;i<dd.length;i++)dd[i]=(Math.random()*2-1)*(1-i/dd.length); n.buffer=b; const f=AC.createBiquadFilter();f.type=type;f.frequency.value=fc;f.Q.value=1.2; const v=AC.createGain();v.gain.value=g; n.connect(f).connect(v).connect(AC.destination); n.start(); }
+function setRpm(mult,at,ramp){const b=engBase();[ENG.o,ENG.o2].forEach((o,i)=>{o.frequency.linearRampToValueAtTime(b*mult*(i?1.012:1),at+ramp)});ENG.o3.frequency.linearRampToValueAtTime(b*mult/2,at+ramp);ENG.f.frequency.linearRampToValueAtTime(400+mult*520,at+ramp);ENG.nf.frequency.linearRampToValueAtTime(160+mult*90,at+ramp)}
+function hold(mult,at){const b=engBase();[ENG.o,ENG.o2].forEach((o,i)=>o.frequency.setValueAtTime(b*mult*(i?1.012:1),at));ENG.o3.frequency.setValueAtTime(b*mult/2,at);ENG.f.frequency.setValueAtTime(400+mult*520,at);ENG.nf.frequency.setValueAtTime(160+mult*90,at)}
+function cancelEng(t){[ENG.o,ENG.o2,ENG.o3].forEach(o=>o.frequency.cancelScheduledValues(t));ENG.f.frequency.cancelScheduledValues(t);ENG.nf.frequency.cancelScheduledValues(t);ENG.g.gain.cancelScheduledValues(t)}
+/* one stop: launch, gear change, settle — about 1.4 s */
+function rev(){ if(!ENG||muted)return; const t=AC.currentTime; cancelEng(t); hold(1,t); ENG.g.gain.setTargetAtTime(.16,t,.08);
+  setRpm(3.1,t,.55); hold(2.1,t+.56); setRpm(3.4,t+.56,.5); hold(2.4,t+1.07); setRpm(1,t+1.07,.5); ENG.g.gain.setTargetAtTime(.08,t+1.2,.35); }
+/* full-speed dash between chapters: four gear changes over ~2.4 s */
+function accel(){ if(!ENG||muted){snd('whoosh');return;} const t=AC.currentTime; cancelEng(t); hold(1,t); ENG.g.gain.setTargetAtTime(.2,t,.06);
+  let at=t; [[3.2,.5],[3.6,.5],[4,.55],[4.4,.6]].forEach(([m,d],i)=>{setRpm(m,at,d); at+=d; hold(m*.62,at+.01);}); setRpm(1,at+.02,.5); ENG.g.gain.setTargetAtTime(.08,at+.1,.4); }
+function noise(d,g=.12,fc=1800,type='bandpass'){ if(muted)return; AC=AC||new (window.AudioContext||window.webkitAudioContext)(); const n=AC.createBufferSource(),b=AC.createBuffer(1,AC.sampleRate*d,AC.sampleRate),dd=b.getChannelData(0); for(let i=0;i<dd.length;i++)dd[i]=(Math.random()*2-1)*(1-i/dd.length); n.buffer=b; const f=AC.createBiquadFilter();f.type=type;f.frequency.value=fc;f.Q.value=1.2; const v=AC.createGain();v.gain.value=g; n.connect(f).connect(v).connect(AC.destination); n.start(); }
 function snd(kind){if(muted)return;try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();if(AC.state==='suspended')AC.resume();const t=AC.currentTime;const tone=(f,st,d,type='sine',g=.08)=>{const o=AC.createOscillator(),v=AC.createGain();o.type=type;o.frequency.setValueAtTime(f,t+st);v.gain.setValueAtTime(0,t+st);v.gain.linearRampToValueAtTime(g,t+st+.01);v.gain.exponentialRampToValueAtTime(.0001,t+st+d);o.connect(v).connect(AC.destination);o.start(t+st);o.stop(t+st+d+.02)};
-  if(kind==='ok'){tone(660,0,.12);tone(880,.1,.18)}else if(kind==='drive'){rev();noise(.7,.06,900,'lowpass')}else if(kind==='bad'){noise(.45,.14,2600,'bandpass');tone(330,.05,.35,'square',.06);tone(262,.05,.35,'square',.06);tone(220,0,.25,'square',.04)}else if(kind==='tick'){tone(520,0,.06,'triangle',.04)}else if(kind==='toast'){tone(784,0,.1);tone(988,.1,.1);tone(1175,.2,.2)}else if(kind==='start'){tone(440,0,.1);tone(554,.1,.1);tone(659,.2,.2)}else if(kind==='done'){[523,659,784,1047].forEach((f,i)=>tone(f,i*.12,.25))}}catch(e){}}
+  if(kind==='ok'){tone(660,0,.12);tone(880,.1,.18)}else if(kind==='drive'){rev();noise(.25,.1,2400,'bandpass');setTimeout(()=>noise(.5,.07,1100,'lowpass'),150)}else if(kind==='skid'){noise(.55,.16,2200,'bandpass');setTimeout(()=>noise(.3,.08,600,'lowpass'),300)}else if(kind==='jump'){noise(.5,.1,3000,'highpass');tone(300,0,.5,'sine',.07);const o=AC.createOscillator(),v=AC.createGain();o.type='triangle';o.frequency.setValueAtTime(300,t);o.frequency.exponentialRampToValueAtTime(900,t+.45);v.gain.setValueAtTime(.06,t);v.gain.exponentialRampToValueAtTime(.0001,t+.7);o.connect(v).connect(AC.destination);o.start(t);o.stop(t+.75);setTimeout(()=>{noise(.2,.2,500,'lowpass');tone(80,0,.25,'sine',.15)},700)}else if(kind==='whoosh'){noise(1.2,.12,1200,'bandpass')}else if(kind==='bad'){noise(.45,.14,2600,'bandpass');tone(330,.05,.35,'square',.06);tone(262,.05,.35,'square',.06);tone(220,0,.25,'square',.04)}else if(kind==='tick'){tone(520,0,.06,'triangle',.04)}else if(kind==='toast'){tone(784,0,.1);tone(988,.1,.1);tone(1175,.2,.2)}else if(kind==='start'){tone(440,0,.1);tone(554,.1,.1);tone(659,.2,.2)}else if(kind==='done'){[523,659,784,1047].forEach((f,i)=>tone(f,i*.12,.25))}}catch(e){}}
 
 /* ================= DASHBOARD ================= */
 async function openDash(){
