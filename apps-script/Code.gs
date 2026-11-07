@@ -107,14 +107,19 @@ function getQuiz(p){
   if(p.studentId){ const nl=nextLevel(subject,p.studentId); if(nl.done.indexOf(chapter+'-'+quiz)>=0) return {error:'You have already taken this quiz. Each quiz can be attempted only once.'}; if(!nl.next||nl.next.chapter!==chapter||nl.next.quiz!==quiz) return {error:'This level is locked. Finish the earlier levels first.'}; }
   const pool=rows('Questions').filter(q=>q.subject===subject&&+q.chapter===chapter&&+q.quiz===quiz&&q.status==='published');
   if(pool.length<4) return {error:'This quiz is not published yet.'};
-  const pick=shuffle(pool.slice()).slice(0,Math.min(n,pool.length));
+  // choose primaries spread across sections (round-robin), so every stop keeps spare questions of its own section as alternatives
+  const bySec={}; shuffle(pool.slice()).forEach(q=>{(bySec[String(q.sec)]=bySec[String(q.sec)]||[]).push(q)});
+  const secs=shuffle(Object.keys(bySec)); const pick=[]; let round=0;
+  while(pick.length<Math.min(n,pool.length)){ let took=false; for(const sc of secs){ if(pick.length>=n) break; const q=bySec[sc][round]; if(q&&bySec[sc].length-round-1>=0){ pick.push(q); took=true; } } if(!took) break; round++; }
   // salt + SHA-256 of the correct option lets the page give instant feedback without sending answers in clear text
   const salt=Utilities.getUuid();
   const h=(s)=>Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256,salt+'|'+s,Utilities.Charset.UTF_8).map(b=>('0'+(b&255).toString(16)).slice(-2)).join('');
   const pack=q=>({id:q.id,stem:q.stem,bloom:q.bloom,clo:q.clo,sec:q.sec,options:shuffle([q.opt1,q.opt2,q.opt3,q.opt4].map(String)),h:h(String(q['opt'+(+q.answer+1)])),why:q.why});
   const used=new Set(pick.map(q=>q.id));
   // alternatives: other questions from the same section (same learning objective) of the same quiz, up to 3 per stop
-  const questions=pick.map(q=>{const alts=shuffle(pool.filter(x=>!used.has(x.id)&&String(x.sec)===String(q.sec))).slice(0,3); alts.forEach(a=>used.add(a.id)); const o=pack(q); o.alts=alts.map(pack); return o;});
+  const questions=shuffle(pick.slice()).map(q=>{let alts=shuffle(pool.filter(x=>!used.has(x.id)&&String(x.sec)===String(q.sec))).slice(0,3);
+    if(alts.length<3){ const more=shuffle(pool.filter(x=>!used.has(x.id)&&!alts.includes(x)&&String(x.clo)===String(q.clo))).slice(0,3-alts.length); alts=alts.concat(more); } // same CLO as fallback
+    alts.forEach(a=>used.add(a.id)); const o=pack(q); o.alts=alts.map(pack); return o;});
   return {salt,questions,poolSize:pool.length};
 }
 function submit(p){

@@ -156,6 +156,29 @@ body.t-island .qb{background:#fff}
 .prog{display:flex;gap:4px;flex:1;min-width:200px}.prog i{flex:1;height:10px;border-radius:5px;background:rgba(255,255,255,.14);transition:background .3s}.prog i.ok{background:var(--ok)}.prog i.bad{background:var(--bad)}.prog i.cur{background:var(--acc);animation:pulse 1s ease-in-out infinite}
 body.t-island .prog i{background:rgba(0,0,0,.14)}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+.quizwrap{display:grid;grid-template-columns:190px 1fr;gap:18px;align-items:start}
+.side{position:sticky;top:70px}
+.sidehint{font-size:12px;color:var(--muted);text-align:center;margin-top:8px;min-height:18px}
+.journey.vert{height:560px;margin:0}
+.journey.vert .track{left:50%;right:auto;top:4%;bottom:4%;width:8px;height:auto;margin-left:-4px;background:repeating-linear-gradient(180deg,var(--acc2) 0 14px,transparent 14px 24px)}
+body.t-island .journey.vert .track{background:repeating-linear-gradient(180deg,#2b1fb0 0 14px,transparent 14px 24px)}
+body.t-gallery .journey.vert .track{background:linear-gradient(180deg,transparent,var(--acc),transparent)}
+.journey.vert .node{left:50%;top:auto;margin-left:-14px}
+.journey.vert .node.goal{margin-left:-20px}
+.journey.vert .node .lbl{top:50%;left:auto;right:40px;transform:translateY(-50%);text-align:right}
+.journey.vert .node.goal .lbl{right:50px}
+.journey.vert .trav{left:50%;top:auto;margin-left:-18px;transition:top .9s cubic-bezier(.3,1.3,.4,1)}
+.journey.vert .trav{transform:rotate(90deg);animation:bobv 1.6s ease-in-out infinite}
+body.t-gallery .journey.vert .trav,body.t-island .journey.vert .trav{transform:none}
+@keyframes bobv{0%,100%{translate:0 0}50%{translate:0 -4px}}
+.journey.vert .trav.go{animation:hopv .9s ease-in-out}
+@keyframes hopv{0%{translate:0 0}30%{translate:-14px -6px}70%{translate:10px -3px}100%{translate:0 0}}
+.hurdle{position:absolute;left:50%;margin-left:-22px;width:44px;height:44px;display:grid;place-items:center;font-size:30px;filter:drop-shadow(0 4px 8px rgba(0,0,0,.6));z-index:3;animation:slam .5s cubic-bezier(.2,1.4,.4,1)}
+.hurdle.lift{animation:lift .6s ease-in forwards}
+.hurdle .sign{position:absolute;left:48px;top:50%;transform:translateY(-50%);white-space:nowrap;font-size:11px;font-weight:700;background:var(--bad);color:#fff;padding:3px 8px;border-radius:6px;letter-spacing:.06em}
+@keyframes slam{0%{transform:translateY(-40px) scale(.5);opacity:0}60%{transform:translateY(4px) scale(1.1);opacity:1}100%{transform:none}}
+@keyframes lift{to{transform:translateY(-30px) rotate(-25deg);opacity:0}}
+@media (max-width:760px){.quizwrap{grid-template-columns:1fr}.side{position:static}.journey.vert{height:96px}.journey.vert .track{left:4%;right:4%;top:46px;bottom:auto;width:auto;height:8px;margin:0;background:repeating-linear-gradient(90deg,var(--acc2) 0 14px,transparent 14px 24px)}.journey.vert .node{left:auto;top:36px;margin-left:-14px}.journey.vert .node .lbl{top:32px;left:50%;right:auto;transform:translateX(-50%);text-align:center}.journey.vert .trav{top:-2px;margin-left:-18px;transform:none;transition:left .9s cubic-bezier(.3,1.3,.4,1)}.hurdle{top:30px!important;margin-left:-22px}.hurdle .sign{display:none}}
 .journey{position:relative;height:96px;margin:10px 0 6px;user-select:none}
 .journey .track{position:absolute;left:4%;right:4%;top:46px;height:8px;border-radius:4px;background:repeating-linear-gradient(90deg,var(--acc2) 0 14px,transparent 14px 24px);opacity:.55}
 body.t-island .journey .track{background:repeating-linear-gradient(90deg,#2b1fb0 0 14px,transparent 14px 24px)}
@@ -252,7 +275,9 @@ body.t-island .ringwrap .c{stroke:rgba(0,0,0,.12)}
 
 <section class="view" id="v-quiz">
   <div class="k" id="qzK"></div>
-  <div class="journey" id="journey"></div>
+  <div class="quizwrap">
+  <aside class="side"><div class="journey vert" id="journey"></div><div class="sidehint" id="sideHint"></div></aside>
+  <div class="qmain">
   <div class="hud">
     <div class="hudk" id="hudStop">📍 <b id="stopNo">1</b>/10</div>
     <div class="hudk" id="hudStreak">🔥 <b id="streak">0</b></div>
@@ -263,6 +288,7 @@ body.t-island .ringwrap .c{stroke:rgba(0,0,0,.12)}
   <div id="qbox"></div>
   <div id="qzErr"></div>
   <p style="margin-top:14px"><button class="btn g s" onclick="if(confirm('Stop here? This counts as your one attempt — the stops you have not reached will be marked wrong.')){finish(true)}">Stop &amp; submit</button> <span class="k" style="margin-left:8px">answer correctly to move to the next stop · keys 1–4 · Enter = go</span></p>
+  </div></div>
 </section>
 
 <section class="view" id="v-result">
@@ -330,10 +356,10 @@ function setTheme(key){
 
 /* ================= nav ================= */
 function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.remove('on'));$('#v-'+v).classList.add('on');window.scrollTo(0,0);renderWho()}
-function goHub(){stopTimer();setTheme(null);go('hub')}
+function goHub(){stopTimer();engine(false);setTheme(null);go('hub')}
 function renderWho(){$('#who').innerHTML=(S.student?`Playing as <b>${esc(S.student.codename)}</b> <button class="link" onclick="signOut()">not you?</button>`:'<span>Not signed in</span>')+`<button class="icon" title="sound" onclick="toggleMute()">${muted?'🔇':'🔊'}</button>`}
 function signOut(){localStorage.removeItem('qh_student');S.student=null;goHub()}
-function toggleMute(){muted=!muted;localStorage.setItem('qh_mute',muted?'1':'0');renderWho();if(!muted)snd('tick')}
+function toggleMute(){muted=!muted;localStorage.setItem('qh_mute',muted?'1':'0');renderWho();if(muted)engine(false);else{snd('tick');if($('#v-quiz').classList.contains('on'))engine(true)}}
 
 /* ================= HUB ================= */
 function miniScene(key){
@@ -365,7 +391,7 @@ function chDone(c){return chState(c)==='done'}
 function treasureCount(){return S.subject.chapters.filter(chDone).length}
 function bestPct(c){const b=[S.progress[c.chapter+'-1'],S.progress[c.chapter+'-2']].filter(Boolean);return b.length?Math.round(100*b.reduce((a,p)=>a+p.best/p.total,0)/b.length):null}
 async function openChapters(){
-  stopTimer();go('chapters'); const s=S.subject,t=S.theme; $('#chPanel').innerHTML='';
+  stopTimer(); engine(false);go('chapters'); const s=S.subject,t=S.theme; $('#chPanel').innerHTML='';
   $('#chHead').innerHTML=`<h1>${esc(t.name)}</h1><p class="sub"><b>${esc(s.code)} · ${esc(s.title)}</b><br>${esc(t.tag)} Two quizzes per chapter: <b>Quiz 1 · Ideas</b> checks understanding, <b>Quiz 2 · Applied</b> makes you apply and analyse. Levels open one at a time and <b>each quiz can be taken once</b>. Each quiz is a journey of 10 stops: answer correctly to move on; a wrong answer opens <b>another way</b> — a new question on the same idea — up to three times, then a study stop. Only your first answer at each stop counts for your mark.</p><div id="badgeBar"></div>`;
   $('#chScene').innerHTML='<span class="spin"></span> Loading your progress…';
   try{ const [p,v]=await Promise.all([api('myProgress',{studentId:S.student.studentId,subject:s.code}),api('videos',{subject:s.code})]); S.progress=p.progress; S.levels=p.levels||[]; S.next=p.next||null; S.allDone=!!p.allDone; S.videos=v.videos; }catch(e){ S.progress={}; S.videos=[]; S.levels=[]; S.next=null; S.allDone=false; }
@@ -441,12 +467,23 @@ async function startQuiz(ch,q){
 const TRAV={drive:{icon:'🚗',goal:'🏆',goalWord:'Trophy',stop:'Checkpoint',blocked:'Road blocked — try another way',clear:'Road clear — drive on!'},island:{icon:'🛵',goal:'💰',goalWord:'Treasure',stop:'Place',blocked:'Wrong path — try another trail',clear:'Trail found — ride on!'},gallery:{icon:'🕯',goal:'👑',goalWord:'Relic',stop:'Hall',blocked:'That door is locked — try another',clear:'Door opens — walk on'}};
 function trav(){return TRAV[document.body.className.replace('t-','')]||TRAV.drive}
 function nodeX(i){const n=S.questions.length;return 4+92*i/n}
-function buildJourney(){const n=S.questions.length,t=trav();$('#journey').innerHTML=`<div class="track"></div>${S.questions.map((q,i)=>`<div class="node" id="node${i}" style="left:${nodeX(i)}%">${i+1}<span class="lbl">§${esc(q.sec)}</span></div>`).join('')}<div class="node goal" id="node${n}" style="left:${nodeX(n)}%">${t.goal}<span class="lbl">${t.goalWord}</span></div><div class="trav" id="trav" style="left:${nodeX(0)}%">${t.icon}</div>`}
+function isVert(){return innerWidth>760}
+function nodeY(i){const n=S.questions.length;return 94-90*i/n} // bottom → top
+function placeNode(el,i){ if(isVert()){el.style.top=nodeY(i)+'%';el.style.left='50%'}else{el.style.left=nodeX(i)+'%';el.style.top=''} }
+function placeTrav(i){const tr=$('#trav');if(!tr)return; if(isVert()){tr.style.top='calc('+nodeY(i)+'% - 22px)';tr.style.left='50%'}else{tr.style.left=nodeX(i)+'%';tr.style.top=''}}
+const HURDLES={drive:[['🚧','ROAD CLOSED'],['👮','STOP — POLICE'],['🛑','NO ENTRY'],['🚦','RED LIGHT'],['🚜','SLOW — TRACTOR']],island:[['🪨','ROCKFALL'],['🌊','FLOODED TRAIL'],['🐊','CROC CROSSING'],['🌴','FALLEN TREE'],['🚧','TRAIL CLOSED']],gallery:[['🔒','LOCKED DOOR'],['⛓️','CHAINED'],['🛡️','GUARDED'],['🕯️','DARK HALL'],['🚪','CLOSED']]};
+function showHurdle(){const k=document.body.className.replace('t-','');const list=HURDLES[k]||HURDLES.drive;const h=list[Math.floor(Math.random()*list.length)];let el=$('#hurdle');if(!el){el=document.createElement('div');el.id='hurdle';el.className='hurdle';$('#journey').appendChild(el);}else{el.className='hurdle';}
+  el.innerHTML=`${h[0]}<span class="sign">${h[1]}</span>`; const n=S.questions.length; if(isVert()){el.style.top='calc('+((nodeY(S.idx)+nodeY(Math.min(S.idx+1,n)))/2)+'% - 22px)';el.style.left='50%';}else{el.style.left=((nodeX(S.idx)+nodeX(Math.min(S.idx+1,n)))/2)+'%';}
+  $('#sideHint').textContent=h[1].toLowerCase()+' — find another way'}
+function liftHurdle(){const el=$('#hurdle');if(!el)return;el.classList.add('lift');setTimeout(()=>el.remove(),650);$('#sideHint').textContent='road clear — moving on'}
+function buildJourney(){const n=S.questions.length,t=trav();$('#journey').innerHTML=`<div class="track"></div>${S.questions.map((q,i)=>`<div class="node" id="node${i}">${i+1}<span class="lbl">§${esc(q.sec)}</span></div>`).join('')}<div class="node goal" id="node${n}">${t.goal}<span class="lbl">${t.goalWord}</span></div><div class="trav" id="trav">${t.icon}</div>`;
+  for(let i=0;i<=n;i++) placeNode($('#node'+i),i); placeTrav(0); $('#sideHint').textContent='engine on — answer to move'}
+addEventListener('resize',()=>{if($('#v-quiz').classList.contains('on')&&S.questions.length){for(let i=0;i<=S.questions.length;i++){const el=$('#node'+i);if(el)placeNode(el,i)}placeTrav(S.idx)}});
 function updateHud(){$('#streak').textContent=S.streak;$('#xp').textContent=S.xp;$('#hudStreak').classList.toggle('hot',S.streak>=3);$('#stopNo').textContent=Math.min(S.idx+1,S.questions.length);$('#hudStop').lastChild.textContent='/'+S.questions.length;const ch=Math.min(4,(S.questions[S.idx]?.chain||[1]).length);$('#tries').textContent='●'.repeat(Math.max(0,ch-S.tries))+'○'.repeat(Math.min(ch,S.tries));
   S.questions.forEach((q,i)=>{const el=$('#node'+i);if(!el)return;const a=S.answers[q.id];el.className='node'+(a&&a.done?(a.ok?' ok':' retry'):(i===S.idx?' cur':''))});
-  const tr=$('#trav');if(tr){tr.style.left=nodeX(S.idx)+'%';}}
+  placeTrav(S.idx);}
 function showQ(){
-  const p=S.questions[S.idx]; if(!p){finish();return;} S.tries=0; renderStopQ(); $('#journey').scrollIntoView({behavior:'smooth',block:'start'});
+  const p=S.questions[S.idx]; if(!p){finish();return;} S.tries=0; renderStopQ(); $('#qzK').scrollIntoView({behavior:'smooth',block:'start'}); engine(true);
 }
 function curQ(){const p=S.questions[S.idx];return p.chain[Math.min(S.tries,p.chain.length-1)]}
 function renderStopQ(){
@@ -463,7 +500,7 @@ function pick(i){
   const ok=known?i===x.correctIdx:true;
   S.locked=true;
   if(!ok){
-    S.retries++; S.streak=0; snd('bad');
+    S.retries++; S.streak=0; snd('bad'); showHurdle();
     const b=$('#opt'+i); b.disabled=true; b.classList.add('blocked'); b.classList.add('bad'); setTimeout(()=>b.classList.remove('bad'),450);
     document.querySelectorAll('.opt').forEach(bb=>bb.disabled=true);
     const hasAlt=S.tries+1<p.chain.length;
@@ -486,19 +523,19 @@ function pick(i){
   let gained=0;
   if(first){S.streak++;S.bestStreak=Math.max(S.bestStreak,S.streak);gained=100+Math.min(S.streak-1,5)*20+(secs<10?50:secs<20?20:0);}
   else gained=S.tries===1?50:S.tries===2?30:15;
-  S.xp+=gained; snd('ok'); confetti(first&&S.streak>=3?120:first?50:20);
+  S.xp+=gained; snd('ok'); confetti(first&&S.streak>=3?120:first?50:20); $('#sideHint').textContent='road clear — press Enter to drive';
   const b=$('#opt'+i).getBoundingClientRect();floatXp('+'+gained,b.left+b.width/2,b.top);
   if(first){ if(S.streak===3)toast('🔥 On fire!');else if(S.streak===5)toast('⚡ Unstoppable!');else if(S.streak===8)toast('👑 Legendary!'); }
   const msg=first?['Nice!','Correct!','Yes!','Sharp.','Exactly.','You got it!'][Math.floor(Math.random()*6)]:'Found the way.';
   $('#verdict').innerHTML=`<div class="verdict ok"><div class="h">${msg} <span style="font-size:16px;color:var(--acc2)">+${gained} XP${first&&secs<10?' · speed bonus':''}${first?'':' · on chance '+(S.tries+1)}</span></div><div style="font-size:14px;color:var(--ok)">${esc(t.clear)}</div>${x.why?`<div class="why"><b>Why:</b> ${esc(x.why)}</div>`:''}<p style="margin:12px 0 0"><button class="btn" id="nextBtn" onclick="next()">${last?'Reach the goal →':'Move to the next stop →'}</button></p></div>`;
   updateHud(); setTimeout(()=>$('#nextBtn')?.focus(),50);
 }
-function next(){const tr=$('#trav');tr.classList.add('go');S.idx++;tr.style.left=nodeX(S.idx)+'%';setTimeout(()=>tr.classList.remove('go'),900);snd('tick');setTimeout(showQ,S.idx<S.questions.length?350:900)}
+function next(){const tr=$('#trav');tr.classList.add('go');S.idx++;placeTrav(S.idx);setTimeout(()=>tr.classList.remove('go'),900);snd('drive');liftHurdle();setTimeout(showQ,S.idx<S.questions.length?350:900)}
 document.addEventListener('keydown',e=>{if(!$('#v-quiz').classList.contains('on'))return;if(/^[1-4]$/.test(e.key)&&!S.locked){const b=$('#opt'+(+e.key-1));if(b)b.click()}else if(e.key==='Enter'&&S.locked&&$('#nextBtn')&&!$('#nextBtn').disabled){e.preventDefault();$('#nextBtn').click()}});
 function startTimer(){stopTimer();const tick=()=>{const left=LIMIT-Math.floor((Date.now()-S.start)/1000);const el=$('#timer');el.textContent='⏱ '+String(Math.max(0,Math.floor(left/60))).padStart(2,'0')+':'+String(Math.max(0,left%60)).padStart(2,'0');el.classList.toggle('low',left<60);if(left<=0){stopTimer();finish(true)}};tick();tInt=setInterval(tick,1000)}
 function stopTimer(){if(tInt)clearInterval(tInt);tInt=null}
 async function finish(auto){
-  stopTimer(); $('#qbox').innerHTML='<div class="qcard"><span class="spin"></span> Saving your score…</div>';
+  stopTimer(); engine(false); $('#qbox').innerHTML='<div class="qcard"><span class="spin"></span> Saving your score…</div>';
   try{
     const j=await api('submit',{studentId:S.student.studentId,subject:S.subject.code,chapter:S.chapter,quiz:S.quiz,seconds:Math.round((Date.now()-S.start)/1000),answers:S.questions.map(q=>({id:q.id,chosen:S.answers[q.id]?.chosen||'',chances:S.answers[q.id]?.chances||[],studied:!!S.answers[q.id]?.studied}))});
     S.progress[S.chapter+'-'+S.quiz]={best:j.score,attempts:1,total:j.total}; S.next=j.next||null; S.allDone=!!j.allDone;
@@ -529,12 +566,23 @@ function confetti(n){const cols=[getComputedStyle(document.body).getPropertyValu
 function loop(){cx.clearRect(0,0,cv.width,cv.height);parts.forEach(p=>{p.vy+=p.g;p.x+=p.vx;p.y+=p.vy;p.a+=p.s;p.l-=.012;cx.save();cx.globalAlpha=Math.max(0,p.l);cx.translate(p.x,p.y);cx.rotate(p.a);cx.fillStyle=p.c;cx.fillRect(-p.r,-p.r/2,p.r*2,p.r);cx.restore()});parts=parts.filter(p=>p.l>0&&p.y<cv.height+20);cRaf=parts.length?requestAnimationFrame(loop):(cx.clearRect(0,0,cv.width,cv.height),null)}
 function floatXp(txt,x,y){const d=document.createElement('div');d.className='xpfloat';d.textContent=txt;d.style.left=(x-30)+'px';d.style.top=(y-10)+'px';document.body.appendChild(d);setTimeout(()=>d.remove(),1200)}
 function toast(txt){const d=document.createElement('div');d.className='toast';d.textContent=txt;document.body.appendChild(d);setTimeout(()=>d.remove(),1700);snd('toast')}
-let AC=null;function snd(kind){if(muted)return;try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();const t=AC.currentTime;const tone=(f,st,d,type='sine',g=.08)=>{const o=AC.createOscillator(),v=AC.createGain();o.type=type;o.frequency.setValueAtTime(f,t+st);v.gain.setValueAtTime(0,t+st);v.gain.linearRampToValueAtTime(g,t+st+.01);v.gain.exponentialRampToValueAtTime(.0001,t+st+d);o.connect(v).connect(AC.destination);o.start(t+st);o.stop(t+st+d+.02)};
-  if(kind==='ok'){tone(660,0,.12);tone(880,.1,.18)}else if(kind==='bad'){tone(220,0,.25,'square',.05);tone(180,.12,.3,'square',.05)}else if(kind==='tick'){tone(520,0,.06,'triangle',.04)}else if(kind==='toast'){tone(784,0,.1);tone(988,.1,.1);tone(1175,.2,.2)}else if(kind==='start'){tone(440,0,.1);tone(554,.1,.1);tone(659,.2,.2)}else if(kind==='done'){[523,659,784,1047].forEach((f,i)=>tone(f,i*.12,.25))}}catch(e){}}
+let AC=null,ENG=null;
+function engine(on){ if(!on||muted){ if(ENG){try{ENG.g.gain.setTargetAtTime(0,AC.currentTime,.15);const e=ENG;setTimeout(()=>{try{e.o.stop();e.o2.stop();e.lfo.stop()}catch(x){}},600);}catch(x){} ENG=null;} return; }
+  if(ENG) return; try{ AC=AC||new (window.AudioContext||window.webkitAudioContext)(); if(AC.state==='suspended')AC.resume(); const k=document.body.className.replace('t-',''); const base=k==='island'?95:k==='gallery'?48:62;
+    const o=AC.createOscillator(),o2=AC.createOscillator(),g=AC.createGain(),f=AC.createBiquadFilter(),lfo=AC.createOscillator(),lg=AC.createGain();
+    o.type=k==='gallery'?'sine':'sawtooth';o.frequency.value=base;o2.type='square';o2.frequency.value=base*1.5;f.type='lowpass';f.frequency.value=k==='gallery'?220:420;
+    lfo.frequency.value=k==='island'?22:k==='gallery'?1.2:14;lg.gain.value=k==='gallery'?4:9;lfo.connect(lg).connect(o.frequency);
+    g.gain.value=0;o.connect(f);o2.connect(f);f.connect(g).connect(AC.destination);o.start();o2.start();lfo.start();g.gain.setTargetAtTime(k==='gallery'?.025:.045,AC.currentTime,.3);
+    ENG={o,o2,g,f,lfo}; }catch(e){}
+}
+function rev(){ if(!ENG||muted)return; const t=AC.currentTime; const k=document.body.className.replace('t-',''); const base=k==='island'?95:k==='gallery'?48:62; ENG.o.frequency.cancelScheduledValues(t); ENG.o.frequency.setValueAtTime(base,t); ENG.o.frequency.linearRampToValueAtTime(base*2.6,t+.6); ENG.o.frequency.linearRampToValueAtTime(base,t+1.6); ENG.f.frequency.setValueAtTime(420,t); ENG.f.frequency.linearRampToValueAtTime(1400,t+.5); ENG.f.frequency.linearRampToValueAtTime(420,t+1.6); ENG.g.gain.setTargetAtTime(.09,t,.1); ENG.g.gain.setTargetAtTime(.045,t+1.2,.3); }
+function noise(d,g=.12,fc=1800,type='bandpass'){ const n=AC.createBufferSource(),b=AC.createBuffer(1,AC.sampleRate*d,AC.sampleRate),dd=b.getChannelData(0); for(let i=0;i<dd.length;i++)dd[i]=(Math.random()*2-1)*(1-i/dd.length); n.buffer=b; const f=AC.createBiquadFilter();f.type=type;f.frequency.value=fc;f.Q.value=1.2; const v=AC.createGain();v.gain.value=g; n.connect(f).connect(v).connect(AC.destination); n.start(); }
+function snd(kind){if(muted)return;try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();if(AC.state==='suspended')AC.resume();const t=AC.currentTime;const tone=(f,st,d,type='sine',g=.08)=>{const o=AC.createOscillator(),v=AC.createGain();o.type=type;o.frequency.setValueAtTime(f,t+st);v.gain.setValueAtTime(0,t+st);v.gain.linearRampToValueAtTime(g,t+st+.01);v.gain.exponentialRampToValueAtTime(.0001,t+st+d);o.connect(v).connect(AC.destination);o.start(t+st);o.stop(t+st+d+.02)};
+  if(kind==='ok'){tone(660,0,.12);tone(880,.1,.18)}else if(kind==='drive'){rev();noise(.7,.06,900,'lowpass')}else if(kind==='bad'){noise(.45,.14,2600,'bandpass');tone(330,.05,.35,'square',.06);tone(262,.05,.35,'square',.06);tone(220,0,.25,'square',.04)}else if(kind==='tick'){tone(520,0,.06,'triangle',.04)}else if(kind==='toast'){tone(784,0,.1);tone(988,.1,.1);tone(1175,.2,.2)}else if(kind==='start'){tone(440,0,.1);tone(554,.1,.1);tone(659,.2,.2)}else if(kind==='done'){[523,659,784,1047].forEach((f,i)=>tone(f,i*.12,.25))}}catch(e){}}
 
 /* ================= DASHBOARD ================= */
 async function openDash(){
-  stopTimer();go('dash');$('#dashSubj').innerHTML=`<b>${esc(S.subject.code)} · ${esc(S.subject.title)}</b> — anonymised; every student sees this same page. Codenames only; you are highlighted.`;$('#dashBody').innerHTML='<span class="spin"></span> Loading…';
+  stopTimer(); engine(false);go('dash');$('#dashSubj').innerHTML=`<b>${esc(S.subject.code)} · ${esc(S.subject.title)}</b> — anonymised; every student sees this same page. Codenames only; you are highlighted.`;$('#dashBody').innerHTML='<span class="spin"></span> Loading…';
   let d;try{d=await api('dashboard',{subject:S.subject.code})}catch(e){$('#dashBody').innerHTML=`<div class="err">${esc(e.message)}</div>`;return}
   const me=S.student?.codename;const pct=v=>v===null||v===undefined?'—':v+'%';
   $('#dashBody').innerHTML=`<div class="stats"><div class="stat"><div class="k">Players</div><b>${d.students}</b></div><div class="stat"><div class="k">Quizzes played</div><b>${d.attempts}</b></div><div class="stat"><div class="k">Class average (best)</div><b>${pct(d.classAvgBest)}</b></div><div class="stat"><div class="k">Class average (first try)</div><b>${pct(d.classAvgFirst)}</b></div><div class="stat"><div class="k">Hardest section</div><b style="font-size:15px">${d.weakest[0]?esc(d.weakest[0].sec)+' · '+d.weakest[0].pct+'%':'—'}</b></div></div>
