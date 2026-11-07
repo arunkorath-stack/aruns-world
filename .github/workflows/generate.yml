@@ -1,0 +1,32 @@
+name: Generate draft questions from uploaded decks
+on:
+  push:
+    paths:
+      - 'uploads/**/*.pptx'
+  workflow_dispatch:
+    inputs:
+      path:
+        description: 'Path of one deck to (re)generate, e.g. uploads/MGMT363/ch01_Thinking.pptx'
+        required: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install python-pptx anthropic requests
+      - name: Find changed decks
+        id: decks
+        run: |
+          if [ -n "${{ github.event.inputs.path }}" ]; then echo "${{ github.event.inputs.path }}" > decks.txt
+          else git diff --name-only HEAD~1 HEAD -- 'uploads/**/*.pptx' | grep -i '\.pptx$' > decks.txt || true; fi
+          cat decks.txt
+      - name: Generate and send drafts to the Sheet
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          TEACHER_KEY: ${{ secrets.TEACHER_KEY }}
+        run: |
+          while read -r f; do [ -n "$f" ] && python scripts/generate.py "$f"; done < decks.txt

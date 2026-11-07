@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter Quiz Hub · University of Kalba</title>
+<meta name="description" content="Open practice quizzes for Dr Arun Korath's management courses at the University of Kalba. Choose your subject, pick a chapter, test yourself, learn from your mistakes.">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f1216;--panel:#171b21;--p2:#1d222a;--line:#262c35;--text:#e8ecf1;--muted:#8d97a5;--acc:#4ad3a2;--amb:#ffb84d;--red:#ff6b6b;--blue:#6aa9ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:15px;line-height:1.5}
+header{position:sticky;top:0;background:rgba(15,18,22,.95);border-bottom:1px solid var(--line);padding:10px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;z-index:5;backdrop-filter:blur(8px)}
+header b{font-size:15px}header a{color:var(--text);text-decoration:none}
+.who{font-size:12px;color:var(--muted)}.who b{color:var(--acc);font-size:12px}.who button{background:none;border:0;color:var(--muted);cursor:pointer;font:inherit;font-size:12px;text-decoration:underline}
+main{max-width:1100px;margin:0 auto 60px;padding:20px}
+h1{font-size:26px;margin:18px 0 6px}h2{font-size:18px;margin:26px 0 10px}p.sub{color:var(--muted);margin:0 0 16px}
+.k{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;cursor:pointer;transition:border-color .15s}.card:hover{border-color:var(--acc)}
+.card h3{margin:4px 0 6px;font-size:17px}.card .m{color:var(--muted);font-size:13px}
+.btn{background:var(--acc);color:#0b1410;border:0;padding:10px 16px;border-radius:8px;font:inherit;font-weight:600;cursor:pointer}.btn:disabled{opacity:.5;cursor:default}.btn.g{background:var(--panel);color:var(--text);border:1px solid var(--line)}.btn.s{padding:6px 10px;font-size:12px}
+.pill{display:inline-block;font-size:11px;padding:4px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);margin:2px 4px 2px 0;cursor:pointer;background:none;font-family:inherit}.pill.ok{color:var(--acc);border-color:#235b46}.pill.todo{color:var(--amb);border-color:#5e4420}.pill.lock{color:var(--muted);cursor:default}.pill.vid{color:var(--blue);border-color:#2a4a7a}
+.q{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;margin:12px 0}
+.q .stem{font-size:16px;font-weight:500;margin:6px 0 12px}.opt{display:block;width:100%;text-align:left;background:var(--p2);border:1px solid var(--line);color:var(--text);padding:11px 14px;border-radius:8px;margin:6px 0;cursor:pointer;font:inherit}.opt:hover{border-color:var(--blue)}.opt.pick{border-color:var(--acc);background:#1b2c26}
+.timer{font-family:'IBM Plex Mono',monospace;color:var(--amb);font-size:16px}.timer.low{color:var(--red)}
+table{width:100%;border-collapse:collapse;font-size:13px}th{text-align:left;color:var(--muted);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:8px;border-bottom:1px solid var(--line)}td{padding:10px 8px;border-bottom:1px solid #1f242c;vertical-align:middle}
+.bar{height:8px;background:#232931;border-radius:4px;overflow:hidden}.bar i{display:block;height:100%;background:var(--acc)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px}.stat b{display:block;font-size:22px;margin-top:4px}
+.note{background:#1a1f26;border-left:3px solid var(--amb);padding:10px 14px;border-radius:0 8px 8px 0;font-size:13px;color:var(--muted);margin:14px 0}
+.err{background:#2c1b1b;border-left:3px solid var(--red);padding:10px 14px;border-radius:0 8px 8px 0;font-size:13px;margin:14px 0}
+.view{display:none}.view.on{display:block}
+label{display:block;font-size:12px;color:var(--muted);margin:10px 0 4px}input{width:100%;background:var(--p2);border:1px solid var(--line);color:var(--text);padding:10px;border-radius:8px;font:inherit}
+.you td{background:#17352a}
+.vidgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}.vid iframe,.vid video{width:100%;aspect-ratio:16/9;border:0;border-radius:8px;background:#000}
+.spin{display:inline-block;width:14px;height:14px;border:2px solid var(--line);border-top-color:var(--acc);border-radius:50%;animation:sp .8s linear infinite;vertical-align:middle;margin-right:6px}@keyframes sp{to{transform:rotate(360deg)}}
+.review .q{border-left:4px solid var(--acc)}.review .q.bad{border-left-color:var(--red)}
+.big{font-size:34px;font-weight:700;margin:4px 0}
+@media (max-width:640px){td,th{padding:8px 4px}.hide-m{display:none}}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:30px 20px;border-top:1px solid var(--line)}
+</style></head><body>
+<header><a href="#" onclick="go('subjects');return false"><b>🎓 Chapter Quiz Hub · University of Kalba</b></a><div class="who" id="who"></div></header>
+<main>
+
+<section class="view on" id="v-subjects">
+  <h1>Choose your subject</h1>
+  <p class="sub">Open practice — any chapter, any time, unlimited attempts. Your best score and your first attempt are both recorded. Dr Arun Korath · College of Business Administration</p>
+  <div id="subjectsGrid" class="grid"><span class="spin"></span> Loading subjects…</div>
+</section>
+
+<section class="view" id="v-ident">
+  <button class="btn g" onclick="go('subjects')">← Subjects</button>
+  <h1 id="identTitle">Tell us who you are (once)</h1>
+  <p class="sub">Your name and student ID are saved so your practice counts. They are never shown on any page — on the dashboard you appear as a codename. This device will remember you.</p>
+  <div class="card" style="max-width:440px;cursor:default">
+    <label>Student ID</label><input id="inId" placeholder="e.g. 202412345" autocomplete="off">
+    <label>Full name</label><input id="inName" placeholder="As on your university record">
+    <div id="identErr"></div>
+    <br><button class="btn" id="identBtn" onclick="identify()">Start practising →</button>
+  </div>
+</section>
+
+<section class="view" id="v-chapters">
+  <button class="btn g" onclick="go('subjects')">← Subjects</button> <button class="btn g" onclick="openDash()">📊 Dashboard</button>
+  <h1 id="chTitle"></h1>
+  <p class="sub">Two quizzes per chapter, always open. <b>Quiz 1 · Ideas</b> checks understanding. <b>Quiz 2 · Applied</b> asks you to apply and analyse. Each attempt draws 10 random questions from the chapter's bank; 12 minutes; unlimited attempts.</p>
+  <div id="generalVideos"></div>
+  <div style="overflow:auto"><table id="chTable"></table></div>
+  <div id="vidPanel"></div>
+</section>
+
+<section class="view" id="v-quiz">
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px"><div><div class="k" id="qzK"></div><h1 id="qzTitle" style="margin:4px 0"></h1></div><div class="timer" id="timer">12:00</div></div>
+  <p class="sub">Choose one answer per question. The review with correct answers and explanations appears after you submit.</p>
+  <div id="qs"></div>
+  <div id="qzErr"></div>
+  <button class="btn" id="submitBtn" onclick="submitQuiz()">Submit quiz</button> <button class="btn g" onclick="if(confirm('Leave this attempt? It will not be saved.')){stopTimer();go('chapters')}">Cancel</button>
+</section>
+
+<section class="view" id="v-result">
+  <div id="resHead"></div>
+  <h2>Your review</h2>
+  <div class="review" id="review"></div>
+  <p><button class="btn" onclick="go('chapters')">Back to chapters</button> <button class="btn g" onclick="retry()">↻ Try this quiz again</button> <button class="btn g" onclick="openDash()">📊 Dashboard</button></p>
+</section>
+
+<section class="view" id="v-dash">
+  <button class="btn g" onclick="go('chapters')">← Chapters</button>
+  <h1>Dashboard · <span id="dashSubj"></span></h1>
+  <p class="sub">Anonymised — every student sees this same page. Codenames only; you are highlighted.</p>
+  <div id="dashBody"><span class="spin"></span> Loading…</div>
+</section>
+
+</main>
+<footer>Questions are generated from the chapter decks and reviewed by the instructor. Practice quizzes are formative: they help you learn, they are not your exam. Problems? Tell Dr Korath in class.</footer>
+
+<script>
+/* ---------------- config & API ---------------- */
+let CFG={scriptUrl:''};
+async function loadCfg(){ try{ CFG=await (await fetch('config.json?'+Date.now())).json(); }catch(e){} }
+async function api(action,data){
+  if(!CFG.scriptUrl) throw new Error('The site is not connected to its database yet (config.json has no scriptUrl).');
+  const r=await fetch(CFG.scriptUrl,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({action,...data}),redirect:'follow'});
+  const j=await r.json(); if(j.error) throw new Error(j.error); return j;
+}
+const $=s=>document.querySelector(s); const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const S={student:null,subjects:[],subject:null,chapter:null,quiz:null,questions:[],picks:{},start:0,progress:{},videos:[]};
+try{S.student=JSON.parse(localStorage.getItem('qh_student')||'null')}catch{}
+
+function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.remove('on'));$('#v-'+v).classList.add('on');window.scrollTo(0,0);renderWho()}
+function renderWho(){$('#who').innerHTML=S.student?`Signed in as <b>${esc(S.student.codename)}</b> <button onclick="signOut()">not you?</button>`:'<span>Not signed in</span>'}
+function signOut(){localStorage.removeItem('qh_student');S.student=null;go('subjects')}
+
+/* ---------------- subjects ---------------- */
+async function loadSubjects(){
+  try{ const j=await api('subjects',{}); S.subjects=j.subjects; }
+  catch(e){ $('#subjectsGrid').innerHTML=`<div class="err">Could not load subjects: ${esc(e.message)}</div>`; return; }
+  $('#subjectsGrid').innerHTML=S.subjects.map(s=>{const pub=s.chapters.filter(c=>c.q1>0||c.q2>0).length;return`<div class="card" onclick="pickSubject('${esc(s.code)}')"><div class="k">${esc(s.code)} · ${esc(s.term||'')}</div><h3>${esc(s.title)}</h3><div class="m">${s.chapters.length} chapters · ${pub} with quizzes ready${s.chapters.some(c=>c.videos>0)||s.generalVideos?' · 🎬 class videos':''}</div><p style="margin:8px 0 0;font-size:12px;color:var(--acc)">▶ Start practising</p></div>`}).join('')||'<div class="note">No subjects published yet.</div>';
+}
+function pickSubject(code){S.subject=S.subjects.find(s=>s.code===code); if(!S.student){$('#identTitle').textContent=S.subject.code+' · tell us who you are (once)';go('ident');$('#inId').focus();} else openChapters();}
+async function identify(){
+  const id=$('#inId').value.trim(), name=$('#inName').value.trim(); $('#identErr').innerHTML='';
+  if(id.length<4||name.length<3){$('#identErr').innerHTML='<div class="err">Please enter your student ID and full name.</div>';return;}
+  $('#identBtn').disabled=true;$('#identBtn').innerHTML='<span class="spin"></span>Saving…';
+  try{ const j=await api('register',{studentId:id,name,subject:S.subject.code}); S.student={studentId:j.studentId,name,codename:j.codename}; localStorage.setItem('qh_student',JSON.stringify(S.student)); openChapters(); }
+  catch(e){ $('#identErr').innerHTML=`<div class="err">${esc(e.message)}</div>`; }
+  $('#identBtn').disabled=false;$('#identBtn').textContent='Start practising →';
+}
+
+/* ---------------- chapters ---------------- */
+async function openChapters(){
+  go('chapters'); const s=S.subject; $('#chTitle').textContent=s.code+' · '+s.title; $('#vidPanel').innerHTML='';
+  $('#chTable').innerHTML='<tr><td><span class="spin"></span> Loading your progress…</td></tr>';
+  try{ const [p,v]=await Promise.all([api('myProgress',{studentId:S.student.studentId,subject:s.code}),api('videos',{subject:s.code})]); S.progress=p.progress; S.videos=v.videos; }catch(e){ S.progress={}; S.videos=[]; }
+  const gen=S.videos.filter(v=>!v.chapter);
+  $('#generalVideos').innerHTML=gen.length?`<div class="k" style="margin:8px 0">Course videos</div><div class="vidgrid" style="margin-bottom:16px">${gen.map(vidCard).join('')}</div>`:'';
+  $('#chTable').innerHTML=`<tr><th>Ch</th><th>Chapter</th><th class="hide-m">CLOs</th><th>Class video</th><th>Quiz 1 · Ideas</th><th>Quiz 2 · Applied</th><th>Best · attempts</th></tr>`+s.chapters.map(c=>{
+    const p1=S.progress[c.chapter+'-1'],p2=S.progress[c.chapter+'-2'];const vids=S.videos.filter(v=>v.chapter===c.chapter);
+    const cell=(q,p,n)=>n===0?`<span class="pill lock">coming soon</span>`:p?`<button class="pill ok" onclick="startQuiz(${c.chapter},${q})">best ${p.best}/${p.total} · ↻ retry</button>`:`<button class="pill todo" onclick="startQuiz(${c.chapter},${q})">▶ Take quiz</button>`;
+    const bests=[p1,p2].filter(Boolean);const bestPct=bests.length?Math.round(100*bests.reduce((a,p)=>a+p.best/p.total,0)/bests.length):null;const att=(p1?.attempts||0)+(p2?.attempts||0);
+    return`<tr><td>${c.chapter}</td><td><b>${esc(c.title)}</b></td><td class="hide-m" style="color:var(--muted)">${esc(c.clos||'')}</td><td>${vids.length?`<button class="pill vid" onclick="showVids(${c.chapter})">▶ Watch (${vids.length})</button>`:'<span class="pill lock">no video yet</span>'}</td><td>${cell(1,p1,c.q1)}</td><td>${cell(2,p2,c.q2)}</td><td>${bestPct===null?'—':bestPct+'%'} · ${att}</td></tr>`}).join('');
+}
+function ytId(u){const m=String(u).match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/);return m?m[1]:null}
+function driveId(u){const m=String(u).match(/drive\.google\.com\/file\/d\/([\w-]+)/);return m?m[1]:null}
+function vidCard(v){const y=ytId(v.url),d=driveId(v.url);let player=y?`<iframe src="https://www.youtube.com/embed/${y}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`:d?`<iframe src="https://drive.google.com/file/d/${d}/preview" allow="autoplay" allowfullscreen></iframe>`:/\.(mp4|webm|m4v)(\?|$)/i.test(v.url)?`<video controls src="${esc(v.url)}"></video>`:`<a class="btn g" href="${esc(v.url)}" target="_blank" rel="noopener">▶ Open video</a>`;return`<div class="vid">${player}<p style="margin:8px 0 0;font-size:14px"><b>${esc(v.title)}</b>${v.minutes?`<br><span style="color:var(--muted);font-size:12px">${esc(v.minutes)} min</span>`:''}</p></div>`}
+function showVids(ch){const vids=S.videos.filter(v=>v.chapter===ch);$('#vidPanel').innerHTML=`<div class="q"><div style="display:flex;justify-content:space-between"><div class="k">${esc(S.subject.code)} · Chapter ${ch} · class videos</div><button class="btn g s" onclick="$('#vidPanel').innerHTML=''">close</button></div><div class="vidgrid" style="margin-top:10px">${vids.map(vidCard).join('')}</div><p style="font-size:12px;color:var(--muted);margin:10px 0 0">Watch, then take Quiz 1 and Quiz 2 for this chapter.</p></div>`;$('#vidPanel').scrollIntoView({behavior:'smooth'})}
+
+/* ---------------- quiz ---------------- */
+let tInt=null;const LIMIT=12*60;
+async function startQuiz(ch,q){
+  S.chapter=ch;S.quiz=q;S.picks={};const c=S.subject.chapters.find(x=>x.chapter===ch);
+  $('#qzK').textContent=`${S.subject.code} · Chapter ${ch} · Quiz ${q} · ${q===1?'Ideas':'Applied'}`;$('#qzTitle').textContent=c.title;$('#qs').innerHTML='<span class="spin"></span> Preparing your questions…';$('#qzErr').innerHTML='';go('quiz');
+  try{ const j=await api('getQuiz',{subject:S.subject.code,chapter:ch,quiz:q,n:10}); S.questions=j.questions; }
+  catch(e){ $('#qs').innerHTML=`<div class="err">${esc(e.message)}</div>`; return; }
+  $('#qs').innerHTML=S.questions.map((x,n)=>`<div class="q" id="q-${x.id}"><div class="k">Q${n+1} of ${S.questions.length} · ${esc(x.clo)} · §${esc(x.sec)} · ${esc(x.bloom)}</div><div class="stem">${esc(x.stem)}</div>${x.options.map(o=>`<button class="opt" onclick="pick('${x.id}',this)">${esc(o)}</button>`).join('')}</div>`).join('');
+  S.start=Date.now();startTimer();
+}
+function pick(id,b){S.picks[id]=b.textContent;document.querySelectorAll(`#q-${CSS.escape(id)} .opt`).forEach(x=>x.classList.remove('pick'));b.classList.add('pick')}
+function startTimer(){stopTimer();const tick=()=>{const left=LIMIT-Math.floor((Date.now()-S.start)/1000);const el=$('#timer');el.textContent='⏱ '+String(Math.max(0,Math.floor(left/60))).padStart(2,'0')+':'+String(Math.max(0,left%60)).padStart(2,'0');el.classList.toggle('low',left<60);if(left<=0){stopTimer();submitQuiz(true)}};tick();tInt=setInterval(tick,1000)}
+function stopTimer(){if(tInt)clearInterval(tInt);tInt=null}
+async function submitQuiz(auto){
+  const unanswered=S.questions.filter(q=>!S.picks[q.id]).length;
+  if(!auto&&unanswered&&!confirm(`${unanswered} question${unanswered>1?'s':''} not answered. Submit anyway?`))return;
+  stopTimer();$('#submitBtn').disabled=true;$('#submitBtn').innerHTML='<span class="spin"></span>Marking…';
+  try{
+    const j=await api('submit',{studentId:S.student.studentId,subject:S.subject.code,chapter:S.chapter,quiz:S.quiz,seconds:Math.round((Date.now()-S.start)/1000),answers:S.questions.map(q=>({id:q.id,chosen:S.picks[q.id]||''}))});
+    renderResult(j);go('result');
+  }catch(e){ $('#qzErr').innerHTML=`<div class="err">Could not submit: ${esc(e.message)} — your answers are still on screen; try again.</div>`; }
+  $('#submitBtn').disabled=false;$('#submitBtn').textContent='Submit quiz';
+}
+function renderResult(j){
+  const pct=Math.round(100*j.score/j.total);const wrong=j.items.filter(i=>!i.ok).length;
+  const clo=Object.entries(j.byClo).map(([k,v])=>`${k}: ${v.ok}/${v.n}`).join(' · ');
+  $('#resHead').innerHTML=`<div class="q"><div class="k">${esc(S.subject.code)} · Chapter ${S.chapter} · Quiz ${S.quiz} · ${S.quiz===1?'Ideas':'Applied'} · attempt ${j.attemptNo} · saved as ${esc(j.codename)}</div><div class="big">${j.score}/${j.total} · ${pct}%</div><div class="bar" style="max-width:320px"><i style="width:${pct}%"></i></div><p style="margin:10px 0 0;color:var(--muted)">${clo}${j.attemptNo>1?` · your best on this quiz: ${j.best}/${j.total}`:''}.<br>${wrong===0?'No mistakes — well done.':`You made ${wrong} mistake${wrong>1?'s':''}. Each one is explained below with the slide section to re-read.`}</p></div>`;
+  $('#review').innerHTML=j.items.map((i,n)=>`<div class="q ${i.ok?'':'bad'}"><div class="k">Q${n+1} · ${esc(i.clo)} · §${esc(i.sec)} · ${i.ok?'<span style="color:var(--acc)">✓ correct</span>':'<span style="color:var(--red)">✗ wrong</span>'}</div><div class="stem">${esc(i.stem)}</div>${i.ok?'':`<div style="color:var(--red);font-size:14px">Your answer: ${i.chosen?esc(i.chosen):'(not answered)'}</div>`}<div style="color:var(--acc);font-size:14px">Correct answer: ${esc(i.correct)}</div><div style="color:var(--muted);font-size:13px;margin-top:6px"><b>Why:</b> ${esc(i.why)}</div></div>`).join('');
+}
+function retry(){startQuiz(S.chapter,S.quiz)}
+
+/* ---------------- dashboard ---------------- */
+async function openDash(){
+  go('dash');$('#dashSubj').textContent=S.subject.code+' '+S.subject.title;$('#dashBody').innerHTML='<span class="spin"></span> Loading…';
+  let d;try{d=await api('dashboard',{subject:S.subject.code})}catch(e){$('#dashBody').innerHTML=`<div class="err">${esc(e.message)}</div>`;return}
+  const me=S.student?.codename;const pct=v=>v===null||v===undefined?'—':v+'%';
+  $('#dashBody').innerHTML=`<div class="stats"><div class="stat"><div class="k">Students practising</div><b>${d.students}</b></div><div class="stat"><div class="k">Quizzes taken</div><b>${d.attempts}</b></div><div class="stat"><div class="k">Class average (best)</div><b>${pct(d.classAvgBest)}</b></div><div class="stat"><div class="k">Class average (first try)</div><b>${pct(d.classAvgFirst)}</b></div><div class="stat"><div class="k">Weakest section</div><b style="font-size:15px">${d.weakest[0]?esc(d.weakest[0].sec)+' · '+d.weakest[0].pct+'%':'—'}</b></div></div>
+  <h2>Marks by chapter (class averages)</h2><div style="overflow:auto"><table><tr><th>Chapter</th><th>Quiz 1 best</th><th class="hide-m">Quiz 1 first try</th><th>Quiz 2 best</th><th class="hide-m">Quiz 2 first try</th><th>Students</th></tr>${d.chapters.map(c=>`<tr><td>${c.chapter} ${esc(c.title)}</td><td>${pct(c.q1best)}</td><td class="hide-m">${pct(c.q1first)}</td><td>${pct(c.q2best)}</td><td class="hide-m">${pct(c.q2first)}</td><td>${c.students}</td></tr>`).join('')}</table></div>
+  ${d.weakest.length?`<h2>Sections the class finds hardest</h2><table>${d.weakest.map(w=>`<tr><td>${esc(w.sec)}</td><td><div class="bar" style="width:160px"><i style="width:${w.pct}%;background:${w.pct<60?'var(--red)':'var(--amb)'}"></i></div></td><td>${w.pct}% correct · ${w.n} answers</td></tr>`).join('')}</table>`:''}
+  <h2>Leaderboard (codenames)</h2><div style="overflow:auto"><table><tr><th>#</th><th>Codename</th><th>Quizzes</th><th>Best avg</th><th>First-try avg</th><th class="hide-m">Attempts</th></tr>${d.leaderboard.map((s,i)=>`<tr class="${s.codename===me?'you':''}"><td>${i+1}</td><td>${esc(s.codename)}${s.codename===me?' <span class="pill ok" style="cursor:default">you</span>':''}</td><td>${s.quizzesDone}</td><td><b>${pct(s.bestAvg)}</b></td><td>${pct(s.firstAvg)}</td><td class="hide-m">${s.attempts}</td></tr>`).join('')||'<tr><td colspan="6" style="color:var(--muted)">No attempts yet — be the first.</td></tr>'}</table></div>`;
+}
+
+/* ---------------- boot ---------------- */
+(async()=>{await loadCfg();renderWho();loadSubjects();})();
+</script></body></html>
