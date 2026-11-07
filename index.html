@@ -279,7 +279,7 @@ body.t-island .ringwrap .c{stroke:rgba(0,0,0,.12)}
   <aside class="side"><div class="journey vert" id="journey"></div><div class="sidehint" id="sideHint"></div></aside>
   <div class="qmain">
   <div class="hud">
-    <div class="hudk" id="hudStop">📍 <b id="stopNo">1</b>/10</div>
+    <div class="hudk" id="hudStop">📍 <b id="stopNo">1</b>/8</div>
     <div class="hudk" id="hudStreak">🔥 <b id="streak">0</b></div>
     <div class="hudk">✨ <b id="xp">0</b> XP</div>
     <div class="hudk" id="hudTries" title="chances at this stop">chances <b id="tries">●●●●</b></div>
@@ -392,7 +392,7 @@ function treasureCount(){return S.subject.chapters.filter(chDone).length}
 function bestPct(c){const b=[S.progress[c.chapter+'-1'],S.progress[c.chapter+'-2']].filter(Boolean);return b.length?Math.round(100*b.reduce((a,p)=>a+p.best/p.total,0)/b.length):null}
 async function openChapters(){
   stopTimer(); engine(false);go('chapters'); const s=S.subject,t=S.theme; $('#chPanel').innerHTML='';
-  $('#chHead').innerHTML=`<h1>${esc(t.name)}</h1><p class="sub"><b>${esc(s.code)} · ${esc(s.title)}</b><br>${esc(t.tag)} Two quizzes per chapter: <b>Quiz 1 · Ideas</b> checks understanding, <b>Quiz 2 · Applied</b> makes you apply and analyse. Levels open one at a time and <b>each quiz can be taken once</b>. Each quiz is a journey of 10 stops: answer correctly to move on; a wrong answer opens <b>another way</b> — a new question on the same idea — up to three times, then a study stop. Only your first answer at each stop counts for your mark.</p><div id="badgeBar"></div>`;
+  $('#chHead').innerHTML=`<h1>${esc(t.name)}</h1><p class="sub"><b>${esc(s.code)} · ${esc(s.title)}</b><br>${esc(t.tag)} Two quizzes per chapter: <b>Quiz 1 · Ideas</b> checks understanding, <b>Quiz 2 · Applied</b> makes you apply and analyse. Levels open one at a time and <b>each quiz can be taken once</b>. Each quiz is a journey of 8 stops: answer correctly to move on; a wrong answer opens <b>another way</b> — a new question on the same idea — up to three times, then a study stop. Only your first answer at each stop counts for your mark.</p><div id="badgeBar"></div>`;
   $('#chScene').innerHTML='<span class="spin"></span> Loading your progress…';
   try{ const [p,v]=await Promise.all([api('myProgress',{studentId:S.student.studentId,subject:s.code}),api('videos',{subject:s.code})]); S.progress=p.progress; S.levels=p.levels||[]; S.next=p.next||null; S.allDone=!!p.allDone; S.videos=v.videos; }catch(e){ S.progress={}; S.videos=[]; S.levels=[]; S.next=null; S.allDone=false; }
   renderBadgeBar();
@@ -437,7 +437,7 @@ function openChapterPanel(ch){
   const qb=(q,p,label,desc)=>{const st=qState(ch,q);
     if(st==='none')return`<div class="qb lock"><div class="k">Quiz ${q} · ${label}</div><div class="big">Coming soon</div><div class="m">${desc}</div></div>`;
     if(st==='done')return`<div class="qb done"><div class="k">Quiz ${q} · ${label}</div><div class="big">✅ ${p.best}/${p.total}</div><div class="m">${desc} · taken (one attempt only)</div></div>`;
-    if(st==='open')return`<div class="qb open" onclick="startQuiz(${ch},${q})"><div class="k">Quiz ${q} · ${label}</div><div class="big">▶ Play — open now</div><div class="m">${desc} · one attempt, 10 stops</div></div>`;
+    if(st==='open')return`<div class="qb open" onclick="startQuiz(${ch},${q})"><div class="k">Quiz ${q} · ${label}</div><div class="big">▶ Play — open now</div><div class="m">${desc} · one attempt, 8 stops</div></div>`;
     return`<div class="qb lock"><div class="k">Quiz ${q} · ${label}</div><div class="big">🔒 Locked</div><div class="m">${desc} · finish ${S.next?esc(t.chapterWord)+' '+S.next.chapter+' · Quiz '+S.next.quiz:'the earlier levels'} first</div></div>`};
   const done=chDone(c);
   $('#chPanel').innerHTML=`<div class="card" id="chCard"><div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start"><div><div class="k">${esc(t.chapterWord)} ${ch} · ${esc(c.clos||'')}</div><h2 style="margin:4px 0 0">${esc(c.title)}</h2></div><button class="btn g s" onclick="$('#chPanel').innerHTML=''">close</button></div>
@@ -456,7 +456,7 @@ async function sha(s){const b=await crypto.subtle.digest('SHA-256',enc.encode(s)
 async function startQuiz(ch,q){
   S.chapter=ch;S.quiz=q;S.answers={};S.idx=0;S.streak=0;S.bestStreak=0;S.xp=0;S.locked=false;S.retries=0;S.tries=0;S.studied=0;const c=S.subject.chapters.find(x=>x.chapter===ch);
   $('#qzK').textContent=`${S.subject.code} · ${S.theme.chapterWord} ${ch} · Quiz ${q} · ${q===1?'Ideas':'Applied'} · ${c.title}`;$('#qbox').innerHTML='<div class="qcard"><span class="spin"></span> Shuffling your questions…</div>';$('#qzErr').innerHTML='';$('#journey').innerHTML='';go('quiz');
-  try{ const j=await api('getQuiz',{subject:S.subject.code,chapter:ch,quiz:q,n:10,studentId:S.student.studentId}); S.questions=j.questions; S.salt=j.salt||''; }
+  try{ const j=await api('getQuiz',{subject:S.subject.code,chapter:ch,quiz:q,n:8,studentId:S.student.studentId}); S.questions=j.questions; S.salt=j.salt||''; }
   catch(e){ $('#qbox').innerHTML=`<div class="err">${esc(e.message)}</div>`; return; }
   // pre-compute which option is correct (salted hash from the server)
   const prep=async x=>{ x.correctIdx=-1; if(x.h&&S.salt){ const hs=await Promise.all(x.options.map(o=>sha(S.salt+'|'+o))); x.correctIdx=hs.indexOf(x.h);} };
