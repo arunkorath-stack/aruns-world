@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arun's World · Dr. Arun Korath</title>
+<meta name="description" content="Sail through the journey of Dr. Arun Korath — teaching, research, patents, industry work and Experimental Gamified Learning.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0e1a2b;--paper:#f6f1e7;--sea:#1b5e8a;--accent:#ff7a3d;--mint:#27c4a0;--card:rgba(255,255,255,.86);--txt:#14233a;--mut:#5b6b80}
+  html.night{--card:rgba(10,16,34,.86);--txt:#eaf0ff;--mut:#9fb0d0;--paper:#0b1020}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--paper);font-family:"Space Grotesk",ui-sans-serif,system-ui,sans-serif;color:var(--txt);-webkit-tap-highlight-color:transparent}
+  canvas{display:block}
+  #c{position:fixed;inset:0}
+  /* top bar */
+  #top{position:fixed;left:0;right:0;top:0;display:flex;align-items:center;justify-content:space-between;padding:16px 20px;z-index:10;pointer-events:none}
+  #top>*{pointer-events:auto}
+  #brand{font-family:"Syne",sans-serif;font-weight:800;font-size:18px;letter-spacing:-.01em;color:var(--txt);text-decoration:none;display:flex;align-items:center;gap:10px}
+  #brand i{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(255,122,61,.25)}
+  .tools{display:flex;gap:8px}
+  .tb{width:40px;height:40px;border-radius:12px;border:1px solid rgba(120,130,160,.35);background:var(--card);backdrop-filter:blur(8px);font-size:17px;cursor:pointer;color:var(--txt);display:grid;place-items:center}
+  .tb:hover{transform:translateY(-1px)}
+  /* intro */
+  #intro{position:fixed;inset:0;z-index:30;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;background:radial-gradient(ellipse at 50% 40%,rgba(255,255,255,.45),rgba(246,241,231,.1) 60%,rgba(246,241,231,0));transition:opacity .9s ease;cursor:pointer}
+  html.night #intro{background:radial-gradient(ellipse at 50% 40%,rgba(20,30,60,.55),rgba(11,16,32,0) 70%)}
+  #intro.gone{opacity:0;pointer-events:none}
+  #intro .k{font-size:12px;letter-spacing:.45em;text-transform:uppercase;color:var(--mut)}
+  #intro h1{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(44px,9vw,120px);line-height:.95;margin:6px 0;letter-spacing:-.03em;color:var(--txt)}
+  #intro h1 span{color:var(--accent)}
+  #intro p{max-width:520px;margin:4px 20px 10px;font-size:clamp(14px,1.6vw,17px);color:var(--mut)}
+  #intro .go{margin-top:8px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;font-size:13px;padding:14px 30px;border-radius:999px;background:var(--ink);color:#fff;animation:bob 1.8s ease-in-out infinite}
+  html.night #intro .go{background:#fff;color:#0b1020}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+  /* card */
+  #card{position:fixed;right:28px;top:50%;transform:translate(40px,-50%);width:min(400px,calc(100vw - 40px));max-height:calc(100vh - 140px);overflow:auto;z-index:9;opacity:0;pointer-events:none;transition:opacity .5s ease,transform .6s cubic-bezier(.2,.8,.2,1);
+    background:var(--card);backdrop-filter:blur(14px);border:1px solid rgba(120,130,160,.3);border-radius:22px;padding:22px 24px 20px;box-shadow:0 20px 60px rgba(0,0,0,.18)}
+  #card.show{opacity:1;pointer-events:auto;transform:translate(0,-50%)}
+  #card .n{font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--accent);font-weight:600}
+  #card h2{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(22px,2.6vw,30px);line-height:1.05;margin:8px 0 10px;letter-spacing:-.02em}
+  #card p{margin:0 0 10px;font-size:14.5px;line-height:1.55;color:var(--txt)}
+  #card ul{margin:6px 0 10px;padding-left:18px;font-size:14px;line-height:1.5}
+  #card li{margin:3px 0}
+  #card .chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 2px}
+  #card .chip{font-size:11.5px;padding:5px 10px;border-radius:999px;background:rgba(39,196,160,.14);color:var(--txt);border:1px solid rgba(39,196,160,.35)}
+  #card .stat{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0 6px}
+  #card .stat div{background:rgba(120,130,160,.12);border-radius:12px;padding:10px 8px;text-align:center}
+  #card .stat b{display:block;font-family:"Syne",sans-serif;font-size:22px;color:var(--accent)}
+  #card .stat small{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+  #card .btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  #card .btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:13.5px;padding:11px 16px;border-radius:12px;background:var(--ink);color:#fff;border:1px solid transparent;transition:transform .15s}
+  #card .btn.alt{background:transparent;color:var(--txt);border-color:rgba(120,130,160,.45)}
+  #card .btn:hover{transform:translateY(-2px)}
+  html.night #card .btn{background:#fff;color:#0b1020} html.night #card .btn.alt{background:transparent;color:#fff}
+  /* dock */
+  #dock{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:10;display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;background:var(--card);backdrop-filter:blur(12px);border:1px solid rgba(120,130,160,.3);box-shadow:0 10px 30px rgba(0,0,0,.15);max-width:calc(100vw - 24px)}
+  #dock .d{width:12px;height:12px;border-radius:50%;background:rgba(120,130,160,.35);border:0;padding:0;cursor:pointer;position:relative;transition:transform .2s,background .2s}
+  #dock .d.on{background:var(--accent);transform:scale(1.35)}
+  #dock .d.done{background:var(--mint)}
+  #dock .d:hover::after{content:attr(data-t);position:absolute;bottom:20px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:11px;padding:4px 8px;border-radius:6px;background:var(--ink);color:#fff}
+  #dock .lbl{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mut);margin:0 4px 0 8px;white-space:nowrap}
+  #dock .pct{font-family:"Syne",sans-serif;font-weight:800;font-size:14px;min-width:38px;text-align:right}
+  #hint{position:fixed;left:50%;bottom:72px;transform:translateX(-50%);font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--mut);z-index:9;opacity:.9;transition:opacity .5s;pointer-events:none;white-space:nowrap}
+  #hint.off{opacity:0}
+  #arrows{position:fixed;left:20px;bottom:22px;z-index:10;display:flex;gap:8px}
+  /* fallback */
+  #flat{display:none;position:fixed;inset:0;overflow:auto;z-index:5;padding:90px 20px 60px;background:linear-gradient(180deg,#cfe8f6,#f6f1e7 40%)}
+  #flat .f{max-width:620px;margin:0 auto 18px;background:#fff;border-radius:20px;padding:20px 24px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+  @media (max-width:760px){
+    #card{right:12px;left:12px;top:auto;bottom:84px;transform:translateY(30px);width:auto;max-height:46vh;padding:16px 18px}
+    #card.show{transform:none}
+    #hint{bottom:66px;font-size:10px}
+    #arrows{display:none}
+    #dock .lbl{display:none}
+  }
+</style>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js"}}</script>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="top">
+  <a id="brand" href="index.html" title="Back to the front page"><i></i>Arun's World</a>
+  <div class="tools">
+    <button class="tb" id="snd" title="Sound">🔈</button>
+    <button class="tb" id="mode" title="Day / night">🌙</button>
+  </div>
+</div>
+<div id="intro">
+  <div class="k">Dr. Arun Korath · Fujairah, UAE</div>
+  <h1>Arun's<br><span>World</span></h1>
+  <p>Twenty-three years of teaching, research and building across India, Ethiopia, Saudi Arabia and the Emirates — told as a voyage across nine islands.</p>
+  <div class="go">▶ Set sail</div>
+</div>
+<div id="card"></div>
+<div id="hint">Scroll · drag · ← → to sail</div>
+<div id="arrows"><button class="tb" id="prev" title="Previous stop">←</button><button class="tb" id="next" title="Next stop">→</button></div>
+<div id="dock"><span class="lbl">Voyage</span><span id="dots" style="display:flex;gap:10px"></span><span class="pct" id="pct">0%</span></div>
+<div id="flat"></div>
+
+<script>
+/* ===================== CONTENT (from the resume) ===================== */
+const STOPS = [
+ {id:'home', t:0.02, title:'Welcome aboard', n:'01 · Harbour',
+  html:`<p><b>Dr. Arun Korath</b> — Adjunct Faculty at the <b>University of Kalba</b> (since Aug 2024), formerly Associate Professor at the University of Fujairah. PhD in Management Sciences; engineer by first degree; teacher by calling.</p>
+  <div class="stat"><div><b>23</b><small>years teaching</small></div><div><b>4</b><small>countries</small></div><div><b>60+</b><small>publications</small></div></div>
+  <div class="chips"><span class="chip">MIS &amp; Analytics</span><span class="chip">AI in Education</span><span class="chip">Gamified Learning</span><span class="chip">Blockchain &amp; IoT</span></div>`},
+ {id:'edu', t:0.14, title:'The Academy', n:'02 · Education',
+  html:`<ul><li><b>PhD, Management Sciences</b> — Anna University, 2013 (MIS &amp; Operations; ERP effectiveness in commercial banks)</li><li><b>M.Tech (IT)</b> — Karnataka State Open University, 2012</li><li><b>MBA</b> — Kannur University, 2006</li><li><b>BE, Information Technology</b> — Sri Krishna College of Engineering &amp; Technology, Bharathiar University, 2003</li></ul>
+  <div class="chips"><span class="chip">CAA equivalency, UAE MoE</span><span class="chip">Harvard edX: Leadership · Entrepreneurship</span><span class="chip">Digital Marketing, Univ. of Maryland</span></div>`},
+ {id:'journey', t:0.26, title:'Four flags, one road', n:'03 · The Journey',
+  html:`<ul><li><b>2003</b> Lecturer, CSE — Vedavyasa Institute of Technology, Kerala</li><li><b>2006–14</b> Assistant → Associate Professor, Management Studies — VVIT</li><li><b>2014–17</b> Associate Professor — Dilla University, Ethiopia</li><li><b>2017–18</b> Assistant Professor — Saudi Electronic University (6 campuses)</li><li><b>2018–21</b> Director &amp; Professor — VVIT</li><li><b>2022–24</b> Associate Professor — University of Fujairah, UAE</li><li><b>2024–</b> Adjunct Faculty — University of Kalba, UAE</li></ul>`},
+ {id:'research', t:0.38, title:'The Observatory', n:'04 · Research',
+  html:`<p>Sixty-plus papers across MIS, e-banking, ERP, ad-hoc networks, AI in education and blockchain security — with recent work in Springer, MDPI <i>Information</i> and IEEE Xplore.</p>
+  <div class="stat"><div><b>6</b><small>IEEE Xplore</small></div><div><b>3</b><small>funded projects</small></div><div><b>9</b><small>journal boards</small></div></div>
+  <ul><li>Tamper-evident data &amp; model provenance for IoT ML using blockchain — <i>Information</i> (MDPI), 2026</li><li>Explainable AI for blockchain-based intrusion detection in critical infrastructure, 2025</li><li>Beyond GDP through AI: a holistic economic model for the UAE — IEEE ICCAMS, 2025</li></ul>
+  <div class="chips"><span class="chip">ORCID 0000-0001-5456-8273</span><span class="chip">Scopus 58816435800</span><span class="chip">IEEE · ACM member</span></div>`},
+ {id:'patent', t:0.50, title:'The Workshop', n:'05 · Patents & inventions',
+  html:`<ul><li><b>Granted</b> — Intelligent ingredient analysis for pre-packed food (Govt. of India, 2025)</li><li><b>Published</b> — Face recognition using AI (India, 2022)</li><li><b>Published</b> — Industrial IoT device management with LwM2M (Australia, 2020)</li><li><b>Published</b> — Location-based medical records for rural elderly care (India, 2020)</li></ul>
+  <div class="chips"><span class="chip">1 granted</span><span class="chip">3 published</span><span class="chip">AI · IoT · HealthTech</span></div>`},
+ {id:'industry', t:0.62, title:'The City', n:'06 · Industry',
+  html:`<p>Consulting alongside teaching — turning classroom analytics into boardroom dashboards.</p>
+  <ul><li><b>Emirates NBD</b>, Dubai — business-analytics support: KPI design, dashboard specs (2024–)</li><li><b>G42</b>, Abu Dhabi — comparative analysis of AI models for job-market sentiment (2023–)</li><li><b>Cognizant</b>, Kochi — automation solution reviews (2022–)</li><li><b>TCS</b>, Trivandrum — IT-strategy benchmarking (2018–)</li><li><b>IBS Software</b> — SaaS competitive evaluation (2017–)</li></ul>`},
+ {id:'gamified', t:0.74, title:'Experimental Gamified Learning', n:'07 · The Arena',
+  html:`<p>Every chapter is a world, every quiz is a race. Students drive, sail and rescue their way through MGMT160, MGMT363 and MGMT464 — with enacted scenes, 3D tracks and an anonymised class dashboard.</p>
+  <div class="stat"><div><b>3</b><small>courses</small></div><div><b>29</b><small>chapters</small></div><div><b>1,859</b><small>questions</small></div></div>
+  <div class="btns"><a class="btn" href="quiz.html">🎓 Enter as a student</a><a class="btn alt" href="teacher.html">🔑 Teacher panel</a></div>`},
+ {id:'writing', t:0.86, title:'The Press', n:'08 · Writing & bridges',
+  html:`<p><b>47 columns</b> in <i>The Ethiopian Herald</i> (2015–16) on leadership, happiness, education and development — and five university MoUs brokered across three continents.</p>
+  <ul><li>Dilla University ↔ Portland State University, USA (2016)</li><li>Dilla University ↔ Near East University, Cyprus (2016)</li><li>VVIT ↔ Daffodil University, Bangladesh · National University of Laos (2022)</li></ul>
+  <div class="chips"><span class="chip">75+ webinars organised</span><span class="chip">ABET · CAA · NBA accreditation</span></div>`},
+ {id:'contact', t:0.97, title:'The Lighthouse', n:'09 · Contact',
+  html:`<p>Open to collaboration on AI in education, analytics and gamified learning.</p>
+  <div class="btns"><a class="btn" href="mailto:arunkorath@gmail.com">✉ arunkorath@gmail.com</a><a class="btn alt" href="https://orcid.org/0000-0001-5456-8273" target="_blank" rel="noopener">ORCID</a><a class="btn alt" href="https://shorturl.at/b11Xb" target="_blank" rel="noopener">Google Scholar</a></div>
+  <p style="margin-top:12px;color:var(--mut);font-size:13px">University of Kalba · Fujairah, United Arab Emirates</p>`}
+];
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+const $ = s => document.querySelector(s);
+const canvas = $('#c');
+let renderer;
+try { renderer = new THREE.WebGLRenderer({canvas, antialias:true, powerPreference:'high-performance'}); }
+catch(e){ renderer = null; }
+
+/* ===================== FALLBACK (no WebGL) ===================== */
+if(!renderer){
+  const f=$('#flat'); f.style.display='block';
+  f.innerHTML = '<div class="f" style="text-align:center"><div style="font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:#5b6b80">Dr. Arun Korath</div><h1 style="font-family:Syne,sans-serif;font-size:44px;margin:6px 0">Arun\'s World</h1><p style="color:#5b6b80">Your browser could not start 3D graphics right now (restart the browser to sail the islands). Here is the voyage as a scroll.</p></div>' + STOPS.map(s=>`<div class="f"><div style="font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:#ff7a3d;font-weight:600">${s.n}</div><h2 style="font-family:Syne,sans-serif;margin:6px 0 10px">${s.title}</h2>${s.html}</div>`).join('');
+  $('#intro').remove(); $('#dock').remove(); $('#hint').remove(); $('#arrows').remove();
+  document.body.style.overflow='auto';
+} else {
+
+/* ===================== SCENE ===================== */
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.05;
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(50, 1, .1, 2000);
+const DAY = {sky:0xbfe3f7, horizon:0xeaf4fb, fog:0xd7ecf7, sun:0xfff2d6, sunI:2.4, hemi:0xcfe9ff, ground:0x7aa36b, hemiI:.9, water:0x2d8fc0, deep:0x0f4f78, foam:0xcfefff, exp:1.05};
+const NIGHT = {sky:0x0a1230, horizon:0x1b2a5a, fog:0x0c1536, sun:0xa9c0ff, sunI:.9, hemi:0x2a3c7a, ground:0x0e1a2a, hemiI:.35, water:0x0f3a62, deep:0x061a30, foam:0x6fa5d6, exp:.75};
+let night = false; const cur = {...DAY}; const col = k => new THREE.Color(cur[k]);
+scene.fog = new THREE.Fog(DAY.fog, 90, 420);
+const hemi = new THREE.HemisphereLight(DAY.hemi, DAY.ground, DAY.hemiI); scene.add(hemi);
+const sun = new THREE.DirectionalLight(DAY.sun, DAY.sunI); sun.position.set(120, 160, 60); sun.castShadow = true;
+sun.shadow.mapSize.set(2048, 2048); sun.shadow.camera.left = sun.shadow.camera.bottom = -140; sun.shadow.camera.right = sun.shadow.camera.top = 140; sun.shadow.camera.far = 500; sun.shadow.bias = -.0005; scene.add(sun);
+const sunTarget = new THREE.Object3D(); scene.add(sunTarget); sun.target = sunTarget;
+
+// sky dome
+const skyGeo = new THREE.SphereGeometry(900, 24, 12);
+const skyMat = new THREE.ShaderMaterial({side: THREE.BackSide, depthWrite:false, uniforms:{top:{value:new THREE.Color(DAY.sky)}, bot:{value:new THREE.Color(DAY.horizon)}},
+  vertexShader:`varying vec3 vP; void main(){ vP = position; gl_Position = projectionMatrix*modelViewMatrix*vec4(position,1.); }`,
+  fragmentShader:`uniform vec3 top,bot; varying vec3 vP; void main(){ float h = normalize(vP).y; gl_FragColor = vec4(mix(bot, top, smoothstep(-.05,.45,h)),1.); }`});
+scene.add(new THREE.Mesh(skyGeo, skyMat));
+// stars (night only)
+const starGeo = new THREE.BufferGeometry(); { const n=900, a=new Float32Array(n*3); for(let i=0;i<n;i++){ const th=Math.random()*6.283, ph=Math.acos(Math.random()*.9+.1); a[i*3]=800*Math.sin(ph)*Math.cos(th); a[i*3+1]=800*Math.cos(ph); a[i*3+2]=800*Math.sin(ph)*Math.sin(th);} starGeo.setAttribute('position', new THREE.BufferAttribute(a,3)); }
+const stars = new THREE.Points(starGeo, new THREE.PointsMaterial({color:0xffffff, size:2.2, sizeAttenuation:false, transparent:true, opacity:0})); scene.add(stars);
+// sun / moon disc
+const disc = new THREE.Mesh(new THREE.SphereGeometry(14, 16, 16), new THREE.MeshBasicMaterial({color:0xfff4c2, fog:false})); disc.position.set(420, 260, -520); scene.add(disc);
+
+// water
+const waterU = {t:{value:0}, c1:{value:new THREE.Color(DAY.water)}, c2:{value:new THREE.Color(DAY.deep)}, foam:{value:new THREE.Color(DAY.foam)}, fogColor:{value:new THREE.Color(DAY.fog)}, fogNear:{value:90}, fogFar:{value:420}, sunDir:{value:new THREE.Vector3(.5,.6,.3).normalize()}};
+const water = new THREE.Mesh(new THREE.PlaneGeometry(1600, 1600, 160, 160), new THREE.ShaderMaterial({uniforms:waterU, transparent:true,
+  vertexShader:`uniform float t; varying float vH; varying vec3 vW; varying vec3 vN;
+    void main(){ vec3 p = position; float h = sin(p.x*.08 + t*1.1)*.45 + cos(p.y*.11 - t*.9)*.35 + sin((p.x+p.y)*.05 + t*.6)*.5; p.z += h; vH = h;
+      float dx = cos(p.x*.08 + t*1.1)*.036 + cos((p.x+p.y)*.05 + t*.6)*.025; float dy = -sin(p.y*.11 - t*.9)*.0385 + cos((p.x+p.y)*.05 + t*.6)*.025;
+      vN = normalize(vec3(-dx, 1.0, -dy)); vec4 w = modelMatrix*vec4(p,1.); vW = w.xyz; gl_Position = projectionMatrix*viewMatrix*w; }`,
+  fragmentShader:`uniform vec3 c1,c2,foam,fogColor,sunDir; uniform float fogNear,fogFar; varying float vH; varying vec3 vW; varying vec3 vN;
+    void main(){ vec3 col = mix(c2, c1, smoothstep(-1.2, 1.2, vH)); vec3 V = normalize(cameraPosition - vW); vec3 H = normalize(V + sunDir); float spec = pow(max(dot(vN, H), 0.), 90.); col += spec*.6;
+      float fres = pow(1.-max(dot(vN,V),0.), 3.); col = mix(col, foam, fres*.35);
+      float d = length(cameraPosition - vW); float f = smoothstep(fogNear, fogFar, d); col = mix(col, fogColor, f); gl_FragColor = vec4(col, .96); }`}));
+water.rotation.x = -Math.PI/2; water.position.y = 0; scene.add(water);
+
+/* ===================== LOW-POLY HELPERS ===================== */
+const flat = (c, extra={}) => new THREE.MeshStandardMaterial({color:c, flatShading:true, roughness:.9, metalness:0, ...extra});
+const M = {sand:flat(0xf1dcae), grass:flat(0x6fb55f), grass2:flat(0x4f9a4a), rock:flat(0x8c8f99), trunk:flat(0x7a4f2a), leaf:flat(0x2f8f4e), leaf2:flat(0x3fae5c), palm:flat(0x3c9b4a), wall:flat(0xf4efe4), wall2:flat(0xe9dcc3), roof:flat(0xd9553f), roof2:flat(0x3b6fb0), dark:flat(0x2b3140), white:flat(0xffffff), gold:flat(0xf3c14a,{metalness:.4,roughness:.5}), red:flat(0xe2453b), orange:flat(0xff7a3d), mint:flat(0x27c4a0), glass:new THREE.MeshStandardMaterial({color:0x9fd8ff, roughness:.2, metalness:.1, transparent:true, opacity:.7}), win:new THREE.MeshStandardMaterial({color:0x8fb8ff, emissive:0xffd27a, emissiveIntensity:0, roughness:.5})};
+const winMats = [M.win];
+function mesh(g, m, x=0, y=0, z=0, parent){ const o = new THREE.Mesh(g, m); o.position.set(x,y,z); o.castShadow = true; o.receiveShadow = true; (parent||scene).add(o); return o; }
+function jitter(geo, amt){ const p = geo.attributes.position; for(let i=0;i<p.count;i++){ p.setXYZ(i, p.getX(i)+(Math.random()-.5)*amt, p.getY(i)+(Math.random()-.5)*amt*.5, p.getZ(i)+(Math.random()-.5)*amt); } geo.computeVertexNormals(); return geo; }
+function tree(p, x, z, s=1){ const g = new THREE.Group(); mesh(new THREE.CylinderGeometry(.25*s,.4*s,1.6*s,5), M.trunk, 0,.8*s,0,g); mesh(jitter(new THREE.ConeGeometry(1.6*s,2.6*s,6),.25), Math.random()<.5?M.leaf:M.leaf2, 0,2.6*s,0,g); mesh(jitter(new THREE.ConeGeometry(1.15*s,2.2*s,6),.2), M.leaf2, 0,4*s,0,g); g.position.set(x,0,z); g.rotation.y=Math.random()*6.28; p.add(g); return g; }
+function palm(p, x, z, s=1){ const g = new THREE.Group(); const segs=5; let y=0, lean=(Math.random()-.5)*.25; for(let i=0;i<segs;i++){ const c=mesh(new THREE.CylinderGeometry(.22*s,.3*s,1.1*s,5), M.trunk, lean*i*1.1*s, y+.55*s, 0, g); c.rotation.z=lean; y+=1.05*s; } const top=new THREE.Group(); top.position.set(lean*segs*1.1*s, y, 0); for(let i=0;i<7;i++){ const l=mesh(new THREE.BoxGeometry(2.6*s,.08*s,.6*s), M.palm, 0,0,0,top); l.position.set(Math.cos(i/7*6.28)*1.2*s, .2*s, Math.sin(i/7*6.28)*1.2*s); l.rotation.y=-i/7*6.28; l.rotation.z=-.5; } g.add(top); mesh(new THREE.SphereGeometry(.25*s,6,6), M.trunk, lean*segs*1.1*s, y-.1*s, 0, g); g.position.set(x,0,z); p.add(g); return g; }
+function rock(p, x, z, s=1){ const r = mesh(jitter(new THREE.DodecahedronGeometry(s,0),.3*s), M.rock, x, s*.4, z, p); r.rotation.set(Math.random(),Math.random(),Math.random()); return r; }
+function house(p, x, z, w=3, d=3, h=2.4, roofM=M.roof, wallM=M.wall){ const g=new THREE.Group(); mesh(new THREE.BoxGeometry(w,h,d), wallM, 0,h/2,0,g); const r=mesh(new THREE.ConeGeometry(Math.max(w,d)*.78,1.6,4), roofM, 0,h+.8,0,g); r.rotation.y=Math.PI/4; mesh(new THREE.BoxGeometry(.7,1,.1), M.dark, 0,.5,d/2+.02,g); mesh(new THREE.BoxGeometry(.6,.6,.1), M.win, w/4+.3,1.4,d/2+.02,g); g.position.set(x,0,z); p.add(g); return g; }
+function tower(p, x, z, w, h, win=true){ const g=new THREE.Group(); mesh(new THREE.BoxGeometry(w,h,w), M.wall2, 0,h/2,0,g); if(win){ for(let y=1; y<h-.6; y+=1.3){ for(let i=-1;i<=1;i++){ mesh(new THREE.BoxGeometry(.5,.7,.08), M.win, i*w*.3, y, w/2+.03, g); mesh(new THREE.BoxGeometry(.08,.7,.5), M.win, w/2+.03, y, i*w*.3, g); } } } g.position.set(x,0,z); p.add(g); return g; }
+function label(p, text, y=9, scale=1){ const c=document.createElement('canvas'); c.width=512; c.height=128; const ctx=c.getContext('2d'); ctx.font='800 54px Syne, sans-serif'; ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.fillStyle='rgba(14,26,43,.85)'; const w=ctx.measureText(text).width+48; ctx.beginPath(); ctx.roundRect(256-w/2, 22, w, 84, 24); ctx.fill(); ctx.fillStyle='#fff'; ctx.fillText(text, 256, 66); const tx=new THREE.CanvasTexture(c); tx.anisotropy=4; const s=new THREE.Sprite(new THREE.SpriteMaterial({map:tx, transparent:true, depthWrite:false})); s.scale.set(14*scale, 3.5*scale, 1); s.position.set(0,y,0); p.add(s); return s; }
+function flag(p, x, z, stripes, h=6){ const g=new THREE.Group(); mesh(new THREE.CylinderGeometry(.08,.1,h,6), M.dark, 0,h/2,0,g); const n=stripes.length; stripes.forEach((c,i)=>{ mesh(new THREE.BoxGeometry(2.4,1.4/n,.05), flat(c), 1.2, h-.7-(i+.5)*1.4/n+.7, 0, g); }); g.position.set(x,0,z); p.add(g); return g; }
+
+/* ===================== ISLANDS ===================== */
+const stops = STOPS.map(s => ({...s}));
+// path over the sea (x,z); islands sit just off the path
+const pathPts = [[-150,120],[-110,70],[-60,45],[-15,70],[30,40],[60,-5],[30,-50],[-20,-70],[-60,-110],[-20,-150],[40,-165],[100,-140],[150,-100]].map(a=>new THREE.Vector3(a[0],0,a[1]));
+const curve = new THREE.CatmullRomCurve3(pathPts, false, 'catmullrom', .4);
+const isles = [];
+function island(stop, side, r, h){
+  const t = stop.t; const p = curve.getPointAt(t), tan = curve.getTangentAt(t); const n = new THREE.Vector3(-tan.z,0,tan.x).multiplyScalar(side*(r+9));
+  const c = p.clone().add(n); const g = new THREE.Group(); g.position.copy(c); g.userData.stop = stop;
+  // base: sand shelf + grass mound
+  const sand = mesh(jitter(new THREE.CylinderGeometry(r+2.5, r+4, 1.2, 14), .6), M.sand, 0,.3,0,g);
+  const land = mesh(jitter(new THREE.CylinderGeometry(r, r+1.8, h, 12), .9), M.grass, 0, h/2+.6, 0, g);
+  land.geometry.translate(0,0,0);
+  const top = h+.6; g.userData.top = top; g.userData.r = r;
+  for(let i=0;i<6;i++){ const a=Math.random()*6.28, d=r+1.5+Math.random()*2; rock(g, Math.cos(a)*d, Math.sin(a)*d, .5+Math.random()*.7); }
+  scene.add(g); isles.push(g); stop.pos = c; stop.group = g; stop.side = side; return g;
+}
+const S = Object.fromEntries(stops.map(s=>[s.id,s]));
+// 01 Harbour — home
+{ const g = island(S.home, 1, 11, 2.4), y = g.userData.top; const grp = new THREE.Group(); grp.position.y = y; g.add(grp);
+  house(grp, -2, 1, 4, 3.4, 2.6); house(grp, 3.5, -2.5, 2.6, 2.6, 2, M.roof2);
+  palm(grp, -6, -4, 1.1); palm(grp, 6, 3, .9); palm(grp, -5, 5, 1); tree(grp, 2, 5, .8);
+  // pier
+  const pier = mesh(new THREE.BoxGeometry(2, .3, 9), M.trunk, 0, -y+1.1, -13, g); for(let i=0;i<4;i++) mesh(new THREE.CylinderGeometry(.18,.18,2.2,6), M.trunk, (i%2?-.8:.8), -y+.4, -10-i*2.2, g);
+  // lanterns
+  [[-4,-1],[4,1]].forEach(([x,z])=>{ mesh(new THREE.CylinderGeometry(.08,.1,3,6), M.dark, x, 1.5, z, grp); const l = mesh(new THREE.SphereGeometry(.3,8,8), new THREE.MeshStandardMaterial({color:0xffe29a, emissive:0xffb347, emissiveIntensity:0}), x, 3.1, z, grp); winMats.push(l.material); });
+  label(g, 'Harbour', y+8); }
+// 02 Academy
+{ const g = island(S.edu, -1, 12, 3), y = g.userData.top; const grp = new THREE.Group(); grp.position.y = y; g.add(grp);
+  mesh(new THREE.BoxGeometry(9, .6, 7), M.wall2, 0, .3, 0, grp); mesh(new THREE.BoxGeometry(8, 3, 6), M.wall, 0, 2.1, 0, grp);
+  for(let i=-3;i<=3;i+=1.5) mesh(new THREE.CylinderGeometry(.3,.3,3.2,8), M.white, i, 2.2, 3.4, grp);
+  mesh(new THREE.BoxGeometry(9.4, .5, 7.6), M.wall2, 0, 3.85, 0, grp); const pd = mesh(new THREE.ConeGeometry(5.2, 1.6, 4), M.roof2, 0, 4.9, 0, grp); pd.rotation.y = Math.PI/4;
+  mesh(new THREE.SphereGeometry(1.6, 10, 8, 0, 6.28, 0, 1.57), M.gold, 0, 5.3, 0, grp);
+  // graduation cap
+  const cap = new THREE.Group(); cap.position.set(0, 9, 0); mesh(new THREE.CylinderGeometry(1,1,.9,12), M.dark, 0,0,0,cap); const b = mesh(new THREE.BoxGeometry(3,.18,3), M.dark, 0,.5,0,cap); b.rotation.y=.6; mesh(new THREE.CylinderGeometry(.05,.05,1.2,4), M.gold, 1.1,.1,1.1,cap); cap.userData.spin = true; grp.add(cap);
+  tree(grp, -7, 3, 1); tree(grp, 7, -3, 1.1); tree(grp, 6, 4, .8);
+  label(g, 'The Academy', y+13); }
+// 03 Journey — four flags
+{ const g = island(S.journey, 1, 13, 2), y = g.userData.top; const grp = new THREE.Group(); grp.position.y = y; g.add(grp);
+  const road = mesh(new THREE.BoxGeometry(2.2, .12, 20), M.dark, 0, .06, 0, grp); road.rotation.y = .3;
+  flag(grp, -7, -6, [0xff9933,0xffffff,0x138808]);        // India
+  flag(grp, -2.5, -1, [0x078930,0xfcdd09,0xda121a]);      // Ethiopia
+  flag(grp, 2.5, 3.5, [0x006c35,0x006c35]);               // Saudi
+  flag(grp, 7, 7.5, [0xff0000,0x00732f,0xffffff,0x000000]); // UAE
+  [[-9,2],[5,-7],[9,0]].forEach(([x,z])=>tree(grp,x,z,.9)); palm(grp, -4, 7, 1);
+  // milestone signpost
+  const sp = new THREE.Group(); sp.position.set(0, 0, -9); mesh(new THREE.CylinderGeometry(.12,.14,4.5,6), M.trunk, 0,2.2,0,sp); [[3.6,.9,M.orange],[3,-.6,M.mint],[2.4,.9,M.roof2]].forEach(([yy,rot,mm])=>{ const s=mesh(new THREE.BoxGeometry(2.2,.5,.12), mm, 0,yy,0,sp); s.rotation.y=rot; }); grp.add(sp);
+  label(g, 'The Journey', y+11); }
+// 04 Observatory
+{ const g = island(S.research, -1, 11, 5), y = g.userData.top; const grp = new THREE.Group(); grp.position.y = y; g.add(grp);
+  mesh(new THREE.CylinderGeometry(3.2, 3.6, 4, 12), M.wall, 0, 2, 0, grp); const dome = mesh(new THREE.SphereGeometry(3.3, 14, 10, 0, 6.28, 0, 1.6), M.roof2, 0, 4, 0, grp);
+  const scope = mesh(new THREE.CylinderGeometry(.35,.5,4.2,8), M.dark, .4, 6.2, -.6, grp); scope.rotation.x = -.9; scope.userData.scope = true;
+  // books
+  [[-6,2,M.red],[-6.6,2.4,M.roof2],[-5.6,2.6,M.gold],[-6.1,2.1,M.mint]].forEach(([x,z,m],i)=>{ const b=mesh(new THREE.BoxGeometry(2.2,.45,1.6), m, x, .25+i*.45, z, grp); b.rotation.y=i*.35; });
+  tree(grp, 6, 3, 1); tree(grp, 5, -5, .8); rock(grp, -3, -6, 1);
+  label(g, 'The Observatory', y+12); }
+// 05 Workshop — gears & bulb
+{ const g = island(S.patent, 1, 11, 2.6), y = g.userData.top; const grp = new THREE.Group(); grp.position.y = y; g.add(grp);
+  house(grp, 0, 0, 6, 4.5, 3, M.dark, M.wall2); mesh(new THREE.CylinderGeometry(.5,.6,3,8), M.rock, 2.2, 5.5, -1, grp);
+  const gearG = (r, n) => { const gg = new THREE.Group(); mesh(new THREE.CylinderGeometry(r, r, .5, 12), M.gold, 0,0,0,gg); for(let i=0;i<n;i++){ const t = mesh(new THREE.BoxGeometry(.5,.5,.9), M.gold, Math.cos(i/n*6.28)*(r+.3), 0, Math.sin(i/n*6.28)*(r+.3), gg); t.rotation.y = -i/n*6.28; } gg.rotation.x = Math.PI/2; return gg; };
+  const g1 = gearG(1.6, 10); g1.position.set(-4.2, 4, 2.6); g1.userData.gear = 1; grp.add(g1); const g2 = gearG(1, 7); g2.position.set(-1.6, 5.3, 2.6); g2.userData.gear = -1.6; grp.add(g2);
+  // bulb
+  const bulb = mesh(new THREE.SphereGeometry(1.1, 12, 10), new THREE.MeshStandardMaterial({color:0xfff2b0, emissive:0xffd54a, emissiveIntensity:.6, transparent:true, opacity:.9}), 4.5, 7.5, 1.5, grp); mesh(new THREE.CylinderGeometry(.5,.6,1,8), M.rock, 4.5, 6.2, 1.5, grp); bulb.userData.bulb = true;
+  tree(grp, -7, -3, .9); palm(grp, 7, -4, .9);
+  label(g, 'The Workshop', y+12); }
+// 06 The City — skyline
+{ const g = island(S.industry, -1, 14, 2), y = g.userData.top; const grp = new THREE.Group(); grp.position.y = y; g.add(grp);
+  [[-7,-2,2.6,9],[-3.5,2,3,13],[0,-3,2.8,17],[3.8,2.5,2.6,11],[7.5,-1.5,2.4,8],[1,5.5,2,6],[-6,5,2,5]].forEach(([x,z,w,h])=>tower(grp,x,z,w,h));
+  mesh(new THREE.CylinderGeometry(.06,.1,4,5), M.dark, 0, 19, -3, grp); const beacon = mesh(new THREE.SphereGeometry(.3,6,6), new THREE.MeshStandardMaterial({color:0xff4040, emissive:0xff2020, emissiveIntensity:1.2}), 0, 21, -3, grp); beacon.userData.blink = true;
+  palm(grp, -10, 7, .9); palm(grp, 10, 6, .9);
+  label(g, 'The City', y+25, 1.1); }
+// 07 The Arena — gamified learning
+{ const g = island(S.gamified, 1, 14, 2.4), y = g.userData.top; const grp = new THREE.Group(); grp.position.y = y; g.add(grp);
+  // stadium ring
+  const ring = mesh(new THREE.TorusGeometry(8, 1.4, 8, 28), M.wall, 0, 1, 0, grp); ring.rotation.x = Math.PI/2; ring.scale.set(1,.8,1);
+  const track = mesh(new THREE.RingGeometry(3.5, 6.5, 32), M.dark, 0, .08, 0, grp); track.rotation.x = -Math.PI/2;
+  const lane = mesh(new THREE.RingGeometry(4.9, 5.1, 32), M.white, 0, .1, 0, grp); lane.rotation.x = -Math.PI/2;
+  // neon gate (Night Drive nod)
+  const gate = mesh(new THREE.TorusGeometry(2.6, .22, 8, 20, Math.PI), new THREE.MeshStandardMaterial({color:0x27c4a0, emissive:0x27c4a0, emissiveIntensity:1.5}), 0, .3, -6.5, grp);
+  // tiny race car on the track
+  const car = new THREE.Group(); mesh(new THREE.BoxGeometry(1.4,.45,.8), M.orange, 0,.4,0,car); mesh(new THREE.BoxGeometry(.7,.35,.7), M.dark, -.1,.75,0,car); [[-.45,.45],[-.45,-.45],[.45,.45],[.45,-.45]].forEach(([x,z])=>{ const w=mesh(new THREE.CylinderGeometry(.2,.2,.2,8), M.dark, x,.2,z,car); w.rotation.x=Math.PI/2; }); car.userData.lap = true; grp.add(car);
+  // floating ? blocks + trophy
+  for(let i=0;i<3;i++){ const q = mesh(new THREE.BoxGeometry(1,1,1), M.gold, -6+i*6, 6+i*.6, 7, grp); q.userData.float = i; }
+  const cup = new THREE.Group(); cup.position.set(0, 3.2, 0); mesh(new THREE.CylinderGeometry(.9,.5,1.3,10), M.gold, 0,.7,0,cup); mesh(new THREE.CylinderGeometry(.2,.2,.8,6), M.gold, 0,-.3,0,cup); mesh(new THREE.BoxGeometry(1.4,.3,1.4), M.dark, 0,-.8,0,cup); cup.userData.spin = true; grp.add(cup);
+  // checkered flag
+  const fg = new THREE.Group(); fg.position.set(8.5, 0, -2); mesh(new THREE.CylinderGeometry(.08,.1,5,6), M.dark, 0,2.5,0,fg); for(let i=0;i<4;i++) for(let j=0;j<3;j++) mesh(new THREE.BoxGeometry(.55,.4,.05), (i+j)%2?M.white:M.dark, .4+i*.55, 4.7-j*.4, 0, fg); grp.add(fg);
+  palm(grp, -11, -5, 1); palm(grp, 11, 5, 1); palm(grp, -10, 7, .8);
+  label(g, 'Gamified Learning', y+13, 1.15); }
+// 08 The Press
+{ const g = island(S.writing, -1, 10, 2.2), y = g.userData.top; const grp = new THREE.Group(); grp.position.y = y; g.add(grp);
+  house(grp, 0, 0, 4.5, 3.2, 2.8, M.orange, M.wall2); mesh(new THREE.BoxGeometry(4.9, .25, 1.2), M.roof2, 0, 2.2, 2.2, grp);
+  // newspaper stacks
+  for(let i=0;i<5;i++){ const s = mesh(new THREE.BoxGeometry(1.6, .22, 1.1), M.white, 3.6, .11+i*.24, 1+(i%2)*.1, grp); s.rotation.y = i*.12; }
+  // bridge arch (MoUs)
+  const arch = mesh(new THREE.TorusGeometry(3, .35, 8, 18, Math.PI), M.wall, -5, 0, -3, grp); arch.rotation.y = .4;
+  tree(grp, 5, -4, .9); tree(grp, -6, 4, 1);
+  label(g, 'The Press', y+10); }
+// 09 Lighthouse
+{ const g = island(S.contact, 1, 9, 3.5), y = g.userData.top; const grp = new THREE.Group(); grp.position.y = y; g.add(grp);
+  for(let i=0;i<5;i++) mesh(new THREE.CylinderGeometry(1.5-i*.12, 1.62-i*.12, 1.8, 12), i%2?M.red:M.white, 0, .9+i*1.8, 0, grp);
+  mesh(new THREE.CylinderGeometry(1.4,1.4,.3,12), M.dark, 0, 9.2, 0, grp); const lamp = mesh(new THREE.CylinderGeometry(.9,.9,1.4,10), M.glass, 0, 10, 0, grp); mesh(new THREE.ConeGeometry(1.4, 1.2, 12), M.red, 0, 11.3, 0, grp);
+  const beam = new THREE.Mesh(new THREE.ConeGeometry(7, 40, 16, 1, true), new THREE.MeshBasicMaterial({color:0xfff1b0, transparent:true, opacity:.14, side:THREE.DoubleSide, depthWrite:false})); beam.rotation.z = Math.PI/2; beam.position.set(20, 10, 0); const beamG = new THREE.Group(); beamG.position.set(0,0,0); beamG.add(beam); beamG.userData.beam = true; grp.add(beamG);
+  house(grp, 4, 3, 2.4, 2.2, 1.8, M.roof2); palm(grp, -4, 3, .9); rock(grp, 3, -4, 1.1);
+  label(g, 'The Lighthouse', y+15); }
+
+// extra uninhabited islets + sea rocks for depth
+for(let i=0;i<26;i++){ const t = Math.random(); const p = curve.getPointAt(t), tan = curve.getTangentAt(t); const side = Math.random()<.5?-1:1; const d = 36 + Math.random()*90; const c = p.clone().add(new THREE.Vector3(-tan.z,0,tan.x).multiplyScalar(side*d)); const r = 3+Math.random()*7, h = 1+Math.random()*5; const g = new THREE.Group(); g.position.copy(c); mesh(jitter(new THREE.CylinderGeometry(r+1.5,r+3,1,10),.5), M.sand, 0,.25,0,g); mesh(jitter(new THREE.CylinderGeometry(r*.8, r+1, h, 9), .8), Math.random()<.5?M.grass:M.grass2, 0, h/2+.5, 0, g); if(Math.random()<.7) tree(g, 0, 0, .7+Math.random()*.8); if(Math.random()<.5) palm(g, r*.4, -r*.3, .8); g.children.forEach(ch=>{ if(ch.isGroup) ch.position.y += h+.5; }); scene.add(g); }
+// distant mountains
+for(let i=0;i<14;i++){ const a = i/14*6.28; const m = mesh(jitter(new THREE.ConeGeometry(40+Math.random()*30, 50+Math.random()*50, 6), 6), flat(0x9fb3c8), Math.cos(a)*520, 10, Math.sin(a)*520); m.castShadow=false; m.receiveShadow=false; }
+// clouds
+const clouds = []; for(let i=0;i<22;i++){ const g = new THREE.Group(); for(let k=0;k<4;k++) mesh(new THREE.SphereGeometry(4+Math.random()*4, 7, 6), new THREE.MeshStandardMaterial({color:0xffffff, flatShading:true, transparent:true, opacity:.9}), (k-1.5)*5, Math.random()*2, Math.random()*3, g); g.position.set((Math.random()-.5)*700, 60+Math.random()*40, (Math.random()-.5)*700); g.userData.v = .4+Math.random()*.6; g.children.forEach(c=>{c.castShadow=false;}); scene.add(g); clouds.push(g); }
+// birds
+const birds = []; for(let i=0;i<7;i++){ const g = new THREE.Group(); const l = mesh(new THREE.BoxGeometry(1.4,.08,.3), M.dark, -.7,0,0,g), r = mesh(new THREE.BoxGeometry(1.4,.08,.3), M.dark, .7,0,0,g); g.userData = {l, r, a: Math.random()*6.28, R: 30+Math.random()*40, y: 22+Math.random()*14, c: curve.getPointAt(Math.random())}; scene.add(g); birds.push(g); }
+
+/* ===================== THE BOAT ===================== */
+const boat = new THREE.Group(); scene.add(boat);
+{ const hull = mesh(new THREE.BoxGeometry(5.2, 1.2, 2.2), M.roof, 0, .5, 0, boat); hull.geometry = jitter(hull.geometry, 0); const bow = mesh(new THREE.ConeGeometry(1.1, 2.4, 4), M.roof, 3.4, .5, 0, boat); bow.rotation.z = -Math.PI/2; bow.rotation.y = Math.PI/4; mesh(new THREE.BoxGeometry(5.4, .2, 2.4), M.trunk, 0, 1.15, 0, boat); mesh(new THREE.BoxGeometry(1.6, 1, 1.4), M.wall, -1.4, 1.7, 0, boat); mesh(new THREE.CylinderGeometry(.08,.1,6,6), M.trunk, .6, 4.2, 0, boat);
+  const sail = new THREE.Mesh(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(.7,1.6,0), new THREE.Vector3(.7,6.8,0), new THREE.Vector3(3.6,2.2,0)]), new THREE.MeshStandardMaterial({color:0xffffff, side:THREE.DoubleSide, flatShading:true})); sail.geometry.computeVertexNormals(); sail.castShadow=true; boat.add(sail); const fl = mesh(new THREE.BoxGeometry(.9,.4,.05), M.orange, 1.05, 7.1, 0, boat); }
+const wake = new THREE.Mesh(new THREE.PlaneGeometry(14, 5), new THREE.MeshBasicMaterial({color:0xffffff, transparent:true, opacity:.25, depthWrite:false})); wake.rotation.x = -Math.PI/2; wake.position.set(-7, .15, 0); boat.add(wake);
+
+/* ===================== STATE & INPUT ===================== */
+let P = 0, target = 0, vel = 0, started = false, activeIdx = -1, lastT = performance.now();
+const clamp = (v,a,b) => Math.max(a, Math.min(b, v));
+const setTarget = v => { target = clamp(v, 0, 1); $('#hint').classList.add('off'); };
+addEventListener('wheel', e => { if(!started) return; setTarget(target + e.deltaY * .00022); }, {passive:true});
+let drag = null;
+addEventListener('pointerdown', e => { if(!started || e.target.closest('#card,#dock,#top,#arrows')) return; drag = {x:e.clientX, t:target}; });
+addEventListener('pointermove', e => { if(drag){ setTarget(drag.t + (drag.x - e.clientX) * .0012); } });
+addEventListener('pointerup', () => drag = null);
+addEventListener('keydown', e => { if(!started) return; if(e.key==='ArrowRight'||e.key==='ArrowDown'||e.key===' ') { e.preventDefault(); jump(1); } if(e.key==='ArrowLeft'||e.key==='ArrowUp') { e.preventDefault(); jump(-1); } });
+function nearestIdx(v){ let b=0, bd=9; stops.forEach((s,i)=>{ const d=Math.abs(s.t - v); if(d<bd){bd=d;b=i;} }); return b; }
+function jump(dir){ const i = clamp(nearestIdx(target) + dir, 0, stops.length-1); setTarget(stops[i].t); click(); }
+$('#next').onclick = () => jump(1); $('#prev').onclick = () => jump(-1);
+// dock
+const dots = $('#dots'); stops.forEach((s,i)=>{ const b=document.createElement('button'); b.className='d'; b.dataset.t = s.title; b.onclick=()=>{ setTarget(s.t); click(); }; dots.appendChild(b); });
+// intro
+$('#intro').addEventListener('click', () => { started = true; $('#intro').classList.add('gone'); audioStart(); setTimeout(()=>setTarget(stops[0].t), 300); }, {once:true});
+
+/* ===================== CARD ===================== */
+const card = $('#card');
+function showStop(i){ if(i===activeIdx) return; activeIdx = i; if(i<0){ card.classList.remove('show'); return; } const s = stops[i]; card.innerHTML = `<div class="n">${s.n}</div><h2>${s.title}</h2>${s.html}`; card.classList.remove('show'); void card.offsetHeight; card.classList.add('show'); chime(i); [...dots.children].forEach((d,k)=>{ d.classList.toggle('on', k===i); d.classList.toggle('done', k<i); }); }
+
+/* ===================== DAY / NIGHT ===================== */
+function applyMode(){ const T = night ? NIGHT : DAY; for(const k in T){ if(typeof T[k]==='number' && k!=='exp' && !['sunI','hemiI'].includes(k)){ cur[k] = T[k]; } } }
+let mix = 0; // 0 day, 1 night
+$('#mode').onclick = () => { night = !night; document.documentElement.classList.toggle('night', night); $('#mode').textContent = night ? '☀️' : '🌙'; click(); };
+const tmpA = new THREE.Color(), tmpB = new THREE.Color();
+function lerpCol(a, b, k){ return tmpA.set(a).lerp(tmpB.set(b), k).clone(); }
+
+/* ===================== SOUND (procedural ambience) ===================== */
+let AC = null, master, on = false;
+function audioStart(){ if(AC) return; try{ AC = new (window.AudioContext||window.webkitAudioContext)(); }catch(e){ return; } master = AC.createGain(); master.gain.value = 0; master.connect(AC.destination);
+  // sea: filtered noise with slow swell
+  const n = AC.sampleRate*4, b = AC.createBuffer(1, n, AC.sampleRate), d = b.getChannelData(0); for(let i=0;i<n;i++) d[i] = Math.random()*2-1; const src = AC.createBufferSource(); src.buffer = b; src.loop = true; const lp = AC.createBiquadFilter(); lp.type='lowpass'; lp.frequency.value = 600; const g = AC.createGain(); g.gain.value = .18; const lfo = AC.createOscillator(); lfo.frequency.value = .11; const lg = AC.createGain(); lg.gain.value = .08; lfo.connect(lg); lg.connect(g.gain); lfo.start(); src.connect(lp); lp.connect(g); g.connect(master); src.start();
+  // pad: slow chords
+  const padG = AC.createGain(); padG.gain.value = .05; const plp = AC.createBiquadFilter(); plp.type='lowpass'; plp.frequency.value = 900; padG.connect(plp); plp.connect(master);
+  const chords = [[220,277.2,329.6],[196,246.9,293.7],[174.6,220,261.6],[164.8,207.7,246.9]]; let ci = 0; const oscs = chords[0].map(f=>{ const o=AC.createOscillator(); o.type='triangle'; o.frequency.value=f; const o2=AC.createOscillator(); o2.type='sine'; o2.frequency.value=f*2.003; o.connect(padG); o2.connect(padG); o.start(); o2.start(); return [o,o2]; });
+  setInterval(()=>{ ci=(ci+1)%chords.length; chords[ci].forEach((f,i)=>{ oscs[i][0].frequency.setTargetAtTime(f, AC.currentTime, 1.2); oscs[i][1].frequency.setTargetAtTime(f*2.003, AC.currentTime, 1.2); }); }, 7000);
+  setOn(true); }
+function setOn(v){ on = v; $('#snd').textContent = on ? '🔊' : '🔈'; if(master) master.gain.setTargetAtTime(on ? .9 : 0, AC.currentTime, .3); }
+$('#snd').onclick = () => { if(!AC) audioStart(); else setOn(!on); };
+function click(){ if(!AC||!on) return; const t=AC.currentTime, o=AC.createOscillator(), g=AC.createGain(); o.type='sine'; o.frequency.setValueAtTime(660,t); o.frequency.exponentialRampToValueAtTime(880,t+.05); g.gain.setValueAtTime(.12,t); g.gain.exponentialRampToValueAtTime(.001,t+.12); o.connect(g); g.connect(master); o.start(t); o.stop(t+.13); }
+function chime(i){ if(!AC||!on) return; const t=AC.currentTime; [0,.09,.18].forEach((d,k)=>{ const o=AC.createOscillator(), g=AC.createGain(); o.type='triangle'; o.frequency.value = [523.3,659.3,784][k] * (1 + i*.02); g.gain.setValueAtTime(0,t+d); g.gain.linearRampToValueAtTime(.14,t+d+.01); g.gain.exponentialRampToValueAtTime(.001,t+d+.7); o.connect(g); g.connect(master); o.start(t+d); o.stop(t+d+.75); }); }
+
+/* ===================== LOOP ===================== */
+const camPos = new THREE.Vector3(), look = new THREE.Vector3(), up = new THREE.Vector3(0,1,0);
+function resize(){ const w = innerWidth, h = innerHeight; renderer.setSize(w, h, false); camera.aspect = w/h; camera.updateProjectionMatrix(); } addEventListener('resize', resize); resize();
+const scopeTmp = new THREE.Vector3();
+function frame(now){
+  requestAnimationFrame(frame); const dt = Math.min(.05, (now - lastT)/1000); lastT = now; const t = now/1000;
+  // progress easing
+  P += (target - P) * (1 - Math.pow(.0025, dt)); vel = (target - P);
+  // boat along the curve
+  const bp = curve.getPointAt(clamp(P,0,1)), tan = curve.getTangentAt(clamp(P,0,1));
+  boat.position.set(bp.x, .35 + Math.sin(t*1.6)*.18, bp.z); boat.rotation.y = Math.atan2(-tan.z, tan.x); boat.rotation.z = Math.sin(t*1.1)*.05 + vel*-.5; boat.rotation.x = Math.cos(t*1.3)*.03;
+  wake.material.opacity = .08 + Math.min(.3, Math.abs(vel)*6);
+  // camera: behind and above, drift toward the active island
+  const idx = nearestIdx(P); const s = stops[idx]; const near = Math.abs(s.t - P) < .045;
+  const back = tan.clone().multiplyScalar(-22); camPos.set(bp.x + back.x, 13, bp.z + back.z);
+  if(near){ const toI = s.pos.clone().sub(bp); const n = new THREE.Vector3(-tan.z,0,tan.x).multiplyScalar(-s.side*10); camPos.add(n).add(tan.clone().multiplyScalar(-4)); camPos.y = 15; }
+  camera.position.lerp(camPos, 1 - Math.pow(.02, dt));
+  look.set(bp.x, 3, bp.z).add(tan.clone().multiplyScalar(10)); if(near) look.lerp(new THREE.Vector3(s.pos.x, 5, s.pos.z), .6);
+  const curLook = camera.userData.look || (camera.userData.look = look.clone()); curLook.lerp(look, 1 - Math.pow(.03, dt)); camera.lookAt(curLook);
+  sunTarget.position.copy(bp); sun.position.set(bp.x + 120, 160, bp.z + 60);
+  showStop(started && near ? idx : -1);
+  $('#pct').textContent = Math.round(P*100) + '%';
+  // day/night mixing
+  mix += ((night?1:0) - mix) * (1 - Math.pow(.1, dt));
+  skyMat.uniforms.top.value.copy(lerpCol(DAY.sky, NIGHT.sky, mix)); skyMat.uniforms.bot.value.copy(lerpCol(DAY.horizon, NIGHT.horizon, mix));
+  scene.fog.color.copy(lerpCol(DAY.fog, NIGHT.fog, mix)); waterU.fogColor.value.copy(scene.fog.color);
+  waterU.c1.value.copy(lerpCol(DAY.water, NIGHT.water, mix)); waterU.c2.value.copy(lerpCol(DAY.deep, NIGHT.deep, mix)); waterU.foam.value.copy(lerpCol(DAY.foam, NIGHT.foam, mix));
+  hemi.color.copy(lerpCol(DAY.hemi, NIGHT.hemi, mix)); hemi.groundColor.copy(lerpCol(DAY.ground, NIGHT.ground, mix)); hemi.intensity = DAY.hemiI + (NIGHT.hemiI - DAY.hemiI)*mix;
+  sun.color.copy(lerpCol(DAY.sun, NIGHT.sun, mix)); sun.intensity = DAY.sunI + (NIGHT.sunI - DAY.sunI)*mix; renderer.toneMappingExposure = DAY.exp + (NIGHT.exp - DAY.exp)*mix;
+  stars.material.opacity = mix; disc.material.color.copy(lerpCol(0xfff4c2, 0xdfe8ff, mix));
+  winMats.forEach(m => m.emissiveIntensity = mix * 1.4); M.win.emissiveIntensity = mix*1.4;
+  waterU.t.value = t;
+  // animated bits
+  scene.traverse(o => { const u = o.userData; if(!u) return; if(u.spin) o.rotation.y = t*.8; if(u.gear) o.rotation.z = t*u.gear; if(u.scope) o.rotation.y = Math.sin(t*.3)*.6; if(u.beam) o.rotation.y = t*.9; if(u.blink) o.material.emissiveIntensity = (Math.sin(t*4)>0)?1.5:.1; if(u.bulb) o.material.emissiveIntensity = .5 + .4*Math.sin(t*2.2) + mix; if(u.lap){ const a = -t*1.1; o.position.set(Math.cos(a)*5, .05, Math.sin(a)*5); o.rotation.y = -a - Math.PI/2; } if(typeof u.float==='number') o.position.y = 6 + u.float*.6 + Math.sin(t*1.5 + u.float)*.5, o.rotation.y = t*.6 + u.float; });
+  clouds.forEach(c => { c.position.x += c.userData.v * dt * 3; if(c.position.x > 380) c.position.x = -380; });
+  birds.forEach(b => { const u = b.userData; u.a += dt*.5; b.position.set(u.c.x + Math.cos(u.a)*u.R, u.y + Math.sin(t*2)*1.2, u.c.z + Math.sin(u.a)*u.R); b.rotation.y = -u.a; const f = Math.sin(t*9 + u.R)*.6; u.l.rotation.z = f; u.r.rotation.z = -f; });
+  renderer.render(scene, camera);
+}
+requestAnimationFrame(frame);
+}
+</script>
+</body>
+</html>

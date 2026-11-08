@@ -2,7 +2,8 @@
 
 Open-practice chapter quizzes for Dr Arun Korath's courses (MGMT160, MGMT363, MGMT464).
 
-- `index.html` — landing page (3D particle face, rock intro, Student / Teacher entry)
+- `index.html` — landing page (3D particle face, rock intro, Student / Teacher / World entry)
+- `world.html` — "Arun's World": sail-through 3D portfolio (9 island stops incl. Experimental Gamified Learning)
 - `quiz.html` — student site (subject → chapter → Quiz 1 Ideas / Quiz 2 Applied → score + review; anonymised dashboard)
 - `teacher.html` — teacher panel (subjects, chapters, question banks, videos, students & attempts, CSV export); needs the teacher key
 - `apps-script/Code.gs` — the Google Apps Script backend (Google Sheet tabs: Subjects, Chapters, Questions, Videos, Students, Attempts)
