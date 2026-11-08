@@ -399,7 +399,7 @@ function frame(now){
   const orb = t*.1; const R = (s.group.userData.r + (portrait ? 30 : 34)) * D; const posB = new THREE.Vector3(s.pos.x + Math.cos(orb)*R, (14 + s.group.userData.top) * D, s.pos.z + Math.sin(orb)*R);
   camPos.copy(posA).lerp(posB, w);
   camera.position.lerp(camPos, 1 - Math.pow(.03, dt));
-  const lookA = new THREE.Vector3(bp.x, 3, bp.z).add(tan.clone().multiplyScalar(12)); const lookB = new THREE.Vector3(s.pos.x, portrait ? -9 : 2, s.pos.z); if(!portrait){ const rightV = new THREE.Vector3().subVectors(lookB, camera.position).setY(0).normalize().cross(up).multiplyScalar(-(s.group.userData.r + 16)); lookB.add(rightV); } look.copy(lookA).lerp(lookB, w);
+  const lookA = new THREE.Vector3(bp.x, 3, bp.z).add(tan.clone().multiplyScalar(12)); const lookB = new THREE.Vector3(s.pos.x, portrait ? -9 : 2, s.pos.z); if(!portrait){ const rightV = new THREE.Vector3().subVectors(lookB, camera.position).setY(0).normalize().cross(up).multiplyScalar(s.group.userData.r + 14); lookB.add(rightV); } look.copy(lookA).lerp(lookB, w);
   const wantFov = (portrait ? 58 : 50) + 9 * Math.min(1, Math.abs(vel)/.042); camera.fov += (wantFov - camera.fov) * (1 - Math.pow(.05, dt)); camera.updateProjectionMatrix();
   const curLook = camera.userData.look || (camera.userData.look = look.clone()); curLook.lerp(look, 1 - Math.pow(.03, dt)); camera.lookAt(curLook);
   sunTarget.position.copy(bp); sun.position.set(bp.x + 120, 160, bp.z + 60);
