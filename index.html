@@ -291,7 +291,7 @@ function playIntro(){
   setTimeout(()=>L[2].classList.add('show'), 5300);
   setTimeout(()=>{ document.querySelectorAll('#cta a').forEach(a=>a.classList.add('show')); document.getElementById('gear').classList.remove('hide'); }, 6400);
 }
-function flashScreen(a=.9){ const f=document.getElementById('flash'); f.style.transition='none'; f.style.opacity=a; requestAnimationFrame(()=>{ f.style.transition='opacity .9s ease'; f.style.opacity=0; }); beatFlash=1; }
+function flashScreen(a=.9){ const f=document.getElementById('flash'); f.style.transition='none'; f.style.opacity=a; void f.offsetHeight; requestAnimationFrame(()=>requestAnimationFrame(()=>{ f.style.transition='opacity .9s ease'; f.style.opacity=0; })); setTimeout(()=>{ f.style.transition='none'; f.style.opacity=0; },1500); beatFlash=1; }
 vo.addEventListener('ended',()=>{ if(AC) duck.gain.setTargetAtTime(1,AC.currentTime,.4); });
 vo.addEventListener('play',()=>{ if(AC) duck.gain.setTargetAtTime(.45,AC.currentTime,.1); });
 /* ---- entry gate (unlocks audio) ---- */
