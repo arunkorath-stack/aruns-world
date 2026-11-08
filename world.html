@@ -399,7 +399,7 @@ function frame(now){
   look.set(bp.x, 3, bp.z).add(tan.clone().multiplyScalar(10)); if(near) look.set(s.pos.x, portrait ? -4 : 4, s.pos.z);
   const curLook = camera.userData.look || (camera.userData.look = look.clone()); curLook.lerp(look, 1 - Math.pow(.03, dt)); camera.lookAt(curLook);
   sunTarget.position.copy(bp); sun.position.set(bp.x + 120, 160, bp.z + 60);
-  showStop(started && near ? idx : -1);
+  showStop(started && near && Math.abs(vel) < .03 ? idx : -1);
   $('#pct').textContent = Math.round(P*100) + '%';
   // day/night mixing
   mix += ((night?1:0) - mix) * (1 - Math.pow(.1, dt));
