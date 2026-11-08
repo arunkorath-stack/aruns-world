@@ -380,6 +380,12 @@ function audioStart(){ if(AC) return; try{ AC = new (window.AudioContext||window
   setOn(true); }
 function setOn(v){ on = v; $('#snd').textContent = on ? '🔊' : '🔈'; if(master) master.gain.setTargetAtTime(on ? .9 : 0, AC.currentTime, .3); }
 $('#snd').onclick = () => { if(!AC) audioStart(); else setOn(!on); };
+/* never let the sea follow the visitor to another page or tab */
+function killAudio(){ if(!AC) return; try{ master.gain.cancelScheduledValues(AC.currentTime); master.gain.setTargetAtTime(0, AC.currentTime, .08); }catch(e){} setTimeout(()=>{ try{ AC.close(); }catch(e){} AC=null; }, 400); }
+addEventListener('pagehide', killAudio); addEventListener('beforeunload', killAudio);
+document.addEventListener('visibilitychange', () => { if(!AC) return; if(document.hidden) AC.suspend(); else if(on) AC.resume(); });
+document.addEventListener('click', e => { const a = e.target.closest('a[href]'); if(a && !a.target && AC){ killAudio(); } }, true);
+addEventListener('pageshow', e => { if(e.persisted){ AC=null; on=false; $('#snd').textContent='🔈'; } });
 function click(){ if(!AC||!on) return; const t=AC.currentTime, o=AC.createOscillator(), g=AC.createGain(); o.type='sine'; o.frequency.setValueAtTime(660,t); o.frequency.exponentialRampToValueAtTime(880,t+.05); g.gain.setValueAtTime(.12,t); g.gain.exponentialRampToValueAtTime(.001,t+.12); o.connect(g); g.connect(master); o.start(t); o.stop(t+.13); }
 function chime(i){ if(!AC||!on) return; const t=AC.currentTime; [0,.09,.18].forEach((d,k)=>{ const o=AC.createOscillator(), g=AC.createGain(); o.type='triangle'; o.frequency.value = [523.3,659.3,784][k] * (1 + i*.02); g.gain.setValueAtTime(0,t+d); g.gain.linearRampToValueAtTime(.14,t+d+.01); g.gain.exponentialRampToValueAtTime(.001,t+d+.7); o.connect(g); g.connect(master); o.start(t+d); o.stop(t+d+.75); }); }
 

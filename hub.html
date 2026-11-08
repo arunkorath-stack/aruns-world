@@ -332,6 +332,11 @@ enterEl.addEventListener('click',()=>{
   setTimeout(playIntro,900);
 },{once:true});
 document.getElementById('mute').onclick=()=>setMuted(!muted);
+function killAudio(){ if(!AC) return; try{ stopMusic(.1); master.gain.setTargetAtTime(0, AC.currentTime, .05); }catch(e){} try{ vo.pause(); }catch(e){} setTimeout(()=>{ try{ AC.close(); }catch(e){} AC=null; }, 300); }
+addEventListener('pagehide', killAudio); addEventListener('beforeunload', killAudio);
+document.addEventListener('visibilitychange', () => { if(!AC) return; if(document.hidden){ AC.suspend(); vo.pause(); } else if(!muted) AC.resume(); });
+document.getElementById('back').addEventListener('click', () => killAudio());
+addEventListener('pageshow', e => { if(e.persisted) location.reload(); });
 document.getElementById('gear').onclick=()=>document.getElementById('ui').classList.toggle('open');
 document.querySelectorAll('#cta a').forEach(a=>{
   a.addEventListener('mouseenter',blip);
