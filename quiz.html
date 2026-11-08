@@ -659,7 +659,7 @@ function renderStopQ(){
   const p=S.questions[S.idx], x=curQ(); S.qStart=Date.now(); S.locked=false; updateHud();
   const alt=S.tries>0;
   const opts=`<div class="opts">${x.options.map((o,i)=>`<button class="opt" id="opt${i}" onclick="pick(${i})"><span class="key">${i+1}</span><span>${esc(o)}</span></button>`).join('')}</div>`;
-  const head=`${alt?`<div class="altbar">🧭 Another way · same idea (§${esc(p.sec)}), new question · chance ${S.tries+1} of ${Math.min(4,p.chain.length)}</div>`:''}<div class="k">${esc(trav().stop)} ${S.idx+1} of ${S.questions.length} · ${esc(x.clo)} · §${esc(x.sec)} · ${esc(x.bloom)}</div>`;
+  const head=`${alt?`<div class="altbar">🧭 Prove it · same idea (§${esc(p.sec)}), different question · chance ${S.tries+1} of ${Math.min(4,p.chain.length)}</div>`:''}<div class="k">${esc(trav().stop)} ${S.idx+1} of ${S.questions.length} · ${esc(x.clo)} · §${esc(x.sec)} · ${esc(x.bloom)}</div>`;
   if(S.quiz===2){ // acted scene first, then the question
     const sc=sceneFor(x); if(sc){ sc.lines=[['N',sceneIntro(sc,x)],...sc.lines]; SC.cur=sc; S.locked=true;
     $('#qbox').innerHTML=`<div class="qcard" id="sceneCard">${head}<div class="scene" id="sceneBox"><div class="props" id="sceneProps"></div><div class="lbl">🎬 Scene · §${esc(x.sec)}${sc.explicit?'':' · the situation'}</div><div class="ctl" id="sceneCtl"><button class="btn g s" onclick="skipScene()">skip ▶▶</button></div><div class="cast" id="sceneCast"></div><div class="narr" id="sceneNarr"></div><div class="prog" id="sceneProg"></div></div><div class="ask"><div class="yourcall">🎬 Your call — about the scene you just watched${sc.ask?'':':'}</div><div class="stem">${esc(sc.ask||x.stem)}</div>${opts}<div id="verdict"></div></div></div>`;
@@ -683,14 +683,18 @@ function pick(i){
     const hasAlt=S.tries+1<p.chain.length;
     if(hasAlt){
       S.tries++;
-      $('#verdict').innerHTML=`<div class="verdict bad"><div class="h">${esc(t.blocked)}</div><div class="why">Not this one. The way is blocked here — but there is <b>another way</b> to the same idea (§${esc(x.sec)}). Think about it again, then answer a different question on the same point.</div><p style="margin:12px 0 0"><button class="btn" id="nextBtn" onclick="renderStopQ();snd('tick')">Show me another way →</button></p></div>`;
-      updateHud(); setTimeout(()=>$('#nextBtn')?.focus(),50); return;
+      // teach first: show the correct answer + why, make them read it, then test the same idea with a different question
+      document.querySelectorAll('.opt').forEach((bb,k)=>{if(k===x.correctIdx)bb.classList.add('ok');else if(k!==i)bb.classList.add('dim')});
+      const wait=Math.min(12, 5 + Math.ceil(((x.why||'').length)/40));
+      $('#verdict').innerHTML=`<div class="verdict bad study"><div class="h">${esc(t.blocked)} · let's learn it</div><div class="why">Not this one. The correct answer is:</div><div style="margin:8px 0;padding:10px 12px;border-radius:10px;background:color-mix(in srgb,var(--ok) 18%,transparent);border:1px solid var(--ok);font-weight:600">✓ ${esc(x.options[x.correctIdx])}</div>${x.why?`<div class="why"><b>Why:</b> ${esc(x.why)}</div>`:''}<div class="why" style="margin-top:8px">Read it carefully. Then prove you have it — a <b>different question on the same idea</b> (§${esc(x.sec)}) is waiting. Chance ${S.tries+1} of ${Math.min(4,p.chain.length)}.</div><p style="margin:12px 0 0"><button class="btn" id="nextBtn" disabled onclick="renderStopQ();snd('tick')">Read first… <span id="studyCount">${wait}</span>s</button></p></div>`;
+      let n=wait; const iv=setInterval(()=>{n--;const c=$('#studyCount');if(!c){clearInterval(iv);return;}c.textContent=n;if(n<=0){clearInterval(iv);const b=$('#nextBtn');b.disabled=false;b.innerHTML='I understand — test me on it →';b.focus();}},1000);
+      updateHud(); return;
     }
     // all chances used → study card, then move on (0 XP)
     S.answers[p.id].done=true; S.answers[p.id].studied=true; S.studied=(S.studied||0)+1;
     document.querySelectorAll('.opt').forEach((bb,k)=>{if(k===x.correctIdx)bb.classList.add('ok');else bb.classList.add('dim')});
     const lessons=p.chain.filter(q=>q.correctIdx>=0).map(q=>`<li><b>${esc(q.stem)}</b><br><span style="color:var(--ok)">${esc(q.options[q.correctIdx])}</span>${q.why?`<br><span class="why">${esc(q.why)}</span>`:''}</li>`).join('');
-    $('#verdict').innerHTML=`<div class="verdict bad study"><div class="h">📖 Study stop</div><div>Every way to this idea was blocked. Read the explanations below carefully — the way opens only after you have studied them.</div><ul class="lessons">${lessons}</ul><p style="margin:12px 0 0"><button class="btn" id="nextBtn" disabled onclick="next()">Read first… <span id="studyCount">15</span>s</button></p></div>`;
+    $('#verdict').innerHTML=`<div class="verdict bad study"><div class="h">📖 Study stop</div><div>You missed every question on this idea. Read all the answers and explanations below carefully — the way opens only after you have studied them.</div><ul class="lessons">${lessons}</ul><p style="margin:12px 0 0"><button class="btn" id="nextBtn" disabled onclick="next()">Read first… <span id="studyCount">15</span>s</button></p></div>`;
     let n=15; const iv=setInterval(()=>{n--;const c=$('#studyCount');if(!c){clearInterval(iv);return;}c.textContent=n;if(n<=0){clearInterval(iv);const b=$('#nextBtn');b.disabled=false;b.innerHTML=last?'I have studied it — reach the goal →':'I have studied it — move on →';b.focus();}},1000);
     updateHud(); return;
   }
