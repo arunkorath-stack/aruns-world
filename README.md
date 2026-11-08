@@ -1,4 +1,6 @@
-# Chapter Quiz Hub · University of Kalba
+# Arun's World — Dr. Arun Korath
+
+Live: https://arunkorath-stack.github.io/aruns-world/ — personal sail-through portfolio; the "Gamified Learning" island opens the Chapter Quiz Hub (`hub.html` → `quiz.html`, teacher panel `teacher.html`).
 
 Open-practice chapter quizzes for Dr Arun Korath's courses (MGMT160, MGMT363, MGMT464).
 
