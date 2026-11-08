@@ -10,7 +10,8 @@
   :root{--ink:#0e1a2b;--paper:#f6f1e7;--sea:#1b5e8a;--accent:#ff7a3d;--mint:#27c4a0;--card:rgba(255,255,255,.86);--txt:#14233a;--mut:#5b6b80}
   html.night{--card:rgba(10,16,34,.86);--txt:#eaf0ff;--mut:#9fb0d0;--paper:#0b1020}
   html,body{margin:0;height:100%;overflow:hidden;background:var(--paper);font-family:"Space Grotesk",ui-sans-serif,system-ui,sans-serif;color:var(--txt);-webkit-tap-highlight-color:transparent}
-  canvas{display:block}
+  canvas{display:block;touch-action:none}
+  body{touch-action:none;overscroll-behavior:none}
   #c{position:fixed;inset:0}
   /* top bar */
   #top{position:fixed;left:0;right:0;top:0;display:flex;align-items:center;justify-content:space-between;padding:16px 20px;z-index:10;pointer-events:none}
@@ -35,6 +36,8 @@
   #card{position:fixed;right:28px;top:50%;transform:translate(40px,-50%);width:min(400px,calc(100vw - 40px));max-height:calc(100vh - 140px);overflow:auto;z-index:9;opacity:0;pointer-events:none;transition:opacity .5s ease,transform .6s cubic-bezier(.2,.8,.2,1);
     background:var(--card);backdrop-filter:blur(14px);border:1px solid rgba(120,130,160,.3);border-radius:22px;padding:22px 24px 20px;box-shadow:0 20px 60px rgba(0,0,0,.18)}
   #card.show{opacity:1;pointer-events:auto;transform:translate(0,-50%)}
+  #card .more{display:none}
+  #card .x{position:absolute;right:12px;top:12px;width:30px;height:30px;border-radius:50%;border:0;background:rgba(120,130,160,.18);color:var(--txt);font-size:16px;cursor:pointer}
   #card .n,#flat .f .n{font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--accent);font-weight:600}
   #card h2,#flat .f h2{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(22px,2.6vw,30px);line-height:1.05;margin:8px 0 10px;letter-spacing:-.02em}
   #card p,#flat .f p{margin:0 0 10px;font-size:14.5px;line-height:1.55;color:var(--txt)}
@@ -67,8 +70,13 @@
   #flat .f{max-width:620px;margin:0 auto 18px;background:var(--card);border-radius:20px;padding:20px 24px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
   html.night #flat{background:linear-gradient(180deg,#0a1230,#0b1020 40%)}
   @media (max-width:760px){
-    #card{right:12px;left:12px;top:auto;bottom:84px;transform:translateY(30px);width:auto;max-height:46vh;padding:16px 18px}
+    #card{right:12px;left:12px;top:auto;bottom:84px;transform:translateY(30px);width:auto;max-height:30vh;padding:14px 16px;overflow:hidden}
     #card.show{transform:none}
+    #card.open{max-height:66vh;overflow:auto}
+    #card:not(.open) .body{max-height:52px;overflow:hidden;-webkit-mask-image:linear-gradient(#000 60%,transparent)}
+    #card .more{display:inline-block;margin-top:6px;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:none;border:0;padding:4px 0}
+    #card.open .more{display:none}
+    #card h2{font-size:20px;margin:4px 0 6px}
     #hint{bottom:66px;font-size:10px}
     #arrows{display:none}
     #dock .lbl{display:none}
@@ -92,7 +100,7 @@
   <div class="go">▶ Set sail</div>
 </div>
 <div id="card"></div>
-<div id="hint">Scroll · drag · ← → to sail</div>
+<div id="hint">Swipe or drag the sea to sail · tap a dot to jump</div>
 <div id="arrows"><button class="tb" id="prev" title="Previous stop">←</button><button class="tb" id="next" title="Next stop">→</button></div>
 <div id="dock"><span class="lbl">Voyage</span><span id="dots" style="display:flex;gap:10px"></span><span class="pct" id="pct">0%</span></div>
 <div id="flat"></div>
@@ -333,7 +341,7 @@ const setTarget = v => { target = clamp(v, 0, 1); $('#hint').classList.add('off'
 addEventListener('wheel', e => { if(!started) return; setTarget(target + e.deltaY * .00022); }, {passive:true});
 let drag = null;
 addEventListener('pointerdown', e => { if(!started || e.target.closest('#card,#dock,#top,#arrows')) return; drag = {x:e.clientX, t:target}; });
-addEventListener('pointermove', e => { if(drag){ setTarget(drag.t + (drag.x - e.clientX) * .0012); } });
+addEventListener('pointermove', e => { if(drag){ setTarget(drag.t + (drag.x - e.clientX) * (1.4/innerWidth)); } });
 addEventListener('pointerup', () => drag = null);
 addEventListener('keydown', e => { if(!started) return; if(e.key==='ArrowRight'||e.key==='ArrowDown'||e.key===' ') { e.preventDefault(); jump(1); } if(e.key==='ArrowLeft'||e.key==='ArrowUp') { e.preventDefault(); jump(-1); } });
 function nearestIdx(v){ let b=0, bd=9; stops.forEach((s,i)=>{ const d=Math.abs(s.t - v); if(d<bd){bd=d;b=i;} }); return b; }
@@ -346,7 +354,7 @@ $('#intro').addEventListener('click', () => { started = true; $('#intro').classL
 
 /* ===================== CARD ===================== */
 const card = $('#card');
-function showStop(i){ if(i===activeIdx) return; activeIdx = i; if(i<0){ card.classList.remove('show'); return; } const s = stops[i]; card.innerHTML = `<div class="n">${s.n}</div><h2>${s.title}</h2>${s.html}`; card.classList.remove('show'); void card.offsetHeight; card.classList.add('show'); chime(i); [...dots.children].forEach((d,k)=>{ d.classList.toggle('on', k===i); d.classList.toggle('done', k<i); }); }
+function showStop(i){ if(i===activeIdx) return; activeIdx = i; if(i<0){ card.classList.remove('show'); return; } const s = stops[i]; card.innerHTML = `<button class="x" title="Hide">×</button><div class="n">${s.n}</div><h2>${s.title}</h2><div class="body">${s.html}</div><button class="more">Read more ↓</button>`; card.classList.remove('show','open'); card.querySelector('.more').onclick=()=>card.classList.add('open'); card.querySelector('.x').onclick=()=>card.classList.remove('show'); void card.offsetHeight; card.classList.add('show'); chime(i); [...dots.children].forEach((d,k)=>{ d.classList.toggle('on', k===i); d.classList.toggle('done', k<i); }); }
 
 /* ===================== DAY / NIGHT ===================== */
 function applyMode(){ const T = night ? NIGHT : DAY; for(const k in T){ if(typeof T[k]==='number' && k!=='exp' && !['sunI','hemiI'].includes(k)){ cur[k] = T[k]; } } }
@@ -377,17 +385,18 @@ const scopeTmp = new THREE.Vector3();
 function frame(now){
   requestAnimationFrame(frame); const dt = Math.min(.05, (now - lastT)/1000); lastT = now; const t = now/1000;
   // progress easing
-  P += (target - P) * (1 - Math.pow(.0025, dt)); vel = (target - P);
+  { const diff = target - P, step = Math.min(Math.abs(diff) * (1 - Math.pow(.02, dt)), .085 * dt); P += Math.sign(diff) * step; vel = diff; }
   // boat along the curve
   const bp = curve.getPointAt(clamp(P,0,1)), tan = curve.getTangentAt(clamp(P,0,1));
   boat.position.set(bp.x, .35 + Math.sin(t*1.6)*.18, bp.z); boat.rotation.y = Math.atan2(-tan.z, tan.x); boat.rotation.z = Math.sin(t*1.1)*.05 + vel*-.5; boat.rotation.x = Math.cos(t*1.3)*.03;
   wake.material.opacity = .08 + Math.min(.3, Math.abs(vel)*6);
   // camera: behind and above, drift toward the active island
   const idx = nearestIdx(P); const s = stops[idx]; const near = Math.abs(s.t - P) < .045;
-  const back = tan.clone().multiplyScalar(-22); camPos.set(bp.x + back.x, 13, bp.z + back.z);
-  if(near){ const toI = s.pos.clone().sub(bp); const n = new THREE.Vector3(-tan.z,0,tan.x).multiplyScalar(-s.side*10); camPos.add(n).add(tan.clone().multiplyScalar(-4)); camPos.y = 15; }
+  const portrait = camera.aspect < 1, D = portrait ? 1.8 : 1;
+  const back = tan.clone().multiplyScalar(-22*D); camPos.set(bp.x + back.x, 13*D, bp.z + back.z);
+  if(near){ const orb = t*.12; const R = (s.group.userData.r + 26) * D; camPos.set(s.pos.x + Math.cos(orb)*R, (14 + s.group.userData.top) * D, s.pos.z + Math.sin(orb)*R); }
   camera.position.lerp(camPos, 1 - Math.pow(.02, dt));
-  look.set(bp.x, 3, bp.z).add(tan.clone().multiplyScalar(10)); if(near) look.lerp(new THREE.Vector3(s.pos.x, 5, s.pos.z), .6);
+  look.set(bp.x, 3, bp.z).add(tan.clone().multiplyScalar(10)); if(near) look.set(s.pos.x, portrait ? -4 : 4, s.pos.z);
   const curLook = camera.userData.look || (camera.userData.look = look.clone()); curLook.lerp(look, 1 - Math.pow(.03, dt)); camera.lookAt(curLook);
   sunTarget.position.copy(bp); sun.position.set(bp.x + 120, 160, bp.z + 60);
   showStop(started && near ? idx : -1);
