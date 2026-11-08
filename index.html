@@ -30,11 +30,11 @@
   #gear.hide{display:none}
   #mute{position:fixed;right:14px;top:14px;z-index:7;width:42px;height:42px;border-radius:50%;background:rgba(10,10,24,.6);border:1px solid rgba(140,150,255,.3);font-size:18px;padding:0;display:none;align-items:center;justify-content:center}
   #mute.show{display:flex}
-  #enter{position:fixed;inset:0;z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;cursor:pointer;background:radial-gradient(ellipse at 50% 60%,rgba(20,24,70,.35),rgba(4,4,12,.85) 70%);transition:opacity .8s ease}
+  #enter{position:fixed;inset:0;z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:7vh;gap:10px;cursor:pointer;background:linear-gradient(180deg,rgba(4,4,12,0) 35%,rgba(4,4,12,.55) 70%,rgba(4,4,12,.9) 100%);transition:opacity .8s ease}
   #enter.gone{opacity:0;pointer-events:none}
   #enter .u{font-size:clamp(11px,1.3vw,13px);letter-spacing:.5em;text-transform:uppercase;color:#8fb3ff}
-  #enter .h{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(30px,5.5vw,64px);letter-spacing:-.01em;color:#fff;text-shadow:0 0 30px rgba(122,220,255,.45);text-align:center;line-height:1.05}
-  #enter .p{margin-top:26px;font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:clamp(14px,1.8vw,20px);letter-spacing:.35em;text-transform:uppercase;color:#04040c;background:linear-gradient(90deg,#7adcff,#b48cff);padding:16px 38px;border-radius:999px;box-shadow:0 0 0 0 rgba(122,220,255,.6);animation:pulse 1.6s ease-out infinite}
+  #enter .h{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(24px,3.6vw,44px);letter-spacing:-.01em;color:#fff;text-shadow:0 0 30px rgba(122,220,255,.45);text-align:center;line-height:1.05}
+  #enter .p{margin-top:12px;font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:clamp(14px,1.8vw,20px);letter-spacing:.35em;text-transform:uppercase;color:#04040c;background:linear-gradient(90deg,#7adcff,#b48cff);padding:16px 38px;border-radius:999px;box-shadow:0 0 0 0 rgba(122,220,255,.6);animation:pulse 1.6s ease-out infinite}
   #enter .s{font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.55}
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(122,220,255,.55)}100%{box-shadow:0 0 0 26px rgba(122,220,255,0)}}
   #cta{position:fixed;left:0;right:0;bottom:9vh;display:flex;justify-content:center;gap:18px;flex-wrap:wrap;z-index:5;padding:0 16px}
@@ -298,7 +298,9 @@ vo.addEventListener('play',()=>{ if(AC) duck.gain.setTargetAtTime(.45,AC.current
 const enterEl=document.getElementById('enter');
 enterEl.addEventListener('click',()=>{
   audioInit(); AC.resume(); enterEl.classList.add('gone'); document.getElementById('mute').classList.add('show');
-  setTimeout(playIntro,150);
+  introT=-1; target=0; L.forEach(l=>l.classList.remove('show'));
+  if(AC){ const t=AC.currentTime; noiseHit(t,true,[3000,.6],.7,.8); boom(t); musicGain.gain.setValueAtTime(.9,t); }
+  setTimeout(playIntro,900);
 },{once:true});
 document.getElementById('mute').onclick=()=>setMuted(!muted);
 document.getElementById('gear').onclick=()=>document.getElementById('ui').classList.toggle('open');
@@ -327,7 +329,7 @@ function loop(){
   camera.fov = 40 - 2.5*beat; camera.updateProjectionMatrix();
   controls.update(); renderer.render(scene, camera);
 }
-target=0; U.uProgress.value=0;
+target=1; U.uProgress.value=0; introT=performance.now();
 loop();
 </script>
 </body>
