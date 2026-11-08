@@ -82,7 +82,7 @@
    "stem": "Describe the LPC scale.",
    "options": [
     "Describing your least preferred co-worker kindly means relationship-oriented (high LPC); harshly means task-oriented (low LPC)",
-    "A measure of follower skill and readiness that tells the leader how much direction to give",
+    "A measure of follower skill and readiness that tells the leader how much direction and how much support to give to each person",
     "A list of seven decision styles from boss-centred to subordinate-centred leadership",
     "A grid of two concerns — for production and for people — with five named positions"
    ],
@@ -130,7 +130,7 @@
    "stem": "Explain Fiedler's controversial claim.",
    "options": [
     "Leadership style is fixed, so change the situation — restructure the task, increase position power, or move the leader",
-    "Leaders can adopt any style, so training should teach every manager all of them",
+    "Leaders can adopt any style they choose, so training should teach every manager all of them and let them pick on the day",
     "Followers choose the style, so the leader should ask them which they prefer",
     "Situations never change, so the leader must be chosen to match them permanently"
    ],
@@ -306,7 +306,7 @@
    "stem": "Differentiate time-driven from development-driven decisions.",
    "options": [
     "Time-driven: the fastest style the situation allows; development-driven: move toward facilitate or delegate even if slower",
-    "Time-driven always means delegate, because delegation saves the leader's time",
+    "Time-driven always means delegate, because delegation saves the leader's time and the leader has more important things to do",
     "Development-driven always means decide, because the leader develops by deciding",
     "They are the same, because every decision has both a time and a development cost"
    ],
@@ -370,7 +370,7 @@
    "stem": "Describe substitutes for leadership.",
    "options": [
     "Characteristics of the task, followers or organisation that replace the need for a leader — skilled followers, structured work, strong norms, cohesive teams",
-    "Leaders who replace other leaders when they leave the organisation or move to a new role",
+    "Leaders who replace other leaders when they leave the organisation or move to a new role, keeping the same style, the same team, the same office and the same objectives",
     "Rules and procedures that cancel the leader's influence even when it is needed",
     "Deputies and assistants who act for the leader when the leader is absent"
    ],
@@ -386,7 +386,7 @@
    "stem": "Identify examples of neutralisers of leadership.",
    "options": [
     "Physical distance, rigid rules, followers indifferent to the leader's rewards, weak position power",
-    "Skilled followers and clear feedback from the task itself",
+    "Skilled followers and clear feedback from the task itself, which tell people how they are doing without the leader saying anything",
     "Cohesive teams with strong norms of their own",
     "Strong professional norms that guide the followers' work"
    ],
@@ -418,7 +418,7 @@
    "stem": "Identify the four-step method for an unseen case.",
    "options": [
     "Describe leader, followers and situation with evidence; choose the model that fits the decision; apply it and name the style; justify",
-    "Guess the style from experience; defend it with the textbook; ignore the case details; conclude",
+    "Guess the style from experience; defend it with a quotation from the textbook; ignore the details of the case; conclude with confidence",
     "List the leader's traits; rank them by importance; pick the top trait; justify the style it implies",
     "Vote on the style with the group; decide; announce; move on to the next case"
    ],
@@ -434,7 +434,7 @@
    "stem": "Describe when to use Fiedler rather than Vroom or Path–Goal, according to the method.",
    "options": [
     "Use Fiedler when the leader's style is fixed; Vroom when the question is how much to involve; Path–Goal for follower needs",
-    "Always Fiedler, because it is the only model that treats style as a trait",
+    "Always Fiedler, because it is the only model that treats style as a trait and traits are what the first chapters say matter most",
     "Always Vroom, because every leadership question is about participation",
     "Never Path–Goal, because it duplicates what expectancy theory already says"
    ],
@@ -498,7 +498,7 @@
    "stem": "Explain the chapter's reading of the cola case in question 1.",
    "options": [
     "Both readings are contingency readings — the situation changed and the question is whether the leader's style fitted the new situation",
-    "The leader was simply bad and would have failed in any situation",
+    "The leader was simply a bad manager and would have failed in any situation, which is why the board replaced him as soon as the results fell",
     "Cola never changes, so the leader's style was the only variable",
     "Traits decide everything, so the leader's success depended on who he was"
    ],
@@ -626,7 +626,7 @@
    "stem": "Exercise 2: Dr Mariam is the new head of the Kalba clinic; the previous head decided everything alone and left; staff are wary; she can hire and reward; her LPC is high. Determine the three variables.",
    "options": [
     "Leader: relationship-oriented (high LPC); followers: mixed — senior and junior doctors, nurses, receptionists, wary; situation: strong position power, untested relations, three different tasks",
-    "Leader: task-oriented (low LPC); followers: all experts who need no direction; situation: no position power and no deadlines",
+    "Leader: task-oriented (low LPC); followers: all experts who need no direction from anyone; situation: no position power, no deadlines, no pressure from the board and no complaints from patients",
     "Leader: unknown style; followers: hostile to any new head; situation: easy, because the clinic runs itself",
     "Leader: autocratic like the previous head; followers: loyal to the clinic; situation: stable and well structured"
    ],
@@ -642,7 +642,7 @@
    "stem": "Exercise 2: Rate the clinic's situational favourableness for Fiedler and determine whether Dr Mariam's style fits.",
    "options": [
     "Relations untested/poor, tasks mixed, power strong → moderate favourableness → a relationship-oriented leader fits reasonably",
-    "Most favourable → a task-oriented leader is needed, so she does not fit the clinic",
+    "Most favourable → a task-oriented leader is needed, so she does not fit the clinic and should be moved to another role in the hospital group",
     "Least favourable → she must be replaced by a task-oriented head",
     "Favourableness cannot be rated until she has been in post for a year"
    ],
@@ -690,7 +690,7 @@
    "stem": "Exercise 2, task (b): patient waiting times have doubled and nobody agrees why. Select the style and why.",
    "options": [
     "Participative / consult group or facilitate — commitment needed and the staff hold the knowledge",
-    "Decide — she has the authority and the waiting times cannot wait",
+    "Decide — she has the authority as head of the clinic and the waiting times cannot wait for a meeting to be arranged",
     "Directive — tell the staff to work faster until the times fall",
     "Delegate — walk away and let the staff fix it themselves"
    ],
@@ -738,7 +738,7 @@
    "stem": "Determine the substitute for leadership and the neutraliser in the Kalba clinic.",
    "options": [
     "Substitute: the senior doctors' expertise; neutraliser: the wariness left by the previous head's autocracy, removed by early consultation",
-    "Substitute: the software vendor; neutraliser: the receptionists who resist the new system",
+    "Substitute: the software vendor, who trains the staff and answers their questions; neutraliser: the receptionists who resist the new system because they fear it",
     "Substitute: the six-week deadline; neutraliser: the budget for training",
     "Substitute: Dr Mariam's high LPC; neutraliser: the training programme"
    ],
@@ -754,7 +754,7 @@
    "stem": "Take-away: a project team's coordinator believes she operates at point 6 (team decides within limits); members say she really announces decisions. Determine the chapter's explanation.",
    "options": [
     "Managers overestimate how far along the continuum they are; followers place them one or two points more boss-centred",
-    "Members are wrong, because the coordinator knows her own behaviour best",
+    "Members are wrong, because the coordinator knows her own behaviour best and the members have seen only a few of her decisions",
     "Point 6 does not exist in the version of the continuum the chapter uses",
     "Teams cannot judge where a leader sits, because they see only the decisions"
    ],
@@ -770,7 +770,7 @@
    "stem": "Take-away: the Project 2 interview with a real leader is unstructured and stressful; one member is confident, another is anxious. Determine the Path–Goal style for each.",
    "options": [
     "Participative or achievement-oriented for the confident member; supportive (with some direction) for the anxious one",
-    "Directive for both, because an interview with a real leader needs a clear plan",
+    "Directive for both, because an interview with a real leader needs a clear plan and a script that neither member can deviate from",
     "Supportive for both, because interviews are stressful for everyone",
     "Delegate for both, because students should manage their own project"
    ],
@@ -786,7 +786,7 @@
    "stem": "Rami's three followers trust him, the climb is a familiar routine, and he can assign the food and the ropes. Rate the situation for Fiedler and select the best style.",
    "options": [
     "Most favourable — good relations, structured task, strong power → task-oriented",
-    "Moderate favourableness → relationship-oriented",
+    "Moderate favourableness → relationship-oriented, because the task is new and the relations are untested",
     "Least favourable → task-oriented",
     "Cannot be rated without an LPC score for Rami"
    ],
@@ -834,7 +834,7 @@
    "stem": "Rami sends orders by messenger to a team two days away who no longer care about his praise. Classify the problem.",
    "options": [
     "Neutralisers — physical distance and indifference to the leader's rewards cancel his influence",
-    "A substitute — the team is skilled enough to manage without him",
+    "A substitute for leadership — the team is skilled enough to manage the whole crossing without him and resents his instructions",
     "High favourableness — the team knows what to do",
     "A descriptive model that the team is reading differently from Rami"
    ],
@@ -916,7 +916,7 @@
     "Consult individually or consult group (both); facilitate (relationship); delegate (hands-off)",
     "Decide (both); delegate (relationship); consult (hands-off)",
     "Facilitate (both); decide (relationship); consult (hands-off)",
-    "Delegate (both); decide (relationship); facilitate (hands-off)"
+    "Delegate (both); decide (relationship); facilitate (hands-off); consult group (hands-off); consult individually (relationship)"
    ],
    "answer": 0,
    "why": "One map of the styles. See §4.7."
@@ -1026,7 +1026,7 @@
    "stem": "Analyse a team so skilled that Rami's instructions only slow it down. Determine the correct response, according to the chapter.",
    "options": [
     "Recognise the substitute and move the leader's value to boundary work — it is a contingency skill, not failure",
-    "Give more instructions so that the team remembers who is in charge",
+    "Give more detailed instructions every day so that the team remembers who is in charge and does not forget the captain's authority",
     "Replace the team with one that needs the leader's instructions",
     "Abandon leadership entirely, because the team no longer needs a leader"
    ],

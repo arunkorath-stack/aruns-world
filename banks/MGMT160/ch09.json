@@ -35,7 +35,7 @@
    "stem": "Identify what AI is NOT, according to the chapter.",
    "options": [
     "Human intelligence — it has no feelings, no history with your team, no responsibility and no values",
-    "A tool — it is far more than a tool because it can learn and improve by itself",
+    "A tool — it is far more than a tool because it can learn, remember and improve by itself without any human help",
     "Able to read faster than a person — it reads at the same speed as a trained human",
     "Able to find patterns in large data — pattern recognition is what humans still do better"
    ],
@@ -51,7 +51,7 @@
    "stem": "Identify the parts of a strong prompt.",
    "options": [
     "Role, context, task, audience and format, constraints",
-    "Greeting, politeness, urgency, importance and thanks",
+    "Greeting, politeness, urgency, importance, thanks and a signature",
     "Title, date, author, signature and logo",
     "Question, keywords, examples, length and language"
    ],
@@ -99,7 +99,7 @@
    "stem": "Explain whether AI can motivate employees.",
    "options": [
     "No — it helps with logistics such as fair pay and schedules, but being seen by someone whose opinion matters stays human",
-    "Yes — a chatbot's praise is as good as a manager's, because employees respond to the words, not the speaker",
+    "Yes — a chatbot's praise is as good as a manager's, because employees respond to the words themselves and not to the speaker",
     "Yes — AI can replace the leading function, because it can send personalised encouragement to every employee every day",
     "No — AI cannot do anything at all in the leading function, so managers should keep it out of people matters"
    ],
@@ -163,7 +163,7 @@
    "stem": "Explain why confident AI output is dangerous.",
    "options": [
     "Humans read confidence as competence, and AI is always fluent — so the checking instinct switches off",
-    "AI is usually wrong, so any confident answer should be treated as false until proved otherwise",
+    "AI is usually wrong, so any confident answer should be treated as false until it has been proved otherwise by a human",
     "Fluent text is always false, because true statements are usually hesitant and full of qualifications",
     "Confident text is illegal in professional documents, which must state their level of certainty"
    ],
@@ -323,7 +323,7 @@
    "stem": "Analyse a first-year employee with a good AI tool performing like an experienced one on routine work. Determine the pattern.",
    "options": [
     "AI raises the floor faster than the ceiling — the gains are largest for the least experienced",
-    "AI only helps experts, so the first-year employee must have had hidden experience",
+    "AI only helps experts, so the first-year employee must have had hidden experience from an earlier job",
     "The employee must be cheating by passing off the AI's work as their own",
     "Routine work no longer exists, so the comparison with experienced staff is meaningless"
    ],
@@ -339,7 +339,7 @@
    "stem": "Determine the manager's verification rule for AI output.",
    "options": [
     "Anything that will be filed, sent, published or decided gets checked against a source the tool did not write",
-    "Ask the AI whether its answer is correct and accept the answer if it confirms it",
+    "Ask the AI itself whether its answer is correct and accept the answer if the tool confirms that it is right",
     "Check only if the answer looks suspicious, since most AI output is correct",
     "Trust it if it is well formatted, because formatting errors are a sign of poor output"
    ],
@@ -451,7 +451,7 @@
    "stem": "Determine who should decide on firing an employee after repeated performance issues.",
    "options": [
     "Human — AI may flag the data, but the decision, the conversation and the dignity are human work",
-    "AI — it has the performance data and no personal feelings about the employee",
+    "AI — it has all the performance data and no personal feelings about the employee, so its decision is fairer and faster",
     "Both — AI decides on the data, and the human informs the employee of the result",
     "AI, human-checked — the system decides and a manager signs the letter"
    ],
@@ -467,7 +467,7 @@
    "stem": "Determine who should decide next month's shifts for 30 people.",
    "options": [
     "AI, human-checked — fairness rules set by the manager, exceptions handled by a person",
-    "Human only — AI cannot schedule fairly, because it does not know the staff",
+    "Human only — AI cannot schedule fairly, because it does not know the staff, their families or their problems",
     "AI only — no human is needed, because scheduling is a routine task",
     "Nobody — let the staff choose their own shifts freely each month"
    ],
@@ -483,7 +483,7 @@
    "stem": "Analyse the decision 'should we open the second branch?' with AI scenarios and forecasts available. Determine who owns it.",
    "options": [
     "Both — AI runs scenarios; the bet, the risk appetite and the accountability are the manager's",
-    "AI — it has the market data and can compare more scenarios than any manager",
+    "AI — it has all the market data and can compare far more scenarios than any manager could in a year",
     "Nobody — wait for more data until the forecast is certain enough to act on",
     "The employees by vote, since they will have to work in the new branch"
    ],

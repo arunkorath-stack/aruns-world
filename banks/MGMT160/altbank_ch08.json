@@ -34,7 +34,7 @@
    "stem": "Describe the 'uncertainty' reason for resisting change.",
    "options": [
     "People do not know what the change means for them, so they hold on to what they know",
-    "People are lazy and prefer not to learn anything new if they can avoid it",
+    "People are lazy by nature and prefer not to learn anything new if they can possibly avoid it",
     "People want more pay before they will accept any change in their work",
     "People dislike the manager and resist to show that they do not trust her"
    ],
@@ -52,7 +52,7 @@
     "An expert in the old way fears becoming a beginner in the new one",
     "People want a bigger office and resist until they are given one",
     "People dislike computers and refuse to work with new technology",
-    "People are disloyal and resist any change the company proposes"
+    "People are disloyal by nature and resist any change the company proposes to them"
    ],
    "answer": 0,
    "why": "Loss of status is one of the four reasons. See §8.2."
@@ -100,7 +100,7 @@
     "Make the change stick through training, KPIs, rewards and celebrated successes",
     "Announce the change to the whole organisation at the same time",
     "Show why the old way cannot continue, using the numbers",
-    "Buy the new system and install it before the staff are told"
+    "Buy the new system and install it before the staff are told anything about the change"
    ],
    "answer": 0,
    "why": "Refreezing is control applied to change. See §8.4."
@@ -130,7 +130,7 @@
    "stem": "Explain why implementation is the harder half of innovation.",
    "options": [
     "Turning an idea into a product needs the four functions, which almost nobody does",
-    "Ideas are rare, so the hard part is finding one worth implementing",
+    "Ideas are rare and precious, so the hard part is finding one that is worth implementing at all",
     "Implementation is cheap, so companies rush it and get it wrong",
     "Only engineers can implement, and most companies do not have enough of them"
    ],
@@ -259,7 +259,7 @@
    "options": [
     "Build judgement, people skills and the habit of learning — the parts software cannot do",
     "Learn one tool very well and stop, because employers want specialists",
-    "Avoid technology, because the jobs that survive will be the ones software cannot touch",
+    "Avoid technology, because the jobs that survive will be the ones software cannot touch for a long time",
     "Wait to see what happens, because nobody knows which skills will be needed"
    ],
    "answer": 0,

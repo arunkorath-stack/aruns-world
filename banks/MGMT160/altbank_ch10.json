@@ -18,7 +18,7 @@
    "stem": "Explain advice 9, 'use AI like a careful professional'.",
    "options": [
     "Use it to speed up routine work and verify everything before it goes out under your name",
-    "Avoid AI completely, because professionals are judged on what they can do without it",
+    "Avoid AI completely, because professionals are judged on what they can do without it and employers know the difference",
     "Copy AI output to save time, because the tools are now accurate enough to trust",
     "Use AI only for homework, where a mistake costs nothing but a mark"
    ],
@@ -34,7 +34,7 @@
    "stem": "Describe the 'friend's mistake' scenario in the chapter.",
    "options": [
     "A friend asks you to hide a mistake that cost money; the strong move is to stand beside them while they tell it",
-    "A friend asks for a loan to cover a mistake, and the strong move is to lend it without telling anyone",
+    "A friend asks for a loan to cover a mistake at work, and the strong move is to lend the money without telling anyone else about it",
     "A friend wants your notes for a report, and the strong move is to share them but insist on credit",
     "A friend wants to lead the project, and the strong move is to let them and support them from behind"
    ],
@@ -98,7 +98,7 @@
    "stem": "Explain why the chapter says to watch Drew Dudley's talk first.",
    "options": [
     "It captures the chapter's spirit — leadership is small moments that change someone's direction",
-    "It is the shortest of the videos, so it fits before the lecture begins",
+    "It is the shortest of the videos, so it fits before the lecture begins without delaying the rest of the class",
     "It is about salaries, which is what students most want to know about management",
     "It explains KPIs, which students need before they can follow the other talks"
    ],
@@ -132,7 +132,7 @@
     "Catching someone doing something right and saying so, promptly and specifically",
     "A yearly bonus paid to the employee with the best results",
     "A public ranking of the team updated every week on the noticeboard",
-    "A long speech at the team meeting thanking everyone for their effort"
+    "A long speech at the team meeting thanking everyone for their effort during the year"
    ],
    "answer": 0,
    "why": "Catch people doing something right. See §10.6."
@@ -210,7 +210,7 @@
    "stem": "Explain the phrase 'you are your own first employee'.",
    "options": [
     "Managing yourself uses the same tools as managing a team: goals, resources, motivation, a checkpoint",
-    "You should pay yourself a salary from your student budget to learn financial discipline",
+    "You should pay yourself a salary from your student budget every month to learn financial discipline early in life",
     "You should hire yourself for a role you want before anyone else offers it to you",
     "Employees should manage themselves, so that managers are no longer needed"
    ],
@@ -306,7 +306,7 @@
    "stem": "Analyse a student who argues loudly in a meeting when a senior person dismisses her idea. Determine the better move.",
    "options": [
     "Afterwards, privately, offer five minutes with the numbers behind the idea",
-    "Argue louder in the meeting until the senior person agrees to listen",
+    "Argue louder in the meeting until the senior person finally agrees to listen to the idea",
     "Give up the idea, because a senior person's judgement is usually right",
     "Email the senior person's boss with the idea and the evidence behind it"
    ],
@@ -372,7 +372,7 @@
     "Judgement under uncertainty, the ability to create safety, and the habit of checking",
     "Typing speed and the ability to memorise rules and procedures",
     "Only technical software skills, because that is what employers test for",
-    "Nothing — the studies are history and the world of work has moved on"
+    "Nothing — the studies are history and the world of work has moved on so far that they no longer apply"
    ],
    "answer": 0,
    "why": "No dataset contains these three. See §10.7."

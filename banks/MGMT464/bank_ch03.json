@@ -130,7 +130,7 @@
    "stem": "Explain why the Ohio State finding matters.",
    "options": [
     "Michigan says choose; Ohio State says you can do both — the basis of the Grid, Situational Leadership and the transformational leader",
-    "It proved Michigan right by showing that leaders who tried to do both ended up doing neither well",
+    "It proved Michigan right by showing that leaders who tried to do both ended up doing neither well and lost the respect of their followers",
     "It ended behavioural research, because the two dimensions explained everything that needed explaining",
     "It found the traits that produce each behaviour, linking the trait and behavioural paradigms"
    ],
@@ -147,7 +147,7 @@
    "options": [
     "1,1 impoverished; 9,1 authority-compliance; 1,9 country club; 5,5 middle of the road; 9,9 team leader",
     "Autocratic, democratic, laissez-faire, servant and charismatic",
-    "Task leader, people leader, balanced leader, absent leader, complete team leader and crisis leader",
+    "Task leader, people leader, balanced leader, absent leader, complete team leader, crisis leader and coaching leader",
     "Theory X, Theory Y, Theory Z, high-high and low-low"
    ],
    "answer": 0,
@@ -258,7 +258,7 @@
    "stem": "Explain why leaders must know all three classes.",
    "options": [
     "Content tells you which need is unmet; process tells you why the person is not trying; reinforcement tells you what your own behaviour is teaching them",
-    "Only one class is ever true for a given follower, so the leader must find which class fits each person",
+    "Only one class is ever true for a given follower, so the leader must find out which class fits each person before choosing a motivation tool for them and must never mix the classes",
     "Exams require it, because the textbook covers all three classes and tests each of them",
     "Each class is for a different industry — content for services, process for manufacturing, reinforcement for sales"
    ],
@@ -354,7 +354,7 @@
    "stem": "Identify the three parts of expectancy theory.",
    "options": [
     "Expectancy (can I do it?), instrumentality (will performance be rewarded?), valence (do I value the reward?)",
-    "Need (what is missing?), motive (why act?), behaviour (what is done?)",
+    "Need (what is missing?), motive (why act now?), behaviour (what is actually done?), consequence (what follows?)",
     "Input (what I give), output (what I get), comparison (what others get)",
     "Goal (what is asked?), feedback (how am I doing?), acceptance (do I agree?)"
    ],
@@ -370,7 +370,7 @@
    "stem": "Describe goal-setting theory.",
    "options": [
     "Specific, difficult but achievable goals motivate more than vague or easy ones — when accepted and with feedback",
-    "Easy goals motivate most, because people enjoy the feeling of reaching them",
+    "Easy goals motivate most, because people enjoy the feeling of reaching them and the confidence carries over into the next task",
     "Vague goals leave room for people to decide how to contribute",
     "Goals do not matter, because motivation comes from the leader's behaviour"
    ],
@@ -418,7 +418,7 @@
    "stem": "Describe extinction.",
    "options": [
     "Withholding the reward so an unwanted behaviour fades — it also happens by accident when good work goes unnoticed",
-    "Giving something unpleasant after unwanted behaviour so that it is not repeated",
+    "Giving something unpleasant after unwanted behaviour so that it is not repeated — such as a warning letter after a missed shift or a fine for lateness",
     "Giving praise after good behaviour so that it is repeated more often",
     "Behaving in a particular way in order to avoid a penalty or an unpleasant consequence"
    ],
@@ -434,7 +434,7 @@
    "stem": "Explain why variable schedules matter.",
    "options": [
     "They produce the most durable behaviour — unpredictable recognition works; predictable annual bonuses stop motivating",
-    "They are cheaper, because the leader rewards less often than on a continuous schedule",
+    "They are cheaper for the organisation, because the leader rewards far less often than on a continuous schedule and saves the budget",
     "They are easier to plan, because the leader does not have to reward every occurrence",
     "They are required by law in most countries, which limit how often bonuses can be paid"
    ],
@@ -482,7 +482,7 @@
    "stem": "Describe step 5 of the diagnosis sequence.",
    "options": [
     "What am I reinforcing by what I notice and reward? Praise the behaviour you want; stop rewarding what you do not",
-    "Fix pay first, because nothing above a broken maintenance factor will work",
+    "Fix pay first, because nothing above a broken maintenance factor will work, however well the leader praises or recognises the team",
     "Rewrite the objective in the textbook format with a measurable result and a date",
     "Enrich the job so that the work itself provides achievement and growth"
    ],
@@ -498,7 +498,7 @@
    "stem": "Explain the link between the diagnosis sequence and leader behaviour.",
    "options": [
     "Steps 1–5 are mostly initiating structure; step 6 and the way you do all of them is consideration — the high-high leader does both",
-    "All steps are consideration, because motivation is about how the leader treats people",
+    "All six steps are consideration, because motivation is entirely about how the leader treats people and nothing to do with structure or targets",
     "All steps are structure, because motivation is about goals, rewards and systems",
     "The sequence replaces behaviour, because a leader who diagnoses correctly does not need a style"
    ],
@@ -674,7 +674,7 @@
    "stem": "Exercise 2: the daily target of 45 deliveries is met by only a third of riders and the bonus is paid two months late. Determine the theory and the broken parts.",
    "options": [
     "Expectancy theory — expectancy is low (target reachable by few) and instrumentality is broken (bonus paid late)",
-    "Equity theory — riders compare their inputs and outputs with the other two apps",
+    "Equity theory — the riders compare their inputs and outputs with the riders working for the other two delivery apps in the same city",
     "Maslow — the safety need is unmet because the bonus is uncertain",
     "Reinforcement — the late bonus is a punishment for slow riders"
    ],
@@ -786,7 +786,7 @@
    "stem": "Determine where Rashid is on the Grid today and the two behaviours that move him toward 9,9.",
    "options": [
     "9,1 or 1,1 today; add consideration behaviours (thanks, fairness, growth) while keeping structure (clear targets)",
-    "9,9 already, because the targets are clear and the riders are paid on time",
+    "9,9 already, because the targets are clear and the riders are paid on time, so no change in behaviour is needed from the leader",
     "1,9 country club — add more targets and tighter supervision",
     "5,5 middle of the road — change nothing, because the results are average"
    ],
@@ -802,7 +802,7 @@
    "stem": "Analyse Rashid's situation. Determine why fixing recognition before the late bonus would fail.",
    "options": [
     "Step 1–2 come first — a broken maintenance factor and broken instrumentality make everything above them fail",
-    "Recognition is unethical when pay is low, because it substitutes words for money",
+    "Recognition is unethical when pay is low, because it substitutes words for money and the riders will see it as manipulation by the manager",
     "Riders dislike praise and would see it as manipulation",
     "Bonuses are motivators, so they must come before recognition"
    ],
@@ -866,7 +866,7 @@
    "stem": "Dana shivers all night with no blanket while Rami praises her tracking skills. Determine why the praise does not land.",
    "options": [
     "A lower unmet need (physiological/safety) must be met first — a late salary cancels every award",
-    "Praise never works with followers who are tired",
+    "Praise never works with followers who are tired, so the leader should wait until the morning before recognising anyone",
     "Dana lacks dominance and does not respond to recognition",
     "Praise is a maintenance factor and does not motivate"
    ],
@@ -1106,7 +1106,7 @@
    "stem": "Rami gives Noor a hard navigation puzzle with daily feedback, Omar the responsibility for the camp, and Dana a role in the group songs. Determine the theory applied.",
    "options": [
     "McClelland's acquired needs — challenge for achievers, responsibility for power-seekers, teamwork for affiliators",
-    "Maslow — all three followers are at the same level of the hierarchy",
+    "Maslow — all three followers are at the same level of the hierarchy, so the same reward will work equally well for each of them",
     "Herzberg — all three tasks are maintenance factors",
     "Equity theory — all three followers receive the same treatment"
    ],

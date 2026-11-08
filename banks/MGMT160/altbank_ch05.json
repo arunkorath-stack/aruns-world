@@ -226,7 +226,7 @@
    "stem": "Describe the idea of one person accountable for the whole experience.",
    "options": [
     "A single owner who follows the customer across departments so nothing falls between the chairs",
-    "Every department has its own boss who answers for that department's part of the work",
+    "Every department has its own boss who answers only for that department's part of the customer's experience",
     "The customer manages the process by telling each department what the previous one did",
     "Nobody is accountable, because the whole experience is the result of everybody's work"
    ],
@@ -322,7 +322,7 @@
    "stem": "Determine the chapter's view of a manager who says 'everyone just helps each other'.",
    "options": [
     "It is missing structure — people complain about working blind, not about working hard",
-    "It is ideal teamwork, because the staff share the work without waiting for orders",
+    "It is ideal teamwork, because the staff share the work without waiting for orders from the manager",
     "It is good delegation, because the manager has handed the work to the team",
     "It is a wide span of control, because the manager supervises everyone lightly"
    ],
@@ -354,7 +354,7 @@
    "stem": "Select the correct way to delegate the weekly supply order.",
    "options": [
     "Give the task, the authority to order up to a limit, and a clear standard; keep accountability",
-    "Give the task but approve every item yourself before the order is sent to the supplier",
+    "Give the task but approve every item yourself before the order is sent to the supplier, so that nothing can go wrong",
     "Give the task and never check it again, because checking shows a lack of trust",
     "Give the task to three people at once so that someone is always available to do it"
    ],
@@ -387,7 +387,7 @@
    "options": [
     "By customer type",
     "By geography",
-    "By product",
+    "By product line only",
     "By function"
    ],
    "answer": 0,
@@ -450,7 +450,7 @@
    "stem": "Analyse a company of 60 where every purchase still needs the founder's signature. Determine the fix.",
    "options": [
     "Delegate decision rights by money threshold and replace daily approvals with a weekly dashboard",
-    "Hire a second founder who shares the signing duty so that the queue moves twice as fast",
+    "Hire a second founder who shares the signing duty so that the queue of decisions moves twice as fast as it does now",
     "Stop all purchases until the founder has time to review the purchasing policy",
     "Ask staff to work longer hours so that purchases can be prepared before the founder arrives"
    ],

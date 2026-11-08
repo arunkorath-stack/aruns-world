@@ -114,7 +114,7 @@
    "stem": "Identify why people do not give feedback to leaders.",
    "options": [
     "They fear the reaction, were never asked, assume the leader knows, or saw what happened to the last person who spoke",
-    "They are shy and do not like to speak in front of senior people",
+    "They are shy by nature and do not like to speak in front of senior people, especially in a meeting with the whole team present",
     "They are busy and feedback takes time away from the work",
     "It is against policy in most organisations for staff to comment on their managers"
    ],
@@ -162,7 +162,7 @@
    "stem": "Describe how to state current performance.",
    "options": [
     "Specific, observed, recent — behaviour, not character: 'the last three reports arrived after the deadline', not 'you are unreliable'",
-    "General and about character, so that the person understands the pattern rather than one incident",
+    "General and about character, so that the person understands the whole pattern of their behaviour over the year rather than one incident",
     "Vague and old, so that the person is not embarrassed by a recent example",
     "As a threat, so that the person understands the seriousness of the conversation"
    ],
@@ -194,7 +194,7 @@
    "stem": "Identify the cost of silence about the under-performing team member in question 2.",
    "options": [
     "The two people doing his work, the resentment they hide, and the member who never learns he has a problem",
-    "Nothing — silence is kind and protects the team's relationships",
+    "Nothing — silence is kind and protects the team's relationships, which matter more than one member's missing work",
     "A fine from the university for failing to report the problem",
     "A complaint to HR from the member who is not performing"
    ],
@@ -226,7 +226,7 @@
    "stem": "Describe the collaborating style.",
    "options": [
     "High concern for own and others' needs — work jointly for a solution that satisfies both; the preferred style and the hardest",
-    "Give in to the other party to keep the peace, putting their needs above your own",
+    "Give in to the other party to keep the peace, putting their needs above your own and hoping that the goodwill will be repaid later",
     "Use authority or power to win the conflict regardless of the other party's needs",
     "Split the difference so that each party gets part of what it wanted"
    ],
@@ -242,7 +242,7 @@
    "stem": "Identify when forcing is appropriate.",
    "options": [
     "An unpopular decision must be made fast, safety, or the other party is taking advantage — at a cost to the relationship",
-    "Always, because a leader who does not force loses the respect of the team",
+    "Always, because a leader who does not force the decision loses the respect of the team and the confidence of the organisation above",
     "Never, because forcing destroys relationships and should be avoided at any cost",
     "Only with friends, who will forgive the leader afterwards"
    ],
@@ -338,7 +338,7 @@
    "stem": "Identify what a leader should NOT delegate.",
    "options": [
     "Personnel matters — appraisals, discipline, confidential issues; crises; activities specifically assigned to the leader",
-    "Paperwork and routine tasks that the leader has always done personally",
+    "Paperwork and routine tasks that the leader has always done personally and knows how to do faster than anyone else in the team",
     "Technical matters that others in the team can handle as well as the leader",
     "Tasks with developmental potential that would stretch a follower"
    ],
@@ -354,7 +354,7 @@
    "stem": "Identify the four steps of the delegation model.",
    "options": [
     "Explain the need and why this person; set objectives defining responsibility, authority and deadline; develop a plan with the follower; establish checkpoints and hold accountable",
-    "Give the order; wait for the result; check the work; blame the follower if it is wrong",
+    "Give the order; wait for the result; check the work when it arrives; blame the follower if it is wrong; do it yourself next time",
     "Ask for a volunteer; hope someone takes it; forget about it; repeat the request when nothing happens",
     "Email the task; remind the follower; escalate to their manager; redo the work yourself"
    ],
@@ -386,7 +386,7 @@
    "stem": "Identify why leaders do not delegate.",
    "options": [
     "Fear it will be done worse, fear losing control or credit, belief it is faster themselves, lack of trust, never learned how",
-    "Delegation is illegal for certain tasks, so leaders keep everything to be safe",
+    "Delegation is illegal for certain tasks under employment law, so leaders keep everything themselves to be safe from the consequences",
     "Followers refuse delegated tasks because they are not paid for them",
     "Delegation costs money, because followers have to be trained first"
    ],
@@ -402,7 +402,7 @@
    "stem": "Identify the seven characteristics of effective teams.",
    "options": [
     "Norms, leadership, cohesiveness and interdependence, composition, structure, organisational support, creativity",
-    "Size, age, pay, office, hours, titles and laptops",
+    "Size, age, pay, office, hours, titles, laptops, parking spaces, the coffee machine and the view from the window",
     "Vision, mission, values, slogan, logo, website and app",
     "Trust, speed, cost, quality, risk, scope and time"
    ],
@@ -450,7 +450,7 @@
    "stem": "Identify the contents of a team charter.",
    "options": [
     "Purpose; goals and success measures; roles; decision rule; meeting rhythm; norms for deadlines, attendance and disagreement; what happens when someone does not deliver",
-    "Names, phone numbers and email addresses of every member of the team",
+    "Names, phone numbers, email addresses and home addresses of every member of the team, together with their timetables, their preferred working hours and their photographs",
     "The budget for the project and who is authorised to spend it",
     "The leader's biography and the reasons they were chosen to lead the team"
    ],
@@ -466,7 +466,7 @@
    "stem": "Describe a self-managed team.",
    "options": [
     "A relatively autonomous team whose members share or rotate leadership and hold themselves mutually accountable",
-    "A team with no goals that organises its own work as it sees fit",
+    "A team with no goals of its own that organises its work as it sees fit and reports to nobody at the end of the week",
     "A team run by an appointed director who makes all the decisions",
     "A team of one person who manages their own workload"
    ],
@@ -498,7 +498,7 @@
    "stem": "Identify top management's role for self-managed teams.",
    "options": [
     "Design for it — clear boundaries, resources, reward systems for team results, and a champion who protects the team while it learns",
-    "Leave the team alone, because any involvement undermines its autonomy",
+    "Leave the team entirely alone from the first day, because any involvement from above undermines its autonomy and teaches it to wait for instructions from the top",
     "Appoint a strict leader to make sure the team does not drift",
     "Cancel training, because self-managed teams learn by doing"
    ],
@@ -514,7 +514,7 @@
    "stem": "Explain the chapter's reading of the 'polite' team in question 4.",
    "options": [
     "Politeness is the symptom — missing norms about disagreement and accountability, no decision rule, and a conflict-avoiding leader",
-    "Politeness is the strength — the team has avoided the conflict that destroys other teams",
+    "Politeness is the strength — the team has avoided the relationship conflict that destroys other teams and should be congratulated",
     "The team is too small to disagree productively",
     "The team needs a bonus to motivate members to speak"
    ],
@@ -610,7 +610,7 @@
    "stem": "Exercise 1E: a ninety-minute meeting covers five topics, decides nothing and ends with 'let's think about it'. Determine what was missing.",
    "options": [
     "Planning, a decision rule and follow-up — no agenda, no decision rule, no minutes",
-    "A bigger room so that everyone could see the slides",
+    "A bigger room with a better screen so that everyone in the department could see the slides and follow the discussion from the back",
     "More participants so that every view was represented",
     "A longer meeting so that every topic could be settled"
    ],
@@ -642,7 +642,7 @@
    "stem": "Exercise 2A, the silent consultancy team: two dominate, three agree with everything, one stopped attending, a wrong assumption went unraised for a week; the leader is friendly, avoids conflict, has never written an agenda and grades everyone the same. Determine the missing characteristics, the conflict style and the LMX pattern.",
    "options": [
     "Missing norms, structure (roles, decision rule) and leadership; the leader is avoiding; the in-group is the two dominant members",
-    "Missing composition only; the leader is forcing; there is no in-group",
+    "Missing composition only; the leader is forcing the group to agree with her; there is no in-group because everyone contributes equally to the work",
     "Missing organisational support only; the leader is collaborating; everyone is in the in-group",
     "Nothing missing; the leader is negotiating; there is no pattern"
    ],
@@ -674,7 +674,7 @@
    "stem": "Exercise 2A: select the four-step coaching conversation with the member who stopped attending.",
    "options": [
     "Current: three absences; desired: attend and own one section; ask for a commitment rather than tell; set a follow-up date",
-    "'You're out of the team — we have carried you for long enough and the deadline is too close.'",
+    "'You're out of the team — we have carried you for long enough, the deadline is too close, and nobody has the time to chase you any more.'",
     "'Everyone misses meetings sometimes — don't worry about it, we will catch you up.'",
     "'Attend the next meeting or I'll report you to the module leader.'"
    ],
@@ -706,7 +706,7 @@
    "stem": "Exercise 2B: each member writes one BCF statement about the team to say aloud. Select the correctly formed one.",
    "options": [
     "'When the slides arrive the night before (B), I rehearse at 1 a.m. (C), and I feel the deadline isn't shared (F).'",
-    "'You people are always late with everything and I am tired of it.'",
+    "'You people are always late with everything, I am tired of it, and I am going to tell the module leader if it happens again.'",
     "'The slides are a disaster and we are going to fail if this continues.'",
     "'I'm fine with whatever the rest of you decide about the slides.'"
    ],
@@ -722,7 +722,7 @@
    "stem": "Exercise 2B: the rewritten charter must include norms for disagreement and missed deadlines. Determine why those two norms matter most for the silent team.",
    "options": [
     "Without them, politeness replaces challenge and non-delivery has no consequence — the exact failures in the case",
-    "They are required by the university's project guidelines",
+    "They are required by the university's project guidelines and the module leader checks that they are in every team's charter",
     "They are the shortest norms to write and agree",
     "They replace the decision rule, which the team does not need"
    ],
@@ -738,7 +738,7 @@
    "stem": "Take-away: a team member is asked 'when did you last tell the boss something they did not want to hear?' and answers 'never — the last person who did was moved'. Determine the finding.",
    "options": [
     "Feedback is not asked for, thanked or acted on — people have seen what happens to the last person who spoke",
-    "The boss is a great listener who has never needed correcting",
+    "The boss is a great listener who has never needed correcting, which is why the team has nothing to add to his plans",
     "The team has nothing to say because the boss is always right",
     "Feedback is unnecessary in a well-run team"
    ],
@@ -930,7 +930,7 @@
    "stem": "Identify the benefits of self-managed teams.",
    "options": [
     "Higher productivity, quality and flexibility, faster response, higher commitment, lower turnover, and members developed as leaders",
-    "Lower cost only, because the team needs no manager",
+    "Lower cost only, because the team needs no manager and the salary saved can be spent on better equipment for the team to use in its work",
     "Fewer meetings, because the team does not need to coordinate",
     "Less training, because the team teaches itself"
    ],
@@ -1042,7 +1042,7 @@
    "stem": "Omar, in the out-group, starts taking initiative, delivering early and supporting Rami's plan. Determine the chapter's advice he is following.",
    "options": [
     "The follower's role — earn a high-quality exchange through initiative and delivery",
-    "Complain to the elders about Rami's favouritism",
+    "Complain to the elders about Rami's favouritism and ask them to order the captain to treat every follower the same",
     "Form his own in-group with Dana against Noor",
     "Withdraw effort until Rami notices him"
    ],
@@ -1074,7 +1074,7 @@
    "stem": "The village guards start deciding their own rota and methods, but the elders give them no boundaries, no resources and no champion; conflict spreads. Determine what is missing.",
    "options": [
     "Top management's design — clear boundaries, resources, team rewards and a champion",
-    "A stricter leader to take back control of the rota",
+    "A stricter leader appointed by the elders to take back control of the rota and make the decisions the team cannot make for itself",
     "Fewer guards so that the team is easier to manage",
     "More rules so that the guards know exactly what to do"
    ],

@@ -210,7 +210,7 @@
    "stem": "Describe the Nokia lesson.",
    "options": [
     "Measuring only the easy number (market share) hid that customers no longer wanted the phones",
-    "Nokia measured too little and should have added more KPIs to its dashboard",
+    "Nokia measured far too little and should have added many more KPIs to its dashboard every quarter",
     "Nokia had no managers who understood control, so nobody checked the numbers",
     "Nokia's KPIs were perfect, but the market changed too fast for any control system"
    ],
@@ -484,7 +484,7 @@
     "Feedforward control",
     "Concurrent control",
     "Feedback control",
-    "No form of control"
+    "No form of control at all"
    ],
    "answer": 0,
    "why": "Prevention before the work. See §7.6."
@@ -514,7 +514,7 @@
    "stem": "Select the three vital-few KPIs for a café aiming at happy customers.",
    "options": [
     "Satisfaction score, average wait time, repeat visits",
-    "Number of chairs, wall colour and staff birthdays",
+    "Number of chairs, wall colour, staff birthdays and the brand of coffee",
     "Instagram likes, logo size and menu length",
     "Rent, tax and insurance paid each month"
    ],

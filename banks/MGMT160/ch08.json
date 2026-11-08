@@ -18,7 +18,7 @@
    "stem": "Describe organisational change.",
    "options": [
     "Altering how the organisation works — its strategy, structure, technology, people or processes",
-    "Changing the company logo, colours and uniforms so that customers notice a fresh image",
+    "Changing the company logo, colours and uniforms so that customers notice a fresh image in the shops",
     "Replacing the top manager and the leadership team with people from outside the company",
     "Moving to a bigger office or a new building when the current one is too small for the staff"
    ],
@@ -34,7 +34,7 @@
    "stem": "Identify the five pressures that force organisations to change.",
    "options": [
     "Competition, technology, customer expectations, globalisation, economic changes",
-    "Fear, uncertainty, comfort with old ways, loss of control, loss of status",
+    "Fear, uncertainty, comfort with old ways, loss of control and loss of status among staff",
     "Planning, organising, leading, controlling, innovating",
     "Salaries, offices, managers, customers, suppliers"
    ],
@@ -66,7 +66,7 @@
    "stem": "Identify the four honest reasons people resist change.",
    "options": [
     "Fear, uncertainty, comfort with old ways, loss of control or status",
-    "Laziness, lack of intelligence, disloyalty and age",
+    "Laziness, lack of intelligence, disloyalty, old age and stubbornness",
     "Low pay, long hours, bad managers and small offices",
     "Competition, technology, globalisation and the economy"
    ],
@@ -98,7 +98,7 @@
    "stem": "Identify the four tools for managing resistance, in order.",
    "options": [
     "Communication, participation, training, support",
-    "Punishment, pressure, deadlines and bonuses",
+    "Punishment, pressure, strict deadlines and bonuses",
     "Email announcement, manual, launch and review",
     "Hire, dismiss, train and promote"
    ],
@@ -114,7 +114,7 @@
    "stem": "Explain why the order of the four tools matters.",
    "options": [
     "Nobody wants training for a change they do not understand, and people only train for a design they had a say in",
-    "Training is the most expensive tool, so it comes last to protect the budget if the change is cancelled",
+    "Training is the most expensive of the four tools, so it comes last to protect the budget in case the change is cancelled",
     "Support should always come first, because people need to feel safe before they will listen to anything",
     "The order does not matter, as long as all four tools are used at some point during the change"
    ],
@@ -131,7 +131,7 @@
    "options": [
     "Patience in the dip — performance drops before it rises, and punishing the dip kills the change",
     "Paying a bonus to every employee who accepts the change within the first month",
-    "Sending more emails and reminders so that nobody can say they were not informed",
+    "Sending more emails and reminders to every employee so that nobody can say they were not informed about the change",
     "Hiring a consultant to run the change so that the manager can concentrate on the daily work"
    ],
    "answer": 0,
@@ -162,7 +162,7 @@
    "stem": "Explain why so many changes 'did not stick'.",
    "options": [
     "The refreeze step was skipped — new habits were not written into training, KPIs and rewards",
-    "The change was too small to be noticed, so people saw no reason to alter their habits",
+    "The change was too small to be noticed by anyone, so people saw no reason to alter their habits at all",
     "The employees were too young to understand why the organisation needed to change",
     "The manager communicated too much, so the team stopped listening before the launch"
    ],
@@ -194,7 +194,7 @@
    "stem": "Differentiate creativity from innovation.",
    "options": [
     "Creativity generates the idea; innovation implements it — and implementation is the harder half",
-    "Creativity is for artists and designers; innovation is for engineers and product managers",
+    "Creativity is for artists and designers only; innovation is for engineers, product managers and the people who sell",
     "They mean the same thing, and the chapter uses whichever word fits the sentence",
     "Innovation generates the idea; creativity is the work of selling it to customers"
    ],
@@ -210,7 +210,7 @@
    "stem": "Identify the four barriers that kill innovation inside organisations.",
    "options": [
     "Fear of failure, resistance to change, lack of resources, rigid culture",
-    "Too many ideas, too much money, too many people and too much time",
+    "Too many ideas, too much money, too many people and too much time on their hands",
     "Customers, suppliers, competitors and government",
     "Planning, organising, leading and controlling"
    ],
@@ -226,7 +226,7 @@
    "stem": "Explain the chapter's 'honest frame' about jobs and technology.",
    "options": [
     "Jobs will mostly be reassembled, not abolished — routine goes to software, judgement and people stay with humans",
-    "All jobs will disappear within a generation, so students should prepare for a world without work",
+    "All jobs will disappear within a generation, so students should prepare now for a world in which there is no paid work",
     "Nothing will change in most jobs, because software has been promised for decades and never arrived",
     "Only managers' jobs will disappear, because software can plan, organise and control better than people"
    ],
@@ -243,7 +243,7 @@
    "options": [
     "Adaptability — it keeps the other skills current",
     "Typing speed and software skills",
-    "Accounting and financial analysis",
+    "Accounting, financial analysis and spreadsheet modelling",
     "Memorising rules and procedures"
    ],
    "answer": 0,
@@ -354,7 +354,7 @@
    "stem": "Select the correct unfreeze action for a bookstore owner who refuses to change.",
    "options": [
     "Show why the old way cannot continue — the falling numbers, the online competitor, the customer data",
-    "Install the new system and hope that the owner learns to appreciate it once it is in use",
+    "Install the new system quietly and hope that the owner learns to appreciate it once it is in daily use in the shop",
     "Write the new process into the staff handbook so that the owner has to follow it",
     "Celebrate the first success with the new system so that the owner sees it working"
    ],
@@ -434,7 +434,7 @@
    "stem": "Analyse an organisation where one failed experiment ends careers and nobody experiments. Determine the manager's job.",
    "options": [
     "Separate the failed experiment from the failed person; celebrate the well-run test that did not work",
-    "Punish failures harder so that people take more care before they experiment",
+    "Punish failures harder so that people take more care before they experiment with the company's time and money",
     "Stop all experiments until the organisation has a culture that can handle failure",
     "Hire more creative people from outside, since the current staff are afraid to try"
    ],

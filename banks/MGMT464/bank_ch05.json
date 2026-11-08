@@ -66,7 +66,7 @@
    "stem": "Explain why Mark Cuban's problems arise, in the chapter's reading.",
    "options": [
     "He used coercive and position power where personal power was needed — with referees and the league he does not command",
-    "He has no power at all, because the league and the referees are outside his organisation",
+    "He has no power at all over the game, because the league, the referees and the other owners are completely outside his organisation",
     "He never uses position power, so his players and staff do not take his authority seriously",
     "He lacks expertise in basketball and so cannot build the expert power a team owner needs"
    ],
@@ -146,7 +146,7 @@
    "stem": "Identify the nine influencing tactics.",
    "options": [
     "Rational persuasion, inspirational appeal, consultation, ingratiation, personal appeal, exchange, coalition, legitimisation, pressure",
-    "Decide, consult individually, consult group, facilitate, delegate, direct, support, participate, achieve",
+    "Decide, consult individually, consult group, facilitate, delegate, direct, support, participate, achieve and coach — the ten styles from the earlier chapters",
     "Plan, negotiate, postpone, agree, network, reciprocate, build coalitions, praise, punish",
     "Trait, behaviour, situation, power, politics, networking, negotiation, ethics, culture"
    ],
@@ -194,7 +194,7 @@
    "stem": "Explain the chapter's answer to why one colleague was promoted and the equally competent one was not.",
    "options": [
     "The promoted person used rational persuasion, consultation and coalition — building agreement before the decision; work does not speak, people do",
-    "Luck — the two colleagues were equally competent and the decision could have gone either way",
+    "Luck — the two colleagues were equally competent and the decision could have gone either way on the day, whatever either of them did or said in the meeting",
     "The promoted person was related to the boss, which is the usual reason in organisations of that kind",
     "The other colleague was lazy and did not deserve the promotion whatever the influence tactics used"
    ],
@@ -258,7 +258,7 @@
    "stem": "Explain the chapter's answer to 'can I refuse to play politics?'.",
    "options": [
     "You cannot refuse to play; you can only choose to play badly — your good ideas lose to worse ideas that were better supported",
-    "Yes, refuse and succeed anyway, because results are what organisations reward in the end",
+    "Yes, refuse and succeed anyway, because results are what organisations reward in the end and politics is a distraction from the work",
     "Yes, if your work is good enough, because excellent work is noticed without any support",
     "No, because politics is illegal and refusing to take part would be a breach of your duties"
    ],
@@ -322,7 +322,7 @@
    "stem": "Describe the guideline 'gain recognition — and be a team player'.",
    "options": [
     "Let results be known, take visible projects, give credit to others and never take it; help people before you need them",
-    "Hide your results until the annual review so that nobody can claim them",
+    "Hide your results until the annual review so that nobody can claim them, and keep your projects to yourself until they are finished",
     "Take credit for team work, because the leader is responsible for the team's results",
     "Avoid visible projects, because they carry the risk of visible failure"
    ],
@@ -498,7 +498,7 @@
    "stem": "Describe the consultation tactic.",
    "options": [
     "Ask the person to help plan or improve the idea — for commitment, not only compliance",
-    "Offer something in return for the person's agreement",
+    "Offer the person something they value in return for their agreement, and make sure the exchange is kept",
     "Point to your authority or the organisation's rules",
     "Praise the person before making the request"
    ],
@@ -594,7 +594,7 @@
    "stem": "Exercise 1E: a manager threatens to cancel a technician's leave unless the report is finished tonight. Determine the tactic, its cost, and the rewrite.",
    "options": [
     "Pressure — coercive power; costs referent power; rewrite as exchange: 'the client needs it by 9 a.m.; if you can finish tonight I will cover your Thursday shift'",
-    "Exchange — reward power; fair because the technician's leave is the manager's to grant; keep it as it is",
+    "Exchange — reward power; fair because the technician's leave is the manager's to grant and the manager is being generous with it; keep the message exactly as it is written",
     "Legitimisation — legitimate power; the manager is entitled to set deadlines; keep it as it is",
     "Consultation — referent power; the manager is asking the technician for ideas; keep it as it is"
    ],
@@ -642,7 +642,7 @@
    "stem": "Exercise 2: Noura, four months into a government entity, has pilot workload data and a simpler template but no authority over anyone. Determine the power she has and lacks.",
    "options": [
     "Has expert and information power and some referent power with the supervisors; lacks legitimate, reward, coercive and connection power",
-    "Has legitimate and coercive power from her post; lacks expert power because she is new",
+    "Has legitimate and coercive power from her post as analyst in the director's office; lacks expert power because she is new to the organisation and to the field",
     "Has all seven kinds of power because she has the pilot data",
     "Has none of the seven kinds of power because she has no authority"
    ],
@@ -674,7 +674,7 @@
    "stem": "Select the three-tactic sequence from the marking guide for Noura's influence plan.",
    "options": [
     "Consultation with the manager ('help me test whether the pilot data is representative'), then rational persuasion with the data, then coalition with two supervisors who volunteer their experience",
-    "Pressure on the manager to change the template, then legitimisation through the director's instructions, then exchange of favours with the supervisors",
+    "Pressure on the manager to change the template, then legitimisation through the director's instructions, then exchange of favours with the supervisors to secure their support for the new version before the next review",
     "Coalition with the supervisors first, then pressure on the manager with their support, then ingratiation to repair the relationship",
     "Personal appeal to the director as a friend of her family, then pressure on the manager through the director's authority"
    ],
@@ -690,7 +690,7 @@
    "stem": "Determine why pressure and legitimisation are not available to Noura.",
    "options": [
     "Both need position power — coercive or legitimate — and she has no authority over anyone",
-    "They are unethical for everyone in every situation",
+    "They are unethical for everyone in every situation, whatever the objective, and the chapter says they should never be used by anyone",
     "They take too long to produce results in a four-month post",
     "Her manager has forbidden their use in the department"
    ],
@@ -706,7 +706,7 @@
    "stem": "Determine whether Noura's coalition with two supervisors passes the ethical test.",
    "options": [
     "Yes — a legitimate objective (the director's data on time) and an honest exchange; she would be comfortable if it were public",
-    "No — coalitions are always manipulation of the decision-maker",
+    "No — coalitions are always manipulation of the decision-maker, whatever the objective, because they replace argument with numbers",
     "No — she lacks the authority to form a coalition",
     "Yes — because she will win the argument with their support"
    ],
@@ -722,7 +722,7 @@
    "stem": "Noura gets 15 minutes with her manager. Select her limit, target and opening from the marking guide.",
    "options": [
     "Limit: the pilot data is reviewed by someone; target: a two-week trial of the simpler template; opening: a joint review of the workload figures",
-    "Limit: the template is scrapped; target: her promotion to team lead; opening: a complaint to the director",
+    "Limit: the template is scrapped completely and never used again; target: her promotion to team lead within the year; opening: a formal complaint to the director about the manager",
     "Limit: nothing; target: nothing; opening: an apology for raising the issue",
     "Limit: a pay rise; target: a new manager; opening: a threat to resign"
    ],
@@ -738,7 +738,7 @@
    "stem": "Select the sentence Noura uses to focus on the obstacle, not the person.",
    "options": [
     "'We both want the director to get the data on time; the obstacle is the field time this version takes.'",
-    "'Your template is the problem and everyone in the field knows it.'",
+    "'Your template is the problem, everyone in the field knows it, and the director will find out soon enough if it is not changed.'",
     "'The director will blame you if the data is late again.'",
     "'I know more about this than you do, so please listen.'"
    ],
@@ -770,7 +770,7 @@
    "stem": "The manager says no. Determine Noura's BATNA and how she keeps the relationship and the idea alive.",
    "options": [
     "Alternative: propose a formal pilot through the director's review meeting; accept the manager's decision for now and offer to monitor the workload",
-    "Go over his head immediately to the director with the pilot data",
+    "Go over his head immediately to the director with the pilot data and ask the director to overrule the manager in front of the team at the next meeting",
     "Drop the idea forever and use the manager's template",
     "Tell the field teams to refuse the template until it is changed"
    ],
@@ -866,7 +866,7 @@
    "stem": "Rami bargains with the boatman: he knows his limit (no more than two days' food), his target (passage tonight) and his alternative (the old bridge). Determine why he negotiates well.",
    "options": [
     "He planned — limit, target, opening and a BATNA; a person with an alternative is never desperate",
-    "He shouted louder than the boatman until the boatman gave in",
+    "He shouted louder than the boatman and kept shouting until the boatman finally gave in and agreed to take the party across the river",
     "He paid whatever was asked so that the party could cross tonight",
     "He lied about the gang so that the boatman would be afraid to refuse"
    ],
@@ -930,7 +930,7 @@
    "stem": "Rami uses the same persuasion with Omar as with the Crow chief and fails with one of them. Determine the chapter's lesson.",
    "options": [
     "Choose the tactic that fits the person and the request — the same person can earn two ethical grades depending on the tactic",
-    "Tactics never matter; only the leader's power decides whether influence works",
+    "Tactics never matter in the end; only the leader's power decides whether influence works, and the chief has more power than Rami",
     "Persuasion always works if the arguments are good enough",
     "Only coercion works on villains, so Rami should threaten the chief"
    ],
@@ -978,7 +978,7 @@
    "stem": "Analyse the chapter's reading of Mark Cuban's two kinds of power. Determine the position sources and personal sources.",
    "options": [
     "Position: owner — legitimate, reward, coercive; personal: self-made entrepreneur — expert, referent",
-    "Position: expert and information; personal: coercive and reward",
+    "Position: expert and information power; personal: coercive and reward power, because he can fine and bonus the players himself",
     "Position: referent and connection; personal: legitimate and reward",
     "Position: none, because he owns the team; personal: all seven kinds"
    ],
@@ -1042,7 +1042,7 @@
    "stem": "Dana trades favours with the ferrymen — she minds their boats, they tell her the gang's crossings. Classify the political behaviour.",
    "options": [
     "Reciprocity — creating obligations and alliances to accomplish objectives",
-    "Coercion of the ferrymen through threats",
+    "Coercion of the ferrymen through threats of what the captain would do to them if they refused to carry the party across the river",
     "Legitimisation through Rami's authority",
     "Pressure on the ferrymen to share information"
    ],
@@ -1074,7 +1074,7 @@
    "stem": "Noor delivers every task Rami gives her, keeps him informed and never surprises him; in a crisis he trusts her first. Classify the guideline she follows.",
    "options": [
     "Develop a good working relationship with your manager — deliver, inform, no surprises",
-    "Gain recognition for her work in front of the team",
+    "Gain recognition for her work in front of the team and the director as early as possible in the four months",
     "Learn who the power players are and stay close to them",
     "Build a coalition of followers who support her"
    ],
@@ -1106,7 +1106,7 @@
    "stem": "Omar writes to a famous tracker only when he needs a map; the tracker never replies. Determine the networking rule broken.",
    "options": [
     "Maintain the network — a contact you only call when you need something is not a contact",
-    "Create a self-sell so that the tracker knows who Omar is",
+    "Create a short self-sell so that the tracker knows who Omar is, what he has done and what he is planning to do next",
     "Set goals for what the network should deliver",
     "Follow up within 24 hours of the first letter"
    ],

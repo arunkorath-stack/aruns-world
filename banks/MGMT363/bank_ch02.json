@@ -66,7 +66,7 @@
    "stem": "Identify the test that tells you whether you are still holding a mess or a symptom.",
    "options": [
     "Ask what evidence would show the problem is solved — if you cannot say, it is not yet a problem",
-    "Ask the boss whether the problem is worth working on and accept the answer",
+    "Ask the boss whether the problem is worth working on and accept the answer without further questions",
     "Count the complaints and compare the number with the other branches",
     "Check the budget to see how much money is available to solve it"
    ],
@@ -258,7 +258,7 @@
    "stem": "Describe an issue tree.",
    "options": [
     "A way of breaking a big problem into branches, and branches into smaller ones, until each is something a person could investigate this week",
-    "A list of possible solutions arranged from the cheapest to the most expensive, so that the client can choose",
+    "A list of possible solutions arranged from the cheapest to the most expensive, so that the client can choose the one that fits the budget and the timetable",
     "A chart of who reports to whom in the organisation, used to find the person responsible for the problem",
     "A timeline of the project showing which part of the problem will be investigated in each week"
    ],
@@ -402,7 +402,7 @@
    "stem": "Explain why the exchange rate can be a cause and still be useless.",
    "options": [
     "You cannot change it, so it fails the 'could we change it?' question",
-    "It is not measurable, so it stays an opinion in the report",
+    "It is not measurable with the data available, so it stays an opinion in the report",
     "It is too small to explain the gap on its own",
     "It is a symptom rather than a cause of the problem"
    ],
@@ -578,7 +578,7 @@
    "stem": "Determine the chapter's view when a manager says 'our staff are unmotivated'.",
    "options": [
     "It may be the manager's or the system's problem — the frame decides what you investigate first",
-    "It is always the staff's problem, because motivation belongs to the individual",
+    "It is always the staff's problem, because motivation belongs to the individual and not to the system around them",
     "It is never a problem, because motivation cannot be measured",
     "It is a solution, because the manager has decided what needs to change"
    ],
@@ -834,7 +834,7 @@
    "stem": "Analyse 'the new clinic next door took our customers' as a branch. Determine why it may be abandoned even if true.",
    "options": [
     "You cannot change the clinic — it fails 'could we actually change it?'",
-    "It is too small to explain the fall in customers on its own",
+    "It is too small on its own to explain the fall in customers that the branch has seen",
     "It cannot be measured, so it will stay an opinion",
     "It is not a cause but a symptom of the branch's problems"
    ],
@@ -866,7 +866,7 @@
    "stem": "Analyse the department head's brief for an attendance app. Determine what the frame ruled out.",
    "options": [
     "Every reason for absence other than forgetting — timetable, teaching, value of the lecture",
-    "Nothing — the app would collect data on every reason for absence",
+    "Nothing — the app would collect data on every reason for absence from every student in every class",
     "Only the budget, because the app has a fixed cost",
     "The students, because the app would be used by staff"
    ],
@@ -882,7 +882,7 @@
    "stem": "Determine how to raise with the pharmacy owner that his marketing campaign may be premature.",
    "options": [
     "Ask politely 'what makes you say that is the problem?' and show the evidence sorted into mess, symptom and problem",
-    "Tell him he is wrong, because the evidence does not support a marketing problem",
+    "Tell him plainly that he is wrong, because the evidence does not support a marketing problem of any kind and he should accept that",
     "Run the campaign anyway, because the client has the right to choose",
     "Refuse the project, because a client who has chosen the solution does not need a consultant"
    ],
@@ -898,7 +898,7 @@
    "stem": "Analyse a project where the group simply agrees with the client's framing. Determine how the report is graded.",
    "options": [
     "Poorly — the report is graded on judging whether it was the right problem, not on agreeing",
-    "Well — the client is always right about their own business",
+    "Well — the client is always right about their own business and the consultant should follow",
     "Neutral — the grade depends on the quality of the solution, not the frame",
     "It depends on whether the solution works for the client"
    ],

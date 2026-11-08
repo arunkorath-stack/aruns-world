@@ -81,7 +81,7 @@
    "stem": "Identify what the riskiest assumption is almost always about.",
    "options": [
     "People — that they will change a habit, use a new system, or say what they actually do",
-    "Money — that the budget will be approved and the costs will not rise",
+    "Money — that the budget will be approved on time and the costs will not rise during the project",
     "Technology — that the new system will work with the old one",
     "The weather — that conditions will stay as they were during planning"
    ],
@@ -161,7 +161,7 @@
    "stem": "Explain how the threshold must be written.",
    "options": [
     "Before the test, as a number, where others can see it — 'proceed if at least 12 of 40 do X'",
-    "After the result is in, so that the threshold reflects what was actually possible",
+    "After the result is in, so that the threshold reflects what was actually possible in the real conditions of the trial",
     "As an adjective — 'proceed if the response is strong' — so that judgement is kept",
     "Privately, so that the team is not influenced by knowing the target during the test"
    ],
@@ -273,7 +273,7 @@
    "stem": "Explain why a stop condition matters.",
    "options": [
     "A test with no stop condition is a plan you have already committed to, dressed as an experiment",
-    "It saves money, because the test can be ended early when it is clearly failing",
+    "It saves money, because the test can be ended early as soon as it is clearly failing to deliver",
     "Clients require a stop condition before they will approve any test",
     "It makes the test shorter, because the team knows when to end it"
    ],
@@ -433,7 +433,7 @@
    "stem": "Describe what to do when the assumption fails.",
    "options": [
     "Return to the option set from chapter 7 and say which option is ruled out and why",
-    "Proceed anyway, because the test may have been run on an unusual week",
+    "Proceed anyway, because the test may have been run on an unusual week when customers behaved differently",
     "Change the threshold so that the result counts as in between",
     "Hide the result and present the recommendation the client expected"
    ],
@@ -481,7 +481,7 @@
    "stem": "Explain what earns marks in section 5 of the report.",
    "options": [
     "A recommendation that names what was tested, what the test showed, and what remains uncertain",
-    "Certainty, because a client needs a clear answer rather than a list of doubts",
+    "Certainty, because a client needs a clear answer rather than a list of doubts and open questions from the consultant",
     "A long list of tests, because more testing shows more rigour",
     "A confident tone, because hesitation undermines the recommendation"
    ],
@@ -641,7 +641,7 @@
    "stem": "Classify 'we will proceed if most say yes'.",
    "options": [
     "A threshold that is not a number and measures opinion, not behaviour",
-    "A good threshold, because it sets a clear majority rule",
+    "A good threshold, because it sets a clear majority rule that everyone can understand",
     "A stop condition, because the test ends if most say no",
     "A pilot, because it tests the idea with real customers"
    ],
@@ -737,7 +737,7 @@
    "stem": "Select the correctly written proceed line for the Saturday self-checkout trial.",
    "options": [
     "'Proceed if at least 30% of customers with under 10 items choose a machine when a cashier is free'",
-    "'Proceed if customers seem happy with the machines at the end of the day'",
+    "'Proceed if customers seem happy with the machines at the end of the day and the staff agree with them'",
     "'Proceed if the machines work without technical problems during the trial'",
     "'Proceed if the store manager is satisfied with how the day went'"
    ],
@@ -785,7 +785,7 @@
    "stem": "Determine what would show the Saturday trial 'did not really run'.",
    "options": [
     "Machines down for hours, staff steering everyone to cashiers, or an unusually quiet day",
-    "A clear fail, with almost nobody choosing the machines",
+    "A clear fail, with almost nobody choosing the machines at any time during the whole day",
     "A clear pass, with most customers choosing the machines",
     "Customers complaining about the machines during the trial"
    ],
@@ -865,7 +865,7 @@
    "stem": "Determine the report line when the test passed in one branch only.",
    "options": [
     "'The assumption held in the trial branch; the test did not cover other branches or a full month'",
-    "'The assumption is proven everywhere, since customers are the same across branches'",
+    "'The assumption is proven everywhere, since customers are the same across all branches of the chain'",
     "'Untested, because one branch is not enough to count as a test'",
     "'Failed, because the other branches were not included'"
    ],
@@ -881,7 +881,7 @@
    "stem": "Determine the action when the riskiest assumption fails the test.",
    "options": [
     "Return to the chapter 7 option set and say which option is ruled out and why",
-    "Proceed with the same option, because one test is not conclusive",
+    "Proceed with the same option, because one test is never conclusive on its own",
     "Lower the threshold so that the result counts as a pass",
     "Run a pilot anyway, because a pilot gives a more reliable result"
    ],
@@ -929,7 +929,7 @@
    "stem": "Analyse 'shrinkage will not rise'. Determine its cell in the grid.",
    "options": [
     "Unsure and serious, but not fatal to the decision — decide and watch it, after the usage test",
-    "The riskiest, because theft could wipe out the saving from the cashier posts",
+    "The riskiest assumption of all, because theft could wipe out the whole saving from the cashier posts",
     "Confident and small, because shrinkage is low in this store",
     "Not an assumption, because shrinkage is measured already"
    ],
@@ -945,7 +945,7 @@
    "stem": "Analyse a test asked of colleagues rather than customers. Determine the flaw.",
    "options": [
     "They are not the customer, they want to be kind, and nothing they say could stop you",
-    "Colleagues know too much about the business to judge the idea fairly",
+    "Colleagues know too much about the business to judge the idea fairly from a customer's point of view",
     "It is too expensive, because colleagues' time costs the company money",
     "It takes too long to collect opinions from a whole department"
    ],
@@ -1009,7 +1009,7 @@
    "stem": "Determine what must be named in a recommendation after a test.",
    "options": [
     "What was tested, what the test showed, and what remains uncertain",
-    "Only the good news, because the client wants confidence",
+    "Only the good news, because the client wants confidence and has paid for a recommendation",
     "The cost of the test and who paid for it",
     "The supplier who provided the equipment for the trial"
    ],

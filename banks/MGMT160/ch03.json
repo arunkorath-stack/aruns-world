@@ -51,7 +51,7 @@
    "options": [
     "Economy; competitors and customers; laws and politics; technology; social trends",
     "Employees; culture and leadership; resources; structure; technology",
-    "Planning; organising; leading; controlling; ethics and responsibility",
+    "Planning; organising; leading; controlling; ethics; responsibility; sustainability",
     "People; planet; profit; law; community and charity"
    ],
    "answer": 0,
@@ -178,7 +178,7 @@
    "stem": "Identify the four levels of Carroll's pyramid from the base upward.",
    "options": [
     "Be profitable → obey the law → act ethically → give back to community and environment",
-    "Give back to the community → act ethically → obey the law → be profitable",
+    "Give back to the community → act ethically → obey the law → be profitable → give back again",
     "Obey the law → be profitable → give back to the community → act ethically",
     "Act ethically → be popular with customers → be profitable → obey the law"
    ],
@@ -242,7 +242,7 @@
    "stem": "Explain why managing responsibly is described as 'more visible and faster' today.",
    "options": [
     "Every customer carries a camera and an audience — one bad decision is public in minutes",
-    "Managers today have fewer tools than before, so their mistakes are harder to hide",
+    "Managers today have fewer tools than before, so their mistakes are harder to hide from the public",
     "Laws are weaker today than in the past, so companies are caught by the public instead",
     "Customers no longer care about ethics, so companies must be faster to win them back"
    ],
@@ -291,7 +291,7 @@
    "options": [
     "External force — social trends",
     "External force — technology",
-    "Internal factor — structure",
+    "Internal factor — structure of the firm",
     "External force — economy"
    ],
    "answer": 0,
@@ -322,7 +322,7 @@
    "stem": "Analyse the hotel scan: high front-desk turnover, an outdated booking system, strong cash now, and two new hotels opening next year. Determine the best decision.",
    "options": [
     "Fix the turnover and upgrade the booking system this year, while cash is strong and before competitors open",
-    "Wait until the new hotels open and then react to whatever prices and services they offer",
+    "Wait until the new hotels have opened and then react to whatever prices and services they offer to the market",
     "Cut prices immediately so that the new hotels find it hard to win customers when they open",
     "Close the front desk and move all bookings to an app, so that staff turnover no longer matters"
    ],
@@ -402,7 +402,7 @@
    "stem": "Determine the verdict on employee monitoring.",
    "options": [
     "It depends — announced, proportionate, work-related monitoring passes; secret spying fails",
-    "Always ethical — the employer owns the equipment and pays for the employee's time",
+    "Always ethical — the employer owns the equipment, pays for the employee's time and is entitled to know how it is used",
     "Always unethical — monitoring shows a lack of trust that destroys engagement",
     "Ethical only for senior staff, whose decisions carry more risk for the company"
    ],

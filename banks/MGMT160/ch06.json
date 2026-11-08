@@ -35,7 +35,7 @@
    "stem": "Differentiate what managers focus on from what leaders focus on.",
    "options": [
     "Managers run the machine (planning, organising, controlling); leaders make people want to run it (inspiring, motivating, influencing)",
-    "Managers inspire and motivate the team day to day; leaders plan the budgets and control the results from a distance",
+    "Managers inspire and motivate the team day to day; leaders plan the budgets and control the results from a distance, usually from head office",
     "Managers are born with the ability to organise; leaders are made through training in communication and public speaking",
     "Managers lead small teams on the frontline; leaders lead whole departments or companies from the top of the chart"
    ],
@@ -115,7 +115,7 @@
    "stem": "Describe motivation as the chapter defines it.",
    "options": [
     "The willingness to work hard toward goals — the energy behind effort, direction and persistence",
-    "A fixed personality trait that some people are born with and others never develop",
+    "A fixed personality trait that some people are born with and others never develop, however hard they try",
     "The salary and benefits an employee receives in return for the work they do",
     "The manager's ability to give orders that employees carry out without question"
    ],
@@ -163,7 +163,7 @@
    "stem": "Describe McGregor's Theory Y manager.",
    "options": [
     "Assumes people want to do good work and can own responsibility, so builds ownership, clear goals and freedom in the how",
-    "Assumes people are lazy and must be watched, so builds surveillance, tight rules and detailed reporting",
+    "Assumes people are lazy and must be watched at all times, so builds surveillance, tight rules, sign-in sheets and detailed daily reporting",
     "Assumes people only work for money, so builds bonus schemes and commission for every task",
     "Assumes managers should never trust anyone, so checks every piece of work before it leaves the team"
    ],
@@ -179,7 +179,7 @@
    "stem": "Identify the four classic reasons teams fail.",
    "options": [
     "Poor communication, unclear roles, conflict left to rot, poor leadership",
-    "Too much money, too much time, too many ideas, too many leaders",
+    "Too much money, too much time, too many ideas, too many leaders and too few followers",
     "Low salaries, bad offices, old computers, long working hours",
     "Small size, young members, new products, strong competitors"
    ],
@@ -211,7 +211,7 @@
    "stem": "Describe active listening.",
    "options": [
     "Full attention, listening to understand not to answer, asking questions and clarifying what you heard",
-    "Waiting silently until it is your turn to speak and then answering every point in order",
+    "Waiting silently until it is your turn to speak and then answering every point in order, without interrupting the other person",
     "Nodding and making eye contact while composing your reply to what the person is saying",
     "Leaving your door open so that anyone can come in and talk whenever they need to"
    ],
@@ -307,7 +307,7 @@
    "stem": "Determine the Maslow level of a well-paid star employee who is quietly unhappy because nobody ever says 'well done'.",
    "options": [
     "Esteem — respect and recognition",
-    "Physiological — pay and rest",
+    "Physiological — pay, food and rest",
     "Safety — job security",
     "Belonging — team and friendship"
    ],
@@ -357,7 +357,7 @@
     "Trusting someone with a real responsibility and recognising a real achievement",
     "Paying salaries on time and in full at the end of every month",
     "Fixing the air conditioning so that the office is comfortable all summer",
-    "Giving everyone a company policy handbook so that the rules are clear to all"
+    "Giving everyone a company policy handbook so that the rules are clear to all of the staff"
    ],
    "answer": 0,
    "why": "Motivators — achievement, recognition, responsibility, growth — make people love Monday and are mostly free. See §6.4."
@@ -403,7 +403,7 @@
    "stem": "Analyse the Friday 4:55 pm message 'prepare the client presentation, make it good, we need it soon' that produced 40 slides from Ahmed, 5 from Sara and no pricing section. Identify the barriers.",
    "options": [
     "Undefined words ('soon', 'good'), no roles assigned, wrong channel and time, no feedback loop",
-    "The team was lazy and did not take the message seriously because it arrived on a Friday",
+    "The team was lazy and did not take the message seriously because it arrived late on a Friday afternoon",
     "The channel was too formal, so the team did not feel able to ask what the manager meant",
     "The message was too long, so Ahmed and Sara each read only the part that applied to them"
    ],
@@ -435,7 +435,7 @@
    "stem": "Determine what a smart manager does when nobody disagrees in meetings but people complain afterwards.",
    "options": [
     "Create safe channels — written input before meetings or going round the table — and never force public confrontation",
-    "Demand that everyone argues in public, so that the team learns to disagree in the open",
+    "Demand that everyone argues in public at every meeting, so that the team learns to disagree in the open and gets used to it",
     "Cancel all meetings and make every decision alone, since the team will not speak anyway",
     "Punish the people who complain afterwards, so that disagreement is raised in the meeting or not at all"
    ],

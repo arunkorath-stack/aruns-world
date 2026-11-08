@@ -114,7 +114,7 @@
    "stem": "Identify the four moves for testing any argument, in order.",
    "options": [
     "What is claimed? What is assumed? Does the reason support the claim? How good is the evidence?",
-    "Who said it? When did they say it? Where did they say it? How much will it cost?",
+    "Who said it? When did they say it? Where did they say it? How much will it cost us to act on it?",
     "Agree with what is true, disagree with what is false, vote on the rest, then act",
     "What is the claim? What will it cost? What is the benefit? What is the risk?"
    ],
@@ -130,7 +130,7 @@
    "stem": "Explain why move 2 is run before move 4.",
    "options": [
     "Finding the assumption kills more bad arguments than attacking the evidence, and it costs nothing",
-    "Evidence is never important, because any evidence can be found to support any claim",
+    "Evidence is never important in practice, because any evidence can be found to support any claim at all",
     "Move 4 is the hardest and should be left until the group is warmed up",
     "Move 2 is faster to type into the notes, so it comes first in the record"
    ],
@@ -162,7 +162,7 @@
    "stem": "Describe move 3.",
    "options": [
     "Check whether the reason actually supports the claim — a true reason can support a different conclusion",
-    "Find the assumption that sits between the reason and the claim and ask whether it was checked",
+    "Find the assumption that sits between the reason and the claim and ask whether anyone has actually checked it",
     "Judge the evidence source and ask whether the people who produced it wanted a result",
     "State the claim in your own words and check that the speaker agrees with the wording"
    ],
@@ -196,7 +196,7 @@
     "The sentence that must be true for the reason to support the claim — and which nobody said",
     "The claim itself, restated in the speaker's own words",
     "The evidence offered in support of the claim",
-    "The conclusion that follows if the reason holds"
+    "The conclusion that follows if the reason holds, stated in the speaker's own words at the end of the argument"
    ],
    "answer": 0,
    "why": "The invisible sentence. See §4.3."
@@ -258,7 +258,7 @@
    "stem": "Describe how to find an assumption.",
    "options": [
     "Ask 'what would have to be true for this reason to lead to this claim?' then ask whether anyone checked it",
-    "Ask who said it and whether they have the authority to make the claim",
+    "Ask who said it and whether they have the authority in the organisation to make a claim of that kind in a meeting",
     "Ask how much the claim would cost if it were accepted and acted on",
     "Ask the customer whether the claim matches their experience of the business"
    ],
@@ -322,7 +322,7 @@
    "stem": "Identify the most common evidence failure in student work.",
    "options": [
     "Fit — the evidence is real, recent and large, and about something adjacent to the claim",
-    "Source — students rely on evidence produced by people who wanted a result",
+    "Source — students rely on evidence produced by people who wanted a particular result from the study",
     "Size — students build arguments on two or three observations",
     "Age — students use evidence that was true years ago but is stale today"
    ],
@@ -356,7 +356,7 @@
     "Attacking the person, the false choice, appeal to authority, one vivid case, because we always have",
     "Claim, reason, assumption, evidence and fit",
     "Mess, symptom, problem, tree and size",
-    "Confirmation, anchoring, availability, sunk cost and groupthink"
+    "Confirmation, anchoring, availability, sunk cost, groupthink and overconfidence, as described in chapter 6"
    ],
    "answer": 0,
    "why": "Naming them lets you object without attacking the person. See §4.5."
@@ -372,7 +372,7 @@
     "Offering two options as if there were only two — 'either we cut staff or we close'",
     "Treating status as evidence — 'the regional director thinks so'",
     "Letting one story outweigh the data — 'my cousin had a bad experience'",
-    "Answering who said it instead of what was said — 'she always exaggerates'"
+    "Answering who said it instead of what was said — 'she always exaggerates, so ignore her figures'"
    ],
    "answer": 0,
    "why": "False choice = only two options offered. See §4.5."
@@ -466,7 +466,7 @@
    "stem": "Explain the failure the chapter warns about with the two modes.",
    "options": [
     "Running both at once — ideas are judged as spoken, so nothing new survives and nothing is tested properly",
-    "Using creative mode at all, because business decisions need evidence rather than ideas",
+    "Using creative mode at all, because business decisions need hard evidence rather than ideas from a brainstorm",
     "Using critical mode at all, because criticism kills the ideas the business needs",
     "Switching modes during a meeting, because the room loses track of what it is doing"
    ],
@@ -482,7 +482,7 @@
    "stem": "Identify the practical rule for running the two modes in a meeting.",
    "options": [
     "Say which mode the room is in and for how long — 'ten minutes of options, no objections, then we test them'",
-    "Always judge immediately, so that weak ideas do not waste the meeting's time",
+    "Always judge immediately as the ideas appear, so that weak ideas do not waste the meeting's limited time and the strong ones can be developed",
     "Never test ideas in the meeting, because testing belongs to the analysis afterwards",
     "Let the boss choose the mode, because the boss is responsible for the decision"
    ],
@@ -498,7 +498,7 @@
    "stem": "Explain why testing your own reasoning is the hard part.",
    "options": [
     "It is neither easy nor enjoyable, and it separates a good report from a confident one",
-    "It takes more time than testing other people's arguments",
+    "It takes far more time than testing other people's arguments, because you must write everything down",
     "It needs software to record the claim, reason and assumption",
     "Nobody does it, so there are no examples to learn from"
    ],
@@ -610,7 +610,7 @@
    "stem": "Analyse 'the branch loses money' as a reason for closing it. Determine how it can be true and still not support the claim.",
    "options": [
     "Closing may not remove the costs or keep the customers, so the true reason may support a different conclusion",
-    "It is false, because the branch's accounts have not been audited",
+    "It is false, because the branch's accounts have not been audited for the current year and the figures may be wrong",
     "Losses never matter in a chain, because the other branches cover them",
     "Only profit matters, and a loss-making branch should always be closed"
    ],
@@ -642,7 +642,7 @@
    "stem": "Analyse the Deira closure. Identify an unstated assumption.",
    "options": [
     "Deira's costs would disappear with it and its customers would not go elsewhere in the chain",
-    "Deira has staff who would need to be redeployed or made redundant",
+    "Deira has staff who would need to be redeployed to other branches or made redundant with compensation",
     "The other branches exist and are trading profitably",
     "Profit matters to the owners of the chain"
    ],
@@ -674,7 +674,7 @@
    "stem": "Determine how to check the assumption 'pay is what they are unhappy about'.",
    "options": [
     "Ask the staff, or look at exit interviews, before raising pay",
-    "Raise pay and see whether the unhappiness disappears",
+    "Raise pay immediately and see whether the unhappiness disappears over the next quarter",
     "Ask the manager, who knows the staff best",
     "Assume it is true, because pay is usually the problem"
    ],
@@ -786,7 +786,7 @@
    "stem": "Determine the chapter's view of a study from 2011.",
    "options": [
     "Age alone does not make it weak — what matters is whether the claim is the kind that goes stale",
-    "Always weak, because fifteen years is too long for any business evidence",
+    "Always weak, because fifteen years is far too long for any piece of business evidence to stay relevant",
     "Always strong, because older studies have been tested by time",
     "Irrelevant, because evidence must be from the current year to count"
    ],
@@ -962,7 +962,7 @@
    "stem": "Determine what to do with an assumption in your own report that embarrasses you.",
    "options": [
     "Treat it as useful information and state it before the reader finds it",
-    "Hide it, because an embarrassing assumption weakens the report",
+    "Hide it, because an embarrassing assumption weakens the report in the eyes of the client",
     "Delete the report and start again from a different claim",
     "Blame the group, because the assumption was agreed by everyone"
    ],
@@ -978,7 +978,7 @@
    "stem": "Select the best person to attack move 2 on your own argument.",
    "options": [
     "Someone outside the group, who has no reason to protect your idea",
-    "Your closest teammate, who knows the argument best",
+    "Your closest teammate, who knows the argument best and can spot gaps quickly",
     "Yourself only, because nobody else knows the assumptions",
     "The client, who will have to live with the recommendation"
    ],
@@ -1026,7 +1026,7 @@
    "stem": "Analyse a colleague who states a conclusion with total confidence and no reason. Determine what the four moves ask first.",
    "options": [
     "Move 1 then move 2: what exactly is claimed, and what is assumed — confidence is not a reason",
-    "Accept it — confidence shows expertise, and experts are usually right",
+    "Accept it — confidence shows expertise, and experts are usually right about their own area of work",
     "Vote on it, because the group cannot test a claim with no reason",
     "Attack the evidence, because that is where confident claims are weakest"
    ],
@@ -1058,7 +1058,7 @@
    "stem": "Explain how section 3 of the project report is graded.",
    "options": [
     "On naming your own weakest assumption — hiding it and being found out loses marks",
-    "On confidence — a report that sounds certain is marked higher",
+    "On confidence — a report that sounds certain is always marked higher than one that hesitates",
     "On length — the longer the report, the more thorough the reasoning",
     "On the number of sources cited in support of the claim"
    ],

@@ -34,7 +34,7 @@
    "stem": "Describe survivor bias.",
    "options": [
     "Analysing the customers, staff or products still here and concluding something about the ones that left",
-    "Counting every customer twice because the same person appears in two different systems",
+    "Counting every customer twice because the same person appears in two different systems with slightly different names",
     "Choosing the biggest number in the table and building the whole argument around it",
     "Using last year's data to describe a market that has changed since it was collected"
    ],
@@ -354,7 +354,7 @@
    "stem": "Describe 'it runs the other way'.",
    "options": [
     "You assume advertising raised sales, but rising sales may have released the advertising budget",
-    "Two lines on different scales that appear to move together when they do not",
+    "Two lines plotted on different scales that appear to move together when in fact they have nothing to do with each other",
     "A chance pairing of two trends over a short period with no connection between them",
     "A missing base that makes two different-sized groups look comparable"
    ],
@@ -370,7 +370,7 @@
    "stem": "Describe what raises a correlation toward a cause.",
    "options": [
     "A mechanism you can explain, a sequence in the right order, and the IS NOT test",
-    "A bigger chart with more data points over a longer period",
+    "A much bigger chart with many more data points collected over a much longer period of time from more branches",
     "More decimal places in the correlation coefficient",
     "A confident manager who has seen the pattern before"
    ],
@@ -402,7 +402,7 @@
    "stem": "Identify what the course expects you to say about causation.",
    "options": [
     "Honestly which of the four you are holding — cause, reverse, third thing or coincidence",
-    "That you have proved it beyond reasonable doubt",
+    "That you have proved it beyond reasonable doubt and no further evidence is needed before the client acts on it",
     "Nothing — causation is for statisticians, not managers",
     "That correlation is enough for a business decision"
    ],
@@ -434,7 +434,7 @@
    "stem": "Explain why step 3, the threshold, matters most.",
    "options": [
     "Without a threshold agreed in advance, any result can be read as supporting what you already believed",
-    "It is the hardest step to write, so groups that manage it have done the hard work",
+    "It is the hardest step of the five to write, so groups that manage it have already done most of the hard work of the project",
     "It is required by the client before any data collection can begin",
     "It decides the budget for the data collection"
    ],
@@ -450,7 +450,7 @@
    "stem": "Describe the question in step 1.",
    "options": [
     "One sentence, answerable yes or no — 'are regulars visiting less often than last year?'",
-    "A long open question that covers every aspect of the problem",
+    "A long, open question that covers every aspect of the problem so that nothing important is missed by the team",
     "A question for the client to answer from their own experience",
     "A question about the budget available for the investigation"
    ],
@@ -482,7 +482,7 @@
    "stem": "Describe the source in step 4.",
    "options": [
     "Where the evidence exists and who can give it — 'loyalty database; the marketing manager'",
-    "The threshold number that counts as a yes",
+    "The threshold number that counts as a yes, agreed by the whole group before anyone looks at the data",
     "The question written in one sentence",
     "The chart type that will present the result"
    ],
@@ -498,7 +498,7 @@
    "stem": "Explain why the spread is 'the actual problem'.",
    "options": [
     "Not knowing how tightly values sit around the middle is what makes an average mislead",
-    "The spread is always large in business data, so averages are never useful",
+    "The spread is always large in business data of this kind, so averages are never useful to a manager",
     "Spread cannot be measured without specialist software",
     "Spread is only for statisticians and does not matter in a management report"
    ],
@@ -578,7 +578,7 @@
    "stem": "Classify 'complaints' when it means written complaints only.",
    "options": [
     "A measurement definition someone chose — ask how it was measured",
-    "A complete count of every complaint the branch received",
+    "A complete count of every complaint the branch received during the whole of the period",
     "A cause of the problem the branch is trying to solve",
     "A threshold that decides whether the problem is serious"
    ],
@@ -610,7 +610,7 @@
    "stem": "Determine what the restaurant manager is claiming credit for with 'average spend 240, up 12%'.",
    "options": [
     "One corporate booking of eighteen people, not his pricing strategy",
-    "A real improvement in what ordinary tables spend",
+    "A real improvement in what ordinary tables spend since the new menu was introduced",
     "Better staff who are selling more to every table",
     "More customers than the same evening last year"
    ],
@@ -770,7 +770,7 @@
    "stem": "Select the two polite requests that would settle the supplier's chart.",
    "options": [
     "'Could I see it with the axis from zero and the full period?' and 'Could both lines be on the same axis?'",
-    "'Is this chart fake?' and 'Who in your company drew it?'",
+    "'Is this chart fake?' and 'Who in your company drew it, and did they know what they were doing when they chose the scale?'",
     "'Can you lower the price?' and 'Can you sign the contract now?'",
     "'Why are there so many lines?' and 'Why are there so few months?'"
    ],
@@ -802,7 +802,7 @@
    "stem": "Analyse 'on-time delivery rose while complaints fell'. Determine three explanations other than one causing the other.",
    "options": [
     "Complaints fell for another reason; a third thing such as season changed both; coincidence over six months",
-    "The supplier is honest; the chart is true; the numbers are large enough to trust",
+    "The supplier is honest; the chart is true; the numbers are large enough to trust; the price is fair; the contract is standard",
     "Price changes, cost changes and profit changes in the same period",
     "A mechanism, the right sequence and the IS NOT test"
    ],
@@ -850,7 +850,7 @@
    "stem": "Select the evidence that moves a correlation toward a cause.",
    "options": [
     "A mechanism, the right sequence, and the problem present here and not there",
-    "A bigger sample showing the same correlation over more months",
+    "A bigger sample showing the same correlation over many more months and more branches",
     "A confident manager who has seen the same pattern before",
     "A nicer chart with both lines on the same axis"
    ],
@@ -994,7 +994,7 @@
    "stem": "Analyse the claim 'every number in this chart is accurate, so the chart is honest'. Determine the chapter's reply.",
    "options": [
     "Every number can be true while the picture is wrong — check axis, window, scales and base",
-    "Accurate numbers make an honest chart, whatever the presentation",
+    "Accurate numbers always make an honest chart, whatever the presentation and whatever the scale chosen",
     "Charts cannot mislead if the data behind them is correct",
     "Only fake numbers mislead; presentation is a matter of taste"
    ],

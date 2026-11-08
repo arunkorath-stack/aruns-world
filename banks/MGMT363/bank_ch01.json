@@ -225,7 +225,7 @@
    "stem": "Explain where most people go wrong with the five moves.",
    "options": [
     "They hear a problem and jump straight to a solution — move four with moves one to three skipped",
-    "They spend too long on framing and never reach the diagnosis or the decision",
+    "They spend far too long on framing the problem and never reach the diagnosis or the decision before the deadline passes",
     "They never decide, because every option raises a new question that needs checking",
     "They diagnose twice, once before and once after they have generated their options"
    ],
@@ -273,7 +273,7 @@
    "stem": "Explain how creative self-efficacy affects performance.",
    "options": [
     "Belief raises interest, which raises effort, which raises the result — and the result raises the belief",
-    "Belief has no effect on results, because performance depends on ability and method alone",
+    "Belief has no effect on results at all, because performance depends on ability and method alone, whatever people feel",
     "Belief lowers effort, because people who feel confident stop trying as hard",
     "Only training affects results, and belief is simply a by-product of being trained"
    ],
@@ -337,7 +337,7 @@
    "stem": "Identify the three arguments that problem solving is a skill, not a personality trait.",
    "options": [
     "It improves with training, depends on knowing the field, and depends on the method used",
-    "It is inherited from parents, fixed by adulthood, and can be tested at birth",
+    "It is inherited from parents, fixed by early adulthood, and can be tested for reliably at birth",
     "It needs an MBA, a management title and at least ten years of experience",
     "It is a matter of luck, natural talent and the confidence to act on both"
    ],
@@ -401,7 +401,7 @@
    "stem": "Describe the evidence that problem solving improves with training.",
    "options": [
     "Measured gains in idea fluency, problem definition and self-efficacy after structured practice",
-    "Students feel more confident after the course and say so in the feedback forms",
+    "Students feel much more confident after the course and say so in the end-of-semester feedback forms",
     "Teachers say so, based on their experience of watching students improve",
     "Exams get easier, because students learn the kinds of question that are asked"
    ],
@@ -481,7 +481,7 @@
    "stem": "Explain the purpose of the course regarding your default habit.",
    "options": [
     "Not to change it, but to give you a tool for the moments when it is the wrong instrument",
-    "To replace it with a better default that works in every situation",
+    "To replace it with a better default that works in every situation the manager will ever face at work",
     "To remove all defaults, so that every decision is made from first principles",
     "To make everyone answer fast, because speed is what business rewards"
    ],
@@ -849,7 +849,7 @@
    "stem": "Analyse the claim 'the best problem solver I know never took a course'. Determine the chapter's reply.",
    "options": [
     "One vivid case does not disprove measured training gains; they learned by practice in their field",
-    "The claim proves that problem solving is personality, because the person had no training",
+    "The claim proves that problem solving is personality, because the person had no formal training of any kind",
     "Courses are useless, because the best problem solvers learn from experience alone",
     "Experience never matters, because the skill comes from the method, not the field"
    ],
@@ -865,7 +865,7 @@
    "stem": "Analyse the admission that gains fade without practice. Determine whether it weakens the skill claim.",
    "options": [
     "No — fading without practice is exactly what you expect from any skill, like a language",
-    "Yes — it proves that personality decides, because real skills do not fade",
+    "Yes — it proves that personality decides in the end, because real skills do not fade once they are learned",
     "Yes — skills never fade once learned, so this must be something else",
     "No — because the gains never fade in people who were trained properly"
    ],
@@ -1009,7 +1009,7 @@
    "stem": "Determine why signing a contract needs slow thinking even for an experienced manager.",
    "options": [
     "Contracts are expensive, hard to reverse and full of trade-offs — new enough to defeat fast thinking",
-    "Experience makes contracts routine, so an experienced manager can sign quickly",
+    "Experience makes contracts routine, so an experienced manager can sign them quickly and safely without a second look",
     "Fast thinking is faster, which is what matters when a supplier is waiting",
     "Managers never sign contracts, because that is the job of the legal department"
    ],

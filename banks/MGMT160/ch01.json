@@ -17,7 +17,7 @@
    "stem": "Describe management, using the definition in the chapter.",
    "options": [
     "Planning, organising, leading and controlling resources to reach goals effectively and efficiently",
-    "Giving instructions to staff and checking that every order is carried out exactly as given",
+    "Giving instructions to staff and checking that every order is carried out exactly as it was given by the manager",
     "Holding the most senior, best-paid position and representing the firm to outsiders",
     "Doing the technical work faster and to a higher standard than anyone else on the team"
    ],
@@ -131,7 +131,7 @@
     "Interpersonal, informational, decisional",
     "Technical, human, conceptual",
     "Top, middle, frontline",
-    "Planning, organising, leading"
+    "Planning, organising, leading and controlling"
    ],
    "answer": 0,
    "why": "Mintzberg's three families: interpersonal (people), informational (information), decisional (decisions). Skills and levels are different lists. See §1.5."
@@ -275,7 +275,7 @@
     "Neither efficient nor effective",
     "Efficient but not effective",
     "Effective but not efficient",
-    "Both efficient and effective"
+    "Both efficient and effective at once"
    ],
    "answer": 0,
    "why": "Huge input, small output (not efficient); the goal — a good grade — not reached (not effective). See the answer to question 3 in §1.3."
@@ -353,7 +353,7 @@
    "stem": "Classify the role when a supplier calls to say the delivery is three days late and Amna negotiates a partial delivery tomorrow.",
    "options": [
     "Decisional — negotiator and disturbance handler",
-    "Informational — monitor and spokesperson",
+    "Informational — monitor, disseminator and spokesperson",
     "Interpersonal — liaison and figurehead",
     "Interpersonal — leader and liaison"
    ],
@@ -371,7 +371,7 @@
     "Decisional — resource allocator",
     "Informational — spokesperson",
     "Interpersonal — figurehead",
-    "Informational — disseminator"
+    "Informational — disseminator of news"
    ],
    "answer": 0,
    "why": "Dividing people, money and time between tasks is the resource allocator role (decisional). See Amna at 9:55, §1.6."
@@ -434,7 +434,7 @@
    "options": [
     "Only the head of nursing — she coordinates others and is judged by the team's results",
     "Only the surgeon — he is more senior, more qualified and earns more than she does",
-    "Both — they are senior hospital staff with responsibility for patients' outcomes",
+    "Both — they are senior hospital staff with responsibility for patients' outcomes and for the hospital's reputation",
     "Neither — the chapter says managers are found only in business organisations"
    ],
    "answer": 0,

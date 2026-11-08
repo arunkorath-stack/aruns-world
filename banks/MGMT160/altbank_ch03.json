@@ -18,7 +18,7 @@
    "stem": "Identify the four internal environment factors.",
    "options": [
     "People, culture and leadership, technology and resources, structure",
-    "Economy, competitors, laws and politics, technology",
+    "Economy, competitors and customers, laws and politics, technology and social trends",
     "Customers, suppliers, investors and government",
     "Profit, people, planet and the law"
    ],
@@ -50,7 +50,7 @@
    "stem": "Describe the 'economy' external force.",
    "options": [
     "Growth, inflation and interest rates that change what customers can spend",
-    "The rules, regulations and taxes set by the government of the country",
+    "The rules, regulations and taxes set by the government of the country where the firm operates",
     "Changing habits and values in society that alter what customers want",
     "New tools and software that change how products are made and delivered"
    ],
@@ -116,7 +116,7 @@
     "Making decisions that serve several groups' needs over time, not one group only",
     "Giving every stakeholder group the same amount of money each year",
     "Always choosing the investors first, because they own the company",
-    "Letting the local community decide how the business should be run"
+    "Letting the local community decide how the business should be run and how its profits are shared"
    ],
    "answer": 0,
    "why": "Balancing stakeholders is the manager's job. See §3.3."
@@ -130,7 +130,7 @@
    "stem": "Describe the difference between a strong culture and an open culture.",
    "options": [
     "A strong culture has shared values everyone follows; an open culture also welcomes change and new ideas",
-    "Strong means a culture in a big company; open means a culture in a small start-up",
+    "Strong means a culture in a big, established company; open means a culture in a small start-up that is still growing",
     "They mean the same thing, and the chapter uses the two words interchangeably",
     "An open culture has no shared values, so employees are free to behave as they like"
    ],
@@ -210,7 +210,7 @@
    "stem": "Describe the public test.",
    "options": [
     "Ask whether you would be comfortable if everyone knew what you did",
-    "Ask whether the public will buy the product once it is launched",
+    "Ask whether the public will buy the product once it is launched on the market",
     "Ask the government for permission before taking the action",
     "Ask whether the action is profitable enough to justify the risk"
    ],
@@ -226,7 +226,7 @@
    "stem": "Describe the fairness question.",
    "options": [
     "Ask whether you would accept the same outcome if the roles were reversed",
-    "Ask whether the law allows the action in the country where you operate",
+    "Ask whether the law allows the action in the country where you operate and sell",
     "Ask whether the action makes money for the company and its investors",
     "Ask whether the boss agrees with the decision before you act on it"
    ],
@@ -242,7 +242,7 @@
    "stem": "Explain why ethics scandals are more expensive today.",
    "options": [
     "Every customer carries a camera and an audience, so one bad decision is public in minutes",
-    "Laws are stricter than ever and fines for ethical failures have risen sharply",
+    "Laws are stricter than ever and the fines for ethical failures have risen sharply in every market",
     "Companies have less money than before, so they cannot afford to pay for scandals",
     "Customers are angrier than before and boycott companies more readily"
    ],
@@ -466,7 +466,7 @@
    "stem": "Determine the first thing a new manager should do to read the culture.",
    "options": [
     "Watch for the visible clues: how people dress, speak, decide and share credit",
-    "Rewrite the values poster so that it describes the culture the manager wants",
+    "Rewrite the values poster so that it describes the culture the manager wants to see in the branch",
     "Change the dress code to signal that a new manager has arrived",
     "Ask the CEO for the profit figures and the latest organisation chart"
    ],

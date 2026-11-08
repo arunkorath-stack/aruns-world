@@ -130,7 +130,7 @@
    "stem": "Describe the strong move in the 'first leadership moment' — five members, no leader, nothing done.",
    "options": [
     "Lead without announcing it: propose a simple plan with tasks, owners and dates, ask each person which piece they want, set one weekly check",
-    "Wait for someone to be appointed leader by the professor, because a group that chooses its own leader will argue about the choice",
+    "Wait for someone to be appointed leader by the professor, because a group that chooses its own leader will argue about the choice for weeks",
     "Complain to the professor that the group is not working and ask to be moved to a group that has a leader",
     "Do all the work alone and put everyone's name on it, because that is faster than organising four other people"
    ],
@@ -146,7 +146,7 @@
    "stem": "Describe the 'lollipop moment' from Drew Dudley's talk.",
    "options": [
     "Leadership as the small moments that change someone's direction, often without knowing it",
-    "A reward given to the best employee at the end of each month in front of the team",
+    "A reward given to the best employee at the end of each month in front of the whole team as an example to others",
     "A monthly team party at which the manager thanks everyone for their work",
     "The moment a manager receives a title and realises that people now listen"
    ],
@@ -179,7 +179,7 @@
    "options": [
     "One-minute goals, one-minute praisings, one-minute redirects",
     "One-minute meetings, one-minute emails, one-minute breaks",
-    "One-minute hiring, one-minute firing, one-minute promoting",
+    "One-minute hiring, one-minute firing, one-minute promotions",
     "One-minute plans, one-minute budgets, one-minute reports"
    ],
    "answer": 0,
@@ -194,7 +194,7 @@
    "stem": "Describe Edmondson's finding on psychological safety.",
    "options": [
     "Teams where members feel safe to speak up learn faster; teams reporting MORE errors were sometimes the better ones",
-    "Teams with no reported errors are always the best, because they have the most careful members",
+    "Teams with no reported errors are always the best, because they have the most careful members and the strictest managers",
     "Safety means never disagreeing with the manager, so that the team stays united",
     "Reporting errors should be punished, because teams that report many errors are making many errors"
    ],
@@ -226,7 +226,7 @@
    "stem": "Explain how the post-course scorecard should be used.",
    "options": [
     "Rate yourself on evidence; your two lowest rows are the input for your plan, not failures",
-    "Rate yourself as high as possible, because confidence is the first quality of a manager",
+    "Rate yourself as high as possible, because confidence is the first quality of a manager and the scorecard is seen by others",
     "Compare your score with your classmates to see where you stand in the group",
     "Ignore the low rows and build your plan around the skills you already have"
    ],
@@ -258,7 +258,7 @@
    "stem": "Determine the strong response when a friend asks you to hide a mistake that cost money.",
    "options": [
     "'I won't report you behind your back — but this needs to be told, and I'll stand next to you while you tell it'",
-    "Stay quiet — nobody will know, and a friend who trusts you deserves loyalty more than the company does",
+    "Stay quiet — nobody will ever know, and a friend who trusts you with a secret deserves loyalty more than the company does",
     "Report the friend secretly to the manager, so that the problem is fixed without damaging the friendship",
     "Fix the mistake yourself and say nothing, so that the money is recovered and nobody has to be told"
    ],
@@ -274,7 +274,7 @@
    "stem": "Determine the professional move when a senior person dismisses your idea in one sentence.",
    "options": [
     "Afterwards, privately: 'could I take five minutes to show you the numbers behind that idea?' — evidence, not feelings",
-    "Argue strongly in the meeting, because an idea that is not defended at once will never be taken seriously",
+    "Argue strongly in the meeting, because an idea that is not defended at once will never be taken seriously by senior people afterwards",
     "Sulk and stop contributing, so that the senior person realises what the team is losing",
     "Send the idea to the senior person's boss, who may be more open to new thinking"
    ],
@@ -290,7 +290,7 @@
    "stem": "Determine the right response when your university suddenly changes a major system and the group chat is on fire.",
    "options": [
     "Get the why first, give the new system an honest two weeks, and channel real problems into specific feedback through the right channel",
-    "Join the anger in the group chat, because the university needs to hear how strongly students feel about the change",
+    "Join the anger in the group chat, because the university needs to hear how strongly students feel about the change before it is too late",
     "Refuse to use the new system until the university explains the reasons for the change to every student",
     "Transfer to another university whose systems are stable, because this one does not respect its students"
    ],
@@ -306,7 +306,7 @@
    "stem": "Analyse the four judgement scenarios. Determine the common thread.",
    "options": [
     "Diagnose before reacting, bring evidence, protect both the relationship and the standard",
-    "Always obey the senior person, because experience is worth more than a new idea",
+    "Always obey the senior person, because experience is worth more than a new idea from a junior colleague",
     "Always report problems to the top, because that is where decisions are made",
     "Avoid conflict at any cost, because a disagreement damages the relationship permanently"
    ],
@@ -322,7 +322,7 @@
    "stem": "Analyse a manager students remember badly. Determine the advice the chapter says such managers most often failed.",
    "options": [
     "Advice 1, 3 or 4 — diagnose before acting, listen, praise specifically and correct privately",
-    "Advice 9 — use AI like a careful professional for routine work",
+    "Advice 9 — use AI like a careful professional for routine work and check everything before it goes out",
     "Advice 10 — stay a student and keep learning after the course ends",
     "Advice 6 — volunteer to lead small things before being given a title"
    ],
@@ -355,7 +355,7 @@
    "options": [
     "Maslow's top layers, Herzberg's motivators and Theory Y",
     "Taylor's pay-by-output and the one best way",
-    "Weber's bureaucracy and clear rules applied equally",
+    "Weber's bureaucracy and clear rules applied equally to everyone",
     "Theory X and close supervision of every task"
    ],
    "answer": 0,
@@ -372,7 +372,7 @@
     "Why do they still promote the best worker instead of the best people-developer?",
     "Why do managers earn about 70% more than the members of their teams?",
     "Why are about 70% of managers unhappy in their jobs?",
-    "Why do about 70% of employees want to become managers?"
+    "Why do about 70% of employees say that they would like to become managers one day in their careers?"
    ],
    "answer": 0,
    "why": "See the discussion question in §10.6."
@@ -386,7 +386,7 @@
    "stem": "Determine how a manager should react to bad news, based on Edmondson's psychological-safety research.",
    "options": [
     "Make it safe to report — teams that report errors learn faster than teams that hide them",
-    "Punish the person who reported it, so that the team takes more care in future",
+    "Punish the person who reported it in front of the others, so that the team takes more care in future",
     "Ignore it to keep morale high, since the team is already under pressure",
     "Report fewer errors upward so that the team looks better to senior managers"
    ],
@@ -402,7 +402,7 @@
    "stem": "Analyse Tversky and Kahneman's finding that bias is built into all minds. Determine the implication for hiring.",
    "options": [
     "Design systems against bias — structured criteria and checks — rather than relying on 'be objective'",
-    "Hire only people with no bias, which can be tested for during the interview",
+    "Hire only people with no bias, which can be tested for during the interview with the right set of questions",
     "Let the most senior person decide alone, since experience reduces bias",
     "Avoid hiring altogether and promote from inside, where people are already known"
    ],
@@ -418,7 +418,7 @@
    "stem": "Analyse the finding that AI lifts the weakest writers most. Determine what a new graduate should do and the risk that comes with it.",
    "options": [
     "Use AI to raise routine performance fast — and verify everything, because speed brings the lawyer's risk",
-    "Avoid AI so as not to depend on it, because the skills that matter are built without it",
+    "Avoid AI entirely so as not to depend on it, because the skills that matter in a career are built without any software help",
     "Copy AI output to save time, because new graduates are judged on speed before quality",
     "Use AI only for personal tasks, where a mistake costs nobody anything"
    ],
@@ -434,7 +434,7 @@
    "stem": "Select the development-plan goal that passes the course's own standard.",
    "options": [
     "'Deliver three presentations this semester, each opening with a hook and ending with one clear ask, feedback collected after each, by December'",
-    "'Become a better communicator over the coming year by taking every opportunity to speak in class, in meetings and in front of groups'",
+    "'Become a much better communicator over the coming year by taking every opportunity to speak in class, in meetings and in front of large groups of people'",
     "'Try to speak more in class, especially when I have something to say, and stop worrying about what the other students think of me'",
     "'Improve myself as a future manager by reading, watching talks and practising the skills the course has shown me I need'"
    ],
@@ -450,7 +450,7 @@
    "stem": "Determine the purpose of the checkpoint in a development plan.",
    "options": [
     "A date to re-take the scorecard and compare — Chapter 7's control applied to yourself",
-    "A reward for finishing the plan, which keeps the student motivated to the end",
+    "A reward for finishing the plan, which keeps the student motivated right to the end of the semester",
     "A meeting with the professor to discuss the plan and get it approved",
     "The date on which the plan is written and signed by the student"
    ],

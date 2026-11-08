@@ -243,7 +243,7 @@
    "stem": "Explain why the second 'and then what?' matters most.",
    "options": [
     "The first answer is the hoped-for benefit; the second is where the cost usually hides",
-    "The first answer is always wrong, so only the second can be trusted",
+    "The first answer is always wrong, so only the second answer can be trusted by the decision-maker",
     "Managers ask it, so students must be ready to answer it",
     "It is the shortest question and therefore the easiest to remember"
    ],
@@ -259,7 +259,7 @@
    "stem": "Identify the four questions of the ethical screen.",
    "options": [
     "Who bears the cost? The public test. The reversal test. The precedent test.",
-    "Is it legal? Is it cheap? Is it fast? Is it popular with the staff?",
+    "Is it legal? Is it cheap? Is it fast? Is it popular with the staff who will have to do it?",
     "Who is affected? What happens to them? Where? When?",
     "What is the claim? The reason? The assumption? The evidence?"
    ],
@@ -291,7 +291,7 @@
    "stem": "Describe the precedent test.",
    "options": [
     "If everyone in the industry did this, would the outcome still be acceptable?",
-    "Would you accept it yourself if you were on the receiving end?",
+    "Would you accept it yourself if you were on the receiving end of the recommendation?",
     "Who bears the cost of the recommendation?",
     "Is it legal under the current regulations?"
    ],
@@ -323,7 +323,7 @@
    "stem": "Explain why 'legal and profitable' is not enough.",
    "options": [
     "A recommendation can be legal, profitable and still wrong — these are the questions asked when it goes badly in public",
-    "Legal always means right, so the screen is only needed for recommendations that break the law",
+    "Legal always means right, so the ethical screen is only needed for recommendations that might break the law somewhere in the world",
     "Profit is unethical, so a profitable recommendation always needs extra scrutiny",
     "Clients dislike profit-driven recommendations and prefer ones framed around ethics"
    ],
@@ -339,7 +339,7 @@
    "stem": "Describe what AI is good for in problem solving.",
    "options": [
     "Widening options, suggesting causes, playing the challenger, rewriting for a different reader",
-    "Providing evidence, facts and sources for the claims in the report",
+    "Providing the evidence, facts, figures and sources that support the claims made in the report",
     "Making the decision, because it has no bias and weighs the criteria consistently",
     "Replacing the diagnosis, because it can see patterns the team cannot"
    ],
@@ -355,7 +355,7 @@
    "stem": "Describe what AI is bad for.",
    "options": [
     "Evidence — it produces plausible facts, numbers and sources that do not exist",
-    "Rewriting text for a different reader, because it loses the meaning",
+    "Rewriting text for a different reader, because it loses the original meaning along the way",
     "Listing options, because it produces too many to compare",
     "Arguing against you, because it tends to agree with the user"
    ],
@@ -371,7 +371,7 @@
    "stem": "Describe the Doshi and Hauser (2024) finding.",
    "options": [
     "AI raises individual creative output but reduces the collective diversity of ideas",
-    "AI makes everyone equally creative, so talent no longer matters",
+    "AI makes everyone equally creative, so individual talent no longer matters in a team",
     "AI has no effect on creative output in either direction",
     "AI only helps experts, who know how to prompt it effectively"
    ],
@@ -387,7 +387,7 @@
    "stem": "Identify the course rule on AI.",
    "options": [
     "AI may help you think; it may not do the thinking that is assessed — and you declare what you used it for",
-    "AI is banned from every part of the course and its use is penalised",
+    "AI is banned from every part of the course and its use is penalised, whether or not the student declares it in the report",
     "AI may write the report as long as the group checks it",
     "AI use need not be declared, because it is a tool like a spreadsheet"
    ],
@@ -419,7 +419,7 @@
    "stem": "Identify the six parts of the defence in order.",
    "options": [
     "Recommendation; the problem with evidence; what was rejected; cost and trade-offs; main risk and contingency; what you are still unsure about",
-    "Problem; history of the problem; options considered; recommendation; thanks; questions from the audience",
+    "Problem; history of the problem; options considered; recommendation; thanks to the team; questions from the audience; coffee and a closing word from the sponsor",
     "Cost; benefit; risk; timeline; team; budget",
     "Claim; reason; assumption; evidence; conclusion; vote"
    ],
@@ -451,7 +451,7 @@
    "stem": "Explain why the last line of the defence earns trust.",
    "options": [
     "Naming your remaining uncertainty makes everything before it more believable",
-    "It is the longest part of the defence and carries the most detail",
+    "It is the longest part of the defence and carries the most detail about the analysis",
     "It asks for money, which is the decision the listener has to make",
     "It ends the meeting, so the listener remembers it best"
    ],
@@ -483,7 +483,7 @@
    "stem": "Explain why the defence is not salesmanship.",
    "options": [
     "It is a structure that answers the questions a manager will actually ask, in order",
-    "It is louder and more confident than a sales pitch",
+    "It is louder and more confident than a sales pitch and uses the language of management",
     "It uses slides rather than a spoken argument",
     "It avoids mentioning risks that could worry the listener"
    ],
@@ -515,7 +515,7 @@
    "stem": "Explain what 'defensible' means for a decision.",
    "options": [
     "Visible, arguable and repeatable — someone else could follow how it was reached",
-    "Popular with the client, who will have to defend it to the board",
+    "Popular with the client, who will have to defend it to the board and to the staff afterwards",
     "Expensive enough to show that the analysis was thorough",
     "Fast enough to be made before the opportunity passes"
    ],
@@ -579,7 +579,7 @@
    "stem": "Analyse a matrix with one criterion weighted 10 and four weighted 1. Determine the problem.",
    "options": [
     "One criterion decides everything — the matrix is a single preference wearing a table",
-    "Nothing — weights should reflect what matters most to the client",
+    "Nothing — the weights should reflect what matters most to the client, and cost matters most here",
     "Too many criteria for the matrix to be useful",
     "Too few options for the weights to discriminate between"
    ],
@@ -611,7 +611,7 @@
    "stem": "Determine the action for 'system integration fails' scored 3 (low, high).",
    "options": [
     "Name it and ask IT to confirm before signing — no written contingency required",
-    "Write a full contingency plan with a fallback system",
+    "Write a full contingency plan with a fallback system and a second supplier ready to step in",
     "Abandon the option, because integration failures are fatal",
     "Run a pilot to test the integration before signing"
    ],
@@ -675,7 +675,7 @@
    "stem": "Analyse a bonus for calls handled per hour. Determine the likely second-order effect.",
    "options": [
     "Calls get shorter and difficult callers are avoided; quality falls",
-    "More calls are handled and waiting times fall",
+    "More calls are handled each hour and waiting times fall for every caller",
     "Higher pay for the staff who handle the most calls",
     "Happier customers who reach an agent more quickly"
    ],
@@ -691,7 +691,7 @@
    "stem": "Determine the chapter's distinction between a student answer and a professional one.",
    "options": [
     "The professional asks 'and then what?' twice and reports the inconvenient second answer",
-    "The professional uses more slides and a longer presentation",
+    "The professional uses more slides, more data, more charts and a much longer presentation to impress the client",
     "The student is shorter and gets to the point faster",
     "The professional avoids risks and recommends only safe options"
    ],
@@ -755,7 +755,7 @@
    "stem": "Determine the action when the precedent test fails but the recommendation stands.",
    "options": [
     "State the failure in the report and what you would do to reduce the harm",
-    "Delete the recommendation and replace it with the second option",
+    "Delete the recommendation and replace it with the second option from the option set",
     "Hide the failure, because the client wants the recommendation",
     "Blame the client, whose constraints made the failure unavoidable"
    ],
@@ -819,7 +819,7 @@
    "stem": "Analyse a group whose option list came only from AI. Determine the risk.",
    "options": [
     "Convergence — groups using AI produce similar answers; go beyond it deliberately",
-    "None — AI produces more options than any group could on its own",
+    "None — AI produces far more options than any group could produce on its own in an afternoon",
     "Too many options for the group to evaluate in the time",
     "Too few words in each option for the client to understand them"
    ],
@@ -835,7 +835,7 @@
    "stem": "Select the correct two-line AI declaration.",
    "options": [
     "'Used AI to widen options and as a challenger; did not use it for the diagnosis, the choice or the defence'",
-    "'Did not use AI at any stage of the project, in line with the group's agreement'",
+    "'Did not use AI at any stage of the project, in line with the group's agreement made in the first week of the semester'",
     "'AI wrote the report, which the group then reviewed and approved'",
     "'Used AI for everything, as the course rules permit for research'"
    ],
@@ -851,7 +851,7 @@
    "stem": "Determine how many of three AI-supplied facts a group should expect to survive checking.",
    "options": [
     "Unknown until each is verified against a real source — that is the point of the exercise",
-    "All three, because AI tools are now accurate on factual questions",
+    "All three, because AI tools are now accurate on factual questions and cite their sources",
     "None, because AI tools invent every fact they are asked for",
     "Two, because roughly a third of AI facts are wrong"
    ],
@@ -867,7 +867,7 @@
    "stem": "Analyse a defence that opens with ten minutes of history. Determine the fault.",
    "options": [
     "The recommendation should come first — the listener is asking 'what do you want me to do?'",
-    "Nothing — the history explains why the recommendation is needed",
+    "Nothing — the history explains why the recommendation is needed and the manager should hear it first",
     "Too short — ten minutes is not enough to cover the problem's history",
     "No slides, so the listener cannot follow the history"
    ],
@@ -979,7 +979,7 @@
    "stem": "Determine the ethical question that catches a recommendation harming a group not present.",
    "options": [
     "'Who bears the cost?' — name every group affected, including those with no voice",
-    "The precedent test — if everyone did this, would it be acceptable?",
+    "The precedent test — if everyone in the industry did this, would the outcome still be acceptable?",
     "The public test — would you be comfortable if it were reported?",
     "The reversal test — would you accept it on the receiving end?"
    ],
@@ -1011,7 +1011,7 @@
    "stem": "Classify the sentence 'what we are still unsure about is whether the effect holds in a full month'.",
    "options": [
     "The sixth part of the defence — remaining uncertainty",
-    "The recommendation, stated in 25 words",
+    "The recommendation itself, stated in 25 words at the very start",
     "The cost and the trade-offs",
     "The options that were rejected"
    ],

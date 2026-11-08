@@ -66,7 +66,7 @@
    "stem": "Describe the chain of command.",
    "options": [
     "The line of authority from the top to every employee, along which orders, questions and problems travel",
-    "The list of the company's suppliers in the order in which they must be paid each month",
+    "The list of the company's suppliers in the order in which they must be paid each month by the finance department",
     "The order in which employees joined the company, which decides who is promoted first",
     "The sequence of steps for making a product, from raw materials to the finished item"
    ],
@@ -274,7 +274,7 @@
    "stem": "Analyse an employee told 'campaign first' by the marketing manager and 'client first' by the sales manager the same morning. Determine the fix.",
    "options": [
     "Unity of command — one boss per person; the two managers agree the priority, she does not referee it",
-    "Let the employee choose which boss to obey, since she knows the work best",
+    "Let the employee choose which boss to obey each day, since she knows the work and the priorities best",
     "Give the employee a third boss who decides between the other two whenever they disagree",
     "Tell the employee to do both at once and to work extra hours if the day is not long enough"
    ],
@@ -338,7 +338,7 @@
    "stem": "Analyse the manager who answers every customer and approves every order, works twelve hours, and whose two best employees resigned saying 'no room to grow'. Determine what went wrong.",
    "options": [
     "She confused doing everything with being responsible for everything — she failed to delegate",
-    "She delegated too much, so her employees felt overloaded and left for easier jobs",
+    "She delegated too much too quickly, so her employees felt overloaded and left for easier jobs elsewhere",
     "Her employees were lazy and used 'no room to grow' as an excuse for leaving",
     "She needed a bigger office and more staff to handle the volume of customers and orders"
    ],
@@ -482,7 +482,7 @@
    "stem": "Analyse the founder of a 90-person company who still approves every purchase, discount and schedule change, while two managers quit as 'managers in title only'. Determine the prescription.",
    "options": [
     "Delegate decision rights by money threshold, keep hiring, pricing and brand at the top, publish the new chart, replace daily approval with a weekly dashboard",
-    "Hire more managers who also wait for the founder's approval, so that the queue of decisions is shared between more people and moves faster",
+    "Hire more managers who also wait for the founder's approval, so that the queue of decisions is shared between more people and moves faster through the office",
     "Reduce the company back to 15 people, the size at which the founder's way of working was effective, and grow again more slowly",
     "Ask the founder to work longer hours and to approve decisions in the evening, so that managers are not kept waiting during the day"
    ],

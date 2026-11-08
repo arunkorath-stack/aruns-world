@@ -115,7 +115,7 @@
    "options": [
     "People, process, equipment, materials, information",
     "Price, product, place, promotion, people",
-    "Price, product, place, promotion and people",
+    "Past causes, present causes, future risks and known unknowns",
     "Boss, staff, customer, supplier, competitor"
    ],
    "answer": 0,
@@ -180,7 +180,7 @@
     "Ask where the problem IS and where it IS NOT, then look for what is different between them",
     "Ask why five times until you reach the cause you can act on",
     "Count the complaints and rank them from the largest share to the smallest",
-    "List every possible cause on a map and mark the evidence beside each one"
+    "List every possible cause on a map, branch each one again, and mark the evidence beside each of them"
    ],
    "answer": 0,
    "why": "It rules causes out faster than proving one in. See §3.3."
@@ -258,7 +258,7 @@
    "stem": "Describe the Pareto rule.",
    "options": [
     "A small number of causes produce most of the damage, so count them and put them in order before you spend",
-    "All causes are equal, so the budget should be divided evenly between them",
+    "All causes are equal in principle, so the budget should be divided evenly between them to be fair to every department involved",
     "The cheapest cause should be fixed first, so that the budget goes further",
     "Fix every cause at once, because leaving any cause untouched lets the problem return"
    ],
@@ -370,7 +370,7 @@
    "stem": "Describe a cause, as the chapter defines it.",
    "options": [
     "You can explain the mechanism, the evidence survives the IS NOT test, and when it was removed the problem changed",
-    "Two things that happen together often enough for the pattern to be noticed by the staff",
+    "Two things that happen together often enough for the pattern to be noticed and remarked on by the staff and the manager alike",
     "Something the client believes strongly enough to have acted on it before the project began",
     "The first why in a Five Whys chain, which points directly at the visible symptom"
    ],
@@ -482,7 +482,7 @@
    "stem": "Describe the two-tool combination used in practice.",
    "options": [
     "A cause map or Five Whys to get candidates, then IS / IS NOT to eliminate most of them",
-    "Pareto to rank the causes, then Five Whys on the largest one",
+    "Pareto to rank the causes first, then Five Whys on the largest one to find its root, then a survey to confirm it",
     "Two cause maps built by different teams and compared",
     "IS / IS NOT to find the differences, then a survey to confirm them"
    ],
@@ -562,7 +562,7 @@
    "stem": "Analyse a 22-minute prescription wait. Determine what Five Whys might miss.",
    "options": [
     "A cause on a different chain, such as stock or rota, because it follows one chain",
-    "Nothing — it finds everything if the whys are asked carefully",
+    "Nothing — it finds everything if the whys are asked carefully enough and in the right order",
     "The symptom, because Five Whys starts from the cause",
     "The budget, because Five Whys does not consider cost"
    ],
@@ -612,7 +612,7 @@
     "It holds several competing causes at once instead of the one chain you picked first",
     "Nothing — both tools find the same causes in the end",
     "A count of complaints under each branch, which Five Whys cannot provide",
-    "A comparison with other branches, which shows where the problem is not"
+    "A comparison with the other branches, which shows where the problem is not happening"
    ],
    "answer": 0,
    "why": "Holds competing causes without choosing early. See §3.2 and Exercise 1."
@@ -642,7 +642,7 @@
    "stem": "Analyse the food delivery case: late orders in two of nine zones, dinner only, since February, restaurants only. Determine the fact that eliminates most causes.",
    "options": [
     "Only two of nine zones — anything company-wide (app, pay rate, customer base) is eliminated",
-    "Dinner orders only — anything to do with the lunchtime menu is eliminated",
+    "Dinner orders only — anything to do with the lunchtime menu and lunchtime staffing is eliminated",
     "Since February — anything that was true before February is eliminated",
     "Restaurants only — anything to do with grocery partners is eliminated"
    ],
@@ -658,7 +658,7 @@
    "stem": "Determine what 'dinner orders, not lunch' points to in the delivery case.",
    "options": [
     "Something about evening conditions — traffic, rider numbers or restaurant prep at dinner",
-    "The app, which may be slower under the heavier load of the evening",
+    "The app, which may be slower under the heavier load of the evening when more customers are ordering",
     "Rider pay, which is lower in the evening than at lunch",
     "The customer base, which is different in the evening"
    ],
@@ -674,7 +674,7 @@
    "stem": "Determine what 'restaurants, not grocery partners' points to.",
    "options": [
     "Something about restaurant preparation or pickup, not the delivery system as a whole",
-    "The riders, who prefer grocery orders because they are quicker",
+    "The riders, who prefer grocery orders because they are quicker to collect and easier to deliver",
     "The two zones' roads, which are congested near restaurants",
     "The customers, who order from restaurants at busier times"
    ],
@@ -692,7 +692,7 @@
     "A chain-wide coffee bean problem — the other five branches are fine",
     "A morning rota problem at the Deira branch",
     "Something that changed in March at the Deira branch",
-    "A Deira-specific machine that struggles in the morning"
+    "A Deira-specific machine that struggles in the cold of the early morning"
    ],
    "answer": 0,
    "why": "Causes that apply to the whole chain are eliminated. See §3.3."
@@ -706,7 +706,7 @@
    "stem": "Select the first data to ask for in the gym case (drop-out after a competitor opened and a timetable change).",
    "options": [
     "Which classes the leavers attended and when they left, to compare against the timetable change",
-    "The competitor's prices, so that the gym can match them",
+    "The competitor's prices and class timetable, so that the gym can match them and win the members back",
     "The gym's logo and brand image compared with the competitor's",
     "Staff opinions about why the members have been leaving"
    ],
@@ -818,7 +818,7 @@
    "stem": "Determine when a correlation may be called a cause.",
    "options": [
     "When you can explain the mechanism, it survives the IS NOT test, and removing it changed the problem",
-    "When the client agrees that it is the most likely explanation",
+    "When the client agrees that it is the most likely explanation and the team has found nothing else that fits the data as well",
     "When it has happened twice in the same way",
     "When it is written in a report with the data behind it"
    ],
@@ -898,7 +898,7 @@
    "stem": "Determine the order of tools for a project diagnosis session.",
    "options": [
     "Cause map or Five Whys for candidates → IS / IS NOT to eliminate → Pareto to choose",
-    "Pareto to rank the causes → Five Whys on the largest → cause map to check",
+    "Pareto to rank the causes → Five Whys on the largest one → cause map to check the rest",
     "IS / IS NOT to find the differences → Pareto to rank → Five Whys to explain",
     "Any order — the tools are independent and give the same result"
    ],
@@ -930,7 +930,7 @@
    "stem": "Determine what to tell a client about your leading cause when you only have a correlation.",
    "options": [
     "Say honestly it is a correlation and name the test that would settle it",
-    "Call it the cause, because the client needs a clear answer",
+    "Call it the cause, because the client needs a clear answer and the timing fits",
     "Say nothing until the evidence is complete",
     "Call it a guess, because nothing has been proved"
    ],
@@ -946,7 +946,7 @@
    "stem": "Analyse a table where IS and IS NOT are identical for every row. Determine what it tells you.",
    "options": [
     "The comparison rules nothing out — you need a different comparison or more data",
-    "The cause is found, because the problem is the same everywhere",
+    "The cause is found, because the problem is the same everywhere and so must have one source",
     "The problem is everywhere, so nothing can be done about it",
     "Pareto is needed, because the differences must be counted"
    ],
@@ -1011,7 +1011,7 @@
    "options": [
     "'Removing the broken machine from the rota cut the queue in half the next day'",
     "'Queues rose when the new clinic opened across the road in March'",
-    "'Busy days have longer queues than quiet days at every branch'",
+    "'Queues rose when the new clinic opened across the road in March and have stayed high since'",
     "'Customers say the staff are slow and do not seem to care'"
    ],
    "answer": 0,

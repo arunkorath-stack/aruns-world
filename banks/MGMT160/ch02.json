@@ -130,7 +130,7 @@
    "stem": "Describe Weber's idea of bureaucracy.",
    "options": [
     "Clear rules applied equally, a defined hierarchy, written records and positions earned by merit",
-    "Jobs given to relatives of the owner and decisions made according to the boss's mood that day",
+    "Jobs given to relatives of the owner and decisions made according to the boss's mood on the day in question",
     "No fixed rules at all, so that managers stay flexible and can treat every case differently",
     "Workers choosing their own managers by vote and changing them whenever results are poor"
    ],
@@ -146,7 +146,7 @@
    "stem": "Describe what the Hawthorne studies found.",
    "options": [
     "Workers performed better because someone was paying attention to them — not because of the lighting",
-    "Brighter lights always raise productivity, so factories should invest in better lighting first",
+    "Brighter lights always raise productivity, so factories should invest in better lighting before anything else is tried",
     "Higher pay was the only thing that raised output; attention and lighting made no difference",
     "Workers performed worse when they were watched, because observation made them nervous and slow"
    ],
@@ -210,7 +210,7 @@
    "stem": "Describe the contingency perspective.",
    "options": [
     "There is no single best way — the right style depends on the situation, people, environment and organisation",
-    "Scientific management is the best way in every workplace once the job has been studied properly",
+    "Scientific management is the best way in every workplace once the job has been properly studied and timed by the manager",
     "Managers should always use the people-first style, because people are the same everywhere",
     "The best style is the one the manager is most comfortable with, because confidence drives results"
    ],
@@ -228,7 +228,7 @@
     "Globalisation, technology and AI, hybrid work, new expectations",
     "Factories, strikes, lighting and stopwatches",
     "Family businesses, cousins, paperwork and favouritism",
-    "Low wages, long hours, no training and no job security"
+    "Low wages, long hours, no training, no job security and no unions"
    ],
    "answer": 0,
    "why": "Today's challenges are different, not harder: globalisation, AI, hybrid work and employees' new expectations. See §2.8."
@@ -242,7 +242,7 @@
    "stem": "Identify the modern example the chapter uses to show scientific management alive today.",
    "options": [
     "A fast-food kitchen with the same layout and steps everywhere",
-    "A hospital emergency team debriefing after a difficult shift",
+    "A hospital emergency team debriefing together after a difficult night shift",
     "A start-up design team deciding its own working methods",
     "A family workshop of forty workers who all know each other"
    ],
@@ -370,7 +370,7 @@
    "stem": "Compare how a weak manager and a systems manager respond to a failure.",
    "options": [
     "The weak manager blames the nearest person; the systems manager traces the chain and fixes the cause",
-    "Both blame the nearest person, but the systems manager documents the blame in writing",
+    "Both blame the nearest person, but the systems manager documents the blame in writing for the personnel file afterwards",
     "The systems manager blames the customer for the failure; the weak manager blames the supplier",
     "The weak manager fixes the system; the systems manager dismisses the employee responsible"
    ],
@@ -482,7 +482,7 @@
    "stem": "Analyse the claim that management is harder today than in 1910. Determine the chapter's position.",
    "options": [
     "Different, not harder — each era solved its own problem with its own ideas and better tools",
-    "Much harder — AI and globalisation make the manager's job almost impossible today",
+    "Much harder — AI, globalisation and hybrid work make the manager's job almost impossible today compared with 1910",
     "Much easier — computers now do most of the planning and controlling for the manager",
     "Exactly the same in every way, because people and organisations have not changed"
    ],

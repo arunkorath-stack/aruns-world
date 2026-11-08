@@ -65,7 +65,7 @@
    "stem": "Identify the six common causes of transformation failure.",
    "options": [
     "Technology-first thinking, underinvestment in people, no clear business case, poor change management, weak executive ownership, declaring victory at go-live",
-    "Bad vendors, slow internet, old laptops, high licence prices, too few apps and unreliable Wi-Fi",
+    "Bad vendors, slow internet, old laptops, high licence prices, too few apps, unreliable Wi-Fi, and staff who will not read the manual before they complain to IT",
     "Too much training, too many people involved, too much change at once and too little technology",
     "Lack of consultants, lack of budget, lack of time and lack of interest from the IT department"
    ],
@@ -129,7 +129,7 @@
    "stem": "Describe a learning organisation.",
    "options": [
     "One skilled at creating, acquiring and transferring knowledge, and at modifying its behaviour to reflect new knowledge",
-    "A university or college whose purpose is to teach and to carry out research",
+    "A university or college whose main purpose is to teach students and to carry out research that is published in academic journals",
     "An organisation with a training budget large enough to teach every employee every year",
     "An organisation that never changes, because it has learned everything it needs to know"
    ],
@@ -161,7 +161,7 @@
    "stem": "Describe proximity bias.",
    "options": [
     "Leaders reward, promote and trust the people they see — remote members get less visibility and slower promotion by default",
-    "Preferring older staff who have been with the organisation longest",
+    "Preferring older staff who have been with the organisation longest, because their loyalty has been tested over many years and they know how things are done",
     "Preferring the nearest office building when allocating resources",
     "A bias toward long meetings in which everyone is present"
    ],
@@ -177,7 +177,7 @@
    "stem": "Identify the hybrid team rhythm.",
    "options": [
     "Weekly all-team meeting with a written agenda; fortnightly one-to-ones with remote members first; a monthly check of who got the visible work; outcomes measured, never hours online",
-    "Daily surveillance of hours online, so that remote members are held to the same standard as those in the office",
+    "Daily surveillance of hours online, so that remote members are held to exactly the same standard as those in the office every day",
     "Monthly meetings only, so that remote members are not burdened with travel",
     "No meetings at all, because hybrid teams coordinate through messages"
    ],
@@ -209,7 +209,7 @@
    "stem": "Identify the three questions before acting on people data.",
    "options": [
     "What is this measuring — activity, output or outcome? What can the data not show? If I am wrong, who pays and can I explain it face to face?",
-    "Is it fast to collect? Is it cheap to display? Is it presented clearly on the dashboard?",
+    "Is it fast to collect? Is it cheap to display? Is it presented clearly on the dashboard? Does the team understand the colours and the arrows?",
     "Who built the dashboard? Who paid for it? Who signed off the metrics?",
     "Is it new? Is it popular with the team? Is it environmentally sustainable?"
    ],
@@ -225,7 +225,7 @@
    "stem": "Explain the chapter's rule on the 'disengaged' flag.",
    "options": [
     "The leader who acts without the conversation has delegated judgement to a proxy; the leader who ignores it wastes a signal — the skill is the conversation the data prompts",
-    "Act on the flag immediately, because the system has seen patterns the leader cannot",
+    "Act on the flag immediately, because the system has seen patterns the leader cannot and waiting would only let the problem grow",
     "Ignore all flags, because people data is too unreliable to act on",
     "Delete the dashboard, because flags of this kind damage trust"
    ],
@@ -241,7 +241,7 @@
    "stem": "Describe the 'agent boss'.",
    "options": [
     "A new role for everyone — building, delegating to and managing AI agents to amplify their impact",
-    "The CEO of an AI firm who manages teams of engineers",
+    "The CEO of an AI firm who manages teams of engineers building the models and selling them to other companies",
     "A robot manager that assigns tasks to human staff",
     "An IT administrator who controls access to AI tools"
    ],
@@ -273,7 +273,7 @@
    "stem": "Describe how to delegate to a machine.",
    "options": [
     "Brief it, check its work every time, own the result, develop it, know its limits — use it to widen options, not to make the decision",
-    "Give it the decision and act on its recommendation, because it has seen more cases than any manager",
+    "Give it the decision and act on its recommendation without checking, because it has seen more cases than any manager could in a career",
     "Trust it blindly once it has proved itself on a few tasks, because checking wastes the time it saves",
     "Never check its work, because the tool is more accurate than the manager"
    ],
@@ -289,7 +289,7 @@
    "stem": "Identify what AI takes and what it hands back.",
    "options": [
     "Takes scheduling, drafts, summaries, reporting, analysis, routine coordination; hands back judgement, direction, coaching, difficult conversations, trust, ethics",
-    "Takes judgement, direction and coaching; hands back scheduling, drafts and reporting",
+    "Takes judgement, direction, coaching and the difficult conversations; hands back scheduling, drafts, summaries and reporting to the humans in the team",
     "Takes everything a manager does, so the leader's job disappears within a few years",
     "Takes nothing of substance, because AI tools cannot do real management work"
    ],
@@ -305,7 +305,7 @@
    "stem": "Identify what stays human in the AI-era portfolio.",
    "options": [
     "Purpose and priorities, trust and psychological safety, ethical judgement, coaching and development, the difficult conversation and accountability",
-    "First drafts and summaries of documents the team produces",
+    "First drafts and summaries of the documents the team produces, together with the formatting, the translation, the proofreading and the layout of the final reports for the client",
     "Scheduling and reminders for the team's meetings and deadlines",
     "Formatting, translation and the layout of reports"
    ],
@@ -321,7 +321,7 @@
    "stem": "Describe what the leader and the machine do together.",
    "options": [
     "Decisions: the machine widens options, the leader chooses and answers; diagnosis: data flags, the conversation decides",
-    "Nothing — they work separately, with the machine on routine tasks and the leader on people",
+    "Nothing — they work completely separately, with the machine on routine tasks and the leader on people, and neither ever touches the other's work",
     "The machine decides and the leader signs, because the machine has more information",
     "The leader drafts and the machine decides, because the machine is free of bias"
    ],
@@ -337,7 +337,7 @@
    "stem": "Explain the chapter's answer to 'what is left for the leader?'.",
    "options": [
     "The whole of leadership as Chapter 1 defined it — routine work was never leadership; AI removes the excuse",
-    "Nothing — AI will take over the leader's role within a generation",
+    "Nothing — AI will take over the leader's role completely within a generation, and the course is teaching a job that will not exist",
     "Only IT, because the leader's job becomes managing the systems",
     "Only budgets, because the leader decides what the organisation can afford"
    ],
@@ -401,7 +401,7 @@
    "stem": "Explain what the four tests decide.",
    "options": [
     "Which decisions an algorithm may make alone, which it may recommend, and which a human must make and explain",
-    "Which software to buy from the vendors competing for the contract",
+    "Which software to buy from the vendors competing for the contract, and how much the organisation should pay for it each year",
     "How much to pay riders and other workers managed by the system",
     "When to switch the system off for maintenance"
    ],
@@ -417,7 +417,7 @@
    "stem": "Identify the leadership rule on AI recommendations.",
    "options": [
     "If the system recommends and the leader acts, the leader is accountable — 'the model said so' is displacement of responsibility",
-    "The vendor is accountable, because the vendor built and trained the model",
+    "The vendor is accountable, because the vendor built and trained the model and sold it to the platform as a finished product with a guarantee of fairness",
     "Nobody is accountable, because the decision was made by a machine",
     "The model is accountable, and its recommendations can be audited later"
    ],
@@ -433,7 +433,7 @@
    "stem": "Describe the bias audit a non-technical leader can run.",
    "options": [
     "Compare representation with the pool, identify features that are proxies for nationality, gender, age or location, ask what a human reviewer would weigh, document the check",
-    "Ask the vendor whether the system is fair and keep the written answer on file",
+    "Ask the vendor whether the system is fair, keep the written answer on file, and show it to anyone who complains about the shortlist",
     "Trust the accuracy score, because a model that predicts well cannot be biased",
     "Hire a lawyer to review the system before it is used on real decisions"
    ],
@@ -449,7 +449,7 @@
    "stem": "Explain why bias is a Chapter 7 issue as much as a Chapter 10 one.",
    "options": [
     "A system trained on ten years of promotions reproduces ten years of proximity bias and in-groups — the pro-diversity culture must be built into the tools",
-    "It is not — bias is purely technical and belongs to the engineers who built the model",
+    "It is not — bias is purely a technical matter and belongs to the engineers who built the model, not to the culture of the organisation that bought it and uses it every day",
     "Culture has nothing to do with data, which is objective by definition",
     "Chapter 7 is about ethics only and does not cover the use of data"
    ],
@@ -465,7 +465,7 @@
    "stem": "Identify the UAE's Chief AI Officer model.",
    "options": [
     "Federal and local entities have appointed Chief AI Officers — AI governance is now an executive role",
-    "A software product sold to government entities to manage their AI systems",
+    "A software product sold to government entities in the UAE to manage, monitor and audit their AI systems from one dashboard",
     "A university degree in AI governance offered by UAE universities",
     "A private consultancy that advises government entities on AI"
    ],
@@ -497,7 +497,7 @@
    "stem": "Identify the elements of a one-page AI-use policy.",
    "options": [
     "Purpose, permitted uses and tools, prohibited uses, human oversight, data, disclosure, accountability, review",
-    "Passwords and access rules for the AI tools the organisation uses",
+    "Passwords, access rules and licence numbers for the AI tools the organisation uses, kept by the IT department",
     "A list of approved apps and the version numbers staff may install",
     "The IT department's phone number and hours of support"
    ],
@@ -513,7 +513,7 @@
    "stem": "Identify the fears people actually have about AI, per the Leadership Book.",
    "options": [
     "'My job will be eliminated', 'I will look incompetent', 'I will lose what I know', 'I don't have time to learn this'",
-    "'It is too cheap to be any good'",
+    "'It is too cheap to be any good', 'it is too slow to help with real work' and 'the licence will run out before we learn it'",
     "'It is too slow to help with real work'",
     "'It is too polite to be taken seriously'"
    ],
@@ -529,7 +529,7 @@
    "stem": "Identify the three stages of crisis leadership.",
    "options": [
     "Pre-crisis planning, crisis response, post-crisis learning",
-    "Deny, delay and defend",
+    "Deny, delay and defend until the story dies down and the press moves on",
     "Hide, wait and hope",
     "Blame, dismiss and forget"
    ],
@@ -545,7 +545,7 @@
    "stem": "Explain the reframe from the evidence about AI adoption.",
    "options": [
     "Employees are ahead of leaders, so the task is to give adoption structure, training and permission — unfreezing is often already done; the leader's job is the changing and refreezing",
-    "Push adoption harder, because employees are slower than leaders to accept new tools",
+    "Push adoption harder from the top, because employees are slower than leaders to accept new tools and need to be told clearly and repeatedly what is expected of them",
     "Ban AI until leaders catch up, so that adoption is controlled from the top",
     "Wait for a crisis, because people change only when they have to"
    ],
@@ -561,7 +561,7 @@
    "stem": "Exercise 1, Case A: a delivery app assigns routes, rates riders on speed and stars, deactivates the bottom 5% each quarter; riders cannot see the formula and have no one to appeal to. Determine which tests fail.",
    "options": [
     "Transparency and contestability fail; autonomy partly; dignity fails on deactivation without appeal",
-    "All four pass, because the system treats every rider by the same rules",
+    "All four pass, because the system treats every rider by exactly the same rules and no human can be accused of favouring anyone",
     "Only autonomy fails, because riders cannot choose their routes",
     "Only dignity fails, because riders are rated by stars"
    ],
@@ -577,7 +577,7 @@
    "stem": "Exercise 1, Case A: determine which decisions the algorithm should make, recommend, and leave to the human team leader.",
    "options": [
     "Make: route assignment with visible rules; recommend: ratings; human: deactivation, disputes and exceptions",
-    "Make: everything, because the system is consistent and fast",
+    "Make: everything, because the system is consistent and fast and treats every rider by exactly the same rules without exception",
     "Human: everything, because algorithms should not manage people",
     "Recommend: routes; make: deactivation, because the data is clear"
    ],
@@ -593,7 +593,7 @@
    "stem": "Exercise 1, Case B: an AI tool ranks 300 bank applicants; the top 40 are 85% from three universities and 90% men, against a pool that is 55% women. Determine the audit finding and likely proxies.",
    "options": [
     "A representation gap against the pool; proxies such as university, CV gaps, sports and name; a human would weigh potential and context",
-    "No gap — the top 40 are simply the best applicants by the criteria",
+    "No gap at all — the top 40 are simply the best applicants by the criteria the bank published in the advertisement, and the model has applied them fairly to everyone",
     "The pool is wrong, because women applied for roles they were not suited to",
     "Men applied more for the senior roles, which explains the result"
    ],
@@ -609,7 +609,7 @@
    "stem": "Exercise 1, Case B: select what the bank's leader should say to the candidate who asks why she was not shortlisted.",
    "options": [
     "An honest, specific explanation of what was reviewed and what will change — never 'the system decided'",
-    "'The system decided, and the bank follows its recommendations.'",
+    "'The system decided, and the bank follows its recommendations in every case, so there is nothing more I can tell you about it.'",
     "'You were unlucky — the competition this year was very strong.'",
     "'Apply again next year, when the criteria may be different.'"
    ],
@@ -625,7 +625,7 @@
    "stem": "Exercise 1: determine who is accountable in each case and the rationalisation a leader acting on unchecked output would use.",
    "options": [
     "The platform's operations leadership and the bank's hiring leader; 'the model said so' — displacement of responsibility",
-    "The vendors who built the systems; moral justification",
+    "The vendors who built the two systems; moral justification, because the systems were built to serve a higher purpose for the companies",
     "The riders and the candidates; attribution of blame",
     "Nobody, because the decisions were made by machines; diffusion of responsibility"
    ],
@@ -641,7 +641,7 @@
    "stem": "Exercise 2 (the AI task): a customer-service team of twelve resists an AI assistant that will draft replies; two experienced staff threaten to resign. Select the correct way to brief the tool.",
    "options": [
     "A CO-STAR brief — context, objective, style, tone, audience, response format — then ask for an analysis and an action plan, saving the exchange",
-    "'Fix my team' with no context, because the tool will ask for what it needs",
+    "'Fix my team' with no context at all, because the tool will ask for whatever information it needs before it answers the question properly and in full",
     "Ask it to decide who to dismiss, since the two seniors have threatened to resign",
     "Paste the staff's private messages so that the tool has the full picture"
    ],
@@ -657,7 +657,7 @@
    "stem": "Exercise 2, critique: the tool's plan says 'communicate the benefits and offer training'. Determine what a course theory would add.",
    "options": [
     "It is generic — Chapter 8's resistance table says the two seniors protect competence and status, so respect the expertise and make them the trainers",
-    "Nothing — it is complete and covers communication and training",
+    "Nothing — it is complete and covers communication and training, which is everything the chapter says a change plan needs to succeed with the staff of a small team",
     "More technology, so that the assistant drafts better replies",
     "A bonus for staff who adopt the assistant first"
    ],
@@ -673,7 +673,7 @@
    "stem": "Exercise 2, judge: select the paragraph format the marking guide rewards.",
    "options": [
     "What you would actually do as the leader, with honest attribution of which parts came from the tool, the course and your own reasoning",
-    "The tool's plan copied in full, because the tool is the subject of the exercise",
+    "The tool's plan copied in full, because the tool is the subject of the exercise and the student's own view is not what is being assessed",
     "A plan with no sources, because the judgement is the student's own",
     "A list of the tool's features and how each one helped"
    ],
@@ -705,7 +705,7 @@
    "stem": "Exercise 2, ethics: select an ethical question the scenario raises.",
    "options": [
     "Whether customers should be told their replies are AI-drafted, or what is owed to the two staff who may leave",
-    "Which font the AI assistant should use in its replies",
+    "Which font the AI assistant should use in its replies, and whether the replies should be signed by the team or by the manager",
     "Whether the tool is fast enough to meet the response targets",
     "Whether the team likes the logo of the AI assistant"
    ],
@@ -721,7 +721,7 @@
    "stem": "Exercise 2 scenario: the two senior agents say 'twenty years of knowing what to write, and now a machine does it'. Determine the fear and the Leadership Book's response.",
    "options": [
     "'I will lose what I know' — acknowledge the fear, be honest about job impact, give them a role in the change and real training",
-    "'I don't have time' — give them a day off to learn the tool",
+    "'I don't have time' — give them a day off to learn the tool and a printed manual to read at home over the weekend before the launch",
     "'My job is eliminated' — confirm it so that they can plan",
     "No fear — ignore it, because experienced staff always complain about change"
    ],
@@ -737,7 +737,7 @@
    "stem": "Take-away: a student delegates a task to the tool and the output is 'good, generic in places, wrong about one fact, and unaware of the team's history'. Determine the correct response.",
    "options": [
     "Review it as a manager would a junior's draft — keep the good, fix the generic, correct the wrong, add what it could not know",
-    "Use it as is, because the tool has done the work and the student's job is to deliver it",
+    "Use it exactly as it is, because the tool has done the work and the student's job is simply to deliver it to the client on time",
     "Discard it all, because one wrong fact shows the tool cannot be trusted",
     "Send it to the client, who can judge whether it is useful"
    ],
@@ -769,7 +769,7 @@
    "stem": "Take-away: select a correctly formed three-line personal AI-use rule.",
    "options": [
     "Delegate: first drafts and summaries; keep human: coaching and the difficult conversation; always disclose: when a customer-facing text was AI-drafted",
-    "Delegate everything that can be delegated; keep nothing; disclose nothing, because disclosure undermines trust",
+    "Delegate everything that can be delegated; keep nothing for yourself; disclose nothing, because disclosure undermines the customers' trust in the firm",
     "Delegate nothing; keep everything; disclose everything, including internal notes",
     "Delegate ethics; keep formatting; disclose the fonts used"
    ],
@@ -865,7 +865,7 @@
    "stem": "Rami asks Noor's device to draft three routes, then chooses one himself after checking each against what he knows of the gang. Classify the practice.",
    "options": [
     "Delegating to the machine as to a junior colleague — brief, check, own; widen options, not make the decision",
-    "Letting the machine decide, because it drafted the routes",
+    "Letting the machine decide the route, because it drafted the three options and has more information than Rami about the patrols",
     "Ignoring the machine, because Rami chose himself",
     "Over-delegation, because Rami should have drawn the routes"
    ],
@@ -881,7 +881,7 @@
    "stem": "Two of Rami's scouts are posted a day's ride away; the ones beside him get the praise, the information and the interesting missions. Determine the problem and the fix.",
    "options": [
     "Proximity bias — fixed by a communication rhythm, remote members' one-to-ones first, and a monthly check of who got the visible work",
-    "Low power distance — fixed by clearer hierarchy",
+    "Low power distance in the camp — fixed by a clearer hierarchy so that the far scouts know exactly who to report to, when, and in what form",
     "A substitute for leadership — the far scouts need no leader",
     "Management by exception — Rami intervenes only when the far scouts fail"
    ],
@@ -897,7 +897,7 @@
    "stem": "The seeing-machine gives a wrong alarm and the village panics; Rami stands in the square, explains honestly what failed, and that night the team reviews the alarm rules. Classify the three stages shown.",
    "options": [
     "Crisis response (visible, calm, honest, fast) and post-crisis learning — pre-crisis planning was the missing stage",
-    "Only pre-crisis planning, because the alarm rules existed",
+    "Only pre-crisis planning, because the alarm rules existed and the village had rehearsed them twice before the attack",
     "Only post-crisis learning, because the review happened",
     "None — the alarm was a technical fault"
    ],
@@ -913,7 +913,7 @@
    "stem": "Rami writes one page for the village: what the seeing-machine is for, what it may never be used for, who checks it before the gate is opened, and who answers for its mistakes. Classify the document.",
    "options": [
     "An AI-use policy — purpose, prohibited uses, human oversight, accountability",
-    "A vision statement for the village's defence",
+    "A vision statement for the village's defence, written by Rami and read aloud to the council of elders",
     "A team charter for the village guard",
     "A BCF statement about the machine"
    ],
@@ -929,7 +929,7 @@
    "stem": "Omar fears the machine will replace him as scout. Rami replies that the machine will draft the routes and he will keep deciding, coaching the young scouts and having the hard conversations with the elders. Determine what Rami is describing.",
    "options": [
     "What stays human — judgement, coaching and the difficult conversation — while routine coordination is delegated",
-    "Full automation of the scout's role",
+    "Full automation of the scout's role, with the machine sending the signals and the scout simply watching the screen all day",
     "Nothing changes for Omar",
     "Omar's dismissal, dressed up kindly"
    ],
@@ -961,7 +961,7 @@
    "stem": "Describe the 'enhanced leadership' paradigm from the 2025 review.",
    "options": [
     "Algorithms tell leaders which team members need attention and what to prioritise, using communication patterns and people data",
-    "Leaders replaced by algorithms that assign and evaluate work",
+    "Leaders replaced by algorithms that assign and evaluate work, so that the human leader's role disappears from the organisation",
     "Leaders without data, relying on judgement alone",
     "Dashboards replaced by instinct and experience"
    ],
@@ -1025,7 +1025,7 @@
    "stem": "Describe how to 'reach the apprehensive', per the chapter.",
    "options": [
     "Acknowledge fears, be honest about job impact, invest in real training, give people a role — they watch how you treat the first person the system gets wrong",
-    "Tell them not to worry, because AI will create more jobs than it removes",
+    "Tell them not to worry, because AI will create more jobs than it removes and the company will look after everyone who stays",
     "Exclude them from the rollout until they are ready",
     "Wait for them to leave and hire people who are comfortable with AI"
    ],
@@ -1073,7 +1073,7 @@
    "stem": "Rami discovers the young scouts have been using the machine for weeks without telling the elders. Determine the chapter's reading and the leader's first task.",
    "options": [
     "Employees are ahead of leaders — find out what is already happening and give it structure, training and permission",
-    "Punish the scouts for using the machine without permission",
+    "Punish the scouts for using the machine without permission, so that the rest of the party learns to wait for the captain's orders",
     "Ban the machine until the elders have approved its use",
     "Ignore it, because the scouts know what they are doing"
    ],
@@ -1121,7 +1121,7 @@
    "stem": "Determine the organisation a digital transformation requires the leader to build, according to the textbook link.",
    "options": [
     "A learning organisation — skilled at creating, acquiring and transferring knowledge and modifying its behaviour",
-    "A bureaucratic organisation with rules for every use of the technology",
+    "A bureaucratic organisation with written rules for every use of the technology and a committee to approve each new one",
     "A control-based organisation that monitors how the technology is used",
     "A smaller organisation, because the technology replaces people"
    ],
@@ -1137,7 +1137,7 @@
    "stem": "Rami's scouts on the far ridge get a message only when something goes wrong; the near scouts talk to him daily. Select the chapter's rhythm fix.",
    "options": [
     "Fortnightly one-to-ones with remote members first, and a weekly all-team meeting with a written agenda",
-    "Daily surveillance of the far-ridge scouts through the device",
+    "Daily surveillance of the far-ridge scouts through the device, with a report to the elders at the end of every week",
     "Monthly messages to the far ridge with the latest news",
     "No change, because the far scouts are doing their job"
    ],
@@ -1169,7 +1169,7 @@
    "stem": "Analyse the far-ridge scouts' slower promotions and fewer stretch tasks. Determine the Chapter 7 connection.",
    "options": [
     "Proximity bias is the diversity issue in a new form — the missing group is on the other side of the screen",
-    "It is a pay issue, because the far scouts are paid the same for harder work",
+    "It is a pay issue, because the far scouts are paid the same as the near ones for harder and more dangerous work on the ridge",
     "It is a Hofstede issue, because the far ridge has a different culture",
     "It is unrelated to Chapter 7, which is about nationality and gender"
    ],
@@ -1265,7 +1265,7 @@
    "stem": "Determine why the chapter calls the UAE 'an unusually good classroom' for AI governance.",
    "options": [
     "A national AI strategy, a Charter with principles, and Chief AI Officers in government entities make governance an executive role every graduate will meet",
-    "Because AI is banned in the UAE, so students can study governance without using the tools",
+    "Because AI is banned in the UAE, so students can study governance in theory without ever using the tools in practice",
     "Because there is no regulation, so students can see what happens without rules",
     "Because only universities use AI in the UAE, so the classroom is where it is governed"
    ],

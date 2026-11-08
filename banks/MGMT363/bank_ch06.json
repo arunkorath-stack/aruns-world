@@ -99,7 +99,7 @@
     "The wish for agreement suppresses the objection — everyone nods, three disagree privately",
     "The first number heard anchors the rest of the group's estimates",
     "One vivid story told in the meeting outweighs a year of quiet data",
-    "Past spending justifies more spending because the group has already committed"
+    "Past spending justifies more spending because the group has already committed itself publicly"
    ],
    "answer": 0,
    "why": "Everyone nods; three people privately disagree. See §6.1."
@@ -145,7 +145,7 @@
    "stem": "Describe what awareness does give you.",
    "options": [
     "The ability to recognise the pattern in others' reasoning, and afterwards in your own",
-    "Protection in the moment, because you notice the bias as it operates",
+    "Protection in the moment, because you notice the bias as it operates and can stop it in time",
     "Immunity from the bias once you have been taught its name",
     "Faster decisions, because you no longer need to check for bias"
    ],
@@ -401,7 +401,7 @@
    "stem": "Identify the four steps of a pre-mortem in order.",
    "options": [
     "State the failure as fact; everyone writes alone; read out in rotation without comment; change the plan for the top three",
-    "Vote on the plan; argue about the result; decide by majority; celebrate the decision",
+    "Vote on the plan; argue about the result; decide by majority; celebrate the decision; record the vote in the minutes for the file",
     "Present the plan; discuss the risks; agree the changes; sign off the final version",
     "Identify who is to blame; let them defend themselves; compromise; move on"
    ],
@@ -657,7 +657,7 @@
    "stem": "Analyse the classmate's claim 'if I cannot stop doing it, why learn the names?'. Determine the answer.",
    "options": [
     "Names let you diagnose it in others and afterwards in yourself, and design processes against it",
-    "Agree — the chapter is useless if the biases cannot be stopped",
+    "Agree — the chapter is useless if the biases cannot be stopped once they have been named and explained to the manager",
     "Names stop the bias once you have learned to recognise them",
     "Only managers need the names, because they design the meetings"
    ],
@@ -673,7 +673,7 @@
    "stem": "Determine who has the power to build debiasing into a process.",
    "options": [
     "Whoever designs the meeting — and if they are the biased one, the agenda must be agreed before options exist",
-    "Only the CEO, because the process belongs to the top of the organisation",
+    "Only the CEO, because the process belongs to the top of the organisation and nobody else has the authority to change the agenda",
     "Nobody — biases are part of human nature and processes cannot remove them",
     "The consultant, who is outside the organisation and has no favourite"
    ],
@@ -785,7 +785,7 @@
    "stem": "Select the method the chapter says to remember above all.",
    "options": [
     "Set criteria first — free, ten minutes, removes the commonest smuggling of a favourite",
-    "Assign a challenger — the one method that makes objection safe",
+    "Assign a challenger — the one method that makes objection safe for everyone in the room",
     "Write before you speak — the one method that removes anchoring",
     "Ignore what is spent — the one method that stops failing projects"
    ],
@@ -833,7 +833,7 @@
    "stem": "Analyse a pre-mortem where the manager asks 'any concerns?' and opens discussion. Determine the broken rule.",
    "options": [
     "Silent individual writing first — discussion opened too early",
-    "Too many people in the room for a pre-mortem to work",
+    "Too many people in the room for a pre-mortem to work properly in the time",
     "No vote at the end, so the reasons were never ranked",
     "Wrong room, because a pre-mortem needs a whiteboard"
    ],
@@ -897,7 +897,7 @@
    "stem": "Analyse an agenda that starts with 'the CEO presents the preferred option'. Determine the fault.",
    "options": [
     "Anchoring on the first speaker and criteria tuned to the favourite — criteria and private views must come first",
-    "Nothing — leaders should lead, and the CEO's view saves the meeting time",
+    "Nothing — leaders should lead, and the CEO's clear view at the start saves the meeting a great deal of time and argument",
     "Too slow, because the CEO's presentation delays the decision",
     "No vote, so the group cannot show whether it agrees with the CEO"
    ],
@@ -913,7 +913,7 @@
    "stem": "Determine which agenda step attacks the sponsor's biased survey from the retailer case.",
    "options": [
     "Step 1 — criteria agreed before options, so a survey cannot be tuned to prove a favourite",
-    "Step 6 — the decision, where the survey's weakness is finally exposed",
+    "Step 6 — the decision, where the survey's weakness is finally exposed in front of the whole group",
     "Step 3 — the options are presented without discussion",
     "Step 5 — the pre-mortem imagines the project failing"
    ],
@@ -945,7 +945,7 @@
    "stem": "Determine one measurable sign a year later that the redesigned process worked.",
    "options": [
     "Fewer projects whose final cost exceeded the estimate by a large margin",
-    "More meetings held about each project before approval",
+    "More meetings held about each project before approval and a longer approval cycle",
     "Longer agendas with every step recorded in the minutes",
     "Happier sponsors who feel their projects are taken seriously"
    ],
@@ -1010,7 +1010,7 @@
    "options": [
     "Diagnosing bias in a decision by naming it with evidence",
     "Being free of bias in your own decisions",
-    "Memorising twenty biases and their definitions",
+    "Memorising twenty biases and their textbook definitions for the exam",
     "Avoiding decisions where bias might operate"
    ],
    "answer": 0,

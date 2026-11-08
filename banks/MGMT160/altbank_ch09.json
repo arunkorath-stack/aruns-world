@@ -36,7 +36,7 @@
    "options": [
     "Analyse information, recognise patterns and generate content",
     "Feel emotions, take responsibility and hold values",
-    "Know your team's history, motivate people and lead them",
+    "Know your team's history, motivate people and lead them through change",
     "Replace managers, judges and doctors in routine decisions"
    ],
    "answer": 0,
@@ -51,7 +51,7 @@
    "stem": "Describe the 'role' part of a strong prompt.",
    "options": [
     "Telling the tool who it is acting as, such as an adviser to a café manager",
-    "The user's job title, so that the tool knows how senior the reader is",
+    "The user's job title and department, so that the tool knows how senior the reader is",
     "The name of the AI company and the version of the tool being used",
     "The password and account details needed to log in to the tool"
    ],
@@ -99,7 +99,7 @@
    "stem": "Describe what the human keeps in the controlling function when AI reads the dashboards.",
    "options": [
     "The monitoring line and the judgement about what the numbers mean",
-    "Nothing — AI controls everything once the KPIs have been set",
+    "Nothing — AI controls everything once the KPIs have been set by the manager at the start",
     "Only the password to the dashboard and the list of users",
     "The office keys and the physical security of the building"
    ],
@@ -131,7 +131,7 @@
    "stem": "Describe the risk inside the jagged frontier.",
    "options": [
     "People trust AI on tasks outside its ability and do worse than without it",
-    "AI refuses hard tasks, so people have to do them without any help",
+    "AI refuses the hard tasks, so people have to do them without any help from the tool",
     "AI is slow on easy tasks, so people lose time waiting for simple answers",
     "There is no risk, because the frontier is clearly marked in the tool"
    ],
@@ -147,7 +147,7 @@
    "stem": "Describe the lesson of the lawyer who asked the AI whether its cases were real.",
    "options": [
     "Checking with the same tool is not checking — verify against an independent source",
-    "The AI was right and the court was mistaken about the cases",
+    "The AI was right and the court was mistaken about the cases, as the appeal would have shown",
     "Lawyers should never use AI for any part of their work",
     "The court was wrong to sanction lawyers who relied on a licensed tool"
    ],
@@ -165,7 +165,7 @@
     "Submitting work under your name makes you accountable for its truth",
     "The AI company is responsible, because its tool produced the error",
     "Nobody is responsible, because the error was made by a machine",
-    "The reader is responsible for checking anything they rely on"
+    "The reader is responsible for checking anything they rely on before they act on it"
    ],
    "answer": 0,
    "why": "The professional who signs is responsible. See §9.5."
@@ -179,7 +179,7 @@
    "stem": "Describe the 'bias in hiring' fault line.",
    "options": [
     "Trained on yesterday's hires, AI can apply yesterday's prejudices at scale",
-    "AI always hires the best person, because it has no personal prejudices",
+    "AI always hires the best person, because it has no personal prejudices and reads every CV in full",
     "AI cannot read CVs that are written in an unusual format",
     "AI prefers older applicants because they have longer work histories"
    ],
@@ -259,7 +259,7 @@
    "stem": "Explain why the human core of management becomes more valuable.",
    "options": [
     "Direction, motivation, ethics and judgement are what remains after routine work is automated",
-    "Humans will be rarer in organisations, so each one will be paid more",
+    "Humans will be rarer in organisations, so each one who remains will be paid more for the work that is left",
     "Salaries always rise when new technology is introduced",
     "AI needs managers to switch it on and keep it running"
    ],
@@ -275,7 +275,7 @@
    "stem": "Describe the 'AI, human-checked' decision type.",
    "options": [
     "AI does the routine layer and a person sets the rules and handles exceptions",
-    "AI decides everything alone and a human reads the report afterwards",
+    "AI decides everything alone and a human simply reads the report afterwards and files it",
     "Humans do everything by hand and AI checks the result for errors",
     "AI checks the human's decision and overrules it when the data disagrees"
    ],
@@ -293,7 +293,7 @@
     "Context — the situation and data the report is about",
     "Audience — who the report is written for",
     "Format — how the report should be laid out",
-    "Constraints — the length and limits of the report"
+    "Constraints — the length and the limits of the report"
    ],
    "answer": 0,
    "why": "Audience, format and constraints are there; context is missing. See §9.2."
@@ -421,7 +421,7 @@
     "The signer's responsibility — the professional who signs is accountable",
     "The AI's fault only, because it produced the statistic",
     "Nobody's fault, because the error was made by a machine",
-    "The reader's fault for not checking the statistic before relying on it"
+    "The reader's fault for not checking the statistic before relying on it in the court"
    ],
    "answer": 0,
    "why": "Mata v. Avianca: the lawyers were sanctioned. See §9.5."

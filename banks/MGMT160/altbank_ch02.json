@@ -18,7 +18,7 @@
    "stem": "Identify the four problems a factory of 2,000 strangers faced in 1910.",
    "options": [
     "Communication, coordination, motivation, and productivity and quality",
-    "Taxes, labour laws, customers and suppliers",
+    "Taxes, labour laws, customers, suppliers and interest rates",
     "Hybrid work, AI, globalisation and sustainability",
     "Pay, offices, job titles and holiday entitlements"
    ],
@@ -50,7 +50,7 @@
    "stem": "Explain why bigger firms needed new management thinking.",
    "options": [
     "Instructions, roles and motivation that worked for 40 known workers broke with 2,000 strangers",
-    "Bigger firms had more money to spend on consultants, who sold them new ideas",
+    "Bigger firms had more money to spend on consultants, who sold them new ideas that smaller firms could not afford",
     "Workers in big firms were less skilled than those in small workshops and needed more rules",
     "Governments forced big firms to change their methods through new factory legislation"
    ],
@@ -178,7 +178,7 @@
    "stem": "Identify the chapter's airline example of the systems perspective.",
    "options": [
     "One missed inspection grounded a plane, delayed four flights and lowered next month's bookings",
-    "A pilot who arrived late once and was dismissed to protect the airline's reputation",
+    "A pilot who arrived late once and was dismissed immediately to protect the airline's reputation with its passengers",
     "An airline that bought new planes and saw its maintenance costs fall the following year",
     "A marketing campaign that failed because the advertising agency misunderstood the brief"
    ],
@@ -195,7 +195,7 @@
    "options": [
     "The situation, the people, the environment and the organisation",
     "The manager's mood, age, title and salary",
-    "Taylor's, Fayol's, Weber's and Mayo's ideas",
+    "Taylor's, Fayol's, Weber's, Mayo's and Drucker's ideas",
     "Profit, cost, time and quality"
    ],
    "answer": 0,
@@ -242,7 +242,7 @@
    "stem": "Describe how the chapter compares the 1910 manager with today's manager.",
    "options": [
     "Different problems, not harder: waste and chaos then, complexity and speed now, with better tools",
-    "Today's manager has a much easier job, because computers handle the planning and the records",
+    "Today's manager has a much easier job, because computers handle the planning, the records and the reports for them",
     "The 1910 manager had better tools, because the work was simpler and the workers obeyed",
     "The problems are exactly the same, because people and organisations have not changed"
    ],
@@ -274,7 +274,7 @@
    "stem": "Explain how AI changes management, according to the chapter.",
    "options": [
     "It is a new challenge managers must learn to use, like technology in every earlier era",
-    "It makes managers unnecessary, because the software can plan, organise and control",
+    "It makes managers unnecessary, because the software can plan, organise and control better than any person",
     "It has no real effect on management, because managing people has not changed",
     "It only affects factories and warehouses, not offices, hospitals or schools"
    ],
@@ -354,7 +354,7 @@
    "stem": "Analyse a factory that standardised every task and now has bored workers and no new ideas. Determine the cause.",
    "options": [
     "The known cost of scientific management: repetition kills morale and switches off the brain",
-    "The workers are not trained well enough to understand the reason behind each standard",
+    "The workers are not trained well enough to understand the reason behind each of the standards",
     "The standards were too loose, so the workers lost confidence in the method",
     "Pay was set too high, so the workers no longer had any incentive to suggest improvements"
    ],
@@ -482,7 +482,7 @@
    "stem": "Analyse a manager who says management today is impossible because of AI. Determine the chapter's response.",
    "options": [
     "Every era solved its own problem with its own ideas and better tools — this one is different, not harder",
-    "Agree — AI changes so fast that no manager can plan, organise or control effectively any more",
+    "Agree — AI changes so fast that no manager can plan, organise or control effectively any more, whatever the textbooks say",
     "AI has nothing to do with management, so the manager should concentrate on people",
     "Managers should ignore AI until the technology settles down and the rules are clear"
    ],

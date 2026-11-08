@@ -51,7 +51,7 @@
    "options": [
     "Anticipation of change, a vision people commit to, flexibility to adjust, and empowerment of others to execute",
     "More spreadsheets and a deeper analysis of the data than the analysts have produced",
-    "A longer report that covers every scenario the organisation might face over the planning period and beyond",
+    "A longer and more detailed report that covers every scenario the organisation might face over the planning period and beyond it",
     "A bigger budget to pay for the strategy once the analysis is complete"
    ],
    "answer": 0,
@@ -130,7 +130,7 @@
    "stem": "Identify the Chapter 6 link for the vision.",
    "options": [
     "The vision is stage 2 of the transformation process — the transformational leader makes it shared; the strategic leader makes it operational",
-    "The vision is stage 4 — it institutionalises the change once the transition has been led",
+    "The vision is stage 4 of the transformation process — it institutionalises the change once the transition has been led and the new structure is in place",
     "The vision replaces the mission once the organisation has been transformed",
     "The vision is a transactional exchange between the leader and the followers"
    ],
@@ -178,7 +178,7 @@
    "stem": "Describe how objectives cascade.",
    "options": [
     "The organisation's objective becomes each unit's objective becomes each person's — the alignment execution depends on",
-    "Only the CEO has objectives, and everyone else has tasks that serve them",
+    "Only the CEO has objectives, and everyone else in the organisation has tasks that serve them and reports that describe them",
     "Objectives stay at the top, where the leadership team reviews them each quarter",
     "Each person invents their own objectives so that they feel ownership of the work"
    ],
@@ -210,7 +210,7 @@
    "stem": "Describe strategy formulation.",
    "options": [
     "Matching what the organisation CAN do (internal analysis) with what the environment WILL reward (external analysis)",
-    "Writing the mission so that the organisation's purpose is clear to staff and customers",
+    "Writing the mission so that the organisation's purpose is clear to staff, customers, investors and the community in which it operates",
     "Announcing the plan to the whole organisation so that everyone knows the direction",
     "Measuring the results against the objectives and correcting what has gone wrong"
    ],
@@ -226,7 +226,7 @@
    "stem": "Identify what the external analysis examines.",
    "options": [
     "Industry and competition, customers, technology, regulation and policy, economic conditions, the labour market",
-    "Resources, culture, people, systems and finances inside the organisation",
+    "Resources, culture, people, systems, finances and leadership inside the organisation itself, as recorded in the internal analysis",
     "The leader's traits and the fit between the leader and the followers",
     "The budget only, because the environment cannot be controlled"
    ],
@@ -354,7 +354,7 @@
    "stem": "Identify the strategic leader's role in change.",
    "options": [
     "Anticipate, create urgency, build a shared vision, form a coalition, empower, generate short-term wins, consolidate, institutionalise",
-    "Announce the change and wait for staff to adopt it",
+    "Announce the change to the whole organisation at once in a single email and wait for the staff to adopt it in their own time without further pressure from the top",
     "Hire a project manager and leave the change to the project team",
     "Punish resisters so that the rest of the organisation falls into line"
    ],
@@ -370,7 +370,7 @@
    "stem": "Differentiate incremental from transformational change.",
    "options": [
     "Incremental: continuous improvement inside the current strategy, led transactionally; transformational: a new strategy, structure or culture, led transformationally",
-    "They are the same, and the textbook uses the two words for changes of different sizes",
+    "They are the same, and the textbook uses the two words for changes of different sizes in different chapters to avoid repeating itself too often",
     "Incremental change is bigger because it accumulates over many years",
     "Transformational change is faster because it is announced all at once"
    ],
@@ -386,7 +386,7 @@
    "stem": "Explain why strategy is 'only paper'.",
    "options": [
     "Until people change what they do — and getting people to change is leadership work, not project management",
-    "Because it is printed on paper and filed, so nobody reads it again",
+    "Because it is printed on paper and filed in a cabinet, so nobody in the organisation ever reads it again after the launch meeting",
     "Because plans are cheap to write and expensive to implement",
     "Because nobody reads strategy documents below the leadership team"
    ],
@@ -418,7 +418,7 @@
    "stem": "Describe refreezing.",
    "options": [
     "Stabilising the new state — aligning rewards, structure, culture and measurement so it does not slide back; the phase most leaders skip",
-    "Making the current state unacceptable so that people are willing to let go of the old way",
+    "Making the current state unacceptable so that people are willing to let go of the old way and to listen to the case for change from the leader",
     "Moving to the new behaviours through training, pilots and the leader's example",
     "Deleting the old files and systems so that nobody can return to the old way"
    ],
@@ -450,7 +450,7 @@
    "stem": "Identify examples of restraining forces.",
    "options": [
     "Habit, fear of loss, skills gap, sunk investment, a culture that rewards the old way",
-    "New regulation, customer demand and a competitor's move",
+    "New regulation, growing customer demand, a competitor's move into the market and the arrival of a new technology that changes the industry",
     "The leader's vision and the urgency the leader creates",
     "Short-term wins that show the change is working"
    ],
@@ -466,7 +466,7 @@
    "stem": "Explain the chapter's stance on resistance.",
    "options": [
     "Treat resistance as information — it tells you what the change plan is missing; treat it as disloyalty and it hardens",
-    "Resistance is always disloyalty, and leaders who tolerate it lose control of the change",
+    "Resistance is always disloyalty, and leaders who tolerate it lose control of the change and of the organisation within a few months",
     "Resistance never matters, because changes succeed or fail on the quality of the plan",
     "Resistance should be punished early, so that the rest of the organisation sees the cost"
    ],
@@ -514,7 +514,7 @@
    "stem": "Explain how to reach the silent resisters in questions 3 and 4.",
    "options": [
     "Reach them individually, respect the expertise, pair them with a peer, make the first success visible — the silent one you must involve",
-    "Argue with them in public so that the rest of the team sees the case for change",
+    "Argue with them in public so that the rest of the team sees the case for change made clearly and hears the resisters' objections answered",
     "Ignore them, because silent resisters cause no disruption",
     "Replace them with people who support the change from the start"
    ],
@@ -578,7 +578,7 @@
    "stem": "Exercise 1D: a ministry announces all services will be digital within two years; front-desk staff have twenty years' experience with paper. Determine the driving force, the restraining force and what is protected.",
    "options": [
     "Driving: the national digital strategy; restraining: skill and habit, fear of incompetence — protecting competence",
-    "Driving: the staff; restraining: the minister — protecting pay",
+    "Driving: the staff who want change; restraining: the minister — protecting pay, because the minister fears the budget will be cut",
     "Driving: paper processes; restraining: digital systems — protecting status",
     "Driving: fear; restraining: the strategy — protecting belonging"
    ],
@@ -610,7 +610,7 @@
    "stem": "Exercise 1F: a dean introduces a new assessment system; the two most respected professors quietly keep their old exams. Determine the restraining forces and the recommendation — and the response that would harden it.",
    "options": [
     "Habit, distrust and sunk expertise — involve them in designing the system and respect the expertise; a public reprimand would harden it and pull the department with them",
-    "Fear of pay loss — compensate them; a bonus would harden it by making the change look like a bribe",
+    "Fear of pay loss — compensate them with a bonus for adopting the system; a bonus would harden it by making the change look like a bribe to the rest of the department and to the union",
     "Lack of conviction — show them the data; a pilot would harden it by delaying the decision",
     "Peer pressure — ignore them; involvement would harden it by giving them a platform"
    ],
@@ -642,7 +642,7 @@
    "stem": "Exercise 2: determine the three execution elements that were missing.",
    "options": [
     "Culture alignment, leadership at every level (the supervisors), and communication beyond the video — plus the unspent training budget",
-    "Structure, budget and IT, because the system was installed without a plan",
+    "Structure, budget and IT, because the system was installed without a plan for how the warehouses and the depots would be organised around it",
     "Vision, mission and values, because the strategy was never written down",
     "Measurement, pay and hiring, because the company did not recruit digital staff"
    ],
@@ -658,7 +658,7 @@
    "stem": "Exercise 2: Determine the driving and restraining forces in the warehouse change.",
    "options": [
     "Driving: the e-commerce growth strategy, the CEO mandate, younger staff; restraining: supervisors' expertise and habit, no training, remote-depot exclusion, dual paper/digital tolerated",
-    "Driving: paper processes and the supervisors; restraining: the CEO and the IT department",
+    "Driving: paper processes and the supervisors who defend them; restraining: the CEO and the IT department, who want the system installed before the budget year ends in December and the money is lost",
     "Driving: the remote depots, which want the system; restraining: younger staff, who prefer paper",
     "Driving: the IT budget; restraining: customers who prefer paper records"
    ],
@@ -674,7 +674,7 @@
    "stem": "Exercise 2: determine which Lewin phases the company skipped and the evidence.",
    "options": [
     "Unfreezing was skipped (no case for change made to supervisors) and refreezing is absent (paper still accepted)",
-    "Changing was skipped — no digital system exists in the warehouses yet",
+    "Changing was skipped — no digital system exists in the warehouses yet, so there is nothing for the staff to adopt",
     "Refreezing was complete — paper is gone and the system is fully adopted",
     "Nothing was skipped — the company followed all three phases in order"
    ],
@@ -690,7 +690,7 @@
    "stem": "Exercise 2: for the supervisors, determine the reason for resistance, what they protect, and the fitting recommendation.",
    "options": [
     "Habit and sunk expertise, fear of incompetence — protecting competence; respect the expertise, make them the trainers, training first",
-    "Threat to pay — compensate them for the loss of overtime the system causes",
+    "Threat to pay — compensate them for the loss of overtime the system causes and promise in writing that their salaries will not fall during the transition",
     "Peer pressure — isolate them from each other so that resistance cannot spread",
     "Distrust — ignore them until the younger staff have adopted the system"
    ],
@@ -722,7 +722,7 @@
    "stem": "Exercise 2: Determine why 'more pressure' from the CEO would fail.",
    "options": [
     "Adding driving force raises tension and hardens the informal leaders; reducing restraining forces works with less stress",
-    "Pressure is too expensive, because it requires more management time",
+    "Pressure is too expensive for the company, because it requires more management time than the company can spare during the busy season before the holidays",
     "Pressure is illegal under the labour law for changes of this kind",
     "Pressure works only on young staff, who are easier to influence"
    ],
@@ -738,7 +738,7 @@
    "stem": "Select the 90-day plan ordering that the marking guide rewards.",
    "options": [
     "Week 1: supervisor workshop on the case and the numbers (unfreeze); weeks 2–4: supervisor-led training (change); paper phased out by a date with the exception process removed (refreeze); a monthly adoption-plus-error measure",
-    "Week 1: cancel paper immediately; week 2: dismiss the supervisors who resist; week 3: release a new video from the CEO",
+    "Week 1: cancel paper immediately in every depot; week 2: dismiss the supervisors who resist; week 3: release a new video from the CEO thanking everyone for their cooperation",
     "Week 1: release a new video with better production values; weeks 2–12: wait for adoption to rise as staff get used to it",
     "Week 1: buy more IT equipment for the depots; week 2: announce that the system is a success"
    ],
@@ -820,7 +820,7 @@
     "Unfreezing — make the current state unacceptable so people let go",
     "Changing — move to the new route",
     "Refreezing — stabilise the new route",
-    "Formulation — choose the new route"
+    "Formulation — choose the new route after weighing the strengths of the party against the dangers of the valley"
    ],
    "answer": 0,
    "why": "People must let go before they can take hold. See §8.7."
@@ -834,7 +834,7 @@
    "stem": "Dana refuses the new cliff route because she has never climbed and fears looking slow in front of the others. Determine what she is protecting and the recommendation.",
    "options": [
     "Competence and belonging — reach her individually, pair her with Omar, make the first success visible",
-    "Pay — compensate her for the risk of the climb",
+    "Pay — compensate her for the risk of the climb with a larger share of the reward when Layla is rescued",
     "Status — reprimand her in front of the team",
     "Nothing — ignore it, because she will follow when the others climb"
    ],
@@ -914,7 +914,7 @@
    "stem": "Noor lists what the gang does well and badly, and what the party can and cannot do, before Rami chooses to strike at the water supply. Classify the step.",
    "options": [
     "Strategy formulation — matching internal strengths to external opportunities, then the courage to choose",
-    "Refreezing — stabilising the plan once it is agreed",
+    "Refreezing — stabilising the plan once it is agreed so that nobody in the party goes back to the old way of travelling",
     "Evaluation and control — measuring the results of the strike",
     "Mission writing — defining what the party is for"
    ],
@@ -1026,7 +1026,7 @@
    "stem": "Noor's analysis is perfect but Rami refuses to choose a plan until he is certain. Determine the chapter's point.",
    "options": [
     "Formulation is a leadership act — it requires the courage to choose under uncertainty, which no analysis supplies",
-    "More analysis is needed before any plan can be chosen responsibly",
+    "More analysis is needed before any plan can be chosen responsibly, and the party should wait in the camp until it is complete",
     "Certainty always comes if the leader waits long enough",
     "Noor should decide, because she did the analysis"
    ],

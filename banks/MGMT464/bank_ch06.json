@@ -82,7 +82,7 @@
    "stem": "Identify effects charismatic leaders have on followers.",
    "options": [
     "Trust in the leader's beliefs, unquestioning acceptance, willing obedience, emotional involvement, heightened goals, increased confidence and effort",
-    "Boredom and compliance, with followers doing exactly what is asked and nothing more",
+    "Boredom and compliance, with followers doing exactly what is asked and nothing more, and leaving the organisation as soon as a better job appears elsewhere",
     "Independence from the leader, with followers making their own decisions without reference to the vision",
     "Lower goals, because followers rely on the leader to achieve the difficult things for them"
    ],
@@ -98,7 +98,7 @@
    "stem": "Describe how charismatic qualities can be acquired.",
    "options": [
     "Develop visionary skills, be candid and take a stand, build enthusiasm with stories and symbols, develop empathy, take risks and be seen to sacrifice",
-    "They cannot — charisma is a gift that followers recognise in some leaders and not in others",
+    "They cannot — charisma is a gift that followers recognise in some leaders and not in others, and no amount of training, coaching or practice can create it in anyone",
     "Only by promotion to a position senior enough for followers to attribute exceptional qualities",
     "Only by winning, because followers attribute charisma to leaders who have succeeded"
    ],
@@ -130,7 +130,7 @@
    "stem": "Explain what the chapter asks about founders described as charismatic.",
    "options": [
     "Which acquired qualities can be observed in their speeches and decisions, and which are attributed after success",
-    "Whether they are rich enough to have built their companies without charisma",
+    "Whether they are rich enough to have built their companies without needing charisma to attract investors or employees",
     "Whether they are famous enough for their charisma to be studied",
     "Whether they are tall, since height is one of the traits associated with charisma"
    ],
@@ -194,7 +194,7 @@
    "stem": "Identify the four things followers should watch to tell the two types apart.",
    "options": [
     "Who benefits, whether questions are welcome, whether the leader admits error, and whether others are being developed",
-    "Salary, car, office and title",
+    "Salary, car, office, title, bonus, holiday entitlement and the number of staff who report directly to the leader at head office",
     "Age, height, voice and dress",
     "Speeches, awards, press coverage and fans"
    ],
@@ -226,7 +226,7 @@
    "stem": "Describe transformational leadership.",
    "options": [
     "Raises followers' awareness of the importance of outcomes, moves them beyond self-interest and activates higher-order needs",
-    "Pays exactly on target and intervenes when results slip below the standard",
+    "Pays exactly on target and intervenes only when results slip below the standard, so that followers know exactly what to expect",
     "Acts only when things go wrong and otherwise leaves followers to the routine",
     "Keeps everything stable so that followers know exactly what to expect"
    ],
@@ -306,7 +306,7 @@
    "stem": "Explain why the textbook calls Oprah transformational, not only charismatic.",
    "options": [
     "Stages 3–4 took two years of restructuring before the 2013 turnaround — transformation is measured by what changed",
-    "She is famous enough for her leadership to be studied in a textbook",
+    "She is famous enough for her leadership to be studied in a textbook and quoted in management courses around the world",
     "She made speeches that inspired her audience and her staff",
     "Her audience loved her and attributed exceptional qualities to her"
    ],
@@ -338,7 +338,7 @@
    "stem": "Identify the four transformational behaviours.",
    "options": [
     "Idealised influence, inspirational motivation, intellectual stimulation, individualised consideration",
-    "Directive, supportive, participative and achievement-oriented",
+    "Directive, supportive, participative and achievement-oriented — the four styles of the path–goal theory from chapter 4",
     "Decide, consult, facilitate and delegate",
     "Plan, do, check and act"
    ],
@@ -354,7 +354,7 @@
    "stem": "Describe intellectual stimulation.",
    "options": [
     "Questioning assumptions, reframing problems, encouraging followers to think and challenge — including the leader",
-    "Being a role model whom followers admire, trust and want to emulate",
+    "Being a role model whom followers admire, trust and want to emulate in their own behaviour and in the way they treat others",
     "A compelling vision, high expectations and optimism about the future",
     "Attention to each follower's needs for achievement and growth"
    ],
@@ -370,7 +370,7 @@
    "stem": "Differentiate charismatic from transformational leadership.",
    "options": [
     "Charisma is one dimension (idealised influence); a charismatic leader need not transform anything and a transformational leader need not be charismatic",
-    "They are identical, and the textbook uses the two words for the same kind of leader",
+    "They are identical, and the textbook uses the two words for the same kind of leader in different chapters simply to avoid repeating the same word too often on one page",
     "Charisma is broader, because it covers all four transformational behaviours and more",
     "Transformation needs no vision, because it is measured by what changed in the structure"
    ],
@@ -402,7 +402,7 @@
    "stem": "Describe stewardship.",
    "options": [
     "Employee-focused leadership that empowers followers to decide and control their jobs; the leader holds the organisation in trust",
-    "Leadership by exchange, in which followers receive rewards for meeting the leader's targets",
+    "Leadership by exchange, in which followers receive rewards for meeting the leader's targets and penalties when they fall short of them",
     "Leadership by charisma, in which followers attribute exceptional qualities to the leader",
     "Leadership by pressure, in which followers comply because the leader can punish them"
    ],
@@ -434,7 +434,7 @@
    "stem": "Explain the chapter's answer to 'does serving followers mean obeying them?'.",
    "options": [
     "No — a servant leader serves the underperformer with honest feedback and serves the team by stopping the bully; service is measured by growth, not comfort",
-    "Yes — the followers decide everything, and the servant leader carries out their decisions",
+    "Yes — the followers decide everything, and the servant leader simply carries out their decisions whether or not they are wise, because service means obedience",
     "Yes — comfort is the goal, because followers who are comfortable perform better",
     "No — servants never give feedback, because feedback is a form of control"
    ],
@@ -450,7 +450,7 @@
    "stem": "Identify the stewardship attributes.",
    "options": [
     "Team orientation, decentralised decisions, equality assumptions, rewards shared with those who create them",
-    "Centralised control and rewards reserved for the leader and the senior team",
+    "Centralised control, with every decision taken at the top and the rewards reserved for the leader and the senior team around them",
     "Vision and charisma that followers attribute to the leader",
     "Management by exception and contingent reward"
    ],
@@ -466,7 +466,7 @@
    "stem": "Identify step 3 of the diagnosis sequence.",
    "options": [
     "Socialised or personalised? — who benefits, whether criticism is welcome, whether successors are built",
-    "Which stage of transformation is the organisation in?",
+    "Which stage of transformation is the organisation in, and how long has it been there under the current leader?",
     "Is there evidence of service and stewardship?",
     "Do followers attribute exceptional qualities to the leader?"
    ],
@@ -482,7 +482,7 @@
    "stem": "Describe the one-sentence judgement at the end of the sequence.",
    "options": [
     "This leader is [charismatic / transformational / transactional / a mix], serving [the followers / themselves], at stage [n] — with the evidence",
-    "This leader is good or bad, judged by the results of the organisation",
+    "This leader is good or bad, judged by the financial results of the organisation over the period the leader has been in charge of it and by nothing else at all",
     "This leader is popular, judged by what the followers say",
     "This leader is rich, judged by the rewards the position carries"
    ],
@@ -530,7 +530,7 @@
    "stem": "Exercise 1A: the hospital director whose staff say 'she made us believe this hospital could be the best in the region' and who coaches junior doctors every Thursday. Classify the leader.",
    "options": [
     "Transformational — inspirational motivation plus individualised consideration; socialised",
-    "Transactional — she rewards doctors who meet her targets",
+    "Transactional — she rewards the doctors who meet her targets and intervenes only when something goes wrong on a ward",
     "Personalised charismatic — the staff adore her",
     "Steward only — she holds the hospital in trust"
    ],
@@ -642,7 +642,7 @@
    "stem": "Exercise 2: a founder's profile shows staff saying 'he saved us when the bank called in the loan'. Determine the step and the reading.",
    "options": [
     "Step 1 — followers attribute exceptional qualities and the situation (a crisis) called for a saviour: charisma present",
-    "Step 4 — transactional leadership, because the founder exchanged security for loyalty",
+    "Step 4 — transactional leadership, because the founder exchanged job security for the loyalty and silence of the staff during the crisis",
     "Step 7 — stewardship, because the founder held the company in trust during the crisis",
     "Step 6 — intellectual stimulation, because the founder found a new way to pay the loan"
    ],
@@ -690,7 +690,7 @@
    "stem": "Exercise 2, task 3: the profile shows strong inspiring speeches and role-modelling but no evidence of coaching individuals. Determine the weakest behaviour and the cost if the leader left tomorrow.",
    "options": [
     "Individualised consideration is weakest; without developed people, the transformation may collapse with the leader",
-    "Idealised influence is weakest; nothing would change if the leader left",
+    "Idealised influence is weakest; nothing at all would change in the organisation if the leader left tomorrow morning",
     "Inspirational motivation is weakest; morale would rise if the leader left",
     "Intellectual stimulation is weakest; nothing would be lost if the leader left"
    ],
@@ -706,7 +706,7 @@
    "stem": "Select a correctly formatted one-sentence judgement from Exercise 2.",
    "options": [
     "'This leader is transformational with socialised charisma, serving the followers, at stage 3 — the vision is in staff's words but rewards still pay for the old behaviour.'",
-    "'This leader is great, and the staff say so whenever they are asked about the changes he has made since he arrived at the company.'",
+    "'This leader is great, and the staff say so whenever they are asked about the changes he has made since he arrived at the company, which shows that the culture has changed.'",
     "'This leader has a big office and many awards, which shows that the board and the industry recognise what he has achieved.'",
     "'This leader is charismatic because he is famous and the staff trust him to lead the company through whatever comes next.'"
    ],
@@ -802,7 +802,7 @@
    "stem": "The village believed Rami could deliver them because the gang attack was a crisis and he spoke with certainty. Determine the three parts of the locus present.",
    "options": [
     "Leader (exceptional qualities attributed), followers (ready to attribute), situation (a crisis calling for a saviour)",
-    "Only the leader — Rami's certainty was what made him charismatic",
+    "Only the leader — Rami's certainty and his confident voice were what made him charismatic to the frightened villagers",
     "Only the situation — any leader would have been followed during the attack",
     "Only the followers — the villagers needed someone to believe in"
    ],
@@ -930,7 +930,7 @@
    "stem": "Identify step 5 of the diagnosis sequence.",
    "options": [
     "Which stage of transformation is the organisation in — case made, vision shared, transition led, change implanted?",
-    "Is charisma present — do followers attribute exceptional qualities?",
+    "Is charisma present — do followers attribute exceptional qualities to the leader, and did they do so before the success?",
     "Is there stewardship — decisions pushed down and rewards shared?",
     "Which of the four transformational behaviours is strongest?"
    ],
@@ -962,7 +962,7 @@
    "stem": "The crisis passes, the valley is calm, and the villagers slowly stop treating Rami as special. Determine the chapter's explanation.",
    "options": [
     "Charisma is a relationship — when the situation no longer calls for a saviour, the attribution fades",
-    "Rami lost his traits once the fighting stopped",
+    "Rami lost his traits once the fighting stopped, because courage and vision only exist while there is a battle to fight",
     "The villagers are ungrateful and forget quickly",
     "Charisma was never present — the villagers were simply afraid"
    ],
@@ -978,7 +978,7 @@
    "stem": "Determine what Weber said about where charismatic authority arises.",
    "options": [
     "In a crisis or moment of need, when a leader with a compelling vision attracts followers who believe the leader can deliver them",
-    "In stable, peaceful times, when followers have the leisure to admire the leader",
+    "In stable, peaceful times, when followers have the leisure to admire the leader and to notice the qualities that make them special",
     "Only in formal positions, where the office gives the leader the right to be admired",
     "Only by inheritance, when the leader's family has always been followed"
    ],

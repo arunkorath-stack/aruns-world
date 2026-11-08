@@ -50,7 +50,7 @@
    "stem": "Explain the saying 'plans are nothing; planning is everything'.",
    "options": [
     "Plans change when reality surprises, but a team that planned can adjust quickly instead of panicking",
-    "Written plans are useless, so managers should spend their time acting rather than writing",
+    "Written plans are useless in a fast-changing world, so managers should spend their time acting rather than writing",
     "Only the planning department matters; the rest of the organisation simply follows its instructions",
     "Plans never change once they are written, so the planning stage must be done perfectly"
    ],
@@ -66,7 +66,7 @@
    "stem": "Differentiate mission, vision and goals.",
    "options": [
     "Mission = why we exist; vision = where we are going; goals = what we will achieve, with numbers and dates",
-    "Mission = the numbers we must hit; vision = the daily tasks; goals = the company's history and values",
+    "Mission = the numbers we must hit this year; vision = the daily tasks; goals = the company's history and values",
     "Mission = where we are going; vision = why we exist; goals = the slogan and the logo",
     "All three mean the same thing, and companies choose whichever word sounds best to customers"
    ],
@@ -100,7 +100,7 @@
     "Specific, Measurable, Achievable, Relevant, Time-bound",
     "Simple, Modern, Ambitious, Rapid, Tested",
     "Strategic, Managed, Approved, Reported, Tracked",
-    "Short, Meaningful, Affordable, Realistic, Timed"
+    "Strategic, Managed, Approved, Reported, Tracked and Timed"
    ],
    "answer": 0,
    "why": "SMART is the quality test for a goal: the upgrade always adds a number, a date and a how. See §4.3."
@@ -116,7 +116,7 @@
     "Strengths, Weaknesses, Opportunities, Threats",
     "Sales, Workers, Orders, Taxes",
     "Strategy, Work, Output, Time",
-    "Suppliers, Wages, Owners, Technology"
+    "Suppliers, Wages, Owners, Technology and Taxes"
    ],
    "answer": 0,
    "why": "Inside: strengths and weaknesses. Outside: opportunities and threats. See §4.4."
@@ -130,7 +130,7 @@
    "stem": "Explain why plans fail, according to the chapter.",
    "options": [
     "Uncertainty without a Plan B, poor communication, lack of commitment and unrealistic goals",
-    "Too many meetings, too many reports and too many people involved in the planning",
+    "Too many meetings, too many reports and too many people involved in the planning of the year",
     "Managers planning too far ahead when the business should concentrate on this month",
     "Teams working too hard on the plan and too little on the daily work that pays the wages"
    ],
@@ -194,7 +194,7 @@
    "stem": "Identify the four bias traps described in the chapter.",
    "options": [
     "Overconfidence, emotional decisions, groupthink, confirmation bias",
-    "Laziness, greed, anger and fear of the boss",
+    "Laziness, greed, anger, tiredness and fear of the boss",
     "Planning, organising, leading and controlling",
     "Strengths, weaknesses, opportunities and threats"
    ],
@@ -242,7 +242,7 @@
    "stem": "Explain when a manager should decide together with the team rather than alone.",
    "options": [
     "When the problem is complex, commitment matters, or the team knows things the manager cannot",
-    "When speed is critical and the decision has to be made in the next few minutes",
+    "When speed is critical and the decision has to be made in the next few minutes by the person in charge",
     "When accountability is clearly the manager's and nobody else will be blamed",
     "When the group adds no new information but wants to feel involved in the decision"
    ],
@@ -258,7 +258,7 @@
    "stem": "Select the goal that passes all five SMART tests.",
    "options": [
     "Raise weekday sales from 240 to 300 cups a day within 8 weeks by launching a morning combo and a loyalty card",
-    "Improve sales significantly over the coming months by serving customers better than any competitor",
+    "Improve sales significantly over the coming months by serving customers better than any competitor in the area around the university",
     "Become the best café in the UAE someday, known for quality, service and a loyal community",
     "Work harder every day, open earlier, close later and make sure every customer leaves happy"
    ],
@@ -402,7 +402,7 @@
    "stem": "Compare a veteran chef who 'knows' a dish is wrong before tasting it with a first-year manager whose gut says 'fire the new employee'. Determine the chapter's advice.",
    "options": [
     "Trust the chef's experienced intuition in a familiar situation; distrust the first-year manager's gut — it has not earned trust yet",
-    "Trust both — intuition is always right, because it comes from a deeper part of the mind than analysis",
+    "Trust both — intuition is always right, because it comes from a deeper part of the mind than analysis can reach, whoever is using it",
     "Trust neither — only data counts, and both the chef and the manager should wait for the numbers",
     "Trust the first-year manager because the decision is urgent, and trust the chef only after tasting the dish"
    ],

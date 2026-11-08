@@ -114,7 +114,7 @@
    "stem": "Identify the three parts of the KPI test.",
    "options": [
     "Connected to the goal; measurable regularly from a real source; something the team can influence",
-    "Easy to count; impressive when shown to the boss; kept confidential from the team",
+    "Easy to count; impressive when shown to the boss; kept confidential from the team so that nobody games it",
     "Large enough to matter; new to the organisation; expensive enough to be taken seriously",
     "Reported daily to the frontline; weekly to middle managers; monthly to the top"
    ],
@@ -146,7 +146,7 @@
    "stem": "Identify three ways too much measurement harms, according to the chapter.",
    "options": [
     "People optimise the number not the goal; the unmeasured disappears; constant monitoring signals distrust",
-    "Costs rise because of the software; computers crash under the data; reports get too long to read",
+    "Costs rise because of the software; computers crash under the volume of data; reports get too long for anyone to read",
     "Managers get bored with the dashboards; staff learn to game the bonus; customers leave for competitors",
     "Nothing — more measurement is always better, because a manager cannot control what is not counted"
    ],
@@ -179,7 +179,7 @@
    "options": [
     "Timely, constructive, specific",
     "Loud, public, frequent",
-    "Written, formal, annual",
+    "Written, formal, annual and signed",
     "Short, polite, general"
    ],
    "answer": 0,
@@ -210,7 +210,7 @@
    "stem": "Describe feedforward control.",
    "options": [
     "Preventing problems before work starts — checking ingredients before cooking, training staff before opening",
-    "Correcting problems while the work happens — a supervisor coaching the team during the lunch rush",
+    "Correcting problems while the work is happening — a supervisor coaching the team on the floor during the lunch rush",
     "Learning from completed results — reviewing the month's complaints to improve next month",
     "Checking the budget at year end to see whether the department spent more than it was given"
    ],
@@ -242,7 +242,7 @@
    "stem": "Identify the five parts of a control plan.",
    "options": [
     "Three vital-few KPIs with standards; a source and frequency for each; one immediate fix; one system fix; a feedback rule and a monitoring line you will not cross",
-    "A budget for the year; a chart of who does what; a slogan for the team; a reward for the best performer; a report to head office at the end of each quarter",
+    "A budget for the year; a chart of who does what; a slogan for the team; a reward for the best performer; a report to head office at the end of each quarter; a staff party to celebrate the results",
     "Hire the right people; train them in the standard; watch their work closely; punish the mistakes; reward the results at the end of the year",
     "Plan the goals; organise the team; lead the people; control the results; repeat the cycle every month until the goal is reached"
    ],
@@ -258,7 +258,7 @@
    "stem": "Analyse the restaurant owner who sees rising complaints, falling ratings and falling profits and says 'I think everything is fine'. Determine the problem.",
    "options": [
     "The information was screaming; the manager was not looking — 'I think' instead of 'I know'",
-    "The restaurant had no data, so the owner had nothing to go on except his own impression",
+    "The restaurant had no data at all, so the owner had nothing to go on except his own impression of the evening",
     "The customers were wrong, because ratings reflect mood more than the quality of the food",
     "Profits are not a manager's concern; they belong to the accountant and the owner"
    ],
@@ -354,7 +354,7 @@
    "stem": "Select the rewrite of 'your work is terrible' that is timely, constructive and specific.",
    "options": [
     "'Two of the five reports had calculation errors in the totals — let's review your checking step together before Thursday's report'",
-    "'You are not good at this job, and if the reports do not improve very soon we will have to talk about your future here'",
+    "'You are not good at this job, and if the reports do not improve very soon we will have to talk seriously about your future here with the company'",
     "'Try harder next time, check your work more carefully, and remember that the whole team depends on your numbers being right'",
     "'Everyone makes mistakes, don't worry about it, the important thing is that you learn from this and keep going'"
    ],
@@ -434,7 +434,7 @@
    "stem": "Determine the defensible form of digital monitoring of employees.",
    "options": [
     "Announced openly, work-related and proportionate — such as delivery locations during shifts",
-    "Secret tracking of personal devices, as long as the data is used only for work purposes",
+    "Secret tracking of personal devices, as long as the data is used only for work purposes and kept confidential",
     "Keystroke counting of professionals, because it shows exactly how long they spend working",
     "Any monitoring at all, as long as it improves the numbers the company reports"
    ],
@@ -466,7 +466,7 @@
    "stem": "Select the immediate fix and the system fix for the hotel with long check-in queues.",
    "options": [
     "Immediate: a supervisor coaching the desk at peak hours (concurrent); system: online check-in and better rostering (feedforward)",
-    "Immediate: lower the room price for guests who waited; system: paint the lobby and add seating so the wait feels shorter",
+    "Immediate: lower the room price for every guest who waited; system: repaint the lobby and add seating so that the wait feels shorter and guests complain less",
     "Immediate: replace the front desk staff who are too slow; system: hire new staff with hotel experience",
     "Immediate: ignore it, because queues are normal at check-in; system: wait for the ratings to recover by themselves"
    ],

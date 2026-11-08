@@ -17,7 +17,7 @@
    "stem": "Explain why two cafés with the same products and prices can have different results.",
    "options": [
     "The quality of management decisions about the same resources is different",
-    "One café always has better luck with its location and its customers",
+    "One café always has better luck with its location, its suppliers and its customers",
     "Customers prefer the older café because they are used to it",
     "The bigger café always wins because it can buy supplies more cheaply"
    ],
@@ -49,7 +49,7 @@
    "stem": "Explain the chapter's claim that talent without direction is wasted.",
    "options": [
     "Talented people pull in different directions unless a manager gives them one goal",
-    "Talented people never need a manager because they can set their own goals",
+    "Talented people never need a manager because they can set their own goals and keep to them",
     "Direction only matters in small firms where everybody knows each other",
     "Talent always finds its own direction if it is given enough time and freedom"
    ],
@@ -67,7 +67,7 @@
     "Effective and efficient",
     "Fast and cheap",
     "Big and famous",
-    "Strict and friendly"
+    "Strict but friendly at the same time"
    ],
    "answer": 0,
    "why": "Management achieves goals effectively (right things) and efficiently (least waste). See §1.2."
@@ -129,7 +129,7 @@
    "stem": "Describe the leading function.",
    "options": [
     "Motivating, guiding and communicating with people so they do the work well",
-    "Writing the yearly budget and allocating money between the departments",
+    "Writing the yearly budget and allocating the money between the departments of the business",
     "Checking the results against the plan and correcting what has gone wrong",
     "Deciding who reports to whom and which resources each team will use"
    ],
@@ -146,7 +146,7 @@
    "options": [
     "Entrepreneur, disturbance handler, resource allocator, negotiator",
     "Figurehead, leader, liaison, spokesperson",
-    "Monitor, disseminator, spokesperson, liaison",
+    "Monitor, disseminator, spokesperson, liaison and figurehead",
     "Planner, organiser, leader, controller"
    ],
    "answer": 0,
@@ -241,7 +241,7 @@
    "stem": "Determine the chapter's answer to 'do managers really matter?'.",
    "options": [
     "Yes — the direct manager explains about 70% of the difference in engagement",
-    "No — only the quality of the product decides how engaged a team is",
+    "No — only the quality of the product decides how engaged a team is in the long run",
     "Only in very large companies where staff rarely meet the senior leaders",
     "Only when salaries are low and the manager is the main reason to stay"
    ],
@@ -257,7 +257,7 @@
    "stem": "Select the best evidence that management, not resources, decides results.",
    "options": [
     "Two cafés with identical resources where one succeeds and one closes",
-    "A rich company that grows faster than its smaller competitors",
+    "A rich company that grows faster than its smaller competitors because it has more money",
     "A café that wins customers because it buys better coffee beans",
     "A company whose famous logo brings customers in without advertising"
    ],

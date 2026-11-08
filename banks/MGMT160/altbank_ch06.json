@@ -117,7 +117,7 @@
     "A short agreement in week 1 on roles, communication, how conflict is handled and who leads",
     "A list of team members' salaries and the share of the bonus each will receive",
     "A legal contract with the customer that sets out what the team will deliver and when",
-    "The company's mission statement, signed by every member of the team on day one"
+    "A legal contract with the customer that sets out what the team will deliver, by when, and at what price"
    ],
    "answer": 0,
    "why": "The charter answers the four reasons teams fail before they appear. See §6.5."
@@ -195,7 +195,7 @@
    "stem": "Describe the 'wrong channel' barrier.",
    "options": [
     "Using a medium that does not fit the message, like a long instruction by text at 4:55 on Friday",
-    "Speaking too quietly in a noisy office, so that half the message is lost before it arrives",
+    "Speaking too quietly in a noisy open-plan office, so that half of the message is lost before it arrives",
     "Using too many words, so that the receiver stops reading before the important part",
     "Writing in capital letters, which the receiver reads as shouting and ignores"
    ],
