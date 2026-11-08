@@ -439,6 +439,7 @@ async function api(action,data){
 const $=s=>document.querySelector(s); const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const S={student:null,subjects:[],subject:null,chapter:null,quiz:null,questions:[],salt:'',answers:{},idx:0,start:0,qStart:0,streak:0,bestStreak:0,xp:0,progress:{},videos:[],theme:null,locked:false,levels:[],next:null,allDone:false};
 try{S.student=JSON.parse(localStorage.getItem('qh_student')||'null')}catch{}
+try{S.confirmed=sessionStorage.getItem('qh_confirmed')==='1'}catch{S.confirmed=false}
 let muted=localStorage.getItem('qh_mute')==='1';
 
 /* ================= THEMES ================= */
@@ -464,7 +465,7 @@ function setTheme(key){
 function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.remove('on'));$('#v-'+v).classList.add('on');window.scrollTo(0,0);renderWho()}
 function goHub(){stopTimer();engine(false);if(window.G3D){G3D.destroy();G3D.stageDestroy();}S.g3d=false;setTheme(null);go('hub')}
 function renderWho(){$('#who').innerHTML=(S.student?`Playing as <b>${esc(S.student.codename)}</b> <button class="link" onclick="signOut()">not you?</button>`:'<span>Not signed in</span>')+`<button class="icon" title="sound" onclick="toggleMute()">${muted?'🔇':'🔊'}</button>`}
-function signOut(){localStorage.removeItem('qh_student');S.student=null;goHub()}
+function signOut(){localStorage.removeItem('qh_student');try{sessionStorage.removeItem('qh_confirmed')}catch{}S.student=null;S.confirmed=false;renderWho();goHub()}
 function toggleMute(){muted=!muted;localStorage.setItem('qh_mute',muted?'1':'0');renderWho();if(muted){engine(false);hush();}else{snd('tick');if($('#v-quiz').classList.contains('on'))engine(true)}}
 
 /* ================= HUB ================= */
@@ -480,12 +481,27 @@ async function loadSubjects(){
     return`<div class="portal" onclick="pickSubject('${esc(s.code)}')">${miniScene(key)}<div class="txt"><div class="k">${esc(s.code)} · ${esc(s.term||'')}</div><h3>${esc(s.title)}</h3><div class="m">${esc(t.name)} · ${s.chapters.length} chapters · ${pub} ready to play${s.chapters.some(c=>c.videos>0)||s.generalVideos?' · 🎬 videos':''}</div><span class="cta">${esc(t.cta)}</span></div></div>`}).join('')||'<div class="note">No subjects published yet.</div>';
 }
 function pickSubject(code){S.subject=S.subjects.find(s=>s.code===code);const i=S.subjects.indexOf(S.subject);setTheme(themeKey(code,i));snd('tick');
-  if(!S.student){$('#identTitle').textContent=S.subject.code+' · who\'s playing?';go('ident');$('#inId').focus();} else openChapters();}
+  if(!S.student){$('#identTitle').textContent=S.subject.code+' · who\'s playing?';go('ident');$('#inId').focus();}
+  else if(!S.confirmed){ confirmWho(); } else openChapters();}
+/* on a shared device: confirm the remembered student once per visit before anything is recorded */
+function confirmWho(){
+  const m=document.createElement('div'); m.id='whoModal'; m.style.cssText='position:fixed;inset:0;z-index:60;display:grid;place-items:center;background:rgba(5,6,16,.7);backdrop-filter:blur(6px)';
+  m.innerHTML=`<div style="background:#14162b;border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:26px 28px;max-width:420px;width:calc(100% - 40px);text-align:center;color:#fff">
+    <div style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.6;margin-bottom:8px">Before we start</div>
+    <h2 style="margin:0 0 6px;font-size:24px">Are you <span style="color:#7adcff">${esc(S.student.name||S.student.codename)}</span>?</h2>
+    <div style="opacity:.75;font-size:14px;margin-bottom:18px">Student ID ending <b>${esc(String(S.student.studentId).slice(-3))}</b> · codename <b>${esc(S.student.codename)}</b>. Every answer is recorded under this ID.</div>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+      <button class="btn" id="whoYes" style="min-width:140px">Yes, that's me →</button>
+      <button class="btn g" id="whoNo" style="min-width:140px">Not me — sign in</button></div></div>`;
+  document.body.appendChild(m);
+  m.querySelector('#whoYes').onclick=()=>{ S.confirmed=true; try{sessionStorage.setItem('qh_confirmed','1')}catch{} m.remove(); snd('tick'); openChapters(); };
+  m.querySelector('#whoNo').onclick=()=>{ m.remove(); localStorage.removeItem('qh_student'); S.student=null; renderWho(); $('#identTitle').textContent=S.subject.code+' · who\'s playing?'; go('ident'); $('#inId').focus(); };
+}
 async function identify(){
   const id=$('#inId').value.trim(), name=$('#inName').value.trim(); $('#identErr').innerHTML='';
   if(id.length<4||name.length<3){$('#identErr').innerHTML='<div class="err">Please enter your student ID and full name.</div>';return;}
   $('#identBtn').disabled=true;$('#identBtn').innerHTML='<span class="spin"></span>Saving…';
-  try{ const j=await api('register',{studentId:id,name,subject:S.subject.code}); S.student={studentId:j.studentId,name,codename:j.codename}; localStorage.setItem('qh_student',JSON.stringify(S.student)); openChapters(); }
+  try{ const j=await api('register',{studentId:id,name,subject:S.subject.code}); S.student={studentId:j.studentId,name,codename:j.codename}; localStorage.setItem('qh_student',JSON.stringify(S.student)); S.confirmed=true; try{sessionStorage.setItem('qh_confirmed','1')}catch{} openChapters(); }
   catch(e){ $('#identErr').innerHTML=`<div class="err">${esc(e.message)}</div>`; }
   $('#identBtn').disabled=false;$('#identBtn').textContent="Let's go →";
 }
