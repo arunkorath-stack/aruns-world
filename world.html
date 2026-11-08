@@ -305,7 +305,7 @@ const S = Object.fromEntries(stops.map(s=>[s.id,s]));
 { const g = island(S.contact, 1, 9, 3.5), y = g.userData.top; const grp = new THREE.Group(); grp.position.y = y; g.add(grp);
   for(let i=0;i<5;i++) mesh(new THREE.CylinderGeometry(1.5-i*.12, 1.62-i*.12, 1.8, 12), i%2?M.red:M.white, 0, .9+i*1.8, 0, grp);
   mesh(new THREE.CylinderGeometry(1.4,1.4,.3,12), M.dark, 0, 9.2, 0, grp); const lamp = mesh(new THREE.CylinderGeometry(.9,.9,1.4,10), M.glass, 0, 10, 0, grp); mesh(new THREE.ConeGeometry(1.4, 1.2, 12), M.red, 0, 11.3, 0, grp);
-  const beam = new THREE.Mesh(new THREE.ConeGeometry(7, 40, 16, 1, true), new THREE.MeshBasicMaterial({color:0xfff1b0, transparent:true, opacity:.14, side:THREE.DoubleSide, depthWrite:false})); beam.rotation.z = Math.PI/2; beam.position.set(20, 10, 0); const beamG = new THREE.Group(); beamG.position.set(0,0,0); beamG.add(beam); beamG.userData.beam = true; grp.add(beamG);
+  const beam = new THREE.Mesh(new THREE.ConeGeometry(3.5, 40, 16, 1, true), new THREE.MeshBasicMaterial({color:0xfff1b0, transparent:true, opacity:.07, side:THREE.DoubleSide, depthWrite:false})); beam.rotation.z = Math.PI/2; beam.position.set(20, 10, 0); const beamG = new THREE.Group(); beamG.position.set(0,0,0); beamG.add(beam); beamG.userData.beam = true; grp.add(beamG);
   house(grp, 4, 3, 2.4, 2.2, 1.8, M.roof2); palm(grp, -4, 3, .9); rock(grp, 3, -4, 1.1);
   label(g, 'The Lighthouse', y+15); }
 
@@ -321,7 +321,7 @@ const birds = []; for(let i=0;i<7;i++){ const g = new THREE.Group(); const l = m
 /* ===================== THE BOAT ===================== */
 const boat = new THREE.Group(); scene.add(boat);
 { const hull = mesh(new THREE.BoxGeometry(5.2, 1.2, 2.2), M.roof, 0, .5, 0, boat); hull.geometry = jitter(hull.geometry, 0); const bow = mesh(new THREE.ConeGeometry(1.1, 2.4, 4), M.roof, 3.4, .5, 0, boat); bow.rotation.z = -Math.PI/2; bow.rotation.y = Math.PI/4; mesh(new THREE.BoxGeometry(5.4, .2, 2.4), M.trunk, 0, 1.15, 0, boat); mesh(new THREE.BoxGeometry(1.6, 1, 1.4), M.wall, -1.4, 1.7, 0, boat); mesh(new THREE.CylinderGeometry(.08,.1,6,6), M.trunk, .6, 4.2, 0, boat);
-  const sail = new THREE.Mesh(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(.7,1.6,0), new THREE.Vector3(.7,6.8,0), new THREE.Vector3(3.6,2.2,0)]), new THREE.MeshStandardMaterial({color:0xffffff, side:THREE.DoubleSide, flatShading:true})); sail.geometry.computeVertexNormals(); sail.castShadow=true; boat.add(sail); const fl = mesh(new THREE.BoxGeometry(.9,.4,.05), M.orange, 1.05, 7.1, 0, boat); }
+  const sail = new THREE.Mesh(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(.7,1.6,0), new THREE.Vector3(.7,6.8,0), new THREE.Vector3(3.6,2.2,0)]), new THREE.MeshStandardMaterial({color:0xffffff, side:THREE.DoubleSide, flatShading:true})); sail.geometry.computeVertexNormals(); sail.castShadow=true; sail.rotation.y=-.75; sail.position.x=.3; boat.add(sail); const fl = mesh(new THREE.BoxGeometry(.9,.4,.05), M.orange, 1.05, 7.1, 0, boat); }
 const wake = new THREE.Mesh(new THREE.PlaneGeometry(14, 5), new THREE.MeshBasicMaterial({color:0xffffff, transparent:true, opacity:.25, depthWrite:false})); wake.rotation.x = -Math.PI/2; wake.position.set(-7, .15, 0); boat.add(wake);
 
 /* ===================== STATE & INPUT ===================== */
