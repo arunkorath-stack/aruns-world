@@ -413,7 +413,7 @@ body.t-island .ringwrap .c{stroke:rgba(0,0,0,.12)}
 <footer>Questions are generated from the chapter decks and reviewed by the instructor. Practice quizzes are formative: they help you learn, they are not your exam. Problems? Tell Dr Korath in class.</footer>
 
 <script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js"}}</script>
-<script type="module" src="game3d.js?v=3"></script>
+<script type="module" src="game3d.js?v=4"></script>
 <script>
 /* ================= config & API ================= */
 let CFG={scriptUrl:''};
@@ -587,7 +587,7 @@ function CROWD_(){return CROWDS[document.body.className.replace('t-','')]||CROWD
 function crowd(n,leftRange,topFn){let h='';for(let i=0;i<n;i++){const C=CROWD_();const e=C[Math.floor(Math.random()*C.length)];const l=leftRange[0]+Math.random()*(leftRange[1]-leftRange[0]);h+=`<span class="spec ${Math.random()<.3?'wild':''}" style="left:${l.toFixed(1)}%;top:${topFn(i,n)};--d:${(1+Math.random()*1.2).toFixed(2)}s;animation-delay:-${(Math.random()*2).toFixed(2)}s;font-size:${15+Math.round(Math.random()*6)}px">${e}</span>`}return h}
 function use3d(){return isVert()&&window.G3D&&window.G3D.ok&&!localStorage.getItem('qh_no3d')}
 function buildJourney(){const n=S.questions.length,t=trav();S.g3d=false;
-  if(use3d()){const j=$('#journey');j.className='journey vert g3d';j.innerHTML='';if(G3D.mount(j,{theme:document.body.className.replace('t-',''),n,labels:S.questions.map(q=>'§'+q.sec)})){S.g3d=true;$('#sideHint').textContent=document.body.classList.contains('t-island')?'engines humming — answer to sail on':'engine running — answer to race';return;}}
+  if(use3d()){const j=$('#journey');j.className='journey vert g3d';j.innerHTML='';const th=document.body.className.replace('t-','');if(G3D.mount(j,{theme:th,chapter:S.chapter,n,labels:S.questions.map(q=>'§'+q.sec)})){S.g3d=true;const nm=G3D.sceneName?G3D.sceneName(th,S.chapter):'';$('#sideHint').textContent=(nm?nm+' — ':'')+(th==='island'?'engines humming — answer to sail on':th==='gallery'?'the night is quiet… answer to move on':'engine running — answer to race');return;}}
   $('#journey').className='journey vert';$('#journey').innerHTML=`<div class="track" id="track"></div>${crowd(9,[1,16],(i,k)=>(3+94*i/k+Math.random()*6).toFixed(1)+'%')}${crowd(10,[80,94],(i,k)=>(2+94*i/k+Math.random()*6).toFixed(1)+'%')}${S.questions.map((q,i)=>`<div class="node" id="node${i}">${i+1}<span class="lbl">§${esc(q.sec)}</span></div>`).join('')}<div class="node goal" id="node${n}">${t.goal}<span class="lbl">${t.goalWord}</span></div><div class="trav" id="trav">${t.icon}</div>`;
   for(let i=0;i<=n;i++) placeNode($('#node'+i),i); placeTrav(0); $('#sideHint').textContent=document.body.classList.contains('t-island')?'engines humming — answer to sail on':document.body.classList.contains('t-gallery')?'the forest is quiet… answer to move on':'engine running — answer to race'}
 addEventListener('resize',()=>{if(S.g3d){G3D.resize();return;}if($('#v-quiz').classList.contains('on')&&S.questions.length){for(let i=0;i<=S.questions.length;i++){const el=$('#node'+i);if(el)placeNode(el,i)}placeTrav(S.idx)}});

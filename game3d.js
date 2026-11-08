@@ -81,9 +81,51 @@ function makeParty() {
 }
 
 /* ---------- build ---------- */
+
+// Per-chapter scenery: each chapter of a world looks different (sky, water/ground, roadside life, a landmark behind the goal)
+const VAR = {
+  drive: [
+    { name:'Neon city', sky:0x0b0714, fog:0x120a24, ground:0x1a1030, grid:0x6f44c9, crowd:['🙋','🙌','👏','🎉','📣','🏙️','🚕','📸','🥳','🌃'], extra:['🏙️','🌆','🏢'], landmark:'🏙️', treeCol:0xff7fb0 },
+    { name:'Desert highway', sky:0x1a0f0a, fog:0x3a2210, ground:0x5a3a1c, grid:0x8a5a2a, asph:0x3a3028, crowd:['🐪','🌵','🙋','🏜️','🦂','🙌','🏕️','⛽','🪨','🎉'], extra:['🏜️','🐪','🌵'], landmark:'🏜️', treeCol:0xc98a3a },
+    { name:'Coast road', sky:0x061a2a, fog:0x0e3350, ground:0x0f3a5a, grid:0x2a7aa0, asph:0x2a2e36, crowd:['🌊','⛵','🙋','🐚','🦀','🙌','🏖️','🪸','🎉','🚤'], extra:['🌊','⛵','🏝️'], landmark:'🌉', treeCol:0x3ad0c0 },
+    { name:'Mountain pass', sky:0x070b18, fog:0x1a2240, ground:0x2a3040, grid:0x4a5a7a, asph:0x2a2a33, crowd:['🏔️','🌲','🙋','🦌','🧗','🙌','⛺','🦅','🎉','🪵'], extra:['🏔️','🏔️','🌲'], landmark:'🏔️', treeCol:0x2f7a4a },
+    { name:'Rain city', sky:0x05070f, fog:0x0c1226, ground:0x0f1430, grid:0x3a4a9a, asph:0x1e2230, crowd:['☔','🌧️','🙋','🚖','🏢','🙌','💡','🧥','🎉','🚦'], extra:['🌧️','🏢','⛈️'], landmark:'🌃', treeCol:0x4a7aff },
+    { name:'Sunset highway', sky:0x2a0a1a, fog:0x6a1a3a, ground:0x4a1a2a, grid:0xc9446f, asph:0x2a2630, crowd:['🌇','🙋','🎸','🙌','🚗','📸','🏍️','🎉','🌴','🥳'], extra:['🌇','🌴','🎡'], landmark:'🌅', treeCol:0xff9a3a },
+    { name:'Snow road', sky:0x0a1420, fog:0x3a4a60, ground:0xdfe8f2, grid:0xbfd0e0, asph:0x3a4048, k1:0x1e62ff, crowd:['❄️','⛄','🙋','🎿','🦌','🙌','🏔️','☕','🎉','🧣'], extra:['🏔️','❄️','🌲'], landmark:'🗻', treeCol:0xe8f4ff },
+    { name:'Forest road', sky:0x05100a, fog:0x0c2a16, ground:0x0f2a16, grid:0x2a6a3a, asph:0x2a2a28, crowd:['🌲','🦌','🙋','🦉','🍄','🙌','🏕️','🐿️','🎉','🪵'], extra:['🌲','🌳','🌲'], landmark:'🌲', treeCol:0x2faa5a },
+    { name:'Airport run', sky:0x0a0f1a, fog:0x1a2230, ground:0x202830, grid:0x5a6a7a, asph:0x2a2e33, crowd:['✈️','🧳','🙋','🛫','🚌','🙌','🏭','📡','🎉','🛬'], extra:['✈️','🏭','🛫'], landmark:'🛬', treeCol:0x9ab0c0 },
+    { name:'Dawn finish', sky:0x2a1a0a, fog:0x8a5a2a, ground:0x5a4a2a, grid:0xd9a24a, asph:0x2a2a33, crowd:['🌅','🏁','🙋','🎉','🏆','🙌','📸','🥳','🎊','🚩'], extra:['🌅','🏁','🎆'], landmark:'🏆', treeCol:0xffc44a }
+  ],
+  island: [
+    { name:'Blue lagoon', sky:0x5e8dff, fog:0x9fd0ff, ground:0x2f7df6, crowd:['🙋','🏝️','🌴','🐬','🐢','⛵','🐠','🛟','🦜','🌺'], extra:['🏝️','🌴','🐬'], landmark:'🏝️' },
+    { name:'Storm sea', sky:0x3a4a60, fog:0x6a7a90, ground:0x1f4a7a, asph:0x1a3a66, crowd:['🌩️','🙋','⛵','🌊','🐙','🙌','🛟','🐋','⚓','🌧️'], extra:['🌩️','🌊','⛈️'], landmark:'🗼' },
+    { name:'Sunset bay', sky:0xff8a4a, fog:0xffc08a, ground:0x3a5aa0, asph:0x2a4a90, crowd:['🌇','🙋','⛵','🐬','🌴','🙌','🏖️','🦩','🎉','🐚'], extra:['🌇','🌴','⛵'], landmark:'🌅' },
+    { name:'Coral reef', sky:0x6ab8ff, fog:0xbfe6ff, ground:0x1fa0b0, asph:0x1a8aa0, crowd:['🐠','🪸','🙋','🐡','🤿','🙌','🐙','🦀','🎉','🐚'], extra:['🪸','🐠','🏝️'], landmark:'🪸' },
+    { name:'Iceberg sea', sky:0xcfe6ff, fog:0xeaf4ff, ground:0x4a8ad0, asph:0x3a7ac0, crowd:['🧊','🐧','🙋','🦭','❄️','🙌','🐋','⛵','🎉','🏔️'], extra:['🧊','🏔️','🐧'], landmark:'🧊' },
+    { name:'Volcano island', sky:0x2a0a0a, fog:0x6a2a1a, ground:0x1a3a6a, asph:0x14305a, crowd:['🌋','🙋','🔥','🌴','🦎','🙌','⛵','🪨','🎉','🐢'], extra:['🌋','🔥','🌴'], landmark:'🌋' },
+    { name:'Mangrove channel', sky:0x7ac07a, fog:0xbfe0a0, ground:0x2a7a5a, asph:0x1f6a4a, crowd:['🌿','🦩','🙋','🐊','🛶','🙌','🦜','🍃','🎉','🐸'], extra:['🌿','🦩','🌳'], landmark:'🌳' },
+    { name:'Night sea', sky:0x060a1a, fog:0x0e1a3a, ground:0x0f2a5a, asph:0x0c2250, crowd:['🌙','⭐','🙋','⛵','🐬','🙌','🏮','🌊','🎉','🦑'], extra:['🌙','⭐','🏮'], landmark:'🌙' },
+    { name:'Pirate cove', sky:0x5a4a3a, fog:0x9a8a6a, ground:0x2a5a8a, asph:0x1f4a7a, crowd:['🏴‍☠️','🦜','🙋','⚓','🗺️','🙌','💰','🛶','🎉','🦑'], extra:['🏴‍☠️','⚓','🗺️'], landmark:'🏴‍☠️' },
+    { name:'Treasure island', sky:0xffd27a, fog:0xffe6b0, ground:0x2f7df6, asph:0x2457d8, crowd:['💰','🏆','🙋','🌴','🎉','🙌','💎','🦜','🥳','🏝️'], extra:['💰','🏝️','🎆'], landmark:'🏆' }
+  ],
+  gallery: [
+    { name:'Dark forest', sky:0x05060c, fog:0x0b0d16, ground:0x141a14, crowd:['🦉','🐺','🌲','🌲','🕯️','🏮','🪵','🦇','🌲','🪨'], extra:['🌲','🌲','🦉'], landmark:'🌲', treeCol:0x0f1a10 },
+    { name:'Black swamp', sky:0x060a06, fog:0x1a2a14, ground:0x1a2a14, asph:0x24301a, crowd:['🐸','🦟','🌿','🕯️','🐊','🏮','🪵','🦇','🌾','🪨'], extra:['🌿','🐊','🌾'], landmark:'🌳', treeCol:0x16301a },
+    { name:'River crossing', sky:0x050810, fog:0x0e1a30, ground:0x0f2238, asph:0x2a2418, crowd:['🌊','🛶','🌉','🕯️','🐟','🏮','🪨','🦆','🌲','🪵'], extra:['🌉','🌊','🛶'], landmark:'🌉', treeCol:0x1a3a4a },
+    { name:'Red canyon', sky:0x0c0606, fog:0x2a120a, ground:0x3a1e12, asph:0x3a2a1a, crowd:['🪨','🦅','🌵','🕯️','🐎','🏮','🦂','🪨','🔥','🌵'], extra:['🏜️','🪨','🦅'], landmark:'🏜️', treeCol:0x5a3a24 },
+    { name:'Burned village', sky:0x120808, fog:0x3a1a0a, ground:0x1a1410, asph:0x2a2418, crowd:['🔥','🏚️','👵','🕯️','🐎','🏮','👨‍🌾','🧒','🔥','🪵'], extra:['🏚️','🔥','🏚️'], landmark:'🏚️', treeCol:0x2a1a10 },
+    { name:'Crow caves', sky:0x030306, fog:0x0a0a12, ground:0x0e0e16, asph:0x1a1a22, crowd:['🦇','💎','🕯️','🪨','🦇','🏮','💀','🪨','🔦','🕸️'], extra:['🦇','💎','🪨'], landmark:'🕳️', treeCol:0x14141c },
+    { name:'Snow pass', sky:0x0a1020, fog:0x3a4a66, ground:0xc8d4e0, asph:0x3a3a40, k1:0x4a4a56, crowd:['❄️','🐺','🌲','🕯️','🏔️','🏮','🦌','❄️','🪵','⛺'], extra:['🏔️','❄️','🌲'], landmark:'🗻', treeCol:0xdfe8f0 },
+    { name:'Desert night', sky:0x080612, fog:0x2a1a30, ground:0x3a2a3a, asph:0x3a2e2a, crowd:['🐪','🌵','🕯️','⭐','🏕️','🏮','🦂','🪨','🌙','🐎'], extra:['🏜️','🐪','🌙'], landmark:'🕌', treeCol:0x5a4a3a },
+    { name:'Castle outskirts', sky:0x0a0810, fog:0x2a1c10, ground:0x1a1812, asph:0x2a2418, crowd:['🔥','🛡️','🕯️','🐎','🏮','⚔️','🪨','🔥','🗡️','🏮'], extra:['🏰','🔥','🛡️'], landmark:'🏰', treeCol:0x2a2418 },
+    { name:'Crow fortress', sky:0x140606, fog:0x3a0c0c, ground:0x1a0e0e, asph:0x2a1a1a, k1:0x5a1a1a, crowd:['🦹','🔥','🕯️','⚔️','🏮','🛡️','🔥','🗝️','🪨','👸'], extra:['🏰','🔥','🦹'], landmark:'🏰', treeCol:0x2a1212 }
+  ]
+};
+function variant(theme, ch) { const arr = VAR[theme] || VAR.drive; const i = Math.max(0, (Number(ch) || 1) - 1) % arr.length; return arr[i]; }
+
 function build(el, opts) {
   destroy();
-  const theme = T[opts.theme] || T.drive; const n = opts.n; const labels = opts.labels || [];
+  const base = T[opts.theme] || T.drive; const V = opts.chapter ? variant(opts.theme, opts.chapter) : null; const theme = V ? Object.assign({}, base, V) : base; const n = opts.n; const labels = opts.labels || [];
   const w = el.clientWidth || 240, h = el.clientHeight || 600;
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, powerPreference: 'high-performance' });
   renderer.setPixelRatio(Math.min(devicePixelRatio, 2)); renderer.setSize(w, h); renderer.shadowMap.enabled = false; renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -98,7 +140,7 @@ function build(el, opts) {
   // ground
   const ground = new THREE.Mesh(new THREE.PlaneGeometry(240, 240), new THREE.MeshStandardMaterial({ color: theme.ground, map: opts.theme === 'drive' ? gridTexture(theme.grid, theme.ground) : null, roughness: 1 }));
   ground.rotation.x = -Math.PI / 2; ground.position.y = -.05; scene.add(ground);
-  if (opts.theme === 'island') { ground.material.color.set(0x2f7df6); ground.material.transparent = true; ground.material.opacity = .95; ground.userData.wave = true; ground.geometry = new THREE.PlaneGeometry(240, 240, 60, 60); }
+  if (opts.theme === 'island') { ground.material.color.set(theme.ground); ground.material.transparent = true; ground.material.opacity = .95; ground.userData.wave = true; ground.geometry = new THREE.PlaneGeometry(240, 240, 60, 60); }
   // road
   const asph = new THREE.Mesh(ribbon(curve, opts.theme === 'island' ? 1.6 : 1.5, 160), new THREE.MeshStandardMaterial({ map: dashTexture(theme.dash, theme.asph), roughness: .9 })); asph.material.map.repeat.set(1, 1); scene.add(asph);
   const kerbL = new THREE.Mesh(ribbon(curve, .22, 160, 1.72, .03), new THREE.MeshStandardMaterial({ map: stripeTexture(theme.k1, theme.k2, 2) })); scene.add(kerbL);
@@ -137,11 +179,14 @@ function build(el, opts) {
     const s = sprite(emojiTexture(theme.crowd[(i * 7) % theme.crowd.length]), 1.1 + Math.random() * .5, 1.1 + Math.random() * .5);
     s.position.copy(p).addScaledVector(side, sgn * (2.8 + Math.random() * 1.6)); s.position.y = .7; s.userData.ph = Math.random() * 6; s.userData.wild = Math.random() < .3; scene.add(s); crowd.push(s);
     if (opts.theme === 'gallery' && i % 4 === 0) { const l = new THREE.PointLight(0xff9b2f, 3, 7); l.position.copy(s.position).setY(1.6); l.userData.flk = Math.random() * 6; scene.add(l); crowd.push(l); }
-    if (opts.theme === 'gallery') { const tr = new THREE.Mesh(new THREE.ConeGeometry(.9 + Math.random() * .8, 3.5 + Math.random() * 3, 7), new THREE.MeshStandardMaterial({ color: 0x0f1a10, roughness: 1 })); tr.position.copy(p).addScaledVector(side, sgn * (4 + Math.random() * 4)).setY(1.6); scene.add(tr); if (i % 5 === 0) { const tr2 = tr.clone(); tr2.position.addScaledVector(side, sgn * 2.5); scene.add(tr2); } }
-    if (opts.theme === 'drive' && i % 3 === 0) { const tree = new THREE.Mesh(new THREE.SphereGeometry(.7 + Math.random() * .6, 10, 8), new THREE.MeshStandardMaterial({ color: 0xff7fb0, emissive: 0xff7fb0, emissiveIntensity: .5 })); tree.position.copy(s.position).addScaledVector(side, sgn * 2.5).setY(1.2); scene.add(tree); }
+    if (opts.theme === 'gallery') { const tr = new THREE.Mesh(new THREE.ConeGeometry(.9 + Math.random() * .8, 3.5 + Math.random() * 3, 7), new THREE.MeshStandardMaterial({ color: theme.treeCol || 0x0f1a10, roughness: 1 })); tr.position.copy(p).addScaledVector(side, sgn * (4 + Math.random() * 4)).setY(1.6); scene.add(tr); if (i % 5 === 0) { const tr2 = tr.clone(); tr2.position.addScaledVector(side, sgn * 2.5); scene.add(tr2); } }
+    if (opts.theme === 'drive' && i % 3 === 0) { const tree = new THREE.Mesh(new THREE.SphereGeometry(.7 + Math.random() * .6, 10, 8), new THREE.MeshStandardMaterial({ color: theme.treeCol || 0xff7fb0, emissive: theme.treeCol || 0xff7fb0, emissiveIntensity: .5 })); tree.position.copy(s.position).addScaledVector(side, sgn * 2.5).setY(1.2); scene.add(tree); }
   }
+  // chapter landmark behind the goal and big scenery pieces along the horizon
+  if (V) { const lm = sprite(emojiTexture(V.landmark), 9, 9); const gp = curve.getPointAt(1); lm.position.set(gp.x + 4, 5.5, gp.z - 14); scene.add(lm); crowd.push(lm);
+    for (let i = 0; i < 9; i++) { const e = V.extra[i % V.extra.length]; const sp = sprite(emojiTexture(e), 3.5 + Math.random() * 3, 3.5 + Math.random() * 3); const t = (i + .5) / 9; const p = curve.getPointAt(t); const tan = curve.getTangentAt(t); const side = new THREE.Vector3(-tan.z, 0, tan.x).normalize(); const sgn = i % 2 ? 1 : -1; sp.position.copy(p).addScaledVector(side, sgn * (9 + Math.random() * 6)); sp.position.y = 2.2 + Math.random(); scene.add(sp); } }
   // stars (night themes)
-  if (opts.theme !== 'island') { const sg = new THREE.BufferGeometry(); const sp = []; for (let i = 0; i < 400; i++) sp.push((Math.random() - .5) * 200, 20 + Math.random() * 60, -Math.random() * 200 + 40); sg.setAttribute('position', new THREE.Float32BufferAttribute(sp, 3)); scene.add(new THREE.Points(sg, new THREE.PointsMaterial({ color: 0xffffff, size: .35, transparent: true, opacity: .8 }))); }
+  if (opts.theme !== 'island' || (V && V.sky < 0x303030)) { const sg = new THREE.BufferGeometry(); const sp = []; for (let i = 0; i < 400; i++) sp.push((Math.random() - .5) * 200, 20 + Math.random() * 60, -Math.random() * 200 + 40); sg.setAttribute('position', new THREE.Float32BufferAttribute(sp, 3)); scene.add(new THREE.Points(sg, new THREE.PointsMaterial({ color: 0xffffff, size: .35, transparent: true, opacity: .8 }))); }
   else { for (let i = 0; i < 6; i++) { const c = sprite(emojiTexture('☁️'), 6, 3.5); c.position.set((Math.random() - .5) * 60, 9 + Math.random() * 5, -Math.random() * len - 5); c.userData.cloud = .3 + Math.random() * .4; scene.add(c); crowd.push(c); } }
   if (opts.theme === 'gallery') { const moon = sprite(emojiTexture('🌕'), 5, 5); moon.position.set(-14, 22, -len - 10); scene.add(moon); const mg = new THREE.BufferGeometry(); const mp = []; for (let i = 0; i < 260; i++) mp.push((Math.random() - .5) * 30, .2 + Math.random() * 1.6, -Math.random() * len); mg.setAttribute('position', new THREE.Float32BufferAttribute(mp, 3)); const mist = new THREE.Points(mg, new THREE.PointsMaterial({ color: 0x9aa3b8, size: 1.6, transparent: true, opacity: .16, depthWrite: false })); mist.userData.mist = true; scene.add(mist); crowd.push(mist); }
   // vehicle
@@ -236,6 +281,7 @@ function stageDestroy() { if (!ST) return; cancelAnimationFrame(ST.raf); ST.ro &
 
 const G3D = {
   ok: (() => { try { const c = document.createElement('canvas'); return !!(window.WebGLRenderingContext && (c.getContext('webgl2') || c.getContext('webgl'))); } catch (e) { return false; } })(),
+  sceneName(theme, ch) { return variant(theme, ch).name; },
   mount(el, opts) { try { return build(el, opts); } catch (e) { console.warn('G3D mount failed', e); return false; } },
   moveTo(i, o = {}) { if (!R) return 0; const t = R.n ? i / R.n : 0; R.from = R.t; R.target = t; R.t0 = performance.now() / 1000; R.dur = o.dur || (o.fast ? 2.4 : 1.35); R.run = true; if (o.jump) setTimeout(() => this.jump(), R.dur * 1000 * .42); return R.dur; },
   state(i, s) { if (!R) return; const g = R.nodes[i]; if (!g || !g.userData.ring) return; g.userData.state = s; if (g.userData.rods) g.userData.rods.forEach((r, k) => { r.position.y = s === 'ok' ? 4.6 : 1.6; }); const th = T[R.theme]; const c = s === 'ok' ? th.ok : s === 'retry' ? th.retry : s === 'cur' ? th.cur : th.node; g.userData.ring.material.color.set(c); g.userData.ring.material.emissive.set(s ? c : 0x000000); g.userData.ring.material.emissiveIntensity = s === 'cur' ? .8 : s ? .5 : 0; },
