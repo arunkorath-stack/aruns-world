@@ -100,8 +100,8 @@
   <div class="go">▶ Set sail</div>
 </div>
 <div id="card"></div>
-<div id="hint">Swipe or drag the sea to sail · tap a dot to jump</div>
-<div id="arrows"><button class="tb" id="prev" title="Previous stop">←</button><button class="tb" id="next" title="Next stop">→</button></div>
+<div id="hint">↑ ↓ next / previous island · ← → look around · drag or scroll to sail</div>
+<div id="arrows"><button class="tb" id="prev" title="Previous island (↓)">↓</button><button class="tb" id="next" title="Next island (↑)">↑</button></div>
 <div id="dock"><span class="lbl">Voyage</span><span id="dots" style="display:flex;gap:10px"></span><span class="pct" id="pct">0%</span></div>
 <div id="flat"></div>
 
@@ -343,7 +343,12 @@ let drag = null;
 addEventListener('pointerdown', e => { if(!started || e.target.closest('#card,#dock,#top,#arrows')) return; drag = {x:e.clientX, t:target}; });
 addEventListener('pointermove', e => { if(drag){ setTarget(drag.t + (drag.x - e.clientX) * (1.4/innerWidth)); } });
 addEventListener('pointerup', () => drag = null);
-addEventListener('keydown', e => { if(!started || e.repeat) return; if(e.key==='ArrowRight'||e.key==='ArrowDown'||e.key===' ') { e.preventDefault(); jump(1); } if(e.key==='ArrowLeft'||e.key==='ArrowUp') { e.preventDefault(); jump(-1); } });
+let orbitOff = 0; const keys = {};
+addEventListener('keydown', e => { if(!started) return; keys[e.key] = true;
+  if(e.key==='ArrowUp'||e.key==='PageDown'||e.key===' ') { e.preventDefault(); if(!e.repeat) jump(1); }
+  if(e.key==='ArrowDown'||e.key==='PageUp') { e.preventDefault(); if(!e.repeat) jump(-1); }
+  if(e.key==='ArrowLeft'||e.key==='ArrowRight') e.preventDefault(); });
+addEventListener('keyup', e => { keys[e.key] = false; });
 function nearestIdx(v){ let b=0, bd=9; stops.forEach((s,i)=>{ const d=Math.abs(s.t - v); if(d<bd){bd=d;b=i;} }); return b; }
 function jump(dir){ let i = nearestIdx(target); if(dir>0 && stops[i].t <= target + 1e-6) i++; if(dir<0 && stops[i].t >= target - 1e-6) i--; i = clamp(i, 0, stops.length-1); setTarget(stops[i].t); click(); }
 $('#next').onclick = () => jump(1); $('#prev').onclick = () => jump(-1);
@@ -396,7 +401,7 @@ function frame(now){
   const near = w > .35;
   const portrait = camera.aspect < 1, D = portrait ? 1.8 : 1;
   const back = tan.clone().multiplyScalar(-22*D - 10*Math.abs(vel)/.042); const posA = new THREE.Vector3(bp.x + back.x, (13 + 4*Math.abs(vel)/.042)*D, bp.z + back.z);
-  const orb = t*.1; const R = (s.group.userData.r + (portrait ? 30 : 34)) * D; const posB = new THREE.Vector3(s.pos.x + Math.cos(orb)*R, (14 + s.group.userData.top) * D, s.pos.z + Math.sin(orb)*R);
+  if(keys['ArrowLeft']) orbitOff -= 1.6*dt; if(keys['ArrowRight']) orbitOff += 1.6*dt; const orb = t*.1 + orbitOff; const R = (s.group.userData.r + (portrait ? 30 : 34)) * D; const posB = new THREE.Vector3(s.pos.x + Math.cos(orb)*R, (14 + s.group.userData.top) * D, s.pos.z + Math.sin(orb)*R);
   camPos.copy(posA).lerp(posB, w);
   camera.position.lerp(camPos, 1 - Math.pow(.03, dt));
   const lookA = new THREE.Vector3(bp.x, 3, bp.z).add(tan.clone().multiplyScalar(12)); const lookB = new THREE.Vector3(s.pos.x, portrait ? -9 : 2, s.pos.z); if(!portrait){ const rightV = new THREE.Vector3().subVectors(lookB, camera.position).setY(0).normalize().cross(up).multiplyScalar(s.group.userData.r + 14); lookB.add(rightV); } look.copy(lookA).lerp(lookB, w);
