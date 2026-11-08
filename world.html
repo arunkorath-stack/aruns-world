@@ -35,22 +35,22 @@
   #card{position:fixed;right:28px;top:50%;transform:translate(40px,-50%);width:min(400px,calc(100vw - 40px));max-height:calc(100vh - 140px);overflow:auto;z-index:9;opacity:0;pointer-events:none;transition:opacity .5s ease,transform .6s cubic-bezier(.2,.8,.2,1);
     background:var(--card);backdrop-filter:blur(14px);border:1px solid rgba(120,130,160,.3);border-radius:22px;padding:22px 24px 20px;box-shadow:0 20px 60px rgba(0,0,0,.18)}
   #card.show{opacity:1;pointer-events:auto;transform:translate(0,-50%)}
-  #card .n{font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--accent);font-weight:600}
-  #card h2{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(22px,2.6vw,30px);line-height:1.05;margin:8px 0 10px;letter-spacing:-.02em}
-  #card p{margin:0 0 10px;font-size:14.5px;line-height:1.55;color:var(--txt)}
-  #card ul{margin:6px 0 10px;padding-left:18px;font-size:14px;line-height:1.5}
-  #card li{margin:3px 0}
-  #card .chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 2px}
-  #card .chip{font-size:11.5px;padding:5px 10px;border-radius:999px;background:rgba(39,196,160,.14);color:var(--txt);border:1px solid rgba(39,196,160,.35)}
-  #card .stat{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0 6px}
-  #card .stat div{background:rgba(120,130,160,.12);border-radius:12px;padding:10px 8px;text-align:center}
-  #card .stat b{display:block;font-family:"Syne",sans-serif;font-size:22px;color:var(--accent)}
-  #card .stat small{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
-  #card .btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-  #card .btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:13.5px;padding:11px 16px;border-radius:12px;background:var(--ink);color:#fff;border:1px solid transparent;transition:transform .15s}
-  #card .btn.alt{background:transparent;color:var(--txt);border-color:rgba(120,130,160,.45)}
-  #card .btn:hover{transform:translateY(-2px)}
-  html.night #card .btn{background:#fff;color:#0b1020} html.night #card .btn.alt{background:transparent;color:#fff}
+  #card .n,#flat .f .n{font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--accent);font-weight:600}
+  #card h2,#flat .f h2{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(22px,2.6vw,30px);line-height:1.05;margin:8px 0 10px;letter-spacing:-.02em}
+  #card p,#flat .f p{margin:0 0 10px;font-size:14.5px;line-height:1.55;color:var(--txt)}
+  #card ul,#flat .f ul{margin:6px 0 10px;padding-left:18px;font-size:14px;line-height:1.5}
+  #card li,#flat .f li{margin:3px 0}
+  #card .chips,#flat .f .chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 2px}
+  #card .chip,#flat .f .chip{font-size:11.5px;padding:5px 10px;border-radius:999px;background:rgba(39,196,160,.14);color:var(--txt);border:1px solid rgba(39,196,160,.35)}
+  #card .stat,#flat .f .stat{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0 6px}
+  #card .stat div,#flat .f .stat div{background:rgba(120,130,160,.12);border-radius:12px;padding:10px 8px;text-align:center}
+  #card .stat b,#flat .f .stat b{display:block;font-family:"Syne",sans-serif;font-size:22px;color:var(--accent)}
+  #card .stat small,#flat .f .stat small{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+  #card .btns,#flat .f .btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  #card .btn,#flat .f .btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:13.5px;padding:11px 16px;border-radius:12px;background:var(--ink);color:#fff;border:1px solid transparent;transition:transform .15s}
+  #card .btn.alt,#flat .f .btn.alt{background:transparent;color:var(--txt);border-color:rgba(120,130,160,.45)}
+  #card .btn:hover,#flat .f .btn:hover{transform:translateY(-2px)}
+  html.night #card .btn,html.night #flat .btn{background:#fff;color:#0b1020} html.night #card .btn.alt,html.night #flat .btn.alt{background:transparent;color:#fff}
   /* dock */
   #dock{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:10;display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;background:var(--card);backdrop-filter:blur(12px);border:1px solid rgba(120,130,160,.3);box-shadow:0 10px 30px rgba(0,0,0,.15);max-width:calc(100vw - 24px)}
   #dock .d{width:12px;height:12px;border-radius:50%;background:rgba(120,130,160,.35);border:0;padding:0;cursor:pointer;position:relative;transition:transform .2s,background .2s}
@@ -64,7 +64,8 @@
   #arrows{position:fixed;left:20px;bottom:22px;z-index:10;display:flex;gap:8px}
   /* fallback */
   #flat{display:none;position:fixed;inset:0;overflow:auto;z-index:5;padding:90px 20px 60px;background:linear-gradient(180deg,#cfe8f6,#f6f1e7 40%)}
-  #flat .f{max-width:620px;margin:0 auto 18px;background:#fff;border-radius:20px;padding:20px 24px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+  #flat .f{max-width:620px;margin:0 auto 18px;background:var(--card);border-radius:20px;padding:20px 24px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+  html.night #flat{background:linear-gradient(180deg,#0a1230,#0b1020 40%)}
   @media (max-width:760px){
     #card{right:12px;left:12px;top:auto;bottom:84px;transform:translateY(30px);width:auto;max-height:46vh;padding:16px 18px}
     #card.show{transform:none}
@@ -145,7 +146,7 @@ catch(e){ renderer = null; }
 /* ===================== FALLBACK (no WebGL) ===================== */
 if(!renderer){
   const f=$('#flat'); f.style.display='block';
-  f.innerHTML = '<div class="f" style="text-align:center"><div style="font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:#5b6b80">Dr. Arun Korath</div><h1 style="font-family:Syne,sans-serif;font-size:44px;margin:6px 0">Arun\'s World</h1><p style="color:#5b6b80">Your browser could not start 3D graphics right now (restart the browser to sail the islands). Here is the voyage as a scroll.</p></div>' + STOPS.map(s=>`<div class="f"><div style="font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:#ff7a3d;font-weight:600">${s.n}</div><h2 style="font-family:Syne,sans-serif;margin:6px 0 10px">${s.title}</h2>${s.html}</div>`).join('');
+  f.innerHTML = '<div class="f" style="text-align:center"><div style="font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:#5b6b80">Dr. Arun Korath</div><h1 style="font-family:Syne,sans-serif;font-size:44px;margin:6px 0">Arun\'s World</h1><p style="color:#5b6b80">3D is off in this browser right now. In Chrome, type <b>chrome://restart</b> in the address bar to bring it back and sail the islands. Meanwhile, here is the voyage as a scroll.</p></div>' + STOPS.map(s=>`<div class="f"><div style="font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:#ff7a3d;font-weight:600">${s.n}</div><h2 style="font-family:Syne,sans-serif;margin:6px 0 10px">${s.title}</h2>${s.html}</div>`).join('');
   $('#intro').remove(); $('#dock').remove(); $('#hint').remove(); $('#arrows').remove();
   document.body.style.overflow='auto';
 } else {
