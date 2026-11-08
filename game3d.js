@@ -119,7 +119,7 @@ function makeCar2(th) {
   // sleek body from a side profile
   const sh = new THREE.Shape(); sh.moveTo(-1.25, .25); sh.lineTo(1.2, .25); sh.lineTo(1.3, .45); sh.lineTo(.95, .55); sh.lineTo(.35, .95); sh.lineTo(-.55, .98); sh.lineTo(-1.15, .6); sh.lineTo(-1.3, .5); sh.closePath();
   const body = new THREE.Mesh(new THREE.ExtrudeGeometry(sh, { depth: 1.1, bevelEnabled: true, bevelSize: .05, bevelThickness: .05, bevelSegments: 2 }), paint);
-  body.rotation.y = Math.PI / 2; body.position.set(.55, 0, 0); g.add(body);
+  body.rotation.y = -Math.PI / 2; body.position.set(.55, 0, 0); g.add(body);
   const cab = new THREE.Mesh(new THREE.BoxGeometry(.86, .34, 1.0), glass); cab.position.set(0, .88, -.12); g.add(cab);
   const spoiler = new THREE.Mesh(new THREE.BoxGeometry(1.1, .06, .28), dark); spoiler.position.set(0, .95, -1.15); g.add(spoiler);
   [[-.5], [.5]].forEach(([x]) => { const leg = new THREE.Mesh(new THREE.BoxGeometry(.06, .3, .1), dark); leg.position.set(x, .78, -1.15); g.add(leg); });
@@ -142,7 +142,7 @@ function driveWorld(scene, curve, theme, V, n, len, opts, crowd) {
   const dome = new THREE.Mesh(new THREE.SphereGeometry(110, 24, 12), new THREE.MeshBasicMaterial({ map: skyTexture(theme.sky, theme.fog), side: THREE.BackSide, fog: false })); scene.add(dome);
   const moon = glowSprite('rgb(255,244,214)', 7, 7); moon.position.set(18, 26, -len - 20); scene.add(moon);
   // road
-  const road = new THREE.Mesh(ribbon(curve, 2.3, 180), new THREE.MeshStandardMaterial({ map: roadTexture(theme.asph || 0x24242c), roughness: .95 })); scene.add(road);
+  const roadTex = roadTexture(theme.asph || 0x2a2a34); const road = new THREE.Mesh(ribbon(curve, 2.3, 180), new THREE.MeshStandardMaterial({ map: roadTex, emissive: 0xffffff, emissiveMap: roadTex, emissiveIntensity: .22, roughness: .95 })); scene.add(road);
   const shoulderM = new THREE.MeshStandardMaterial({ color: 0x3a3a42, roughness: 1 });
   scene.add(new THREE.Mesh(ribbon(curve, .5, 120, 2.8, .01), shoulderM)); scene.add(new THREE.Mesh(ribbon(curve, .5, 120, -2.8, .01), shoulderM));
   // guard rails + posts + lamp posts (instanced)
@@ -308,7 +308,7 @@ function updateCamera(lerp) {
   let desired, look;
   if (R.horizontal) { desired = new THREE.Vector3(p.x + 9, 7.5, p.z + 9); look = new THREE.Vector3(p.x, .8, p.z - 2); }
   else if (R.theme === 'gallery') { desired = p.clone().addScaledVector(tan, -6); desired.y = 3.2; look = p.clone().addScaledVector(tan, 8); look.y = 1.2; }
-  else if (R.theme === 'drive') { desired = p.clone().addScaledVector(tan, -6.5); desired.y = 3.4; look = p.clone().addScaledVector(tan, 10); look.y = 1.0; }
+  else if (R.theme === 'drive') { desired = p.clone().addScaledVector(tan, -8.5); desired.y = 4.6; look = p.clone().addScaledVector(tan, 12); look.y = 1.2; }
   else { desired = p.clone().addScaledVector(tan, -8); desired.y = 5.2; look = p.clone().addScaledVector(tan, 9); look.y = .6; }
   R.camera.position.lerp(desired, lerp); R.camLook = (R.camLook || look.clone()).lerp(look, lerp); R.camera.lookAt(R.camLook);
 }
