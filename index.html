@@ -25,6 +25,8 @@
   #intro{position:fixed;inset:0;z-index:30;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;background:radial-gradient(ellipse at 50% 40%,rgba(255,255,255,.45),rgba(246,241,231,.1) 60%,rgba(246,241,231,0));transition:opacity .9s ease;cursor:pointer}
   html.night #intro{background:radial-gradient(ellipse at 50% 40%,rgba(20,30,60,.55),rgba(11,16,32,0) 70%)}
   #intro.gone{opacity:0;pointer-events:none}
+  #intro .panel{background:rgba(246,241,231,.78);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.6);border-radius:28px;padding:36px 40px 30px;display:flex;flex-direction:column;align-items:center;gap:10px;max-width:640px;margin:0 16px;box-shadow:0 30px 80px rgba(0,0,0,.18)}
+  html.night #intro .panel{background:rgba(11,16,32,.78);border-color:rgba(255,255,255,.12)}
   #intro .k{font-size:12px;letter-spacing:.45em;text-transform:uppercase;color:var(--mut)}
   #intro h1{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(44px,9vw,120px);line-height:.95;margin:6px 0;letter-spacing:-.03em;color:var(--txt)}
   #intro h1 span{color:var(--accent)}
@@ -93,14 +95,14 @@
     <button class="tb" id="mode" title="Day / night">🌙</button>
   </div>
 </div>
-<div id="intro">
+<div id="intro"><div class="panel">
   <div class="k">Dr. Arun Korath · Fujairah, UAE</div>
   <h1>Arun's<br><span>World</span></h1>
-  <p>Twenty-three years of teaching, research and building across India, Ethiopia, Saudi Arabia and the Emirates — told as a voyage across nine islands.</p>
+  <p><b>Start sailing to know more about me.</b> Each island you reach tells you something new — twenty-three years of teaching, research and building across India, Ethiopia, Saudi Arabia and the Emirates, in nine stops.</p>
   <div class="go">▶ Set sail</div>
-</div>
+</div></div>
 <div id="card"></div>
-<div id="hint">↑ ↓ next / previous island · ← → look around · drag or scroll to sail</div>
+<div id="hint">Hold ↑ to sail (↓ to go back) · ← → look around · each island tells you more</div>
 <div id="arrows"><button class="tb" id="prev" title="Previous island (↓)">↓</button><button class="tb" id="next" title="Next island (↑)">↑</button></div>
 <div id="dock"><span class="lbl">Voyage</span><span id="dots" style="display:flex;gap:10px"></span><span class="pct" id="pct">0%</span></div>
 <div id="flat"></div>
@@ -343,12 +345,16 @@ let drag = null;
 addEventListener('pointerdown', e => { if(!started || e.target.closest('#card,#dock,#top,#arrows')) return; drag = {x:e.clientX, t:target}; });
 addEventListener('pointermove', e => { if(drag){ setTarget(drag.t + (drag.x - e.clientX) * (1.4/innerWidth)); } });
 addEventListener('pointerup', () => drag = null);
-let orbitOff = 0; const keys = {};
-addEventListener('keydown', e => { if(!started) return; keys[e.key] = true;
-  if(e.key==='ArrowUp'||e.key==='PageDown'||e.key===' ') { e.preventDefault(); if(!e.repeat) jump(1); }
-  if(e.key==='ArrowDown'||e.key==='PageUp') { e.preventDefault(); if(!e.repeat) jump(-1); }
-  if(e.key==='ArrowLeft'||e.key==='ArrowRight') e.preventDefault(); });
-addEventListener('keyup', e => { keys[e.key] = false; });
+let orbitOff = 0; const keys = {}; let keyT = 0;
+const isFwd = k => k==='ArrowUp'||k==='w'||k==='W'||k===' '||k==='PageDown', isBack = k => k==='ArrowDown'||k==='s'||k==='S'||k==='PageUp';
+addEventListener('keydown', e => { if(!started) return;
+  if(isFwd(e.key)||isBack(e.key)||e.key==='ArrowLeft'||e.key==='ArrowRight'||e.key==='a'||e.key==='d') e.preventDefault();
+  if(e.repeat) return; keys[e.key] = true; if(isFwd(e.key)||isBack(e.key)) keyT = performance.now(); $('#hint').classList.add('off'); });
+addEventListener('keyup', e => { keys[e.key] = false;
+  if(isFwd(e.key)||isBack(e.key)){ const held = performance.now() - keyT;
+    if(held < 220){ jump(isFwd(e.key) ? 1 : -1); }            // quick tap: hop one island
+    else { const i = nearestIdx(P); target = Math.abs(stops[i].t - P) < .035 ? stops[i].t : clamp(P + vel*.6, 0, 1); } } });
+function heldDir(){ let d = 0; for(const k in keys){ if(!keys[k]) continue; if(isFwd(k)) d = 1; else if(isBack(k)) d = -1; } return d; }
 function nearestIdx(v){ let b=0, bd=9; stops.forEach((s,i)=>{ const d=Math.abs(s.t - v); if(d<bd){bd=d;b=i;} }); return b; }
 function jump(dir){ let i = nearestIdx(target); if(dir>0 && stops[i].t <= target + 1e-6) i++; if(dir<0 && stops[i].t >= target - 1e-6) i--; i = clamp(i, 0, stops.length-1); setTarget(stops[i].t); click(); }
 $('#next').onclick = () => jump(1); $('#prev').onclick = () => jump(-1);
@@ -396,7 +402,7 @@ const scopeTmp = new THREE.Vector3();
 function frame(now){
   requestAnimationFrame(frame); const dt = Math.min(.05, (now - lastT)/1000); lastT = now; const t = now/1000;
   // progress easing
-  { const diff = target - P; const maxV = .042; const want = clamp(diff * 1.5, -maxV, maxV); vel += (want - vel) * (1 - Math.pow(.015, dt)); P += vel * dt; if(Math.abs(diff) < .0004 && Math.abs(vel) < .004){ P = target; vel = 0; } P = clamp(P, 0, 1); }
+  { const hd = heldDir(); if(hd) target = clamp(P + hd*.05, 0, 1); const diff = target - P; const maxV = .042; const want = clamp(diff * 1.5, -maxV, maxV); vel += (want - vel) * (1 - Math.pow(.015, dt)); P += vel * dt; if(Math.abs(diff) < .0004 && Math.abs(vel) < .004){ P = target; vel = 0; } P = clamp(P, 0, 1); }
   // boat along the curve
   const bp = curve.getPointAt(clamp(P,0,1)), tan = curve.getTangentAt(clamp(P,0,1));
   boat.position.set(bp.x, .35 + Math.sin(t*1.6)*.18, bp.z); boat.rotation.y = Math.atan2(-tan.z, tan.x); boat.rotation.z = Math.sin(t*1.1)*.05 - vel*2.2; boat.rotation.x = Math.cos(t*1.3)*.03;
@@ -407,7 +413,7 @@ function frame(now){
   const near = w > .35;
   const portrait = camera.aspect < 1, D = portrait ? 1.8 : 1;
   const back = tan.clone().multiplyScalar(-22*D - 10*Math.abs(vel)/.042); const posA = new THREE.Vector3(bp.x + back.x, (13 + 4*Math.abs(vel)/.042)*D, bp.z + back.z);
-  if(keys['ArrowLeft']) orbitOff -= 1.6*dt; if(keys['ArrowRight']) orbitOff += 1.6*dt; const orb = t*.1 + orbitOff; const R = (s.group.userData.r + (portrait ? 30 : 34)) * D; const posB = new THREE.Vector3(s.pos.x + Math.cos(orb)*R, (14 + s.group.userData.top) * D, s.pos.z + Math.sin(orb)*R);
+  if(keys['ArrowLeft']||keys['a']) orbitOff -= 1.6*dt; if(keys['ArrowRight']||keys['d']) orbitOff += 1.6*dt; const orb = t*.1 + orbitOff; const R = (s.group.userData.r + (portrait ? 30 : 34)) * D; const posB = new THREE.Vector3(s.pos.x + Math.cos(orb)*R, (14 + s.group.userData.top) * D, s.pos.z + Math.sin(orb)*R);
   camPos.copy(posA).lerp(posB, w);
   camera.position.lerp(camPos, 1 - Math.pow(.03, dt));
   const lookA = new THREE.Vector3(bp.x, 3, bp.z).add(tan.clone().multiplyScalar(12)); const lookB = new THREE.Vector3(s.pos.x, portrait ? -9 : 2, s.pos.z); if(!portrait){ const rightV = new THREE.Vector3().subVectors(lookB, camera.position).setY(0).normalize().cross(up).multiplyScalar(s.group.userData.r + 14); lookB.add(rightV); } look.copy(lookA).lerp(lookB, w);
