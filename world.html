@@ -139,6 +139,7 @@ const STOPS = [
 import * as THREE from 'three';
 const $ = s => document.querySelector(s);
 const canvas = $('#c');
+$('#mode').addEventListener('click', () => { const n = !document.documentElement.classList.contains('night'); document.documentElement.classList.toggle('night', n); $('#mode').textContent = n ? '☀️' : '🌙'; });
 let renderer;
 try { renderer = new THREE.WebGLRenderer({canvas, antialias:true, powerPreference:'high-performance'}); }
 catch(e){ renderer = null; }
@@ -147,7 +148,7 @@ catch(e){ renderer = null; }
 if(!renderer){
   const f=$('#flat'); f.style.display='block';
   f.innerHTML = '<div class="f" style="text-align:center"><div style="font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:#5b6b80">Dr. Arun Korath</div><h1 style="font-family:Syne,sans-serif;font-size:44px;margin:6px 0">Arun\'s World</h1><p style="color:#5b6b80">3D is off in this browser right now. In Chrome, type <b>chrome://restart</b> in the address bar to bring it back and sail the islands. Meanwhile, here is the voyage as a scroll.</p></div>' + STOPS.map(s=>`<div class="f"><div style="font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:#ff7a3d;font-weight:600">${s.n}</div><h2 style="font-family:Syne,sans-serif;margin:6px 0 10px">${s.title}</h2>${s.html}</div>`).join('');
-  $('#intro').remove(); $('#dock').remove(); $('#hint').remove(); $('#arrows').remove();
+  $('#intro').remove(); $('#dock').remove(); $('#hint').remove(); $('#arrows').remove(); $('#snd').remove();
   document.body.style.overflow='auto';
 } else {
 
@@ -350,7 +351,7 @@ function showStop(i){ if(i===activeIdx) return; activeIdx = i; if(i<0){ card.cla
 /* ===================== DAY / NIGHT ===================== */
 function applyMode(){ const T = night ? NIGHT : DAY; for(const k in T){ if(typeof T[k]==='number' && k!=='exp' && !['sunI','hemiI'].includes(k)){ cur[k] = T[k]; } } }
 let mix = 0; // 0 day, 1 night
-$('#mode').onclick = () => { night = !night; document.documentElement.classList.toggle('night', night); $('#mode').textContent = night ? '☀️' : '🌙'; click(); };
+$('#mode').addEventListener('click', () => { night = !night; click(); });
 const tmpA = new THREE.Color(), tmpB = new THREE.Color();
 function lerpCol(a, b, k){ return tmpA.set(a).lerp(tmpB.set(b), k).clone(); }
 
