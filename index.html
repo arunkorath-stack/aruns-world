@@ -327,8 +327,7 @@ function loop(){
   camera.fov = 40 - 2.5*beat; camera.updateProjectionMatrix();
   controls.update(); renderer.render(scene, camera);
 }
-// auto-start the intro once (audio needs a click, so only visuals + text here)
-setTimeout(()=>{ U.uProgress.value=0; introT=performance.now(); setTimeout(()=>L[0].classList.add('show'),2600); setTimeout(()=>L[1].classList.add('show'),3500); setTimeout(()=>L[2].classList.add('show'),5300); }, 300);
+target=0; U.uProgress.value=0;
 loop();
 </script>
 </body>
