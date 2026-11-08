@@ -163,7 +163,7 @@ function driveWorld(scene, curve, theme, V, n, len, opts, crowd) {
   }
   // city skyline both sides: near row of mid-rise, far row of towers
   const winTex = windowTexture('#ffd28c'); const bM = new THREE.MeshStandardMaterial({ color: 0x0c0d16, emissive: 0xffffff, emissiveMap: winTex, emissiveIntensity: .9, roughness: .9 });
-  const bGeo = new THREE.BoxGeometry(1, 1, 1); const near = Math.floor(len / 3) * 2, far = 44; const bld = new THREE.InstancedMesh(bGeo, bM, near + far); k = 0; const q4 = new THREE.Quaternion(); const sc = new THREE.Vector3();
+  const city = !V || V.skyline !== false && V.skyline; const bGeo = new THREE.BoxGeometry(1, 1, 1); const near = city ? Math.floor(len / 3) * 2 : 4, far = city ? 44 : 8; const bld = new THREE.InstancedMesh(bGeo, bM, near + far); k = 0; const q4 = new THREE.Quaternion(); const sc = new THREE.Vector3();
   for (let i = 0; i < near; i++) { const t = (Math.floor(i / 2) + .5) / (near / 2); const p = curve.getPointAt(t), tan = curve.getTangentAt(t); const side = new THREE.Vector3(-tan.z, 0, tan.x).normalize(); const sgn = i % 2 ? 1 : -1; const w = 2 + Math.random() * 2.5, h = 3 + Math.random() * 9, d = 2 + Math.random() * 2.5; const c = p.clone().addScaledVector(side, sgn * (8 + Math.random() * 6)); m4.compose(new THREE.Vector3(c.x, h / 2, c.z), q4, sc.set(w, h, d)); bld.setMatrixAt(k++, m4); }
   for (let i = 0; i < far; i++) { const w = 3 + Math.random() * 5, h = 10 + Math.random() * 22, d = 3 + Math.random() * 5; const x = (i % 2 ? 1 : -1) * (18 + Math.random() * 26); const z = -Math.random() * (len + 40) + 10; m4.compose(new THREE.Vector3(x, h / 2, z), q4, sc.set(w, h, d)); bld.setMatrixAt(k++, m4); }
   bld.instanceMatrix.needsUpdate = true; scene.add(bld);
@@ -181,16 +181,16 @@ function driveWorld(scene, curve, theme, V, n, len, opts, crowd) {
 // Per-chapter scenery: each chapter of a world looks different (sky, water/ground, roadside life, a landmark behind the goal)
 const VAR = {
   drive: [
-    { name:'Neon city', sky:0x0b0714, fog:0x120a24, ground:0x1a1030, grid:0x6f44c9, crowd:['🙋','🙌','👏','🎉','📣','🏙️','🚕','📸','🥳','🌃'], extra:['🏙️','🌆','🏢'], landmark:'🏙️', treeCol:0xff7fb0 },
+    { name:'Neon city', skyline:true, sky:0x0b0714, fog:0x120a24, ground:0x1a1030, grid:0x6f44c9, crowd:['🙋','🙌','👏','🎉','📣','🏙️','🚕','📸','🥳','🌃'], extra:['🏙️','🌆','🏢'], landmark:'🏙️', treeCol:0xff7fb0 },
     { name:'Desert highway', sky:0x1a0f0a, fog:0x3a2210, ground:0x5a3a1c, grid:0x8a5a2a, asph:0x3a3028, crowd:['🐪','🌵','🙋','🏜️','🦂','🙌','🏕️','⛽','🪨','🎉'], extra:['🏜️','🐪','🌵'], landmark:'🏜️', treeCol:0xc98a3a },
     { name:'Coast road', sky:0x061a2a, fog:0x0e3350, ground:0x0f3a5a, grid:0x2a7aa0, asph:0x2a2e36, crowd:['🌊','⛵','🙋','🐚','🦀','🙌','🏖️','🪸','🎉','🚤'], extra:['🌊','⛵','🏝️'], landmark:'🌉', treeCol:0x3ad0c0 },
     { name:'Mountain pass', sky:0x070b18, fog:0x1a2240, ground:0x2a3040, grid:0x4a5a7a, asph:0x2a2a33, crowd:['🏔️','🌲','🙋','🦌','🧗','🙌','⛺','🦅','🎉','🪵'], extra:['🏔️','🏔️','🌲'], landmark:'🏔️', treeCol:0x2f7a4a },
-    { name:'Rain city', sky:0x05070f, fog:0x0c1226, ground:0x0f1430, grid:0x3a4a9a, asph:0x1e2230, crowd:['☔','🌧️','🙋','🚖','🏢','🙌','💡','🧥','🎉','🚦'], extra:['🌧️','🏢','⛈️'], landmark:'🌃', treeCol:0x4a7aff },
-    { name:'Sunset highway', sky:0x2a0a1a, fog:0x6a1a3a, ground:0x4a1a2a, grid:0xc9446f, asph:0x2a2630, crowd:['🌇','🙋','🎸','🙌','🚗','📸','🏍️','🎉','🌴','🥳'], extra:['🌇','🌴','🎡'], landmark:'🌅', treeCol:0xff9a3a },
+    { name:'Rain city', skyline:true, sky:0x05070f, fog:0x0c1226, ground:0x0f1430, grid:0x3a4a9a, asph:0x1e2230, crowd:['☔','🌧️','🙋','🚖','🏢','🙌','💡','🧥','🎉','🚦'], extra:['🌧️','🏢','⛈️'], landmark:'🌃', treeCol:0x4a7aff },
+    { name:'Sunset highway', skyline:true, sky:0x2a0a1a, fog:0x6a1a3a, ground:0x4a1a2a, grid:0xc9446f, asph:0x2a2630, crowd:['🌇','🙋','🎸','🙌','🚗','📸','🏍️','🎉','🌴','🥳'], extra:['🌇','🌴','🎡'], landmark:'🌅', treeCol:0xff9a3a },
     { name:'Snow road', sky:0x0a1420, fog:0x3a4a60, ground:0xdfe8f2, grid:0xbfd0e0, asph:0x3a4048, k1:0x1e62ff, crowd:['❄️','⛄','🙋','🎿','🦌','🙌','🏔️','☕','🎉','🧣'], extra:['🏔️','❄️','🌲'], landmark:'🗻', treeCol:0xe8f4ff },
     { name:'Forest road', sky:0x05100a, fog:0x0c2a16, ground:0x0f2a16, grid:0x2a6a3a, asph:0x2a2a28, crowd:['🌲','🦌','🙋','🦉','🍄','🙌','🏕️','🐿️','🎉','🪵'], extra:['🌲','🌳','🌲'], landmark:'🌲', treeCol:0x2faa5a },
-    { name:'Airport run', sky:0x0a0f1a, fog:0x1a2230, ground:0x202830, grid:0x5a6a7a, asph:0x2a2e33, crowd:['✈️','🧳','🙋','🛫','🚌','🙌','🏭','📡','🎉','🛬'], extra:['✈️','🏭','🛫'], landmark:'🛬', treeCol:0x9ab0c0 },
-    { name:'Dawn finish', sky:0x2a1a0a, fog:0x8a5a2a, ground:0x5a4a2a, grid:0xd9a24a, asph:0x2a2a33, crowd:['🌅','🏁','🙋','🎉','🏆','🙌','📸','🥳','🎊','🚩'], extra:['🌅','🏁','🎆'], landmark:'🏆', treeCol:0xffc44a }
+    { name:'Airport run', skyline:true, sky:0x0a0f1a, fog:0x1a2230, ground:0x202830, grid:0x5a6a7a, asph:0x2a2e33, crowd:['✈️','🧳','🙋','🛫','🚌','🙌','🏭','📡','🎉','🛬'], extra:['✈️','🏭','🛫'], landmark:'🛬', treeCol:0x9ab0c0 },
+    { name:'Dawn finish', skyline:true, sky:0x2a1a0a, fog:0x8a5a2a, ground:0x5a4a2a, grid:0xd9a24a, asph:0x2a2a33, crowd:['🌅','🏁','🙋','🎉','🏆','🙌','📸','🥳','🎊','🚩'], extra:['🌅','🏁','🎆'], landmark:'🏆', treeCol:0xffc44a }
   ],
   island: [
     { name:'Blue lagoon', sky:0x5e8dff, fog:0x9fd0ff, ground:0x2f7df6, crowd:['🙋','🏝️','🌴','🐬','🐢','⛵','🐠','🛟','🦜','🌺'], extra:['🏝️','🌴','🐬'], landmark:'🏝️' },
@@ -287,7 +287,7 @@ function build(el, opts) {
   }
   // chapter landmark behind the goal and big scenery pieces along the horizon
   if (V) { const lm = sprite(emojiTexture(V.landmark), 9, 9); const gp = curve.getPointAt(1); lm.position.set(gp.x + 4, 5.5, gp.z - 14); scene.add(lm); crowd.push(lm);
-    for (let i = 0; i < 9; i++) { const e = V.extra[i % V.extra.length]; const sp = sprite(emojiTexture(e), 3.5 + Math.random() * 3, 3.5 + Math.random() * 3); const t = (i + .5) / 9; const p = curve.getPointAt(t); const tan = curve.getTangentAt(t); const side = new THREE.Vector3(-tan.z, 0, tan.x).normalize(); const sgn = i % 2 ? 1 : -1; sp.position.copy(p).addScaledVector(side, sgn * (9 + Math.random() * 6)); sp.position.y = 2.2 + Math.random(); scene.add(sp); } }
+    for (let i = 0; i < (V.skyline ? 9 : 22); i++) { const e = V.extra[i % V.extra.length]; const sp = sprite(emojiTexture(e), 3.5 + Math.random() * 3, 3.5 + Math.random() * 3); const t = (i + .5) / 9; const p = curve.getPointAt(t); const tan = curve.getTangentAt(t); const side = new THREE.Vector3(-tan.z, 0, tan.x).normalize(); const sgn = i % 2 ? 1 : -1; sp.position.copy(p).addScaledVector(side, sgn * (9 + Math.random() * 6)); sp.position.y = 2.2 + Math.random(); scene.add(sp); } }
   // stars (night themes)
   if ((opts.theme !== 'island' || (V && V.sky < 0x303030)) && !(isDrive && V && V.sky > 0x200000)) { const sg = new THREE.BufferGeometry(); const sp = []; for (let i = 0; i < 400; i++) sp.push((Math.random() - .5) * 200, 20 + Math.random() * 60, -Math.random() * 200 + 40); sg.setAttribute('position', new THREE.Float32BufferAttribute(sp, 3)); scene.add(new THREE.Points(sg, new THREE.PointsMaterial({ color: 0xffffff, size: .35, transparent: true, opacity: .8 }))); }
   else { for (let i = 0; i < 6; i++) { const c = sprite(emojiTexture('☁️'), 6, 3.5); c.position.set((Math.random() - .5) * 60, 9 + Math.random() * 5, -Math.random() * len - 5); c.userData.cloud = .3 + Math.random() * .4; scene.add(c); crowd.push(c); } }
