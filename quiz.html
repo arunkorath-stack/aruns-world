@@ -38,13 +38,12 @@ table{width:100%;border-collapse:collapse;font-size:13px}th{text-align:left;colo
 .vidgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}.vid iframe,.vid video{width:100%;aspect-ratio:16/9;border:0;border-radius:10px;background:#000}
 footer{position:relative;z-index:1;color:var(--muted);font-size:12px;text-align:center;padding:30px 20px;border-top:1px solid var(--line)}
 @media (max-width:640px){td,th{padding:8px 4px}.hide-m{display:none}main{padding:14px}}
-/* ============ top tabs + games ============ */
-.topnav{display:flex;gap:4px;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:4px;backdrop-filter:blur(6px)}
-.topnav button{background:none;border:0;color:var(--text);opacity:.75;font:inherit;font-weight:700;font-size:13px;padding:8px 16px;border-radius:999px;cursor:pointer;transition:background .2s,opacity .2s}
-.topnav button:hover{opacity:1}
-.topnav button[aria-current=page]{background:var(--acc);color:#120a1f;opacity:1}
-.topnav button:focus-visible,.subtabs button:focus-visible{outline:2px solid var(--acc2);outline-offset:2px}
-@media (max-width:700px){header{flex-wrap:wrap}.topnav{order:3;width:100%;justify-content:center}}
+/* ============ world tabs (Chapters / Games) ============ */
+.worldtabs{display:flex;gap:4px;width:max-content;max-width:100%;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:4px;margin:14px 0 4px;backdrop-filter:blur(6px)}
+.worldtabs button{background:none;border:0;color:var(--text);opacity:.8;font:inherit;font-weight:700;font-size:14px;padding:9px 18px;border-radius:999px;cursor:pointer;transition:background .2s,opacity .2s}
+.worldtabs button:hover{opacity:1}
+.worldtabs button[aria-selected=true]{background:var(--acc);color:#fff;opacity:1}
+.worldtabs button:focus-visible,.subtabs button:focus-visible{outline:2px solid var(--acc2);outline-offset:2px}
 .subtabs{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 16px}
 .gamehead{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:12px}
 .gamehead p{margin:0;color:var(--muted);max-width:700px}
@@ -361,20 +360,13 @@ body.t-island .ringwrap .c{stroke:rgba(0,0,0,.12)}
 </style></head><body class="t-hub">
 <div id="scene"></div>
 <canvas id="confetti"></canvas>
-<header><a href="#" class="brand" onclick="goHub();return false" id="brand">Chapter Quiz Hub<small>University of Kalba · Dr Arun Korath</small></a><nav class="topnav" aria-label="Main"><button type="button" id="navWorlds" aria-current="page" onclick="goHub()">🌍 Worlds</button><button type="button" id="navGames" onclick="openGames()">🎮 Games</button></nav><div class="who" id="who"></div></header>
+<header><a href="#" class="brand" onclick="goHub();return false" id="brand">Chapter Quiz Hub<small>University of Kalba · Dr Arun Korath</small></a><div class="who" id="who"></div></header>
 <main>
 
 <section class="view on" id="v-hub">
   <h1>Pick your world.</h1>
   <p class="sub">Every subject is its own little world. Start any chapter, in any order — each quiz is one race you can run once. Every answer is recorded; on the dashboard you appear only as a codename.</p>
   <div id="portals" class="portals"><span class="spin"></span> Loading worlds…</div>
-</section>
-
-<section class="view" id="v-games">
-  <h1>Games</h1>
-  <p class="sub">Learn by playing. Each game teaches one big idea from your course. Play as often as you like — nothing here counts towards your marks.</p>
-  <div class="subtabs" role="tablist" aria-label="Games" id="gameTabs"></div>
-  <div id="gameBody"></div>
 </section>
 
 <section class="view" id="v-ident">
@@ -390,8 +382,10 @@ body.t-island .ringwrap .c{stroke:rgba(0,0,0,.12)}
 </section>
 
 <section class="view" id="v-chapters">
-  <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn g s" onclick="goHub()">← Worlds</button> <button class="btn g s" onclick="openDash()">📊 Dashboard</button></div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn g s" onclick="goHub()">← Worlds</button> <button class="btn g s" id="dashBtn" onclick="openDash()">📊 Dashboard</button></div>
+  <div id="worldTabs"></div>
   <div id="chHead"></div>
+  <div id="worldGames" hidden></div>
   <div id="generalVideos"></div>
   <div id="chScene"></div>
   <div id="chPanel" class="panel"></div>
@@ -469,10 +463,11 @@ const THEMES={
   island:{name:"Idea Island",brand:'IDEA ISLAND 🚢',tag:'Drag to explore. Each island is waiting for your rescue ship. Clear both quizzes of a chapter to reach it and bring home its treasure.',cta:'Set sail →',panelCta:'Sail to this island',ranks:['Deckhand','Sailor','Navigator','Captain','Admiral of the islands 🏆'],chapterWord:'Island',treasures:['🗝️','🐚','🪙','📿','🏺','🧭','🗺️','⚓','💎','💰'],treasureWord:'treasure',badge:'Island Legend'},
   gallery:{name:'The Rescue',brand:'The Rescue 🔦',tag:'Layla has been taken by the Crow gang. Captain Rami and his three followers — Noor, Omar and Dana — must cross one hurdle per chapter to reach her. Clear both quizzes of a chapter to pass its gate and win a token.',cta:'Join the rescue →',panelCta:'Face this hurdle',ranks:['Villager','Scout','Pathfinder','Captain','Leader of the Rescue 🏆'],chapterWord:'Hurdle',treasures:['🔦','🗺️','🪢','🛡️','🔥','🗝️','📯','⚔️','🧭','👑'],treasureWord:'token',badge:'Leader of the Rescue'}
 };
-THEMES.cargo={...THEMES.island,visual:'island',name:'Cargo Run',brand:'CARGO RUN 🚢',tag:'Drag to explore. Every port is waiting for its delivery. Clear both quizzes of a chapter to dock there and unload its cargo.',cta:'Load the ship →',panelCta:'Sail to this port',ranks:['Dock hand','Buyer','Category manager','Supply chain manager','Chief procurement officer 🏆'],chapterWord:'Port',treasures:['📦','🚚','🏭','🧾','⚓','🛳️','🏗️','📈','🤝','🧭','🌍','🏆'],treasureWord:'cargo',badge:'Master of the Supply Chain'};
+THEMES.cargo={...THEMES.island,visual:'island',name:'Procurement and Supply Chain Management',brand:'PROCUREMENT & SUPPLY CHAIN 🚢',tag:'Drag to explore. Every port is waiting for its delivery. Clear both quizzes of a chapter to dock there and unload its cargo.',cta:'Load the ship →',panelCta:'Sail to this port',ranks:['Dock hand','Buyer','Category manager','Supply chain manager','Chief procurement officer 🏆'],chapterWord:'Port',treasures:['📦','🚚','🏭','🧾','⚓','🛳️','🏗️','📈','🤝','🧭','🌍','🏆'],treasureWord:'cargo',badge:'Master of the Supply Chain'};
 /* Procurement & Supply Chain: shown as its own world even before it is added to the Sheet */
 const isPSC=s=>!!s&&(/procure|supply/i.test(s.title||'')||s.code==='MGMT3XX'||s.code==='PSC');
-const PSC_PLACEHOLDER={code:'PSC',title:'Procurement & Supply Chain',term:'Spring 2026/27',placeholder:true,chapters:[]};
+const PSC_CHAPTERS=['Introduction to Purchasing and Supply Chain Management','The Purchasing Process','Category Strategy Development','Supplier Evaluation and Selection','Supplier Management and Development','Supply Chain Information Systems and E-Sourcing','Worldwide Sourcing','Strategic Cost Management','Negotiation and Conflict Management','Contract Management','Purchasing Law and Ethics'];
+const PSC_PLACEHOLDER={code:'MGMT3XX',title:'Procurement and Supply Chain Management',term:'Spring 2026/27',placeholder:true,generalVideos:0,chapters:PSC_CHAPTERS.map((t,i)=>({chapter:i+1,title:t,clos:'',q1:0,q2:0,videos:0}))};
 function treasureOf(ch){const t=S.theme||THEMES.drive;return t.treasures[(ch-1)%t.treasures.length]}
 const SUBJECT_THEME={MGMT160:'drive',MGMT363:'island',MGMT464:'gallery'};
 const order=['drive','island','gallery'];
@@ -489,24 +484,42 @@ function setTheme(themeName){
 }
 
 /* ================= nav ================= */
-function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.remove('on'));$('#v-'+v).classList.add('on');window.scrollTo(0,0);renderWho();const g=v==='games';$(g?'#navGames':'#navWorlds').setAttribute('aria-current','page');$(g?'#navWorlds':'#navGames').removeAttribute('aria-current');if(!g&&location.hash.startsWith('#games'))history.replaceState(null,'',location.pathname+location.search)}
-function goHub(){stopTimer();engine(false);if(window.G3D){G3D.destroy();G3D.stageDestroy();}S.g3d=false;setTheme(null);go('hub')}
-/* ================= GAMES tab ================= */
+function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.remove('on'));$('#v-'+v).classList.add('on');window.scrollTo(0,0);renderWho();}
+function goHub(){worldTab='chapters';curGame=null;if($('#worldGames'))$('#worldGames').innerHTML='';if(location.hash)history.replaceState(null,'',location.pathname+location.search);stopTimer();engine(false);if(window.G3D){G3D.destroy();G3D.stageDestroy();}S.g3d=false;setTheme(null);go('hub')}
+/* ================= GAMES inside a world ================= */
 const GAMES=[
-  {id:'bullwhip',tab:'📦 Supply Chain Game',course:'Procurement & Supply Chain',title:'Supply Chain Game: the bullwhip effect',src:'games/bullwhip/',
-   about:'Run one company in a chain of four — Retailer, Wholesaler, Distributor or Factory. Order stock every week, fight delays, and see how small changes in customer demand turn into huge swings up the chain.'}
+  {id:'bullwhip',subject:isPSC,tab:'📦 Supply Chain Game',title:'Supply Chain Game: the bullwhip effect',src:'games/bullwhip/',
+   about:'Run one company in a chain of four — Retailer, Wholesaler, Distributor or Factory. Order stock every week, fight delays, and see how small changes in customer demand turn into huge swings up the chain. Play as often as you like; it does not count towards your marks.'}
 ];
-let curGame=null;
-function openGames(id){
-  stopTimer();engine(false);if(window.G3D){G3D.destroy();G3D.stageDestroy();}S.g3d=false;setTheme(null);
-  const g=GAMES.find(x=>x.id===id)||GAMES.find(x=>x.id===curGame)||GAMES[0];
-  go('games');
-  history.replaceState(null,'','#games/'+g.id);
-  $('#gameTabs').innerHTML=GAMES.map(x=>`<button type="button" role="tab" class="btn s ${x.id===g.id?'':'g'}" aria-selected="${x.id===g.id}" onclick="openGames('${x.id}')">${esc(x.tab)}</button>`).join('');
-  if(curGame===g.id&&$('#gameBody iframe'))return; // keep a game in progress
+let worldTab='chapters',curGame=null;
+function gamesFor(s){return GAMES.filter(g=>g.subject(s))}
+/* games need no sign-in: show the world header and its Games tab only */
+function openWorldGamesOnly(){stopTimer();engine(false);if(window.G3D){G3D.destroy();G3D.stageDestroy();}S.g3d=false;go('chapters');const s=S.subject,t=S.theme;$('#chPanel').innerHTML='';$('#chScene').innerHTML='';$('#generalVideos').innerHTML='';
+  $('#chHead').innerHTML=`<h1>${esc(t.name)}</h1><p class="sub"><b>${esc(s.code)} · ${esc(s.title)}</b></p><div id="badgeBar"></div>`;
+  worldTab='games';renderWorldTabs();
+  $('#wtChapters').onclick=()=>{worldTab='chapters';pickSubject(s.code);};}
+function renderWorldTabs(){
+  const games=gamesFor(S.subject);
+  if(!games.length){$('#worldTabs').innerHTML='';showWorldTab('chapters');return;}
+  $('#worldTabs').innerHTML=`<div class="worldtabs" role="tablist" aria-label="In this world"><button type="button" role="tab" id="wtChapters" aria-selected="${worldTab==='chapters'}" onclick="showWorldTab('chapters')">📚 Chapters &amp; quizzes</button><button type="button" role="tab" id="wtGames" aria-selected="${worldTab==='games'}" onclick="showWorldTab('games')">🎮 Games</button></div>`;
+  showWorldTab(worldTab);
+}
+function showWorldTab(tab){
+  worldTab=tab;const g=tab==='games';
+  ['#generalVideos','#chScene','#chPanel','#badgeBar','#chHead .sub'].forEach(sel=>{const el=$(sel);if(el)el.hidden=g;});
+  $('#dashBtn').hidden=g||!!S.subject.placeholder||!S.student;
+  $('#worldGames').hidden=!g;
+  const a=$('#wtChapters'),b=$('#wtGames');if(a){a.setAttribute('aria-selected',!g);b.setAttribute('aria-selected',g);}
+  if(g)openGame(curGame);
+  if(isPSC(S.subject))history.replaceState(null,'','#'+(g?'games':'chapters')+'/'+S.subject.code);
+}
+function openGame(id){
+  const list=gamesFor(S.subject);const g=list.find(x=>x.id===id)||list[0];if(!g)return;
+  const tabs=`<div class="subtabs" role="tablist" aria-label="Games">${list.map(x=>`<button type="button" role="tab" class="btn s ${x.id===g.id?'':'g'}" aria-selected="${x.id===g.id}" onclick="openGame('${x.id}')">${esc(x.tab)}</button>`).join('')}</div>`;
+  if(curGame===g.id&&$('#worldGames iframe')){$('#worldGames .subtabs').outerHTML=tabs;return;} // keep a game in progress
   curGame=g.id;
   const cls=g.id==='bullwhip'&&CFG.beerGameUrl?`<div class="note classmode">🏫 <b>Class game with your classmates:</b> when your teacher starts a class game, open <a href="${esc(CFG.beerGameUrl)}" target="_blank" rel="noopener">${esc(CFG.beerGameUrl.replace(/^https?:\/\//,''))}</a> and type the class code.</div>`:'';
-  $('#gameBody').innerHTML=`<div class="gamehead"><div><div class="k">${esc(g.course)}</div><h2 style="margin:4px 0 6px">${esc(g.title)}</h2><p>${esc(g.about)}</p></div><a class="btn g s fullscr" href="${esc(g.src)}" target="_blank" rel="noopener">Open full screen ↗</a><a class="btn playm" href="${esc(g.src)}">▶ Play the game</a></div><iframe class="gameframe" src="${esc(g.src)}" title="${esc(g.title)}" loading="lazy"></iframe>${cls}`;
+  $('#worldGames').innerHTML=`${tabs}<div class="gamehead"><div><h2 style="margin:4px 0 6px">${esc(g.title)}</h2><p>${esc(g.about)}</p></div><a class="btn g s fullscr" href="${esc(g.src)}" target="_blank" rel="noopener">Open full screen ↗</a><a class="btn playm" href="${esc(g.src)}">▶ Play the game</a></div><iframe class="gameframe" src="${esc(g.src)}" title="${esc(g.title)}" loading="lazy"></iframe>${cls}`;
   snd('tick');
 }
 function renderWho(){$('#who').innerHTML=(S.student?`Playing as <b>${esc(S.student.codename)}</b> <button class="link" onclick="signOut()">not you?</button>`:'<span>Not signed in</span>')+`<button class="icon" title="sound" onclick="toggleMute()">${muted?'🔇':'🔊'}</button>`}
@@ -523,10 +536,11 @@ async function loadSubjects(){
   try{ const j=await api('subjects',{}); S.subjects=j.subjects; if(!S.subjects.some(isPSC)) S.subjects=[...S.subjects,PSC_PLACEHOLDER]; }
   catch(e){ $('#portals').innerHTML=`<div class="err">Could not load subjects: ${esc(e.message)}</div>`; return; }
   $('#portals').innerHTML=S.subjects.map((s,i)=>{const key=themeKey(s.code,i),t=THEMES[key];const pub=s.chapters.filter(c=>c.q1>0||c.q2>0).length;
-    if(s.placeholder) return`<div class="portal" onclick="openGames('bullwhip')">${miniScene(visualOf(key))}<div class="txt"><div class="k">New · ${esc(s.term||'')}</div><h3>${esc(s.title)}</h3><div class="m">${esc(t.name)} · chapter quizzes coming soon · 🎮 Supply Chain Game ready to play</div><span class="cta">Play the Supply Chain Game →</span></div></div>`;
+    if(isPSC(s)) return`<div class="portal" onclick="pickSubject('${esc(s.code)}')">${miniScene(visualOf(key))}<div class="txt"><div class="k">${esc(s.code)} · ${esc(s.term||'')}</div><h3>${esc(t.name)}</h3><div class="m">${s.chapters.length} chapters · ${pub?pub+' ready to play':'quizzes coming soon'} · 🎮 Supply Chain Game inside</div><span class="cta">${esc(t.cta)}</span></div></div>`;
     return`<div class="portal" onclick="pickSubject('${esc(s.code)}')">${miniScene(visualOf(key))}<div class="txt"><div class="k">${esc(s.code)} · ${esc(s.term||'')}</div><h3>${esc(s.title)}</h3><div class="m">${esc(t.name)} · ${s.chapters.length} chapters · ${pub} ready to play${s.chapters.some(c=>c.videos>0)||s.generalVideos?' · 🎬 videos':''}</div><span class="cta">${esc(t.cta)}</span></div></div>`}).join('')||'<div class="note">No subjects published yet.</div>';
 }
 function pickSubject(code){S.subject=S.subjects.find(s=>s.code===code);const i=S.subjects.indexOf(S.subject);setTheme(themeKey(code,i));snd('tick');
+  if(S.subject.placeholder){openChapters();return;}
   if(!S.student){$('#identTitle').textContent=S.subject.code+' · who\'s playing?';go('ident');$('#inId').focus();}
   else if(!S.confirmed){ confirmWho(); } else openChapters();}
 /* on a shared device: confirm the remembered student once per visit before anything is recorded */
@@ -562,12 +576,14 @@ async function openChapters(){
   stopTimer(); engine(false);if(window.G3D){G3D.destroy();G3D.stageDestroy();}S.g3d=false;go('chapters'); const s=S.subject,t=S.theme; $('#chPanel').innerHTML='';
   $('#chHead').innerHTML=`<h1>${esc(t.name)}</h1><p class="sub"><b>${esc(s.code)} · ${esc(s.title)}</b><br>${esc(t.tag)} Two quizzes per chapter: <b>Quiz 1 · Ideas</b> checks understanding, <b>Quiz 2 · Applied</b> makes you apply and analyse. Start with <b>any chapter you like</b>, in any order — but <b>each quiz can be taken only once</b>. <b>Quiz 2 is acted out</b>: characters play the situation in a short scene, then you make the call. Each quiz is a journey of 8 stops: answer correctly to move on; a wrong answer opens <b>another way</b> — a new question on the same idea — up to three times, then a study stop. Only your first answer at each stop counts for your mark.</p><div id="badgeBar"></div>`;
   $('#chScene').innerHTML='<span class="spin"></span> Loading your progress…';
+  if(s.placeholder){ S.progress={}; S.videos=[]; S.levels=[]; S.next=null; S.allDone=false; } else
   try{ const [p,v]=await Promise.all([api('myProgress',{studentId:S.student.studentId,subject:s.code}),api('videos',{subject:s.code})]); S.progress=p.progress; S.levels=p.levels||[]; S.next=p.next||null; S.allDone=!!p.allDone; S.videos=v.videos; }catch(e){ S.progress={}; S.videos=[]; S.levels=[]; S.next=null; S.allDone=false; }
   renderBadgeBar();
   const gen=S.videos.filter(v=>!v.chapter);
   $('#generalVideos').innerHTML=gen.length?`<div class="k" style="margin:8px 0">Course videos</div><div class="vidgrid" style="margin-bottom:16px">${gen.map(vidCard).join('')}</div>`:'';
   const key=document.body.className.replace('t-','');
   if(key==='drive') renderRoad(); else if(key==='island') renderRing(); else renderWall();
+  renderWorldTabs();
 }
 function renderBadgeBar(){const t=S.theme,s=S.subject;const got=S.subject.chapters.filter(chDone);const shelf=S.subject.chapters.map(c=>`<span class="tre ${chDone(c)?'got':''}" title="${esc(t.chapterWord)} ${c.chapter}${chDone(c)?' · collected':' · not yet'}">${chDone(c)?treasureOf(c.chapter):'<i>?</i>'}</span>`).join('');
   const open=S.subject.chapters.reduce((n,c)=>n+[1,2].filter(q=>qState(c.chapter,q)==='open').length,0);const nextTxt=S.allDone?'':S.next?`${open} quiz${open===1?'':'zes'} open — pick any. Suggested next: <b>${esc(t.chapterWord)} ${S.next.chapter} · Quiz ${S.next.quiz}</b>`:'No quiz is published yet — the first one will appear here soon.';
@@ -880,5 +896,5 @@ async function openDash(){
 }
 
 /* ================= boot ================= */
-(async()=>{await loadCfg();renderWho();loadSubjects();if(location.hash.startsWith('#games'))openGames(location.hash.split('/')[1]);})();
+(async()=>{await loadCfg();renderWho();await loadSubjects();if(/^#(games|chapters)\//.test(location.hash)){const [t,code]=location.hash.slice(1).split('/');const sub=S.subjects.find(x=>x.code===code)||(code==='MGMT3XX'?S.subjects.find(isPSC):null);if(sub){S.subject=sub;setTheme(themeKey(sub.code,S.subjects.indexOf(sub)));worldTab=t==='games'?'games':'chapters';if(sub.placeholder||t==='chapters')pickSubject(sub.code);else openWorldGamesOnly();}}})();
 </script></body></html>
