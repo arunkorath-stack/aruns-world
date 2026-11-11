@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Supply Chain Game · Bullwhip Lab</title>
+<meta name="description" content="Play one company in a four-company supply chain and discover the bullwhip effect.">
+<link rel="preload" href="fonts/atkinson-hyperlegible-next-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/play.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231b2232'/%3E%3Cpath d='M5 20c3 0 3-8 6-8s3 12 6 12 3-16 6-16 3 8 4 8' fill='none' stroke='%23f5f2ea' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  .setup { max-width: 980px; margin: 0 auto; }
+  .setup .lede { font-size: 1.1rem; color: var(--ink-2); margin-top: 10px; }
+  .pick { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 10px; }
+  .pick .radio-card { align-items: center; }
+  .pick .radio-card .ric { width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center; color: var(--c); background: color-mix(in srgb, var(--c) 12%, white); flex: none; }
+  .pick .radio-card .ric svg { width: 22px; height: 22px; }
+  .pick .radio-card input { position: absolute; opacity: 0; }
+  .pick .radio-card { position: relative; }
+  .pick .radio-card:has(input:focus-visible) { outline: 3px solid var(--action); outline-offset: 2px; }
+  .setup section { margin-top: 24px; }
+  .start { min-height: 52px; font-size: 1.05rem; padding: 0 28px; margin-top: 24px; }
+  #new-game { color: #eef1f7; }
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="./" id="brand"></a>
+    <span class="meta" id="hdr-class"></span>
+    <span class="spacer"></span>
+    <span id="hdr-role"></span>
+    <span class="meta" id="hdr-name"></span>
+    <a class="btn ghost small hidden" id="new-game" href="./">New game</a>
+  </div>
+</header>
+<main class="wrap play-main" id="app" aria-live="polite">
+  <form class="setup" id="setup" novalidate>
+    <h1>Supply Chain Game</h1>
+    <p class="lede">You run one company in a chain of four. Every week you order stock. Customers want beverages; goods and orders take time to travel. Keep the cost of the whole chain low.</p>
+    <div id="flow"></div>
+
+    <section>
+      <h2>1. Choose your company</h2>
+      <div class="pick" id="roles"></div>
+    </section>
+
+    <section>
+      <h2>2. Choose the rules</h2>
+      <div class="pick">
+        <label class="radio-card"><input type="radio" name="mode" value="classic" checked><span><b>Classic</b><span class="hint">Orders and goods each take 2 weeks. You see only your own numbers. This is the real challenge.</span></span></label>
+        <label class="radio-card"><input type="radio" name="mode" value="shared"><span><b>Shared information</b><span class="hint">Delays are 1 week. Everyone sees customer demand, all stock levels and goods on the way.</span></span></label>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. Customer demand</h2>
+      <div class="pick">
+        <label class="radio-card"><input type="radio" name="dem" value="classic" checked><span><b>Classic</b><span class="hint">Demand changes once.</span></span></label>
+        <label class="radio-card"><input type="radio" name="dem" value="random"><span><b>Surprise</b><span class="hint">Demand moves up and down. Different every game.</span></span></label>
+      </div>
+    </section>
+
+    <section>
+      <div class="field" style="max-width:360px"><label for="pname">Your name <span class="hint">(optional, stays on this device)</span></label><input id="pname" type="text" maxlength="40" placeholder="Player"></div>
+      <p class="small muted" style="margin-top:10px">The other three companies are played by the computer. The game lasts between 24 and 30 weeks — you will not know exactly when it ends.</p>
+      <button class="primary start" type="submit">Start the game</button>
+    </section>
+  </form>
+</main>
+<script src="js/common.js"></script>
+<script src="js/rules.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/solo.js"></script>
+<script>
+(function () {
+  const { ROLES, ROLE_ICONS, ICONS, esc } = BW;
+  document.getElementById('brand').innerHTML = ICONS.logo + '<span>Bullwhip Lab</span>';
+  document.getElementById('flow').innerHTML = BWRules.flowDiagram(null);
+  const blurb = ['Sells to customers. Sees real demand first.', 'Supplies the Retailer.', 'Supplies the Wholesaler.', 'Makes the product. Production takes time.'];
+  let saved = {};
+  try { saved = JSON.parse(localStorage.getItem('bwl-solo-prefs') || '{}'); } catch (e) { /* ignore */ }
+  document.getElementById('roles').innerHTML = ROLES.map((r, i) => `<label class="radio-card" style="--c:var(--${r.toLowerCase()})"><input type="radio" name="role" value="${i}" ${(saved.role ?? 0) === i ? 'checked' : ''}><span class="ric">${ICONS[ROLE_ICONS[i]]}</span><span><b>${r}</b><span class="hint">${esc(blurb[i])}</span></span></label>`).join('');
+  if (saved.mode) document.querySelector(`input[name=mode][value=${saved.mode}]`).checked = true;
+  if (saved.dem) document.querySelector(`input[name=dem][value=${saved.dem}]`).checked = true;
+  if (saved.name) document.getElementById('pname').value = saved.name;
+
+  document.getElementById('setup').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const role = Number(document.querySelector('input[name=role]:checked').value);
+    const mode = document.querySelector('input[name=mode]:checked').value;
+    const dem = document.querySelector('input[name=dem]:checked').value;
+    const name = document.getElementById('pname').value.trim().slice(0, 40) || 'Player';
+    try { localStorage.setItem('bwl-solo-prefs', JSON.stringify({ role, mode, dem, name })); localStorage.setItem('bwl-token', 'solo'); } catch (err) { /* ignore */ }
+    const socket = BWSolo.create({ role, mode, demandType: dem, name });
+    window.io = () => socket;
+    document.getElementById('new-game').classList.remove('hidden');
+    document.getElementById('app').innerHTML = '';
+    const s = document.createElement('script');
+    s.src = 'js/play.js';
+    document.body.appendChild(s);
+    window.scrollTo(0, 0);
+  });
+})();
+</script>
+</body>
+</html>

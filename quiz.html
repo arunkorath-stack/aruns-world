@@ -38,6 +38,20 @@ table{width:100%;border-collapse:collapse;font-size:13px}th{text-align:left;colo
 .vidgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}.vid iframe,.vid video{width:100%;aspect-ratio:16/9;border:0;border-radius:10px;background:#000}
 footer{position:relative;z-index:1;color:var(--muted);font-size:12px;text-align:center;padding:30px 20px;border-top:1px solid var(--line)}
 @media (max-width:640px){td,th{padding:8px 4px}.hide-m{display:none}main{padding:14px}}
+/* ============ top tabs + games ============ */
+.topnav{display:flex;gap:4px;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:4px;backdrop-filter:blur(6px)}
+.topnav button{background:none;border:0;color:var(--text);opacity:.75;font:inherit;font-weight:700;font-size:13px;padding:8px 16px;border-radius:999px;cursor:pointer;transition:background .2s,opacity .2s}
+.topnav button:hover{opacity:1}
+.topnav button[aria-current=page]{background:var(--acc);color:#120a1f;opacity:1}
+.topnav button:focus-visible,.subtabs button:focus-visible{outline:2px solid var(--acc2);outline-offset:2px}
+@media (max-width:700px){header{flex-wrap:wrap}.topnav{order:3;width:100%;justify-content:center}}
+.subtabs{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 16px}
+.gamehead{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.gamehead p{margin:0;color:var(--muted);max-width:700px}
+.gameframe{display:block;width:100%;height:calc(100vh - 190px);min-height:640px;border:1px solid var(--line);border-radius:var(--radius);background:#f5f2ea}
+.classmode{margin-top:14px}
+.playm{display:none}
+@media (max-width:700px){.gameframe{display:none}.playm{display:inline-flex;margin-top:6px}.fullscr{display:none}}
 @media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
 /* ============ HUB (choose your world) ============ */
@@ -347,13 +361,20 @@ body.t-island .ringwrap .c{stroke:rgba(0,0,0,.12)}
 </style></head><body class="t-hub">
 <div id="scene"></div>
 <canvas id="confetti"></canvas>
-<header><a href="#" class="brand" onclick="goHub();return false" id="brand">Chapter Quiz Hub<small>University of Kalba · Dr Arun Korath</small></a><div class="who" id="who"></div></header>
+<header><a href="#" class="brand" onclick="goHub();return false" id="brand">Chapter Quiz Hub<small>University of Kalba · Dr Arun Korath</small></a><nav class="topnav" aria-label="Main"><button type="button" id="navWorlds" aria-current="page" onclick="goHub()">🌍 Worlds</button><button type="button" id="navGames" onclick="openGames()">🎮 Games</button></nav><div class="who" id="who"></div></header>
 <main>
 
 <section class="view on" id="v-hub">
   <h1>Pick your world.</h1>
   <p class="sub">Every subject is its own little world. Start any chapter, in any order — each quiz is one race you can run once. Every answer is recorded; on the dashboard you appear only as a codename.</p>
   <div id="portals" class="portals"><span class="spin"></span> Loading worlds…</div>
+</section>
+
+<section class="view" id="v-games">
+  <h1>Games</h1>
+  <p class="sub">Learn by playing. Each game teaches one big idea from your course. Play as often as you like — nothing here counts towards your marks.</p>
+  <div class="subtabs" role="tablist" aria-label="Games" id="gameTabs"></div>
+  <div id="gameBody"></div>
 </section>
 
 <section class="view" id="v-ident">
@@ -448,12 +469,18 @@ const THEMES={
   island:{name:"Idea Island",brand:'IDEA ISLAND 🚢',tag:'Drag to explore. Each island is waiting for your rescue ship. Clear both quizzes of a chapter to reach it and bring home its treasure.',cta:'Set sail →',panelCta:'Sail to this island',ranks:['Deckhand','Sailor','Navigator','Captain','Admiral of the islands 🏆'],chapterWord:'Island',treasures:['🗝️','🐚','🪙','📿','🏺','🧭','🗺️','⚓','💎','💰'],treasureWord:'treasure',badge:'Island Legend'},
   gallery:{name:'The Rescue',brand:'The Rescue 🔦',tag:'Layla has been taken by the Crow gang. Captain Rami and his three followers — Noor, Omar and Dana — must cross one hurdle per chapter to reach her. Clear both quizzes of a chapter to pass its gate and win a token.',cta:'Join the rescue →',panelCta:'Face this hurdle',ranks:['Villager','Scout','Pathfinder','Captain','Leader of the Rescue 🏆'],chapterWord:'Hurdle',treasures:['🔦','🗺️','🪢','🛡️','🔥','🗝️','📯','⚔️','🧭','👑'],treasureWord:'token',badge:'Leader of the Rescue'}
 };
+THEMES.cargo={...THEMES.island,visual:'island',name:'Cargo Run',brand:'CARGO RUN 🚢',tag:'Drag to explore. Every port is waiting for its delivery. Clear both quizzes of a chapter to dock there and unload its cargo.',cta:'Load the ship →',panelCta:'Sail to this port',ranks:['Dock hand','Buyer','Category manager','Supply chain manager','Chief procurement officer 🏆'],chapterWord:'Port',treasures:['📦','🚚','🏭','🧾','⚓','🛳️','🏗️','📈','🤝','🧭','🌍','🏆'],treasureWord:'cargo',badge:'Master of the Supply Chain'};
+/* Procurement & Supply Chain: shown as its own world even before it is added to the Sheet */
+const isPSC=s=>!!s&&(/procure|supply/i.test(s.title||'')||s.code==='MGMT3XX'||s.code==='PSC');
+const PSC_PLACEHOLDER={code:'PSC',title:'Procurement & Supply Chain',term:'Spring 2026/27',placeholder:true,chapters:[]};
 function treasureOf(ch){const t=S.theme||THEMES.drive;return t.treasures[(ch-1)%t.treasures.length]}
 const SUBJECT_THEME={MGMT160:'drive',MGMT363:'island',MGMT464:'gallery'};
 const order=['drive','island','gallery'];
-function themeKey(code,i){return SUBJECT_THEME[code]||order[(i||0)%3]}
-function setTheme(key){
-  document.body.className='t-'+(key||'hub'); S.theme=key?THEMES[key]:null;
+function themeKey(code,i){if(isPSC((S.subjects||[]).find(x=>x.code===code)))return'cargo';return SUBJECT_THEME[code]||order[(i||0)%3]}
+function visualOf(key){return (THEMES[key]&&THEMES[key].visual)||key}
+function setTheme(themeName){
+  const key=themeName?visualOf(themeName):null;
+  document.body.className='t-'+(key||'hub'); S.theme=themeName?THEMES[themeName]:null;
   const sc=$('#scene'); sc.innerHTML='';
   if(key==='drive'){ sc.innerHTML='<div class="glow"></div><div class="floor"></div>'; }
   if(key==='island'){ let t=''; for(let i=0;i<14;i++){const x=Math.random()*100,y=58+Math.random()*38,s=.6+Math.random()*.9;t+=`<div class="tr" style="left:${x}%;top:${y}%;transform:scale(${s})"></div>`;} sc.innerHTML=`<div class="cloud" style="top:8%;animation-delay:-5s"></div><div class="cloud" style="top:18%;width:90px;animation-delay:-22s"></div><div class="sea"></div><div class="ship">🚢</div><div class="gull" style="top:22%;animation-delay:-3s">🕊️</div><div class="isle"></div><div class="ring"></div>${t}`; }
@@ -462,8 +489,26 @@ function setTheme(key){
 }
 
 /* ================= nav ================= */
-function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.remove('on'));$('#v-'+v).classList.add('on');window.scrollTo(0,0);renderWho()}
+function go(v){document.querySelectorAll('.view').forEach(x=>x.classList.remove('on'));$('#v-'+v).classList.add('on');window.scrollTo(0,0);renderWho();const g=v==='games';$(g?'#navGames':'#navWorlds').setAttribute('aria-current','page');$(g?'#navWorlds':'#navGames').removeAttribute('aria-current');if(!g&&location.hash.startsWith('#games'))history.replaceState(null,'',location.pathname+location.search)}
 function goHub(){stopTimer();engine(false);if(window.G3D){G3D.destroy();G3D.stageDestroy();}S.g3d=false;setTheme(null);go('hub')}
+/* ================= GAMES tab ================= */
+const GAMES=[
+  {id:'bullwhip',tab:'📦 Supply Chain Game',course:'Procurement & Supply Chain',title:'Supply Chain Game: the bullwhip effect',src:'games/bullwhip/',
+   about:'Run one company in a chain of four — Retailer, Wholesaler, Distributor or Factory. Order stock every week, fight delays, and see how small changes in customer demand turn into huge swings up the chain.'}
+];
+let curGame=null;
+function openGames(id){
+  stopTimer();engine(false);if(window.G3D){G3D.destroy();G3D.stageDestroy();}S.g3d=false;setTheme(null);
+  const g=GAMES.find(x=>x.id===id)||GAMES.find(x=>x.id===curGame)||GAMES[0];
+  go('games');
+  history.replaceState(null,'','#games/'+g.id);
+  $('#gameTabs').innerHTML=GAMES.map(x=>`<button type="button" role="tab" class="btn s ${x.id===g.id?'':'g'}" aria-selected="${x.id===g.id}" onclick="openGames('${x.id}')">${esc(x.tab)}</button>`).join('');
+  if(curGame===g.id&&$('#gameBody iframe'))return; // keep a game in progress
+  curGame=g.id;
+  const cls=g.id==='bullwhip'&&CFG.beerGameUrl?`<div class="note classmode">🏫 <b>Class game with your classmates:</b> when your teacher starts a class game, open <a href="${esc(CFG.beerGameUrl)}" target="_blank" rel="noopener">${esc(CFG.beerGameUrl.replace(/^https?:\/\//,''))}</a> and type the class code.</div>`:'';
+  $('#gameBody').innerHTML=`<div class="gamehead"><div><div class="k">${esc(g.course)}</div><h2 style="margin:4px 0 6px">${esc(g.title)}</h2><p>${esc(g.about)}</p></div><a class="btn g s fullscr" href="${esc(g.src)}" target="_blank" rel="noopener">Open full screen ↗</a><a class="btn playm" href="${esc(g.src)}">▶ Play the game</a></div><iframe class="gameframe" src="${esc(g.src)}" title="${esc(g.title)}" loading="lazy"></iframe>${cls}`;
+  snd('tick');
+}
 function renderWho(){$('#who').innerHTML=(S.student?`Playing as <b>${esc(S.student.codename)}</b> <button class="link" onclick="signOut()">not you?</button>`:'<span>Not signed in</span>')+`<button class="icon" title="sound" onclick="toggleMute()">${muted?'🔇':'🔊'}</button>`}
 function signOut(){localStorage.removeItem('qh_student');try{sessionStorage.removeItem('qh_confirmed')}catch{}S.student=null;S.confirmed=false;renderWho();goHub()}
 function toggleMute(){muted=!muted;localStorage.setItem('qh_mute',muted?'1':'0');renderWho();if(muted){engine(false);hush();}else{snd('tick');if($('#v-quiz').classList.contains('on'))engine(true)}}
@@ -475,10 +520,11 @@ function miniScene(key){
   return `<div class="mini gallery"><div class="orn">A RESCUE STORY</div><div class="torch" style="left:18%"></div><div class="torch" style="right:18%"></div><div class="frame" style="font-size:44px">🧗</div></div>`;
 }
 async function loadSubjects(){
-  try{ const j=await api('subjects',{}); S.subjects=j.subjects; }
+  try{ const j=await api('subjects',{}); S.subjects=j.subjects; if(!S.subjects.some(isPSC)) S.subjects=[...S.subjects,PSC_PLACEHOLDER]; }
   catch(e){ $('#portals').innerHTML=`<div class="err">Could not load subjects: ${esc(e.message)}</div>`; return; }
   $('#portals').innerHTML=S.subjects.map((s,i)=>{const key=themeKey(s.code,i),t=THEMES[key];const pub=s.chapters.filter(c=>c.q1>0||c.q2>0).length;
-    return`<div class="portal" onclick="pickSubject('${esc(s.code)}')">${miniScene(key)}<div class="txt"><div class="k">${esc(s.code)} · ${esc(s.term||'')}</div><h3>${esc(s.title)}</h3><div class="m">${esc(t.name)} · ${s.chapters.length} chapters · ${pub} ready to play${s.chapters.some(c=>c.videos>0)||s.generalVideos?' · 🎬 videos':''}</div><span class="cta">${esc(t.cta)}</span></div></div>`}).join('')||'<div class="note">No subjects published yet.</div>';
+    if(s.placeholder) return`<div class="portal" onclick="openGames('bullwhip')">${miniScene(visualOf(key))}<div class="txt"><div class="k">New · ${esc(s.term||'')}</div><h3>${esc(s.title)}</h3><div class="m">${esc(t.name)} · chapter quizzes coming soon · 🎮 Supply Chain Game ready to play</div><span class="cta">Play the Supply Chain Game →</span></div></div>`;
+    return`<div class="portal" onclick="pickSubject('${esc(s.code)}')">${miniScene(visualOf(key))}<div class="txt"><div class="k">${esc(s.code)} · ${esc(s.term||'')}</div><h3>${esc(s.title)}</h3><div class="m">${esc(t.name)} · ${s.chapters.length} chapters · ${pub} ready to play${s.chapters.some(c=>c.videos>0)||s.generalVideos?' · 🎬 videos':''}</div><span class="cta">${esc(t.cta)}</span></div></div>`}).join('')||'<div class="note">No subjects published yet.</div>';
 }
 function pickSubject(code){S.subject=S.subjects.find(s=>s.code===code);const i=S.subjects.indexOf(S.subject);setTheme(themeKey(code,i));snd('tick');
   if(!S.student){$('#identTitle').textContent=S.subject.code+' · who\'s playing?';go('ident');$('#inId').focus();}
@@ -834,5 +880,5 @@ async function openDash(){
 }
 
 /* ================= boot ================= */
-(async()=>{await loadCfg();renderWho();loadSubjects();})();
+(async()=>{await loadCfg();renderWho();loadSubjects();if(location.hash.startsWith('#games'))openGames(location.hash.split('/')[1]);})();
 </script></body></html>

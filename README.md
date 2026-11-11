@@ -12,6 +12,12 @@ Open-practice chapter quizzes for Dr Arun Korath's courses (MGMT160, MGMT363, MG
 - `config.json` — `scriptUrl` of the deployed Apps Script web app
 - `uploads/` + `.github/workflows/generate.yml` + `scripts/generate.py` — drop a chapter deck in, drafts are generated with the Claude API into the Sheet
 
+## Games tab and the Procurement & Supply Chain world
+- `quiz.html` has two top tabs: **Worlds** (the subjects) and **Games**. Deep link: `quiz.html#games/bullwhip`.
+- **Supply Chain Game** (`games/bullwhip/`): a single-player bullwhip-effect simulation (beer-game rules). The student picks a company; computer players run the other three. Runs fully in the browser, no server. Add more games in `quiz.html` → `GAMES`.
+- Class (multiplayer) version: the separate Bullwhip Lab app (Node.js, e.g. on Render). Put its address in `config.json` → `beerGameUrl` and a "Class game" note appears under the game.
+- **Procurement & Supply Chain** has its own world, *Cargo Run* (ports and cargo). Until the subject exists in the Sheet, the hub shows it with "quizzes coming soon" and a link to the game. To make quizzes live: teacher panel → Subjects → add the subject (any code; a title containing "Procurement" or "Supply" picks the Cargo Run world), then seed its banks as for the other subjects.
+
 ## One-time setup
 1. Create a Google Sheet → Extensions → Apps Script → paste `apps-script/Code.gs` → Run `setup()` once (authorise) → note the TEACHER_KEY in the log.
 2. Deploy → New deployment → Web app → Execute as **Me**, Who has access **Anyone** → copy the `/exec` URL into `config.json`.
