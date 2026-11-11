@@ -466,12 +466,17 @@ const THEMES={
 THEMES.cargo={...THEMES.island,visual:'island',name:'Procurement and Supply Chain Management',brand:'PROCUREMENT & SUPPLY CHAIN 🚢',tag:'Drag to explore. Every port is waiting for its delivery. Clear both quizzes of a chapter to dock there and unload its cargo.',cta:'Load the ship →',panelCta:'Sail to this port',ranks:['Dock hand','Buyer','Category manager','Supply chain manager','Chief procurement officer 🏆'],chapterWord:'Port',treasures:['📦','🚚','🏭','🧾','⚓','🛳️','🏗️','📈','🤝','🧭','🌍','🏆'],treasureWord:'cargo',badge:'Master of the Supply Chain'};
 /* Procurement & Supply Chain: shown as its own world even before it is added to the Sheet */
 const isPSC=s=>!!s&&(/procure|supply/i.test(s.title||'')||s.code==='MGMT3XX'||s.code==='PSC');
+/* Principles of Microeconomics: a game-first world (Saltmarket), shown even before it is added to the Sheet */
+THEMES.micro={...THEMES.island,visual:'island',name:'Principles of Microeconomics',brand:'PRINCIPLES OF MICROECONOMICS 🏝️',tag:'Drag to explore. Every island is a market. Play the Saltmarket game to learn utility, opportunity cost and demand, then clear the quizzes.',cta:'Visit the market →',panelCta:'Sail to this island',ranks:['Beachcomber','Trader','Merchant','Market maker','Economist of the islands 🏆'],chapterWord:'Island',treasures:['🥥','🐟','🪙','⚖️','📉','🏝️','🧺','🛶','📈','🏆'],treasureWord:'treasure',badge:'Master of the Market'};
+const isMICRO=s=>!!s&&(/micro ?econom/i.test(s.title||'')||s.code==='MICRO');
+const MICRO_CHAPTERS=['Scarcity and choice','Utility and diminishing marginal utility','Opportunity cost','Demand and the demand curve','Supply and equilibrium'];
+const MICRO_PLACEHOLDER={code:'MICRO',title:'Principles of Microeconomics',term:'Gamified course',placeholder:true,generalVideos:0,chapters:MICRO_CHAPTERS.map((t,i)=>({chapter:i+1,title:t,clos:'',q1:0,q2:0,videos:0}))};
 const PSC_CHAPTERS=['Introduction to Purchasing and Supply Chain Management','The Purchasing Process','Category Strategy Development','Supplier Evaluation and Selection','Supplier Management and Development','Supply Chain Information Systems and E-Sourcing','Worldwide Sourcing','Strategic Cost Management','Negotiation and Conflict Management','Contract Management','Purchasing Law and Ethics'];
 const PSC_PLACEHOLDER={code:'MGMT3XX',title:'Procurement and Supply Chain Management',term:'Spring 2026/27',placeholder:true,generalVideos:0,chapters:PSC_CHAPTERS.map((t,i)=>({chapter:i+1,title:t,clos:'',q1:0,q2:0,videos:0}))};
 function treasureOf(ch){const t=S.theme||THEMES.drive;return t.treasures[(ch-1)%t.treasures.length]}
 const SUBJECT_THEME={MGMT160:'drive',MGMT363:'island',MGMT464:'gallery'};
 const order=['drive','island','gallery'];
-function themeKey(code,i){if(isPSC((S.subjects||[]).find(x=>x.code===code)))return'cargo';return SUBJECT_THEME[code]||order[(i||0)%3]}
+function themeKey(code,i){const sub=(S.subjects||[]).find(x=>x.code===code);if(isMICRO(sub))return'micro';if(isPSC(sub))return'cargo';return SUBJECT_THEME[code]||order[(i||0)%3]}
 function visualOf(key){return (THEMES[key]&&THEMES[key].visual)||key}
 function setTheme(themeName){
   const key=themeName?visualOf(themeName):null;
@@ -489,7 +494,9 @@ function goHub(){worldTab='chapters';curGame=null;if($('#worldGames'))$('#worldG
 /* ================= GAMES inside a world ================= */
 const GAMES=[
   {id:'bullwhip',subject:isPSC,tab:'📦 Supply Chain Game',title:'Supply Chain Game: the bullwhip effect',src:'games/bullwhip/',
-   about:'Run one company in a chain of four — Retailer, Wholesaler, Distributor or Factory. Order stock every week, fight delays, and see how small changes in customer demand turn into huge swings up the chain. Play as often as you like; it does not count towards your marks.'}
+   about:'Run one company in a chain of four — Retailer, Wholesaler, Distributor or Factory. Order stock every week, fight delays, and see how small changes in customer demand turn into huge swings up the chain. Play as often as you like; it does not count towards your marks.'},
+  {id:'saltmarket',subject:isMICRO,tab:'🏝️ Saltmarket: island economy',title:'Saltmarket: the island economy',src:'games/saltmarket/#course',
+   about:'Three short levels on one island. Eat coconuts to learn diminishing marginal utility, choose between coconuts and fish to learn opportunity cost, and sell at a market whose price falls with every sale to learn the demand curve. Each level starts with its goal and a quick check. Scores stay on your own device.'}
 ];
 let worldTab='chapters',curGame=null;
 function gamesFor(s){return GAMES.filter(g=>g.subject(s))}
@@ -511,7 +518,7 @@ function showWorldTab(tab){
   $('#worldGames').hidden=!g;
   const a=$('#wtChapters'),b=$('#wtGames');if(a){a.setAttribute('aria-selected',!g);b.setAttribute('aria-selected',g);}
   if(g)openGame(curGame);
-  if(isPSC(S.subject))history.replaceState(null,'','#'+(g?'games':'chapters')+'/'+S.subject.code);
+  if(isPSC(S.subject)||isMICRO(S.subject))history.replaceState(null,'','#'+(g?'games':'chapters')+'/'+S.subject.code);
 }
 function openGame(id){
   const list=gamesFor(S.subject);const g=list.find(x=>x.id===id)||list[0];if(!g)return;
@@ -533,9 +540,10 @@ function miniScene(key){
   return `<div class="mini gallery"><div class="orn">A RESCUE STORY</div><div class="torch" style="left:18%"></div><div class="torch" style="right:18%"></div><div class="frame" style="font-size:44px">🧗</div></div>`;
 }
 async function loadSubjects(){
-  try{ const j=await api('subjects',{}); S.subjects=j.subjects; if(!S.subjects.some(isPSC)) S.subjects=[...S.subjects,PSC_PLACEHOLDER]; }
+  try{ const j=await api('subjects',{}); S.subjects=j.subjects; if(!S.subjects.some(isPSC)) S.subjects=[...S.subjects,PSC_PLACEHOLDER]; if(!S.subjects.some(isMICRO)) S.subjects=[...S.subjects,MICRO_PLACEHOLDER]; }
   catch(e){ $('#portals').innerHTML=`<div class="err">Could not load subjects: ${esc(e.message)}</div>`; return; }
   $('#portals').innerHTML=S.subjects.map((s,i)=>{const key=themeKey(s.code,i),t=THEMES[key];const pub=s.chapters.filter(c=>c.q1>0||c.q2>0).length;
+    if(isMICRO(s)) return`<div class="portal" onclick="pickSubject('${esc(s.code)}')">${miniScene(visualOf(key))}<div class="txt"><div class="k">${esc(s.code)} · ${esc(s.term||'')}</div><h3>${esc(t.name)}</h3><div class="m">${s.chapters.length} chapters · ${pub?pub+' ready to play':'quizzes coming soon'} · 🎮 Saltmarket game inside</div><span class="cta">${esc(t.cta)}</span></div></div>`;
     if(isPSC(s)) return`<div class="portal" onclick="pickSubject('${esc(s.code)}')">${miniScene(visualOf(key))}<div class="txt"><div class="k">${esc(s.code)} · ${esc(s.term||'')}</div><h3>${esc(t.name)}</h3><div class="m">${s.chapters.length} chapters · ${pub?pub+' ready to play':'quizzes coming soon'} · 🎮 Supply Chain Game inside</div><span class="cta">${esc(t.cta)}</span></div></div>`;
     return`<div class="portal" onclick="pickSubject('${esc(s.code)}')">${miniScene(visualOf(key))}<div class="txt"><div class="k">${esc(s.code)} · ${esc(s.term||'')}</div><h3>${esc(s.title)}</h3><div class="m">${esc(t.name)} · ${s.chapters.length} chapters · ${pub} ready to play${s.chapters.some(c=>c.videos>0)||s.generalVideos?' · 🎬 videos':''}</div><span class="cta">${esc(t.cta)}</span></div></div>`}).join('')||'<div class="note">No subjects published yet.</div>';
 }
@@ -896,5 +904,5 @@ async function openDash(){
 }
 
 /* ================= boot ================= */
-(async()=>{await loadCfg();renderWho();await loadSubjects();if(/^#(games|chapters)\//.test(location.hash)){const [t,code]=location.hash.slice(1).split('/');const sub=S.subjects.find(x=>x.code===code)||(code==='MGMT3XX'?S.subjects.find(isPSC):null);if(sub){S.subject=sub;setTheme(themeKey(sub.code,S.subjects.indexOf(sub)));worldTab=t==='games'?'games':'chapters';if(sub.placeholder||t==='chapters')pickSubject(sub.code);else openWorldGamesOnly();}}})();
+(async()=>{await loadCfg();renderWho();await loadSubjects();if(/^#(games|chapters)\//.test(location.hash)){const [t,code]=location.hash.slice(1).split('/');const sub=S.subjects.find(x=>x.code===code)||(code==='MGMT3XX'?S.subjects.find(isPSC):null)||(code==='MICRO'?S.subjects.find(isMICRO):null);if(sub){S.subject=sub;setTheme(themeKey(sub.code,S.subjects.indexOf(sub)));worldTab=t==='games'?'games':'chapters';if(sub.placeholder||t==='chapters')pickSubject(sub.code);else openWorldGamesOnly();}}})();
 </script></body></html>
