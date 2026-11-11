@@ -1074,7 +1074,8 @@ document.addEventListener('click', e => {
 }, true);
 
 function openGame(id){
-  lastFocus = document.activeElement;
+  $$('.sheet').forEach(s => s.classList.remove('open')); // close the "Round over" card (and any other) before a new round
+  if(!gameOpen) lastFocus = document.activeElement;
   gameOpen = true; attract.stop();
   gm.classList.add('open'); document.documentElement.style.overflow = 'hidden';
   if(game){ game.stop(); }
