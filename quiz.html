@@ -3,7 +3,7 @@
 <title>Chapter Quiz Hub · University of Kalba</title>
 <meta name="description" content="Open practice quizzes for Dr Arun Korath's management courses at the University of Kalba. Pick your world, choose a chapter, play, learn from your mistakes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Space+Grotesk:wght@400;500;700&family=Archivo+Black&family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Space+Grotesk:wght@400;500;700&family=Archivo+Black&family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Saira+Stencil+One&family=Lilita+One&display=swap" rel="stylesheet">
 <style>
 /* ============ base ============ */
 :root{--bg:#0d0b14;--text:#f3f1f8;--muted:#a39fb3;--acc:#c66bff;--acc2:#ff8a5c;--ok:#48e39b;--bad:#ff5e7a;--panel:rgba(255,255,255,.06);--line:rgba(255,255,255,.12);--font:'Space Grotesk',system-ui,sans-serif;--display:'Caveat',cursive;--radius:16px}
@@ -357,6 +357,83 @@ body.t-island .ringwrap .c{stroke:rgba(0,0,0,.12)}
 .chip{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px}
 .review .q{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--ok);border-radius:14px;padding:16px;margin:10px 0}.review .q.bad{border-left-color:var(--bad)}
 .review .stem{font-weight:600;margin:4px 0 8px}
+
+/* ============ WORLD SKINS: each new world has its own look ============ */
+/* Procurement and Supply Chain Management — a working container harbour at dawn */
+body[data-world=port]{--bg:#f4e2c8;--text:#10302d;--muted:#3b5a56;--acc:#e8590c;--acc2:#0f766e;--ok:#15803d;--bad:#c92a2a;--panel:rgba(255,250,242,.86);--line:rgba(16,48,45,.15);--display:'Saira Stencil One',sans-serif;background:linear-gradient(#ffc995,#ffe8cf 46%,#0f766e 46.2%,#0a4d48)}
+body[data-world=port] header{background:rgba(255,246,234,.74);color:#10302d}
+body[data-world=port] h1{font-family:'Saira Stencil One',sans-serif;font-weight:400;letter-spacing:.02em;text-transform:uppercase;font-size:clamp(30px,5vw,52px)}
+body[data-world=port] header .brand{font-family:'Saira Stencil One',sans-serif;font-weight:400;font-size:19px;letter-spacing:.06em}
+body[data-world=port] .btn{color:#fff;box-shadow:0 10px 24px -10px #a63d06}body[data-world=port] .btn.g{color:#10302d}
+body[data-world=port] .worldtabs button[aria-selected=true]{color:#fff}
+body[data-world=port] .you td{background:#ffe3cc}
+body[data-world=port] .journey.vert,body[data-world=port] .dash{--asph:#115e59;--k1:#e8590c;--k2:#fff;--dash:rgba(255,255,255,.75)}
+body[data-world=port] .journey.vert .node,body[data-world=port] .journey .node{background:#fff;color:#0f766e;border-color:#0f766e}
+body[data-world=port] .journey .track{background:repeating-linear-gradient(90deg,#0f766e 0 14px,transparent 14px 24px)}
+body[data-world=port] .opt .key{background:#ffe8d6;color:#a63d06}
+body[data-world=port] .scene{--scenebg:linear-gradient(180deg,#ffd6a8 0,#ffeedd 55%,#9cc9c2 56%,#5f9e95 100%)}
+body[data-world=port] .actor .nm,body[data-world=port] .scene .narr{color:#10302d}
+body[data-world=port] #scene .sun{position:absolute;left:64%;top:12%;width:130px;height:130px;border-radius:50%;background:radial-gradient(#fff6e2 0,#ffc078 45%,transparent 70%)}
+body[data-world=port] #scene .stacks{position:absolute;left:4%;right:4%;top:calc(46% - 44px);height:44px;display:flex;gap:3px;align-items:flex-end;justify-content:center;opacity:.92}
+body[data-world=port] #scene .stacks i,.mini.port .stacks i{display:block;flex:0 0 auto;width:44px;height:calc(var(--n)*14px);background-color:var(--c);background-image:repeating-linear-gradient(180deg,transparent 0 13px,rgba(0,0,0,.28) 13px 14px),repeating-linear-gradient(90deg,rgba(0,0,0,.14) 0 2px,transparent 2px 6px);border-radius:1px}
+body[data-world=port] #scene .crane,.mini.port .crane{position:absolute;bottom:54%;width:90px;height:150px;border-left:7px solid #1f3b3a;border-right:7px solid #1f3b3a}
+body[data-world=port] #scene .crane:before,.mini.port .crane:before{content:'';position:absolute;top:0;left:-40px;right:-70px;height:9px;background:#e8590c;box-shadow:0 34px 0 -2px #1f3b3a}
+body[data-world=port] #scene .crane:after,.mini.port .crane:after{content:'';position:absolute;top:9px;right:-34px;width:2px;height:70px;background:#1f3b3a;box-shadow:-8px 70px 0 6px #2b8a3e}
+.mini.port{background:linear-gradient(#ffc995,#ffe8cf 55%,#0f766e 56%,#0a4d48)}
+.mini.port .sun{position:absolute;left:58%;top:10%;width:80px;height:80px;border-radius:50%;background:radial-gradient(#fff6e2 0,#ffc078 45%,transparent 70%)}
+.mini.port .stacks{position:absolute;left:6%;right:6%;top:calc(55% - 30px);height:30px;display:flex;gap:2px;align-items:flex-end;justify-content:center}
+.mini.port .stacks i{width:26px;height:calc(var(--n)*10px);background-image:repeating-linear-gradient(180deg,transparent 0 9px,rgba(0,0,0,.28) 9px 10px)}
+.mini.port .crane{bottom:45%;width:50px;height:80px;border-width:4px;transform-origin:bottom}
+.mini.port .crane:before{left:-22px;right:-40px;height:6px;box-shadow:0 20px 0 -1px #1f3b3a}
+.mini.port .crane:after{right:-20px;height:40px;box-shadow:-5px 40px 0 4px #2b8a3e}
+.mini.port .ship{position:absolute;left:14%;top:56%;font-size:40px;line-height:1;filter:drop-shadow(0 4px 6px rgba(0,0,0,.3))}
+.mini.port .hand{position:absolute;left:0;right:0;top:9%;text-align:center;font-family:'Saira Stencil One',sans-serif;font-size:13px;letter-spacing:.18em;color:#10302d}
+
+/* Principles of Microeconomics — a lantern-lit night market where supply meets demand */
+body[data-world=market]{--bg:#21130c;--text:#fbefd9;--muted:#d9bf97;--acc:#ffb703;--acc2:#e4572e;--ok:#2ec4b6;--bad:#ff6b6b;--panel:rgba(255,236,200,.07);--line:rgba(255,214,140,.2);--display:'Lilita One',sans-serif;background:radial-gradient(ellipse at 50% -10%,#5a3420 0,#2a170d 45%,#1a0e08 100%)}
+body[data-world=market] header{background:rgba(26,14,8,.6)}
+body[data-world=market] h1{font-family:'Lilita One',sans-serif;font-weight:400;letter-spacing:.01em;font-size:clamp(34px,5.6vw,58px)}
+body[data-world=market] header .brand{font-family:'Lilita One',sans-serif;font-size:22px;letter-spacing:.02em}
+body[data-world=market] .btn{color:#2b1a0a;box-shadow:0 0 26px -6px #ffb703}body[data-world=market] .btn.g{color:var(--text)}
+body[data-world=market] .worldtabs button[aria-selected=true]{color:#2b1a0a}
+body[data-world=market] .journey.vert,body[data-world=market] .dash{--asph:#4a3324;--k1:#e4572e;--k2:#ffe8b0;--dash:#ffd166}
+body[data-world=market] .scene{--scenebg:linear-gradient(180deg,#3a2216 0,#5a3420 70%,#6a3e22 100%)}
+body[data-world=market] #scene .curves,.mini.market .curves{position:absolute;inset:8% 6% 30% 6%;width:88%;height:62%;opacity:.16}
+body[data-world=market] #scene .string,.mini.market .string{position:absolute;left:-5%;right:-5%;top:9%;height:60px;border-top:2px solid rgba(255,214,140,.35);border-radius:50% 50% 0 0/40px 40px 0 0;display:flex;justify-content:space-around;padding:0 4%}
+body[data-world=market] #scene .string i,.mini.market .string i{display:block;width:16px;height:22px;margin-top:6px;border-radius:7px;background:radial-gradient(#fff3c4,#ffb703 55%,#e4572e);box-shadow:0 0 18px 4px rgba(255,183,3,.45);animation:lantern 3s ease-in-out infinite}
+body[data-world=market] #scene .string i:nth-child(2n),.mini.market .string i:nth-child(2n){background:radial-gradient(#ffe0d2,#e4572e 60%,#9a2a12);box-shadow:0 0 18px 4px rgba(228,87,46,.45);animation-delay:-1.4s}
+body[data-world=market] #scene .string i:nth-child(3n),.mini.market .string i:nth-child(3n){background:radial-gradient(#d8fff9,#2ec4b6 60%,#0f6f68);box-shadow:0 0 18px 4px rgba(46,196,182,.4);animation-delay:-.7s}
+@keyframes lantern{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+body[data-world=market] #scene .awning,.mini.market .awning{position:absolute;left:0;right:0;bottom:0;height:56px;background:repeating-linear-gradient(90deg,#e4572e 0 44px,#fbefd9 44px 88px);-webkit-mask:radial-gradient(22px 14px at 22px 100%,transparent 98%,#000) 0 0/44px 100%;mask:radial-gradient(22px 14px at 22px 100%,transparent 98%,#000) 0 0/44px 100%;opacity:.85}
+.mini.market{background:radial-gradient(ellipse at 50% 0%,#6a3e22 0,#2a170d 55%,#1a0e08)}
+.mini.market .string{top:6%;height:40px}
+.mini.market .string i{width:11px;height:16px}
+.mini.market .awning{height:40px;top:38%;bottom:auto;opacity:.95}
+.mini.market .scale{position:absolute;left:50%;top:22%;margin-left:-28px;font-size:46px;line-height:1;filter:drop-shadow(0 0 16px rgba(255,183,3,.6))}
+.mini.market .hand{position:absolute;right:16px;top:30px;font-family:'Lilita One',sans-serif;font-size:18px;color:#ffd166;transform:rotate(-6deg)}
+
+/* skin fixes: keep scenery behind text calm, recolour shared chapter layouts */
+body[data-world=port]{background:linear-gradient(#ffc995,#ffe8cf 80%,#0f766e 80.2%,#0a4d48) fixed}
+body[data-world=port] #scene .stacks{top:calc(80% - 44px)}
+body[data-world=port] #scene .crane{bottom:20%}
+body[data-world=port] #scene .sea{top:81.5%;height:9%}
+body[data-world=port] #scene .ship{top:77%}
+body[data-world=port] #scene .sun{top:30%;left:72%}
+body[data-world=port] #scene .stacks,body[data-world=port] #scene .crane{opacity:.32}
+body[data-world=port] #scene .sun{opacity:.7}
+body[data-world=port] .tent .body{border-color:#0f766e;box-shadow:0 20px 40px -20px #0a4d48}
+body[data-world=port] .tent .roof{background:linear-gradient(90deg,#e8590c 0 33%,#1c7ed6 33% 66%,#2b8a3e 66%);clip-path:none;height:30px;top:12px;border-radius:3px;background-size:100% 100%;box-shadow:inset 0 -6px 0 rgba(0,0,0,.15)}
+body[data-world=port] .tent .roof:after{background:#10302d;top:-12px}
+body[data-world=port] .tent .n{font-family:'Saira Stencil One',sans-serif;font-weight:400;color:#e8590c}
+body[data-world=port] .ringwrap .c{stroke:rgba(16,48,45,.15)}
+body[data-world=market] #scene .awning{top:0;bottom:auto;height:86px;opacity:.55}
+body[data-world=market] #scene .string{top:96px}
+body[data-world=market] .road .seg:before{background:repeating-linear-gradient(#ffd166 0 14px,transparent 14px 26px)}
+body[data-world=market] .cp{background:#2b1a12;border-color:#ffb703;box-shadow:0 0 18px rgba(255,183,3,.45);font-family:'Lilita One',sans-serif;font-weight:400}
+body[data-world=market] .cp.part{background:#5a3420;border-color:#ffd166}
+body[data-world=market] .cp.done{background:#2ec4b6;border-color:#bff5ee;color:#06302c;box-shadow:0 0 26px rgba(46,196,182,.6)}
+body[data-world=market] .cp .car{filter:drop-shadow(0 0 8px #ffb703)}
+body[data-world=market] #chScene .hand{font-family:'Lilita One',sans-serif;color:#ffd166}
 </style></head><body class="t-hub">
 <div id="scene"></div>
 <canvas id="confetti"></canvas>
@@ -428,7 +505,7 @@ body.t-island .ringwrap .c{stroke:rgba(0,0,0,.12)}
 <footer>Questions are generated from the chapter decks and reviewed by the instructor. Practice quizzes are formative: they help you learn, they are not your exam. Problems? Tell Dr Korath in class.</footer>
 
 <script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js"}}</script>
-<script type="module" src="game3d.js?v=10"></script>
+<script type="module" src="game3d.js?v=11"></script>
 <script>
 /* ================= config & API ================= */
 let CFG={scriptUrl:''};
@@ -463,11 +540,11 @@ const THEMES={
   island:{name:"Idea Island",brand:'IDEA ISLAND 🚢',tag:'Drag to explore. Each island is waiting for your rescue ship. Clear both quizzes of a chapter to reach it and bring home its treasure.',cta:'Set sail →',panelCta:'Sail to this island',ranks:['Deckhand','Sailor','Navigator','Captain','Admiral of the islands 🏆'],chapterWord:'Island',treasures:['🗝️','🐚','🪙','📿','🏺','🧭','🗺️','⚓','💎','💰'],treasureWord:'treasure',badge:'Island Legend'},
   gallery:{name:'The Rescue',brand:'The Rescue 🔦',tag:'Layla has been taken by the Crow gang. Captain Rami and his three followers — Noor, Omar and Dana — must cross one hurdle per chapter to reach her. Clear both quizzes of a chapter to pass its gate and win a token.',cta:'Join the rescue →',panelCta:'Face this hurdle',ranks:['Villager','Scout','Pathfinder','Captain','Leader of the Rescue 🏆'],chapterWord:'Hurdle',treasures:['🔦','🗺️','🪢','🛡️','🔥','🗝️','📯','⚔️','🧭','👑'],treasureWord:'token',badge:'Leader of the Rescue'}
 };
-THEMES.cargo={...THEMES.island,visual:'island',name:'Procurement and Supply Chain Management',brand:'PROCUREMENT & SUPPLY CHAIN 🚢',tag:'Drag to explore. Every port is waiting for its delivery. Clear both quizzes of a chapter to dock there and unload its cargo.',cta:'Load the ship →',panelCta:'Sail to this port',ranks:['Dock hand','Buyer','Category manager','Supply chain manager','Chief procurement officer 🏆'],chapterWord:'Port',treasures:['📦','🚚','🏭','🧾','⚓','🛳️','🏗️','📈','🤝','🧭','🌍','🏆'],treasureWord:'cargo',badge:'Master of the Supply Chain'};
+THEMES.cargo={...THEMES.island,visual:'island',skin:'port',name:'Procurement and Supply Chain Management',brand:'PROCUREMENT & SUPPLY CHAIN 🚢',tag:'Drag to explore. Every port is waiting for its delivery. Clear both quizzes of a chapter to dock there and unload its cargo.',cta:'Load the ship →',panelCta:'Sail to this port',ranks:['Dock hand','Buyer','Category manager','Supply chain manager','Chief procurement officer 🏆'],chapterWord:'Port',treasures:['📦','🚚','🏭','🧾','⚓','🛳️','🏗️','📈','🤝','🧭','🌍','🏆'],treasureWord:'cargo',badge:'Master of the Supply Chain'};
 /* Procurement & Supply Chain: shown as its own world even before it is added to the Sheet */
 const isPSC=s=>!!s&&(/procure|supply/i.test(s.title||'')||s.code==='MGMT3XX'||s.code==='PSC');
 /* Principles of Microeconomics: a game-first world (Saltmarket), shown even before it is added to the Sheet */
-THEMES.micro={...THEMES.island,visual:'island',name:'Principles of Microeconomics',brand:'PRINCIPLES OF MICROECONOMICS 🏝️',tag:'Drag to explore. Every island is a market. Play the Saltmarket game to learn utility, opportunity cost and demand, then clear the quizzes.',cta:'Visit the market →',panelCta:'Sail to this island',ranks:['Beachcomber','Trader','Merchant','Market maker','Economist of the islands 🏆'],chapterWord:'Island',treasures:['🥥','🐟','🪙','⚖️','📉','🏝️','🧺','🛶','📈','🏆'],treasureWord:'treasure',badge:'Master of the Market'};
+THEMES.micro={...THEMES.drive,visual:'drive',skin:'market',name:'Principles of Microeconomics',brand:'Principles of Microeconomics ⚖️',tag:'Walk the night market. Every stall is a chapter. Play the Saltmarket game to learn utility, opportunity cost and demand, then clear the quizzes to win each stall\'s prize.',cta:'Visit the market →',panelCta:'Open this stall',ranks:['Window shopper','Trader','Merchant','Market maker','Master economist 🏆'],chapterWord:'Stall',treasures:['🥥','🐟','🪙','⚖️','📉','🏝️','🧺','🛶','📈','🏆'],treasureWord:'treasure',badge:'Master of the Market'};
 const isMICRO=s=>!!s&&(/micro ?econom/i.test(s.title||'')||s.code==='MICRO');
 const MICRO_CHAPTERS=['Scarcity and choice','Utility and diminishing marginal utility','Opportunity cost','Demand and the demand curve','Supply and equilibrium'];
 const MICRO_PLACEHOLDER={code:'MICRO',title:'Principles of Microeconomics',term:'Gamified course',placeholder:true,generalVideos:0,chapters:MICRO_CHAPTERS.map((t,i)=>({chapter:i+1,title:t,clos:'',q1:0,q2:0,videos:0}))};
@@ -478,10 +555,15 @@ const SUBJECT_THEME={MGMT160:'drive',MGMT363:'island',MGMT464:'gallery'};
 const order=['drive','island','gallery'];
 function themeKey(code,i){const sub=(S.subjects||[]).find(x=>x.code===code);if(isMICRO(sub))return'micro';if(isPSC(sub))return'cargo';return SUBJECT_THEME[code]||order[(i||0)%3]}
 function visualOf(key){return (THEMES[key]&&THEMES[key].visual)||key}
+function skinOf(key){return (THEMES[key]&&THEMES[key].skin)||visualOf(key)}
+function worldKey(){return document.body.dataset.world||''}
+function baseKey(){return document.body.className.replace('t-','')}
 function setTheme(themeName){
   const key=themeName?visualOf(themeName):null;
   document.body.className='t-'+(key||'hub'); S.theme=themeName?THEMES[themeName]:null;
+  const skin=themeName&&THEMES[themeName].skin||''; if(skin)document.body.dataset.world=skin; else delete document.body.dataset.world;
   const sc=$('#scene'); sc.innerHTML='';
+  if(skin){sc.innerHTML=skinScene(skin);$('#brand').innerHTML=esc(S.theme.brand)+'<small>University of Kalba · Dr Arun Korath</small>';return;}
   if(key==='drive'){ sc.innerHTML='<div class="glow"></div><div class="floor"></div>'; }
   if(key==='island'){ let t=''; for(let i=0;i<14;i++){const x=Math.random()*100,y=58+Math.random()*38,s=.6+Math.random()*.9;t+=`<div class="tr" style="left:${x}%;top:${y}%;transform:scale(${s})"></div>`;} sc.innerHTML=`<div class="cloud" style="top:8%;animation-delay:-5s"></div><div class="cloud" style="top:18%;width:90px;animation-delay:-22s"></div><div class="sea"></div><div class="ship">🚢</div><div class="gull" style="top:22%;animation-delay:-3s">🕊️</div><div class="isle"></div><div class="ring"></div>${t}`; }
   if(key==='gallery'){ sc.innerHTML='<div class="vig"></div><div class="torch" style="left:6%"></div><div class="torch" style="right:6%"></div>'; }
@@ -534,7 +616,16 @@ function signOut(){localStorage.removeItem('qh_student');try{sessionStorage.remo
 function toggleMute(){muted=!muted;localStorage.setItem('qh_mute',muted?'1':'0');renderWho();if(muted){engine(false);hush();}else{snd('tick');if($('#v-quiz').classList.contains('on'))engine(true)}}
 
 /* ================= HUB ================= */
+const STACKS=[[2,'#e8590c'],[3,'#1c7ed6'],[1,'#2b8a3e'],[3,'#f08c00'],[2,'#c92a2a'],[1,'#1c7ed6'],[3,'#2b8a3e'],[2,'#e8590c'],[1,'#7048e8'],[2,'#f08c00'],[3,'#c92a2a'],[1,'#1c7ed6']];
+const SD_CURVES='<svg class="curves" viewBox="0 0 400 240" preserveAspectRatio="none" aria-hidden="true"><path d="M20 30 C 140 60, 260 160, 380 215" fill="none" stroke="#ffd166" stroke-width="5"/><path d="M20 215 C 140 170, 260 80, 380 25" fill="none" stroke="#2ec4b6" stroke-width="5"/><text x="384" y="214" fill="#ffd166" font-family="Lilita One" font-size="22">D</text><text x="384" y="30" fill="#2ec4b6" font-family="Lilita One" font-size="22">S</text></svg>';
+function skinScene(skin){
+  if(skin==='port') return `<div class="sun"></div><div class="crane" style="left:7%"></div><div class="crane" style="right:18%"></div><div class="stacks">${STACKS.concat(STACKS).map(([n,c])=>`<i style="--n:${n};--c:${c}"></i>`).join('')}</div><div class="sea"></div><div class="ship">🚢</div>`;
+  if(skin==='market') return `${SD_CURVES}<div class="string">${'<i></i>'.repeat(12)}</div><div class="awning"></div>`;
+  return '';
+}
 function miniScene(key){
+  if(key==='port') return `<div class="mini port"><div class="hand">↔ drag to explore</div><div class="sun"></div><div class="crane" style="left:12%"></div><div class="crane" style="right:16%"></div><div class="stacks">${STACKS.map(([n,c])=>`<i style="--n:${n};--c:${c}"></i>`).join('')}</div><div class="ship">🚢</div></div>`;
+  if(key==='market') return `<div class="mini market">${SD_CURVES}<div class="string">${'<i></i>'.repeat(9)}</div><div class="scale">⚖️</div><div class="awning"></div><div class="hand">click to start ↙</div></div>`;
   if(key==='drive') return `<div class="mini drive"><div class="floor"></div><div class="disc"></div><div class="tree" style="left:28%;top:22%"></div><div class="tree" style="left:60%;top:16%;width:62px;height:62px"></div><div class="tree" style="left:40%;top:10%;width:40px;height:40px"></div><div class="car"></div><div class="hand">click to start ↙</div></div>`;
   if(key==='island') return `<div class="mini island"><div class="hand">↔ drag to explore</div><div class="isle"></div><div class="ring"></div><div class="tr" style="left:12%;top:40%"></div><div class="tr" style="left:78%;top:44%"></div><div class="tr" style="left:30%;top:58%;transform:scale(.8)"></div><div class="tr" style="left:62%;top:62%;transform:scale(.7)"></div><div class="hut" style="left:46%;top:52%"></div><div class="hut" style="left:20%;top:66%;transform:scale(.8)"></div></div>`;
   return `<div class="mini gallery"><div class="orn">A RESCUE STORY</div><div class="torch" style="left:18%"></div><div class="torch" style="right:18%"></div><div class="frame" style="font-size:44px">🧗</div></div>`;
@@ -543,9 +634,9 @@ async function loadSubjects(){
   try{ const j=await api('subjects',{}); S.subjects=j.subjects; if(!S.subjects.some(isPSC)) S.subjects=[...S.subjects,PSC_PLACEHOLDER]; if(!S.subjects.some(isMICRO)) S.subjects=[...S.subjects,MICRO_PLACEHOLDER]; }
   catch(e){ $('#portals').innerHTML=`<div class="err">Could not load subjects: ${esc(e.message)}</div>`; return; }
   $('#portals').innerHTML=S.subjects.map((s,i)=>{const key=themeKey(s.code,i),t=THEMES[key];const pub=s.chapters.filter(c=>c.q1>0||c.q2>0).length;
-    if(isMICRO(s)) return`<div class="portal" onclick="pickSubject('${esc(s.code)}')">${miniScene(visualOf(key))}<div class="txt"><div class="k">${esc(s.code)} · ${esc(s.term||'')}</div><h3>${esc(t.name)}</h3><div class="m">${s.chapters.length} chapters · ${pub?pub+' ready to play':'quizzes coming soon'} · 🎮 Saltmarket game inside</div><span class="cta">${esc(t.cta)}</span></div></div>`;
-    if(isPSC(s)) return`<div class="portal" onclick="pickSubject('${esc(s.code)}')">${miniScene(visualOf(key))}<div class="txt"><div class="k">${esc(s.code)} · ${esc(s.term||'')}</div><h3>${esc(t.name)}</h3><div class="m">${s.chapters.length} chapters · ${pub?pub+' ready to play':'quizzes coming soon'} · 🎮 Supply Chain Game inside</div><span class="cta">${esc(t.cta)}</span></div></div>`;
-    return`<div class="portal" onclick="pickSubject('${esc(s.code)}')">${miniScene(visualOf(key))}<div class="txt"><div class="k">${esc(s.code)} · ${esc(s.term||'')}</div><h3>${esc(s.title)}</h3><div class="m">${esc(t.name)} · ${s.chapters.length} chapters · ${pub} ready to play${s.chapters.some(c=>c.videos>0)||s.generalVideos?' · 🎬 videos':''}</div><span class="cta">${esc(t.cta)}</span></div></div>`}).join('')||'<div class="note">No subjects published yet.</div>';
+    if(isMICRO(s)) return`<div class="portal" onclick="pickSubject('${esc(s.code)}')">${miniScene(skinOf(key))}<div class="txt"><div class="k">${esc(s.code)} · ${esc(s.term||'')}</div><h3>${esc(t.name)}</h3><div class="m">${s.chapters.length} chapters · ${pub?pub+' ready to play':'quizzes coming soon'} · 🎮 Saltmarket game inside</div><span class="cta">${esc(t.cta)}</span></div></div>`;
+    if(isPSC(s)) return`<div class="portal" onclick="pickSubject('${esc(s.code)}')">${miniScene(skinOf(key))}<div class="txt"><div class="k">${esc(s.code)} · ${esc(s.term||'')}</div><h3>${esc(t.name)}</h3><div class="m">${s.chapters.length} chapters · ${pub?pub+' ready to play':'quizzes coming soon'} · 🎮 Supply Chain Game inside</div><span class="cta">${esc(t.cta)}</span></div></div>`;
+    return`<div class="portal" onclick="pickSubject('${esc(s.code)}')">${miniScene(skinOf(key))}<div class="txt"><div class="k">${esc(s.code)} · ${esc(s.term||'')}</div><h3>${esc(s.title)}</h3><div class="m">${esc(t.name)} · ${s.chapters.length} chapters · ${pub} ready to play${s.chapters.some(c=>c.videos>0)||s.generalVideos?' · 🎬 videos':''}</div><span class="cta">${esc(t.cta)}</span></div></div>`}).join('')||'<div class="note">No subjects published yet.</div>';
 }
 function pickSubject(code){S.subject=S.subjects.find(s=>s.code===code);const i=S.subjects.indexOf(S.subject);setTheme(themeKey(code,i));snd('tick');
   if(S.subject.placeholder){openChapters();return;}
@@ -598,13 +689,13 @@ function renderBadgeBar(){const t=S.theme,s=S.subject;const got=S.subject.chapte
   $('#badgeBar').innerHTML=`${S.allDone?`<div class="badge"><div class="medal">🎖️</div><div><div class="k">Subject badge unlocked</div><div class="bt">${esc(t.badge)} · Expert in ${esc(s.title)}</div><div class="bm">You have completed every level of ${esc(s.code)}. You are now ready to go to the market and show your skills.</div></div></div>`:''}<div class="shelf"><span class="k">${esc(t.treasureWord)}s collected · ${got.length}/${s.chapters.length}</span><div class="tres">${shelf}</div><div class="k" style="margin-top:6px">${nextTxt}</div></div>`}
 function renderRoad(){
   const chs=S.subject.chapters; let cur=S.next?chs.findIndex(c=>c.chapter===S.next.chapter):-1; if(cur<0) cur=S.allDone?chs.length-1:0;
-  $('#chScene').innerHTML=`<div class="hand">${S.allDone?'🏁 you have driven the whole road — every trophy is yours':'↓ your car is parked at checkpoint '+chs[cur].chapter+' — click any open checkpoint to race'}</div><div class="road">${chs.map((c,i)=>{const st=chState(c),bp=bestPct(c);const vids=S.videos.filter(v=>v.chapter===c.chapter).length;
-    return`<div class="seg"><div class="cp ${st==='locked'?'lock':st==='open'?'part':st}" onclick="openChapterPanel(${c.chapter})">${st==='done'?treasureOf(c.chapter):c.chapter}${i===cur?'<span class="car">🚗</span>':''}</div><div class="info" onclick="openChapterPanel(${c.chapter})"><b>${esc(c.title)}</b><div class="m">${st==='lock'?'🔒 coming soon':st==='done'?'✅ complete · '+treasureOf(c.chapter)+' trophy won · '+bp+'%':st==='part'?'🟡 one quiz done · next quiz open · '+bp+'%':'▶ open now'}${vids?' · 🎬 '+vids+' video'+(vids>1?'s':''):''}</div></div></div>`}).join('')}</div>`;
+  $('#chScene').innerHTML=`<div class="hand">${S.allDone?'🏁 you have driven the whole road — every trophy is yours':(worldKey()==='market'?'↓ your cart is at stall '+chs[cur].chapter+' — click any open stall to start':'↓ your car is parked at checkpoint '+chs[cur].chapter+' — click any open checkpoint to race')}</div><div class="road">${chs.map((c,i)=>{const st=chState(c),bp=bestPct(c);const vids=S.videos.filter(v=>v.chapter===c.chapter).length;
+    return`<div class="seg"><div class="cp ${st==='locked'?'lock':st==='open'?'part':st}" onclick="openChapterPanel(${c.chapter})">${st==='done'?treasureOf(c.chapter):c.chapter}${i===cur?'<span class="car">'+(trav().icon||'🚗')+'</span>':''}</div><div class="info" onclick="openChapterPanel(${c.chapter})"><b>${esc(c.title)}</b><div class="m">${st==='lock'?'🔒 coming soon':st==='done'?'✅ complete · '+treasureOf(c.chapter)+' trophy won · '+bp+'%':st==='part'?'🟡 one quiz done · next quiz open · '+bp+'%':'▶ open now'}${vids?' · 🎬 '+vids+' video'+(vids>1?'s':''):''}</div></div></div>`}).join('')}</div>`;
 }
 let ring={angle:0,vel:0,n:0,dragging:false,lastX:0,raf:null};
 function renderRing(){
   const chs=S.subject.chapters; ring.n=chs.length; const r=Math.max(260,chs.length*42);
-  $('#chScene').innerHTML=`<div class="ring3d" id="ring3d"><div class="hint"><span>◀</span> drag to sail around the islands <span>▶</span></div><div class="stage" id="stage" style="transform:translateZ(-${r}px) rotateY(0deg)">${chs.map((c,i)=>{const st=chState(c),bp=bestPct(c);const a=360/chs.length*i;
+  $('#chScene').innerHTML=`<div class="ring3d" id="ring3d"><div class="hint"><span>◀</span> drag to sail around the ${worldKey()==='port'?'ports':'islands'} <span>▶</span></div><div class="stage" id="stage" style="transform:translateZ(-${r}px) rotateY(0deg)">${chs.map((c,i)=>{const st=chState(c),bp=bestPct(c);const a=360/chs.length*i;
     return`<div class="tent" data-i="${i}" style="transform:rotateY(${a}deg) translateZ(${r}px)"><div class="roof"></div><div class="body" onclick="ringClick(${i},${c.chapter})"><div class="n">${st==='done'?treasureOf(c.chapter):c.chapter}</div><div class="t">${esc(c.title)}</div><div class="m">${st==='lock'?'🔒 coming soon':st==='done'?'🏝️ island saved · treasure '+treasureOf(c.chapter)+' · '+bp+'%':st==='part'?'🟡 one quiz done · the ship is halfway · '+bp+'%':'🚢 send the rescue ship'}</div></div></div>`}).join('')}</div></div><div class="ringnav"><button class="btn g s" onclick="spin(1)">◀ prev</button><button class="btn g s" onclick="spin(-1)">next ▶</button></div>`;
   const el=$('#ring3d'); ring.angle=0;ring.vel=0;
   const down=e=>{ring.dragging=true;ring.lastX=(e.touches?e.touches[0].clientX:e.clientX);el.classList.add('drag');ring.vel=0};
@@ -656,24 +747,24 @@ async function startQuiz(ch,q){
   buildJourney();
   S.start=Date.now();startTimer();updateHud();showQ();snd('start');
 }
-const TRAV={drive:{icon:'🚗',goal:'🏆',goalWord:'Trophy',stop:'Checkpoint',blocked:'Road blocked — try another way',clear:'Road clear — drive on!'},island:{icon:'🚢',goal:'🏝️',goalWord:'Island saved',stop:'Buoy',blocked:'Rough sea — steer another course',clear:'Calm water — full steam ahead!'},gallery:{icon:'🧗',goal:'🚪',goalWord:'Gate opens',stop:'Step',blocked:'A gang trap! — find another way',clear:'Trap cleared — the team moves on'}};
-function trav(){return TRAV[document.body.className.replace('t-','')]||TRAV.drive}
+const TRAV={port:{icon:'🚢',goal:'⚓',goalWord:'Cargo delivered',stop:'Berth',blocked:'Shipment held — try another way',clear:'Cleared by customs — sail on!'},market:{icon:'🛒',goal:'⚖️',goalWord:'Deal done',stop:'Stall',blocked:'No sale — try another way',clear:'Price agreed — move on!'},drive:{icon:'🚗',goal:'🏆',goalWord:'Trophy',stop:'Checkpoint',blocked:'Road blocked — try another way',clear:'Road clear — drive on!'},island:{icon:'🚢',goal:'🏝️',goalWord:'Island saved',stop:'Buoy',blocked:'Rough sea — steer another course',clear:'Calm water — full steam ahead!'},gallery:{icon:'🧗',goal:'🚪',goalWord:'Gate opens',stop:'Step',blocked:'A gang trap! — find another way',clear:'Trap cleared — the team moves on'}};
+function trav(){return TRAV[worldKey()]||TRAV[baseKey()]||TRAV.drive}
 function nodeX(i){const n=S.questions.length;return 4+92*i/n}
 function isVert(){return innerWidth>760}
 function nodeY(i){const n=S.questions.length;return 94-90*i/n} // bottom → top
 function placeNode(el,i){ if(isVert()){el.style.top=nodeY(i)+'%';el.style.left='50%'}else{el.style.left=nodeX(i)+'%';el.style.top=''} }
 function placeTrav(i){if(S.g3d){if(i!==S.g3dAt){S.g3dAt=i;G3D.moveTo(i);}return;}const tr=$('#trav');if(!tr)return; if(isVert()){tr.style.top='calc('+nodeY(i)+'% - 22px)';tr.style.left='50%'}else{tr.style.left=nodeX(i)+'%';tr.style.top=''}}
-const HURDLES={drive:[['🚧','ROAD CLOSED'],['👮','STOP — POLICE'],['🛑','NO ENTRY'],['🚦','RED LIGHT'],['🚜','SLOW — TRACTOR']],island:[['🌊','STORM WAVES'],['🦈','SHARK WATERS'],['🪨','HIDDEN REEF'],['🌫️','THICK FOG'],['🏴‍☠️','PIRATES AHEAD'],['🌀','WHIRLPOOL']],gallery:[['🪤','GANG TRAP'],['🏴‍☠️','CROW LOOKOUT'],['🔥','FIRE ON THE PATH'],['🪨','ROCKFALL'],['⛓️','CHAINED GATE'],['🐺','WOLVES']]};
-function showHurdle(){const k=document.body.className.replace('t-','');const list=HURDLES[k]||HURDLES.drive;const h=list[Math.floor(Math.random()*list.length)];if(S.g3d){G3D.hurdle(h[0],h[1]);$('#sideHint').textContent=h[1].toLowerCase()+' — find another way';return;}let el=$('#hurdle');if(!el){el=document.createElement('div');el.id='hurdle';el.className='hurdle';$('#journey').appendChild(el);}else{el.className='hurdle';}
+const HURDLES={port:[['🛂','HELD AT CUSTOMS'],['🌊','STORM IN THE STRAIT'],['📦','CONTAINER SHORTAGE'],['⛔','PORT CONGESTION'],['🧾','MISSING PAPERWORK'],['🏭','SUPPLIER DELAY']],market:[['📉','PRICE CRASH'],['🧺','SOLD OUT'],['🚫','NO BUYERS'],['🌧️','RAIN ON THE MARKET'],['💸','PRICE TOO HIGH'],['⚖️','SCALES OFF BALANCE']],drive:[['🚧','ROAD CLOSED'],['👮','STOP — POLICE'],['🛑','NO ENTRY'],['🚦','RED LIGHT'],['🚜','SLOW — TRACTOR']],island:[['🌊','STORM WAVES'],['🦈','SHARK WATERS'],['🪨','HIDDEN REEF'],['🌫️','THICK FOG'],['🏴‍☠️','PIRATES AHEAD'],['🌀','WHIRLPOOL']],gallery:[['🪤','GANG TRAP'],['🏴‍☠️','CROW LOOKOUT'],['🔥','FIRE ON THE PATH'],['🪨','ROCKFALL'],['⛓️','CHAINED GATE'],['🐺','WOLVES']]};
+function showHurdle(){const list=HURDLES[worldKey()]||HURDLES[baseKey()]||HURDLES.drive;const h=list[Math.floor(Math.random()*list.length)];if(S.g3d){G3D.hurdle(h[0],h[1]);$('#sideHint').textContent=h[1].toLowerCase()+' — find another way';return;}let el=$('#hurdle');if(!el){el=document.createElement('div');el.id='hurdle';el.className='hurdle';$('#journey').appendChild(el);}else{el.className='hurdle';}
   el.innerHTML=`${h[0]}<span class="sign">${h[1]}</span>`; const n=S.questions.length; if(isVert()){el.style.top='calc('+((nodeY(S.idx)+nodeY(Math.min(S.idx+1,n)))/2)+'% - 22px)';el.style.left='50%';}else{el.style.left=((nodeX(S.idx)+nodeX(Math.min(S.idx+1,n)))/2)+'%';}
   $('#sideHint').textContent=h[1].toLowerCase()+' — find another way'}
 function liftHurdle(){if(S.g3d){G3D.lift();return;}const el=$('#hurdle');if(!el)return;el.classList.add('lift');setTimeout(()=>el.remove(),650)}
-const CROWDS={drive:['🙋','🙌','👏','🎉','📣','🧑‍🤝‍🧑','👨‍👩‍👧','🧍','🚩','📸','🙋‍♀️','🙋‍♂️','🥳','🧑‍🦱','👩‍🦰'],island:['🙋','🙋‍♀️','🙋‍♂️','🏝️','🌴','🐬','🐢','⛵','🐠','🏖️','🪸','🦜','🛟','🏕️','🌺'],gallery:['🙋','🏮','🔦','🐎','👵','👨‍🌾','🧒','🙏','🕯️','🌲','🏕️','🦉','🪵','🧑‍🤝‍🧑','🔥']};
-function CROWD_(){return CROWDS[document.body.className.replace('t-','')]||CROWDS.drive}
+const CROWDS={port:['👷','👷‍♀️','🧑‍💼','📦','🏗️','🚚','⚓','🚢','🧾','🙋','🙋‍♀️','🛳️','🏭','📋','🙌'],market:['🧑‍🌾','🙋','🙋‍♀️','🧺','🏮','🍊','🐟','🥥','🪙','🛒','💰','🏪','🙌','👏','⚖️'],drive:['🙋','🙌','👏','🎉','📣','🧑‍🤝‍🧑','👨‍👩‍👧','🧍','🚩','📸','🙋‍♀️','🙋‍♂️','🥳','🧑‍🦱','👩‍🦰'],island:['🙋','🙋‍♀️','🙋‍♂️','🏝️','🌴','🐬','🐢','⛵','🐠','🏖️','🪸','🦜','🛟','🏕️','🌺'],gallery:['🙋','🏮','🔦','🐎','👵','👨‍🌾','🧒','🙏','🕯️','🌲','🏕️','🦉','🪵','🧑‍🤝‍🧑','🔥']};
+function CROWD_(){return CROWDS[worldKey()]||CROWDS[baseKey()]||CROWDS.drive}
 function crowd(n,leftRange,topFn){let h='';for(let i=0;i<n;i++){const C=CROWD_();const e=C[Math.floor(Math.random()*C.length)];const l=leftRange[0]+Math.random()*(leftRange[1]-leftRange[0]);h+=`<span class="spec ${Math.random()<.3?'wild':''}" style="left:${l.toFixed(1)}%;top:${topFn(i,n)};--d:${(1+Math.random()*1.2).toFixed(2)}s;animation-delay:-${(Math.random()*2).toFixed(2)}s;font-size:${15+Math.round(Math.random()*6)}px">${e}</span>`}return h}
 function use3d(){return isVert()&&window.G3D&&window.G3D.ok&&!localStorage.getItem('qh_no3d')}
 function buildJourney(){const n=S.questions.length,t=trav();S.g3d=false;
-  if(use3d()){const j=$('#journey');j.className='journey vert g3d';j.innerHTML='';const th=document.body.className.replace('t-','');if(G3D.mount(j,{theme:th,chapter:S.chapter,n,labels:S.questions.map(q=>'§'+q.sec)})){S.g3d=true;const nm=G3D.sceneName?G3D.sceneName(th,S.chapter):'';$('#sideHint').textContent=(nm?nm+' — ':'')+(th==='island'?'engines humming — answer to sail on':th==='gallery'?'the night is quiet… answer to move on':'engine running — answer to race');return;}}
+  if(use3d()){const j=$('#journey');j.className='journey vert g3d';j.innerHTML='';const th=document.body.className.replace('t-','');if(G3D.mount(j,{skin:worldKey(),theme:th,chapter:S.chapter,n,labels:S.questions.map(q=>'§'+q.sec)})){S.g3d=true;const nm=G3D.sceneName?G3D.sceneName(th,S.chapter,worldKey()):'';$('#sideHint').textContent=(nm?nm+' — ':'')+(th==='island'?'engines humming — answer to sail on':th==='gallery'?'the night is quiet… answer to move on':'engine running — answer to race');return;}}
   $('#journey').className='journey vert';$('#journey').innerHTML=`<div class="track" id="track"></div>${crowd(9,[1,16],(i,k)=>(3+94*i/k+Math.random()*6).toFixed(1)+'%')}${crowd(10,[80,94],(i,k)=>(2+94*i/k+Math.random()*6).toFixed(1)+'%')}${S.questions.map((q,i)=>`<div class="node" id="node${i}">${i+1}<span class="lbl">§${esc(q.sec)}</span></div>`).join('')}<div class="node goal" id="node${n}">${t.goal}<span class="lbl">${t.goalWord}</span></div><div class="trav" id="trav">${t.icon}</div>`;
   for(let i=0;i<=n;i++) placeNode($('#node'+i),i); placeTrav(0); $('#sideHint').textContent=document.body.classList.contains('t-island')?'engines humming — answer to sail on':document.body.classList.contains('t-gallery')?'the forest is quiet… answer to move on':'engine running — answer to race'}
 addEventListener('resize',()=>{if(S.g3d){G3D.resize();return;}if($('#v-quiz').classList.contains('on')&&S.questions.length){for(let i=0;i<=S.questions.length;i++){const el=$('#node'+i);if(el)placeNode(el,i)}placeTrav(S.idx)}});
@@ -686,8 +777,8 @@ function showQ(){
 }
 function curQ(){const p=S.questions[S.idx];return p.chain[Math.min(S.tries,p.chain.length-1)]}
 /* ---- cut-scenes: a short acted situation before every Quiz 2 question ---- */
-const CAST={drive:[['👩‍💼','Maya','the manager'],['👨‍🔧','Sam','the team'],['🧑‍💻','Lina','the analyst']],island:[['🧑‍✈️','Captain Zed','the captain'],['👩‍🔬','Noor','the thinker'],['🧔','Omar','the crew']],gallery:[['🧔','Rami','the leader'],['👩‍🦱','Noor','the thinker'],['💪','Omar','the strong one'],['👩‍🦰','Dana','the talker'],['🦹','Crow chief','the villain'],['👸','Layla','the captive']]};
-function castFor(){return CAST[document.body.className.replace('t-','')]||CAST.drive}
+const CAST={port:[['👷‍♀️','Aisha','the buyer'],['🧑‍💼','Khalid','the supplier'],['👨‍💼','Rajesh','the manager']],market:[['🧑‍🌾','Salma','the seller'],['🧔','Yusuf','the buyer'],['👩‍🏫','Hala','the economist']],drive:[['👩‍💼','Maya','the manager'],['👨‍🔧','Sam','the team'],['🧑‍💻','Lina','the analyst']],island:[['🧑‍✈️','Captain Zed','the captain'],['👩‍🔬','Noor','the thinker'],['🧔','Omar','the crew']],gallery:[['🧔','Rami','the leader'],['👩‍🦱','Noor','the thinker'],['💪','Omar','the strong one'],['👩‍🦰','Dana','the talker'],['🦹','Crow chief','the villain'],['👸','Layla','the captive']]};
+function castFor(){return CAST[worldKey()]||CAST[baseKey()]||CAST.drive}
 const SCN={}; // explicit scripts per subject, loaded from scenes/<CODE>.json : {questionId:[["Name","line"],["N","narration"],...]}
 async function loadScenes(code){ if(SCN[code]) return; try{ const r=await fetch(`scenes/${code}.json?${Date.now()}`); SCN[code]=r.ok?await r.json():{}; }catch(e){ SCN[code]={}; } }
 const REACT=[[/angry|shout|complain|furious|refus/i,'😠'],[/tired|exhaust|quit|give up|burn/i,'😩'],[/data|number|report|figure|chart|survey|%/i,'📊'],[/meeting|discuss|team|group/i,'🗣️'],[/money|cost|price|budget|profit|dirham|bonus|pay/i,'💰'],[/fast|quick|second|minute|hurry|late|deadline/i,'⏱️'],[/customer|client|guest/i,'🙋'],[/idea|plan|option|propos|creative/i,'💡'],[/risk|danger|fail|wrong|crash|storm|trap/i,'😬'],[/ai|tool|software|system|app|digital/i,'🤖'],[/ethic|honest|bribe|fair|lie/i,'⚖️'],[/new|change|launch|start/i,'🚀']];
@@ -822,7 +913,7 @@ function renderDash(j){const w=$('#dashWrap');if(!w)return;if(window.G3D){G3D.de
   const car=$('#dcar'),dash=$('#dash');const target=finish?fx:X(to);
   if(from<0||(!finish&&to===from)){return;}
   if(window.G3D&&G3D.ok&&!localStorage.getItem('qh_no3d')){ const box=document.createElement('div'); box.className='dash3d'; w.innerHTML=''; w.appendChild(box); const say3=document.createElement('div'); say3.className='say3'; say3.textContent=say.replace(/<[^>]+>/g,''); box.appendChild(say3); const cv=document.createElement('div'); cv.className='dashcv'; box.appendChild(cv);
-    if(G3D.dash(cv,{theme:document.body.className.replace('t-',''),n:chs.length,labels:chs.map(c=>(chDone(c)?treasureOf(c.chapter)+' ':'')+esc(t.stop)+' '+c.chapter)})){ G3D.state&&chs.forEach((c,i)=>G3D.state(i,chDone(c)?'ok':'')); /* place at the finished chapter */ G3D.moveTo(from,{dur:.01}); setTimeout(()=>{accel();G3D.moveTo(finish?chs.length:to,{fast:true,jump:fast});},500); if(fast)setTimeout(()=>{snd('jump');toast(document.body.classList.contains('t-island')?'🌊 Speed run! Big wave — jump!':'🛫 Speed run! Hump — big air!');confetti(80)},500+1000); setTimeout(()=>{snd('skid');if(finish&&S.allDone)confetti(200)},500+2450); return; } w.innerHTML=''; }
+    if(G3D.dash(cv,{skin:worldKey(),theme:document.body.className.replace('t-',''),n:chs.length,labels:chs.map(c=>(chDone(c)?treasureOf(c.chapter)+' ':'')+esc(t.stop)+' '+c.chapter)})){ G3D.state&&chs.forEach((c,i)=>G3D.state(i,chDone(c)?'ok':'')); /* place at the finished chapter */ G3D.moveTo(from,{dur:.01}); setTimeout(()=>{accel();G3D.moveTo(finish?chs.length:to,{fast:true,jump:fast});},500); if(fast)setTimeout(()=>{snd('jump');toast(document.body.classList.contains('t-island')?'🌊 Speed run! Big wave — jump!':'🛫 Speed run! Hump — big air!');confetti(80)},500+1000); setTimeout(()=>{snd('skid');if(finish&&S.allDone)confetti(200)},500+2450); return; } w.innerHTML=''; }
   setTimeout(()=>{dash.classList.add('run');accel();car.style.left=target+'%';},400);
   if(fast){setTimeout(()=>{car.classList.add('jump');snd('jump');$('#dflash').classList.add('on');toast(document.body.classList.contains('t-island')?'🌊 Speed run! Big wave — jump!':'🛫 Speed run! Hump — big air!');confetti(80)},400+1150);}
   setTimeout(()=>{dash.classList.remove('run');snd('skid');if(finish&&S.allDone)confetti(200);},400+2450);

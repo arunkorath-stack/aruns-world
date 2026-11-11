@@ -178,8 +178,31 @@ function driveWorld(scene, curve, theme, V, n, len, opts, crowd) {
 
 /* ---------- build ---------- */
 
+// World skins: a new world reuses a base track (island = sea lane, drive = road) with its own palette and scenery
+const SKIN = {
+  // Procurement & Supply Chain: a working container harbour (sea lane, container ship)
+  port:   { sky:0xffcf9e, fog:0xffe3c4, ground:0x0f766e, grid:0x2aa198, asph:0x115e59, k1:0xe8590c, k2:0xffffff, dash:0xfff1dc, node:0xffffff, ok:0x15803d, retry:0xe8590c, cur:0xe8590c, light:0xfff1dc, crowd:['📦','🏗️','🚢','⚓','🚚','🏭','🧾','👷','🛳️','🧑‍💼'], goal:'⚓', vehicle:'ship' },
+  // Principles of Microeconomics: a lantern-lit night market (market street)
+  market: { sky:0x2b1a12, fog:0x4a2a16, ground:0x3a2416, grid:0xffb703, asph:0x4a3324, k1:0xe4572e, k2:0xffe8b0, dash:0xffd166, node:0x2b1a12, ok:0x2ec4b6, retry:0xe4572e, cur:0xffb703, light:0xffd166, crowd:['🧺','🪙','⚖️','🍊','🐟','🥥','🛒','🏪','🧑‍🌾','💰'], goal:'⚖️', vehicle:'car', treeCol:0xffb703 },
+};
+
 // Per-chapter scenery: each chapter of a world looks different (sky, water/ground, roadside life, a landmark behind the goal)
 const VAR = {
+  port: [
+    { name:'Harbour at dawn', sky:0xffcf9e, fog:0xffe3c4, ground:0x0f766e, crowd:['📦','🏗️','🚢','⚓','👷','🧾','🛳️','🚚','🧑‍💼','🏭'], extra:['🏗️','📦','🚢'], landmark:'🏗️' },
+    { name:'Container yard', sky:0xbfe3ff, fog:0xe0f1ff, ground:0x0e6a8a, crowd:['📦','📦','🏗️','🚚','👷','🧾','🚛','📋','🧑‍💼','🔧'], extra:['📦','🚛','🏗️'], landmark:'📦' },
+    { name:'Customs gate', sky:0xf6e7c8, fog:0xfff4dc, ground:0x2a6f6a, crowd:['🛂','🧾','📑','🚚','👮','📦','🏢','🖊️','🧑‍💼','✅'], extra:['🛂','🏢','🚚'], landmark:'🛂' },
+    { name:'Night shift quay', sky:0x1f2a44, fog:0x34466e, ground:0x0b3b4a, crowd:['💡','🏗️','📦','👷','🚢','🔦','⚓','🚚','🌙','🧾'], extra:['💡','🏗️','🌙'], landmark:'🌙' },
+    { name:'Rail freight terminal', sky:0xffd8b0, fog:0xffe9d2, ground:0x3f6f5f, crowd:['🚆','📦','🏭','👷','🚚','🧾','🔧','🛤️','🧑‍💼','⚙️'], extra:['🚆','🏭','📦'], landmark:'🚆' },
+    { name:'Global sea route', sky:0x9fd8ff, fog:0xd6efff, ground:0x0b5f8a, crowd:['🌍','🚢','🛳️','⚓','🐬','📦','🧭','🗺️','🌐','⛴️'], extra:['🌍','🛳️','🧭'], landmark:'🌍' },
+  ],
+  market: [
+    { name:'Lantern market', sky:0x2b1a12, fog:0x4a2a16, ground:0x3a2416, grid:0xffb703, crowd:['🏮','🧺','🪙','🍊','🐟','🥥','🛒','🧑‍🌾','💰','⚖️'], extra:['🏮','🏪','🧺'], landmark:'🏮', treeCol:0xffb703 },
+    { name:'Spice row', sky:0x3a1a10, fog:0x6a3418, ground:0x4a2614, grid:0xe4572e, crowd:['🌶️','🧄','🫚','🧺','🪙','🛒','🧑‍🌾','🏪','💰','⚖️'], extra:['🌶️','🧺','🏪'], landmark:'🌶️', treeCol:0xe4572e },
+    { name:'Fish market', sky:0x10242a, fog:0x1d4048, ground:0x183238, grid:0x2ec4b6, crowd:['🐟','🦐','🦀','🧊','🪙','🛒','🧑‍🌾','🏪','💰','⚖️'], extra:['🐟','🧊','🏪'], landmark:'🐟', treeCol:0x2ec4b6 },
+    { name:'Fruit stalls', sky:0x2a2010, fog:0x52401c, ground:0x3a3016, grid:0xffd166, crowd:['🍊','🍋','🥭','🍉','🥥','🧺','🪙','🛒','💰','⚖️'], extra:['🍊','🥭','🧺'], landmark:'🍉', treeCol:0xffd166 },
+    { name:'Trading floor', sky:0x14142a, fog:0x26264a, ground:0x1e1e36, grid:0x8ecae6, crowd:['📈','📉','💹','🪙','💰','🧑‍💼','⚖️','🏦','🧾','📊'], extra:['📈','🏦','📊'], landmark:'📈', treeCol:0x8ecae6 },
+  ],
   drive: [
     { name:'Neon city', skyline:true, sky:0x0b0714, fog:0x120a24, ground:0x1a1030, grid:0x6f44c9, crowd:['🙋','🙌','👏','🎉','📣','🏙️','🚕','📸','🥳','🌃'], extra:['🏙️','🌆','🏢'], landmark:'🏙️', treeCol:0xff7fb0 },
     { name:'Desert highway', sky:0x1a0f0a, fog:0x3a2210, ground:0x5a3a1c, grid:0x8a5a2a, asph:0x3a3028, crowd:['🐪','🌵','🙋','🏜️','🦂','🙌','🏕️','⛽','🪨','🎉'], extra:['🏜️','🐪','🌵'], landmark:'🏜️', treeCol:0xc98a3a },
@@ -221,7 +244,7 @@ function variant(theme, ch) { const arr = VAR[theme] || VAR.drive; const i = Mat
 
 function build(el, opts) {
   destroy();
-  const base = T[opts.theme] || T.drive; const V = opts.chapter ? variant(opts.theme, opts.chapter) : null; const theme = V ? Object.assign({}, base, V) : base; const n = opts.n; const labels = opts.labels || [];
+  const base = Object.assign({}, T[opts.theme] || T.drive, SKIN[opts.skin] || {}); const V = opts.chapter ? variant(VAR[opts.skin] ? opts.skin : opts.theme, opts.chapter) : null; const theme = V ? Object.assign({}, base, V) : base; const n = opts.n; const labels = opts.labels || [];
   const w = el.clientWidth || 240, h = el.clientHeight || 600;
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, powerPreference: 'high-performance' });
   renderer.setPixelRatio(Math.min(devicePixelRatio, 2)); renderer.setSize(w, h); renderer.shadowMap.enabled = false; renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -387,7 +410,7 @@ function stageDestroy() { if (!ST) return; cancelAnimationFrame(ST.raf); ST.ro &
 
 const G3D = {
   ok: (() => { try { const c = document.createElement('canvas'); return !!(window.WebGLRenderingContext && (c.getContext('webgl2') || c.getContext('webgl'))); } catch (e) { return false; } })(),
-  sceneName(theme, ch) { return variant(theme, ch).name; },
+  sceneName(theme, ch, skin) { return variant(VAR[skin] ? skin : theme, ch).name; },
   mount(el, opts) { try { return build(el, opts); } catch (e) { console.warn('G3D mount failed', e); return false; } },
   moveTo(i, o = {}) { if (!R) return 0; const t = R.n ? i / R.n : 0; R.from = R.t; R.target = t; R.t0 = performance.now() / 1000; R.dur = o.dur || (o.fast ? 2.4 : 1.35); R.run = true; if (o.jump) setTimeout(() => this.jump(), R.dur * 1000 * .42); return R.dur; },
   state(i, s) { if (!R) return; const g = R.nodes[i]; if (!g || !g.userData.ring) return; g.userData.state = s; if (g.userData.rods) g.userData.rods.forEach((r, k) => { r.position.y = s === 'ok' ? 4.6 : 1.6; }); const th = T[R.theme]; const c = s === 'ok' ? th.ok : s === 'retry' ? th.retry : s === 'cur' ? th.cur : th.node; g.userData.ring.material.color.set(c); g.userData.ring.material.emissive.set(s ? c : 0x000000); g.userData.ring.material.emissiveIntensity = s === 'cur' ? .8 : s ? .5 : 0; if (g.userData.gate) { g.userData.gate.material.emissive.set(s ? c : R.neon); g.userData.gate.material.emissiveIntensity = s === 'cur' ? 1.4 : s ? 1 : .9; if (g.userData.gateGlow) { g.userData.gateGlow.material.map = glowTexture(rgb(s ? c : R.neon)); g.userData.gateGlow.material.needsUpdate = true; } } },
